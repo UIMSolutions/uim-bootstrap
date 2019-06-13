@@ -1,9 +1,24 @@
 {
+	"name": "bs4",
 	"authors": [
 		"uiman"
 	],
-	"copyright": "Copyright © 2019, uiman",
 	"description": "A minimal D application.",
+	"copyright": "Copyright © 2018, uiman",
 	"license": "proprietary",
-	"name": "uim-bootstrap"
+	"targetType": "library",
+	"sourcePaths": [
+		"../core",
+		"../oop",
+		"../web",
+		"../html",
+		"./"
+	],
+	"importPaths": [
+		"../core",
+		"../oop",
+		"../web",
+		"../html",
+		"./"
+	]
 }
