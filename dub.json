@@ -1,11 +1,9 @@
 {
-	"name": "bs4",
-	"authors": [
-		"uiman"
-	],
-	"description": "A minimal D application.",
-	"copyright": "Copyright © 2018, uiman",
-	"license": "proprietary",
+	"name": "uim-bootstrap",
+	"authors": [ "UI Manufaktur Team" ],
+	"description": "D Library for HTML5",
+	"copyright": "Copyright © 2019, UI Manufaktur UG",
+	"license": "Apache 2.0",
 	"targetType": "library",
 	"dependencies": {
 		"vibe-d:data": "==0.8.5",
