@@ -7,18 +7,11 @@
 	"copyright": "Copyright © 2018, uiman",
 	"license": "proprietary",
 	"targetType": "library",
-	"sourcePaths": [
-		"../core",
-		"../oop",
-		"../web",
-		"../html",
-		"./"
-	],
-	"importPaths": [
-		"../core",
-		"../oop",
-		"../web",
-		"../html",
-		"./"
-	]
+	"dependencies": {
+		"vibe-d:data": "==0.8.5",
+		"uim-core": "~>0.19.6",
+		"uim-oop": "~>0.19.6",
+		"uim-web": "~>0.19.6",
+		"uim-html": "~>0.19.6"
+	}
 }
