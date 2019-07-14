@@ -8,6 +8,6 @@ class DBS4InputFile : DH5INPUT {
 mixin(BS4Func!("InputFile"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

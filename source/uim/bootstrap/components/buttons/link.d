@@ -12,7 +12,7 @@ class DBS4ButtonLink : DBS4ButtonObj {
 mixin(H5Short!"BS4ButtonLink");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4ButtonLink == `<a class="btn" type="button"></a>`);
 }

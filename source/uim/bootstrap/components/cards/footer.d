@@ -7,11 +7,8 @@ class DBS4CardFooter : DBS4Obj {
 	override public void init() {
 		super.init;
 	}
+	unittest {
+		assert(BS4CardFooter == `<div class="card-footer"></div>`);
+	}
 }
 mixin(H5Short!"BS4CardFooter");
-
-unittest {
-	writeln("Testing ", __MODULE__);
-	
-	assert(BS4CardFooter == `<div class="card-footer"></div>`);
-}

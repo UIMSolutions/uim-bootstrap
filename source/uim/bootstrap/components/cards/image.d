@@ -14,7 +14,7 @@ class DBS4CardImage : DBS4Obj { // default top
 mixin(H5Short!"BS4CardImage");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4CardImage == `<img class="card-img-top">`);
 	assert(BS4CardImage.position("top") == `<img class="card-img-top">`);

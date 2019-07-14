@@ -17,7 +17,7 @@ class DBS4NavList : DBS4Obj {
 mixin(H5Short!"BS4NavList");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4NavList == `<ul class="nav"></ul>`);
 	assert(BS4NavList.vertical == `<ul class="flex-column nav"></ul>`);

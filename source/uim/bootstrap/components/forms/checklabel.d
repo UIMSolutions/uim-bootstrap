@@ -7,11 +7,11 @@ class DBS4FormCheckLabel : DBS4Obj {
 	override public void init() {
 		super.init;
 	}
+	unittest {
+		assert(BS4FormCheckLabel == `<label class="form-check-label"></label>`);
+	}
 }
 mixin(H5Short!"BS4FormCheckLabel");
 
 unittest {
-	writeln("Testing ", __MODULE__);
-	
-	assert(BS4FormCheck == `<label class="form-check-label"></label>`);
 }

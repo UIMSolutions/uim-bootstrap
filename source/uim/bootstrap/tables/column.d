@@ -24,7 +24,7 @@ class DBS4TableColumn : DBS4Obj {
 mixin(H5Short!"BS4TableColumn");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4TableColumn == `<th scope="col"></th>`);
 	assert(BS4TableColumn.title("xyz") == `<th scope="col">xyz</th>`);

@@ -11,7 +11,7 @@ class DBS4ModalBody : DBS4Obj {
 mixin(H5Short!"BS4ModalBody");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4ModalBody == `<h5 class="modal-body"></h5>`);
 }

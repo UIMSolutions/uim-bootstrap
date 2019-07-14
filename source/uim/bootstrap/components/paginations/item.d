@@ -15,7 +15,7 @@ class DBS4PageItem : DBS4Obj {
 mixin(H5Short!"BS4PageItem");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4PageItem == `<li class="page-item"></li>`);
 	assert(BS4PageItem.active == `<li class="active page-item"></li>`);

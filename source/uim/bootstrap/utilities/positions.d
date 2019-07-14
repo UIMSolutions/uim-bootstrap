@@ -25,6 +25,6 @@ T stickyPosition(T)(T h5, string position) {
 }
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 }

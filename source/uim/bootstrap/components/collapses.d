@@ -11,7 +11,7 @@ class DBS4Collapse : DBS4Obj {
 mixin(H5Short!"BS4Collapse");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4Collapse == `<div class="collapse"></div>`);
 }

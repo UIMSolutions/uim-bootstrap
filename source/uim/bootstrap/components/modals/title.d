@@ -11,7 +11,7 @@ class DBS4ModalTitle : DBS4Obj {
 mixin(H5Short!"BS4ModalTitle");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4ModalTitle == `<h5 class="modal-title"></h5>`);
 }

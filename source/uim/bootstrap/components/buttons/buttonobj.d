@@ -36,5 +36,5 @@ class DBS4ButtonObj : DBS4Obj {
 mixin(H5Short!"BS4ButtonObj");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 }

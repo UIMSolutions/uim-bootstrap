@@ -12,7 +12,7 @@ class DBS4Nav : DBS4Obj {
 mixin(H5Short!"BS4Nav");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4Nav == `<nav class="nav"></nav>`);
 }

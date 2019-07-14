@@ -6,7 +6,7 @@ T flex(T)(T h5) {
 	return h5.classes("d-flex");
 }
 T flexInline(T)(T h5) {
-	return h5.flex.classes("d-inline-flex");
+	return h5.classes("d-inline-flex");
 }
 T flexRow(T)(T h5) {
 	return h5.flex.classes("d-flex-column");
@@ -52,8 +52,9 @@ T flexOrder(T)(T h5, string position) {
 }
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(H5DIV.flex == `<div class="d-flex"></div>`);
+	writeln(H5DIV.flexInline);
 	assert(H5DIV.flexInline == `<div class="d-inline-flex"></div>`);
 }

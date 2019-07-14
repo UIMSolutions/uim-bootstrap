@@ -12,7 +12,7 @@ class DBS4ModalContent : DBS4Obj {
 mixin(H5Short!"BS4ModalContent");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4ModalContent == `<div class="modal-content"></div>`);
 }

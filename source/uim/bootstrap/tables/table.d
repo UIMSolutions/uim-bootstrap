@@ -13,7 +13,7 @@ class DBS4Table : DBS4Obj {
 mixin(H5Short!"BS4Table");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4Table == `<table class="table"></table>`);
 //	writeln(BS4Table.column(BS4TableColumn("", "ID"), BS4TableColumn("", "Name")));

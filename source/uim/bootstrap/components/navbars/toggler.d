@@ -14,7 +14,7 @@ class DBS4NavbarToggler : DBS4ButtonObj {
 mixin(H5Short!"BS4NavbarToggler");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 //	assert(BS4NavbarToggler == `<div class="btn-group" role="group"></div>`);
 }

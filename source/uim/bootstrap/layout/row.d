@@ -10,7 +10,7 @@ class DBS4Row : DH5DIV {
 mixin(BS4Func!("Row"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4Row == `<div class="row"></div>`);
 }

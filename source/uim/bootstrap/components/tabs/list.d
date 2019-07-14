@@ -19,7 +19,7 @@ class DBS4TabList : DBS4Obj {
 mixin(H5Short!"BS4TabList");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4TabList == `<ul class="nav" role="tablist"></ul>`);
 	assert(BS4TabList.vertical == `<ul class="flex-column nav" role="tablist"></ul>`);

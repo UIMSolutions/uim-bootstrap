@@ -11,7 +11,7 @@ class DBS4NavbarTogglerIcon : DBS4Obj {
 mixin(H5Short!"BS4NavbarTogglerIcon");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 //	assert(BS4NavbarTogglerIcon == `<div class="btn-group" role="group"></div>`);
 }

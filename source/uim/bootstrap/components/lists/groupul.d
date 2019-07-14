@@ -12,7 +12,7 @@ class DBS4ListGroupUL : DBS4Obj {
 mixin(H5Short!"BS4ListGroupUL");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4ListGroupUL == `<ul class="list-group"></ul>`);
 }

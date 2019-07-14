@@ -3,6 +3,6 @@
 import uim.bootstrap; 
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 }

@@ -11,7 +11,7 @@ class DBS4Progress : DBS4Obj {
 mixin(H5Short!"BS4Progress");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4Progress == `<div class="progress"></div>`);
 }

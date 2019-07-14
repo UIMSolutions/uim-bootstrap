@@ -11,7 +11,7 @@ class DBS4Button : DBS4ButtonObj {
 mixin(H5Short!"BS4Button");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4Button == `<button class="btn" type="button"></button>`);
 }

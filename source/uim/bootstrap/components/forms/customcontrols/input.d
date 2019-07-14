@@ -3,15 +3,17 @@
 import uim.bootstrap;
 
 class DBS4CustomInput : DBS4Obj {
-	mixin(H5This!("INPUT", `["custom-input"]`));
+	mixin(H5This!("INPUT", `["custom-control-input"]`));
 	override public void init() {
 		super.init;
 	}
+	unittest {
+		writeln(BS4CustomInput);
+		assert(BS4CustomInput == `<input class="custom-control-input">`);
+	}
+
 }
 mixin(H5Short!"BS4CustomInput");
 
 unittest {
-	writeln("Testing ", __MODULE__);
-	
-	assert(BS4CustomInput == `<input class="form-check-input">`);
 }

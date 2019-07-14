@@ -12,7 +12,7 @@ class DBS4CardLink : DBS4Obj {
 mixin(H5Short!"BS4CardLink");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4CardLink == `<a class="card-link" href="#"></a>`);
 	assert(BS4CardLink.content("SomeThing") == `<a class="card-link" href="#">SomeThing</a>`);

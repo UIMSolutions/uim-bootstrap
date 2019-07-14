@@ -7,7 +7,7 @@ T clearfix(T)(T h5) {
 }
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(H5DIV.clearfix == `<div class="clearfix"></div>`);
 }

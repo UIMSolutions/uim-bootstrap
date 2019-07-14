@@ -8,6 +8,6 @@ class DBS4InputButton : DBS4Input {
 mixin(BS4Func!("InputButton"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

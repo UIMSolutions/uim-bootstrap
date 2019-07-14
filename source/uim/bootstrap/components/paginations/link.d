@@ -11,7 +11,7 @@ class DBS4PageLink : DBS4Obj {
 mixin(H5Short!"BS4PageLink");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4PageLink == `<a class="page-link" href="#"></a>`);
 }

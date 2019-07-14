@@ -8,6 +8,6 @@ class DBS4InputReset : DBS4Input {
 mixin(BS4Func!("InputReset"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

@@ -7,13 +7,14 @@ class DBS4Togglelink : DBS4ButtonLink {
 	override public void init() {
 		super.init;
 	}	
+	unittest {
+		writeln(BS4Togglelink);
+		assert(BS4Togglelink == `<a class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></a>`);
+		assert(BS4Togglelink.id("id") == `<a id="id" class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></a>`);
+	}
 }
 mixin(H5Short!"BS4Togglelink");
 
 unittest {
-	writeln("Testing ", __MODULE__);
-
-	assert(BS4Togglelink == `<div class="dropdown"></div>`);
-	assert(BS4Togglelink.id("id") == `<div id="id" class="dropdown"></div>`);
 }
 

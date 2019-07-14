@@ -50,7 +50,7 @@ class DBS4FormGroup : DBS4Obj {
 mixin(H5Short!"BS4FormGroup");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4FormGroup == `<div class="form-group"></div>`);
 }

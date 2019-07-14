@@ -7,11 +7,11 @@ class DBS4FormText : DBS4Obj {
 	override public void init() {
 		super.init;
 	}
+	unittest {
+		assert(BS4FormText == `<small class="form-text"></small>`);
+	}
 }
 mixin(H5Short!"BS4FormText");
 
 unittest {
-	writeln("Testing ", __MODULE__);
-	
-	assert(BS4FormCheck == `<small class="form-text"></small>`);
 }

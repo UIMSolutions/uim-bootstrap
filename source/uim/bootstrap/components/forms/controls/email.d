@@ -8,6 +8,6 @@ class DBS4InputEmail : DBS4Input {
 mixin(BS4Func!("InputEmail"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

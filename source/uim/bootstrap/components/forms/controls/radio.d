@@ -8,6 +8,6 @@ class DBS4InputRadio : DBS4Input {
 mixin(BS4Func!("InputRadio"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

@@ -56,7 +56,7 @@ mixin(BS4Func!("AlertLink"));
 //auto BS4Alert(T)(string[] classes, string[string] attributes, DH5Obj[] content...) { return new DBS4Alert!(T)(classes, attributes, content); }
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4Alert == `<div class="alert" role="alert"></div>`);
 	assert(BS4Alert("anAlert") == `<div class="alert" role="alert">anAlert</div>`);

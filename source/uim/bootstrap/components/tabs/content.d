@@ -12,7 +12,7 @@ class DBS4TabContent : DBS4Obj {
 mixin(H5Short!"BS4TabContent");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4TabContent == `<div class="tab-content"></div>`);
 }

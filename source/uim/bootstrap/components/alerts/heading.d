@@ -13,5 +13,5 @@ class DBS4AlertHeading : DH5H6 {
 mixin(BS4Func!("AlertHeading"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 }

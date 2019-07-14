@@ -17,7 +17,7 @@ class DBS4Card : DBS4Obj {
 mixin(H5Short!"BS4Card");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4Card == `<div class="card"></div>`);
 	assert(BS4Card.block == `<div class="card card-block"></div>`);

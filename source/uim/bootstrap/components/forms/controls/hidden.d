@@ -8,6 +8,6 @@ class DBS4InputHidden : DBS4Input {
 mixin(BS4Func!("InputHidden"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

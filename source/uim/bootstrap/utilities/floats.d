@@ -13,5 +13,5 @@ T floatPosition(T)(T h5, string position, string breakPoint) {
 }
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 }

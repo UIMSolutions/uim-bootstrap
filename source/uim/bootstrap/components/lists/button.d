@@ -15,7 +15,7 @@ class DBS4ListGroupButton : DBS4Obj {
 mixin(H5Short!"BS4ListGroupButton");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4ListGroupButton == `<button class="list-group-item list-group-item-action"></button>`);
 	assert(BS4ListGroupButton.active == `<button class="active list-group-item list-group-item-action"></button>`);

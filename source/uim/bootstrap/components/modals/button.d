@@ -14,11 +14,3 @@ class DBS4ModalButton : DBS4Obj {
 	}
 }
 mixin(H5Short!"BS4ModalButton");
-
-unittest {
-	writeln("Testing ", __MODULE__);
-	
-	assert(BS4ModalButton == `<button class="list-group-item list-group-item-action"></button>`);
-//	assert(BS4ModalButton.active == `<button class="active list-group-item list-group-item-action"></button>`);
-//	assert(BS4ModalButton.disabled == `<button class="list-group-item list-group-item-action" disabled></button>`);
-}

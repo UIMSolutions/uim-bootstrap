@@ -16,7 +16,5 @@ class DBS4Obj : DH5Obj {
 mixin(H5Short!"BS4Obj");
 
 unittest {
-	writeln("Testing ", __MODULE__);	
-
 	assert(BS4Obj == "<div></div>");
 }

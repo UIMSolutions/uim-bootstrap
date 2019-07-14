@@ -14,7 +14,7 @@ class DBS4ListGroupLink : DBS4Obj {
 mixin(H5Short!"BS4ListGroupLink");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4ListGroupLink == `<a class="list-group-item list-group-item-action"></a>`);
 	assert(BS4ListGroupLink.active == `<a class="active list-group-item list-group-item-action"></a>`);

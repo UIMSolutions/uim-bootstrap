@@ -4,14 +4,18 @@ import uim.bootstrap;
 
 class DBS4CardBody : DBS4Obj {
 	mixin(H5This!("DIV", `["card-body"]`));
+	unittest {
+		assert(BS4CardBody == `<div class="card-body"></div>`);
+	}
 
 	mixin(MyContent!("title", "BS4CardTitle"));
+	unittest {
+		assert(BS4CardBody.title("Hallo") == `<div class="card-body"><h4 class="card-title">Hallo</h4></div>`);
+	}
+
 	mixin(MyContent!("text", "BS4CardText"));
+	unittest {
+		assert(BS4CardBody.text("Hallo") == `<div class="card-body"><p class="card-text">Hallo</p></div>`);
+	}
 }
 mixin(H5Short!"BS4CardBody");
-
-unittest {
-	writeln("Testing ", __MODULE__);
-
-	assert(BS4CardBlock == `<div class="card-body"></div>`);
-}

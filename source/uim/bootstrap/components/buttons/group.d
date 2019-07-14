@@ -15,7 +15,7 @@ class DBS4ButtonGroup : DBS4Obj {
 mixin(H5Short!"BS4ButtonGroup");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4ButtonGroup == `<div class="btn-group" role="group"></div>`);
 }

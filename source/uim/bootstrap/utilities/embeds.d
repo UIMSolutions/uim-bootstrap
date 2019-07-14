@@ -13,5 +13,5 @@ T embedItem(T)(T h5) {
 }
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 }

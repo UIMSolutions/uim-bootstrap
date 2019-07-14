@@ -17,6 +17,6 @@ class DBS4InputSelect : DH5SELECT {
 mixin(BS4Func!("InputSelect"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

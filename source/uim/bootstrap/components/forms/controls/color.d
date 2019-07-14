@@ -8,6 +8,6 @@ class DBS4InputColor : DBS4Input {
 mixin(BS4Func!("InputColor"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

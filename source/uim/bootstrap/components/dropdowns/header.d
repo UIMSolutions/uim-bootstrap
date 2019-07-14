@@ -11,7 +11,7 @@ class DBS4DropdownHeader : DBS4Obj {
 mixin(H5Short!"BS4DropdownHeader");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4DropdownHeader == `<h6 class="dropdown-header"></h6>`);
 }

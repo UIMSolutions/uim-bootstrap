@@ -13,7 +13,7 @@ T backgroundColor(T)(T h5, string colorName) {
 }
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(H5DIV.textColor("white") == `<div class="text-white"></div>`);
 	assert(H5DIV.bgColor("white") == `<div class="bg-white"></div>`);

@@ -12,7 +12,7 @@ class DBS4NavbarBrand : DBS4Obj {
 mixin(H5Short!"BS4NavbarBrand");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4NavbarBrand == `<a class="navbar-brand" href="#"></a>`);
 }

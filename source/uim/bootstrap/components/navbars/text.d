@@ -11,7 +11,7 @@ class DBS4NavbarText : DBS4Obj {
 mixin(H5Short!"BS4NavbarText");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4NavbarText == `<span class="navbar-text"></span>`);
 	assert(BS4NavbarText("some text") == `<span class="navbar-text">some text</span>`);

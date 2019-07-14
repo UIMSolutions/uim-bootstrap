@@ -8,6 +8,6 @@ class DBS4InputImage : DBS4Input {
 mixin(BS4Func!("InputImage"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

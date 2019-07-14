@@ -11,6 +11,6 @@ class DBS4InputTextArea : DH5TEXTAREA {
 mixin(BS4Func!("InputTextArea"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

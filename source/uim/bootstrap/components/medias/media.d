@@ -11,7 +11,7 @@ class DBS4Media : DBS4Obj {
 mixin(H5Short!"BS4Media");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4Media == `<div class="media"></div>`);
 }

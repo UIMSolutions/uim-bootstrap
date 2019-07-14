@@ -10,7 +10,7 @@ T shadow(T)(T h5, string screenSize = null) {
 }
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(H5DIV.shadowNone == `<div class="shadow-none"></div>`);
 	assert(H5DIV.shadow == `<div class="shadow"></div>`);

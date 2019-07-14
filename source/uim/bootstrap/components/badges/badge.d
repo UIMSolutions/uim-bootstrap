@@ -13,5 +13,5 @@ class DBS4Badge : DH5SPAN {
 mixin(BS4Func!("Badge"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 }

@@ -33,7 +33,7 @@ class DBS4TableRow : DBS4Obj {
 mixin(H5Short!"BS4TableRow");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4TableRow == "<tr></tr>");
 	assert(BS4TableRow.values(["a","b"]) == `<tr><td>a</td><td>b</td></tr>`);

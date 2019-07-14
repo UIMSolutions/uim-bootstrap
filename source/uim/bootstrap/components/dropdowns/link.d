@@ -11,5 +11,5 @@ class DBS4DropdownLink : DBS4Obj {
 mixin(H5Short!"BS4DropdownLink");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 }

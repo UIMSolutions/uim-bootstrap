@@ -8,6 +8,6 @@ class DBS4InputRange : DH5INPUT {
 mixin(BS4Func!("InputRange"));
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 }

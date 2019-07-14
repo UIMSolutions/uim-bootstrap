@@ -7,11 +7,12 @@ class DBS4FormCheckInput : DBS4Obj {
 	override public void init() {
 		super.init;
 	}
+	unittest {
+		writeln(BS4FormCheckInput);
+		assert(BS4FormCheckInput == `<input class="form-check-input">`);
+	}
 }
 mixin(H5Short!"BS4FormCheckInput");
 
 unittest {
-	writeln("Testing ", __MODULE__);
-	
-	assert(BS4FormCheck == `<input class="form-check-input">`);
 }

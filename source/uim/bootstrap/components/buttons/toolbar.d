@@ -13,7 +13,7 @@ class DBS4ButtonToolbar : DBS4Obj {
 mixin(H5Short!"BS4ButtonToolbar");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	assert(BS4ButtonToolbar == `<div class="btn-toolbar" role="toolbar"></div>`);
 	assert(BS4ButtonToolbar.label("hallo") == `<div class="btn-toolbar" aria-label="hallo" role="toolbar"></div>`);

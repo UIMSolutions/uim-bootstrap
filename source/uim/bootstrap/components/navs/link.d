@@ -15,7 +15,7 @@ class DBS4NavLink : DBS4Obj {
 mixin(H5Short!"BS4NavLink");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 	
 	//assert(BS4NavLink == `<a class="nav-link" href="#"></a>`);
 	// assert(BS4NavLink.active == `<a class="active nav-link" href="#"></a>`);

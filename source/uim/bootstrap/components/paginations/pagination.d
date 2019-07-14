@@ -14,7 +14,7 @@ class DBS4Pagination : DBS4Obj {
 mixin(H5Short!"BS4Pagination");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(BS4Pagination == `<ul class="pagination"></ul>`);
 }

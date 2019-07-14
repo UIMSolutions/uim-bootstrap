@@ -17,7 +17,7 @@ class DBS4ProgressBar : DBS4Obj {
 mixin(H5Short!"BS4ProgressBar");
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
-	assert(BS4ProgressBar == `<div class="progress-bar"></div>`);
+	assert(BS4ProgressBar == `<div class="progress-bar" role="progressbar"></div>`);
 }

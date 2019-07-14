@@ -26,7 +26,7 @@ T circle(T)(T h5, string radius = null) {
 }
 
 unittest {
-	writeln("Testing ", __MODULE__);
+	
 
 	assert(H5DIV.border == `<div class="border"></div>`);
 	assert(H5DIV.borderPosition("top") == `<div class="border-top"></div>`);
