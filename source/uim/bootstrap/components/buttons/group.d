@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4ButtonGroup : DBS4Obj {
+class DBS4Buttongroup : DBS4Obj {
 	mixin(H5This!("DIV", `["btn-group"]`, `["role":"group"]`));
 	override public void init() {
 		super.init;
@@ -12,10 +12,10 @@ class DBS4ButtonGroup : DBS4Obj {
 	mixin(MyContent!("button", "BS4Button"));
 	mixin(MyContent!("link", "BS4ButtonLink"));
 }
-mixin(H5Short!"BS4ButtonGroup");
+mixin(H5Short!"BS4Buttongroup");
 
 unittest {
 	
 	
-	assert(BS4ButtonGroup == `<div class="btn-group" role="group"></div>`);
+	assert(BS4Buttongroup == `<div class="btn-group" role="group"></div>`);
 }

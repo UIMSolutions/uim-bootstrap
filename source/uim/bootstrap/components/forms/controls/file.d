@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputFile : DH5INPUT {
+class DBS4InputFile : DH5Input {
 	mixin(BS4This!("InputFile", `["form-control-file"]`, `["type":"file"]`));	
 }
 mixin(BS4Func!("InputFile"));

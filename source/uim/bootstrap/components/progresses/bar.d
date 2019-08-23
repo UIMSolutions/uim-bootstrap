@@ -2,8 +2,8 @@
 
 import uim.bootstrap;
 
-class DBS4ProgressBar : DBS4Obj {
-	mixin(H5This!("DIV", `["progress-bar"]`, `["role":"progressbar"]`));
+class DBS4Progressbar : DBS4Obj {
+	mixin(H5This!("div", `["progress-bar"]`, `["role":"progressbar"]`));
 	override public void init() {
 		super.init;
 	}
@@ -14,10 +14,10 @@ class DBS4ProgressBar : DBS4Obj {
 	O striped(this O)(bool mode = true) { return this.classes("progress-bar-striped"); }
 	O animated(this O)(bool mode = true) { return this.classes("progress-bar-animated"); }
 }
-mixin(H5Short!"BS4ProgressBar");
+mixin(H5Short!"BS4Progressbar");
 
 unittest {
 	
 
-	assert(BS4ProgressBar == `<div class="progress-bar" role="progressbar"></div>`);
+	assert(BS4Progressbar == `<div class="progress-bar" role="progressbar"></div>`);
 }

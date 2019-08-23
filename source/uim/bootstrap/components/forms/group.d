@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4FormGroup : DBS4Obj {
+class DBS4Formgroup : DBS4Obj {
 	mixin(H5This!("DIV", `["form-group"]`));
 	override public void init() {
 		super.init;
@@ -47,10 +47,10 @@ class DBS4FormGroup : DBS4Obj {
 
 
 }
-mixin(H5Short!"BS4FormGroup");
+mixin(H5Short!"BS4Formgroup");
 
 unittest {
 	
 	
-	assert(BS4FormGroup == `<div class="form-group"></div>`);
+	assert(BS4Formgroup == `<div class="form-group"></div>`);
 }

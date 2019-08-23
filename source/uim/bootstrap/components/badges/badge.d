@@ -2,7 +2,7 @@ module uim.bootstrap.components.badges.badge;
 
 import uim.bootstrap;
 
-class DBS4Badge : DH5SPAN {
+class DBS4Badge : DH5Span {
 	mixin(BS4This!("Badge", `["badge"]`));
 
 	O color(this O)(string name) { return this.classes("badge-"~name); };

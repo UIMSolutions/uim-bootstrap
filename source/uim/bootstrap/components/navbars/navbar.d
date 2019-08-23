@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4NavBar : DBS4Obj {
+class DBS4Navbar : DBS4Obj {
 	mixin(H5This!("NAV", `["navbar"]`));
 	override public void init() {
 		super.init;
@@ -10,24 +10,24 @@ class DBS4NavBar : DBS4Obj {
 
 	O light(this O)(bool value = true) { return this.classes("navbar-light"); }
 	unittest {
-		assert(BS4NavBar.light == `<nav class="navbar navbar-light"></nav>`);
+		assert(BS4Navbar.light == `<nav class="navbar navbar-light"></nav>`);
 	}
 	
 	O dark(this O)(bool value = true) { return this.classes("navbar-dark"); }
 	unittest {
-		assert(BS4NavBar.dark == `<nav class="navbar navbar-dark"></nav>`);
+		assert(BS4Navbar.dark == `<nav class="navbar navbar-dark"></nav>`);
 	}
 
 	O expand(this O)(string screenSize) { return this.classes("navbar-expand-"~screenSize); }
 	unittest {
-		assert(BS4NavBar.expand("lg") == `<nav class="navbar navbar-expand-lg"></nav>`);
+		assert(BS4Navbar.expand("lg") == `<nav class="navbar navbar-expand-lg"></nav>`);
 	}
 }
-mixin(H5Short!"BS4NavBar");
+mixin(H5Short!"BS4Navbar");
 
 unittest {
 	
 	
-	writeln(BS4NavBar);
-	assert(BS4NavBar == `<nav class="navbar"></nav>`);
+	writeln(BS4Navbar);
+	assert(BS4Navbar == `<nav class="navbar"></nav>`);
 }

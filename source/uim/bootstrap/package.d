@@ -16,6 +16,8 @@ public import uim.bootstrap.components;
 public import uim.bootstrap.additionals;
 public import uim.bootstrap.utilities;
 
+public import uim.bootstrap.bs4;
+
 // modules
 public import uim.bootstrap.tables;
 

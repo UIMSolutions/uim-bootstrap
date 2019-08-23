@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.components.scrollspys;
+﻿module uim.bootstrap.components.scrollspies;
 
 import uim.bootstrap;
 

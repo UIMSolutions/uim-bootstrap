@@ -11,7 +11,5 @@ class DBS4Progress : DBS4Obj {
 mixin(H5Short!"BS4Progress");
 
 unittest {
-	
-
 	assert(BS4Progress == `<div class="progress"></div>`);
 }

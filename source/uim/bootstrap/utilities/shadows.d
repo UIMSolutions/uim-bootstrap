@@ -10,10 +10,8 @@ T shadow(T)(T h5, string screenSize = null) {
 }
 
 unittest {
-	
-
-	assert(H5DIV.shadowNone == `<div class="shadow-none"></div>`);
-	assert(H5DIV.shadow == `<div class="shadow"></div>`);
-	assert(H5DIV.shadow("sm") == `<div class="shadow-sm"></div>`);
-	assert(H5DIV.shadow("lg") == `<div class="shadow-lg"></div>`);
+	assert(H5Div.shadowNone == `<div class="shadow-none"></div>`);
+	assert(H5Div.shadow == `<div class="shadow"></div>`);
+	assert(H5Div.shadow("sm") == `<div class="shadow-sm"></div>`);
+	assert(H5Div.shadow("lg") == `<div class="shadow-lg"></div>`);
 }

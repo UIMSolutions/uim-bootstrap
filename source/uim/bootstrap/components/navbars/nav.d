@@ -11,7 +11,5 @@ class DBS4NavbarNav : DBS4Obj {
 mixin(H5Short!"BS4NavbarNav");
 
 unittest {
-	
-
 	assert(BS4NavbarNav == `<ul class="navbar-nav"></ul>`);
 }

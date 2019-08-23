@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4Button : DBS4ButtonObj {
-	mixin(H5This!("BUTTON", `["btn"]`, `["type":"button"]`));
+	mixin(H5This!("button", `["btn"]`, `["type":"button"]`));
 	override public void init() {
 		super.init;
 	}
@@ -11,7 +11,5 @@ class DBS4Button : DBS4ButtonObj {
 mixin(H5Short!"BS4Button");
 
 unittest {
-	
-	
 	assert(BS4Button == `<button class="btn" type="button"></button>`);
 }

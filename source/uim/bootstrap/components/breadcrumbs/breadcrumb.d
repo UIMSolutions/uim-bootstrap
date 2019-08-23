@@ -16,7 +16,7 @@ class DBS4Breadcrumb : DBS4Obj {
 		auto buf = _html;
 		this.clearContent;
 
-		auto list = H5OL(["breadcrumb"], buf);
+		auto list = H5Ol(["breadcrumb"], buf);
 		if (_attributes.has("style")) list._attributes["style"] = _attributes["style"];
 		this.content(list);
 		return super.toHTML;

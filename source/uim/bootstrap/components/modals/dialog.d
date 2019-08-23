@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4ModalDialog : DBS4Obj {
-	mixin(H5This!("DIV", `["modal-dialog"]`, `["role":"document"]`));
+	mixin(H5This!("div", `["modal-dialog"]`, `["role":"document"]`));
 	override public void init() {
 		super.init;
 	}

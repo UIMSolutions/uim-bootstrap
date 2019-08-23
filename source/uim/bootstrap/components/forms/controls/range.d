@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputRange : DH5INPUT {
+class DBS4InputRange : DH5Input {
 	mixin(BS4This!("InputRange", `["form-control-range"]`, `["type":"range"]`));	
 }
 mixin(BS4Func!("InputRange"));
