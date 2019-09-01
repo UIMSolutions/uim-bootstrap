@@ -1,5 +1,7 @@
 ﻿module uim.bootstrap.mixins;
 
+import uim.bootstrap;
+
 template BS4Func(string name) {
 	const char[] BS4Func = "
 auto BS4"~name~"(string content) { return new DBS4"~name~"(content); }
@@ -94,4 +96,8 @@ template BS4This(string bsName, string classes = null, string attributes = null)
 	this(string[] classes, string[string] attributes, string content) { super(classes, attributes, content); `~strClasses~strAttributes~`}
 	this(string[] classes, string[string] attributes, DH5Obj[] content...) { super(classes, attributes, content); `~strClasses~strAttributes~`}
 	`;
+}
+
+template BS4Short(string name) {		
+	const char[] BS4Short = h5Methods("auto BS4"~name, "new DBS4"~name);
 }

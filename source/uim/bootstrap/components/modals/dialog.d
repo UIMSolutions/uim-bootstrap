@@ -26,7 +26,7 @@ class DBS4ModalDialog : DBS4Obj {
 		assert(BS4ModalDialog.centered == `<div class="modal-dialog modal-dialog-centered" role="document"></div>`);
 	}
 }
-mixin(H5Short!"BS4ModalDialog");
+mixin(BS4Short!"ModalDialog");
 
 unittest {
 }

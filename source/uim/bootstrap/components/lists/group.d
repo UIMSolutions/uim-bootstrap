@@ -11,7 +11,7 @@ class DBS4ListGroup : DBS4Obj {
 	mixin(MyContent!("link", "BS4ListGroupLink"));
 	mixin(MyContent!("button", "BS4ListGroupButton"));
 }
-mixin(H5Short!"BS4ListGroup");
+mixin(BS4Short!"ListGroup");
 
 unittest {
 	

@@ -11,4 +11,4 @@ class DBS4CardFooter : DBS4Obj {
 		assert(BS4CardFooter == `<div class="card-footer"></div>`);
 	}
 }
-mixin(H5Short!"BS4CardFooter");
+mixin(BS4Short!"CardFooter");

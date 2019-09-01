@@ -9,7 +9,7 @@ class DBS4ListGroupItem : DBS4Obj {
 	}
 	O color(this O)(string aColor) { this.classes("list-group-item-"~aColor); return cast(O)this; }
 }
-mixin(H5Short!"BS4ListGroupItem");
+mixin(BS4Short!"ListGroupItem");
 
 unittest {
 	

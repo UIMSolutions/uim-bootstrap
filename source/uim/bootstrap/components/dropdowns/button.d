@@ -8,7 +8,7 @@ class DBS4DropdownButton : DBS4Obj {
 		super.init;
 	}	
 }
-mixin(H5Short!"BS4DropdownButton");
+mixin(BS4Short!"DropdownButton");
 
 unittest {
 	

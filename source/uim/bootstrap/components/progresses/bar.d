@@ -14,7 +14,7 @@ class DBS4Progressbar : DBS4Obj {
 	O striped(this O)(bool mode = true) { return this.classes("progress-bar-striped"); }
 	O animated(this O)(bool mode = true) { return this.classes("progress-bar-animated"); }
 }
-mixin(H5Short!"BS4Progressbar");
+mixin(BS4Short!"Progressbar");
 
 unittest {
 	

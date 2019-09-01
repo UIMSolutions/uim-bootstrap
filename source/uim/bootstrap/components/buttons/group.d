@@ -12,7 +12,7 @@ class DBS4Buttongroup : DBS4Obj {
 	mixin(MyContent!("button", "BS4Button"));
 	mixin(MyContent!("link", "BS4ButtonLink"));
 }
-mixin(H5Short!"BS4Buttongroup");
+mixin(BS4Short!"Buttongroup");
 
 unittest {
 	

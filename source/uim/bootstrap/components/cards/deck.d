@@ -8,7 +8,7 @@ class DBS4CardDeck : DBS4Obj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4CardDeck");
+mixin(BS4Short!"CardDeck");
 
 unittest {
 	

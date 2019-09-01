@@ -11,7 +11,7 @@ class DBS4Pagination : DBS4Obj {
 	O right(this O)(string aSize) { return this.classes("justify-content-end"); }
 	O size(this O)(string aSize) { return this.classes("pagination-"~aSize); }
 }
-mixin(H5Short!"BS4Pagination");
+mixin(BS4Short!"Pagination");
 
 unittest {
 	

@@ -11,7 +11,7 @@ class DBS4CardImage : DBS4Obj { // default top
 
 	O position(this O)(string value) { _classes.del("card-img-top"); _classes.add("card-img-"~value); return cast(O)this; }
 }
-mixin(H5Short!"BS4CardImage");
+mixin(BS4Short!"CardImage");
 
 unittest {
 	

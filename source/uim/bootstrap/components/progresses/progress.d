@@ -8,7 +8,7 @@ class DBS4Progress : DBS4Obj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4Progress");
+mixin(BS4Short!"Progress");
 
 unittest {
 	assert(BS4Progress == `<div class="progress"></div>`);

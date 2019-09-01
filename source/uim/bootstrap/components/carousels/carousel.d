@@ -8,7 +8,7 @@ class DBS4Carousel : DBS4Obj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4Carousel");
+mixin(BS4Short!"Carousel");
 
 unittest {
 	writeln(BS4Carousel);

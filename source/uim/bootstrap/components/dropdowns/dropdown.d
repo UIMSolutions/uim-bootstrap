@@ -10,7 +10,7 @@ class DBS4Dropdown : DBS4Obj {
 	mixin(MyContent!("menu", "BS4DropdownMenu"));
 	mixin(MyContent!("toggleLink", "BS4ToggleLink"));
 }
-mixin(H5Short!"BS4Dropdown");
+mixin(BS4Short!"Dropdown");
 
 unittest {
 	

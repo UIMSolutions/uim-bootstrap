@@ -9,7 +9,7 @@ class DBS4ButtonLink : DBS4ButtonObj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4ButtonLink");
+mixin(BS4Short!"ButtonLink");
 
 unittest {
 	

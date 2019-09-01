@@ -11,7 +11,7 @@ class DBS4NavbarToggler : DBS4ButtonObj {
 	O position(this O)(string value) { return this.classes("navbar-toggler-"~position); }
 	O target(this O)(string targetId) { return attributes(["data-target":"#"~targetId]); }
 }
-mixin(H5Short!"BS4NavbarToggler");
+mixin(BS4Short!"NavbarToggler");
 
 unittest {
 	

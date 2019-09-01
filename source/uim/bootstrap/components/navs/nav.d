@@ -9,7 +9,7 @@ class DBS4Nav : DBS4Obj {
 	}
 	mixin(MyContent!("link", "BS4NavLink"));
 }
-mixin(H5Short!"BS4Nav");
+mixin(BS4Short!"Nav");
 
 unittest {
 	

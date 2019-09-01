@@ -10,7 +10,7 @@ class DBS4ButtonToolbar : DBS4Obj {
 	mixin(MyAttribute!("label", "aria-label"));
 	mixin(MyContent!("group", "BS4ButtonGroup"));
 }
-mixin(H5Short!"BS4ButtonToolbar");
+mixin(BS4Short!"ButtonToolbar");
 
 unittest {
 	

@@ -13,7 +13,7 @@ class DBS4Obj : DH5Obj {
 
 	O radius(this O)(string value = "") { this.classes.add("rounded"~((value.length > 0) ? "-"~value:"")); return cast(O)this; }
 }
-mixin(H5Short!"BS4Obj");
+mixin(BS4Short!"Obj");
 
 unittest {
 	assert(BS4Obj == "<div></div>");

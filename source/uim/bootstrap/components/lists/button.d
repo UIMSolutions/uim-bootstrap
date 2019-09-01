@@ -12,7 +12,7 @@ class DBS4ListGroupButton : DBS4Obj {
 
 	O color(this O)(string aColor) { this.classes("list-group-item-"~aColor); return cast(O)this; }
 }
-mixin(H5Short!"BS4ListGroupButton");
+mixin(BS4Short!"ListGroupButton");
 
 unittest {
 	

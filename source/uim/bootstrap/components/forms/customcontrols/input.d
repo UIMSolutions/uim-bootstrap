@@ -13,7 +13,7 @@ class DBS4CustomInput : DBS4Obj {
 	}
 
 }
-mixin(H5Short!"BS4CustomInput");
+mixin(BS4Short!"CustomInput");
 
 unittest {
 }

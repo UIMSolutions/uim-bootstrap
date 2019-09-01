@@ -8,7 +8,7 @@ class DBS4Media : DBS4Obj {
 		super.init;
 	}	
 }
-mixin(H5Short!"BS4Media");
+mixin(BS4Short!"Media");
 
 unittest {
 	

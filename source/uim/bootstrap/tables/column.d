@@ -21,7 +21,7 @@ class DBS4TableColumn : DBS4Obj {
 		return super.toHTML;
 	}
 }
-mixin(H5Short!"BS4TableColumn");
+mixin(BS4Short!"TableColumn");
 
 unittest {
 	

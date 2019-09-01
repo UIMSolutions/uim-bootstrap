@@ -9,7 +9,7 @@ class DBS4ListGroupUL : DBS4Obj {
 	}
 	mixin(MyContent!("item", "BS4ListGroupItem"));
 }
-mixin(H5Short!"BS4ListGroupUL");
+mixin(BS4Short!"ListGroupUL");
 
 unittest {
 	

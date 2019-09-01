@@ -11,7 +11,7 @@ class DBS4ListGroupLink : DBS4Obj {
 	O disabled(this O)(bool value = true) { return this.classes("disabled"); }
 	O color(this O)(string aColor) { return this.classes("list-group-item-"~aColor); }
 }
-mixin(H5Short!"BS4ListGroupLink");
+mixin(BS4Short!"ListGroupLink");
 
 unittest {
 	

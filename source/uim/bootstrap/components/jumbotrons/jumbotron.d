@@ -11,7 +11,7 @@ class DBS4Jumbotron : DBS4Obj {
 		assert(BS4Jumbotron == `<div class="jumbotron"></div>`);
 	}
 }
-mixin(H5Short!"BS4Jumbotron");
+mixin(BS4Short!"Jumbotron");
 
 unittest {
 }

@@ -9,5 +9,5 @@ class DBS4CardBlockquote : DBS4Obj {
 		assert(BS4CardBlockquote == `<blockquote class="card-blockquote"></blockquote>`);
 	}
 }
-mixin(H5Short!"BS4CardBlockquote");
+mixin(BS4Short!"CardBlockquote");
 

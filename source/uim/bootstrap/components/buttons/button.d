@@ -8,7 +8,7 @@ class DBS4Button : DBS4ButtonObj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4Button");
+mixin(BS4Short!"Button");
 
 unittest {
 	assert(BS4Button == `<button class="btn" type="button"></button>`);

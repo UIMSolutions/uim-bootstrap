@@ -9,7 +9,7 @@ class DBS4CardSubtitle : DBS4Obj {
 		_tag = "h6";
 	}
 }
-mixin(H5Short!"BS4CardSubtitle");
+mixin(BS4Short!"CardSubtitle");
 
 unittest {
 	

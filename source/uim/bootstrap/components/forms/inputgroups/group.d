@@ -16,7 +16,7 @@ class DBS4InputGroup : DBS4Obj {
 		assert(BS4InputGroup.size("sm") == `<div class="input-group input-group-sm"></div>`);
 	}
 }
-mixin(H5Short!"BS4InputGroup");
+mixin(BS4Short!"InputGroup");
 
 unittest {
 }

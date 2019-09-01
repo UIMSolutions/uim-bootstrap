@@ -9,7 +9,7 @@ class DBS4ModalContent : DBS4Obj {
 	}
 	O fade(this O)(bool mode = true) { return this.classes("fade"); }
 }
-mixin(H5Short!"BS4ModalContent");
+mixin(BS4Short!"ModalContent");
 
 unittest {
 	

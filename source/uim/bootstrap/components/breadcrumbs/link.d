@@ -29,7 +29,7 @@ class DBS4BreadcrumbLink : DBS4Obj {
 		return super.toHTML;
 	}
 }
-mixin(H5Short!"BS4BreadcrumbLink");
+mixin(BS4Short!"BreadcrumbLink");
 
 unittest {
 }

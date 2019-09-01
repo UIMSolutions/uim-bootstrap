@@ -10,7 +10,7 @@ class DBS4InputGroupAppend : DBS4Obj {
 
 	mixin(MyContent!("text", "BS4InputGroupText"));
 }
-mixin(H5Short!"BS4InputGroupAppend");
+mixin(BS4Short!"InputGroupAppend");
 
 unittest {
 	

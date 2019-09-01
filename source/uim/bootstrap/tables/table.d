@@ -10,7 +10,7 @@ class DBS4Table : DBS4Obj {
 
 	mixin(MyContent!("row", "BS4Table"));
 }
-mixin(H5Short!"BS4Table");
+mixin(BS4Short!"Table");
 
 unittest {
 	

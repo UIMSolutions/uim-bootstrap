@@ -12,7 +12,7 @@ class DBS4FormCheckInput : DBS4Obj {
 		assert(BS4FormCheckInput == `<input class="form-check-input">`);
 	}
 }
-mixin(H5Short!"BS4FormCheckInput");
+mixin(BS4Short!"FormCheckInput");
 
 unittest {
 }

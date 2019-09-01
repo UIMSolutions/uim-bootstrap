@@ -11,4 +11,4 @@ class DBS4CardColumns : DBS4Obj {
 		assert(BS4CardColumns == `<div class="card-columns"></div>`);
 	}
 }
-mixin(H5Short!"BS4CardColumns");
+mixin(BS4Short!"CardColumns");

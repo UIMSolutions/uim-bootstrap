@@ -9,7 +9,7 @@ class DBS4CardText : DBS4Obj {
 		_tag = "p";
 	}
 }
-mixin(H5Short!"BS4CardText");
+mixin(BS4Short!"CardText");
 unittest {
 	
 	

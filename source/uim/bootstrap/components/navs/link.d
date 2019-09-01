@@ -12,7 +12,7 @@ class DBS4NavLink : DBS4Obj {
 	O dropdownToggle(this O)(bool mode = true) { classes("dropdown-toggle"); 
 		return attributes(["data-toggle":"dropdown", "role":"button", "aria-haspopup":"true", "aria-expanded":"false"]); }
 }
-mixin(H5Short!"BS4NavLink");
+mixin(BS4Short!"NavLink");
 
 unittest {
 	

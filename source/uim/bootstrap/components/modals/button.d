@@ -13,4 +13,4 @@ class DBS4ModalButton : DBS4Obj {
 		return cast(O)this;
 	}
 }
-mixin(H5Short!"BS4ModalButton");
+mixin(BS4Short!"ModalButton");

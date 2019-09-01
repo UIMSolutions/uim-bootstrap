@@ -9,7 +9,7 @@ class DBS4CardLink : DBS4Obj {
 		_tag = "a";
 	}
 }
-mixin(H5Short!"BS4CardLink");
+mixin(BS4Short!"CardLink");
 
 unittest {
 	

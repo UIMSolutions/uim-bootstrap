@@ -12,7 +12,7 @@ class DBS4CustomRadio : DBS4CustomControl {
 		assert(BS4CustomRadio == `<input class="custom-control-input" type="radio">`);
 	}
 }
-mixin(H5Short!"BS4CustomRadio");
+mixin(BS4Short!"CustomRadio");
 
 unittest {
 }

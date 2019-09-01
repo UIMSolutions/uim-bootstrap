@@ -8,7 +8,7 @@ class DBS4NavbarTogglerIcon : DBS4Obj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4NavbarTogglerIcon");
+mixin(BS4Short!"NavbarTogglerIcon");
 
 unittest {
 	

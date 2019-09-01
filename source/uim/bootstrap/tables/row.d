@@ -30,7 +30,7 @@ class DBS4TableRow : DBS4Obj {
 		return super.toHTML;
 	}
 } 
-mixin(H5Short!"BS4TableRow");
+mixin(BS4Short!"TableRow");
 
 unittest {
 	

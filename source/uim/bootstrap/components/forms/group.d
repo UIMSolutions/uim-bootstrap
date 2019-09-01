@@ -47,7 +47,7 @@ class DBS4Formgroup : DBS4Obj {
 
 
 }
-mixin(H5Short!"BS4Formgroup");
+mixin(BS4Short!"Formgroup");
 
 unittest {
 	

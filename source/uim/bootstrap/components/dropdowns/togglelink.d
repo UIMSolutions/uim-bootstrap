@@ -13,7 +13,7 @@ class DBS4Togglelink : DBS4ButtonLink {
 		assert(BS4Togglelink.id("id") == `<a id="id" class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></a>`);
 	}
 }
-mixin(H5Short!"BS4Togglelink");
+mixin(BS4Short!"Togglelink");
 
 unittest {
 }

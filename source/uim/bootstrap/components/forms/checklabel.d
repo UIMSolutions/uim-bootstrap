@@ -11,7 +11,7 @@ class DBS4FormCheckLabel : DBS4Obj {
 		assert(BS4FormCheckLabel == `<label class="form-check-label"></label>`);
 	}
 }
-mixin(H5Short!"BS4FormCheckLabel");
+mixin(BS4Short!"FormCheckLabel");
 
 unittest {
 }

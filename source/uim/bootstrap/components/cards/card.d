@@ -14,7 +14,7 @@ class DBS4Card : DBS4Obj {
 	mixin(MyContent!("image", "BS4CardImage"));
 	mixin(MyContent!("bdy", "BS4CardBody"));
 }
-mixin(H5Short!"BS4Card");
+mixin(BS4Short!"Card");
 
 unittest {
 	

@@ -9,7 +9,7 @@ class DBS4TabContent : DBS4Obj {
 	}	
 	mixin(MyContent!("pane", "BS4TabPane"));
 }
-mixin(H5Short!"BS4TabContent");
+mixin(BS4Short!"TabContent");
 
 unittest {
 	

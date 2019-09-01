@@ -8,7 +8,7 @@ class DBS4CustomCheckbox : DBS4CustomControl {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4CustomCheckbox");
+mixin(BS4Short!"CustomCheckbox");
 
 unittest {
 	

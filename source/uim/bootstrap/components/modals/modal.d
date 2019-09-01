@@ -16,5 +16,5 @@ class DBS4Modal : DBS4Obj {
 		assert(BS4Modal.fade == `<div class="fade modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);	
 	}
 }
-mixin(H5Short!"BS4Modal");
+mixin(BS4Short!"Modal");
 

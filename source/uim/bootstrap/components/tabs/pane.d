@@ -21,7 +21,7 @@ class DBS4TabPane : DBS4Obj {
 		assert(BS4TabPane.fade == `<div class="fade tab-pane" aria-expanded="false" role="tabpanel"></div>`);
 	}
 }
-mixin(H5Short!"BS4TabPane");
+mixin(BS4Short!"TabPane");
 
 unittest {
 }

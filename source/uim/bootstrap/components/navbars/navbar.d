@@ -23,7 +23,7 @@ class DBS4Navbar : DBS4Obj {
 		assert(BS4Navbar.expand("lg") == `<nav class="navbar navbar-expand-lg"></nav>`);
 	}
 }
-mixin(H5Short!"BS4Navbar");
+mixin(BS4Short!"Navbar");
 
 unittest {
 	

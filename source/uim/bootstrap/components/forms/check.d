@@ -13,7 +13,7 @@ class DBS4FormCheck : DBS4Obj {
 
 	mixin(MyContent!("label", "BS4FormCheckLabel"));
 }
-mixin(H5Short!"BS4FormCheck");
+mixin(BS4Short!"FormCheck");
 
 unittest {
 	

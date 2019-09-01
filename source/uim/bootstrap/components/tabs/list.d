@@ -16,7 +16,7 @@ class DBS4TabList : DBS4Obj {
 	O fill(this O)(bool mode = true) { return this.classes("nav-fill"); }
 	O justified(this O)(bool mode = true) { return this.classes("nav-justified"); }
 }
-mixin(H5Short!"BS4TabList");
+mixin(BS4Short!"TabList");
 
 unittest {
 	

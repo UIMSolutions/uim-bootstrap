@@ -8,7 +8,7 @@ class DBS4ModalBody : DBS4Obj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4ModalBody");
+mixin(BS4Short!"ModalBody");
 
 unittest {
 	

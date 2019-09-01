@@ -18,4 +18,4 @@ class DBS4CardBody : DBS4Obj {
 		assert(BS4CardBody.text("Hallo") == `<div class="card-body"><p class="card-text">Hallo</p></div>`);
 	}
 }
-mixin(H5Short!"BS4CardBody");
+mixin(BS4Short!"CardBody");

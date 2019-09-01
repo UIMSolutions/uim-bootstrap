@@ -9,7 +9,7 @@ class DBS4InputGroupPrepend : DBS4Obj {
 	}
 	mixin(MyContent!("text", "BS4InputGroupText"));
 }
-mixin(H5Short!"BS4InputGroupPrepend");
+mixin(BS4Short!"InputGroupPrepend");
 
 unittest {
 	

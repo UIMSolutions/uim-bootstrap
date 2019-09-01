@@ -3,12 +3,12 @@
 import uim.bootstrap;
 
 class DBS4NavbarNav : DBS4Obj {
-	mixin(H5This!("UL", `["navbar-nav"]`));
+	mixin(H5This!("Ul", `["navbar-nav"]`));
 	override public void init() {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4NavbarNav");
+mixin(BS4Short!"NavbarNav");
 
 unittest {
 	assert(BS4NavbarNav == `<ul class="navbar-nav"></ul>`);

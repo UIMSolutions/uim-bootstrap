@@ -9,4 +9,4 @@ class DBS4CustomControl : DBS4Obj {
 		assert(BS4CustomControl == `<div class="custom-control"></div>`);
 	}
 }
-mixin(H5Short!"BS4CustomControl");
+mixin(BS4Short!"CustomControl");

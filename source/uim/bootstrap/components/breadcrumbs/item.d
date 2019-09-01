@@ -11,7 +11,7 @@ class DBS4BreadcrumbItem : DBS4Obj {
 	mixin(MyClassAttribute!("active"));
 	mixin(MyClassAttribute!("disabled"));
 }
-mixin(H5Short!"BS4BreadcrumbItem");
+mixin(BS4Short!"BreadcrumbItem");
 
 unittest {
 	

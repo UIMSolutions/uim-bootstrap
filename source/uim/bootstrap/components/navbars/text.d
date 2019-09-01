@@ -8,7 +8,7 @@ class DBS4NavbarText : DBS4Obj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4NavbarText");
+mixin(BS4Short!"NavbarText");
 
 unittest {
 	

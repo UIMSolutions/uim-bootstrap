@@ -22,7 +22,7 @@ class DBS4Breadcrumb : DBS4Obj {
 		return super.toHTML;
 	}
 }
-mixin(H5Short!"BS4Breadcrumb");
+mixin(BS4Short!"Breadcrumb");
 
 unittest {
 	

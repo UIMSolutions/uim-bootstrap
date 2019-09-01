@@ -9,4 +9,4 @@ class DBS4CardBlock : DBS4Obj {
 		assert(BS4CardBlock == `<div class="card-block"></div>`);
 	}
 }
-mixin(H5Short!"BS4CardBlock");
+mixin(BS4Short!"CardBlock");

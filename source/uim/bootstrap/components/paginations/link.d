@@ -8,7 +8,7 @@ class DBS4PageLink : DBS4Obj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4PageLink");
+mixin(BS4Short!"PageLink");
 
 unittest {
 	

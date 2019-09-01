@@ -12,7 +12,7 @@ class DBS4PageItem : DBS4Obj {
 	O active(this O)(bool value = true) { _classes.add("active"); return cast(O)this; }
 	O disabled(this O)(bool value = true) { _classes.add("disabled"); _attributes["tabindex"] = "-1"; return cast(O)this; }
 }
-mixin(H5Short!"BS4PageItem");
+mixin(BS4Short!"PageItem");
 
 unittest {
 	

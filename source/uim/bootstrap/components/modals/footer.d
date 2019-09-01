@@ -8,7 +8,7 @@ class DBS4ModalFooter : DBS4Obj {
 		super.init;
 	}
 }
-mixin(H5Short!"BS4ModalFooter");
+mixin(BS4Short!"ModalFooter");
 
 unittest {
 	

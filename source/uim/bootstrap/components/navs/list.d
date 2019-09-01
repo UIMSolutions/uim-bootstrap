@@ -14,7 +14,7 @@ class DBS4NavList : DBS4Obj {
 	O fill(this O)(bool mode = true) { return this.classes("nav-fill"); }
 	O justified(this O)(bool mode = true) { return this.classes("nav-justified"); }
 }
-mixin(H5Short!"BS4NavList");
+mixin(BS4Short!"NavList");
 
 unittest {
 	

@@ -11,7 +11,7 @@ class DBS4DropdownMenu : DBS4Obj {
 	mixin(MyContent!("header", "BS4DropdownHeader"));
 	mixin(MyContent!("item", "BS4DropdownItem"));
 }
-mixin(H5Short!"BS4DropdownMenu");
+mixin(BS4Short!"DropdownMenu");
 
 unittest {
 	
