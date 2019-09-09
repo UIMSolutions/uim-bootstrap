@@ -138,7 +138,7 @@ class DBS4 : DH5
     mixin(BS4Def!"modal");
     unittest
     {
-        assert(BS4.modal == `<div class="modal" role="dialog" tabindex="-1"></div>`);
+        assert(BS4.modal == `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
     }
 
     mixin(BS4Def!"modalBody");
@@ -174,7 +174,7 @@ class DBS4 : DH5
     mixin(BS4Def!"nav");
     unittest
     {
-        assert(BS4.nav == "<nav></nav>");
+        assert(BS4.nav == `<ul class="nav"></ul>`);
     }
 
     mixin(BS4Def!"navbar");
@@ -186,7 +186,7 @@ class DBS4 : DH5
     mixin(BS4Def!"pagination");
     unittest
     {
-        assert(BS4.pagination == `<nav aria-label="Page navigation"><ul class="pagination"></ul></nav>`);
+        assert(BS4.pagination == `<ul class="pagination"></ul>`);
     }
 
     mixin(BS4Def!"pageItem");
