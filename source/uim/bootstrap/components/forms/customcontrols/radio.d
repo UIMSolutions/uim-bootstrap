@@ -4,11 +4,10 @@ import uim.bootstrap;
 
 class DBS4CustomRadio : DBS4CustomControl {
 	mixin(H5This!("INPUT", `["custom-control-input"]`, `["type":"radio"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	unittest {
-		writeln(BS4CustomRadio);
 		assert(BS4CustomRadio == `<input class="custom-control-input" type="radio">`);
 	}
 }

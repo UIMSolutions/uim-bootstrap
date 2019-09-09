@@ -2,10 +2,10 @@
 
 import uim.bootstrap;
 
-class DBS4Formgroup : DBS4Obj {
+class DBS4FormGroup : DBS4Obj {
 	mixin(H5This!("DIV", `["form-group"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 
 	mixin(MyAttribute!("readOnly", "readonly"));
@@ -44,13 +44,9 @@ class DBS4Formgroup : DBS4Obj {
 	mixin(MyContent!("inputTime", "BS4InputTime"));
 	mixin(MyContent!("inputUrl", "BS4InputUrl"));
 	mixin(MyContent!("inputWeek", "BS4InputWeek"));
-
-
 }
-mixin(BS4Short!"Formgroup");
+mixin(BS4Short!"FormGroup");
 
 unittest {
-	
-	
-	assert(BS4Formgroup == `<div class="form-group"></div>`);
+	assert(BS4FormGroup == `<div class="form-group"></div>`);
 }

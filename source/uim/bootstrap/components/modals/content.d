@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4ModalContent : DBS4Obj {
 	mixin(H5This!("DIV", `["modal-content"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	O fade(this O)(bool mode = true) { return this.classes("fade"); }
 }

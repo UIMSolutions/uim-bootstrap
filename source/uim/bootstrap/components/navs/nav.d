@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4Nav : DBS4Obj {
 	mixin(H5This!("nav", `["nav"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	mixin(MyContent!("link", "BS4NavLink"));
 }

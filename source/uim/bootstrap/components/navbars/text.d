@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4NavbarText : DBS4Obj {
 	mixin(H5This!("SPAN", `["navbar-text"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 }
 mixin(BS4Short!"NavbarText");

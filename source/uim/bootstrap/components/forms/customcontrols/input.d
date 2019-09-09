@@ -4,11 +4,10 @@ import uim.bootstrap;
 
 class DBS4CustomInput : DBS4Obj {
 	mixin(H5This!("INPUT", `["custom-control-input"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	unittest {
-		writeln(BS4CustomInput);
 		assert(BS4CustomInput == `<input class="custom-control-input">`);
 	}
 

@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4ModalBody : DBS4Obj {
 	mixin(H5This!("H5", `["modal-body"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 }
 mixin(BS4Short!"ModalBody");

@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4ModalHeader : DBS4Obj {
 	mixin(H5This!("DIV", `["modal-header"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 }
 mixin(BS4Short!"ModalHeader");

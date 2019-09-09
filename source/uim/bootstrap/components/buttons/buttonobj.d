@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4ButtonObj : DBS4Obj {
 	mixin(H5This!("BUTTON", null, `["type":"button"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 
 	mixin(MyAttribute!("buttonType", "type"));

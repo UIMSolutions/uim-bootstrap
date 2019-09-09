@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4ButtonToolbar : DBS4Obj {
 	mixin(H5This!("DIV", `["btn-toolbar"]`, `["role":"toolbar"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	mixin(MyAttribute!("label", "aria-label"));
 	mixin(MyContent!("group", "BS4ButtonGroup"));

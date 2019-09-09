@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4NavLink : DBS4Obj {
 	mixin(H5This!("A", `["nav-link"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	O active(this O)(bool value = true) { return this.classes("active"); }
 	O disabled(this O)(bool value = true) { return this.classes("disabled"); }

@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4Dropdown : DBS4Obj {
 	mixin(H5This!("DIV", `["dropdown"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}	
 	mixin(MyContent!("menu", "BS4DropdownMenu"));
 	mixin(MyContent!("toggleLink", "BS4ToggleLink"));

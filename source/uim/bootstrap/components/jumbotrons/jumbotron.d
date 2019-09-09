@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4Jumbotron : DBS4Obj {
 	mixin(H5This!("Div", `["jumbotron"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	unittest {
 		assert(BS4Jumbotron == `<div class="jumbotron"></div>`);

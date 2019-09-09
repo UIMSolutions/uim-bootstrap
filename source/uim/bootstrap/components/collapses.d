@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4Collapse : DBS4Obj {
 	mixin(H5This!("DIV", `["collapse"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 }
 mixin(BS4Short!"Collapse");

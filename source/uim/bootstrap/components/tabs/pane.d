@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4TabPane : DBS4Obj {
 	mixin(H5This!("DIV", `["tab-pane"]`, `["role":"tabpanel", "aria-expanded":"false"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	unittest {
 		assert(BS4TabPane == `<div class="tab-pane" aria-expanded="false" role="tabpanel"></div>`);

@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4ModalTitle : DBS4Obj {
 	mixin(H5This!("H5", `["modal-title"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 }
 mixin(BS4Short!"ModalTitle");

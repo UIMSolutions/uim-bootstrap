@@ -4,7 +4,7 @@ import uim.bootstrap;
 
 class DBS4CustomControl : DBS4Obj {
 	mixin(H5This!("DIV", `["custom-control"]`));
-	override public void init() { super.init; }
+	override public void _init() { super._init; }
 	unittest {
 		assert(BS4CustomControl == `<div class="custom-control"></div>`);
 	}

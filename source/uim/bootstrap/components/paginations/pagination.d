@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4Pagination : DBS4Obj {
 	mixin(H5This!("UL", `["pagination"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	O center(this O)(string aSize) { return this.classes("justify-content-centers"); }
 	O right(this O)(string aSize) { return this.classes("justify-content-end"); }

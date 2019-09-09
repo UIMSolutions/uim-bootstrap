@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4CardSubtitle : DBS4Obj {
 	mixin(H5This!("H6", `["card-subtitle"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 		_tag = "h6";
 	}
 }

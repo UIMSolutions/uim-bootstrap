@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4FormCheck : DBS4Obj {
 	mixin(H5This!("DIV", `["form-check"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	mixin(TProperty!("string", "forId"));
 

@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4Progressbar : DBS4Obj {
 	mixin(H5This!("div", `["progress-bar"]`, `["role":"progressbar"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	O valueNow(this O)(string value) { return this.attributes(["aria-valuenow":value]); }
 	O valueMin(this O)(string value) { return this.attributes(["aria-valuemin":value]); }

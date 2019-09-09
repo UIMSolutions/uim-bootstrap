@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4ListGroupLink : DBS4Obj {
 	mixin(H5This!("A", `["list-group-item list-group-item-action"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	O active(this O)(bool value = true) { return this.classes("active"); }
 	O disabled(this O)(bool value = true) { return this.classes("disabled"); }

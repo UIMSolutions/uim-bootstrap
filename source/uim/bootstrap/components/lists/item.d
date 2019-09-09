@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4ListGroupItem : DBS4Obj {
 	mixin(H5This!("LI", `["list-group-item"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	O color(this O)(string aColor) { this.classes("list-group-item-"~aColor); return cast(O)this; }
 }

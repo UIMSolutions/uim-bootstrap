@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4InputGroupText : DBS4Obj {
 	mixin(H5This!("DIV", `["input-group-text"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 }
 mixin(BS4Short!"InputGroupText");

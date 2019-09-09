@@ -14,9 +14,9 @@ class DBS4Container : DH5Div {
 		assert(BS4Container == `<div class="container"></div>`);
 	}
 
-	O fluid(this O)(bool mode = true) { if (mode) {_classes.sub("container"); return this.classes("container-fluid"); } return cast(O)this; }
+	O fluid(this O)(bool mode) { if (mode) {_classes.sub("container"); return this.classes("container-fluid"); } return cast(O)this; }
 	unittest {
-		assert(BS4Container == `<div class="container-fluid"></div>`);
+		assert(BS4Container.fluid(true) == `<div class="container-fluid"></div>`);
 	}
 
 	mixin(MyContent!("row", "BS4Row"));

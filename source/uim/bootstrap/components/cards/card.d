@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4Card : DBS4Obj {
 	mixin(H5This!("DIV", `["card"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 
 	O block(this O)() { return this.classes("card-block"); }

@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4InputGroup : DBS4Obj {
 	mixin(H5This!("DIV", `["input-group"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	unittest {
 		assert(BS4InputGroup == `<div class="input-group"></div>`);

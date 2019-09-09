@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4NavList : DBS4Obj {
 	mixin(H5This!("UL", `["nav"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	mixin(MyContent!("item", "BS4NavItem"));
 	O vertical(this O)(bool mode = true) { return this.classes("flex-column"); }

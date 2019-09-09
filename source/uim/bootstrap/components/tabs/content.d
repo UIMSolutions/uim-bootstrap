@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4TabContent : DBS4Obj {
 	mixin(H5This!("DIV", `["tab-content"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}	
 	mixin(MyContent!("pane", "BS4TabPane"));
 }

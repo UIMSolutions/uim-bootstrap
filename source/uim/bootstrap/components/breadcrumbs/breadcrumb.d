@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4Breadcrumb : DBS4Obj {
 	mixin(H5This!("NAV", null, `["aria-label":"breadcrumb"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 
 	mixin(MyContent!("item", "BS4BreadcrumbItem"));

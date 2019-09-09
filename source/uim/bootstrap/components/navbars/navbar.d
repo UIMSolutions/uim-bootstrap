@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4Navbar : DBS4Obj {
 	mixin(H5This!("NAV", `["navbar"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 
 	O light(this O)(bool value = true) { return this.classes("navbar-light"); }
@@ -26,8 +26,5 @@ class DBS4Navbar : DBS4Obj {
 mixin(BS4Short!"Navbar");
 
 unittest {
-	
-	
-	writeln(BS4Navbar);
 	assert(BS4Navbar == `<nav class="navbar"></nav>`);
 }

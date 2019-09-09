@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4NavbarNav : DBS4Obj {
 	mixin(H5This!("Ul", `["navbar-nav"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 }
 mixin(BS4Short!"NavbarNav");

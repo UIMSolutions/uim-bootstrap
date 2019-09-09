@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4NavItem : DBS4Obj {
 	mixin(H5This!("LI", `["nav-item"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	O dropdown(this O)(bool mode = true) { return this.classes("dropdown"); }
 	mixin(MyContent!("link", "BS4NavLink"));

@@ -4,8 +4,8 @@ import uim.bootstrap;
 
 class DBS4ModalDialog : DBS4Obj {
 	mixin(H5This!("div", `["modal-dialog"]`, `["role":"document"]`));
-	override public void init() {
-		super.init;
+	override public void _init() {
+		super._init;
 	}
 	unittest {
 		assert(BS4ModalDialog == `<div class="modal-dialog" role="document"></div>`);
