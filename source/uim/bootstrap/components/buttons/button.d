@@ -9,10 +9,10 @@ class DBS4Button : DBS4ButtonObj {
 	}
 
 	// Set button to active state
-	O active(this O)(bool mode = true){ if (mode) this.classes("active"); return cast(O)this; }
+	O active(this O)(bool mode = true){ if (mode) _classes ~= "active"; return cast(O)this; }
 	unittest
 	{
-			assert(BS4Button.active(true) == `<button class="btn active" type="button"></button>`);
+			assert(BS4Button.active(true) == `<button class="active btn" type="button"></button>`);
 	}
 
 	O block(this O)(bool mode = true){ if (mode) this.classes("btn-block"); return cast(O)this; }

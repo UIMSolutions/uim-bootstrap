@@ -6,9 +6,9 @@ class DBS4FormCheckInput : DBS4Obj {
 	mixin(H5This!("input", `["form-check-input"]`));
 	override public void _init() {
 		super._init;
+		_single = true;
 	}
 	unittest {
-		writeln(BS4FormCheckInput);
 		assert(BS4FormCheckInput == `<input class="form-check-input">`);
 	}
 }

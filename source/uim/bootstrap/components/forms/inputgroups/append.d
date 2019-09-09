@@ -13,7 +13,5 @@ class DBS4InputGroupAppend : DBS4Obj {
 mixin(BS4Short!"InputGroupAppend");
 
 unittest {
-	
-	
 	assert(BS4InputGroupAppend == `<div class="input-group-append"></div>`);
 }

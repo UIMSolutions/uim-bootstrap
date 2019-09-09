@@ -36,13 +36,13 @@ class DBS4 : DH5
     mixin(BS4Def!"buttonGroup");
     unittest
     {
-        assert(BS4.buttonGroup == `<div class="btn-group"></div>`);
+        assert(BS4.buttonGroup == `<div class="btn-group" role="group"></div>`);
     }
 
     mixin(BS4Def!"card");
     unittest
     {
-        assert(BS4.card == `<div class="card"></card>`);
+        assert(BS4.card == `<div class="card"></div>`);
     }
 
     mixin(BS4Def!"cardBlock");
@@ -72,7 +72,7 @@ class DBS4 : DH5
     mixin(BS4Def!"cardLink");
     unittest
     {
-        assert(BS4.cardLink == `<a href="#" class="card-link"></a>`);
+        assert(BS4.cardLink == `<a class="card-link" href="#"></a>`);
     }
 
     mixin(BS4Def!"cardText");

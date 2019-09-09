@@ -2,16 +2,17 @@
 
 import uim.bootstrap;
 
-class DBS4CustomRadio : DBS4CustomControl {
-	mixin(H5This!("INPUT", `["custom-control-input"]`, `["type":"radio"]`));
-	override public void _init() {
-		super._init;
-	}
-	unittest {
-		assert(BS4CustomRadio == `<input class="custom-control-input" type="radio">`);
+class DBS4CustomRadio : DBS4CustomControl
+{
+	mixin(H5This!("DIV", `["custom-control", "custom-radio"]`));
+	unittest
+	{
+		assert(BS4CustomRadio == `<div class="custom-control custom-radio"></div>`);
 	}
 }
+
 mixin(BS4Short!"CustomRadio");
 
-unittest {
+unittest
+{
 }

@@ -2,19 +2,75 @@
 
 import uim.bootstrap;
 
-class DBS4Obj : DH5Obj {
+class DBS4Obj : DH5Obj
+{
 	mixin(H5This!("DIV"));
 
-	O margin(this O)(string value) { this.classes.add("m"~((value.length > 0) ? "-"~value:"")); return cast(O)this; }
-	O padding(this O)(string value) { this.classes.add("p"~((value.length > 0) ? "-"~value:"")); return cast(O)this; }
+	// Adding a margin  
+	O margin(this O)(string value)
+	{
+		if (value.length > 0)
+			_classes ~= "m" ~ value;
+		return cast(O) this;
+	}
 
-	O border(this O)(string value = "") { this.classes.add("border"~((value.length > 0) ? "-"~value:"")); return cast(O)this; }
-	O borderContext(this O)(string value) { this.classes.add("border-"~context); return cast(O)this; }
+	unittest
+	{
+		assert(BS4Obj.margin("t-2") == `<div class="mt-2"></div>`);
+	}
 
-	O radius(this O)(string value = "") { this.classes.add("rounded"~((value.length > 0) ? "-"~value:"")); return cast(O)this; }
+	// Adding padding
+	O padding(this O)(string value)
+	{
+		if (value.length > 0)
+			_classes ~= "p" ~ value;
+		return cast(O) this;
+	}
+
+	unittest
+	{
+		assert(BS4Obj.padding("t-2") == `<div class="pt-2"></div>`);
+	}
+
+	// Setting border 
+	O border(this O)(string value = "")
+	{
+		if (value.length > 0)
+			_classes ~= "border-" ~ value;
+		return cast(O) this;
+	}
+
+	unittest
+	{
+		assert(BS4Obj.border("1") == `<div class="border-1"></div>`);
+	}
+
+	// Change radius of corners 
+	O radius(this O)(int value = 0)
+	{
+		if (value > 0)
+			_classes ~= "rounded-" ~ to!string(value);
+		return cast(O) this;
+	}
+
+	// Change radius of corners 
+	O radius(this O)(string value = "")
+	{
+		if (value.length > 0)
+			_classes ~= "rounded-" ~ value;
+		return cast(O) this;
+	}
+
+	unittest
+	{
+		assert(BS4Obj.radius(1) == `<div class="rounded-1"></div>`);
+		assert(BS4Obj.radius("1") == `<div class="rounded-1"></div>`);
+	}
 }
+
 mixin(BS4Short!"Obj");
 
-unittest {
+unittest
+{
 	assert(BS4Obj == "<div></div>");
 }
