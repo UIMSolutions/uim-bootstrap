@@ -8,8 +8,6 @@ class DBS4CardTitle : DH5H4 {
 mixin(BS4Func!"CardTitle");
 
 unittest {
-	
-	
 	assert(BS4CardTitle == `<h4 class="card-title"></h4>`);
 	assert(BS4CardTitle.content("SomeThing") == `<h4 class="card-title">SomeThing</h4>`);
 }

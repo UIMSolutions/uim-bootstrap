@@ -7,8 +7,8 @@ class DBS4CardColumns : DBS4Obj {
 	override public void _init() {
 		super._init;
 	}
-	unittest {
-		assert(BS4CardColumns == `<div class="card-columns"></div>`);
-	}
 }
 mixin(BS4Short!"CardColumns");
+unittest {
+	assert(BS4CardColumns == `<div class="card-columns"></div>`);
+}
