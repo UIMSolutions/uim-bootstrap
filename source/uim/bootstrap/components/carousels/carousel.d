@@ -9,10 +9,12 @@ class DBS4Carousel : DBS4Obj
 	{
 		super._init;
 	}
+	mixin(MyContent!("indicators", "DBS4CarouselIndicators"));
+	mixin(MyContent!("inner	", "DBS4CarouselInner"));
 }
 
 mixin(BS4Short!"Carousel");
-
+///
 unittest
 {
 }

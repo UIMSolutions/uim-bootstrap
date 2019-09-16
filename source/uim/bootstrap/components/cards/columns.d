@@ -2,10 +2,18 @@
 
 import uim.bootstrap;
 
+/// The .BS4CardColumns creates a masonry-like grid of cards (like pinterest)
 class DBS4CardColumns : DBS4Obj {
 	mixin(H5This!("DIV", `["card-columns"]`));
 	override public void _init() {
 		super._init;
+	}
+	/// Add card 
+	mixin(MyContent!("card", "BS4Card"));
+	///
+	unittest
+	{
+		assert(BS4CardDeck.card == `<div class="card-deck"><div class="card"></div></div>`);
 	}
 }
 mixin(BS4Short!"CardColumns");
