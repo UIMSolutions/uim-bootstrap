@@ -3,29 +3,23 @@ module uim.bootstrap.components.alerts.alert;
 import uim.bootstrap;
 
 ///Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
-class DBS4Alert : DH5Div
-{
-	mixin(BS4This!("Alert", `["alert"]`, `["role":"alert"]`));
+class DBS4Alert : DBS4Obj {
+	mixin(H5This!("Div", `["alert"]`, `["role":"alert"]`));
 
-	O color(this O)(string name)
-	{
+	O color(this O)(string name) {
 		return this.classes("alert-" ~ name);
 	}
-	unittest
-	{
+	unittest {
 		assert(BS4Alert.color("success") == `<div class="alert alert-success" role="alert"></div>`);
 	}
 
-	O link(this O)(string content, string url = "#")
-	{
+	O link(this O)(string content, string url = "#") {
 		this.content(`<a href="` ~ url ~ `" class="alert-link">` ~ content ~ `</a>`);
 		return cast(O) this;
 	}
 
-	O dismissible(this O)(bool show = true, string icon = "&times;")
-	{
-		if (show)
-		{
+	O dismissible(this O)(bool show = true, string icon = "&times;") {
+		if (show) 		{
 			this.content(`<button type="button" class="close" data-dismiss="alert">` ~ icon ~ `</button>`);
 			this.classes("alert-dismissible");
 		}
@@ -40,15 +34,13 @@ class DBS4Alert : DH5Div
 
 mixin(BS4Func!("Alert"));
 
-class DBS4AlertLink : DH5A
-{
-	mixin(BS4This!("AlertLink", `["alert-link"]`, `["href":"#"]`));
+class DBS4AlertLink : DBS4Obj {
+	mixin(H5This!("AlertLink", `["alert-link"]`, `["href":"#"]`));
 }
 
 mixin(BS4Func!("AlertLink"));
 
-unittest
-{
+unittest {
 	assert(BS4Alert == `<div class="alert" role="alert"></div>`);
 	assert(BS4Alert("anAlert") == `<div class="alert" role="alert">anAlert</div>`);
 }

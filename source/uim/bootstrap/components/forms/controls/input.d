@@ -2,12 +2,16 @@
 
 import uim.bootstrap; 
 
-class DBS4Input : DH5Input {
+class DBS4Input : DBS4Obj {
 	mixin(BS4This!("Input", `["form-control"]`));	
+	override void _init() {
+		super._init;
+		_single = true;
+	}
+
 }
 mixin(BS4Func!("Input"));
 
 unittest {
-	
 	
 }

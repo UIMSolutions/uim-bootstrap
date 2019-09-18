@@ -69,6 +69,8 @@ template BS4Func(string left, string right)
 	const char[] BS4Func = "
 	auto BS4" ~ left ~ "(string content) { return new DBS4"
 		~ right ~ "(content); }
+	auto BS4" ~ left ~ "(string anId, string content) { return new DBS4"
+		~ right ~ "(anId, content); }
 	auto BS4" ~ left ~ "(DH5Obj[] content...) { return new DBS4" ~ right
 		~ "(content); }
 
@@ -133,8 +135,8 @@ template BS4This(string bsName, string classes = null, string attributes = null)
 	const char[] strAttributes = (attributes) ? "_attributes.add(" ~ attributes ~ ");" : "";
 
 	const char[] BS4This = `
-	this(string content) { super(content); ` ~ strClasses
-		~ strAttributes ~ `}
+	this(string anId, string content) { super(anId, content); ` ~ strClasses ~ strAttributes ~ `}
+	this(string content) { super(content); ` ~ strClasses ~ strAttributes ~ `}
 	this(DH5Obj[] content...) { super(content); ` ~ strClasses ~ strAttributes ~ `}
 
 	this(string id, string[] someClasses) { super(id, someClasses); ` ~ strClasses

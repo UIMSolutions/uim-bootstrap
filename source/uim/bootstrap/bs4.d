@@ -9,21 +9,21 @@ class DBS4 : DH5
         super();
     }
 
+    /// Adding an alert component
     mixin(BS4Def!"alert");
-    unittest
-    {
+    unittest {
         assert(BS4.alert == `<div class="alert" role="alert"></div>`);
     }
 
+    /// Adding a badge component
     mixin(BS4Def!"badge");
-    unittest
-    {
+    unittest {
         assert(BS4.badge == `<span class="badge"></span>`);
     }
 
+    /// Adding a breadcrumb
     mixin(BS4Def!"breadcrumb");
-    unittest
-    {
+    unittest {
         assert(BS4.breadcrumb == `<nav aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>`);
     }
 

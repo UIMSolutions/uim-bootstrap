@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4TableColumn : DBS4Obj {
-	mixin(H5This!"TH");
+	mixin(H5This!"th");
 	override public void _init() {
 		super._init;
 	}
@@ -24,8 +24,6 @@ class DBS4TableColumn : DBS4Obj {
 mixin(BS4Short!"TableColumn");
 
 unittest {
-	
-
 	assert(BS4TableColumn == `<th scope="col"></th>`);
 	assert(BS4TableColumn.title("xyz") == `<th scope="col">xyz</th>`);
 }

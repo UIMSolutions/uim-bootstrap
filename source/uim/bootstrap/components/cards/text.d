@@ -10,6 +10,7 @@ class DBS4CardText : DBS4Obj {
 	}
 }
 mixin(BS4Short!"CardText");
+///
 unittest {
 	assert(BS4CardText == `<p class="card-text"></p>`);
 	assert(BS4CardText.content("SomeThing") == `<p class="card-text">SomeThing</p>`);
