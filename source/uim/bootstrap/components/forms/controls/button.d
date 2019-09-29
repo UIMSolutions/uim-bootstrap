@@ -2,12 +2,15 @@
 
 import uim.bootstrap; 
 
-class DBS4InputButton : DBS4Input {
-	mixin(BS4This!("InputButton", `["form-control"]`, `["type":"button"]`));	
+class DBS4InputButton : DBS4Obj {
+	mixin(H5This!("Input", `["form-control"]`, `["type":"button"]`));
+	override public void _init() {
+		super._init;
+		_single = true;
+	}
 }
 mixin(BS4Func!("InputButton"));
-
+///
 unittest {
-	
-	
+		assert(BS4InputButton == `<input class="form-control" type="button">`);
 }

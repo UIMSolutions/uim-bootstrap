@@ -4,9 +4,6 @@ import uim.bootstrap;
 
 class DBS4Form : DBS4Obj {
 	mixin(H5This!("Form"));
-	override public void _init() {
-		super._init;
-	}
 
 	O inline(this O)(bool value = true) { return this.classes("form-inline"); }
 

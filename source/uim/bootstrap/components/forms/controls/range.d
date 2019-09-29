@@ -2,12 +2,15 @@
 
 import uim.bootstrap; 
 
-class DBS4InputRange : DH5Input {
-	mixin(BS4This!("InputRange", `["form-control-range"]`, `["type":"range"]`));	
+class DBS4InputRange : DBS4Obj {
+	mixin(H5This!("Input", `["form-control"]`, `["type":"range"]`));
+	override public void _init() {
+		super._init;
+		_single = true;
+	}
 }
 mixin(BS4Func!("InputRange"));
-
+///
 unittest {
-	
-	
+	assert(BS4InputRange == `<input class="form-control" type="range">`);	
 }

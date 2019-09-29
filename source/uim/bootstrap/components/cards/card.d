@@ -2,78 +2,63 @@
 
 import uim.bootstrap;
 
-class DBS4Card : DBS4Obj
-{
+class DBS4Card : DBS4Obj {
 	mixin(H5This!("DIV", `["card"]`));
-	override public void _init()
-	{
-		super._init;
-	}
 
-	O block(this O)()
-	{
+	O block(this O)()	{
 		return this.classes("card-block");
 	}
 	///
-	unittest
-	{
+	unittest {
 		assert(BS4Card.block == `<div class="card card-block"></div>`);
 	}
 
-	O inverse(this O)()
-	{
+	O inverse(this O)() {
 		return this.classes("card-inverse");
 	}
 	///
-	unittest
-	{
+	unittest {
 		assert(BS4Card.inverse == `<div class="card card-inverse"></div>`);
 	}
 
 	/// Add Image
 	mixin(MyContent!("image", "BS4CardImage"));
 	///
-	unittest
-	{
+	unittest {
 		assert(BS4Card.inverse == `<div class="card card-inverse"></div>`);
 	}
 	/// Add card body
 	mixin(MyContent!("body_", "BS4CardBody"));
 	///
-	unittest
-	{
+	unittest {
 		assert(BS4Card.body_ == `<div class="card"><div class="card-body"></div></div>`);
 	}
 
 	/// Add card footer
 	mixin(MyContent!("footer", "BS4CardFooter"));
 	///
-	unittest
-	{
+	unittest {
 		assert(BS4Card.footer == `<div class="card"><div class="card-footer"></div></div>`);
 	}
 
 	/// Add card header
 	mixin(MyContent!("header", "BS4CardHeader"));
 	///
-	unittest
-	{
+	unittest {
 		assert(BS4Card.header == `<div class="card"><div class="card-header"></div></div>`);
 	}
 
 	/// Add card image overlay
 	mixin(MyContent!("overlay", "BS4CardOverlay"));
 	///
-	unittest
-	{
+	unittest {
 		assert(BS4Card.overlay == `<div class="card"><div class="card-img-overlay"></div></div>`);
 	}
 }
 
 mixin(BS4Short!"Card");
-
-unittest
-{
+///
+unittest {
 	assert(BS4Card == `<div class="card"></div>`);
 	assert(BS4Card.block.inverse == `<div class="card card-block card-inverse"></div>`);
 }

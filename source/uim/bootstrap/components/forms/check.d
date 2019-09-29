@@ -16,7 +16,5 @@ class DBS4FormCheck : DBS4Obj {
 mixin(BS4Short!"FormCheck");
 
 unittest {
-	
-	
 	assert(BS4FormCheck == `<div class="form-check"></div>`);
 }

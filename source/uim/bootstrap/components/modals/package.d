@@ -7,3 +7,4 @@ public import uim.bootstrap.components.modals.dialog;
 public import uim.bootstrap.components.modals.footer;
 public import uim.bootstrap.components.modals.header;
 public import uim.bootstrap.components.modals.modal;
+public import uim.bootstrap.components.modals.title;

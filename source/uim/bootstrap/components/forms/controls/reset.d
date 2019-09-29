@@ -2,12 +2,15 @@
 
 import uim.bootstrap; 
 
-class DBS4InputReset : DBS4Input {
-	mixin(BS4This!("InputReset", `["form-control"]`, `["type":"reset"]`));	
+class DBS4InputReset : DBS4Obj {
+	mixin(H5This!("Input", `["form-control"]`, `["type":"reset"]`));
+	override public void _init() {
+		super._init;
+		_single = true;
+	}
 }
 mixin(BS4Func!("InputReset"));
-
+///
 unittest {
-	
-	
+	assert(BS4InputReset == `<input class="form-control" type="reset">`);
 }

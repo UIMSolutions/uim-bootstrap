@@ -2,12 +2,15 @@
 
 import uim.bootstrap; 
 
-class DBS4InputPassword : DBS4Input {
-	mixin(BS4This!("InputPassword", `["form-control"]`, `["type":"password"]`));	
+class DBS4InputPassword : DBS4Obj {
+	mixin(H5This!("Input", `["form-control"]`, `["type":"password"]`));
+	override public void _init() {
+		super._init;
+		_single = true;
+	}
 }
 mixin(BS4Func!("InputPassword"));
-
+///
 unittest {
-	
-	
+		assert(BS4InputPassword == `<input class="form-control" type="password">`);
 }

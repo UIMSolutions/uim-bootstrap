@@ -2,12 +2,15 @@
 
 import uim.bootstrap; 
 
-class DBS4InputWeek : DBS4Input {
-	mixin(BS4This!("InputWeek", `["form-control"]`, `["type":"week"]`));	
+class DBS4InputWeek : DBS4Obj {
+	mixin(H5This!("Input", `["form-control"]`, `["type":"week"]`));
+	override public void _init() {
+		super._init;
+		_single = true;
+	}
 }
 mixin(BS4Func!("InputWeek"));
-
+///
 unittest {
-	
-	
+	assert(BS4InputWeek == `<input class="form-control" type="week">`);
 }

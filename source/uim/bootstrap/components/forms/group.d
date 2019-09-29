@@ -46,7 +46,7 @@ class DBS4FormGroup : DBS4Obj {
 	mixin(MyContent!("inputWeek", "BS4InputWeek"));
 }
 mixin(BS4Short!"FormGroup");
-
+///
 unittest {
 	assert(BS4FormGroup == `<div class="form-group"></div>`);
 }

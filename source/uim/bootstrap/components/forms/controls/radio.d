@@ -2,12 +2,15 @@
 
 import uim.bootstrap; 
 
-class DBS4InputRadio : DBS4Input {
-	mixin(BS4This!("InputRadio", `["form-control"]`, `["type":"radio"]`));	
+class DBS4InputRadio : DBS4Obj {
+	mixin(H5This!("Input", `["form-control"]`, `["type":"radio"]`));
+	override public void _init() {
+		super._init;
+		_single = true;
+	}
 }
 mixin(BS4Func!("InputRadio"));
 
 unittest {
-	
-	
+	assert(BS4InputRadio == `<input class="form-control" type="radio">`);
 }

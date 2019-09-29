@@ -17,7 +17,7 @@ class DBS4Breadcrumb : DBS4Obj {
 		this.clearContent;
 
 		auto list = H5Ol(["breadcrumb"], buf);
-		if (_attributes.has("style")) list._attributes["style"] = _attributes["style"];
+		if ("style" in _attributes) list._attributes["style"] = _attributes["style"];
 		this.content(list);
 		return super.toHTML;
 	}
@@ -25,7 +25,5 @@ class DBS4Breadcrumb : DBS4Obj {
 mixin(BS4Short!"Breadcrumb");
 
 unittest {
-	
-	
 	assert(BS4Breadcrumb == `<nav aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>`);
 }
