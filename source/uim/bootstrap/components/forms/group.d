@@ -3,50 +3,48 @@
 import uim.bootstrap;
 
 class DBS4FormGroup : DBS4Obj {
-	mixin(H5This!("DIV", `["form-group"]`));
-	override public void _init() {
-		super._init;
-	}
+	mixin(H5This!("div", `["form-group"]`));
 
 	mixin(MyAttribute!("readOnly", "readonly"));
 	mixin(MyAttribute!("value", "value"));
 	mixin(MyAttribute!("placeHolder", "placeholder"));
 
-	mixin(MyContent!("label", "H5LABEL"));
+	mixin(MyContent!("label", "H5Label"));
 	O label(this O)(string forId, string title, string[] someClasses = null, string[string] someAttributes = null) {
 		someAttributes["for"] = forId;
-		this.content(H5LABEL(someClasses, someAttributes, title));
+		this.content(H5Label(someClasses, someAttributes, title));
 		return cast(O)this;
 	}
 	mixin(MyContent!("col", "BS4Col"));
 	mixin(MyContent!("input", "BS4Input"));
-	mixin(MyContent!("inputButton", "BS4InputButton"));
-	mixin(MyContent!("inputCheckbox", "BS4InputCheckbox"));
-	mixin(MyContent!("inputColor", "BS4InputColor"));
+	mixin(MyContent!("button", "BS4InputButton"));
+	mixin(MyContent!("checkbox", "BS4InputCheckbox"));
+	mixin(MyContent!("color", "BS4InputColor"));
 	mixin(MyContent!("inputDate", "BS4InputDate"));
 	mixin(MyContent!("inputDateTime", "BS4InputDateTime"));
-	mixin(MyContent!("inputEmail", "BS4InputEmail"));
-	mixin(MyContent!("inputFile", "BS4InputFile"));
+	mixin(MyContent!("email", "BS4InputEmail"));
+	mixin(MyContent!("file", "BS4InputFile"));
+	mixin(MyContent!("group", "BS4InputGroup"));
 	mixin(MyContent!("inputHidden", "BS4InputHidden"));
-	mixin(MyContent!("inputImage", "BS4InputImage"));
-	mixin(MyContent!("inputMonth", "BS4InputMonth"));
-	mixin(MyContent!("inputNumber", "BS4InputNumber"));
-	mixin(MyContent!("inputPassword", "BS4InputPassword"));
-	mixin(MyContent!("inputRadio", "BS4InputRadio"));
+	mixin(MyContent!("image", "BS4InputImage"));
+	mixin(MyContent!("month", "BS4InputMonth"));
+	mixin(MyContent!("number", "BS4InputNumber"));
+	mixin(MyContent!("password", "BS4InputPassword"));
+	mixin(MyContent!("radio", "BS4InputRadio"));
 	mixin(MyContent!("inputRange", "BS4InputRange"));
 	mixin(MyContent!("inputReset", "BS4InputReset"));
-	mixin(MyContent!("inputSearch", "BS4InputSearch"));
-	mixin(MyContent!("inputSelect", "BS4InputSelect"));
-	mixin(MyContent!("inputSubmit", "BS4InputSubmit"));
-	mixin(MyContent!("inputTelephone", "BS4InputTelephone"));
-	mixin(MyContent!("inputText", "BS4InputText"));
-	mixin(MyContent!("inputTextArea", "BS4InputTextArea"));
+	mixin(MyContent!("search", "BS4InputSearch"));
+	mixin(MyContent!("select", "BS4InputSelect"));
+	mixin(MyContent!("submit", "BS4InputSubmit"));
+	mixin(MyContent!("telephone", "BS4InputTelephone"));
+	mixin(MyContent!("text", "BS4InputText"));
+	mixin(MyContent!("textArea", "BS4InputTextArea"));
 	mixin(MyContent!("inputTime", "BS4InputTime"));
-	mixin(MyContent!("inputUrl", "BS4InputUrl"));
-	mixin(MyContent!("inputWeek", "BS4InputWeek"));
+	mixin(MyContent!("url", "BS4InputUrl"));
+	mixin(MyContent!("week", "BS4InputWeek"));
 }
 mixin(BS4Short!"FormGroup");
 ///
 unittest {
-	assert(BS4FormGroup == `<div class="form-group"></div>`);
+	assert(Assert(BS4FormGroup, `<div class="form-group"></div>`));
 }

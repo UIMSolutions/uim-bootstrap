@@ -13,5 +13,5 @@ mixin(BS4Short!"PageLink");
 unittest {
 	
 
-	assert(BS4PageLink == `<a class="page-link" href="#"></a>`);
+	assert(Assert(BS4PageLink, `<a class="page-link" href="#"></a>`));
 }

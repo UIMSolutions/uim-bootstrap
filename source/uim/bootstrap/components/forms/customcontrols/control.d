@@ -4,9 +4,13 @@ import uim.bootstrap;
 
 class DBS4CustomControl : DBS4Obj {
 	mixin(H5This!("DIV", `["custom-control"]`));
-	override public void _init() { super._init; }
+
+	mixin(MyContent!("checkbox", "BS4CustomCheckbox"));
+	mixin(MyContent!("input", "BS4CustomInput"));
+	mixin(MyContent!("radio", "BS4CustomRadio"));
+
 	unittest {
-		assert(BS4CustomControl == `<div class="custom-control"></div>`);
+		assert(Assert(BS4CustomControl, `<div class="custom-control"></div>`));
 	}
 }
 mixin(BS4Short!"CustomControl");

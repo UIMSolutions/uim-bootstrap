@@ -10,7 +10,6 @@ class DBS4InputRange : DBS4Obj {
 	}
 }
 mixin(BS4Func!("InputRange"));
-///
 unittest {
-	assert(BS4InputRange == `<input class="form-control" type="range">`);	
+	assert(Assert(BS4InputRange,`<input class="form-control" type="range">`));	
 }

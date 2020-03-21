@@ -3,13 +3,12 @@
 import uim.bootstrap;
 
 class DBS4Progress : DBS4Obj {
-	mixin(H5This!("DIV", `["progress"]`));
-	override public void _init() {
-		super._init;
-	}
+	mixin(H5This!("Div", `["progress"]`));
+
+	mixin(MyContent!("bar", "BS4ProgressBar"));
 }
 mixin(BS4Short!"Progress");
 
 unittest {
-	assert(BS4Progress == `<div class="progress"></div>`);
+	assert(Assert(BS4Progress, `<div class="progress"></div>`));
 }

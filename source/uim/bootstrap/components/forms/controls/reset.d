@@ -12,5 +12,5 @@ class DBS4InputReset : DBS4Obj {
 mixin(BS4Func!("InputReset"));
 ///
 unittest {
-	assert(BS4InputReset == `<input class="form-control" type="reset">`);
+	assert(Assert(BS4InputReset, `<input class="form-control" type="reset">`));
 }

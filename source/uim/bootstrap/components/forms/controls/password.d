@@ -12,5 +12,5 @@ class DBS4InputPassword : DBS4Obj {
 mixin(BS4Func!("InputPassword"));
 ///
 unittest {
-		assert(BS4InputPassword == `<input class="form-control" type="password">`);
+		assert(Assert(BS4InputPassword, `<input class="form-control" type="password">`));
 }

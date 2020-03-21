@@ -13,5 +13,5 @@ class DBS4ModalButton : DBS4Obj {
 }
 mixin(BS4Short!"ModalButton");
 unittest {
-	// assert(BS4ModalButton == `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
+	// assert(Assert(BS4ModalButton, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
 }

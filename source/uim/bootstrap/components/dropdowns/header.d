@@ -13,5 +13,5 @@ mixin(BS4Short!"DropdownHeader");
 unittest {
 	
 	
-	assert(BS4DropdownHeader == `<h6 class="dropdown-header"></h6>`);
+	assert(Assert(BS4DropdownHeader, `<h6 class="dropdown-header"></h6>`));
 }

@@ -4,17 +4,19 @@ import uim.bootstrap;
 
 class DBS4BreadcrumbItem : DBS4Obj {
 	mixin(H5This!("LI", `["breadcrumb-item"]`));
-	override public void _init() {
-		super._init;
+
+	O active(this O)(bool mode = true) { if (mode) this.classes("active"); return cast(O)this; }
+	unittest {
+		assert(Assert(BS4BreadcrumbItem.active,`<li class="active breadcrumb-item"></li>`));
 	}
 
-	mixin(MyClassAttribute!("active"));
-	mixin(MyClassAttribute!("disabled"));
+	O disabled(this O)(bool mode = true) { if (mode) this.classes("disabled"); return cast(O)this; }
+	unittest {
+		assert(Assert(BS4BreadcrumbItem.disabled,`<li class="breadcrumb-item disabled"></li>`));
+	}
 }
 mixin(BS4Short!"BreadcrumbItem");
 
 unittest {
-	
-	
-	assert(BS4BreadcrumbItem == `<li class="breadcrumb-item"></li>`);
+	assert(Assert(BS4BreadcrumbItem,`<li class="breadcrumb-item"></li>`));
 }

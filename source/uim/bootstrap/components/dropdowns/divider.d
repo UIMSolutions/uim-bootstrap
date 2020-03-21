@@ -3,15 +3,10 @@
 import uim.bootstrap;
 
 class DBS4DropdownDivider : DBS4Obj {
-	mixin(H5This!("DIV", `["dropdown-divider"]`));
-	override public void _init() {
-		super._init;
-	}	
+	mixin(H5This!("Li", `["dropdown-divider"]`));
 }
 mixin(BS4Short!"DropdownDivider");
 
 unittest {
-	
-	
-	assert(BS4DropdownDivider == `<div class="dropdown-divider"></div>`);
+	assert(Assert(BS4DropdownDivider,`<li class="dropdown-divider"></li>`));
 }

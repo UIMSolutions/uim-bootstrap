@@ -10,7 +10,6 @@ class DBS4InputHidden : DBS4Obj {
 	}
 }
 mixin(BS4Func!("InputHidden"));
-///
 unittest {
-		assert(BS4InputHidden == `<input class="form-control" type="hidden">`);
+		assert(Assert(BS4InputHidden, `<input class="form-control" type="hidden">`));
 }

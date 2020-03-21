@@ -19,7 +19,7 @@ class DBS4ButtonGroup : DBS4Obj
 
 	unittest
 	{
-		assert(BS4ButtonGroup.size("lg") == `<div class="btn-group btn-group-lg" role="group"></div>`);
+		assert(Assert(BS4ButtonGroup.size("lg"), `<div class="btn-group btn-group-lg" role="group"></div>`));
 	}
 
 	O vertical(this O)(bool mode)
@@ -34,7 +34,7 @@ class DBS4ButtonGroup : DBS4Obj
 
 	unittest
 	{
-		assert(BS4ButtonGroup.vertical(true) == `<div class="btn-group-vertical" role="group"></div>`);
+		assert(Assert(BS4ButtonGroup.vertical(true), `<div class="btn-group-vertical" role="group"></div>`));
 	}
 
 	mixin(MyAttribute!("label", "aria-label"));
@@ -47,5 +47,5 @@ mixin(BS4Short!"ButtonGroup");
 
 unittest
 {
-	assert(BS4ButtonGroup == `<div class="btn-group" role="group"></div>`);
+	assert(Assert(BS4ButtonGroup, `<div class="btn-group" role="group"></div>`));
 }

@@ -8,7 +8,6 @@ class DBS4CardOverlay : DBS4Obj {
 }
 /// Shortcuts
 mixin(BS4Short!"CardOverlay");
-///
 unittest {
-	assert(BS4CardOverlay == `<div class="card-img-overlay"></div>`);
+	assert(Assert(BS4CardOverlay,`<div class="card-img-overlay"></div>`));
 }

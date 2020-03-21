@@ -12,5 +12,5 @@ class DBS4InputTel : DBS4Obj {
 mixin(BS4Func!("InputTel"));
 ///
 unittest {
-	assert(BS4InputTel == `<input class="form-control" type="tel">`);
+	assert(Assert(BS4InputTel, `<input class="form-control" type="tel">`));
 }

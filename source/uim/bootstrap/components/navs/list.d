@@ -19,6 +19,6 @@ mixin(BS4Short!"NavList");
 unittest {
 	
 	
-	assert(BS4NavList == `<ul class="nav"></ul>`);
-	assert(BS4NavList.vertical == `<ul class="flex-column nav"></ul>`);
+	assert(Assert(BS4NavList, `<ul class="nav"></ul>`));
+	assert(Assert(BS4NavList.vertical, `<ul class="flex-column nav"></ul>`));
 }

@@ -4,22 +4,19 @@ import uim.bootstrap;
 
 class DBS4TableRow : DBS4Obj {
 	mixin(H5This!"Tr");
-	override public void _init() {
-		super._init;
-	}
 
 	/// Adding a header cell
 	mixin(MyContent!("th", "H5Th"));
 	unittest {
-		assert(BS4TableRow.th == `<tr><th></th></tr>`);
+		assert(Assert(BS4TableRow.th, `<tr><th></th></tr>`));
 	}
 
 	/// Adding a cell
 	mixin(MyContent!("cell", "H5Td"));
 	mixin(MyContent!("td", "H5Td"));
 	unittest {
-		assert(BS4TableRow.cell == `<tr><td></td></tr>`);
-		assert(BS4TableRow.td == `<tr><td></td></tr>`);
+		assert(Assert(BS4TableRow.cell, `<tr><td></td></tr>`));
+		assert(Assert(BS4TableRow.td, `<tr><td></td></tr>`));
 	}
 
 /*
@@ -48,7 +45,7 @@ class DBS4TableRow : DBS4Obj {
 mixin(BS4Short!"TableRow");
 
 unittest {
-	assert(BS4TableRow == "<tr></tr>");
-	//assert(BS4TableRow.values(["a","b"]) == `<tr><td>a</td><td>b</td></tr>`);
+	assert(Assert(BS4TableRow, "<tr></tr>"));
+	//assert(Assert(BS4TableRow.values(["a","b"]), `<tr><td>a</td><td>b</td></tr>`));
 }
 

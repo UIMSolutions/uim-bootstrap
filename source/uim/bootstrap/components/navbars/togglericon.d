@@ -3,15 +3,12 @@
 import uim.bootstrap;
 
 class DBS4NavbarTogglerIcon : DBS4Obj {
-	mixin(H5This!("SPAN", `["navbar-toggler-icon"]`));
-	override public void _init() {
-		super._init;
-	}
+	mixin(H5This!("Span", `["navbar-toggler-icon"]`));
 }
 mixin(BS4Short!"NavbarTogglerIcon");
 
 unittest {
 	
 
-//	assert(BS4NavbarTogglerIcon == `<div class="btn-group" role="group"></div>`);
+//	assert(Assert(BS4NavbarTogglerIcon, `<div class="btn-group" role="group"></div>`);
 }

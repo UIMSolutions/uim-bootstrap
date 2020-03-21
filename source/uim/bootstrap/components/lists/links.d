@@ -13,7 +13,5 @@ class DBS4ListLinks : DBS4Obj {
 mixin(BS4Short!"ListLinks");
 
 unittest {
-	
-	
-	assert(BS4ListLinks == `<div class="list-group"></div>`);
+	assert(Assert(BS4ListLinks, `<div class="list-group"></div>`));
 }

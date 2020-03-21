@@ -12,6 +12,6 @@ class DBS4CardSubtitle : DBS4Obj {
 mixin(BS4Short!"CardSubtitle");
 ///
 unittest {
-	assert(BS4CardSubtitle == `<h6 class="card-subtitle"></h6>`);
-	assert(BS4CardSubtitle.content("SomeThing") == `<h6 class="card-subtitle">SomeThing</h6>`);
+	assert(Assert(BS4CardSubtitle, `<h6 class="card-subtitle"></h6>`));
+	assert(Assert(BS4CardSubtitle.content("SomeThing"), `<h6 class="card-subtitle">SomeThing</h6>`));
 }

@@ -12,5 +12,5 @@ class DBS4InputUrl : DBS4Obj {
 mixin(BS4Func!("InputUrl"));
 ///
 unittest {
-	assert(BS4InputUrl == `<input class="form-control" type="url">`);
+	assert(Assert(BS4InputUrl, `<input class="form-control" type="url">`));
 }

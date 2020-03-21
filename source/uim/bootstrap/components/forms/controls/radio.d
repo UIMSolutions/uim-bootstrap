@@ -10,7 +10,6 @@ class DBS4InputRadio : DBS4Obj {
 	}
 }
 mixin(BS4Func!("InputRadio"));
-
 unittest {
-	assert(BS4InputRadio == `<input class="form-control" type="radio">`);
+	assert(Assert(BS4InputRadio, `<input class="form-control" type="radio">`));
 }

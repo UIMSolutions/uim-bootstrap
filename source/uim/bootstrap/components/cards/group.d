@@ -8,13 +8,12 @@ class DBS4CardGroup : DBS4Obj {
 
 	/// Add card 
 	mixin(MyContent!("card", "BS4Card"));
-	///
+	O card(this O)(DBS4Card[] cards) { foreach(c; cards) this.card(c); return cast(O)this; }
 	unittest {
-		assert(BS4CardGroup.card == `<div class="card-group"><div class="card"></div></div>`);
+		assert(Assert(BS4CardGroup.card, `<div class="card-group"><div class="card"></div></div>`));
 	}
 }
 mixin(BS4Short!"CardGroup");
-///
 unittest {
-	assert(BS4CardGroup == `<div class="card-group"></div>`);
+	assert(Assert(BS4CardGroup, `<div class="card-group"></div>`));
 }

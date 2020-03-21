@@ -9,7 +9,7 @@ class DBS4FormCheckInput : DBS4Obj {
 		_single = true;
 	}
 	unittest {
-		assert(BS4FormCheckInput == `<input class="form-check-input">`);
+		assert(Assert(BS4FormCheckInput, `<input class="form-check-input">`));
 	}
 }
 mixin(BS4Short!"FormCheckInput");

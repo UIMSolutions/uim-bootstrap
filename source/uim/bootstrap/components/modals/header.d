@@ -8,5 +8,5 @@ class DBS4ModalHeader : DBS4Obj {
 mixin(BS4Short!"ModalHeader");
 
 unittest {
-	assert(BS4ModalHeader == `<div class="modal-header"></div>`);
+	assert(Assert(BS4ModalHeader, `<div class="modal-header"></div>`));
 }

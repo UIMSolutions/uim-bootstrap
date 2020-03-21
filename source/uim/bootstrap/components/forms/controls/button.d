@@ -10,7 +10,6 @@ class DBS4InputButton : DBS4Obj {
 	}
 }
 mixin(BS4Func!("InputButton"));
-///
 unittest {
-		assert(BS4InputButton == `<input class="form-control" type="button">`);
+	assert(Assert(BS4InputButton,`<input class="form-control" type="button">`));
 }

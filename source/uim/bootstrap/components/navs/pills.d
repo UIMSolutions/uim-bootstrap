@@ -9,5 +9,5 @@ class DBS4NavPills : DBS4Obj {
 mixin(BS4Short!"NavPills");
 
 unittest {
-	assert(BS4NavPills == `<ul class="nav nav-pills" role="tablist"></ul>`);
+	assert(Assert(BS4NavPills, `<ul class="nav nav-pills" role="tablist"></ul>`));
 }

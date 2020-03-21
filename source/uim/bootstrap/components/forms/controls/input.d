@@ -3,7 +3,7 @@
 import uim.bootstrap; 
 
 class DBS4Input : DBS4Obj {
-	mixin(BS4This!("Input", `["form-control"]`));	
+	mixin(H5This!("Input", `["form-control"]`));	
 	override void _init() {
 		super._init;
 		_single = true;

@@ -2,8 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4CustomFileInput : DBS4Obj
-{
+class DBS4CustomFileInput : DBS4Obj {
 	mixin(H5This!("INPUT", `["custom-file-input"]`));
 	override public void _init() {
 		super._init;
@@ -12,8 +11,6 @@ class DBS4CustomFileInput : DBS4Obj
 }
 
 mixin(BS4Short!"CustomFileInput");
-
-unittest
-{
-	assert(BS4CustomFileInput == `<input class="custom-file-input">`);
+unittest {
+	assert(Assert(BS4CustomFileInput, `<input class="custom-file-input">`));
 }

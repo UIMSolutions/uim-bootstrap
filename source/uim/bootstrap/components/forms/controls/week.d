@@ -12,5 +12,5 @@ class DBS4InputWeek : DBS4Obj {
 mixin(BS4Func!("InputWeek"));
 ///
 unittest {
-	assert(BS4InputWeek == `<input class="form-control" type="week">`);
+	assert(Assert(BS4InputWeek, `<input class="form-control" type="week">`));
 }

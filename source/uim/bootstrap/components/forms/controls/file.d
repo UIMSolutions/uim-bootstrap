@@ -10,7 +10,6 @@ class DBS4InputFile : DBS4Obj {
 	}
 }
 mixin(BS4Func!("InputFile"));
-///
 unittest {
-	assert(BS4InputFile == `<input class="form-control" type="file">`);
+	assert(Assert(BS4InputFile, `<input class="form-control" type="file">`));
 }

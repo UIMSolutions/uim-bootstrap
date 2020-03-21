@@ -16,5 +16,5 @@ mixin(BS4Short!"Pagination");
 unittest {
 	
 
-	assert(BS4Pagination == `<ul class="pagination"></ul>`);
+	assert(Assert(BS4Pagination, `<ul class="pagination"></ul>`));
 }

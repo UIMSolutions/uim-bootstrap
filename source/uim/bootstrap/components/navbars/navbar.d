@@ -2,57 +2,44 @@
 
 import uim.bootstrap;
 
-class DBS4Navbar : DBS4Obj
-{
-	mixin(H5This!("NAV", `["navbar"]`));
-	override public void _init()
-	{
-		super._init;
-	}
+class DBS4Navbar : DBS4Obj {
+	mixin(H5This!("Nav", `["navbar"]`));
 
-	O center(this O)(bool value = true)
-	{
+	O center(this O)(bool value = true) {
 		if (value) this.classes("justify-content-center");
 		return cast(O)this;
 	}
 	///
-	unittest
-	{
-		assert(BS4Navbar.center == `<nav class="justify-content-center navbar"></nav>`);
-		assert(BS4Navbar("Test").center == `<nav class="justify-content-center navbar">Test</nav>`);
+	unittest {
+		assert(Assert(BS4Navbar.center, `<nav class="justify-content-center navbar"></nav>`));
+		assert(Assert(BS4Navbar("Test").center, `<nav class="justify-content-center navbar">Test</nav>`));
 	}
 
-	O dark(this O)(bool value = true)
-	{
+	O dark(this O)(bool value = true) {
 		if (value) this.classes("navbar-dark");
 		return cast(O)this;
 	}
 	///
-	unittest
-	{
-		assert(BS4Navbar.dark == `<nav class="navbar navbar-dark"></nav>`);
+	unittest {
+		assert(Assert(BS4Navbar.dark, `<nav class="navbar navbar-dark"></nav>`));
 	}
 
-	O expand(this O)(string screenSize)
-	{
+	O expand(this O)(string screenSize) {
 		this.classes("navbar-expand-" ~ screenSize);
 		return cast(O)this;
 	}
 	///
-	unittest
-	{
-		assert(BS4Navbar.expand("lg") == `<nav class="navbar navbar-expand-lg"></nav>`);
+	unittest {
+		assert(Assert(BS4Navbar.expand("lg"), `<nav class="navbar navbar-expand-lg"></nav>`));
 	}
 
-	O light(this O)(bool value = true)
-	{
+	O light(this O)(bool value = true) {
 		this.classes("navbar-light");
 		return cast(O)this;
 	}
 	///
-	unittest
-	{
-		assert(BS4Navbar.light == `<nav class="navbar navbar-light"></nav>`);
+	unittest {
+		assert(Assert(BS4Navbar.light, `<nav class="navbar navbar-light"></nav>`));
 	}
 
 /*
@@ -60,7 +47,7 @@ class DBS4Navbar : DBS4Obj
 	///
 	unittest
 	{
-		assert(BS4Navbar.nav == `<nav class="navbar"><ul class="navbar-nav"></ul></nav>`);
+		assert(Assert(BS4Navbar.nav, `<nav class="navbar"><ul class="navbar-nav"></ul></nav>`);
 	}*/
 }
 
@@ -68,5 +55,5 @@ mixin(BS4Short!"Navbar");
 ///
 unittest
 {
-	assert(BS4Navbar == `<nav class="navbar"></nav>`);
+	assert(Assert(BS4Navbar, `<nav class="navbar"></nav>`));
 }

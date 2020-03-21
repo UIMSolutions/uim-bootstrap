@@ -10,5 +10,5 @@ class DBS4Row : DBS4Obj {
 mixin(BS4Func!("Row"));
 
 unittest {
-	assert(BS4Row == `<div class="row"></div>`);
+	assert(Assert(BS4Row, `<div class="row"></div>`));
 }

@@ -9,14 +9,16 @@ class DBS4CardImage : DBS4Obj { // default top
 		_tag = "img";
 	}
 
-	O position(this O)(string value) { _classes.del("card-img-top"); _classes.add("card-img-"~value); return cast(O)this; }
+	O position(this O)(string value) { _classes = _classes.sub("card-img-top").add("card-img-"~value); return cast(O)this; }
+	unittest {
+		assert(Assert(BS4CardImage.position("top"),`<img class="card-img-top">`));
+		assert(Assert(BS4CardImage.position("bottom"),`<img class="card-img-bottom">`));
+	}
 }
 mixin(BS4Short!"CardImage");
 
 unittest {
-	
-	
-	assert(BS4CardImage == `<img class="card-img-top">`);
-	assert(BS4CardImage.position("top") == `<img class="card-img-top">`);
-	assert(BS4CardImage.position("bottom") == `<img class="card-img-bottom">`);
+	assert(Assert(BS4CardImage,`<img class="card-img-top">`));
+	assert(Assert(BS4CardImage.position("top"),`<img class="card-img-top">`));
+	assert(Assert(BS4CardImage.position("bottom"),`<img class="card-img-bottom">`));
 }

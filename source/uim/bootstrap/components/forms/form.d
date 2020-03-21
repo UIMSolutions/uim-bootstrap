@@ -14,6 +14,6 @@ mixin(BS4Short!"Form");
 unittest {
 	
 	
-	assert(BS4Form == `<form></form>`);
-	assert(BS4Form.inline == `<form class="form-inline"></form>`);
+	assert(Assert(BS4Form, `<form></form>`));
+	assert(Assert(BS4Form.inline, `<form class="form-inline"></form>`));
 }

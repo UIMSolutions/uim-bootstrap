@@ -8,7 +8,7 @@ class DBS4Jumbotron : DBS4Obj {
 		super._init;
 	}
 	unittest {
-		assert(BS4Jumbotron == `<div class="jumbotron"></div>`);
+		assert(Assert(BS4Jumbotron, `<div class="jumbotron"></div>`));
 	}
 }
 mixin(BS4Short!"Jumbotron");

@@ -2,15 +2,14 @@
 
 import uim.bootstrap; 
 
-class DBS4InputTextArea : DH5Textarea {
-	mixin(BS4This!("InputTextArea", `["form-control"]`));
+class DBS4InputTextarea : DBS4Obj {
+	mixin(H5This!("textarea", `["form-control"]`));
 
 	mixin(MyAttribute!"rows");
 	mixin(MyAttribute!"cols");
 }
-mixin(BS4Func!("InputTextArea"));
+mixin(BS4Func!("InputTextarea"));
 
 unittest {
-	
-	
+		assert(Assert(BS4InputTextarea, `<textarea class="form-control"></textarea>`));
 }

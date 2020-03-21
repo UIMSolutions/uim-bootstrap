@@ -6,6 +6,7 @@ public import uim.bootstrap.components.breadcrumbs;
 public import uim.bootstrap.components.buttons;
 public import uim.bootstrap.components.cards;
 public import uim.bootstrap.components.carousels;
+public import uim.bootstrap.components.collapses;
 public import uim.bootstrap.components.dropdowns;
 public import uim.bootstrap.components.forms;
 public import uim.bootstrap.components.jumbotrons;

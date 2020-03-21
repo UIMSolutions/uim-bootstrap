@@ -15,5 +15,5 @@ mixin(BS4Short!"ModalBody");
 
 unittest
 {
-	assert(BS4ModalBody == `<div class="modal-body"></div>`);
+	assert(Assert(BS4ModalBody, `<div class="modal-body"></div>`));
 }

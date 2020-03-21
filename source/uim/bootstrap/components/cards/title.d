@@ -2,12 +2,18 @@
 
 import uim.bootstrap;
 
-class DBS4CardTitle : DH5H4 {
-	mixin(BS4This!("H4", `["card-title"]`));
+class DBS4CardTitle : DBS4Obj {
+	mixin(H5This!("H4", `["card-title"]`));
+
+	O level(this O)(uint value) { if (value > 0) _tag = "h"~to!string(value); return cast(O)this; }
+	O level(this O)(string value) { if (value.length > 0) _tag = "h"~value; return cast(O)this; }
+	unittest {
+		assert(Assert(BS4CardTitle.level(2), `<h2 class="card-title"></h2>`));
+	}
 }
 mixin(BS4Func!"CardTitle");
 
 unittest {
-	assert(BS4CardTitle == `<h4 class="card-title"></h4>`);
-	assert(BS4CardTitle.content("SomeThing") == `<h4 class="card-title">SomeThing</h4>`);
+	assert(Assert(BS4CardTitle, `<h4 class="card-title"></h4>`));
+	assert(Assert(BS4CardTitle.content("SomeThing"), `<h4 class="card-title">SomeThing</h4>`));
 }

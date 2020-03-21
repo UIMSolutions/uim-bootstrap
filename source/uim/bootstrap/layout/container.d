@@ -11,17 +11,17 @@ Default: A fixed container is a (responsive) fixed width container.
 class DBS4Container : DBS4Obj {
 	mixin(H5This!("div", `["container"]`));
 	unittest {
-		assert(BS4Container == `<div class="container"></div>`);
+		assert(Assert(BS4Container, `<div class="container"></div>`));
 	}
 
-	O fluid(this O)(bool mode) { if (mode) {_classes.sub("container"); return this.classes("container-fluid"); } return cast(O)this; }
+	O fluid(this O)(bool mode) { if (mode) _classes = _classes.sub("container").add("container-fluid");  return cast(O)this; }
 	unittest {
-		assert(BS4Container.fluid(true) == `<div class="container-fluid"></div>`);
+		assert(Assert(BS4Container.fluid(true), `<div class="container-fluid"></div>`));
 	}
 
 	mixin(MyContent!("row", "BS4Row"));
 	unittest {
-		assert(BS4Container.row == `<div class="container"><div class="row"></div></div>`);
+		assert(Assert(BS4Container.row,`<div class="container"><div class="row"></div></div>`));
 	}
 }
 mixin(BS4Func!("Container"));

@@ -2,16 +2,11 @@
 
 import uim.bootstrap;
 
-class DBS4CardDeckWrapper : DBS4Obj {
+class DBS4CardDeckwrapper : DBS4Obj {
 	mixin(H5This!("DIV", `["card-deck-wrapper"]`));
-	override public void _init() {
-		super._init;
-	}
 }
-mixin(BS4Short!"CardDeckWrapper");
+mixin(BS4Short!"CardDeckwrapper");
 
 unittest {
-	
-	
-	assert(BS4CardDeckWrapper == `<div class="card-deck-wrapper"></div>`);
+	assert(Assert(BS4CardDeckwrapper,`<div class="card-deck-wrapper"></div>`));
 }

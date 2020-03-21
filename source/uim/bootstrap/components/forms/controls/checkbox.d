@@ -12,5 +12,5 @@ class DBS4InputCheckbox : DBS4Obj {
 mixin(BS4Func!("InputCheckbox"));
 ///
 unittest {
-	assert(BS4InputCheckbox == `<input class="form-control" type="checkbox">`);
+	assert(Assert(BS4InputCheckbox, `<input class="form-control" type="checkbox">`));
 }

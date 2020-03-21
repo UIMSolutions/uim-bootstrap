@@ -4,7 +4,7 @@ import uim.bootstrap;
 
 class DBS4NavbarBrand : DBS4Obj
 {
-	mixin(H5This!("a", `["navbar-brand"]`, `["href":"#"]`));
+	mixin(H5This!("a", `["navbar-brand"]`));
 	override public void _init()
 	{
 		super._init;
@@ -17,5 +17,5 @@ mixin(BS4Short!"NavbarBrand");
 ///
 unittest
 {
-	assert(BS4NavbarBrand == `<a class="navbar-brand" href="#"></a>`);
+	assert(Assert(BS4NavbarBrand, `<a class="navbar-brand"></a>`));
 }

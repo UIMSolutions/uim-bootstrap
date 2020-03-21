@@ -3,18 +3,18 @@
 import uim.bootstrap;
 
 class DBS4FormCheck : DBS4Obj {
-	mixin(H5This!("DIV", `["form-check"]`));
-	override public void _init() {
-		super._init;
-	}
+	mixin(H5This!("Div", `["form-check"]`));
 	mixin(TProperty!("string", "forId"));
 
-	O inline(this O)() { return this.classes("form-check-inline"); }
+	O inline(this O)(bool mode = true) { if (mode) this.classes("form-check-inline"); return cast(O)this; }
+	unittest {
+		assert(Assert(BS4FormCheck.inline, `<div class="form-check form-check-inline"></div>`));
+	}
 
 	mixin(MyContent!("label", "BS4FormCheckLabel"));
 }
 mixin(BS4Short!"FormCheck");
 
 unittest {
-	assert(BS4FormCheck == `<div class="form-check"></div>`);
+	assert(Assert(BS4FormCheck, `<div class="form-check"></div>`));
 }

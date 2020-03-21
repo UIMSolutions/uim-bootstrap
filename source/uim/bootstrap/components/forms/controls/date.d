@@ -12,5 +12,5 @@ class DBS4InputDate : DBS4Obj {
 mixin(BS4Func!("InputDate"));
 ///
 unittest {
-	assert(BS4InputDate == `<input class="form-control" type="date">`);
+	assert(Assert(BS4InputDate, `<input class="form-control" type="date">`));
 }

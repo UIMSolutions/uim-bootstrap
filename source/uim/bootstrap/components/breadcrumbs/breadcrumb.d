@@ -25,5 +25,5 @@ class DBS4Breadcrumb : DBS4Obj {
 mixin(BS4Short!"Breadcrumb");
 
 unittest {
-	assert(BS4Breadcrumb == `<nav aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>`);
+	assert(Assert(BS4Breadcrumb, `<nav aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>`));
 }

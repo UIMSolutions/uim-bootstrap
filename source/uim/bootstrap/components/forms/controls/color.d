@@ -12,5 +12,5 @@ class DBS4InputColor : DBS4Obj {
 mixin(BS4Func!("InputColor"));
 ///
 unittest {
-	assert(BS4InputColor == `<input class="form-control" type="color">`);
+	assert(Assert(BS4InputColor, `<input class="form-control" type="color">`));
 }

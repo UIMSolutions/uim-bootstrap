@@ -8,7 +8,7 @@ class DBS4BreadcrumbLink : DBS4Obj {
 		super._init;
 	}
 	unittest {
-		assert(BS4BreadcrumbLink == `<li class="breadcrumb-item"><a href=""></a></li>`);
+		assert(Assert(BS4BreadcrumbLink, `<li class="breadcrumb-item"><a href=""></a></li>`));
 	}
 
 	mixin(MyClassAttribute!("active"));
@@ -16,7 +16,7 @@ class DBS4BreadcrumbLink : DBS4Obj {
 
 	mixin(TProperty!("string", "text"));
 	unittest {
-		assert(BS4BreadcrumbLink.text("test").url("#") == `<li class="breadcrumb-item"><a href="#">test</a></li>`);
+		assert(Assert(BS4BreadcrumbLink.text("test").url("#"), `<li class="breadcrumb-item"><a href="#">test</a></li>`));
 	}
 
 	mixin(TProperty!("string", "url"));

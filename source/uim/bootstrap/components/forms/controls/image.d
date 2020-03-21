@@ -12,5 +12,5 @@ class DBS4InputImage : DBS4Obj {
 mixin(BS4Func!("InputImage"));
 ///
 unittest {
-	assert(BS4InputImage == `<input class="form-control" type="image">`);
+	assert(Assert(BS4InputImage, `<input class="form-control" type="image">`));
 }
