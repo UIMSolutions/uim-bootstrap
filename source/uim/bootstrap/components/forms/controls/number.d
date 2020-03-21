@@ -3,13 +3,13 @@
 import uim.bootstrap; 
 
 class DBS4InputNumber : DBS4Obj {
-	mixin(H5This!("Input", `["form-control"]`, `["type":"number"]`));
+	mixin(H5This!("Input", ["form-control"], `["type":"number"]`));
 	override public void _init() {
 		super._init;
 		_single = true;
 	}
 }
-mixin(BS4Func!("InputNumber"));
+mixin(H5Calls!("BS4InputNumber"));
 ///
 unittest {
 	assert(Assert(BS4InputNumber, `<input class="form-control" type="number">`));

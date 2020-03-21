@@ -4,7 +4,7 @@ import uim.bootstrap;
 
 /// An unordered list with list items
 class DBS4List : DBS4Obj {
-	mixin(H5This!("UL", `["list-group"]`));
+	mixin(H5This!("UL", ["list-group"]));
 
 	// Removes some borders and rounded corners to render group in a parent container
 	O flush(this O)() {
@@ -20,7 +20,7 @@ class DBS4List : DBS4Obj {
 	}
 }
 
-mixin(BS4Short!"List");
+mixin(H5Calls!"BS4List");
 unittest {
 	assert(Assert(BS4List, `<ul class="list-group"></ul>`));
 	assert(Assert(BS4List(BS4ListItem), `<ul class="list-group"><li class="list-group-item"></li></ul>`));

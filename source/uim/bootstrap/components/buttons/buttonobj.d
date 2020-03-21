@@ -30,7 +30,7 @@ class DBS4ButtonObj : DBS4Obj {
 		return super.toHTML;
 	}
 }
-mixin(BS4Short!"ButtonObj");
+mixin(H5Calls!"BS4ButtonObj");
 
 unittest {
 	

@@ -3,9 +3,9 @@
 import uim.bootstrap;
 
 class DBS4CarouselIndicators : DBS4Obj {
-	mixin(H5This!("ul", `["carousel-indicators"]`));
+	mixin(H5This!("ul", ["carousel-indicators"]));
 }
 
-mixin(BS4Short!"CarouselIndicators");
+mixin(H5Calls!"BS4CarouselIndicators");
 unittest {
 }

@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4AlertHeading : DBS4Obj {
-	mixin(H5This!("Div", `["alert-heading"]`));
+	mixin(H5This!("Div", ["alert-heading"]));
 
 	O size(this O)(int size) {
 		if ((size > 0) && (size < 7))
@@ -11,7 +11,7 @@ class DBS4AlertHeading : DBS4Obj {
 		return cast(O) this;
 	}
 }
-mixin(BS4Func!("AlertHeading"));
+mixin(H5Calls!("BS4AlertHeading"));
 
 unittest {
 

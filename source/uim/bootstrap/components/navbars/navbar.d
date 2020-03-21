@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4Navbar : DBS4Obj {
-	mixin(H5This!("Nav", `["navbar"]`));
+	mixin(H5This!("Nav", ["navbar"]));
 
 	O center(this O)(bool value = true) {
 		if (value) this.classes("justify-content-center");
@@ -51,7 +51,7 @@ class DBS4Navbar : DBS4Obj {
 	}*/
 }
 
-mixin(BS4Short!"Navbar");
+mixin(H5Calls!"BS4Navbar");
 ///
 unittest
 {

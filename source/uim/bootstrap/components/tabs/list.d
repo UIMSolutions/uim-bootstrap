@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4TabList : DBS4Obj {
-	mixin(H5This!("UL", `["nav"]`, `["role":"tablist"]`));
+	mixin(H5This!("UL", ["nav"], `["role":"tablist"]`));
 	override public void _init() {
 		super._init;
 	}
@@ -16,7 +16,7 @@ class DBS4TabList : DBS4Obj {
 	O fill(this O)(bool mode = true) { return this.classes("nav-fill"); }
 	O justified(this O)(bool mode = true) { return this.classes("nav-justified"); }
 }
-mixin(BS4Short!"TabList");
+mixin(H5Calls!"BS4TabList");
 
 unittest {
 	

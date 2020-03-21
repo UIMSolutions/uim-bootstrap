@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4InputGroup : DBS4Obj {
-	mixin(H5This!("DIV", `["input-group"]`));
+	mixin(H5This!("DIV", ["input-group"]));
 
 	mixin(MyContent!("prepend", "BS4InputGroupPrepend"));
 	unittest {
@@ -21,7 +21,7 @@ class DBS4InputGroup : DBS4Obj {
 		assert(Assert(BS4InputGroup.text, `<div class="input-group"><div class="input-group-text"></div></div>`));
 	}
 }
-mixin(BS4Short!"InputGroup");
+mixin(H5Calls!"BS4InputGroup");
 
 unittest {
 		assert(Assert(BS4InputGroup, `<div class="input-group"></div>`));

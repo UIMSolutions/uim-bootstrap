@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4Card : DBS4Obj {
-	mixin(H5This!("DIV", `["card"]`));
+	mixin(H5This!("DIV", ["card"]));
 
 	O block(this O)()	{
 		return this.classes("card-block");
@@ -49,7 +49,7 @@ class DBS4Card : DBS4Obj {
 	}
 }
 
-mixin(BS4Short!"Card");
+mixin(H5Calls!"BS4Card");
 unittest {
 	assert(Assert(BS4Card, `<div class="card"></div>`));
 	assert(Assert(BS4Card.block.inverse, `<div class="card card-block card-inverse"></div>`));

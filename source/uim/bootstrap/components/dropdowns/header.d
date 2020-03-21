@@ -3,12 +3,12 @@
 import uim.bootstrap;
 
 class DBS4DropdownHeader : DBS4Obj {
-	mixin(H5This!("H6", `["dropdown-header"]`));
+	mixin(H5This!("H6", ["dropdown-header"]));
 	override public void _init() {
 		super._init;
 	}	
 }
-mixin(BS4Short!"DropdownHeader");
+mixin(H5Calls!"BS4DropdownHeader");
 
 unittest {
 	

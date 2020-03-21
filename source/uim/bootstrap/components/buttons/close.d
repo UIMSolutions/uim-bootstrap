@@ -10,7 +10,7 @@ class DBS4ButtonClose : DBS4Button {
 		return super.toHTML;
 	}
 }
-mixin(BS4Short!"ButtonClose");
+mixin(H5Calls!"BS4ButtonClose");
 
 unittest {
 	assert(Assert(BS4ButtonClose, `<button class="btn" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>`));

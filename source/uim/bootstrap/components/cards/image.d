@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4CardImage : DBS4Obj { // default top
-	mixin(H5This!("IMG", `["card-img-top"]`, null, true));
+	mixin(H5This!("IMG", ["card-img-top"], null, true));
 	override public void _init() {
 		super._init;
 		_tag = "img";
@@ -15,7 +15,7 @@ class DBS4CardImage : DBS4Obj { // default top
 		assert(Assert(BS4CardImage.position("bottom"),`<img class="card-img-bottom">`));
 	}
 }
-mixin(BS4Short!"CardImage");
+mixin(H5Calls!"BS4CardImage");
 
 unittest {
 	assert(Assert(BS4CardImage,`<img class="card-img-top">`));

@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4Table : DBS4Obj {
-	mixin(H5This!("TABLE", `["table"]`));
+	mixin(H5This!("TABLE", ["table"]));
 	override public void _init() {
 		super._init;
 	}
@@ -38,7 +38,7 @@ class DBS4Table : DBS4Obj {
 		assert(Assert(BS4Table.row, `<table class="table"><tr></tr></table>`));
 	}	
 }
-mixin(BS4Short!"Table");
+mixin(H5Calls!"BS4Table");
 
 unittest {
 	assert(Assert(BS4Table, `<table class="table"></table>`));

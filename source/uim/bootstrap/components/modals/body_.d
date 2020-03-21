@@ -4,14 +4,14 @@ import uim.bootstrap;
 
 class DBS4ModalBody : DBS4Obj
 {
-	mixin(H5This!("Div", `["modal-body"]`));
+	mixin(H5This!("Div", ["modal-body"]));
 	override public void _init()
 	{
 		super._init;
 	}
 }
 
-mixin(BS4Short!"ModalBody");
+mixin(H5Calls!"BS4ModalBody");
 
 unittest
 {

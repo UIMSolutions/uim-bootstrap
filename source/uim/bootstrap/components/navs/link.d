@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4NavLink : DBS4Obj {
-	mixin(H5This!("A", `["nav-link"]`, `["href":"#"]`));
+	mixin(H5This!("A", ["nav-link"], `["href":"#"]`));
 
 	O active(this O)(bool value = true) { if (value) this.classes("active"); return cast(O)this; }
 	unittest {
@@ -18,7 +18,7 @@ class DBS4NavLink : DBS4Obj {
 	O dropdownToggle(this O)(bool mode = true) { return this.classes("dropdown-toggle")
 	.attributes(["data-toggle":"dropdown", "role":"button", "aria-haspopup":"true", "aria-expanded":"false"]); }
 }
-mixin(BS4Short!"NavLink");
+mixin(H5Calls!"BS4NavLink");
 
 unittest {
 	assert(Assert(BS4NavLink, `<a class="nav-link" href="#"></a>`));

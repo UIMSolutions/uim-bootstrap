@@ -22,7 +22,7 @@ class DBS4TableCell : DBS4Obj {
 		assert(Assert(BS4TableCell.rowspan(2), `<td rowspan="2"></td>`));
 	}
 }
-mixin(BS4Short!"TableCell");
+mixin(H5Calls!"BS4TableCell");
 
 unittest {
 	assert(Assert(BS4TableCell, `<td></td>`));

@@ -2,14 +2,10 @@
 
 import uim.bootstrap; 
 
-class DBS4InputText : DBS4Obj {
-	mixin(H5This!("Input", `["form-control"]`, `["type":"text"]`));
-	override public void _init() {
-		super._init;
-		_single = true;
-	}
+class DBS4InputText : DBS4Input {
+	mixin(H5This!("", null, `["type":"text"]`));
 }
-mixin(BS4Func!("InputText"));
+mixin(H5Calls!("BS4InputText"));
 ///
 unittest {
 	assert(Assert(BS4InputText, `<input class="form-control" type="text">`));

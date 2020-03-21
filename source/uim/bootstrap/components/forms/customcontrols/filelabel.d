@@ -4,10 +4,10 @@ import uim.bootstrap;
 
 class DBS4CustomFileLabel : DBS4Obj
 {
-	mixin(H5This!("LABEL", `["custom-file-label"]`));
+	mixin(H5This!("LABEL", ["custom-file-label"]));
 }
 
-mixin(BS4Short!"CustomFileLabel");
+mixin(H5Calls!"BS4CustomFileLabel");
 
 unittest
 {

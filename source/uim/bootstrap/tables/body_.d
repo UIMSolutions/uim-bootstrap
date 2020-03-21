@@ -11,7 +11,7 @@ class DBS4TableBody : DBS4Obj {
 		assert(Assert(BS4Table.row, `<table class="table"><tr></tr></table>`));
 	}	
 }
-mixin(BS4Short!"TableBody");
+mixin(H5Calls!"BS4TableBody");
 
 unittest {
 	assert(Assert(BS4TableBody, `<tbody></tbody>`));

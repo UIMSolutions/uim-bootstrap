@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4NavList : DBS4Obj {
-	mixin(H5This!("UL", `["nav"]`));
+	mixin(H5This!("UL", ["nav"]));
 	override public void _init() {
 		super._init;
 	}
@@ -14,7 +14,7 @@ class DBS4NavList : DBS4Obj {
 	O fill(this O)(bool mode = true) { return this.classes("nav-fill"); }
 	O justified(this O)(bool mode = true) { return this.classes("nav-justified"); }
 }
-mixin(BS4Short!"NavList");
+mixin(H5Calls!"BS4NavList");
 
 unittest {
 	

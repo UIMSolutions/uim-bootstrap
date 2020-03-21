@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4FormGroup : DBS4Obj {
-	mixin(H5This!("div", `["form-group"]`));
+	mixin(H5This!("div", ["form-group"]));
 
 	mixin(MyAttribute!("readOnly", "readonly"));
 	mixin(MyAttribute!("value", "value"));
@@ -43,7 +43,7 @@ class DBS4FormGroup : DBS4Obj {
 	mixin(MyContent!("url", "BS4InputUrl"));
 	mixin(MyContent!("week", "BS4InputWeek"));
 }
-mixin(BS4Short!"FormGroup");
+mixin(H5Calls!"BS4FormGroup");
 ///
 unittest {
 	assert(Assert(BS4FormGroup, `<div class="form-group"></div>`));

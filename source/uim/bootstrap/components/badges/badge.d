@@ -7,7 +7,7 @@ import uim.bootstrap;
  * Authors: UI Manufaktur UG, https://ui-manufaktur.com 
  */
 class DBS4Badge : DBS4Obj {
-	mixin(H5This!("Span", `["badge"]`));
+	mixin(H5This!("Span", ["badge"]));
 
 	// Color of badge
 	O color(this O)(string name) {
@@ -28,7 +28,7 @@ class DBS4Badge : DBS4Obj {
 	}
 }
 // Shortcut to class DBS4Badge
-mixin(BS4Func!("Badge"));
+mixin(H5Calls!("BS4Badge"));
 
 unittest {
 	assert(Assert(BS4Badge,`<span class="badge"></span>`));

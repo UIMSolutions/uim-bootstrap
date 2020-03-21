@@ -3,13 +3,13 @@
 import uim.bootstrap;
 
 class DBS4CustomFile : DBS4Obj {
-	mixin(H5This!("DIV", `["custom-file"]`));
+	mixin(H5This!("DIV", ["custom-file"]));
 
 	mixin(MyContent!("input", "BS4CustomFileInput"));
 	mixin(MyContent!("label", "BS4CustomFileLabel"));
 }
 
-mixin(BS4Short!"CustomFile");
+mixin(H5Calls!"BS4CustomFile");
 
 unittest
 {

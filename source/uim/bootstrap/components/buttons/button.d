@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4Button : DBS4ButtonObj {
-	mixin(H5This!("button", `["btn"]`, `["type":"button"]`));
+	mixin(H5This!("button", ["btn"], `["type":"button"]`));
 
 	// Set button to active state
 	O active(this O)(bool mode = true){ if (mode) _classes ~= "active"; return cast(O)this; }
@@ -38,7 +38,7 @@ class DBS4Button : DBS4ButtonObj {
 		assert(Assert(BS4Button.size("lg"),`<button class="btn btn-lg" type="button"></button>`));
 	}
 }
-mixin(BS4Short!"Button");
+mixin(H5Calls!"BS4Button");
 
 unittest {
 	assert(Assert(BS4Button,`<button class="btn" type="button"></button>`));

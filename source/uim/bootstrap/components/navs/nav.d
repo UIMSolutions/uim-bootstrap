@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4Nav : DBS4Obj {
-	mixin(H5This!("Ul", `["nav"]`));
+	mixin(H5This!("Ul", ["nav"]));
 
 	mixin(MyContent!("item", "BS4NavItem"));
 	unittest {
@@ -28,7 +28,7 @@ class DBS4Nav : DBS4Obj {
 		assert(Assert(BS4Nav.link("#", ""), `<ul class="nav"><li class="nav-item"><a class="nav-link" href="#"></a></li></ul>`));
 	}
 }
-mixin(BS4Short!"Nav");
+mixin(H5Calls!"BS4Nav");
 
 unittest {
 	assert(Assert(BS4Nav, `<ul class="nav"></ul>`));

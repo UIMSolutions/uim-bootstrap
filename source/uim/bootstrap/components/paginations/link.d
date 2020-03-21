@@ -3,12 +3,12 @@
 import uim.bootstrap;
 
 class DBS4PageLink : DBS4Obj {
-	mixin(H5This!("A", `["page-link"]`, `["href":"#"]`));
+	mixin(H5This!("A", ["page-link"], `["href":"#"]`));
 	override public void _init() {
 		super._init;
 	}
 }
-mixin(BS4Short!"PageLink");
+mixin(H5Calls!"BS4PageLink");
 
 unittest {
 	

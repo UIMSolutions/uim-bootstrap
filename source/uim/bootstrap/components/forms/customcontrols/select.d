@@ -3,7 +3,7 @@
 import uim.bootstrap; 
 
 class DBS4CustomSelect : DH5Select {
-	mixin(H5This!("Select", `["custom-select"]`));
+	mixin(H5This!("Select", ["custom-select"]));
 
 	mixin(MyContent!("option", "H5Option"));
 	O options(this O)(string[] values, string selected = "", string disabled = "") {
@@ -51,7 +51,7 @@ class DBS4CustomSelect : DH5Select {
 		return cast(O)this;	
 	}
 }
-mixin(BS4Func!("CustomSelect"));
+mixin(H5Calls!("BS4CustomSelect"));
 
 unittest {
 	

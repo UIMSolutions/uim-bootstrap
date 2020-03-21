@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4CardBody : DBS4Obj {
-	mixin(H5This!("DIV", `["card-body"]`));
+	mixin(H5This!("DIV", ["card-body"]));
 
 	mixin(MyContent!("title", "BS4CardTitle"));
 	unittest {
@@ -15,7 +15,7 @@ class DBS4CardBody : DBS4Obj {
 		assert(Assert(BS4CardBody.text("Hallo"),`<div class="card-body"><p class="card-text">Hallo</p></div>`));
 	}
 }
-mixin(BS4Short!"CardBody");
+mixin(H5Calls!"BS4CardBody");
 unittest {
 	assert(Assert(BS4CardBody,`<div class="card-body"></div>`));
 }

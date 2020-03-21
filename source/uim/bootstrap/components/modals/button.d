@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4ModalButton : DBS4Obj {
-	mixin(H5This!("Button", `["btn"]`, `["data-toggle":"modal"]`));
+	mixin(H5This!("Button", ["btn"], `["data-toggle":"modal"]`));
 
 	O target(this O)(string targetId) { _attributes["data-target"] = "#"~targetId;  return cast(O)this; }
 	O backdrop(this O)(bool modeBackdrop = true) { _attributes["data-backdrop"] = "static"; return cast(O)this; }
@@ -11,7 +11,7 @@ class DBS4ModalButton : DBS4Obj {
 		return cast(O)this;
 	}
 }
-mixin(BS4Short!"ModalButton");
+mixin(H5Calls!"BS4ModalButton");
 unittest {
 	// assert(Assert(BS4ModalButton, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
 }

@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4CustomInput : DBS4Obj {
-	mixin(H5This!("INPUT", `["custom-control-input"]`));
+	mixin(H5This!("INPUT", ["custom-control-input"], null, true));
 	override public void _init() {
 		super._init;
 		_single = true;
@@ -14,7 +14,7 @@ class DBS4CustomInput : DBS4Obj {
 	}
 
 }
-mixin(BS4Short!"CustomInput");
+mixin(H5Calls!"BS4CustomInput");
 
 unittest {
 }

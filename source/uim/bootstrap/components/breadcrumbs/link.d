@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4BreadcrumbLink : DBS4Obj {	
-	mixin(H5This!("LI", `["breadcrumb-item"]`));
+	mixin(H5This!("LI", ["breadcrumb-item"]));
 	override public void _init() {
 		super._init;
 	}
@@ -29,7 +29,7 @@ class DBS4BreadcrumbLink : DBS4Obj {
 		return super.toHTML;
 	}
 }
-mixin(BS4Short!"BreadcrumbLink");
+mixin(H5Calls!"BS4BreadcrumbLink");
 
 unittest {
 }

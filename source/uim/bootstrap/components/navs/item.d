@@ -3,10 +3,7 @@
 import uim.bootstrap;
 
 class DBS4NavItem : DBS4Obj {
-	mixin(H5This!("li", `["nav-item"]`));
-	override public void _init() {
-		super._init;
-	}
+	mixin(H5This!("li", ["nav-item"], null));
 
 	O dropdown(this O)(bool mode = true) { return this.classes("dropdown"); }
 	mixin(MyContent!("link", "BS4NavLink"));
@@ -14,7 +11,7 @@ class DBS4NavItem : DBS4Obj {
 		assert(Assert(BS4NavItem.dropdown, `<li class="dropdown nav-item"></li>`));
 	}
 }
-mixin(BS4Short!"NavItem");
+mixin(H5Calls!"BS4NavItem");
 
 unittest {
 	assert(Assert(BS4NavItem, `<li class="nav-item"></li>`));

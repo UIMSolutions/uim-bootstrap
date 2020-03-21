@@ -4,7 +4,7 @@ import uim.bootstrap;
 
 class DBS4ButtonGroup : DBS4Obj
 {
-	mixin(H5This!("DIV", `["btn-group"]`, `["role":"group"]`));
+	mixin(H5This!("DIV", ["btn-group"], `["role":"group"]`));
 	override public void _init()
 	{
 		super._init;
@@ -43,7 +43,7 @@ class DBS4ButtonGroup : DBS4Obj
 	mixin(MyContent!("link", "BS4ButtonLink"));
 }
 
-mixin(BS4Short!"ButtonGroup");
+mixin(H5Calls!"BS4ButtonGroup");
 
 unittest
 {

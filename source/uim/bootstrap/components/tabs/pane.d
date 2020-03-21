@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4TabPane : DBS4Obj {
-	mixin(H5This!("DIV", `["tab-pane"]`, `["role":"tabpanel", "aria-expanded":"false"]`));
+	mixin(H5This!("DIV", ["tab-pane"], `["role":"tabpanel", "aria-expanded":"false"]`));
 	override public void _init() {
 		super._init;
 	}
@@ -21,7 +21,7 @@ class DBS4TabPane : DBS4Obj {
 		assert(Assert(BS4TabPane.fade, `<div class="fade tab-pane" aria-expanded="false" role="tabpanel"></div>`));
 	}
 }
-mixin(BS4Short!"TabPane");
+mixin(H5Calls!"BS4TabPane");
 
 unittest {
 }

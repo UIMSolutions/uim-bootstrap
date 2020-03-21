@@ -9,7 +9,7 @@ Containers are containing elements to wrap other elements and contain its grid s
 Default: A fixed container is a (responsive) fixed width container. 
 */
 class DBS4Container : DBS4Obj {
-	mixin(H5This!("div", `["container"]`));
+	mixin(H5This!("div", ["container"]));
 	unittest {
 		assert(Assert(BS4Container, `<div class="container"></div>`));
 	}
@@ -24,4 +24,4 @@ class DBS4Container : DBS4Obj {
 		assert(Assert(BS4Container.row,`<div class="container"><div class="row"></div></div>`));
 	}
 }
-mixin(BS4Func!("Container"));
+mixin(H5Calls!("BS4Container"));

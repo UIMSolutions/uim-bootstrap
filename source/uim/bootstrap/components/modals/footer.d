@@ -3,9 +3,9 @@
 import uim.bootstrap;
 
 class DBS4ModalFooter : DBS4Obj {
-	mixin(H5This!("DIV", `["modal-footer"]`));
+	mixin(H5This!("DIV", ["modal-footer"]));
 }
-mixin(BS4Short!"ModalFooter");
+mixin(H5Calls!"BS4ModalFooter");
 
 unittest {
 	assert(Assert(BS4ModalFooter, `<div class="modal-footer"></div>`));

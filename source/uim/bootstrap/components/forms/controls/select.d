@@ -3,7 +3,7 @@
 import uim.bootstrap; 
 
 class DBS4InputSelect : DBS4Obj {
-	mixin(H5This!("Select", `["form-control"]`));	
+	mixin(H5This!("Select", ["form-control"]));	
 
 	mixin(MyContent!("option", "H5Option"));
 	O options(this O)(string[] values, string selected = "", string disabled = "") {
@@ -51,7 +51,7 @@ class DBS4InputSelect : DBS4Obj {
 		return cast(O)this;	
 	}
 }
-mixin(BS4Func!("InputSelect"));
+mixin(H5Calls!("BS4InputSelect"));
 
 unittest {
 	

@@ -2,14 +2,10 @@
 
 import uim.bootstrap; 
 
-class DBS4InputUrl : DBS4Obj {
-	mixin(H5This!("Input", `["form-control"]`, `["type":"url"]`));
-	override public void _init() {
-		super._init;
-		_single = true;
-	}
+class DBS4InputUrl : DBS4Input {
+	mixin(H5This!("", null, `["type":"url"]`));
 }
-mixin(BS4Func!("InputUrl"));
+mixin(H5Calls!("BS4InputUrl"));
 ///
 unittest {
 	assert(Assert(BS4InputUrl, `<input class="form-control" type="url">`));

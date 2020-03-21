@@ -3,9 +3,9 @@
 import uim.bootstrap;
 
 class DBS4Media : DBS4Obj {
-	mixin(H5This!("DIV", `["media"]`));
+	mixin(H5This!("DIV", ["media"]));
 }
-mixin(BS4Short!"Media");
+mixin(H5Calls!"BS4Media");
 
 unittest {
 	assert(Assert(BS4Media, `<div class="media"></div>`));

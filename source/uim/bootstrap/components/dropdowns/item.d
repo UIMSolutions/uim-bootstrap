@@ -3,9 +3,9 @@
 import uim.bootstrap;
 
 class DBS4DropdownItem : DBS4Obj {
-	mixin(H5This!("Li", `["dropdown-item"]`));
+	mixin(H5This!("Li", ["dropdown-item"]));
 }
-mixin(BS4Short!"DropdownItem");
+mixin(H5Calls!"BS4DropdownItem");
 
 unittest {
 	

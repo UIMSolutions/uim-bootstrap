@@ -13,4 +13,4 @@ class DBS4Col : DBS4Obj {
 		assert(Assert(BS4Col.sizes("12"), `<div class="col-12"></div>`));
 	}
 }
-mixin(BS4Func!("Col"));
+mixin(H5Calls!("BS4Col"));

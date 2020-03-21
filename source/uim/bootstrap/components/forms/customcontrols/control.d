@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4CustomControl : DBS4Obj {
-	mixin(H5This!("DIV", `["custom-control"]`));
+	mixin(H5This!("DIV", ["custom-control"]));
 
 	mixin(MyContent!("checkbox", "BS4CustomCheckbox"));
 	mixin(MyContent!("input", "BS4CustomInput"));
@@ -13,4 +13,4 @@ class DBS4CustomControl : DBS4Obj {
 		assert(Assert(BS4CustomControl, `<div class="custom-control"></div>`));
 	}
 }
-mixin(BS4Short!"CustomControl");
+mixin(H5Calls!"BS4CustomControl");

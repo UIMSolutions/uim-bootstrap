@@ -155,7 +155,7 @@ class DBS4Obj : DH5Obj {
 	}
 }
 
-mixin(BS4Short!"Obj");
+mixin(H5Calls!"BS4Obj");
 
 unittest {
 	assert(Assert(BS4Obj, "<div></div>"));

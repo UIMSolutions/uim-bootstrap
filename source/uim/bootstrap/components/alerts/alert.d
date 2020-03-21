@@ -4,7 +4,7 @@ import uim.bootstrap;
 
 ///Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
 class DBS4Alert : DBS4Obj {
-	mixin(H5This!("Div", `["alert"]`, `["role":"alert"]`));
+	mixin(H5This!("Div", ["alert"], `["role":"alert"]`));
 
 	O color(this O)(string name) {
 		return this.classes("alert-" ~ name);
@@ -32,13 +32,13 @@ class DBS4Alert : DBS4Obj {
 	mixin(MyContent!("heading", "BS4AlertHeading"));
 }
 
-mixin(BS4Func!("Alert"));
+mixin(H5Calls!("BS4Alert"));
 
 class DBS4AlertLink : DBS4Obj {
-	mixin(H5This!("AlertLink", `["alert-link"]`, `["href":"#"]`));
+	mixin(H5This!("AlertLink", ["alert-link"], `["href":"#"]`));
 }
 
-mixin(BS4Func!("AlertLink"));
+mixin(H5Calls!("BS4AlertLink"));
 
 unittest {
 	assert(Assert(BS4Alert,`<div class="alert" role="alert"></div>`));

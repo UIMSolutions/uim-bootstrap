@@ -2,14 +2,10 @@
 
 import uim.bootstrap; 
 
-class DBS4InputHidden : DBS4Obj {
-	mixin(H5This!("Input", `["form-control"]`, `["type":"hidden"]`));
-	override public void _init() {
-		super._init;
-		_single = true;
-	}
+class DBS4InputHidden : DBS4Input {
+	mixin(H5This!("", null, `["type":"hidden"]`));
 }
-mixin(BS4Func!("InputHidden"));
+mixin(H5Calls!("BS4InputHidden"));
 unittest {
 		assert(Assert(BS4InputHidden, `<input class="form-control" type="hidden">`));
 }

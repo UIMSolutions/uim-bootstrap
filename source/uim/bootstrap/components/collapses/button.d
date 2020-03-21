@@ -3,9 +3,9 @@
 import uim.bootstrap;
 
 class DBS4CollapseButton : DBS4Obj {
-	mixin(H5This!("button", `["btn"]`, `["data-toggle":"collapse", "role":"button"]`));
+	mixin(H5This!("button", ["btn"], `["data-toggle":"collapse", "role":"button"]`));
 }
-mixin(BS4Short!"CollapseButton");
+mixin(H5Calls!"BS4CollapseButton");
 
 unittest {
 	assert(Assert(BS4CollapseButton,`<button class="btn" data-toggle="collapse" role="button"></button>`));

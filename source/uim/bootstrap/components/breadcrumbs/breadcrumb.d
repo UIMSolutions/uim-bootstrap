@@ -22,7 +22,7 @@ class DBS4Breadcrumb : DBS4Obj {
 		return super.toHTML;
 	}
 }
-mixin(BS4Short!"Breadcrumb");
+mixin(H5Calls!"BS4Breadcrumb");
 
 unittest {
 	assert(Assert(BS4Breadcrumb, `<nav aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>`));

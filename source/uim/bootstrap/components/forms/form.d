@@ -9,7 +9,7 @@ class DBS4Form : DBS4Obj {
 
 	mixin(MyContent!("formGroup", "BS4FormGroup"));
 }
-mixin(BS4Short!"Form");
+mixin(H5Calls!"BS4Form");
 
 unittest {
 	

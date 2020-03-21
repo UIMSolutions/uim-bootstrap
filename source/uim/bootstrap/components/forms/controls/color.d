@@ -2,14 +2,10 @@
 
 import uim.bootstrap; 
 
-class DBS4InputColor : DBS4Obj {
-	mixin(H5This!("Input", `["form-control"]`, `["type":"color"]`));
-	override public void _init() {
-		super._init;
-		_single = true;
-	}	
+class DBS4InputColor : DBS4Input {
+	mixin(H5This!("", null, `["type":"color"]`));
 }
-mixin(BS4Func!("InputColor"));
+mixin(H5Calls!("BS4InputColor"));
 ///
 unittest {
 	assert(Assert(BS4InputColor, `<input class="form-control" type="color">`));

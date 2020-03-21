@@ -3,9 +3,9 @@
 import uim.bootstrap;
 
 class DBS4Collapse : DBS4Obj {
-	mixin(H5This!("Div", `["collapse"]`));
+	mixin(H5This!("Div", ["collapse"]));
 }
-mixin(BS4Short!"Collapse");
+mixin(H5Calls!"BS4Collapse");
 
 unittest {
 	assert(Assert(BS4Collapse,`<div class="collapse"></div>`));

@@ -4,7 +4,7 @@ import uim.bootstrap;
 
 class DBS4NavbarBrand : DBS4Obj
 {
-	mixin(H5This!("a", `["navbar-brand"]`));
+	mixin(H5This!("a", ["navbar-brand"]));
 	override public void _init()
 	{
 		super._init;
@@ -13,7 +13,7 @@ class DBS4NavbarBrand : DBS4Obj
 	mixin(MyContent!("image", "H5IMG"));
 }
 
-mixin(BS4Short!"NavbarBrand");
+mixin(H5Calls!"BS4NavbarBrand");
 ///
 unittest
 {

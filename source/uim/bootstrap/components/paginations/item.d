@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4PageItem : DBS4Obj {
-	mixin(H5This!("LI", `["page-item"]`));
+	mixin(H5This!("LI", ["page-item"]));
 	override public void _init() {
 		super._init;
 	}
@@ -12,7 +12,7 @@ class DBS4PageItem : DBS4Obj {
 	O active(this O)(bool value = true) { if (value) this.classes("active"); return cast(O)this; }
 	O disabled(this O)(bool value = true) { if (value) this.classes("disabled").attributes("tabindex", "-1"); return cast(O)this; }
 }
-mixin(BS4Short!"PageItem");
+mixin(H5Calls!"BS4PageItem");
 
 unittest {
 	assert(Assert(BS4PageItem, `<li class="page-item"></li>`));

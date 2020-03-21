@@ -3,12 +3,9 @@
 import uim.bootstrap;
 
 class DBS4ListInlineItem : DBS4Obj {
-	mixin(H5This!("LI", `["list-inline-item"]`));
-	override public void _init() {
-		super._init;
-	}
+	mixin(H5This!("LI", ["list-inline-item"]));
 }
-mixin(BS4Short!"ListInlineItem");
+mixin(H5Calls!"BS4ListInlineItem");
 
 unittest {
 	assert(Assert(BS4ListInlineItem, `<li class="list-inline-item"></li>`));

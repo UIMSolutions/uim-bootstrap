@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4DropdownMenu : DBS4Obj {
-	mixin(H5This!("UL", `["dropdown-menu"]`));
+	mixin(H5This!("UL", ["dropdown-menu"]));
 
 	mixin(MyAttribute!("label", "aria-labelledby"));
 
@@ -11,7 +11,7 @@ class DBS4DropdownMenu : DBS4Obj {
 	mixin(MyContent!("header", "BS4DropdownHeader"));
 	mixin(MyContent!("item", "BS4DropdownItem"));
 }
-mixin(BS4Short!"DropdownMenu");
+mixin(H5Calls!"BS4DropdownMenu");
 
 unittest {
 	assert(Assert(BS4DropdownMenu, `<ul class="dropdown-menu"></ul>`));

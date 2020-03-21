@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4ProgressBar : DBS4Obj {
-	mixin(H5This!("div", `["progress-bar"]`, `["role":"progressbar"]`));
+	mixin(H5This!("div", ["progress-bar"], `["role":"progressbar"]`));
 
 	O valueNow(this O)(string value) { return this.attributes(["aria-valuenow":value]); }
 	O valueMin(this O)(string value) { return this.attributes(["aria-valuemin":value]); }
@@ -12,7 +12,7 @@ class DBS4ProgressBar : DBS4Obj {
 	O striped(this O)(bool mode = true) { return this.classes("progress-bar-striped"); }
 	O animated(this O)(bool mode = true) { return this.classes("progress-bar-animated"); }
 }
-mixin(BS4Short!"ProgressBar");
+mixin(H5Calls!"BS4ProgressBar");
 
 unittest {
 	assert(Assert(BS4ProgressBar, `<div class="progress-bar" role="progressbar"></div>`));

@@ -42,7 +42,7 @@ class DBS4TableRow : DBS4Obj {
 		return super.toHTML;
 	}*/
 } 
-mixin(BS4Short!"TableRow");
+mixin(H5Calls!"BS4TableRow");
 
 unittest {
 	assert(Assert(BS4TableRow, "<tr></tr>"));

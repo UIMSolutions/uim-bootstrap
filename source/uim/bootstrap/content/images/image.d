@@ -14,7 +14,7 @@ class DBS4Image : DBS4Obj {
 	O rounded(this O)(string side) { this.classes("rounded-"~side); return cast(O)this; }
 	O roundedNo(this O)() { this.classes("rounded-0"); return cast(O)this; }
 }
-mixin(BS4Func!("Image"));
+mixin(H5Calls!("BS4Image"));
 
 unittest {
 	assert(Assert(BS4Image, `<img>`));

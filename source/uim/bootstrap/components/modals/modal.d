@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4Modal : DBS4Obj {
-	mixin(H5This!("DIV", `["modal"]`, `["tabindex":"-1", "role":"dialog", "aria-hidden":"true"]`));
+	mixin(H5This!("DIV", ["modal"], `["tabindex":"-1", "role":"dialog", "aria-hidden":"true"]`));
 	unittest {
 		assert(Assert(BS4Modal, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`));
 	}
@@ -18,7 +18,7 @@ class DBS4Modal : DBS4Obj {
 				BS4Modal.fade, `<div class="fade modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`));
 	}
 }
-mixin(BS4Short!"Modal");
+mixin(H5Calls!"BS4Modal");
 unittest {
 	assert(Assert(BS4Modal, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`));
 }

@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 class DBS4ModalDialog : DBS4Obj {
-	mixin(H5This!("div", `["modal-dialog"]`, `["role":"document"]`));
+	mixin(H5This!("div", ["modal-dialog"], `["role":"document"]`));
 
 	O fade(this O)(bool mode = true) { return this.classes("fade"); }
 	unittest {
@@ -20,7 +20,7 @@ class DBS4ModalDialog : DBS4Obj {
 		assert(Assert(BS4ModalDialog.centered, `<div class="modal-dialog modal-dialog-centered" role="document"></div>`));
 	}
 }
-mixin(BS4Short!"ModalDialog");
+mixin(H5Calls!"BS4ModalDialog");
 unittest {
 	assert(Assert(BS4ModalDialog, `<div class="modal-dialog" role="document"></div>`));
 }

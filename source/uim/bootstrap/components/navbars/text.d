@@ -3,9 +3,9 @@
 import uim.bootstrap;
 
 class DBS4NavbarText : DBS4Obj {
-	mixin(H5This!("SPAN", `["navbar-text"]`));
+	mixin(H5This!("SPAN", ["navbar-text"]));
 }
-mixin(BS4Short!"NavbarText");
+mixin(H5Calls!"BS4NavbarText");
 
 unittest {
 	assert(Assert(BS4NavbarText, `<span class="navbar-text"></span>`));
