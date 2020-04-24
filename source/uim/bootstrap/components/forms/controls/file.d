@@ -2,12 +2,8 @@
 
 import uim.bootstrap; 
 
-class DBS4InputFile : DBS4Obj {
-	mixin(H5This!("Input", ["form-control"], `["type":"file"]`));
-	override public void _init() {
-		super._init;
-		_single = true;
-	}
+class DBS4InputFile : DBS4Input {
+	mixin(H5This!(null, null, `["type":"file"]`));
 }
 mixin(H5Calls!("BS4InputFile"));
 unittest {

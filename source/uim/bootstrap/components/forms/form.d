@@ -7,7 +7,8 @@ class DBS4Form : DBS4Obj {
 
 	O inline(this O)(bool value = true) { return this.classes("form-inline"); }
 
-	mixin(MyContent!("formGroup", "BS4FormGroup"));
+		mixin(MyContent!("label", "H5Label"));
+		mixin(MyContent!("formGroup", "BS4FormGroup"));
 }
 mixin(H5Calls!"BS4Form");
 

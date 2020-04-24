@@ -18,7 +18,7 @@ class DBS4FormGroup : DBS4Obj {
 	mixin(MyContent!("col", "BS4Col"));
 	mixin(MyContent!("input", "BS4Input"));
 	mixin(MyContent!("button", "BS4InputButton"));
-	mixin(MyContent!("checkbox", "BS4InputCheckbox"));
+	mixin(MyContent!("checkbox", "BS4Checkbox"));
 	mixin(MyContent!("color", "BS4InputColor"));
 	mixin(MyContent!("inputDate", "BS4InputDate"));
 	mixin(MyContent!("inputDateTime", "BS4InputDateTime"));
@@ -29,8 +29,8 @@ class DBS4FormGroup : DBS4Obj {
 	mixin(MyContent!("image", "BS4InputImage"));
 	mixin(MyContent!("month", "BS4InputMonth"));
 	mixin(MyContent!("number", "BS4InputNumber"));
-	mixin(MyContent!("password", "BS4InputPassword"));
-	mixin(MyContent!("radio", "BS4InputRadio"));
+	mixin(MyContent!("password", "BS4Password"));
+	mixin(MyContent!("radio", "BS4Radio"));
 	mixin(MyContent!("inputRange", "BS4InputRange"));
 	mixin(MyContent!("inputReset", "BS4InputReset"));
 	mixin(MyContent!("search", "BS4InputSearch"));
@@ -38,7 +38,7 @@ class DBS4FormGroup : DBS4Obj {
 	mixin(MyContent!("submit", "BS4InputSubmit"));
 	mixin(MyContent!("telephone", "BS4InputTelephone"));
 	mixin(MyContent!("text", "BS4InputText"));
-	mixin(MyContent!("textArea", "BS4InputTextArea"));
+	mixin(MyContent!("textarea", "BS4InputTextarea"));
 	mixin(MyContent!("inputTime", "BS4InputTime"));
 	mixin(MyContent!("url", "BS4InputUrl"));
 	mixin(MyContent!("week", "BS4InputWeek"));

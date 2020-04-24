@@ -24,28 +24,29 @@ class DBS4ButtonGroup : DBS4Obj
 
 	O vertical(this O)(bool mode)
 	{
-		if (mode)
-		{
+		if (mode) {
 			_classes = _classes.sub("btn-group");
 			_classes ~= "btn-group-vertical";
 		}
 		return cast(O) this;
 	}
 
-	unittest
-	{
+	unittest {
 		assert(Assert(BS4ButtonGroup.vertical(true), `<div class="btn-group-vertical" role="group"></div>`));
 	}
 
 	mixin(MyAttribute!("label", "aria-label"));
 
 	mixin(MyContent!("button", "BS4Button"));
-	mixin(MyContent!("link", "BS4ButtonLink"));
+	unittest {
+		assert(Assert(BS4ButtonGroup.button, `<div class="btn-group" role="group"><button class="btn" type="button"></button></div>`));
+	}
+
+mixin(MyContent!("link", "BS4ButtonLink"));
 }
 
 mixin(H5Calls!"BS4ButtonGroup");
 
-unittest
-{
+unittest {
 	assert(Assert(BS4ButtonGroup, `<div class="btn-group" role="group"></div>`));
 }

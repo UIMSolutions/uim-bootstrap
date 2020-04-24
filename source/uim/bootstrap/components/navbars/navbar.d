@@ -9,7 +9,6 @@ class DBS4Navbar : DBS4Obj {
 		if (value) this.classes("justify-content-center");
 		return cast(O)this;
 	}
-	///
 	unittest {
 		assert(Assert(BS4Navbar.center, `<nav class="justify-content-center navbar"></nav>`));
 		assert(Assert(BS4Navbar("Test").center, `<nav class="justify-content-center navbar">Test</nav>`));
@@ -19,7 +18,6 @@ class DBS4Navbar : DBS4Obj {
 		if (value) this.classes("navbar-dark");
 		return cast(O)this;
 	}
-	///
 	unittest {
 		assert(Assert(BS4Navbar.dark, `<nav class="navbar navbar-dark"></nav>`));
 	}

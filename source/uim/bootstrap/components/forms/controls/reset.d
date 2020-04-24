@@ -4,10 +4,6 @@ import uim.bootstrap;
 
 class DBS4InputReset : DBS4Input {
 	mixin(H5This!("", null, `["type":"reset"]`));
-	override public void _init() {
-		super._init;
-		_single = true;
-	}
 }
 mixin(H5Calls!("BS4InputReset"));
 ///

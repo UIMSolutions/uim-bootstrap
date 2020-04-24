@@ -2,11 +2,11 @@
 
 import uim.bootstrap; 
 
-class DBS4InputPassword : DBS4Obj {
-	mixin(H5This!("Input", ["form-control"], `["type":"password"]`));
+class DBS4Password : DBS4Input {
+	mixin(H5This!(null, ["form-control"], `["type":"password"]`));
 }
-mixin(H5Calls!("BS4InputPassword"));
+mixin(H5Calls!("BS4Password"));
 ///
 unittest {
-		assert(Assert(BS4InputPassword, `<input class="form-control" type="password">`));
+		assert(Assert(BS4Password, `<input class="form-control" type="password">`));
 }

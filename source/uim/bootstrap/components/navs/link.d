@@ -15,8 +15,10 @@ class DBS4NavLink : DBS4Obj {
 		assert(Assert(BS4NavLink.disabled, `<a class="disabled nav-link" href="#"></a>`));
 	}
 
-	O dropdownToggle(this O)(bool mode = true) { return this.classes("dropdown-toggle")
-	.attributes(["data-toggle":"dropdown", "role":"button", "aria-haspopup":"true", "aria-expanded":"false"]); }
+	O dropdownToggle(this O)(bool mode = true) { 
+		return this
+			.classes("dropdown-toggle")
+			.attributes(["data-toggle":"dropdown", "role":"button", "aria-haspopup":"true", "aria-expanded":"false"]); }
 }
 mixin(H5Calls!"BS4NavLink");
 

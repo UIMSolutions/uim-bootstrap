@@ -4,9 +4,6 @@ import uim.bootstrap;
 
 class DBS4BreadcrumbLink : DBS4Obj {	
 	mixin(H5This!("LI", ["breadcrumb-item"]));
-	override public void _init() {
-		super._init;
-	}
 	unittest {
 		assert(Assert(BS4BreadcrumbLink, `<li class="breadcrumb-item"><a href=""></a></li>`));
 	}
