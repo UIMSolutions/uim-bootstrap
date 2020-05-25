@@ -24,7 +24,7 @@ class DBS4 : DH5
     /// Adding a breadcrumb
     mixin(BS4Def!"breadcrumb");
     unittest {
-        assert(Assert(BS4.breadcrumb, `<nav aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>`));
+        assert(Assert(BS4.breadcrumb, `<nav aria-label="breadcrumb"></nav>`));
     }
 
     mixin(BS4Def!"button");

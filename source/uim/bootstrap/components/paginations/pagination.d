@@ -12,17 +12,9 @@ class DBS4Pagination : DBS4Obj {
 
 	mixin(MyContent!("item", "BS4PageItem"));
 
-	O link(this O)(string url, string someContent) { this.item(BS4PageLink(["href":url], someContent)); return cast(O)this; }
-	O link(this O)(string url, DH5Obj[] someContent...) { this.item(BS4PageLink(["href":url], someContent)); return cast(O)this; }
-	O link(this O)(string url, string[] linkClasses, string linkContent) { this.item(BS4PageLink(linkClasses, ["href":url], linkContent)); return cast(O)this; }
-	O link(this O)(string url, string[] linkClasses, DHObj[] linkContent...) { this.item(BS4PageLink(linkClasses, ["href":url], linkContent)); return cast(O)this; }
-
-	O link(this O)(string[] itemClasses, string url, string linkContent) { this.item(itemClasses, BS4PageLink(["href":url], linkContent)); return cast(O)this; }
-	O link(this O)(string[] itemClasses, string url, DHObj[] linkContent...) { this.item(itemClasses, BS4PageLink(["href":url], linkContent)); return cast(O)this; }
-	O link(this O)(string[] itemClasses, string url, string[] linkClasses, string linkContent) { this.item(itemClasses, BS4PageLink(linkClasses, ["href":url], linkContent)); return cast(O)this; }
-	O link(this O)(string[] itemClasses, string url, string[] linkClasses, DHObj[] linkContent...) { this.item(itemClasses, BS4PageLink(linkClasses, ["href":url], linkContent)); return cast(O)this; }
+	mixin(MyContent!("link", "this.item", "BS4PageLink"));
 	unittest {
-		assert(Assert(BS4Nav.link("#", ""), `<ul class="nav"><li class="nav-item"><a class="nav-link" href="#"></a></li></ul>`));
+		assert(Assert(BS4Pagination.link, `<ul class="pagination"><li class="page-item"><a class="page-link" href="#"></a></li></ul>`));
 	}
 }
 mixin(H5Calls!"BS4Pagination");

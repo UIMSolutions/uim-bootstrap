@@ -1,0 +1,12 @@
+﻿module uim.bootstrap.components.dropdowns.form;
+
+import uim.bootstrap;
+
+class DBS4DropdownForm : DBS4Obj {
+	mixin(H5This!("form", null, null));
+}
+mixin(H5Calls!"BS4DropdownForm");
+
+unittest {
+	assert(Assert(BS4DropdownForm, `<form></form>`));
+}

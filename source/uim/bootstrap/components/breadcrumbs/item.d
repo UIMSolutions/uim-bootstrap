@@ -14,6 +14,12 @@ class DBS4BreadcrumbItem : DBS4Obj {
 	unittest {
 		assert(Assert(BS4BreadcrumbItem.disabled,`<li class="breadcrumb-item disabled"></li>`));
 	}
+
+	mixin(MyContent!("link", "BS4BreadcrumbLink"));
+	unittest {
+		writeln(BS4BreadcrumbItem.link);
+		assert(Assert(BS4BreadcrumbItem.link, `<li class="breadcrumb-item"><a></a></li>`));
+	}
 }
 mixin(H5Calls!"BS4BreadcrumbItem");
 

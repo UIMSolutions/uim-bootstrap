@@ -1,4 +1,4 @@
-module uim.bootstrap.extras.colors;
+module uim.bootstrap.css;
 
 import std.string; 
 

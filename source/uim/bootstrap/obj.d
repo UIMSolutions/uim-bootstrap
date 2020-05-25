@@ -27,7 +27,13 @@ class DBS4Obj : DH5Obj {
 		assert(Assert(BS4Obj.padding("t-2"), `<div class="pt-2"></div>`));
 	}
 
-	/// Addig border 
+	/// Clear border 
+	O noPadding(this O)(string side = null) { 
+		this.classes("p-0");
+		return cast(O) this;
+	}
+
+	/// Adding border 
 	O border(this O)(int value) { 
 		if (value > 0) this.classes("border-"~to!string(value));
 		else this.classes("border");

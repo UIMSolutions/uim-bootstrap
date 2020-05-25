@@ -14,7 +14,7 @@ class DBS4Container : DBS4Obj {
 		assert(Assert(BS4Container, `<div class="container"></div>`));
 	}
 
-	O fluid(this O)(bool mode) { if (mode) _classes = _classes.sub("container").add("container-fluid");  return cast(O)this; }
+	O fluid(this O)(bool mode = true) { if (mode) _classes = _classes.sub("container").add("container-fluid");  return cast(O)this; }
 	unittest {
 		assert(Assert(BS4Container.fluid(true), `<div class="container-fluid"></div>`));
 	}

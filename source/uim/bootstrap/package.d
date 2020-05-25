@@ -12,9 +12,9 @@ public import uim.bootstrap.obj;
 public import uim.bootstrap.mixins;
 public import uim.bootstrap.layout;
 public import uim.bootstrap.components;
-public import uim.bootstrap.extras;
 public import uim.bootstrap.utilities;
 public import uim.bootstrap.content;
+public import uim.bootstrap.css;
 
 public import uim.bootstrap.bs4;
 
