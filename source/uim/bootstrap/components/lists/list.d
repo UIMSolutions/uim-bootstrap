@@ -18,6 +18,12 @@ class DBS4List : DBS4Obj {
 		assert(Assert(BS4List.item, `<ul class="list-group"><li class="list-group-item"></li></ul>`));
 		assert(Assert(BS4List.item("test"), `<ul class="list-group"><li class="list-group-item">test</li></ul>`));
 	}
+
+	mixin(MyContent!("link", "this.item", "BS4ListGroupLink"));
+	unittest {
+		assert(Assert(BS4List.link, `<ul class="list-group"><li class="list-group-item"><a class="list-group-item list-group-item-action"></a></li></ul>`));
+	}
+
 }
 
 mixin(H5Calls!"BS4List");

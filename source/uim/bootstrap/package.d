@@ -21,6 +21,3 @@ public import uim.bootstrap.bs4;
 // modules
 public import uim.bootstrap.tables;
 
-auto FA(string name, string[] classes = null) {return H5I(classes~["fa", "fa-"~name]);}
-auto FAR(string name, string[] classes = null) {return H5I(classes~["far", "fa-"~name]);}
-auto FAS(string name, string[] classes = null) {return H5I(classes~["fas", "fa-"~name]);}

@@ -22,7 +22,7 @@ class DBS4Card : DBS4Obj {
 	/// Add Image
 	mixin(MyContent!("image", "BS4CardImage"));
 	unittest {
-		assert(Assert(BS4Card.inverse, `<div class="card card-inverse"></div>`));
+		assert(Assert(BS4Card.image, `<div class="card"><img class="card-img-top"></div>`));
 	}
 	/// Add card body
 	mixin(MyContent!("body_", "BS4CardBody"));

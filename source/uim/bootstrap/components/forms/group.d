@@ -15,6 +15,8 @@ class DBS4FormGroup : DBS4Obj {
 		this.content(H5Label(someClasses, someAttributes, title));
 		return cast(O)this;
 	}
+	mixin(MyContent!("div", "H5Div"));
+	
 	mixin(MyContent!("col", "BS4Col"));
 	mixin(MyContent!("input", "BS4Input"));
 	mixin(MyContent!("button", "BS4InputButton"));

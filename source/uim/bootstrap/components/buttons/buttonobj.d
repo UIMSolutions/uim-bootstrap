@@ -16,7 +16,7 @@ class DBS4ButtonObj : DBS4Obj {
 	mixin(TProperty!("string", "role"));
 	mixin(TProperty!("string", "sizeMode"));
 
-	override string toHTML() {
+	override string onlyHTML() {
 		if (colorMode) {
 			if (outline) _classes ~= "btn-outline-"~colorMode;
 			else _classes ~= "btn-"~colorMode;
@@ -27,7 +27,7 @@ class DBS4ButtonObj : DBS4Obj {
 		if (disabled) this.classes("disabled");
 		if (dataToggle) _attributes["data-toggle"]="button"; else _attributes.remove("data-toggle");
 
-		return super.toHTML;
+		return super.onlyHTML;
 	}
 }
 mixin(H5Calls!"BS4ButtonObj");

@@ -13,12 +13,12 @@ class DBS4TableColumn : DBS4Obj {
 	mixin(TProperty!("int", "width"));
 	mixin(TProperty!("string", "type"));
 
-	override string toHTML() {
+	override string onlyHTML() {
 		this.clearContent;
 		_attributes["scope"]="col";
 		if (_width) _attributes["width"]=to!string(_width);
 		this.content(_title);
-		return super.toHTML;
+		return super.onlyHTML;
 	}
 }
 mixin(H5Calls!"BS4TableColumn");

@@ -23,23 +23,23 @@ class DBS4TableRow : DBS4Obj {
 	mixin(TProperty!("string[string]", "keyPairs"));
 	mixin(TProperty!("string[]", "values"));
 
-	string toHTML(DBS4TableColumn[] columns) {
+	string onlyHTML(DBS4TableColumn[] columns) {
 		this.clearContent;
-		if (_keyPairs.empty) return toHTML;
+		if (_keyPairs.empty) return onlyHTML;
 		else {
 			foreach(col; columns) {
 				if (col.key in _keyPairs) this.content("<td>"~_keyPairs[col.key]~"</td>");
 			}
 		}
-		return super.toHTML;
+		return super.onlyHTML;
 	}
-	override string toHTML() {
+	override string onlyHTML() {
 		this.clearContent;
 		if ((_values.length == 0) && (!_keyPairs.empty)) _values = _keyPairs.values;
 		foreach(v; _values) {
 			this.content("<td>"~v~"</td>");
 		}
-		return super.toHTML;
+		return super.onlyHTML;
 	}*/
 } 
 mixin(H5Calls!"BS4TableRow");
