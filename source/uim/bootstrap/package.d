@@ -8,6 +8,7 @@ public import uim.oop;
 public import uim.html;
 
 // packages
+public import uim.bootstrap.apps;
 public import uim.bootstrap.obj;
 public import uim.bootstrap.mixins;
 public import uim.bootstrap.layout;

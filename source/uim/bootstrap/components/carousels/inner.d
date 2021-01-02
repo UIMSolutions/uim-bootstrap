@@ -2,17 +2,16 @@
 
 import uim.bootstrap;
 
-class DBS4CarouselInner : DBS4Obj
-{
+class DBS4CarouselInner : DBS4Obj {
 	mixin(H5This!("div", ["carousel-inner"]));
-	override public void _init()
-	{
-		super._init;
+
+	mixin(MyContent!("item", "BS4CarouselItem"));
+	unittest {
+		assert(Assert(BS4CarouselInner.item, `<div class="carousel-inner"><div class="carousel-item"></div></div>`));
 	}
 }
 
 mixin(H5Calls!"BS4CarouselInner");
-
-unittest
-{
+unittest {
+	assert(Assert(BS4CarouselInner,`<div class="carousel-inner"></div>`));
 }

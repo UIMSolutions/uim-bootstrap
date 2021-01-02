@@ -12,7 +12,7 @@ class DBS4NavbarNav : DBS4Obj {
 	
 	mixin(MyContent!("link", "this.item", "BS4NavLink"));
 	unittest {
-		assert(Assert(BS4NavbarNav.link, `<ul class="navbar-nav"><li class="nav-item"><a class="nav-link"></a></li></ul>`));
+		assert(Assert(BS4NavbarNav.link, `<ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="#"></a></li></ul>`));
 	}
 }
 
