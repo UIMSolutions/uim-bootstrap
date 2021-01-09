@@ -37,9 +37,9 @@ static this() {
         <h2 class="component display-4">List Groups</h2>
         <hr>
 
-        <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Default</h3>
-              <div class="code-live">
+        <div class="mb-5">
+              <h3 class="text-muted">Default</h3>
+              <div>
                 <ul class="list-group">
                   <li class="list-group-item">List group item one</li>
                   <li class="list-group-item">List group item two</li>
@@ -48,9 +48,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Active item</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Active item</h3>
+              <div>
                 <ul class="list-group">
                   <li class="list-group-item">List group item one</li>
                   <li class="list-group-item active" aria-current="true">List group item two</li>
@@ -59,9 +59,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Disabled item</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Disabled item</h3>
+              <div>
                 <ul class="list-group">
                   <li class="list-group-item">List group item one</li>
                   <li class="list-group-item">List group item two</li>
@@ -70,9 +70,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Links</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Links</h3>
+              <div>
                 <div class="list-group">
                   <a href="#" class="list-group-item list-group-item-action">List group item one</a>
                   <a href="#" class="list-group-item list-group-item-action active" aria-current="true">List group item two</a>
@@ -81,9 +81,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Buttons</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Buttons</h3>
+              <div>
                 <div class="list-group">
                   <button type="button" class="list-group-item list-group-item-action">List group item one</button>
                   <button type="button" class="list-group-item list-group-item-action active" aria-current="true">List group item two</button>
@@ -92,9 +92,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Flush</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Flush</h3>
+              <div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">List group item one</li>
                   <li class="list-group-item">List group item two</li>
@@ -103,9 +103,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Horizontal</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Horizontal</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">All breakpoints</h4>
                 <ul class="list-group list-group-horizontal">
                   <li class="list-group-item">List group item one</li>
@@ -139,9 +139,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Equal-width list group item</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Equal-width list group item</h3>
+              <div>
                 <ul class="list-group list-group-horizontal">
                   <li class="list-group-item flex-fill">List group item one</li>
                   <li class="list-group-item flex-fill">List group item two</li>
@@ -150,9 +150,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Contextual color classes</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Contextual color classes</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">Normal list group</h4>
                 <ul class="list-group">
                   <li class="list-group-item">Default list group item</li>
@@ -180,9 +180,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Badges</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Badges</h3>
+              <div>
                 <ul class="list-group">
                   <li class="list-group-item d-flex justify-content-between align-items-center">
                     List group item one
@@ -200,9 +200,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Custom content</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Custom content</h3>
+              <div>
                 <div class="list-group">
                   <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
                     <h4>Active item</h4>
@@ -223,9 +223,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Tab panels</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Tab panels</h3>
+              <div>
                 <div class="row">
                   <div class="col-4">
                     <div class="list-group" role="tablist">

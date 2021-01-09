@@ -37,9 +37,9 @@ static this() {
         <h2 class="component display-4">Modals</h2>
         <hr>
 
-        <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Static</h3>
-              <div class="code-live">
+        <div class="mb-5">
+              <h3 class="text-muted">Static</h3>
+              <div>
                 <div class="modal fade show" id="modalStatic" tabindex="-1" role="dialog" aria-labelledby="modalStaticTitle" aria-modal="true" style="display: block; position: relative; z-index: 1;">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -60,9 +60,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Header only</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Header only</h3>
+              <div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#modalHeader">Open modal</button>
                 <div class="modal fade" id="modalHeader" tabindex="-1" role="dialog" aria-labelledby="modalHeaderTitle" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -80,9 +80,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Header and footer</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Header and footer</h3>
+              <div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#modalHeaderFooter">Open modal</button>
                 <div class="modal fade" id="modalHeaderFooter" tabindex="-1" role="dialog" aria-labelledby="modalHeaderFooterTitle" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -104,9 +104,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Long scrollable content</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Long scrollable content</h3>
+              <div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#modalLong">Open modal</button>
                 <div class="modal fade" id="modalLong" tabindex="-1" role="dialog" aria-labelledby="modalLongTitle" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -132,9 +132,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Scrollable body</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Scrollable body</h3>
+              <div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#modalScrollableBody">Open modal</button>
                 <div class="modal fade" id="modalScrollableBody" tabindex="-1" role="dialog" aria-labelledby="modalScrollableBodyTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -160,9 +160,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Vertically centered</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Vertically centered</h3>
+              <div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#modalVertical">Open modal</button>
                 <div class="modal fade" id="modalVertical" tabindex="-1" role="dialog" aria-labelledby="modalVerticalTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -184,9 +184,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Sizing</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Sizing</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">Small</h4>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#modalSmall">Open modal</button>
                 <div class="modal fade" id="modalSmall" tabindex="-1" role="dialog" aria-labelledby="modalSmallTitle" aria-hidden="true">
@@ -266,9 +266,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Fullscreen</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Fullscreen</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">Always</h4>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#modalFullscreenAlways">Open modal</button>
                 <div class="modal fade" id="modalFullscreenAlways" tabindex="-1" role="dialog" aria-labelledby="modalFullscreenAlwaysTitle" aria-hidden="true">
@@ -386,9 +386,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">No animation</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">No animation</h3>
+              <div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#modalNoAnimation">Open modal</button>
                 <div class="modal" id="modalNoAnimation" tabindex="-1" role="dialog" aria-labelledby="modalNoAnimationTitle" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -411,9 +411,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Static backdrop</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Static backdrop</h3>
+              <div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#modalStaticBackdrop" data-backdrop="static" data-keyboard="false">Open modal</button>
                 <div class="modal fade" id="modalStaticBackdrop" tabindex="-1" role="dialog" aria-labelledby="modalStaticBackdropTitle" aria-hidden="true">
                   <div class="modal-dialog" role="document">

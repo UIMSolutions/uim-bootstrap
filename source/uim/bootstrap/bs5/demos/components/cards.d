@@ -37,9 +37,9 @@ static this() {
             <h2 class="component display-4">Cards</h2>
             <hr>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Parts</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Parts</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">Text</h4>
                 <div class="card w-50">
                   <div class="card-body">
@@ -90,9 +90,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Images</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Images</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">Top</h4>
                 <div class="card w-50">
                   <img src="../img/400x200.png" alt="Card image in the top" class="card-img-top">
@@ -120,9 +120,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Tab navigation</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Tab navigation</h3>
+              <div>
                 <div class="card w-50">
                   <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
@@ -145,9 +145,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Pill navigation</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Pill navigation</h3>
+              <div>
                 <div class="card w-50">
                   <div class="card-header">
                     <ul class="nav nav-pills card-header-pills">
@@ -170,9 +170,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Everything</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Everything</h3>
+              <div>
                 <div class="card w-50">
                   <div class="card-header">
                     <ul class="nav nav-pills card-header-pills">
@@ -206,9 +206,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Background color</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Background color</h3>
+              <div>
                 <div class="card text-white bg-primary w-50 mb-4">
                   <div class="card-body">
                     <h4 class="card-title">Card title</h4>
@@ -268,9 +268,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Border and text color</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Border and text color</h3>
+              <div>
                 <div class="card border-primary w-50 mb-4">
                   <div class="card-body text-primary">
                     <h4 class="card-title">Card title</h4>
@@ -330,9 +330,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Header and footer color</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Header and footer color</h3>
+              <div>
                 <div class="card border-info w-50">
                   <h3 class="card-header border-info bg-transparent">Card header</h3>
                   <div class="card-body">
@@ -345,9 +345,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Card groups</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Card groups</h3>
+              <div>
                 <div class="card-group mb-4">
                   <div class="card">
                     <img class="card-img-top" src="../img/300x150.png" alt="Card image">
@@ -400,9 +400,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Grid cards</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Grid cards</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">Default</h4>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4 mb-4">
                   <div class="col">

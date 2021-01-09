@@ -37,9 +37,9 @@ static this() {
             <h2 class="component display-4">Button Groups</h2>
             <hr>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Default</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Default</h3>
+              <div>
                 <div class="btn-group" role="group" aria-label="Default button group">
                   <button type="button" class="btn btn-secondary">Home</button>
                   <button type="button" class="btn btn-secondary">Profile</button>
@@ -48,9 +48,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">States</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">States</h3>
+              <div>
                 <div class="btn-group" role="group" aria-label="Default button group">
                   <button type="button" class="btn btn-secondary active">Home</button>
                   <button type="button" class="btn btn-secondary">Profile</button>
@@ -59,9 +59,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Outlined</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Outlined</h3>
+              <div>
                 <div class="btn-group" role="group" aria-label="Default button group">
                   <button type="button" class="btn btn-outline-secondary">Home</button>
                   <button type="button" class="btn btn-outline-secondary">Profile</button>
@@ -70,9 +70,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Links</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Links</h3>
+              <div>
                 <div class="btn-group" role="group" aria-label="Default button group">
                   <a href="#" class="btn btn-secondary">Home</a>
                   <a href="#" class="btn btn-secondary">Profile</a>
@@ -81,9 +81,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Toolbar</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Toolbar</h3>
+              <div>
                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                   <div class="btn-group me-2" role="group" aria-label="First group">
                     <button type="button" class="btn btn-secondary">1</button>
@@ -104,9 +104,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Sizing</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Sizing</h3>
+              <div>
                 <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
                   <button type="button" class="btn btn-secondary">Home</button>
                   <button type="button" class="btn btn-secondary">Profile</button>
@@ -125,9 +125,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Nesting</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Nesting</h3>
+              <div>
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                   <button type="button" class="btn btn-secondary">Home</button>
                   <button type="button" class="btn btn-secondary">Profile</button>
@@ -142,9 +142,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Vertical</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Vertical</h3>
+              <div>
                 <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
                   <button type="button" class="btn btn-secondary">Home</button>
                   <button type="button" class="btn btn-secondary">Profile</button>

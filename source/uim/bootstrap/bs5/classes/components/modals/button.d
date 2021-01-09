@@ -1,0 +1,17 @@
+﻿module uim.bootstrap.bs5.classes.components.modals.button;
+
+import uim.bootstrap;
+
+class DBS5ModalButton : DBS5Obj {
+	mixin(H5This!("Button", ["btn"], `["data-toggle":"modal"]`));
+
+	O target(this O)(string targetId) { _attributes["data-target"] = "#"~targetId;  return cast(O)this; }
+	O backdrop(this O)(bool modeBackdrop = true) { _attributes["data-backdrop"] = "static"; return cast(O)this; }
+	O keyboard(this O)(bool mode = true) { if (mode == false) _attributes["data-keyboard"] = "false"; 
+		return cast(O)this;
+	}
+}
+mixin(H5Calls!"BS5ModalButton");
+unittest {
+	// assert(Assert(BS5ModalButton, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
+}

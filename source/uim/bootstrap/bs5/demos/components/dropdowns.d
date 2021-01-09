@@ -37,9 +37,9 @@ static this() {
         <h2 class="component display-4">Dropdowns</h2>
         <hr>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Button</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Button</h3>
+          <div>
             <div class="dropdown">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownButton" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
               <div class="dropdown-menu" aria-labelledby="dropdownButton">
@@ -51,9 +51,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Link</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Link</h3>
+          <div>
             <div class="dropdown">
               <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownLink" data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
               <div class="dropdown-menu" aria-labelledby="dropdownLink">
@@ -65,9 +65,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Split button</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Split button</h3>
+          <div>
             <div class="btn-group">
               <button type="button" class="btn btn-secondary">Dropdown split button</button>
               <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownSplit" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle dropdown</span></button>
@@ -80,9 +80,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Sizing</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Sizing</h3>
+          <div>
             <div class="dropdown">
               <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownSmall" data-bs-toggle="dropdown" aria-expanded="false">Small button</button>
               <div class="dropdown-menu" aria-labelledby="dropdownSmall">
@@ -112,9 +112,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Dark</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Dark</h3>
+          <div>
             <div class="dropdown">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownDark" data-bs-toggle="dropdown" aria-expanded="false">Dropdown dark</button>
               <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownDark">
@@ -150,9 +150,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Direction</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Direction</h3>
+          <div>
             <div class="btn-group dropup">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropup" data-bs-toggle="dropdown" aria-expanded="false">Dropup</button>
               <div class="dropdown-menu" aria-labelledby="dropup">
@@ -182,9 +182,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Alignment</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Alignment</h3>
+          <div>
             <div class="btn-group">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownEndAligned" data-bs-toggle="dropdown" aria-expanded="false">Dropdown right-aligned</button>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownEndAligned">
@@ -196,9 +196,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Responsive alignment</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Responsive alignment</h3>
+          <div>
             <p>To right-align the dropdown menu for the given breakpoint or larger, add <code>.dropdown-menu{-sm|-md|-lg|-xl}-end</code>.</p>
             <div class="btn-group">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownResponsive" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">Dropdown responsive alignment</button>
@@ -221,9 +221,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Button items</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Button items</h3>
+          <div>
             <div class="dropdown">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownButtonItems" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
               <div class="dropdown-menu" aria-labelledby="dropdownButtonItems">
@@ -235,9 +235,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Active item</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Active item</h3>
+          <div>
             <div class="dropdown">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownActive" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
               <div class="dropdown-menu" aria-labelledby="dropdownActive">
@@ -249,9 +249,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Disabled item</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Disabled item</h3>
+          <div>
             <div class="dropdown">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownDisabled" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
               <div class="dropdown-menu" aria-labelledby="dropdownDisabled">
@@ -263,9 +263,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Header</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Header</h3>
+          <div>
             <div class="dropdown">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownHeader" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
               <div class="dropdown-menu" aria-labelledby="dropdownHeader">
@@ -278,9 +278,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Divider</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Divider</h3>
+          <div>
             <div class="dropdown">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownDivider" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
               <div class="dropdown-menu" aria-labelledby="dropdownDivider">
@@ -293,9 +293,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Text item</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Text item</h3>
+          <div>
             <div class="dropdown">
               <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownText" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
               <div class="dropdown-menu" aria-labelledby="dropdownText">
@@ -307,9 +307,9 @@ static this() {
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Reference</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Reference</h3>
+          <div>
             <div class="btn-group">
               <button type="button" class="btn btn-secondary">Dropdown split button</button>
               <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"><span class="visually-hidden">Toggle dropdown</span></button>

@@ -37,9 +37,9 @@ static this() {
             <h2 class="component display-4">Buttons</h2>
             <hr>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Default</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Default</h3>
+              <div>
                 <button type="button" class="btn btn-primary">Primary</button>
                 <button type="button" class="btn btn-secondary">Secondary</button>
                 <button type="button" class="btn btn-success">Success</button>
@@ -51,17 +51,17 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Link style</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Link style</h3>
+              <div>
                 <button type="button" class="btn btn-link">Link</button>
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Button class</h3>
+            <div class="mb-5">
+              <h3 class="text-muted">Button class</h3>
               <p>Default button styles applied to <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code> elements</p>
-              <div class="code-live">
+              <div>
                 <a href="#" class="btn btn-primary" role="button">Link</a>
                 <input type="button" class="btn btn-success" value="Input">
                 <input type="submit" class="btn btn-danger" value="Submit">
@@ -69,9 +69,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Outline style</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Outline style</h3>
+              <div>
                 <button type="button" class="btn btn-outline-primary">Primary</button>
                 <button type="button" class="btn btn-outline-secondary">Secondary</button>
                 <button type="button" class="btn btn-outline-success">Success</button>
@@ -83,18 +83,18 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Sizing</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Sizing</h3>
+              <div>
                 <button type="button" class="btn btn-secondary btn-sm">Small</button>
                 <button type="button" class="btn btn-secondary">Default</button>
                 <button type="button" class="btn btn-secondary btn-lg">Large</button>
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Block</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Block</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">Full width using sizing utility</h4>
                 <button type="button" class="btn btn-secondary w-100">Block button</button>
                 <h4 class="h5 text-muted mt-3">Full width using display utility</h4>
@@ -118,9 +118,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">States</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">States</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">Active</h4>
                 <button type="button" class="btn btn-primary">Not active</button>
                 <button type="button" class="btn btn-primary active">Active</button>
@@ -130,9 +130,9 @@ static this() {
               </div>
             </div>
             
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Button plugin</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Button plugin</h3>
+              <div>
                 <h4 class="h5 text-muted mt-3">Toggle buttons</h4>
                 <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Not active</button>
                 <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active</button>

@@ -35,23 +35,43 @@ static this() {
       </div>
       <div class="col-12 col-lg-8">
         <h2 class="component display-4">Breadcrumbs</h2>
-        <hr>
+        <hr>`~
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Default</h3>
-          <div class="code-live">
-            <nav aria-label="Breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Sports</a></li>
-                <li class="breadcrumb-item"><a href="#">Ball games</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Baseball</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
+demoExample("default", "Default", 
+BS5Breadcrumb.list(  
+  BS5BreadcrumbItem.link(["href":"#"], "Start"),
+  BS5BreadcrumbItem.link(["href":"#"], "Engineering"),
+  BS5BreadcrumbItem.link(["href":"#"], "Robots"),
+  BS5BreadcrumbItem(["active"], ["aria-current":"page"], "R2D2")).toString, 
+`BS5Breadcrumb(
+  BS5BreadcrumbList(  
+    BS5BreadcrumbItem(
+      H5A(["href":"#"], "Start")),
+    BS5BreadcrumbItem(
+      H5A(["href":"#"], "Engineering")),
+    BS5BreadcrumbItem(
+      H5A(["href":"#"], "Robots")),
+    BS5BreadcrumbItem(["active"], ["aria-current":"page"], "R2D2")))
 
-      </div>
+- Weitere (kompaktere) Möglichkeit -
+
+BS5Breadcrumb.list(  
+  BS5BreadcrumbItem.link(["href":"#"], "Start"),
+  BS5BreadcrumbItem.link(["href":"#"], "Engineering"),
+  BS5BreadcrumbItem.link(["href":"#"], "Robots"),
+  BS5BreadcrumbItem(["active"], ["aria-current":"page"], "R2D2"))
+`,
+`<nav aria-label="Breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Start</a></li>
+    <li class="breadcrumb-item"><a href="#">Engineering</a></li>
+    <li class="breadcrumb-item"><a href="#">Robots</a></li>
+    <li class="breadcrumb-item active" aria-current="page">R2D2</li>
+  </ol>
+</nav>`
+)~ 
+
+      `</div>
     </div>
   </div>
 </main>

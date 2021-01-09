@@ -37,27 +37,27 @@ static this() {
         <h2 class="component display-4">Close Buttons</h2>
         <hr>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Default</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Default</h3>
+          <div>
             <div class="alert alert-success" role="alert">
               <button type="button" class="btn-close" aria-label="Close"></button>
             </div>
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">Disabled</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">Disabled</h3>
+          <div>
             <div class="alert alert-success" role="alert">
               <button type="button" class="btn-close" aria-label="Close" disabled></button>
             </div>
           </div>
         </div>
 
-        <div class="code-example mb-5">
-          <h3 class="component-variation text-muted">White</h3>
-          <div class="code-live">
+        <div class="mb-5">
+          <h3 class="text-muted">White</h3>
+          <div>
             <div class="alert bg-dark" role="alert">
               <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
               <button type="button" class="btn-close btn-close-white" aria-label="Close" disabled></button>

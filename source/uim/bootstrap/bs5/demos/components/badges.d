@@ -35,30 +35,36 @@ static this() {
           </div>
           <div class="col-12 col-lg-8">
             <h2 class="component display-4">Badges</h2>
-            <hr>
-
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Headings with badge</h3>
-              <div class="code-live">
-                <h1>H1 heading with badge <span class="badge bg-secondary">Badge</span></h1>
-                <h2>H2 heading with badge <span class="badge bg-secondary">Badge</span></h2>
-                <h3>H3 heading with badge <span class="badge bg-secondary">Badge</span></h3>
-                <h4>H4 heading with badge <span class="badge bg-secondary">Badge</span></h4>
-                <h5>H5 heading with badge <span class="badge bg-secondary">Badge</span></h5>
-                <h6>H6 heading with badge <span class="badge bg-secondary">Badge</span></h6>
-              </div>
-            </div>
-
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Button with badge</h3>
-              <div class="code-live">
-                <button class="btn btn-secondary">Notifications <span class="badge bg-light text-dark">10</span></button>
-              </div>
-            </div>
-
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Button with accessible badge</h3>
-              <div class="code-live">
+            <hr>`~
+demoExample("headings", "Headings mit Badges", 
+  H5Div(
+    H5H1(H5String("H1 mit "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H2(H5String("H2 mit "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H3(H5String("H3 mit "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H4(H5String("H4 mit "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H5(H5String("H5 mit "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H6(H5String("H6 mit "), BS5Badge(["bg-secondary"], "Badge")),
+  ).toString, 
+  `<h1>H1 mit <span class="badge bg-secondary">Badge</span></h1>
+<h2>H2 mit <span class="badge bg-secondary">Badge</span></h2>
+<h3>H3 mit <span class="badge bg-secondary">Badge</span></h3>
+<h4>H4 mit <span class="badge bg-secondary">Badge</span></h4>
+<h5>H5 mit <span class="badge bg-secondary">Badge</span></h5>
+<h6>H6 mit <span class="badge bg-secondary">Badge</span></h6>`, 
+`H5H1(H5String("H1 mit "), BS5Badge(["bg-secondary"], "Badge"))
+H5H2(H5String("H2 mit "), BS5Badge(["bg-secondary"], "Badge"))
+H5H3(H5String("H3 mit "), BS5Badge(["bg-secondary"], "Badge"))
+H5H4(H5String("H4 mit "), BS5Badge(["bg-secondary"], "Badge"))
+H5H5(H5String("H5 mit "), BS5Badge(["bg-secondary"], "Badge"))
+H5H6(H5String("H6 mit "), BS5Badge(["bg-secondary"], "Badge"))`)~
+demoExample("buttons", "Buttons mit Badges", 
+  BS5Button(["btn-secondary"], H5String("Notifications "), BS5Badge(["bg-light", "text-dark"], "10")).toString, 
+`<button class="btn btn-secondary">Notifications <span class="badge bg-light text-dark">10</span></button>`, 
+`BS5Button(["btn-secondary"], H5String("Notifications "), BS5Badge(["bg-light", "text-dark"], "10"))`
+)~ 
+            `<div class="mb-5">
+              <h3 class="text-muted">Button with accessible badge</h3>
+              <div>
                 <button class="btn btn-secondary">
                   Profile
                   <span class="badge bg-light text-dark">3</span>
@@ -67,9 +73,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Background colors</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Background colors</h3>
+              <div>
                 <span class="badge bg-primary">Primary</span>
                 <span class="badge bg-secondary">Secondary</span>
                 <span class="badge bg-success">Success</span>
@@ -81,9 +87,9 @@ static this() {
               </div>
             </div>
 
-            <div class="code-example mb-5">
-              <h3 class="component-variation text-muted">Pill badges</h3>
-              <div class="code-live">
+            <div class="mb-5">
+              <h3 class="text-muted">Pill badges</h3>
+              <div>
                 <span class="badge rounded-pill bg-primary">Primary</span>
                 <span class="badge rounded-pill bg-secondary">Secondary</span>
                 <span class="badge rounded-pill bg-success">Success</span>

@@ -1,0 +1,22 @@
+﻿module uim.bootstrap.bs5.classes.components;
+
+public import uim.bootstrap.bs5.classes.components.alerts;
+public import uim.bootstrap.bs5.classes.components.badges;
+public import uim.bootstrap.bs5.classes.components.breadcrumbs;
+public import uim.bootstrap.bs5.classes.components.buttons;
+public import uim.bootstrap.bs5.classes.components.cards;
+public import uim.bootstrap.bs5.classes.components.carousels;
+public import uim.bootstrap.bs5.classes.components.collapses;
+public import uim.bootstrap.bs5.classes.components.dropdowns;
+public import uim.bootstrap.bs5.classes.components.forms;
+public import uim.bootstrap.bs5.classes.components.jumbotrons;
+public import uim.bootstrap.bs5.classes.components.lists;
+public import uim.bootstrap.bs5.classes.components.medias;
+public import uim.bootstrap.bs5.classes.components.modals;
+public import uim.bootstrap.bs5.classes.components.navs;
+public import uim.bootstrap.bs5.classes.components.navbars;
+public import uim.bootstrap.bs5.classes.components.paginations;
+public import uim.bootstrap.bs5.classes.components.popovers;
+public import uim.bootstrap.bs5.classes.components.progresses;
+public import uim.bootstrap.bs5.classes.components.scrollspies;
+public import uim.bootstrap.bs5.classes.components.tabs;
