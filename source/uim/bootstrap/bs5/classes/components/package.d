@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs5.classes.components;
 
+public import uim.bootstrap.bs5.classes.components.accordions;
 public import uim.bootstrap.bs5.classes.components.alerts;
 public import uim.bootstrap.bs5.classes.components.badges;
 public import uim.bootstrap.bs5.classes.components.breadcrumbs;
@@ -19,4 +20,5 @@ public import uim.bootstrap.bs5.classes.components.paginations;
 public import uim.bootstrap.bs5.classes.components.popovers;
 public import uim.bootstrap.bs5.classes.components.progresses;
 public import uim.bootstrap.bs5.classes.components.scrollspies;
+public import uim.bootstrap.bs5.classes.components.spinners;
 public import uim.bootstrap.bs5.classes.components.tabs;

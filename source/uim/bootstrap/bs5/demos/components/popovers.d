@@ -15,112 +15,144 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-      <div class="container-fluid mt-3 bg-light">
-        <nav aria-label="Breadcrumb" >
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-            <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/components">Components</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Popovers</li>
-          </ol>
-        </nav>
-      </div>
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col-12 col-lg-2">
-          </div>
-          <div class="col-12 col-lg-8">
-            <h2 class="component display-4">Popovers</h2>
-            <hr>
+auto linkExample = demoBs5Example("link", "Link",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 
+    H5H3(["text-muted"], "Link")),
+    H5A(["href":"#", "data-bs-toggle":"popover", "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover for link")
+    ), ``, ``);
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Link</h3>
-              <div>
-                <a href="#" data-bs-toggle="popover" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover for link</a>
-              </div>
-            </div>
+auto buttonExample = demoBs5Example("button", "Button",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 
+    H5H3(["text-muted"], "Button"),
+    H5Div(
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."],
+      "Popover for button")))
+      ), ``, ``);
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Button</h3>
-              <div>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover for button</button>
-              </div>
-            </div>
+auto link2Example = demoBs5Example("link2", "Link 2nd",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 
+    H5H3(["text-muted"], "Link 2nd")),
+    H5A(["href":"#", "data-bs-toggle":"popover", "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover for link")
+    ), ``, ``);
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Title</h3>
-              <div>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover with title</button>
-              </div>
-            </div>
+auto titleExample = demoBs5Example("title", "Title",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 
+    H5H3(["text-muted"], "Title"),
+    H5Div(
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover with title")))
+      ), ``, ``); 
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Custom HTML</h3>
-              <div>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true" title="<span class='badge bg-primary'>Popover title</span>" data-bs-content="<strong>Popover</strong> <small>with</small> <em>custom HTML</em>">Popover with custom HTML</button>
-              </div>
-            </div>
+auto customExample = demoBs5Example("custom", "Custom HTML",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"],
+    H5H3(["text-muted"], "Custom HTML"),
+    H5Div(
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "data-bs-html":"true", 
+      "title":"<span class='badge bg-primary'>Popover title</span>", "data-bs-content":"<strong>Popover</strong> <small>with</small> <em>custom HTML</em>"], "Popover with custom HTML")))
+      ), ``, ``);
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Position</h3>
-              <div>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="top" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover on top</button>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover on right</button>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover on bottom</button>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="left" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover on left</button>
-              </div>
-            </div>
+auto positionExample = demoBs5Example("position", "Position",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", 
+  "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"],
+    H5H3(["text-muted"], "Position"),
+    H5Div(
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "data-bs-placement":"top", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover on top"),
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "data-bs-placement":"right", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover on right"),
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "data-bs-placement":"bottom", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover on bottom"),
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "data-bs-placement":"left", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover on left")))
+      ), ``, ``);
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Animation</h3>
-              <div>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-animation="false" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover without animation</button>
-              </div>
-            </div>
+auto animationExample = demoBs5Example("animation", "Animation",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", 
+  "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 
+    H5H3(["text-muted"], "Animation"),
+    H5Div(
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "data-bs-animation":"false", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover without animation")))
+      ), ``, ``);
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Delay</h3>
-              <p>Popover with delay in ms for showing and hiding</p>
-              <div>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-delay="500" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Popover with delay</button>
-              </div>
-            </div>
+auto hidingExample = demoBs5Example("hiding", "Showing and Hiding",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", 
+  "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"],
+    H5H3(["text-muted"], "Delay"),
+    H5P("Popover with delay in ms for showing and hiding"),
+    H5Div(
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "data-bs-delay":"500", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover with delay")))
+      ), ``, ``);
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Trigger type</h3>
-              <p>Popover triggered by click and hover</p>
-              <div>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-trigger="click hover" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Trigger by click and hover</button>
-              </div>
-            </div>
+auto triggerExample = demoBs5Example("trigger", "Trigger",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", 
+  "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 
+    H5H3(["text-muted"], "Trigger type"),
+    H5P("Popover triggered by click and hover"),
+    H5Div(
+      BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "data-bs-trigger":"click hover", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Trigger by click and hover")))
+      ), ``, ``);
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Dismissible</h3>
-              <p>Dismiss on next click outside of element</p>
-              <div>
-                <a href="#!" class="btn btn-secondary" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">Dismiss on next click</a>
-              </div>
-            </div>
+auto dismissibleExample = demoBs5Example("dismissible", "Dismissible",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", 
+  "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"],
+    H5H3(["text-muted"], "Dismissible"),
+    H5P("Dismiss on next click outside of element"),
+    H5Div(
+      H5A(["btn", "btn-secondary"], ["href":"#!", "tabindex":"0", "role":"button", "data-bs-toggle":"popover", 
+      "data-bs-trigger":"focus", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Dismiss on next click")))
+      ), ``, ``);
 
-            <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 200px;&#10;}" data-js="var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}">
-              <h3 class="text-muted">Disabled elements</h3>
-              <div>
-                <span class="d-inline-block" data-bs-toggle="popover" title="Popover title" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.">
-                  <button type="button" class="btn btn-secondary" disabled style="pointer-events: none;">Popover for disabled element</button>
-                </span>
-              </div>
-            </div>
+auto disabledExample = demoBs5Example("disabled", "Disabled elements",
+H5Div(
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", 
+  "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"],
+    H5H3(["text-muted"], "Disabled elements"),
+    H5Div(
+      H5Span(["d-inline-block"], ["data-bs-toggle":"popover", "title":"Popover title", 
+      "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."],
+        BS5Button(["btn-secondary"], ["disabled style":"pointer-events: none;"], "Popover for disabled element"))))
+    ), ``, ``);
 
-          </div>
-        </div>
-      </div>
-    </main>
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/components"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Components"], "Popovers")),
 
-      `;
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Popovers"),
+      H5Hr,
+
+      linkExample,
+      buttonExample,
+      link2Example,
+      titleExample,
+      customExample,
+      positionExample,
+      animationExample,
+      hidingExample,
+      triggerExample,
+      dismissibleExample,
+      disabledExample
+
+     ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }

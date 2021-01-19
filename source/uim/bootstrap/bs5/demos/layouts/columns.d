@@ -15,231 +15,167 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-  <div class="container-fluid mt-3 bg-light m-1">
-    <nav aria-label="Breadcrumb" >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-        <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/contents">Contents</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Columns</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Columns</h2>
-        <hr>
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/contents"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Contents"], "Columns")),
 
-        <div class="mb-5">
-          <h3 class="text-muted container">Vertical alignment</h3>
-          <div>
-            <div class="container">
-              <h4 class="h5 text-muted mt-3">Row</h4>
-              <p>Grid with vertical alignment on .row using flex utilities</p>
-            </div>
-            <div class="container" data-example="row-height">
-              <div class="row align-items-start">
-                <div class="col">.col</div>
-                <div class="col">.col</div>
-                <div class="col">.col</div>
-              </div>
-              <div class="row align-items-center">
-                <div class="col">.col</div>
-                <div class="col">.col</div>
-                <div class="col">.col</div>
-              </div>
-              <div class="row align-items-end">
-                <div class="col">.col</div>
-                <div class="col">.col</div>
-                <div class="col">.col</div>
-              </div>
-            </div>
-            <div class="container">
-              <h4 class="h5 text-muted mt-3">Column</h4>
-              <p>Grid with vertical alignment on .col using flex utilities</p>
-            </div>
-            <div class="container" data-example="row-height">
-              <div class="row">
-                <div class="col align-self-start">.col .align-self-start</div>
-                <div class="col align-self-center">.col .align-self-center</div>
-                <div class="col align-self-end">.col .align-self-end</div>
-              </div>
-            </div>
-          </div>
-        </div>
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Columns"),
+      H5Hr,
 
-        <div class="mb-5">
-          <div class="container">
-            <h3 class="text-muted">Horizontal alignment</h3>
-            <p>Grid with horizontal alignment on .row using flex utilities</p>
-          </div>
-          <div>
-            <div class="container">
-              <div class="row justify-content-start">
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-              </div>
-              <div class="row justify-content-end">
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-              </div>
-              <div class="row justify-content-between">
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-              </div>
-              <div class="row justify-content-evenly">
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-                <div class="col-3">.col-3</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      demoBs5Example("vertical", "Vertical Alignment",
+        H5Div(
+          BS5Container(
+            H5H4(["h5", "text-muted", "mt-3"], "Row"),
+            H5P("Grid with vertical alignment on .row using flex utilities")),
+          BS5Container(["data-example":"row-height"],
+            BS5Row(["align-items-start"],
+              BS5Col(".col"),
+              BS5Col(".col"),
+              BS5Col(".col")),
+            BS5Row(["align-items-center"],
+              BS5Col(".col"),
+              BS5Col(".col"),
+              BS5Col(".col")),
+            BS5Row(["align-items-end"],
+              BS5Col(".col"),
+              BS5Col(".col"),
+              BS5Col(".col"))),
+          BS5Container(
+            H5H4(["h5", "text-muted", "mt-3"], "Column"),
+            H5P("Grid with vertical alignment on .col using flex utilities")),
+          BS5Container(["data-example":"row-height"], 
+            BS5Row(
+              BS5Col(["align-self-start"], ".col .align-self-start"),
+              BS5Col(["align-self-center"], ".col .align-self-center"),
+              BS5Col(["align-self-end"], ".col .align-self-end")))
+        ), ``, ``),
 
-        <div class="mb-5">
-          <h3 class="text-muted container">Column wrapping</h3>
-          <div>
-            <div class="container">
-              <div class="row">
-                <div class="col-8">.col-8</div>
-                <div class="col-5">.col-5</div>
-                <div class="col-4">.col-4</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      demoBs5Example("horizontal", "Horizontal Alignment<br><small>Grid with horizontal alignment on .row using flex utilities</small>",
+        H5Div(
+          BS5Container(
+            BS5Row(["justify-content-start"], 
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3")),
+            BS5Row(["justify-content-center"],
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3")),
+            BS5Row(["justify-content-end"],
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3")),
+            BS5Row(["justify-content-around"],
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3")),
+            BS5Row(["justify-content-between"],
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3")),
+            BS5Row(["justify-content-evenly"],
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3"),
+              BS5Col(["col-3"], ".col-3")))
+        ), ``, ``),
 
-        <div class="mb-5">
-          <h3 class="text-muted container">Column breaks</h3>
-          <div>
-            <h4 class="h5 text-muted mt-3 container">All breakpoints</h4>
-            <p>Grid with column break using sizing utility class</p>
-            <div class="container">
-              <div class="row">
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="w-100"></div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-              </div>
-            </div>
-            <h4 class="h5 text-muted mt-3 container">Responsive</h4>
-            <p>Grid with responsive column break using sizing and display utility classes</p>
-            <div class="container">
-              <div class="row">
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="w-100 d-none d-lg-block"></div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      demoBs5Example("wrapping", "Column wrapping",
+        H5Div(
+          BS5Container(
+            BS5Row(
+              BS5Col(["col-8"], ".col-8"),
+              BS5Col(["col-5"], ".col-5"),
+              BS5Col(["col-4"], ".col-4")))
+        ), ``, ``),
 
-        <div class="mb-5">
-          <div class="container">
-            <h3 class="text-muted">Reordering</h3>
-            <p>Grid reordering with flex utilities: order-first (-1), order-0 to order-5 and order-last (6)</p>
-          </div>
-          <div>
-            <div class="container">
-              <div class="row">
-                <div class="col order-last">First, but last</div>
-                <div class="col order-3">Second, but number 5</div>
-                <div class="col order-2">Third, but number 4</div>
-                <div class="col order-1">Fourth, but number 3</div>
-                <div class="col order-first">Fifth, but first</div>
-                <div class="col">Last, but unordered, so number 2</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      demoBs5Example("breaks", "Column breaks",
+        H5Div(
+         H5H4(["h5", "text-muted", "mt-3",  "container"], "All breakpoints"),
+          H5P("Grid with column break using sizing utility class"),
+          BS5Container(
+            BS5Row(
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["w-100"]),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"))),
+          H5H4(["h5", "text-muted", "mt-3",  "container"], "Responsive"),
+          H5P("Grid with responsive column break using sizing and display utility classes"),
+          BS5Container(
+            BS5Row(
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["w-100", "d-none", "d-lg-block"]),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
+              H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3")))
+        ), ``, ``),
 
-        <div class="mb-5">
-          <h3 class="text-muted container">Offsetting</h3>
-          <div>
-            <h4 class="h5 text-muted mt-3 container">Offset classes</h4>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-5">.col-md-5</div>
-                <div class="col-md-5 offset-md-2">.col-md-5 .offset-md-2</div>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 offset-lg-3">.col-lg-4 .offset-lg-3</div>
-                <div class="col-lg-2 offset-lg-3">.col-lg-2 .offset-lg-3</div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
-                <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
-              </div>
-            </div>
-            <h4 class="h5 text-muted mt-3 container">Spacing utilities</h4>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-5">.col-md-5</div>
-                <div class="col-md-5 ms-auto">.col-md-5 .ms-auto</div>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 ms-lg-auto">.col-lg-4 .ms-lg-auto</div>
-                <div class="col-lg-2 ms-lg-auto">.col-lg-2 .ms-lg-auto</div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 me-lg-auto">.col-sm-6 .me-lg-auto</div>
-                <div class="col-sm-3">.col-sm-3</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      demoBs5Example("reordering", "Reordering<br><small>Grid reordering with flex utilities: order-first (-1), order-0 to order-5 and order-last (6)</small>",
+        H5Div(
+          BS5Container(
+            BS5Row(
+              BS5Col(["order-last"], "First, but last"),
+              BS5Col(["order-3"], "Second, but number 5"),
+              BS5Col(["order-2"], "Third, but number 4"),
+              BS5Col(["order-1"], "Fourth, but number 3"),
+              BS5Col(["order-first"], "Fifth, but first"),
+              BS5Col("Last, but unordered, so number 2")))
+        ), ``, ``),
 
-        <div class="mb-5">
-          <h3 class="text-muted container">Standalone column classes</h3>
-          <div>
-            <div class="col-1">8.333333%</div>
-            <div class="col-2">16.666667%</div>
-            <div class="col-3">25%</div>
-            <div class="col-4">33.333333%</div>
-            <div class="col-5">41.666667%</div>
-            <div class="col-6">50%</div>
-            <div class="col-7">58.333333%</div>
-            <div class="col-8">66.666667%</div>
-            <div class="col-9">75%</div>
-            <div class="col-10">83.333333%</div>
-            <div class="col-11">91.666667%</div>
-            <div class="col-12">100%</div>
-          </div>
-        </div>
+      demoBs5Example("offsetting", "Offsetting",
+        H5Div(
+          H5H4(["h5", "text-muted", "mt-3",  "container"], "Offset classes"),
+          BS5Container(
+            BS5Row(
+              H5Div(["col-md-5"], ".col-md-52"),
+              H5Div(["col-md-5 offset-md-2"], ".col-md-5 .offset-md-22")),
+            BS5Row(
+              H5Div(["col-lg-4 offset-lg-3"], ".col-lg-4 .offset-lg-32"),
+              H5Div(["col-lg-2 offset-lg-3"], ".col-lg-2 .offset-lg-32")),
+            BS5Row(
+              H5Div(["col-sm-6 col-md-5 col-lg-6"], ".col-sm-6 .col-md-5 .col-lg-62"),
+              H5Div(["col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0"], ".col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-02"))),
+          H5H4(["h5", "text-muted", "mt-3",  "container"], "Spacing utilities"),
+          BS5Container(
+            BS5Row(
+              H5Div(["col-md-5"], ".col-md-52"),
+              H5Div(["col-md-5 ms-auto"], ".col-md-5 .ms-auto2")),
+            BS5Row(
+              H5Div(["col-lg-4 ms-lg-auto"], ".col-lg-4 .ms-lg-auto2"),
+              H5Div(["col-lg-2 ms-lg-auto"], ".col-lg-2 .ms-lg-auto2")),
+            BS5Row(
+              H5Div(["col-sm-6 me-lg-auto"], ".col-sm-6 .me-lg-auto2"),
+              H5Div(["col-sm-3"], ".col-sm-32")))
+        ), ``, ``),
 
-      </div>
-    </div>
-  </div>
-</main>
+      demoBs5Example("standalone", "Standalone column classes",
+        H5Div(
+          H5Div(["col-1"], "8.333333%"),
+          H5Div(["col-2"], "16.666667%"),
+          H5Div(["col-3"], "25%"),
+          H5Div(["col-4"], "33.333333%"),
+          H5Div(["col-5"], "41.666667%"),
+          H5Div(["col-6"], "50%"),
+          H5Div(["col-7"], "58.333333%"),
+          H5Div(["col-8"], "66.666667%"),
+          H5Div(["col-9"], "75%"),
+          H5Div(["col-10"], "83.333333%"),
+          H5Div(["col-11"], "91.666667%"),
+          H5Div(["col-12"], "100%")
+        ), ``, ``),
 
-      `;
+     ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }
+ 

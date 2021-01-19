@@ -15,89 +15,49 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-  <div class="container-fluid mt-3 bg-light m-1">
-    <nav aria-label="Breadcrumb" >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-        <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/helpers">Helpers</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Stretched Link</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Stretched Link</h2>
-        <hr>
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/helpers"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Helpers"], "Stretched Link")),
 
-        <div class="mb-5">
-          <h3 class="text-muted">Card</h3>
-          <div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
-                <a href="#" class="card-link stretched-link">Stretched link</a>
-              </div>
-            </div>
-          </div>
-        </div>
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Stretched Link"),
+      H5Hr,
 
-        <div class="mb-5">
-          <h3 class="text-muted">Custom component</h3>
-          <div>
-            <div class="d-flex position-relative">
-              <img src="../img/200x200.png" alt="" class="me-3">
-              <div>
-                <h5>Media object</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
-                <a href="#" class="stretched-link">Stretched link</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      demoBs5Example("card", "Cards",
+        H5Div(
+          BS5Card(
+            BS5CardBody(
+              BS5CardTitle("Card title"),
+              BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
+              BS5CardLink(["stretched-link"], ["href":"#"], "Stretched link")))
+        ), ``, ``),
 
-        <div class="mb-5">
-          <h3 class="text-muted">Column</h3>
-          <div>
-            <div class="row">
-              <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
-              </div>
-              <div class="col position-relative">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
-                <a href="#" class="stretched-link">Stretched link</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      demoBs5Example("custom", "Custom component",
+        H5Div(
+          H5Div(["d-flex", "position-relative"],
+            H5Img(["me-3"], ["src":"../img/200x200.png", "alt":""],
+            H5Div(
+              H5H5("Media object",
+              H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
+              H5A(["stretched-link"], ["href":"#"], "Stretched link")))))
+        ), ``, ``),
 
-        <div class="mb-5">
-          <h3 class="text-muted">Row</h3>
-          <div>
-            <div class="row position-relative">
-              <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
-              </div>
-              <div class="col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
-                <a href="#" class="stretched-link">Stretched link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
-      `;
+      demoBs5Example("row", "Row",
+        H5Div(
+          BS5Row(["position-relative"],
+            BS5Col(["col"],
+              H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")),
+            BS5Col(
+              H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
+              H5A(["stretched-link"], ["href":"#"], "Stretched link")))
+        ), ``, ``)
+
+     ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }

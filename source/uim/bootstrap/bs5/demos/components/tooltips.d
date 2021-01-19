@@ -15,96 +15,102 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-  <div class="container-fluid mt-3 bg-light">
-    <nav aria-label="Breadcrumb" >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-        <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/components">Components</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Tooltips</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Tooltips</h2>
-        <hr>
+auto linkExample = demoBs5Example("link", "Link",
+  H5Div(
+    H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 50px;&#10;}", 
+    "data-js":"var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}"],
+      H5H3(["text-muted"], "Link"),
+      H5Div(
+        H5A(["href":"#", "data-bs-toggle":"tooltip", "title":"Tooltip on top"], "Tooltip for link")),
+        H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 50px;&#10;}", "data-js":"var tooltipTriggerElements = document.querySelectorAll(&apos;", 
+        "data-bs-toggle":"&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}"],
+          H5H3(["text-muted"], "Button"),
+          H5Div(
+            BS5Button(["btn-secondary"], ["data-bs-toggle":"tooltip", "title":"Tooltip on top"], "Tooltip for button"))))
+            ), ``, ``);
 
-        <<div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
-          <h3 class="text-muted">Link</h3>
-          <div>
-            <a href="#" data-bs-toggle="tooltip" title="Tooltip on top">Tooltip for link</a>
-          </div>
-        </div>
+auto customExample = demoBs5Example("custom", "Custom HTML",
+  H5Div(
+    H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 50px;&#10;}", 
+    "data-js":"var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}"], 
+      H5H3(["text-muted"], "Custom HTML"),
+      H5Div(
+        BS5Button(["btn-secondary"], ["data-bs-toggle":"tooltip", "title":"<strong>Tooltip</strong> <small>with</small> <span class='badge bg-primary'>custom</span> <em>HTML</em>", "data-bs-html":"true"], "Tooltip with custom HTML")))
+        ), ``, ``);
 
-        <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
-          <h3 class="text-muted">Button</h3>
-          <div>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on top">Tooltip for button</button>
-          </div>
-        </div>
+auto positionExample = demoBs5Example("position", "Position",
+  H5Div(
+    H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 50px;&#10;}", 
+    "data-js":"var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}"], 
+      H5H3(["text-muted"], "Position"),
+      H5Div(
+        BS5Button(["btn-secondary"], ["data-bs-toggle":"tooltip", "title":"Tooltip on top", "data-bs-placement":"top"], "Tooltip on top"),
+        BS5Button(["btn-secondary"], ["data-bs-toggle":"tooltip", "title":"Tooltip on right", "data-bs-placement":"right"], "Tooltip on right"),
+        BS5Button(["btn-secondary"], ["data-bs-toggle":"tooltip", "title":"Tooltip on bottom", "data-bs-placement":"bottom"], "Tooltip on bottom"),
+        BS5Button(["btn-secondary"], ["data-bs-toggle":"tooltip", "title":"Tooltip on left", "data-bs-placement":"left"], "Tooltip on left"))),
+        ), ``, ``);
 
-        <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
-          <h3 class="text-muted">Custom HTML</h3>
-          <div>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="<strong>Tooltip</strong> <small>with</small> <span class='badge bg-primary'>custom</span> <em>HTML</em>" data-bs-html="true">Tooltip with custom HTML</button>
-          </div>
-        </div>
+auto animationExample = demoBs5Example("animation", "Animation",
+  H5Div(
+    H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 50px;&#10;}", 
+    "data-js":"var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}"], 
+      H5H3(["text-muted"], "Animation"),
+      H5Div(
+        BS5Button(["btn-secondary"], ["data-bs-toggle":"tooltip", "title":"Tooltip without animation", "data-bs-animation":"false"], "Tooltip without animation")))
+        ), ``, ``);
 
-        <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
-          <h3 class="text-muted">Position</h3>
-          <div>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on top" data-bs-placement="top">Tooltip on top</button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on right" data-bs-placement="right">Tooltip on right</button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on bottom" data-bs-placement="bottom">Tooltip on bottom</button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip on left" data-bs-placement="left">Tooltip on left</button>
-          </div>
-        </div>
+auto hidingExample = demoBs5Example("hiding", "Hiding",
+  H5Div(
+    H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 50px;&#10;}", 
+    "data-js":"var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}"], 
+      H5H3(["text-muted"], "Delay"),
+      H5P("Tooltip with delay in ms for showing and hiding"),
+      H5Div(
+        BS5Button(["btn-secondary"], ["data-bs-toggle":"tooltip", "title":"Tooltip with delay", "data-bs-delay":"500"], "Tooltip with delay")))
+        ), ``, ``);
 
-        <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
-          <h3 class="text-muted">Animation</h3>
-          <div>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip without animation" data-bs-animation="false">Tooltip without animation</button>
-          </div>
-        </div>
+auto triggerExample = demoBs5Example("trigger", "Trigger type",
+  H5Div(
+    H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 50px;&#10;}", 
+    "data-js":"var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}"], 
+      H5H3(["text-muted"], "Trigger type"),
+      H5P("Tooltip triggered by click only"),
+      H5Div(
+        BS5Button(["btn-secondary"], ["data-bs-toggle":"tooltip", "title":"Triggered by click", "data-bs-trigger":"click"], "Trigger by click")))
+        ), ``, ``);
 
-        <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
-          <h3 class="text-muted">Delay</h3>
-          <p>Tooltip with delay in ms for showing and hiding</p>
-          <div>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip with delay" data-bs-delay="500">Tooltip with delay</button>
-          </div>
-        </div>
+auto disabledExample = demoBs5Example("disabled", "Disabled elements",
+  H5Div(
+    H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 50px;&#10;}", 
+    "data-js":"var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}"],
+      H5H3(["text-muted"], "Disabled elements"),
+      H5Div(
+        H5Span(["d-inline-block"], ["tabindex":"0", "data-bs-toggle":"tooltip", "title":"Tooltip for disabled element"], 
+          BS5Button(["btn-secondary"], ["disabled":"disabled", "style":"pointer-events: none;"], "Tooltip for disabled element"))))
+          ), ``, ``);
 
-        <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
-          <h3 class="text-muted">Trigger type</h3>
-          <p>Tooltip triggered by click only</p>
-          <div>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="Triggered by click" data-bs-trigger="click">Trigger by click</button>
-          </div>
-        </div>
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/components"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Components"], "Tooltips")),
 
-        <div class="mb-5" data-css="a, button {&#10;&#9;margin-top: 50px;&#10;}" data-js="var tooltipTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;tooltip&quot;]&apos;);&#10;for (var i = 0; i < tooltipTriggerElements.length; i++) {&#10;&#9;new bootstrap.Tooltip(tooltipTriggerElements[i])&#10;}">
-          <h3 class="text-muted">Disabled elements</h3>
-          <div>
-            <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Tooltip for disabled element">
-              <button type="button" class="btn btn-secondary" disabled style="pointer-events: none;">Tooltip for disabled element</button>
-            </span>
-          </div>
-        </div>
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Tooltips"),
+      H5Hr,
 
-      </div>
-    </div>
-  </div>
-</main>
-      `;
+      linkExample, 
+      customExample, 
+      positionExample, 
+      animationExample, 
+      hidingExample, 
+      triggerExample, 
+      disabledExample
+
+     ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }

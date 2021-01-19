@@ -15,68 +15,47 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-  <div class="container-fluid mt-3 bg-light m-1">
-    <nav aria-label="Breadcrumb" >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-        <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/components">Components</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Collapses</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Collapses</h2>
-        <hr>
 
-        <div class="mb-5">
-              <h3 class="text-muted">Link</h3>
-              <p>Show and hide other content with link using the "href" attribute</p>
-              <div>
-                <a href="#hrefCollapse" class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="hrefCollapse">Link with href</a>
-                <div class="collapse" id="hrefCollapse">
-                  <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
-                </div>
-              </div>
-            </div>
+auto linkExample = demoBs5Example("link", "Link<p>Show and hide other content with link using the 'href' attribute</p>", 
+  H5Div(
+    H5A(["btn", "btn-primary"], ["href":"#hrefCollapse", "data-bs-toggle":"collapse", "aria-expanded":"false", "aria-controls":"hrefCollapse"], "Link with href"),
+    BS5Collapse("hrefCollapse",
+      BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
+      Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Button</h3>
-              <p>Show and hide other content with button using the "data-bs-target" attribute</p>
-              <div>
-                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#dataTargetCollapse" aria-expanded="false" aria-controls="dataTargetCollapse">Button with data-bs-target</button>
-                <div class="collapse" id="dataTargetCollapse">
-                  <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
-                </div>
-              </div>
-            </div>
+auto buttonExample = demoBs5Example("button", "Button<p>Show and hide other content with button using the 'data-bs-target' attribute</p>", 
+  H5Div(
+    BS5Button(["btn-primary"], ["data-bs-toggle":"collapse", "data-bs-target":"#dataTargetCollapse", "aria-expanded":"false", "aria-controls":"dataTargetCollapse"], "Button with data-bs-target"),
+    BS5Collapse("dataTargetCollapse",
+      BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
+        Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Multiple targets</h3>
-              <div>
-                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".multiple-collapse" aria-expanded="false" aria-controls="multipleCollapse1 multipleCollapse2">Button with data-bs-target</button>
-                <div class="collapse multiple-collapse" id="multipleCollapse1">
-                  <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
-                </div>
-                <div class="collapse multiple-collapse" id="multipleCollapse2">
-                  <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
-                </div>
-              </div>
-            </div>
+auto multipleExample = demoBs5Example("multiple", "Multiple targets", 
+  H5Div(
+    H5A(["btn", "btn-primary"], ["href":"#hrefCollapse", "data-bs-toggle":"collapse", "data-bs-target":".multiple-collapse", "aria-expanded":"false", "aria-controls":"multipleCollapse1 multipleCollapse2"], "Button with data-bs-target"),
+    BS5Collapse("multipleCollapse1", ["multiple-collapse"], 
+      BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
+        Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.")),
+    BS5Collapse("multipleCollapse2", ["multiple-collapse"], 
+      BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
+        Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))), ``, ``);
 
-          </div>
-        </div>
-      </div>
-    </main>
-      `;
-    }
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/components"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Components"], "Collapses")),
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      dateInfo(this),
+      H5H2(["display-4"], "Collapses"),
+      H5Hr,
+
+      linkExample, 
+      buttonExample,
+      multipleExample
+    
+    ))).toString; }
   });
 }

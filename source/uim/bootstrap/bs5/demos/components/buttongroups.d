@@ -15,150 +15,103 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-      <div class="container-fluid mt-3 bg-light">
-        <nav aria-label="Breadcrumb" >
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-            <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/components">Components</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Button Groups</li>
-          </ol>
-        </nav>
-      </div>
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col-12 col-lg-2">
-          </div>
-          <div class="col-12 col-lg-8">
-            <h2 class="component display-4">Button Groups</h2>
-            <hr>
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/components"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Components"], "Button Groups")),
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Button Groups"),
+      H5Hr,
 
-            <div class="mb-5">
-              <h3 class="text-muted">Default</h3>
-              <div>
-                <div class="btn-group" role="group" aria-label="Default button group">
-                  <button type="button" class="btn btn-secondary">Home</button>
-                  <button type="button" class="btn btn-secondary">Profile</button>
-                  <button type="button" class="btn btn-secondary">Settings</button>
-                </div>
-              </div>
-            </div>
+demoBs5Example("default", "Default",  
+  H5Div(
+    BS5ButtonGroup(["aria-label":"Default button group"], 
+      BS5Button(["btn-secondary"], "Home"), 
+      BS5Button(["btn-secondary"], "Profile"),
+      BS5Button(["btn-secondary"], "Settings"))), ``, ``),
 
-            <div class="mb-5">
-              <h3 class="text-muted">States</h3>
-              <div>
-                <div class="btn-group" role="group" aria-label="Default button group">
-                  <button type="button" class="btn btn-secondary active">Home</button>
-                  <button type="button" class="btn btn-secondary">Profile</button>
-                  <button type="button" class="btn btn-secondary" disabled>Settings</button>
-                </div>
-              </div>
-            </div>
+demoBs5Example("states", "States",  
+  H5Div(
+    BS5ButtonGroup(["aria-label":"Default button group"], 
+      BS5Button(["btn-secondary", "active"], "Home"), 
+      BS5Button(["btn-secondary"], "Profile"),
+      BS5Button(["btn-secondary"], "Settings"))), ``, ``),
 
-            <div class="mb-5">
-              <h3 class="text-muted">Outlined</h3>
-              <div>
-                <div class="btn-group" role="group" aria-label="Default button group">
-                  <button type="button" class="btn btn-outline-secondary">Home</button>
-                  <button type="button" class="btn btn-outline-secondary">Profile</button>
-                  <button type="button" class="btn btn-outline-secondary">Settings</button>
-                </div>
-              </div>
-            </div>
+demoBs5Example("outlined", "Outlined",  
+  H5Div(
+    BS5ButtonGroup(["aria-label":"Default button group"], 
+      BS5Button(["btn-outline-secondary"], "Home"), 
+      BS5Button(["btn-outline-secondary"], "Profile"),
+      BS5Button(["btn-outline-secondary"], "Settings"))), ``, ``),
 
-            <div class="mb-5">
-              <h3 class="text-muted">Links</h3>
-              <div>
-                <div class="btn-group" role="group" aria-label="Default button group">
-                  <a href="#" class="btn btn-secondary">Home</a>
-                  <a href="#" class="btn btn-secondary">Profile</a>
-                  <a href="#" class="btn btn-secondary">Settings</a>
-                </div>
-              </div>
-            </div>
 
-            <div class="mb-5">
-              <h3 class="text-muted">Toolbar</h3>
-              <div>
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                  <div class="btn-group me-2" role="group" aria-label="First group">
-                    <button type="button" class="btn btn-secondary">1</button>
-                    <button type="button" class="btn btn-secondary">2</button>
-                    <button type="button" class="btn btn-secondary">3</button>
-                  </div>
-                  <div class="btn-group me-2" role="group" aria-label="Second group">
-                    <button type="button" class="btn btn-secondary">4</button>
-                    <button type="button" class="btn btn-secondary">5</button>
-                    <button type="button" class="btn btn-secondary">6</button>
-                  </div>
-                  <div class="btn-group" role="group" aria-label="Third group">
-                    <button type="button" class="btn btn-secondary">7</button>
-                    <button type="button" class="btn btn-secondary">8</button>
-                    <button type="button" class="btn btn-secondary">9</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+demoBs5Example("links", "Links",  
+  H5Div(
+    BS5ButtonGroup(["aria-label":"Default button group"], 
+      BS5ButtonLink(["btn-secondary"], ["href":"#"], "Home"), 
+      BS5ButtonLink(["btn-secondary"], ["href":"#"], "Profile"),
+      BS5ButtonLink(["btn-secondary"], ["href":"#"], "Settings"))), ``, ``),
 
-            <div class="mb-5">
-              <h3 class="text-muted">Sizing</h3>
-              <div>
-                <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-                  <button type="button" class="btn btn-secondary">Home</button>
-                  <button type="button" class="btn btn-secondary">Profile</button>
-                  <button type="button" class="btn btn-secondary">Settings</button>
-                </div>
-                <div class="btn-group" role="group" aria-label="Default button group">
-                  <button type="button" class="btn btn-secondary">Home</button>
-                  <button type="button" class="btn btn-secondary">Profile</button>
-                  <button type="button" class="btn btn-secondary">Settings</button>
-                </div>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-                  <button type="button" class="btn btn-secondary">Home</button>
-                  <button type="button" class="btn btn-secondary">Profile</button>
-                  <button type="button" class="btn btn-secondary">Settings</button>
-                </div>
-              </div>
-            </div>
+demoBs5Example("toolbar", "Toolbar",  
+  H5Div(
+    BS5ButtonToolbar(["aria-label":"Toolbar button group"], 
+      BS5ButtonGroup(["aria-label":"First group"], 
+        BS5Button(["btn-secondary"], "1"), 
+        BS5Button(["btn-secondary"], "2"),
+        BS5Button(["btn-secondary"], "3")),
+      BS5ButtonGroup(["aria-label":"Second group"], 
+        BS5Button(["btn-secondary"], "4"), 
+        BS5Button(["btn-secondary"], "5"),
+        BS5Button(["btn-secondary"], "6")),
+      BS5ButtonGroup(["aria-label":"Third group"], 
+        BS5Button(["btn-secondary"], "7"), 
+        BS5Button(["btn-secondary"], "8"),
+        BS5Button(["btn-secondary"], "9")))), ``, ``),
 
-            <div class="mb-5">
-              <h3 class="text-muted">Nesting</h3>
-              <div>
-                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                  <button type="button" class="btn btn-secondary">Home</button>
-                  <button type="button" class="btn btn-secondary">Profile</button>
-                  <div class="btn-group" role="group">
-                    <button id="btnGroupNesting" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Settings</button>
-                    <div class="dropdown-menu" aria-labelledby="btnGroupNesting">
-                      <a class="dropdown-item" href="#">Dropdown link</a>
-                      <a class="dropdown-item" href="#">Dropdown link</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+demoBs5Example("sizing", "Sizing",  
+  H5Div(
+    BS5ButtonGroup(["btn-group-sm"], ["aria-label":"Small button group"], 
+      BS5Button(["btn-secondary"], "Home"), 
+      BS5Button(["btn-secondary"], "Profile"),
+      BS5Button(["btn-secondary"], "Settings")),
+    BS5ButtonGroup(["aria-label":"Default button group"], 
+      BS5Button(["btn-secondary"], "Home"), 
+      BS5Button(["btn-secondary"], "Profile"),
+      BS5Button(["btn-secondary"], "Settings")),
+    BS5ButtonGroup(["btn-group-lg"], ["aria-label":"Large button group"], 
+      BS5Button(["btn-secondary"], "Home"), 
+      BS5Button(["btn-secondary"], "Profile"),
+      BS5Button(["btn-secondary"], "Settings"))
+      ), ``, ``),
 
-            <div class="mb-5">
-              <h3 class="text-muted">Vertical</h3>
-              <div>
-                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                  <button type="button" class="btn btn-secondary">Home</button>
-                  <button type="button" class="btn btn-secondary">Profile</button>
-                  <button type="button" class="btn btn-secondary">Settings</button>
-                </div>
-              </div>
-            </div>
+demoBs5Example("nesting", "Nesting",  
+  H5Div(
+    BS5ButtonGroup(["aria-label":"Button group with nested dropdown"], 
+      BS5Button(["btn-secondary"], "Home"), 
+      BS5Button(["btn-secondary"], "Profile"),
+      BS5ButtonGroup( 
+        BS5Button("btnGroupNesting", ["btn-secondary", "dropdown-toggle"], ["data-bs-toggle":"dropdown", "aria-expanded":"false"], "Settings"),
+        H5Div(["dropdown-menu"], ["aria-labelledby":"btnGroupNesting"], 
+          H5A(["dropdown-item"], ["href":"#"], "Dropdown link"),
+          H5A(["dropdown-item"], ["href":"#"], "Dropdown link")
+        )
+      )
+    )
+  ), ``, ``),
 
-          </div>
-        </div>
-      </div>
-    </main>
+demoBs5Example("vertical", "Vertical",  
+  H5Div(
+    H5Div(["btn-group-vertical"], ["role":"group", "aria-label":"Vertical button group"],
+      BS5Button(["btn-secondary"], "Home"), 
+      BS5Button(["btn-secondary"], "Profile"),
+      BS5Button(["btn-secondary"], "Settings"))), ``, ``)
+    )
+  )
+).toString;
 
-      `;
     }
   });
 }

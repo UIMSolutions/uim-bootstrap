@@ -14,63 +14,306 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
-      return `
-<main>
-  <div class="container-fluid mt-3 bg-light m-1">
-    <nav aria-label="Breadcrumb" >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-        <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/contents">Contents</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Gutters</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Gutters</h2>
-        <hr>
+override string content() { 
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/contents"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Contents"], "Gutters")),
 
-        <div class="mb-5">
-          <h3 class="text-muted container">Default</h3>
-          <div>
-            <div class="container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo. Praesent nec egestas neque. Integer a ipsum et ante volutpat rhoncus. Pellentesque ultrices metus eget quam malesuada, sed faucibus nisi fringilla. Nunc eget turpis in turpis molestie malesuada a non sapien. Nullam auctor, tellus malesuada convallis accumsan, felis ex ultrices neque, quis tincidunt felis orci id nisi.</div>
-          </div>
-        </div>
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Gutters"),
+      H5Hr,
 
-        <div class="mb-5">
-          <h3 class="text-muted container">Responsive</h3>
-          <div>
-            <h4 class="h5 text-muted mt-3 container">Small</h4>
-            <div class="container-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo. Praesent nec egestas neque. Integer a ipsum et ante volutpat rhoncus. Pellentesque ultrices metus eget quam malesuada, sed faucibus nisi fringilla. Nunc eget turpis in turpis molestie malesuada a non sapien. Nullam auctor, tellus malesuada convallis accumsan, felis ex ultrices neque, quis tincidunt felis orci id nisi.</div>
-            <h4 class="h5 text-muted mt-3 container">Medium</h4>
-            <div class="container-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo. Praesent nec egestas neque. Integer a ipsum et ante volutpat rhoncus. Pellentesque ultrices metus eget quam malesuada, sed faucibus nisi fringilla. Nunc eget turpis in turpis molestie malesuada a non sapien. Nullam auctor, tellus malesuada convallis accumsan, felis ex ultrices neque, quis tincidunt felis orci id nisi.</div>
-            <h4 class="h5 text-muted mt-3 container">Large</h4>
-            <div class="container-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo. Praesent nec egestas neque. Integer a ipsum et ante volutpat rhoncus. Pellentesque ultrices metus eget quam malesuada, sed faucibus nisi fringilla. Nunc eget turpis in turpis molestie malesuada a non sapien. Nullam auctor, tellus malesuada convallis accumsan, felis ex ultrices neque, quis tincidunt felis orci id nisi.</div>
-            <h4 class="h5 text-muted mt-3 container">Extra large</h4>
-            <div class="container-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo. Praesent nec egestas neque. Integer a ipsum et ante volutpat rhoncus. Pellentesque ultrices metus eget quam malesuada, sed faucibus nisi fringilla. Nunc eget turpis in turpis molestie malesuada a non sapien. Nullam auctor, tellus malesuada convallis accumsan, felis ex ultrices neque, quis tincidunt felis orci id nisi.</div>
-            <h4 class="h5 text-muted mt-3 container">Extra extra large</h4>
-            <div class="container-xxl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo. Praesent nec egestas neque. Integer a ipsum et ante volutpat rhoncus. Pellentesque ultrices metus eget quam malesuada, sed faucibus nisi fringilla. Nunc eget turpis in turpis molestie malesuada a non sapien. Nullam auctor, tellus malesuada convallis accumsan, felis ex ultrices neque, quis tincidunt felis orci id nisi.</div>
-          </div>
-        </div>
+      demoBs5Example("horizontal", "Horizontal",
+        H5Div(
+          BS5Container(
+            BS5Row(["gx-0"], 
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")))),
+          H5H4(["h5", "text-muted", "mt-3", "container"], "1"),
+          BS5Container(  
+            BS5Row(["gx-1"],
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")))),
+          H5H4(["h5", "text-muted", "mt-3", "container"], "2"),
+          BS5Container(  
+            BS5Row(["gx-2"], 
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")))),
+          H5H4(["h5", "text-muted", "mt-3", "container"], "3"),
+          BS5Container(  
+            BS5Row(["gx-3"], 
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")))),
+          H5H4(["h5", "text-muted", "mt-3", "container"], "4"),
+          BS5Container(  
+            BS5Row(["gx-4"], 
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")))),
+          H5H4(["h5", "text-muted", "mt-3", "container"], "5"),
+          BS5Container(  
+            BS5Row(["gx-5"],
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column"))))
+        ), ``, ``),
 
-        <div class="mb-5">
-          <h3 class="text-muted container">Fluid</h3>
-          <div>
-            <div class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo. Praesent nec egestas neque. Integer a ipsum et ante volutpat rhoncus. Pellentesque ultrices metus eget quam malesuada, sed faucibus nisi fringilla. Nunc eget turpis in turpis molestie malesuada a non sapien. Nullam auctor, tellus malesuada convallis accumsan, felis ex ultrices neque, quis tincidunt felis orci id nisi.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
-      `;
+      demoBs5Example("responsive", "Responsive",
+        H5Div(
+          BS5Container(  
+            BS5Row(["gx-0", "gx-sm-1", "gx-md-2", "gx-lg-3", "gx-xl-4", "gx-xxl-5"],
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column")),
+              H5Div(["col-3"], 
+                H5Div(["p-3 border bg-light"], "Column"))))
+        ), ``, ``),
+
+        demoBs5Example("vertical", "Vertical",
+          H5Div(
+            H5H4(["h5", "text-muted", "mt-3", "container"], "0"),
+            BS5Container(
+              BS5Row(["gy-0"], 
+                H5Div(["col-12"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col-12"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col-12"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col-12"], 
+                  H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "1"),
+              BS5Container(
+                BS5Row(["gy-1"], 
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "2"),
+              BS5Container(
+                BS5Row(["gy-2"], 
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "3"),
+              BS5Container(
+                BS5Row(["gy-3"], 
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"], 
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "4"),
+              BS5Container(
+                BS5Row(["gy-4"], 
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "5"),
+              BS5Container(
+                BS5Row(["gy-5"],
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "Responsive"),
+              BS5Container(  
+                BS5Row(["gy-0", "gy-sm-1", "gy-md-2", "gy-lg-3", "gy-xl-4", "gy-xxl-5"], 
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-12"],
+                    H5Div(["p-3 border bg-light"], "Column")))),
+          ), ``, ``),
+
+        demoBs5Example("responsive", "Responsive",
+          H5Div(
+            H5H3(["component-variation", "text-muted container"], "Horizontal and vertical"),
+            H5Div(
+              H5H4(["h5", "text-muted", "mt-3", "container"], "0"),
+              BS5Container(
+                BS5Row(["g-0"],
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "1"),
+              BS5Container(
+                BS5Row(["g-1"],
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "2"),
+              BS5Container(
+                BS5Row(["g-2"],
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "3"),
+              BS5Container(
+                BS5Row(["g-3"],
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "4"),
+              BS5Container(
+                BS5Row(["g-4"], 
+                  H5Div(["col-6"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"], 
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "5"),
+              BS5Container(
+                BS5Row(["g-5"], 
+                  H5Div(["col-6"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"], 
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"], 
+                    H5Div(["p-3 border bg-light"], "Column")))),
+              H5H4(["h5", "text-muted", "mt-3", "container"], "Responsive"),
+              BS5Container(  
+                BS5Row(["g-0", "g-sm-1", "g-md-2", "g-lg-3", "g-xl-4", "g-xxl-5"], 
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column")),
+                  H5Div(["col-6"],
+                    H5Div(["p-3 border bg-light"], "Column"))))),
+          ), ``, ``),
+
+        demoBs5Example("rowcolumns", "Row columns",
+          H5Div(
+            H5H4(["h5", "text-muted", "mt-3", "container"], "2"),
+            BS5Container(
+              BS5Row(["row-cols-2", "g-2"], 
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")))),
+            H5H4(["h5", "text-muted", "mt-3", "container"], "3"),
+            BS5Container(
+              BS5Row(["row-cols-3", "g-3"], 
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")))),
+            H5H4(["h5", "text-muted", "mt-3", "container"], "4"),
+            BS5Container(
+              BS5Row(["row-cols-4", "g-4"], 
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column")),
+                H5Div(["col"], 
+                  H5Div(["p-3 border bg-light"], "Column"))))
+          ), ``, ``)
+
+    ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }
+

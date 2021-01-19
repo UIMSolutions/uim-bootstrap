@@ -37,7 +37,7 @@ static this() {
         <hr>
 
         <div class="mb-5">
-          <h3 class="text-muted">Themenbereiche</h3>
+          H5H3(["text-muted"], "Themenbereiche")
           <ul class="list-group">
             <li class="list-group-item"><a href="/demos/uim-bootstrap/5/components">Components</a></li>
             <li class="list-group-item"><a href="/demos/uim-bootstrap/5/contents">Contents</a></li>
@@ -49,7 +49,7 @@ static this() {
         </div>
 
         <div class="mb-5">
-          <h3 class="text-muted">Components</h3>
+          H5H3(["text-muted"], "Components")
           <ul class="list-group">
             <li class="list-group-item"><a href="/demos/uim-bootstrap/5/components/accordions">Accordions</a></li>
             <li class="list-group-item"><a href="/demos/uim-bootstrap/5/components/alerts">Alerts</a></li>

@@ -15,187 +15,125 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-      <div class="container-fluid mt-3 bg-light">
-        <nav aria-label="Breadcrumb" >
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-            <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/components">Components</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Spinners</li>
-          </ol>
-        </nav>
-      </div>
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col-12 col-lg-2">
-          </div>
-          <div class="col-12 col-lg-8">
-            <h2 class="component display-4">Spinners</h2>
-            <hr>
 
-            <div class="mb-5">
-              <h3 class="text-muted">Border spinner</h3>
-              <div>
-                <div class="spinner-border" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-              </div>
-            </div>
+auto borderExample = demoBs5Example("border", "Border spinner", 
+  H5Div(
+    BS5SpinnerBorder(["role":"status"], 
+      H5Span(["visually-hidden"], "Loading..."))
+      ), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Growing spinner</h3>
-              <div>
-                <div class="spinner-grow" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-              </div>
-            </div>
+auto growingExample = demoBs5Example("growing", "Growing spinner", 
+  H5Div(
+    BS5SpinnerGrow(["role":"status"], 
+      H5Span(["visually-hidden"], "Loading..."))
+      ), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Colors</h3>
-              <div>
-                <div class="spinner-border text-primary" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-border text-secondary" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-border text-success" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-border text-danger" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-border text-warning" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-border text-info" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-border text-light" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-border text-dark" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <br><br>
-                <div class="spinner-grow text-primary" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-grow text-secondary" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-grow text-success" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-grow text-danger" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-grow text-warning" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-grow text-info" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-grow text-light" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-grow text-dark" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-              </div>
-            </div>
+auto colorsExample = demoBs5Example("colors", "Colors Border", 
+  H5Div(
+    BS5SpinnerBorder(["text-primary"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["text-secondary"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["text-success"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["text-danger"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["text-warning"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["text-info"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["text-light"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["text-dark"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading..."))
+      ), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Sizing</h3>
-              <div>
-                <div class="spinner-border spinner-border-sm" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-border" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-border" role="status" style="width: 3rem; height: 3rem;">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <br><br>
-                <div class="spinner-grow spinner-grow-sm" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-grow" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <div class="spinner-grow" role="status" style="width: 3rem; height: 3rem;">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-              </div>
-            </div>
+auto colors2Example = demoBs5Example("colors2", "Colors Grow", 
+  H5Div(
+    BS5SpinnerGrow(["text-primary"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["text-secondary"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["text-success"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["text-danger"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["text-warning"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["text-info"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["text-light"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["text-dark"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading..."))
+      ), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">In buttons</h3>
-              <div>
-                <button type="button" class="btn btn-primary" disabled>
-                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  <span class="visually-hidden">Loading...</span>
-                </button>
-                <button type="button" class="btn btn-primary" disabled>
-                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  Loading...
-                </button>
-                <br><br>
-                <button type="button" class="btn btn-primary" disabled>
-                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                  <span class="visually-hidden">Loading...</span>
-                </button>
-                <button type="button" class="btn btn-primary" disabled>
-                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                  Loading...
-                </button>
-              </div>
-            </div>
+auto sizingExample = demoBs5Example("sizing", "Sizing Border", 
+  H5Div(
+    BS5SpinnerBorder(["spinner-border-sm"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["role":"status", "style":"width: 3rem; height: 3rem;"], 
+      H5Span(["visually-hidden"], "Loading..."))
+      ), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Alignment</h3>
-              <p>Use <a href="spacing.html">spacing</a>, <a href="flex.html">flex</a>, <a href="float.html">float</a> and <a href="text.html">text</a> utilities to align and place your spinner as needed.</p>
-              <div>
-                <h4 class="h5 text-muted mt-3">Margin</h4>
-                <div class="spinner-border m-3" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-                <h4 class="h5 text-muted mt-3">Flex</h4>
-                <div class="d-flex justify-content-center">
-                  <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center">
-                  <strong>Loading...</strong>
-                  <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
-                </div>
-                <h4 class="h5 text-muted mt-3">Float</h4>
-                <div class="clearfix">
-                  <div class="spinner-border float-end" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                </div>
-                <h4 class="h5 text-muted mt-3">Text align</h4>
-                <div class="text-center">
-                  <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+auto sizing2Example = demoBs5Example("sizing2", "Sizing Grow", 
+  H5Div(
+    BS5SpinnerGrow(["spinner-grow-sm"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["role":"status", "style":"width: 3rem; height: 3rem;"], 
+      H5Span(["visually-hidden"], "Loading..."))
+      ), ``, ``);
 
-          </div>
-        </div>
-      </div>
-    </main>
-      `;
+auto alignmentExample = demoBs5Example("alignment", "Alignment", 
+  H5Div(
+              // <p>Use <a href="spacing.html">spacing</a>, <a href="flex.html">flex</a>, <a href="float.html">float</a> and <a href="text.html">text</a> utilities to align and place your spinner as needed.</p>
+    H5H4(["h5", "text-muted", "mt-3"], "Margin"),
+    BS5SpinnerBorder(["m-3"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    H5H4(["h5", "text-muted", "mt-3"], "Flex"),
+    H5Div(["d-flex justify-content-center"], 
+      BS5SpinnerBorder(["role":"status"],
+        H5Span(["visually-hidden"], "Loading..."))),
+    H5Div(["d-flex", "align-items-center"], 
+      H5Strong("Loading..."),
+      BS5SpinnerBorder(["ms-auto"], ["role":"status", "aria-hidden":"true"])),
+    H5H4(["h5", "text-muted", "mt-3"], "Float"),
+    H5Div(["clearfix"], 
+      BS5SpinnerBorder(["float-end"], ["role":"status"],
+        H5Span(["visually-hidden"], "Loading..."))),
+    H5H4(["h5", "text-muted", "mt-3"], "Text align"),
+    H5Div(["text-center"], 
+      H5Div(["spinner-border"], ["role":"status"],
+        H5Span(["visually-hidden"], "Loading...")))
+      ), ``, ``);
+
+
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/components"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Components"], "Spinners")),
+
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Spinners"),
+      H5Hr,
+
+      borderExample,
+      growingExample,
+      colorsExample,
+      colors2Example,
+      sizingExample,
+      sizing2Example,
+      alignmentExample
+
+     ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }

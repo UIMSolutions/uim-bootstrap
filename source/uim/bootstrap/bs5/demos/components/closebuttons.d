@@ -15,61 +15,39 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-  <div class="container-fluid mt-3 bg-light m-1">
-    <nav aria-label="Breadcrumb" >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-        <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/components">Components</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Close Buttons</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Close Buttons</h2>
-        <hr>
 
-        <div class="mb-5">
-          <h3 class="text-muted">Default</h3>
-          <div>
-            <div class="alert alert-success" role="alert">
-              <button type="button" class="btn-close" aria-label="Close"></button>
-            </div>
-          </div>
-        </div>
+auto defaultExample = demoBs5Example("default", "Default", 
+  H5Div(
+    BS5Alert(["alert-success"], 
+      H5Button(["btn-close"], ["type":"button", "aria-label":"Close"]))), ``, ``);
 
-        <div class="mb-5">
-          <h3 class="text-muted">Disabled</h3>
-          <div>
-            <div class="alert alert-success" role="alert">
-              <button type="button" class="btn-close" aria-label="Close" disabled></button>
-            </div>
-          </div>
-        </div>
+auto disabledExample = demoBs5Example("disabled", "Disabled", 
+  H5Div(
+    BS5Alert(["alert-success"], 
+      H5Button(["btn-close"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))), ``, ``);
 
-        <div class="mb-5">
-          <h3 class="text-muted">White</h3>
-          <div>
-            <div class="alert bg-dark" role="alert">
-              <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-              <button type="button" class="btn-close btn-close-white" aria-label="Close" disabled></button>
-            </div>
-          </div>
-        </div>
+auto darkExample = demoBs5Example("dark", "Disabled", 
+  H5Div(
+    BS5Alert(["bg-dark"], 
+      H5Button(["btn-close", "btn-close-white"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]), 
+      H5Button(["btn-close", "btn-close-white"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))), ``, ``);
 
-      </div>
-    </div>
-  </div>
-</main>
-      `;
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/components"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Components"], "Close Buttons")),
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Close Buttons"),
+      H5Hr,
+
+      defaultExample,
+      disabledExample,
+      darkExample
+
+    ))).toString;
     }
   });
 }

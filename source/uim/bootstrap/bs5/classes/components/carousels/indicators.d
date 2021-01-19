@@ -14,3 +14,8 @@ mixin(H5Calls!"BS5CarouselIndicators");
 unittest {
 	assert(BS5CarouselIndicators.toString == `  <ul class="carousel-indicators"></ul>`);
 }
+
+class DBS5CarouselIndicator : DBS5Obj {
+	mixin(H5This!("li", ["carousel-indicator"]));
+}
+mixin(H5Calls!"BS5CarouselIndicator");

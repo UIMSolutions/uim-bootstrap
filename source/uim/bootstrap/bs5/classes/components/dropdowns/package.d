@@ -9,4 +9,5 @@ public import uim.bootstrap.bs5.classes.components.dropdowns.divider;
 public import uim.bootstrap.bs5.classes.components.dropdowns.header;
 public import uim.bootstrap.bs5.classes.components.dropdowns.item;
 public import uim.bootstrap.bs5.classes.components.dropdowns.text;
+public import uim.bootstrap.bs5.classes.components.dropdowns.togglebutton;
 public import uim.bootstrap.bs5.classes.components.dropdowns.togglelink;

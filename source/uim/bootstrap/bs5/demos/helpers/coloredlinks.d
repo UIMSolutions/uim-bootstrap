@@ -15,46 +15,31 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-  <div class="container-fluid mt-3 bg-light m-1">
-    <nav aria-label="Breadcrumb" >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-        <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/helpers">Helpers</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Colored Links</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Colored Links</h2>
-        <hr>
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/helpers"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Helpers"], "Colored Links")),
 
-         <div class="mb-5">
-              <div>
-                <a href="#" class="link-primary">Primary link</a><br>
-                <a href="#" class="link-secondary">Secondary link</a><br>
-                <a href="#" class="link-success">Success link</a><br>
-                <a href="#" class="link-danger">Danger link</a><br>
-                <a href="#" class="link-warning">Warning link</a><br>
-                <a href="#" class="link-info">Info link</a><br>
-                <a href="#" class="link-light">Light link</a><br>
-                <a href="#" class="link-dark">Dark link</a>
-              </div>
-            </div>
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Colored Links"),
+      H5Hr,
 
-          </div>
-        </div>
-      </div>
-    </main>
-      `;
+      demoBs5Example("links", "Colored Links",
+        H5Div(
+          H5A(["link-primary"], ["href":"#"], "Primary link"), H5Br,
+          H5A(["link-secondary"], ["href":"#"], "Secondary link"), H5Br,
+          H5A(["link-success"], ["href":"#"], "Success link"), H5Br,
+          H5A(["link-danger"], ["href":"#"], "Danger link"), H5Br,
+          H5A(["link-warning"], ["href":"#"], "Warning link"), H5Br,
+          H5A(["link-info"], ["href":"#"], "Info link"), H5Br,
+          H5A(["link-light"], ["href":"#"], "Light link"), H5Br,
+          H5A(["link-dark"], ["href":"#"], "Dark link"), H5Br), ``, ``)
+      ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }
+ 

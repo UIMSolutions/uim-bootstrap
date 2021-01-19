@@ -19,7 +19,7 @@ class DBS5List : DBS5Obj {
 		assert(Assert(BS5List.item("test"), `<ul class="list-group"><li class="list-group-item">test</li></ul>`));
 	}
 
-	mixin(MyContent!("link", "this.item", "BS5ListGroupLink"));
+	mixin(MyContent!("link", "this.item", "BS5ListLink"));
 	unittest {
 		assert(Assert(BS5List.link, `<ul class="list-group"><li class="list-group-item"><a class="list-group-item list-group-item-action"></a></li></ul>`));
 	}

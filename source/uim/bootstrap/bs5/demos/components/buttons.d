@@ -15,141 +15,108 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-      <div class="container-fluid mt-3 bg-light">
-        <nav aria-label="Breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-            <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-            <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/components">Components</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Buttons</li>
-          </ol>
-        </nav>
-      </div>
-      <div class="container mt-3">
-        <div class="row">
-          <div class="col-12 col-lg-2">
-          </div>
-          <div class="col-12 col-lg-8">
-            <h2 class="component display-4">Buttons</h2>
-            <hr>
 
-            <div class="mb-5">
-              <h3 class="text-muted">Default</h3>
-              <div>
-                <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
-                <button type="button" class="btn btn-success">Success</button>
-                <button type="button" class="btn btn-danger">Danger</button>
-                <button type="button" class="btn btn-warning">Warning</button>
-                <button type="button" class="btn btn-info">Info</button>
-                <button type="button" class="btn btn-light">Light</button>
-                <button type="button" class="btn btn-dark">Dark</button>
-              </div>
-            </div>
+auto defaultExample = demoBs5Example("default", "Default", 
+  H5Div(
+    BS5Button(["btn-primary"], "Primary"), 
+    BS5Button(["btn-secondary"], "Secondary"),
+    BS5Button(["btn-success"], "Success"),
+    BS5Button(["btn-danger"], "Danger"),
+    BS5Button(["btn-warning"], "Warning"),
+    BS5Button(["btn-info"], "Info"),
+    BS5Button(["btn-light"], "Light"),
+    BS5Button(["btn-dark"], "Dark")), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Link style</h3>
-              <div>
-                <button type="button" class="btn btn-link">Link</button>
-              </div>
-            </div>
+auto linksExample = demoBs5Example("links", "Links", 
+  H5Div(
+    BS5Button(["btn-link"], "Link")), ``, ``);
+    
+auto classesExample = demoBs5Example("classes", "Button class<p>Default button styles applied to <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code> elements</p>", 
+  H5Div(
+    BS5ButtonLink(["btn-primary"], ["href":"#", "role":"button"], "Link"), 
+    H5Input(["btn", "btn-success"], ["type":"button", "value":"Input"]),
+    H5Input(["btn", "btn-danger"], ["type":"submit", "value":"Submit"]),
+    H5Input(["btn", "btn-warning"], ["type":"reset", "value":"Reset"])), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Button class</h3>
-              <p>Default button styles applied to <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code> elements</p>
-              <div>
-                <a href="#" class="btn btn-primary" role="button">Link</a>
-                <input type="button" class="btn btn-success" value="Input">
-                <input type="submit" class="btn btn-danger" value="Submit">
-                <input type="reset" class="btn btn-warning" value="Reset">
-              </div>
-            </div>
+auto outlinesExample = demoBs5Example("outlines", "Outline styles", 
+  H5Div(
+    BS5Button(["btn-outline-primary"], "Primary"), 
+    BS5Button(["btn-outline-secondary"], "Secondary"), 
+    BS5Button(["btn-outline-success"], "Success"), 
+    BS5Button(["btn-outline-danger"], "Danger"), 
+    BS5Button(["btn-outline-warning"], "Warning"), 
+    BS5Button(["btn-outline-info"], "Info"), 
+    BS5Button(["btn-outline-light"], "Light"), 
+    BS5Button(["btn-outline-dark"], "Dark")), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Outline style</h3>
-              <div>
-                <button type="button" class="btn btn-outline-primary">Primary</button>
-                <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                <button type="button" class="btn btn-outline-success">Success</button>
-                <button type="button" class="btn btn-outline-danger">Danger</button>
-                <button type="button" class="btn btn-outline-warning">Warning</button>
-                <button type="button" class="btn btn-outline-info">Info</button>
-                <button type="button" class="btn btn-outline-light">Light</button>
-                <button type="button" class="btn btn-outline-dark">Dark</button>
-              </div>
-            </div>
+auto sizingExample = demoBs5Example("sizing", "Unterschiedliche Größen", 
+  H5Div(
+    BS5Button(["btn-secondary", "btn-sm"], "Small"), 
+    BS5Button(["btn-secondary"], "Default"), 
+    BS5Button(["btn-secondary", "btn-lg"], "Large")), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">Sizing</h3>
-              <div>
-                <button type="button" class="btn btn-secondary btn-sm">Small</button>
-                <button type="button" class="btn btn-secondary">Default</button>
-                <button type="button" class="btn btn-secondary btn-lg">Large</button>
-              </div>
-            </div>
+auto blockExample = demoBs5Example("block", "Block", 
+  H5Div(
+    H5H4(["h5", "text-muted", "mt-3"], "Full width using sizing utility"), 
+    BS5Button(["btn-secondary", "w-100"], "Block button"), 
+    H5H4(["h5", "text-muted", "mt-3"], "Full width using display utility"),
+    H5Div(["d-grid"], 
+      BS5Button(["btn-secondary"], "Block button")),
+    H5H4(["h5", "text-muted", "mt-3"], "Column width"), 
+    H5Div(["d-grid", "col-6", "mx-auto"], 
+      BS5Button(["btn-secondary"], "Block button")),
+    H5H4(["h5", "text-muted", "mt-3"], "Multiple block buttons"), 
+    H5Div(["d-grid", "gap-2"], 
+      BS5Button(["btn-secondary"], "Block button"),
+      BS5Button(["btn-secondary"], "Block button")),
+    H5H4(["h5", "text-muted", "mt-3"], "Responsive"), 
+    H5Div(["d-grid", "gap-2", "d-lg-block"], 
+      BS5Button(["btn-secondary"], "Block button"),
+      BS5Button(["btn-secondary"], "Block button"))
+  ), ``, ``); 
 
-            <div class="mb-5">
-              <h3 class="text-muted">Block</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Full width using sizing utility</h4>
-                <button type="button" class="btn btn-secondary w-100">Block button</button>
-                <h4 class="h5 text-muted mt-3">Full width using display utility</h4>
-                <div class="d-grid">
-                  <button type="button" class="btn btn-secondary">Block button</button>
-                </div>
-                <h4 class="h5 text-muted mt-3">Column width</h4>
-                <div class="d-grid col-6 mx-auto">
-                  <button type="button" class="btn btn-secondary">Block button</button>
-                </div>
-                <h4 class="h5 text-muted mt-3">Multiple block buttons</h4>
-                <div class="d-grid gap-2">
-                  <button type="button" class="btn btn-secondary">Block button</button>
-                  <button type="button" class="btn btn-secondary">Block button</button>
-                </div>
-                <h4 class="h5 text-muted mt-3">Responsive</h4>
-                <div class="d-grid gap-2 d-lg-block">
-                  <button type="button" class="btn btn-secondary">Block button</button>
-                  <button type="button" class="btn btn-secondary">Block button</button>
-                </div>
-              </div>
-            </div>
+auto blockExample2 = demoBs5Example("block", "Block", 
+  H5Div(
+    H5H4(["h5", "text-muted", "mt-3"], "Active"), 
+    BS5Button(["btn-primary"], "Not active"),
+    BS5Button(["btn-primary", "active"], "Active"),
+    H5H4(["h5", "text-muted", "mt-3"], "Disabled"),
+    BS5Button(["btn-primary"], ["disabled":"disabled"], "Disabled button"),
+    H5A(["btn", "btn-secondary", "disabled"], ["href":"#", "tabindex":"-1", "role":"button", "aria-disabled":"true"], "Disabled link")), ``, ``);
 
-            <div class="mb-5">
-              <h3 class="text-muted">States</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Active</h4>
-                <button type="button" class="btn btn-primary">Not active</button>
-                <button type="button" class="btn btn-primary active">Active</button>
-                <h4 class="h5 text-muted mt-3">Disabled</h4>
-                <button type="button" class="btn btn-primary" disabled>Disabled button</button>
-                <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Disabled link</a>
-              </div>
-            </div>
-            
-            <div class="mb-5">
-              <h3 class="text-muted">Button plugin</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Toggle buttons</h4>
-                <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Not active</button>
-                <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off" disabled>Disabled</button>
-                <h4 class="h5 text-muted mt-3">Toggle links</h4>
-                <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Not active</a>
-                <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active</a>
-                <a href="#" class="btn btn-primary disabled" role="button" data-bs-toggle="button">Disabled</a>
-              </div>
-            </div>
+auto pluginExample = demoBs5Example("plugin", "Button Plugin", 
+  H5Div(
+    H5H4(["h5", "text-muted", "mt-3"], "Toggle buttons"),
+    BS5Button(["btn-primary"], ["data-bs-toggle":"button", "autocomplete":"off"], "Not active"),
+    BS5Button(["btn-primary", "active"], ["data-bs-toggle":"button", "autocomplete":"off", "aria-pressed":"true"], "Active"),
+    BS5Button(["btn-primary"], ["data-bs-toggle":"button", "autocomplete":"off","disabled":"disabled"], "Disabled"),
+    H5H4(["h5", "text-muted", "mt-3"], "Toggle links"),
+    H5A(["btn", "btn-primary"], ["href":"#", "role":"button", "data-bs-toggle":"button"], "Not active"),
+    H5A(["btn", "btn-primary", "active"], ["href":"#", "role":"button", "data-bs-toggle":"button", "aria-pressed":"true"], "Active"),
+    H5A(["btn", "btn-primary", "disabled"], ["href":"#", "role":"button", "data-bs-toggle":"button"], "Disabled")), ``, ``);
 
-          </div>
-        </div>
-      </div>
-    </main>
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/components"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Components"], "Buttons")),
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Buttons"),
+      H5Hr,
 
-      `;
+      defaultExample, 
+      linksExample, 
+      classesExample, 
+      outlinesExample, 
+      sizingExample, 
+      blockExample,
+      blockExample2,
+      pluginExample
+
+    ))).toString;
+
     }
   });
 }

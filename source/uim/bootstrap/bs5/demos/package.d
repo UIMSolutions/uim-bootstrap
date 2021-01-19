@@ -10,7 +10,7 @@ static this() {
     demoBS5 = new class DH5App {
         this() {
             super();
-            this.layout(new DBS5Layout);
+            this.layout(new BS5Layout);
         }
     };
 }
