@@ -18,10 +18,16 @@ static this() {
 
 auto linkExample = demoBs5Example("link", "Link<p>Show and hide other content with link using the 'href' attribute</p>", 
   H5Div(
-    H5A(["btn", "btn-primary"], ["href":"#hrefCollapse", "data-bs-toggle":"collapse", "aria-expanded":"false", "aria-controls":"hrefCollapse"], "Link with href"),
+    BS5ButtonLink(["btn-primary"], ["href":"#hrefCollapse", "data-bs-toggle":"collapse", "aria-expanded":"false", "aria-controls":"hrefCollapse"], "Link with href"),
     BS5Collapse("hrefCollapse",
       BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
-      Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))), ``, ``);
+      Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))
+      ), 
+`BS5ButtonLink(["btn-primary"], ["href":"#hrefCollapse", "data-bs-toggle":"collapse", "aria-expanded":"false", "aria-controls":"hrefCollapse"], "Link with href"),
+  BS5Collapse("hrefCollapse",
+    BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
+    Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))`, 
+      ``);
 
 auto buttonExample = demoBs5Example("button", "Button<p>Show and hide other content with button using the 'data-bs-target' attribute</p>", 
   H5Div(
@@ -32,13 +38,28 @@ auto buttonExample = demoBs5Example("button", "Button<p>Show and hide other cont
 
 auto multipleExample = demoBs5Example("multiple", "Multiple targets", 
   H5Div(
-    H5A(["btn", "btn-primary"], ["href":"#hrefCollapse", "data-bs-toggle":"collapse", "data-bs-target":".multiple-collapse", "aria-expanded":"false", "aria-controls":"multipleCollapse1 multipleCollapse2"], "Button with data-bs-target"),
+    BS5ButtonLink(["btn-primary"], ["href":"#hrefCollapse", "data-bs-toggle":"collapse", "data-bs-target":".multiple-collapse", "aria-expanded":"false", "aria-controls":"multipleCollapse1 multipleCollapse2"], "Button with data-bs-target"),
     BS5Collapse("multipleCollapse1", ["multiple-collapse"], 
       BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
         Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.")),
     BS5Collapse("multipleCollapse2", ["multiple-collapse"], 
       BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
-        Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))), ``, ``);
+        Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))
+  ), 
+  `BS5ButtonLink(["btn-primary"], ["href":"#hrefCollapse", "data-bs-toggle":"collapse", "data-bs-target":".multiple-collapse", "aria-expanded":"false", "aria-controls":"multipleCollapse1 multipleCollapse2"], "Button with data-bs-target"),
+  BS5Collapse("multipleCollapse1", ["multiple-collapse"], 
+    BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
+      Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.")),
+  BS5Collapse("multipleCollapse2", ["multiple-collapse"], 
+    BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
+      Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))`, 
+  `<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".multiple-collapse" aria-expanded="false" aria-controls="multipleCollapse1 multipleCollapse2">Button with data-bs-target</button>
+<div class="collapse multiple-collapse" id="multipleCollapse1">
+  <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
+</div>
+<div class="collapse multiple-collapse" id="multipleCollapse2">
+  <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
+</div>`);
 
       return 
 H5Main(

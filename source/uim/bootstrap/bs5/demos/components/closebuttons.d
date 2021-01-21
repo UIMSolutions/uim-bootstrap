@@ -19,18 +19,38 @@ static this() {
 auto defaultExample = demoBs5Example("default", "Default", 
   H5Div(
     BS5Alert(["alert-success"], 
-      H5Button(["btn-close"], ["type":"button", "aria-label":"Close"]))), ``, ``);
+      H5Button(["btn-close"], ["type":"button", "aria-label":"Close"]))
+  ), 
+`BS5Alert(["alert-success"], 
+  H5Button(["btn-close"], ["type":"button", "aria-label":"Close"]))`, 
+`<div class="alert alert-success" role="alert">
+  <button type="button" class="btn-close" aria-label="Close"></button>
+</div>`);
 
 auto disabledExample = demoBs5Example("disabled", "Disabled", 
   H5Div(
     BS5Alert(["alert-success"], 
-      H5Button(["btn-close"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))), ``, ``);
+      H5Button(["btn-close"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))
+      ), 
+`BS5Alert(["alert-success"], 
+  H5Button(["btn-close"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))`, 
+            `<div class="alert alert-success" role="alert">
+  <button type="button" class="btn-close" aria-label="Close" disabled=""></button>
+</div>`);
 
 auto darkExample = demoBs5Example("dark", "Disabled", 
   H5Div(
     BS5Alert(["bg-dark"], 
       H5Button(["btn-close", "btn-close-white"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]), 
-      H5Button(["btn-close", "btn-close-white"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))), ``, ``);
+      H5Button(["btn-close", "btn-close-white"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))
+      ), 
+      `BS5Alert(["bg-dark"], 
+  H5Button(["btn-close", "btn-close-white"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]), 
+  H5Button(["btn-close", "btn-close-white"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))`, 
+      `<div class="alert bg-dark" role="alert">
+  <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+  <button type="button" class="btn-close btn-close-white" aria-label="Close" disabled=""></button>
+</div>`);
 
       return 
 H5Main(

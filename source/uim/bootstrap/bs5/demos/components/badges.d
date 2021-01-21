@@ -70,7 +70,16 @@ demoBs5Example("bgcolors", "Hintergrundfarben",
     BS5Badge(["bg-warning text-dark"], "Warning"), 
     BS5Badge(["bg-info"], "Info"), 
     BS5Badge(["bg-light", "text-dark"], "Light"), 
-    BS5Badge(["bg-dark"], "Dark")), ``, ``), 
+    BS5Badge(["bg-dark"], "Dark")
+    ), 
+    `BS5Badge(["bg-primary"], "Primary"), 
+    BS5Badge(["bg-secondary"], "Secondary"), 
+    BS5Badge(["bg-success"], "Success"), 
+    BS5Badge(["bg-danger"], "Danger"), 
+    BS5Badge(["bg-warning text-dark"], "Warning"), 
+    BS5Badge(["bg-info"], "Info"), 
+    BS5Badge(["bg-light", "text-dark"], "Light"), 
+    BS5Badge(["bg-dark"], "Dark")`, ``), 
 
 demoBs5Example("pills", "Pill badges", 
   H5Div(
@@ -81,7 +90,16 @@ demoBs5Example("pills", "Pill badges",
     BS5Badge(["rounded-pill", "bg-warning", "text-dark"], "Warning"),
     BS5Badge(["rounded-pill", "bg-info"], "Info"),
     BS5Badge(["rounded-pill", "bg-light", "text-dark"], "Light"),
-    BS5Badge(["rounded-pill", "bg-dark"], "Dark")), ``, ``)
+    BS5Badge(["rounded-pill", "bg-dark"], "Dark")
+    ), 
+    `BS5Badge(["rounded-pill", "bg-primary"], "Primary"),
+    BS5Badge(["rounded-pill", "bg-secondary"], "Secondary"),
+    BS5Badge(["rounded-pill", "bg-success"], "Success"),
+    BS5Badge(["rounded-pill", "bg-danger"], "Danger"),
+    BS5Badge(["rounded-pill", "bg-warning", "text-dark"], "Warning"),
+    BS5Badge(["rounded-pill", "bg-info"], "Info"),
+    BS5Badge(["rounded-pill", "bg-light", "text-dark"], "Light"),
+    BS5Badge(["rounded-pill", "bg-dark"], "Dark")`, ``)
     
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;

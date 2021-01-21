@@ -43,7 +43,7 @@ BS5Breadcrumb.list(
       H5A(["href":"#"], "Robots")),
     BS5BreadcrumbItem(["active"], ["aria-current":"page"], "R2D2")))
 
-- Weitere (kompaktere) Möglichkeit -
+</code></pre><p>Weitere (kompaktere) Möglichkeit</p><pre><code>
 
 BS5Breadcrumb.list(  
   BS5BreadcrumbItem.link(["href":"#"], "Start"),

@@ -21,42 +21,48 @@ auto defaultExample = demoBs5Example("default", "Default",
     BS5List(
       BS5ListItem("List group item one"),
       BS5ListItem("List group item two"),
-      BS5ListItem("List group item three"))), ``, ``);
+      BS5ListItem("List group item three"))
+  ), ``, ``);
 
 auto activeExample = demoBs5Example("active", "Active item",      
   H5Div(
     BS5List(
       BS5ListItem("List group item one"),
       BS5ListItem(["active"], ["aria-current":"true"], "List group item two"),
-      BS5ListItem("List group item three"))), ``, ``);
+      BS5ListItem("List group item three"))
+  ), ``, ``);
 
 auto disabledExample = demoBs5Example("disabled", "Disabled item",      
   H5Div(
     BS5List(
       BS5ListItem("List group item one"),
       BS5ListItem(["disabled"], ["aria-disabled":"true"], "List group item two"),
-      BS5ListItem("List group item three"))), ``, ``);
+      BS5ListItem("List group item three"))
+  ), ``, ``);
 
 auto linksExample = demoBs5Example("links", "Links",      
   H5Div(
     BS5List(
       BS5ListLink(["href":"#"], "List group item one"),
       BS5ListLink(["active"], ["href":"#", "aria-disabled":"true"], "List group item two"),
-      BS5ListLink(["disabled"], ["href":"#", "aria-disabled":"true", "tabindex":"-1"], "List group item three"))), ``, ``);
+      BS5ListLink(["disabled"], ["href":"#", "aria-disabled":"true", "tabindex":"-1"], "List group item three"))
+  ), ``, ``);
 
 auto buttonsExample = demoBs5Example("buttons", "Buttons",      
   H5Div(
     BS5List(
       BS5Button(["list-group-item", "list-group-item-action"], "List group item one"),
       BS5Button(["list-group-item", "list-group-item-action", "active"], ["aria-current":"true"], "List group item two"),
-      BS5Button(["list-group-item", "list-group-item-action", "active"], ["aria-current":"true"], "List group item three"))), ``, ``);
+      BS5Button(["list-group-item", "list-group-item-action", "active"], ["aria-current":"true"], "List group item three"))
+  ), ``, ``);
 
 auto flushExample = demoBs5Example("flush", "Flush",      
   H5Div(
     BS5List(["list-group-flush"],
       BS5ListItem("List group item one"),
       BS5ListItem("List group item two"),
-      BS5ListItem("List group item three"))), ``, ``);
+      BS5ListItem("List group item three"))
+  ), ``, ``);
 
 auto horizontalExample = demoBs5Example("horizontal", "Horizontal",      
   H5Div(
@@ -84,7 +90,8 @@ auto horizontalExample = demoBs5Example("horizontal", "Horizontal",
     BS5List(["list-group-horizontal-xl"],
       BS5ListItem("List group item one"),
       BS5ListItem("List group item two"),
-      BS5ListItem("List group item three"))), ``, ``);
+      BS5ListItem("List group item three"))
+  ), ``, ``);
 
 auto equalwidthExample = demoBs5Example("equalwidth", "Equal-width list group item",      
   H5Div(
@@ -92,7 +99,8 @@ auto equalwidthExample = demoBs5Example("equalwidth", "Equal-width list group it
     BS5List(["list-group-horizontal"],
       BS5ListItem(["flex-fill"], "List group item one"),
       BS5ListItem(["flex-fill"], "List group item two"),
-      BS5ListItem(["flex-fill"], "List group item three"))), ``, ``);
+      BS5ListItem(["flex-fill"], "List group item three"))
+  ), ``, ``);
 
 auto colorsExample = demoBs5Example("colors", "Contextual color classes",      
   H5Div(
@@ -122,7 +130,8 @@ auto colorsExample = demoBs5Example("colors", "Contextual color classes",
       BS5ListLink(["list-group-item-warning"], "Warning"),
       BS5ListLink(["list-group-item-info"], "Info"),
       BS5ListLink(["list-group-item-light"], "Light"),
-      BS5ListLink(["list-group-item-dark"], "Dark"))), ``, ``);
+      BS5ListLink(["list-group-item-dark"], "Dark"))
+  ), ``, ``);
                 
 auto badgesExample = demoBs5Example("badges", "Badges",      
   H5Div(
@@ -132,7 +141,8 @@ auto badgesExample = demoBs5Example("badges", "Badges",
       BS5ListItem(["d-flex", "justify-content-between", "align-items-center"], 
         H5String("List group item one"), BS5Badge(["rounded-pill", "bg-primary"], "##")),
       BS5ListItem(["d-flex", "justify-content-between", "align-items-center"], 
-        H5String("List group item one"), BS5Badge(["rounded-pill", "bg-primary"], "###")))), ``, ``);
+        H5String("List group item one"), BS5Badge(["rounded-pill", "bg-primary"], "###")))
+  ), ``, ``);
 
 auto customExample = demoBs5Example("custom", "Custom content",      
   H5Div(
@@ -148,7 +158,8 @@ auto customExample = demoBs5Example("custom", "Custom content",
       BS5ListLink(["disabled"], ["href":"#"], 
         H5H4("Disabled item"),
         H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
-        H5Small("Etiam eleifend velit leo.")))), ``, ``);
+        H5Small("Etiam eleifend velit leo.")))
+  ), ``, ``);
 
 auto tabsExample = demoBs5Example("tabs", "Tab panels",      
   H5Div(
@@ -163,7 +174,8 @@ auto tabsExample = demoBs5Example("tabs", "Tab panels",
           H5Div("tab-pane-1", ["tab-pane", "fade", "show", "active"], ["role":"tabpanel", "aria-labelledby":"tab-1"], "Tab pane 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
           H5Div("tab-pane-2", ["tab-pane", "fade", "show"], ["role":"tabpanel", "aria-labelledby":"tab-2"], "Tab pane 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
           H5Div("tab-pane-3", ["tab-pane", "fade", "show"], ["role":"tabpanel", "aria-labelledby":"tab-3"], "Tab pane 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
-        )))), ``, ``);
+        )))
+  ), ``, ``);
 
       return 
 H5Main(

@@ -36,7 +36,8 @@ H5Main(
           H5A(["link-warning"], ["href":"#"], "Warning link"), H5Br,
           H5A(["link-info"], ["href":"#"], "Info link"), H5Br,
           H5A(["link-light"], ["href":"#"], "Light link"), H5Br,
-          H5A(["link-dark"], ["href":"#"], "Dark link"), H5Br), ``, ``)
+          H5A(["link-dark"], ["href":"#"], "Dark link"), H5Br
+          ), ``, ``)
       ),
     H5Div(["col-12", "col-lg-2"]))).toString;
     }

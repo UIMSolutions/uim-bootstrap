@@ -21,37 +21,57 @@ auto textExample = demoBs5Example("text", "Text",
       BS5CardBody(
         BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
         BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
-      ))), ``, ``);
+      ))
+  ), 
+  `BS5Card(["w-50"], 
+      BS5CardBody(
+        BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
+        BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
+      ))`, ``);
 
 auto titleExample = demoBs5Example("title", "Title",  
   H5Div(
     BS5Card(["w-50"], 
       BS5CardBody(
-        BS5CardTitle("Card title"), 
-      )
-    )), ``, ``);
+        BS5CardTitle("Card title")))
+  ), 
+  `BS5Card(["w-50"], 
+  BS5CardBody(
+    BS5CardTitle("Card title")))
+`, ``);
 
 auto subtitleExample = demoBs5Example("subtitle", "Subtitle",
   H5Div(
     BS5Card(["w-50"], 
       BS5CardBody(
-        BS5CardSubtitle("Card subtitle")
-      ))), ``, ``);
+        BS5CardSubtitle("Card subtitle")))
+  ), 
+  `BS5Card(["w-50"], 
+  BS5CardBody(
+    BS5CardSubtitle("Card subtitle")))
+`, ``);
 
 auto buttonExample = demoBs5Example("button", "Button",
   H5Div(
     BS5Card(["w-50"], 
       BS5CardBody(
-        BS5ButtonLink(["btn-primary"], "Button")
-      ))), ``, ``);
+        BS5ButtonLink(["btn-primary"], "Button")))
+  ), 
+  `BS5Card(["w-50"], 
+  BS5CardBody(
+    BS5ButtonLink(["btn-primary"], "Button")))`, ``);
 
 auto linksExample = demoBs5Example("links", "Links",
   H5Div(
     BS5CardBody(
       BS5CardLink(["href":"#"], "Card link"),
       BS5CardLink(["href":"#"], "Card link"),
-      BS5CardLink(["href":"#"], "Card link")
-    )), ``, ``);
+      BS5CardLink(["href":"#"], "Card link"))
+  ), 
+  `BS5CardBody(
+  BS5CardLink(["href":"#"], "Card link"),
+  BS5CardLink(["href":"#"], "Card link"),
+  BS5CardLink(["href":"#"], "Card link"))`, ``);
 
 auto lgExample = demoBs5Example("listgroup", "List Group",
   H5Div(
@@ -59,113 +79,36 @@ auto lgExample = demoBs5Example("listgroup", "List Group",
       BS5List(["list-group-flush"],
         BS5ListItem("List group item"),
         BS5ListItem("List group item"),
-        BS5ListItem("List group item")
-      ))), ``, ``);
+        BS5ListItem("List group item")))        
+  ), 
+  `BS5Card(["w-50"], 
+  BS5List(["list-group-flush"],
+    BS5ListItem("List group item"),
+    BS5ListItem("List group item"),
+    BS5ListItem("List group item")`, ``);
 
 auto headerExample = demoBs5Example("header", "Header",
   H5Div(
     BS5Card(["w-50"], 
-      BS5CardHeader("Card header")
-    )), ``, ``);
+      BS5CardHeader("Card header"))
+  ), 
+  `BS5Card(["w-50"], 
+  BS5CardHeader("Card header"))
+`, ``);
 
 auto footerExample = demoBs5Example("footer", "Footer",
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Footer"), 
     BS5Card(["w-50"], 
-      BS5CardFooter("Created DD-MM-YYYY")
-    )), ``, ``);
+      BS5CardFooter("Created DD-MM-YYYY"))
+    ), 
+    `BS5Card(["w-50"], 
+      BS5CardFooter("Created DD-MM-YYYY"))`, ``);
+
 
            /* 
 
-`H5H4(["h5", "text-muted", "mt-3"], "Text"), 
-BS5Card(["w-50"], 
-  BS5CardBody(
-    BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
-    BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
-  )),
-H5H4(["h5", "text-muted", "mt-3"], "Title"), 
-BS5Card(["w-50"], 
-  BS5CardBody(
-    BS5CardTitle("Card title"), 
-  )),
-H5H4(["h5", "text-muted", "mt-3"], "Subtitle"), 
-BS5Card(["w-50"], 
-  BS5CardBody(
-    BS5CardSubtitle("Card subtitle")
-  )),
-H5H4(["h5", "text-muted", "mt-3"], "Button"), 
-BS5Card(["w-50"], 
-  BS5CardBody(
-    BS5ButtonLink(["btn-primary"], "Button")
-  )),
-H5H4(["h5", "text-muted", "mt-3"], "Links"), 
-BS5CardBody(
-  BS5CardLink(["href":"#"], "Card link"),
-  BS5CardLink(["href":"#"], "Card link"),
-  BS5CardLink(["href":"#"], "Card link")
-).
-H5H4(["h5", "text-muted", "mt-3"], "List group"), 
-BS5Card(["w-50"], 
-  BS5List(["list-group-flush"],
-    BS5ListItem("List group item"),
-    BS5ListItem("List group item"),
-    BS5ListItem("List group item")
-  )),
-H5H4(["h5", "text-muted", "mt-3"], "Header"), 
-BS5Card(["w-50"], 
-  BS5CardHeader("Card header")
-),
-H5H4(["h5", "text-muted", "mt-3"], "Footer"), 
-BS5Card(["w-50"], 
-  BS5CardFooter("Created DD-MM-YYYY")
-))`,
-`<h4 class="h5 text-muted mt-3">Text</h4>
-<div class="card w-50">
-  <div class="card-body">
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
-  </div>
-</div>
-<h4 class="h5 text-muted mt-3">Title</h4>
-<div class="card w-50">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-  </div>
-</div>
-<h4 class="h5 text-muted mt-3">Subtitle</h4>
-<div class="card w-50">
-  <div class="card-body">
-    <h6 class="card-subtitle">Card subtitle</h6>
-  </div>
-</div>
-<h4 class="h5 text-muted mt-3">Button</h4>
-<div class="card w-50">
-  <div class="card-body">
-    H5A(["href":"#",  class="btn btn-primary">Button</a>
-  </div>
-</div>
-<h4 class="h5 text-muted mt-3">Links</h4>
-<div class="card-body">
-  H5A(["href":"#",  class="card-link">Card link</a>
-  H5A(["href":"#",  class="card-link">Card link</a>
-  H5A(["href":"#",  class="card-link">Card link</a>
-</div>
-<h4 class="h5 text-muted mt-3">List group</h4>
-<div class="card w-50">
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">List group item</li>
-    <li class="list-group-item">List group item</li>
-    <li class="list-group-item">List group item</li>
-  </ul>
-</div>
-<h4 class="h5 text-muted mt-3">Header</h4>
-<div class="card w-50">
-  <h3 class="card-header">Card header")
-</div>
-<h4 class="h5 text-muted mt-3">Footer</h4>
-<div class="card w-50">
-  <div class="card-footer">Created DD-MM-YYYY")
-</div>`),
+`,
+
 
 demoBs5Example("images", "Bilder", 
   H5Div(
@@ -498,7 +441,9 @@ demoBs5Page(
       linksExample,
       lgExample,
       headerExample,
-      footerExample
+      footerExample,
+      textExample,
+      titleExample
     ),
     H5Div(["col-12", "col-lg-2"])
     );

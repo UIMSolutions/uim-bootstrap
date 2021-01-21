@@ -42,7 +42,7 @@ BS5Alert(["alert-danger"], "Danger")
 BS5Alert(["alert-warning"], "Warning")
 BS5Alert(["alert-info"], "Info")
 BS5Alert(["alert-dark"], "Dark")
-<p class="text-muted">Alternative</p>
+</code></pre><p class="text-muted">Alternative</p><pre><code>
 BS5Alert("Primary").color("primary")
 BS5Alert("Secondary").color("secondary")
 BS5Alert("Success").color("success")
