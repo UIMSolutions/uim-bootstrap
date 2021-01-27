@@ -15,21 +15,22 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-  <div class="container-fluid mt-3 bg-light m-1">
-    <nav aria-label="Breadcrumb" >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-        <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/utilities">Utilities</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Position Utilities</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container mt-3">
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/utilities"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Utilities"], "Position Utilities")),
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Position Utilities"),
+      H5Hr,
+    ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
+    }
+  });
+}   
+/*  <div class="container mt-3">
     <div class="row">
       <div class="col-12 col-lg-2">
       </div>
@@ -114,4 +115,4 @@ static this() {
       `;
     }
   });
-}
+}*/

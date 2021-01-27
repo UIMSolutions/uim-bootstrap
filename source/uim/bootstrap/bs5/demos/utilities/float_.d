@@ -15,7 +15,22 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/utilities"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Utilities"], "Float")),
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Float"),
+      H5Hr,
+    ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
+    }
+  });
+}   
+/*
 <main>
   <div class="container-fluid mt-3 bg-light m-1">
     <nav aria-label="Breadcrumb" >
@@ -78,4 +93,4 @@ static this() {
       `;
     }
   });
-}
+}*/

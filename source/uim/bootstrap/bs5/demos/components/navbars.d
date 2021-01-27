@@ -18,7 +18,8 @@ static this() {
 auto linkExample = demoBs5Example("link", "With Link",
   BS5Navbar(["navbar-light", "bg-light"], 
     BS5Container(
-      BS5NavbarBrand(["href":"#"], "Navbar"))), ``, ``);
+      BS5NavbarBrand(["href":"#"], "Navbar"))
+  ), ``, ``);
 
 auto headingExample = demoBs5Example("heading", "With Heading",
   BS5Navbar(["navbar-light", "bg-light"], 

@@ -40,12 +40,20 @@ H5Div(
 
 auto titleExample = demoBs5Example("title", "Title",
 H5Div(
-  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 
+  H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", 
+    "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 
     H5H3(["text-muted"], "Title"),
     H5Div(
       BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "title":"Popover title", 
       "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover with title")))
-      ), ``, ``); 
+      ), 
+`H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", 
+  "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 
+  H5H3(["text-muted"], "Title"),
+  H5Div(
+    BS5Button(["btn-secondary"], ["data-bs-toggle":"popover", "title":"Popover title", 
+    "data-bs-content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."], "Popover with title")))`, 
+``); 
 
 auto customExample = demoBs5Example("custom", "Custom HTML",
 H5Div(

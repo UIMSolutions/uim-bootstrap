@@ -18,8 +18,8 @@ static this() {
       return 
 H5Main(
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/contents"], 
-    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Contents"], "Columns")),
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/layouts"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Layouts"], "Columns")),
 
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"]),

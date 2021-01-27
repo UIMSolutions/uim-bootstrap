@@ -7,8 +7,8 @@ class DBS4ListLinks : DBS4Obj {
 	override public void _init() {
 		super._init;
 	}
-	mixin(MyContent!("link", "BS4ListGroupLink"));
-	mixin(MyContent!("button", "BS4ListGroupButton"));
+	mixin(MyContent!("link", "BS4ListLink"));
+	mixin(MyContent!("button", "BS4ListButton"));
 }
 mixin(H5Calls!"BS4ListLinks");
 

@@ -15,16 +15,25 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-  <div class="container-fluid mt-3 bg-light m-1">
-    <nav aria-label="Breadcrumb" >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">UI Manufaktur</a></li>
-        <li class="breadcrumb-item"><a href="/demos">Demos</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap">uim-bootstrap</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5">Bootstrap 5</a></li>
-        <li class="breadcrumb-item"><a href="/demos/uim-bootstrap/5/contents">Contents</a></li>
+      return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5", "/demos/uim-bootstrap/5/contents"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Contents"], "Figures")),
+
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      H5H2(["display-4"], "Figures"),
+      H5Hr,
+
+    ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
+    }
+  });
+}
+ 
+/*
         <li class="breadcrumb-item active" aria-current="page">Figures</li>
       </ol>
     </nav>
@@ -62,12 +71,4 @@ static this() {
             </figure>
           </div>
         </div>
-
-      </div>
-    </div>
-  </div>
-</main>
-      `;
-    }
-  });
-}
+*/
