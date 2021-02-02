@@ -17,7 +17,7 @@ static this() {
     override string content() { 
       return `
 <main>
-  <div ["container-fluid mt-3 bg-light m-1"]
+  H5Div(["container-fluid mt-3 bg-light m-1"]
     <nav aria-label="Breadcrumb" >
       <ol ["breadcrumb"]
         <li ["breadcrumb-item"]<a href="/"]UI Manufaktur</a></li>
@@ -28,15 +28,15 @@ static this() {
       </ol>
     </nav>
   )
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Bootstrap 5 Demo</h2>
         <hr>
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]"Themenbereiche"</h3>
           <ul ["list-group"]
             <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/components"]Components</a></li>
@@ -48,7 +48,7 @@ static this() {
           </ul>
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]"Components"</h3>
           <ul ["list-group"]
             <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/components/accordions"]Accordions</a></li>

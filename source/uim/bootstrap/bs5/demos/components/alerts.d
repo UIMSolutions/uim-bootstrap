@@ -50,13 +50,13 @@ BS5Alert("Danger").color("danger")
 BS5Alert("Warning").color("warning")
 BS5Alert("Info").color("info")
 BS5Alert("Dark").color("dark")`,
-`<div ["alert alert-primary" role="alert"]Primary)
-<div ["alert alert-secondary" role="alert"]Secondary)
-<div ["alert alert-success" role="alert"]Success)
-<div ["alert alert-danger" role="alert"]Danger)
-<div ["alert alert-warning" role="alert"]Warning)
-<div ["alert alert-info" role="alert"]Info)
-<div ["alert alert-dark" role="alert"]Dark)`),
+`H5Div(["alert alert-primary" role="alert"]Primary)
+H5Div(["alert alert-secondary" role="alert"]Secondary)
+H5Div(["alert alert-success" role="alert"]Success)
+H5Div(["alert alert-danger" role="alert"]Danger)
+H5Div(["alert alert-warning" role="alert"]Warning)
+H5Div(["alert alert-info" role="alert"]Info)
+H5Div(["alert alert-dark" role="alert"]Dark)`),
 
 demoBs5Example("link", "Link Farbe", 
   H5Div(
@@ -84,13 +84,13 @@ BS5Alert("Danger mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("
 BS5Alert("Warning mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("warning")
 BS5Alert("Info mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("info")
 BS5Alert("Dark mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("dark")`,
-`<div ["alert alert-primary" role="alert"]Primary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-<div ["alert alert-secondary" role="alert"]Secondary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-<div ["alert alert-success" role="alert"]Success mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-<div ["alert alert-danger" role="alert"]Danger mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-<div ["alert alert-warning" role="alert"]Warning mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-<div ["alert alert-info" role="alert"]Info mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-<div ["alert alert-dark" role="alert"]Dark mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)`),
+`H5Div(["alert alert-primary" role="alert"]Primary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
+H5Div(["alert alert-secondary" role="alert"]Secondary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
+H5Div(["alert alert-success" role="alert"]Success mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
+H5Div(["alert alert-danger" role="alert"]Danger mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
+H5Div(["alert alert-warning" role="alert"]Warning mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
+H5Div(["alert alert-info" role="alert"]Info mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
+H5Div(["alert alert-dark" role="alert"]Dark mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)`),
 
 demoBs5Example("addition", "Zusätzliche Inhalte", 
   H5Div(
@@ -111,22 +111,22 @@ demoBs5Example("addition", "Zusätzliche Inhalte",
       H5H4(["alert-heading"], "Info!"),
       H5P("Please read the provided <a href=\"#\" class=\"alert-link\"]information.</a>"),
       H5P("The information will help you get a better understanding of the topic."))),
-`<div ["alert alert-success" role="alert"]
+`H5Div(["alert alert-success" role="alert"]
       <h4 ["alert-heading"]Success!")
       <p>You have accomplished H5A(["href":"#",  ["alert-link"]your goal</a>.</p>
       <p>You can now continue and start defining a new goal to reach.</p>
     )
-    <div ["alert alert-danger" role="alert"]
+    H5Div(["alert alert-danger" role="alert"]
       <h4 ["alert-heading"]Danger!")
       <p>Something is wrong. H5A(["href":"#",  ["alert-link"]Please try again.</a></p>
       <p>Make sure that you enter the correct user name and corresponding password.</p>
     )
-    <div ["alert alert-warning" role="alert"]
+    H5Div(["alert alert-warning" role="alert"]
       <h4 ["alert-heading"]Warning!")
       <p>Be careful when you H5A(["href":"#",  ["alert-link"]drive.</a></p>
       <p>Driving is a serious task and should thus be taken seriously.</p>
     )
-    <div ["alert alert-info" role="alert"]
+    H5Div(["alert alert-info" role="alert"]
       <h4 ["alert-heading"]Info!")
       <p>Please read the provided H5A(["href":"#",  ["alert-link"]information.</a></p>
       <p>The information will help you get a better understanding of the topic.</p>
@@ -155,7 +155,7 @@ demoBs5Example("dismissing", "Entfernbar",
     BS5Alert(["alert-success", "alert-dismissible", "fade", "show"], 
       BS5Button(["btn-close"], ["data-bs-dismiss":"alert", "aria-label":"Close"]),
       H5Strong("Achtung!"), H5String(" Dieser Alert verschwindet, wenn der &times; Button getätigt wird."))),
-`<div ["alert alert-success alert-dismissible fade show" role="alert"]
+`H5Div(["alert alert-success alert-dismissible fade show" role="alert"]
   <button type="button" ["btn-close" data-bs-dismiss="alert" aria-label="Close"]")
   <strong>Achtung!</strong> Dieser Alert verschwindet, wenn der &times; Button getätigt wird.
 )`,

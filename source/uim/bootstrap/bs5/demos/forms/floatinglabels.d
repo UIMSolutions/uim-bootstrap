@@ -15,6 +15,60 @@ static this() {
 		} 
 			
     override string content() { 
+
+auto defaultExample = demoBs5Example("default", "Default", 
+  H5Div(
+    H5Div(["form-floating"],
+      H5Input("floatingLabelDefault", ["form-control"], ["type":"text", "placeholder":"Text input placeholder"]),
+      H5Label(["form-label"], ["for":"floatingLabelDefault"], "Text input label")
+    )
+  ), ``, ``);
+
+auto valueExample = demoBs5Example("value", "With value", 
+  H5Div(
+    H5Div(["form-floating"],
+      H5Input("floatingLabelValue", ["form-control"], ["type":"text", "placeholder":"Text input placeholder", "value":"Text input value"]),
+      H5Label(["form-label"], ["for":"floatingLabelValue"], "Text input label")
+    )
+  ), ``, ``);
+
+auto validationExample = demoBs5Example("validation", "Validation", 
+  H5Div(
+    H5Div(["form-floating"],
+      H5Input("floatingLabelValidation", ["form-control", "is-valid"], ["type":"text", "placeholder":"Text input placeholder", "value":"Text input value"]),
+      H5Label(["form-label"], ["for":"floatingLabelValidation"], "Text input label")
+    )
+  ), ``, ``);
+
+auto textareaExample = demoBs5Example("textarea", "Textarea", 
+  H5Div(
+    H5H4(["h5", "text-muted", "mt-3"], "Default"),
+    H5Div(["form-floating"],
+      H5Textarea("floatingLabelTextareaDefault", ["form-control"], ["placeholder":"Textarea placeholder"]),
+      H5Label(["form-label"], ["for":"floatingLabelTextareaDefault"], "Textarea label")
+    ),
+    H5H4(["h5", "text-muted", "mt-3"], "Custom height"),
+    H5Div(["form-floating"],
+      H5Textarea("floatingLabelTextareaHeight", ["form-control"], ["placeholder":"Textarea placeholder", "style":"height: 100px;"]),
+      H5Label(["form-label"], ["for":"floatingLabelTextareaHeight"], "Textarea label")
+    )
+  ), ``, ``);
+
+auto selectExample = demoBs5Example("select", "Select", 
+  H5Div(   
+    H5Div(["form-floating"],
+      H5Select("floatingLabelSelect", ["form-select"], ["aria-label":"Select"],
+        H5Option(["selected":"selected"], "Select option"),
+        H5Option(["value":"1"], "Option one"),
+        H5Option(["value":"2"], "Option two"),
+        H5Option(["value":"3"], "Option three"),
+        H5Option(["value":"4"], "Option four"),
+        H5Option(["value":"5"], "Option five")
+      ),
+      H5Label(["form-label"], ["for":"floatingLabelSelect"], "Select label")
+    )
+  ), ``, ``);
+
        return 
 H5Main(
   H5Div(["container-fluid", "mt-3", "bg-light"],
@@ -27,83 +81,16 @@ H5Main(
       H5H2(["display-4"], "Floating Labels"),
       H5Hr,
 
+      defaultExample, 
+      valueExample, 
+      validationExample, 
+      textareaExample, 
+      selectExample
+
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }
- 
-/*
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
-      )
-      <div ["col-12 col-lg-8"]
-        <h2 ["component display-4"]Floating Labels</h2>
-        <hr>
 
-        <div ["mb-5"]
-          <h3 ["text-muted"]Default</h3>
-          H5Div(
-            <div ["form-floating"]
-              H5Input(["type":"text" ["form-control" placeholder="Text input placeholder" id="floatingLabelDefault"]
-              H5Label(["for":"floatingLabelDefault" ["form-label"]Text input label")
-            )
-          )
-        )
 
-        <div ["mb-5"]
-          <h3 ["text-muted"]With value</h3>
-          H5Div(
-            <div ["form-floating"]
-              H5Input(["type":"text" ["form-control" placeholder="Text input placeholder" id="floatingLabelValue" value="Text input value"]
-              H5Label(["for":"floatingLabelValue" ["form-label"]Text input label")
-            )
-          )
-        )
-
-        <div ["mb-5"]
-          <h3 ["text-muted"]Validation</h3>
-          H5Div(
-            <div ["form-floating"]
-              H5Input(["type":"text" ["form-control is-valid" placeholder="Text input placeholder" id="floatingLabelValidation" value="Text input value"]
-              H5Label(["for":"floatingLabelValidation" ["form-label"]Text input label")
-            )
-          )
-        )
-
-        <div ["mb-5"]
-          <h3 ["text-muted"]Textarea</h3>
-          H5Div(
-            H5H4(["h5", "text-muted", "mt-3"], "Default")
-            <div ["form-floating"]
-              <textarea ["form-control" placeholder="Textarea placeholder" id="floatingLabelTextareaDefault"]</textarea>
-              H5Label(["for":"floatingLabelTextareaDefault" ["form-label"]Textarea label")
-            )
-            H5H4(["h5", "text-muted", "mt-3"], "Custom height")
-            <div ["form-floating"]
-              <textarea ["form-control" placeholder="Textarea placeholder" id="floatingLabelTextareaHeight" style="height: 100px;"]</textarea>
-              H5Label(["for":"floatingLabelTextareaHeight" ["form-label"]Textarea label")
-            )
-          )
-        )
-
-        <div ["mb-5"]
-          <h3 ["text-muted"]Select</h3>
-          H5Div(
-            <div ["form-floating"]
-              H5Select(["form-select" aria-label="Select" id="floatingLabelSelect"]
-                H5Option(["selected":"selected"], Select option")
-                H5Option(["value":"1"], "Option one")
-                H5Option(["value":"2"], "Option two")
-                H5Option(["value":"3"], "Option three")
-                H5Option(["value":"4"], "Option four")
-                H5Option(["value":"5"], "Option five")
-              )
-              H5Label(["for":"floatingLabelSelect" ["form-label"]Select label")
-            )
-          )
-        )
-      )
-    )
- */

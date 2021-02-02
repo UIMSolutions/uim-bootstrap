@@ -30,15 +30,15 @@ H5Main(
     }
   });
 }   /*
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Vertical Align</h2>
         <hr>
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
               <h3 ["text-muted"]Inline and inline-block</h3>
               H5Div(
                 <h1>BaselineH5Img(["src":"/img/20x20.png" ["align-baseline"]</h1>
@@ -50,11 +50,11 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Table cell</h3>
               H5Div(
                 <p>Text-top and text-bottom not applicable on table cells</p>
-                <table ["table" style="height: 200px;"]
+                <table ["table" "style":"height: 200px;"]
                   <tbody>
                     <tr>
                       <td ["align-baseline"]Baseline</td>

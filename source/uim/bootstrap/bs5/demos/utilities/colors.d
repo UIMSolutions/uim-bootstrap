@@ -32,15 +32,15 @@ H5Main(
 }   
 /*    
 
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Colors</h2>
         <hr>
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Color</h3>
           H5Div(
             <p ["text-primary"]Text primary color.</p>
@@ -59,7 +59,7 @@ H5Main(
           )
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Background color</h3>
           H5Div(
             <p ["bg-primary text-white p-3"]Background primary color with text white color.</p>
@@ -75,7 +75,7 @@ H5Main(
           )
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Background gradient</h3>
           H5Div(
             <p ["bg-primary bg-gradient text-white p-3"]Background primary color with text white color.</p>

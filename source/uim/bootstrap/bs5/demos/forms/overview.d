@@ -33,15 +33,15 @@ H5Main(
   });
 }
 /* 
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Overview</h2>
         <hr>
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Default</h3>
           H5Div(
             H5Figure( ["figure"]
@@ -51,7 +51,7 @@ H5Main(
           )
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Alignment</h3>
           H5Div(
             H5H4(["h5", "text-muted", "mt-3"], "Center")

@@ -35,7 +35,7 @@ H5Main(
  
 /* 
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Default</h3>
           H5Div(
             H5Figure( ["figure"]
@@ -45,7 +45,7 @@ H5Main(
           )
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Alignment</h3>
           H5Div(
             H5H4(["h5", "text-muted", "mt-3"], "Center")

@@ -30,18 +30,18 @@ H5Main(
     }
   });
 }   /*
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Visibility</h2>
         <hr>
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
               H5Div(
-                <div ["card p-3 mb-3 visible" style="visibility: hidden;"]Visible card)
-                <div ["card p-3 invisible"]Invisible card)
+                H5Div(["card p-3 mb-3 visible" "style":"visibility: hidden;"]Visible card)
+                H5Div(["card p-3 invisible"]Invisible card)
               )
             )
 

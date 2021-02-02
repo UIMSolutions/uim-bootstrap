@@ -30,15 +30,15 @@ H5Main(
     }
   });
 }   /*
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Text</h2>
         <hr>
 
-       <div ["mb-5"]
+       H5Div(["mb-5"]
               <h3 ["text-muted"]Alignment</h3>
               H5Div(
                 H5H4(["h5", "text-muted", "mt-3"], "All breakpoints")
@@ -64,22 +64,22 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Wrapping</h3>
               H5Div(
-                <div ["badge bg-secondary text-wrap" style="width: 10rem;"]Lorem ipsum dolor sit amet, consectetur adipiscing elit.)
+                H5Div(["badge bg-secondary text-wrap" "style":"width: 10rem;"]Lorem ipsum dolor sit amet, consectetur adipiscing elit.)
                 <p ["text-nowrap"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Word break</h3>
               H5Div(
                 <p ["text-break"]abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789</p>
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Transform</h3>
               H5Div(
                 <p ["text-lowercase"]Lowercased text</p>
@@ -88,7 +88,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Font size</h3>
               H5Div(
                 <p ["fs-1"]Font size 1</p>
@@ -100,7 +100,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Font weight and italics</h3>
               H5Div(
                 <p ["fw-bold"]Bold text</p>
@@ -113,7 +113,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Line height</h3>
               H5Div(
                 H5H4(["h5", "text-muted", "mt-3"], "1")
@@ -127,21 +127,21 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Monospace</h3>
               H5Div(
                 <p ["font-monospace"]Monospace text</p>
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Reset color</h3>
               H5Div(
                 <p>Reset <a href="#" ["text-reset"]link</a> color</p>
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Text decoration</h3>
               H5Div(
                 <p ["text-decoration-underline"]Text with text line underneath it</p>

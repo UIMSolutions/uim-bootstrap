@@ -30,15 +30,15 @@ H5Main(
     }
   });
 }              /*
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Bootstrap 5 Demo</h2>
         <hr>
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Themenbereiche</h3>
           <ul ["list-group"]
             <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/components"]Components</a></li>
@@ -50,7 +50,7 @@ H5Main(
           </ul>
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Forms</h3>
           <ul ["list-group"]
             <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/layouts/columns"]Columns</a></li>

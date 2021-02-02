@@ -31,33 +31,33 @@ H5Main(
   });
 }   
 /*
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Interactions</h2>
         <hr>
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
               <h3 ["text-muted"]Text selection</h3>
               H5Div(
                 H5H4(["h5", "text-muted", "mt-3"], "All")
                 <p ["user-select-all"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
                 H5H4(["h5", "text-muted", "mt-3"], "Auto")
-                <p ["user-select-auto" style="user-select: none;"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                <p ["user-select-auto" "style":"user-select: none;"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
                 H5H4(["h5", "text-muted", "mt-3"], "None")
                 <p ["user-select-none"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Pointer events</h3>
               H5Div(
                 H5H4(["h5", "text-muted", "mt-3"], "None")
                 <p><a href="#" ["pe-none"]Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
                 H5H4(["h5", "text-muted", "mt-3"], "Auto")
-                <p><a href="#" ["pe-auto" style="pointer-events: none;"]Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+                <p><a href="#" ["pe-auto" "style":"pointer-events: none;"]Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
                 H5H4(["h5", "text-muted", "mt-3"], "None for parent, auto for second child")
                 <p ["pe-none"]<a href="#"]Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. <a href="#" ["pe-auto"]Etiam eleifend velit leo</a>.</p>
               )

@@ -34,60 +34,60 @@ H5Main(
 }
  
 /*
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Form Control</h2>
         <hr>
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
               <h3 ["text-muted"]Text input</h3>
               <p>Applies to various textual inputs like <code>type="text"</code>, <code>type="search"</code>, <code>type="email"</code>, <code>type="url"</code>, <code>type="tel"</code>, <code>type="password"</code> and <code>type="number"</code>.</p>
               H5Div(
                 H5Label(["for":"inputText" ["form-label"]Text input label")
-                H5Input(["type":"text" ["form-control" placeholder="Text input placeholder" id="inputText"]
+                H5Input(["type":"text" ["form-control" "placeholder":"Text input placeholder" id="inputText"]
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Textarea</h3>
               H5Div(
                 H5Label(["for":"textarea" ["form-label"]Textarea")
-                <textarea ["form-control" id="textarea" rows="5" placeholder="Write your message here."]</textarea>
+                <textarea ["form-control" id="textarea" rows="5" "placeholder":"Write your message here."])
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Sizing</h3>
               H5Div(
                 H5H4(["h5", "text-muted", "mt-3"], "Small")
                 H5Label(["for":"inputTextSmall" ["form-label"]Text input label")
-                H5Input(["type":"text" ["form-control form-control-sm" placeholder="Text input placeholder" id="inputTextSmall"]
+                H5Input(["type":"text" ["form-control form-control-sm" "placeholder":"Text input placeholder" id="inputTextSmall"]
                 H5H4(["h5", "text-muted", "mt-3"], "Large")
                 H5Label(["for":"inputTextLarge" ["form-label"]Text input label")
-                H5Input(["type":"text" ["form-control form-control-lg" placeholder="Text input placeholder" id="inputTextLarge"]
+                H5Input(["type":"text" ["form-control form-control-lg" "placeholder":"Text input placeholder" id="inputTextLarge"]
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Readonly</h3>
               H5Div(
                 H5Label(["for":"inputTextReadonly" ["form-label"]Text input label")
-                H5Input(["type":"text" ["form-control" placeholder="Text input placeholder" id="inputTextReadonly" readonly>
+                H5Input(["type":"text" ["form-control" "placeholder":"Text input placeholder" id="inputTextReadonly" readonly>
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Readonly plain text</h3>
               H5Div(
                 H5Label(["for":"inputTextReadonlyPlaintext" ["form-label"]Text input label")
-                H5Input(["type":"text" ["form-control-plaintext" placeholder="Text input placeholder" id="inputTextReadonlyPlaintext" readonly>
+                H5Input(["type":"text" ["form-control-plaintext" "placeholder":"Text input placeholder" id="inputTextReadonlyPlaintext" readonly>
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]File</h3>
               H5Div(
                 H5H4(["h5", "text-muted", "mt-3"], "Default")
@@ -108,19 +108,19 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Color picker</h3>
               H5Div(
                 H5Label(["for":"inputColor" ["form-label"]Color input label")
-                H5Input(["type":"color" ["form-control form-control-color" id="inputColor" value="#7952b3" title="Choose color"]
+                H5Input(["type":"color" ["form-control form-control-color" id="inputColor" "value":"#7952b3" title="Choose color"]
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Datalist</h3>
               H5Div(
                 H5Label(["for":"datalist" ["form-label"]Datalist label")
-                <input ["form-control" list="datalistOptions" id="datalist" placeholder="Type to search..."]
+                <input ["form-control" list="datalistOptions" id="datalist" "placeholder":"Type to search..."]
                 <datalist id="datalistOptions"]
                   H5Option(["value":"Bootstrap"]
                   H5Option(["value":"Foundation"]

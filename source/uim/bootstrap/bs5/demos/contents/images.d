@@ -38,47 +38,47 @@ H5Main(
       </ol>
     </nav>
   )
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Images</h2>
         <hr>
 
-         <div ["mb-5"]
+         H5Div(["mb-5"]
           <h3 ["text-muted"]Default</h3>
           H5Div(
             H5Img(["src":"/img/300x200.png" "alt":"Normal image"]
           )
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Responsive</h3>
           H5Div(
             H5Img(["src":"/img/1200x600.png" "alt":"Responsive image" ["img-fluid"]
           )
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Rounded</h3>
           H5Div(
             H5Img(["src":"/img/300x200.png" "alt":"Image with rounded corners" ["rounded"]
           )
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Thumbnail</h3>
           H5Div(
             H5Img(["src":"/img/100x100.png" "alt":"Image thumbnail" ["img-thumbnail"]
           )
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Alignment</h3>
           H5Div(
             H5H4(["h5", "text-muted", "mt-3"], "Float")
-            <div ["clearfix"]
+            H5Div(["clearfix"]
               H5Img(["src":"/img/100x100.png" "alt":"Image floated left" ["float-start"]
               H5Img(["src":"/img/100x100.png" "alt":"Image floated right" ["float-end"]
             )
@@ -87,19 +87,19 @@ H5Main(
             H5Img(["src":"/img/100x100.png" "alt":"Centered image" ["d-block mx-auto"]
             H5Img(["src":"/img/100x100.png" "alt":"Right-aligned image" ["d-block ms-auto"]
             H5H4(["h5", "text-muted", "mt-3"], "Text alignment")
-            <div ["text-start"]
+            H5Div(["text-start"]
               H5Img(["src":"/img/100x100.png" "alt":"Left-aligned image"]
             )
-            <div ["text-center"]
+            H5Div(["text-center"]
               H5Img(["src":"/img/100x100.png" "alt":"Centered image"]
             )
-            <div ["text-end"]
+            H5Div(["text-end"]
               H5Img(["src":"/img/100x100.png" "alt":"Right-aligned image"]
             )
           )
         )
 
-        <div ["mb-5"]
+        H5Div(["mb-5"]
           <h3 ["text-muted"]Picture element</h3>
           <p>If using the <code>&lt;picture&gt;</code> element put <code>.img-*</code> classes on the <code>&lt;img&gt;</code> tag and not the <code>&lt;picture&gt;</code> tag.
           H5Div(

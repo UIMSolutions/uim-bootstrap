@@ -50,17 +50,17 @@ demoBs5Example("slidesonly", "Slides Only",
     BS5CarouselItem( 
       H5Image(["d-block", "w-100"], ["src":"/img/libs/uim-bootstrap/slide4.jpg", "alt":"Fourth slide"]))))`, 
       `<div id="carouselSlidesOnly" ["carousel slide" data-bs-ride="carousel"]
-  <div ["carousel-inner"]
-    <div ["carousel-item active"]
+  H5Div(["carousel-inner"]
+    H5Div(["carousel-item active"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
     )
   )
@@ -102,17 +102,17 @@ demoBs5Example("controls", "Controls",
     H5Span(["carousel-control-next-icon"], ["aria-hidden":"true"]), 
     H5Span(["visually-hidden"], "Previous")))`, 
     `<div id="carouselControls" ["carousel slide" data-bs-ride="carousel"]
-  <div ["carousel-inner"]
-    <div ["carousel-item active"]
+  H5Div(["carousel-inner"]
+    H5Div(["carousel-item active"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"Fourth slide" ["d-block w-100"]
     )
   )
@@ -168,17 +168,17 @@ demoBs5Example("indicators", "Indicators",
     <li data-bs-target="#carouselIndicators" data-bs-slide-to="2"]</li>
     <li data-bs-target="#carouselIndicators" data-bs-slide-to="3"]</li>
   </ol>
-  <div ["carousel-inner"]
-    <div ["carousel-item active"]
+  H5Div(["carousel-inner"]
+    H5Div(["carousel-item active"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/1200x600-info.png" "alt":"Fourth slide" ["d-block w-100"]
     )
   )
@@ -232,31 +232,31 @@ demoBs5Example("captions", "Captions",
         H5H3("Caption"),
         H5P("This text describes the fourth slide")))))`, 
         `<div id="carouselCaptions" ["carousel slide" data-bs-ride="carousel"]
-  <div ["carousel-inner"]
-    <div ["carousel-item active"]
+  H5Div(["carousel-inner"]
+    H5Div(["carousel-item active"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the first slide</p>
       )
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the second slide</p>
       )
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the third slide</p>
       )
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the fourth slide</p>
       )
@@ -340,31 +340,31 @@ demoBs5Example("every", "Everything<p>Carousel with controls, indicators and cap
     <li data-bs-target="#carouselAll" data-bs-slide-to="2"]</li>
     <li data-bs-target="#carouselAll" data-bs-slide-to="3"]</li>
   </ol>
-  <div ["carousel-inner"]
-    <div ["carousel-item active"]
+  H5Div(["carousel-inner"]
+    H5Div(["carousel-item active"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the first slide</p>
       )
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the second slide</p>
       )
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the third slide</p>
       )
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the fourth slide</p>
       )
@@ -456,31 +456,31 @@ demoBs5Example("dark", "Dark<p>Carousel with dark controls, indicators and capti
     <li data-bs-target="#carouselDark" data-bs-slide-to="2"]</li>
     <li data-bs-target="#carouselDark" data-bs-slide-to="3"]</li>
   </ol>
-  <div ["carousel-inner"]
-    <div ["carousel-item active"]
+  H5Div(["carousel-inner"]
+    H5Div(["carousel-item active"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the first slide</p>
       )
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the second slide</p>
       )
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the third slide</p>
       )
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
-      <div ["carousel-caption"]
+      H5Div(["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the fourth slide</p>
       )
@@ -520,17 +520,17 @@ demoBs5Example("fade", "Crossfade",
     BS5CarouselItem( 
       H5Image(["d-block", "w-100"], ["src":"/img/libs/uim-bootstrap/slide4.jpg", "alt":"Fourth slide"]))))`, 
       `<div id="carouselFade" ["carousel slide carousel-fade" data-bs-ride="carousel"]
-  <div ["carousel-inner"]
-    <div ["carousel-item active"]
+  H5Div(["carousel-inner"]
+    H5Div(["carousel-item active"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
     )
   )
@@ -588,17 +588,17 @@ demoBs5Example("options", "Options<p>Carousel with options defined with data att
     <li data-bs-target="#carouselOptions" data-bs-slide-to="2"]</li>
     <li data-bs-target="#carouselOptions" data-bs-slide-to="3"]</li>
   </ol>
-  <div ["carousel-inner"]
-    <div ["carousel-item active"]
+  H5Div(["carousel-inner"]
+    H5Div(["carousel-item active"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
     )
-    <div ["carousel-item" data-bs-interval="1000"]
+    H5Div(["carousel-item" data-bs-interval="1000"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
     )
-    <div ["carousel-item"]
+    H5Div(["carousel-item"]
       H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
     )
   )

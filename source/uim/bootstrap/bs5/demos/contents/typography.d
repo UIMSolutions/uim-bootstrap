@@ -34,15 +34,15 @@ H5Main(
 }
  
 /*
-  <div ["container mt-3"]
-    <div ["row"]
-      <div ["col-12 col-lg-2"]
+  H5Div(["container mt-3"]
+    H5Div(["row"]
+      H5Div(["col-12 col-lg-2"]
       )
-      <div ["col-12 col-lg-8"]
+      H5Div(["col-12 col-lg-8"]
         <h2 ["component display-4"]Typography</h2>
         <hr>
 
-         <div ["mb-5"]
+         H5Div(["mb-5"]
               <h3 ["text-muted"]Heading elements</h3>
               H5Div(
                 <h1>&lt;h1&gt; heading</h1>
@@ -54,7 +54,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Heading classes</h3>
               H5Div(
                 <p ["h1"].h1 heading</p>
@@ -66,7 +66,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Secondary headings</h3>
               H5Div(
                 <h1>
@@ -96,7 +96,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Display headings</h3>
               H5Div(
                 <h1 ["display-1"]Display heading 1</h1>
@@ -108,14 +108,14 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Lead paragraph</h3>
               H5Div(
                 <p ["lead"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Inline elements</h3>
               H5Div(
                 <p><mark>Highlighted text.</mark></p>
@@ -131,7 +131,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Inline styles using classes</h3>
               H5Div(
                 <p><span ["mark"]Highlighted text.</span></p>
@@ -141,7 +141,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Abbreviations</h3>
               H5Div(
                 <p><abbr title="attribute"]attr</abbr></p>
@@ -149,7 +149,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Blockquotes</h3>
               H5Div(
                 H5H4(["h5", "text-muted", "mt-3"], "Default")
@@ -179,7 +179,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Unstyled lists</h3>
               H5Div(
                 H5H4(["h5", "text-muted", "mt-3"], "Unordered lists")
@@ -235,7 +235,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Inline lists</h3>
               H5Div(
                 H5H4(["h5", "text-muted", "mt-3"], "Unordered lists")
@@ -253,7 +253,7 @@ H5Main(
               )
             )
 
-            <div ["mb-5"]
+            H5Div(["mb-5"]
               <h3 ["text-muted"]Description lists</h3>
               H5Div(
                 <dl ["row"]
