@@ -15,6 +15,28 @@ static this() {
 		} 
 			
     override string content() { 
+auto defaultExample = demoBs5Example("default", "Default", 
+  H5Div(
+    H5Figure(["figure"],
+      H5Img(["figure-img", "img-fluid"], ["src":"/img/600x400.png", "alt":"Figure image"]),
+      H5FigCaption(["figure-caption"], "Caption for the figure.")
+    )
+  ), ``, ``);
+
+auto alignmentExample = demoBs5Example("alignment", "Alignment", 
+  H5Div(
+    H5H4(["h5", "text-muted", "mt-3"], "Center"),
+    H5Figure(["figure"],
+      H5Img(["figure-img", "img-fluid"], ["src":"/img/600x400.png", "alt":"Figure image"]),
+      H5Figcaption(["figure-caption", "text-center"], "Caption for the figure.")
+    ),
+    H5H4(["h5", "text-muted", "mt-3"], "Right"),
+    H5Figure(["figure"],
+      H5Img(["figure-img", "img-fluid"], ["src":"/img/600x400.png", "alt":"Figure image"]),
+      H5Figcaption(["figure-caption", "text-end"], "Caption for the figure.")
+    )  
+  ), ``, ``);
+
        return 
 H5Main(
   H5Div(["container-fluid", "mt-3", "bg-light"],
@@ -27,51 +49,11 @@ H5Main(
       H5H2(["display-4"], "Input Group"),
       H5Hr,
 
+      defaultExample, 
+      alignmentExample
+
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }
-/* 
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Input Group</h2>
-        <hr>
-
-        <div class="mb-5">
-          <h3 class="text-muted">Default</h3>
-          <div>
-            <figure class="figure">
-              <img src="../img/600x400.png" class="figure-img img-fluid" alt="Figure image">
-              <figcaption class="figure-caption">Caption for the figure.</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="mb-5">
-          <h3 class="text-muted">Alignment</h3>
-          <div>
-            <h4 class="h5 text-muted mt-3">Center</h4>
-            <figure class="figure">
-              <img src="../img/600x400.png" class="figure-img img-fluid" alt="Figure image">
-              <figcaption class="figure-caption text-center">Caption for the figure.</figcaption>
-            </figure>
-            <h4 class="h5 text-muted mt-3">Right</h4>
-            <figure class="figure">
-              <img src="../img/600x400.png" class="figure-img img-fluid" alt="Figure image">
-              <figcaption class="figure-caption text-end">Caption for the figure.</figcaption>
-            </figure>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</main>
-      `;
-    }
-  });
-}*/

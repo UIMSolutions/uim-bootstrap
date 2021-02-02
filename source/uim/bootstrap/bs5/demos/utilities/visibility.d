@@ -30,24 +30,24 @@ H5Main(
     }
   });
 }   /*
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Visibility</h2>
+  <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Visibility</h2>
         <hr>
 
-        <div class="mb-5">
-              <div>
-                <div class="card p-3 mb-3 visible" style="visibility: hidden;">Visible card</div>
-                <div class="card p-3 invisible">Invisible card</div>
-              </div>
-            </div>
+        <div ["mb-5"]
+              H5Div(
+                <div ["card p-3 mb-3 visible" style="visibility: hidden;"]Visible card)
+                <div ["card p-3 invisible"]Invisible card)
+              )
+            )
 
-          </div>
-        </div>
-      </div>
+          )
+        )
+      )
 </main>
       `;
     }

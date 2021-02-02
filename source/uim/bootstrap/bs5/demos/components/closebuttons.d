@@ -23,9 +23,9 @@ auto defaultExample = demoBs5Example("default", "Default",
   ), 
 `BS5Alert(["alert-success"], 
   H5Button(["btn-close"], ["type":"button", "aria-label":"Close"]))`, 
-`<div class="alert alert-success" role="alert">
-  <button type="button" class="btn-close" aria-label="Close"></button>
-</div>`);
+`<div ["alert alert-success" role="alert"]
+  <button type="button" ["btn-close" aria-label="Close"]</button>
+)`);
 
 auto disabledExample = demoBs5Example("disabled", "Disabled", 
   H5Div(
@@ -34,9 +34,9 @@ auto disabledExample = demoBs5Example("disabled", "Disabled",
       ), 
 `BS5Alert(["alert-success"], 
   H5Button(["btn-close"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))`, 
-            `<div class="alert alert-success" role="alert">
-  <button type="button" class="btn-close" aria-label="Close" disabled=""></button>
-</div>`);
+            `<div ["alert alert-success" role="alert"]
+  <button type="button" ["btn-close" aria-label="Close" disabled=""]</button>
+)`);
 
 auto darkExample = demoBs5Example("dark", "Disabled", 
   H5Div(
@@ -47,10 +47,10 @@ auto darkExample = demoBs5Example("dark", "Disabled",
       `BS5Alert(["bg-dark"], 
   H5Button(["btn-close", "btn-close-white"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]), 
   H5Button(["btn-close", "btn-close-white"], ["type":"button", "aria-label":"Close", "disabled":"disabled"]))`, 
-      `<div class="alert bg-dark" role="alert">
-  <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-  <button type="button" class="btn-close btn-close-white" aria-label="Close" disabled=""></button>
-</div>`);
+      `<div ["alert bg-dark" role="alert"]
+  <button type="button" ["btn-close btn-close-white" aria-label="Close"]</button>
+  <button type="button" ["btn-close btn-close-white" aria-label="Close" disabled=""]</button>
+)`);
 
       return 
 H5Main(

@@ -34,12 +34,12 @@ demoBs5Example("headings", "Headings mit Badges",
     H5H4(H5String("H4 mit "), BS5Badge(["bg-secondary"], "Badge")),
     H5H5(H5String("H5 mit "), BS5Badge(["bg-secondary"], "Badge")),
     H5H6(H5String("H6 mit "), BS5Badge(["bg-secondary"], "Badge"))), 
-  `<h1>H1 mit <span class="badge bg-secondary">Badge</span></h1>
-<h2>H2 mit <span class="badge bg-secondary">Badge</span></h2>
-<h3>H3 mit <span class="badge bg-secondary">Badge</span>")
-<h4>H4 mit <span class="badge bg-secondary">Badge</span></h4>
-<h5>H5 mit <span class="badge bg-secondary">Badge</span></h5>
-<h6>H6 mit <span class="badge bg-secondary">Badge</span></h6>`, 
+  `<h1>H1 mit <span ["badge bg-secondary"]Badge</span></h1>
+<h2>H2 mit <span ["badge bg-secondary"]Badge</span></h2>
+<h3>H3 mit <span ["badge bg-secondary"]Badge</span>")
+<h4>H4 mit <span ["badge bg-secondary"]Badge</span>")
+<h5>H5 mit <span ["badge bg-secondary"]Badge</span></h5>
+<h6>H6 mit <span ["badge bg-secondary"]Badge</span></h6>`, 
 `H5H1(H5String("H1 mit "), BS5Badge(["bg-secondary"], "Badge"))
 H5H2(H5String("H2 mit "), BS5Badge(["bg-secondary"], "Badge"))
 H5H3(H5String("H3 mit "), BS5Badge(["bg-secondary"], "Badge"))
@@ -50,7 +50,7 @@ H5H6(H5String("H6 mit "), BS5Badge(["bg-secondary"], "Badge"))`),
 demoBs5Example("buttons", "Buttons mit Badges", 
   H5Div(
     BS5Button(["btn-secondary"], H5String("Notifications "), BS5Badge(["bg-light", "text-dark"], "10"))), 
-`<button class="btn btn-secondary">Notifications <span class="badge bg-light text-dark">10</span>")`, 
+`<button ["btn btn-secondary"]Notifications <span ["badge bg-light text-dark"]10</span>")`, 
 `BS5Button(["btn-secondary"], H5String("Notifications "), BS5Badge(["bg-light", "text-dark"], "10"))`
 ),
 

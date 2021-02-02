@@ -31,14 +31,14 @@ auto buttonExample = demoBs5Example("button", "Button",
     BS5DropdownLink(["href":"#"], "First item"),
     BS5DropdownLink(["href":"#"], "Second item"),
     BS5DropdownLink(["href":"#"], "Third item")))`, 
-        `<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownButton" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownButton">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+        `<div ["dropdown"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownButton" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownButton"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto linkExample = demoBs5Example("link", "Link", 
   H5Div(
@@ -55,14 +55,14 @@ auto linkExample = demoBs5Example("link", "Link",
     BS5DropdownLink(["href":"#"], "First item"),
     BS5DropdownLink(["href":"#"], "Second item"),
     BS5DropdownLink(["href":"#"], "Third item")))`, 
-        `<div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownLink" data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
-  <div class="dropdown-menu" aria-labelledby="dropdownLink">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+        `<div ["dropdown"]
+  <a ["btn btn-secondary dropdown-toggle" href="#" id="dropdownLink" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown link</a>
+  <div ["dropdown-menu" aria-labelledby="dropdownLink"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto splitExample = demoBs5Example("split", "Split button", 
   H5Div(
@@ -81,15 +81,15 @@ auto splitExample = demoBs5Example("split", "Split button",
     BS5DropdownLink(["href":"#"], "First item"),
     BS5DropdownLink(["href":"#"], "Second item"),
     BS5DropdownLink(["href":"#"], "Third item")))`, 
-        `<div class="btn-group">
-  <button type="button" class="btn btn-secondary">Dropdown split button</button>
-  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownSplit" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle dropdown</span></button>
-  <div class="dropdown-menu" aria-labelledby="dropdownSplit">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+        `<div ["btn-group"]
+  <button type="button" ["btn btn-secondary"]Dropdown split button</button>
+  <button type="button" ["btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownSplit" data-bs-toggle="dropdown" aria-expanded="false"]<span ["visually-hidden"]Toggle dropdown</span></button>
+  <div ["dropdown-menu" aria-labelledby="dropdownSplit"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto sizingExample = demoBs5Example("sizing", "Sizing", 
   H5Div(
@@ -134,32 +134,32 @@ BS5Dropdown(
     BS5DropdownLink(["href":"#"], "First item"),
     BS5DropdownLink(["href":"#"], "Second item"),
     BS5DropdownLink(["href":"#"], "Third item")))`, 
-  `<div class="dropdown">
-  <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownSmall" data-bs-toggle="dropdown" aria-expanded="false">Small button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownSmall">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>
+  `<div ["dropdown"]
+  <button type="button" ["btn btn-secondary btn-sm dropdown-toggle" id="dropdownSmall" data-bs-toggle="dropdown" aria-expanded="false"]Small button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownSmall"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)
 <br>
-<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMedium" data-bs-toggle="dropdown" aria-expanded="false">Medium button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMedium">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>
+<div ["dropdown"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownMedium" data-bs-toggle="dropdown" aria-expanded="false"]Medium button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownMedium"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)
 <br>
-<div class="dropdown">
-  <button type="button" class="btn btn-secondary btn-lg dropdown-toggle" id="dropdownLarge" data-bs-toggle="dropdown" aria-expanded="false">Large button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownLarge">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+<div ["dropdown"]
+  <button type="button" ["btn btn-secondary btn-lg dropdown-toggle" id="dropdownLarge" data-bs-toggle="dropdown" aria-expanded="false"]Large button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownLarge"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto darkExample = demoBs5Example("dark", "Dark", 
   H5Div(
@@ -176,37 +176,37 @@ auto darkExample = demoBs5Example("dark", "Dark",
     BS5DropdownLink(["href":"#"], "First item"),
     BS5DropdownLink(["href":"#"], "Second item"),
     BS5DropdownLink(["href":"#"], "Third item")))`, 
-  `<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownDark" data-bs-toggle="dropdown" aria-expanded="false">Dropdown dark</button>
-  <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownDark">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>
-<h4 class="h5 text-muted mt-3">In navbar component</h4>
-<nav class="navbar navbar-dark bg-dark navbar-expand">
-  <div class="container">
-    <a href="#" class="navbar-brand">Navbar</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownDark" data-bs-toggle="dropdown" role="button" aria-expanded="false">Dropdown dark</a>
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownDark">
+  `<div ["dropdown"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownDark" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown dark</button>
+  <div ["dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownDark"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)
+H5H4(["h5", "text-muted", "mt-3"], "In navbar component")
+<nav ["navbar navbar-dark bg-dark navbar-expand"]
+  <div ["container"]
+    <a href="#" ["navbar-brand"]Navbar</a>
+    <div ["collapse navbar-collapse"]
+      <ul ["navbar-nav"]
+        <li ["nav-item dropdown"]
+          <a href="#" ["nav-link dropdown-toggle" id="navbarDropdownDark" data-bs-toggle="dropdown" role="button" aria-expanded="false"]Dropdown dark</a>
+          <ul ["dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownDark"]
             <li>
-              <a href="#" class="dropdown-item">First item</a>
+              <a href="#" ["dropdown-item"]First item</a>
             </li>
             <li>
-              <a href="#" class="dropdown-item">Second item</a>
+              <a href="#" ["dropdown-item"]Second item</a>
             </li>
             <li>
-              <a href="#" class="dropdown-item">Third item</a>
+              <a href="#" ["dropdown-item"]Third item</a>
             </li>
           </ul>
         </li>
       </ul>
-    </div>
-  </div>
+    )
+  )
 </nav>`);
 
 auto navbarExample = demoBs5Example("navbar", "Navbar component", 
@@ -283,32 +283,32 @@ BS5ButtonGroup(["dropend"],
     BS5DropdownLink(["href":"#"], "First item"),
     BS5DropdownLink(["href":"#"], "Second item"),
     BS5DropdownLink(["href":"#"], "Third item")))`, 
-  `<div class="btn-group dropup">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropup" data-bs-toggle="dropdown" aria-expanded="false">Dropup</button>
-  <div class="dropdown-menu" aria-labelledby="dropup">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>
+  `<div ["btn-group dropup"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropup" data-bs-toggle="dropdown" aria-expanded="false"]Dropup</button>
+  <div ["dropdown-menu" aria-labelledby="dropup"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)
 <br><br>
-<div class="btn-group dropend">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropend" data-bs-toggle="dropdown" aria-expanded="false">Dropright</button>
-  <div class="dropdown-menu" aria-labelledby="dropend">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>
+<div ["btn-group dropend"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropend" data-bs-toggle="dropdown" aria-expanded="false"]Dropright</button>
+  <div ["dropdown-menu" aria-labelledby="dropend"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)
 <br><br>
-<div class="btn-group dropstart">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropstart" data-bs-toggle="dropdown" aria-expanded="false">Dropleft</button>
-  <div class="dropdown-menu" aria-labelledby="dropstart">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+<div ["btn-group dropstart"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropstart" data-bs-toggle="dropdown" aria-expanded="false"]Dropleft</button>
+  <div ["dropdown-menu" aria-labelledby="dropstart"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto alignmentExample = demoBs5Example("alignment", "Alignment", 
   H5Div(
@@ -325,14 +325,14 @@ auto alignmentExample = demoBs5Example("alignment", "Alignment",
           BS5DropdownLink(["href":"#"], "First item"),
           BS5DropdownLink(["href":"#"], "Second item"),
           BS5DropdownLink(["href":"#"], "Third item")))`, 
-  `<div class="btn-group">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownEndAligned" data-bs-toggle="dropdown" aria-expanded="false">Dropdown right-aligned</button>
-  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownEndAligned">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+  `<div ["btn-group"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownEndAligned" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown right-aligned</button>
+  <div ["dropdown-menu dropdown-menu-end" aria-labelledby="dropdownEndAligned"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto responsiveExample = demoBs5Example("responsive", "Responsive", 
   H5Div(
@@ -365,14 +365,14 @@ auto responsiveExample = demoBs5Example("responsive", "Responsive",
         BS5DropdownLink(["href":"#"], "First item"),
         BS5DropdownLink(["href":"#"], "Second item"),
         BS5DropdownLink(["href":"#"], "Third item")))`, 
-  `<div class="btn-group">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownEndAligned" data-bs-toggle="dropdown" aria-expanded="false">Dropdown right-aligned</button>
-  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownEndAligned">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+  `<div ["btn-group"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownEndAligned" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown right-aligned</button>
+  <div ["dropdown-menu dropdown-menu-end" aria-labelledby="dropdownEndAligned"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
     
 auto buttonsExample = demoBs5Example("buttons", "Button items", 
   H5Div(
@@ -389,14 +389,14 @@ auto buttonsExample = demoBs5Example("buttons", "Button items",
     BS5Button(["dropdown-item"], "First item"),
     BS5Button(["dropdown-item"], "Second item"),
     BS5Button(["dropdown-item"], "Third item")))`, 
-  `<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownButtonItems" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownButtonItems">
-    <button type="button" class="dropdown-item">First button</button>
-    <button type="button" class="dropdown-item">Second button</button>
-    <button type="button" class="dropdown-item">Third button</button>
-  </div>
-</div>`);
+  `<div ["dropdown"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownButtonItems" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownButtonItems"]
+    <button type="button" ["dropdown-item"]First button</button>
+    <button type="button" ["dropdown-item"]Second button</button>
+    <button type="button" ["dropdown-item"]Third button</button>
+  )
+)`);
 
 auto activeExample = demoBs5Example("active", "Active item", 
   H5Div(
@@ -413,14 +413,14 @@ auto activeExample = demoBs5Example("active", "Active item",
     BS5DropdownLink(["dropdown-item", "active"], ["href":"#"], "First item"),
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Second item"),
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Third item")))`, 
-  `<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownActive" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownActive">
-    <a href="#" class="dropdown-item active">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+  `<div ["dropdown"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownActive" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownActive"]
+    <a href="#" ["dropdown-item active"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto disabledExample = demoBs5Example("disabled", "Disabled item", 
   H5Div(
@@ -437,14 +437,14 @@ auto disabledExample = demoBs5Example("disabled", "Disabled item",
     BS5DropdownLink(["dropdown-item", "disabled"], ["href":"#"], "First item"),
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Second item"),
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Third item")))`, 
-  `<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownDisabled" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownDisabled">
-    <a href="#" class="dropdown-item disabled">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+  `<div ["dropdown"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownDisabled" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownDisabled"]
+    <a href="#" ["dropdown-item disabled"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto headerExample = demoBs5Example("header", "Header", 
   H5Div(
@@ -462,15 +462,15 @@ auto headerExample = demoBs5Example("header", "Header",
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "First item"),
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Second item"),
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Third item")))`, 
-    `<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownHeader" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownHeader">
-    <h6 class="dropdown-header">Dropdown header</h6>
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+    `<div ["dropdown"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownHeader" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownHeader"]
+    <h6 ["dropdown-header"]Dropdown header</h6>
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto dividerExample = demoBs5Example("divider", "Divider", 
   H5Div(
@@ -489,15 +489,15 @@ auto dividerExample = demoBs5Example("divider", "Divider",
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Second item"),
     BS5DropdownDivider,
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Third item")))`, 
-  `<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownDivider" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownDivider">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <div class="dropdown-divider"></div>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+  `<div ["dropdown"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownDivider" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownDivider"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <div ["dropdown-divider"])
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto textExample = demoBs5Example("text", "Text item", 
   H5Div(
@@ -516,14 +516,14 @@ auto textExample = demoBs5Example("text", "Text item",
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Second item"),
     BS5DropdownDivider,
     BS5DropdownLink(["dropdown-item"], ["href":"#"], "Third item")))`, 
-  `<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownText" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
-  <div class="dropdown-menu" aria-labelledby="dropdownText">
-    <span class="dropdown-item-text">Dropdown text item</span>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+  `<div ["dropdown"]
+  <button type="button" ["btn btn-secondary dropdown-toggle" id="dropdownText" data-bs-toggle="dropdown" aria-expanded="false"]Dropdown button</button>
+  <div ["dropdown-menu" aria-labelledby="dropdownText"]
+    <span ["dropdown-item-text"]Dropdown text item</span>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
 auto referenceExample = demoBs5Example("reference", "Reference", 
   H5Div(
@@ -542,15 +542,15 @@ auto referenceExample = demoBs5Example("reference", "Reference",
     BS5DropdownLink(["href":"#"], "First item"),
     BS5DropdownLink(["href":"#"], "Second item"),
     BS5DropdownLink(["href":"#"], "Third item")))`, 
-  `<div class="btn-group">
-  <button type="button" class="btn btn-secondary">Dropdown split button</button>
-  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"><span class="visually-hidden">Toggle dropdown</span></button>
-  <div class="dropdown-menu" aria-labelledby="dropdownReference">
-    <a href="#" class="dropdown-item">First item</a>
-    <a href="#" class="dropdown-item">Second item</a>
-    <a href="#" class="dropdown-item">Third item</a>
-  </div>
-</div>`);
+  `<div ["btn-group"]
+  <button type="button" ["btn btn-secondary"]Dropdown split button</button>
+  <button type="button" ["btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"]<span ["visually-hidden"]Toggle dropdown</span></button>
+  <div ["dropdown-menu" aria-labelledby="dropdownReference"]
+    <a href="#" ["dropdown-item"]First item</a>
+    <a href="#" ["dropdown-item"]Second item</a>
+    <a href="#" ["dropdown-item"]Third item</a>
+  )
+)`);
 
       return 
 H5Main(

@@ -114,7 +114,7 @@ demoBs5Example("images", "Bilder",
   H5Div(
     H5H4(["h5", "text-muted", "mt-3"], "Top"), 
     BS5Card(["w-50"], 
-      BS5CardImage(["src":"../img/400x200.png", "alt":"Card image in the top"]),
+      BS5CardImage(["src":"/img/400x200.png", "alt":"Card image in the top"]),
       BS5CardBody(
         BS5CardTitle("Card title"), 
         BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
@@ -124,11 +124,11 @@ demoBs5Example("images", "Bilder",
       BS5CardBody(
         BS5CardTitle("Card title"), 
         BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")),
-      BS5CardImage(["card-img-bottom"], ["src":"../img/400x200.png", "alt":"Card image in the bottom"])
+      BS5CardImage(["card-img-bottom"], ["src":"/img/400x200.png", "alt":"Card image in the bottom"])
     ),
     H5H4(["h5", "text-muted", "mt-3"], "Overlay"), 
     BS5Card(["w-50"], 
-      BS5CardImage(["src":"../img/400x200.png", "alt":"Card image as an overlay"],
+      BS5CardImage(["src":"/img/400x200.png", "alt":"Card image as an overlay"],
         BS5CardOverlay(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
@@ -177,7 +177,7 @@ demoBs5Example("every", "Everything",
             BS5NavLink(["href":"#"], "Link")),
           BS5NavItem(
             BS5NavLink(["disabled"], ["href":"#"], "Disabled")))),
-      BS5CardImage(["src":"../img/400x200.png", "alt":"Card image"]),
+      BS5CardImage(["src":"/img/400x200.png", "alt":"Card image"]),
       BS5CardBody(
         BS5CardTitle("Card title"), 
         BS5CardSubtitle("Card subtitle"),
@@ -291,37 +291,37 @@ demoBs5Example("groups", "Kartengruppen",
   H5Div(
     BS5CardGroup(["mb-4"],
       BS5Card(
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat."))),
       BS5Card(
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
           Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. 
           Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero."))),
       BS5Card(
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.")))),
     BS5CardGroup(["mb-4"],
       BS5Card(
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat.")),
         BS5CardFooter("Created DD-MM-YYYY")), 
       BS5Card(
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero.")),
         BS5CardFooter("Created DD-MM-YYYY")),
     BS5Card(
-      BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+      BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
       BS5CardBody(
         BS5CardTitle("Card title"), 
         BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.")),
@@ -333,7 +333,7 @@ demoBs5Example("grid", "Grids Cards",
     BS5Row(["row-cols-1", "row-cols-md-2", "row-cols-xl-3", "row-cols-xxl-4", "g-4 mb-4"],
       BS5Col(
         BS5Card(
-          BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+          BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
           BS5CardBody(
             BS5CardTitle("Card title"), 
             BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -344,20 +344,20 @@ demoBs5Example("grid", "Grids Cards",
             Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.")))),
       BS5Col(
         BS5Card(
-          BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+          BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
           BS5CardBody(
             BS5CardTitle("Card title"), 
             BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. 
             Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in.")))),
       BS5Col(
         BS5Card(
-          BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+          BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
           BS5CardBody(
             BS5CardTitle("Card title"), 
             BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit.")))),
       BS5Col(
         BS5Card(
-          BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+          BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
           BS5CardBody(
             BS5CardTitle("Card title"), 
             BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")))))), ``, ``),
@@ -366,27 +366,27 @@ demoBs5Example("equal", "Gleichohe Karten",
   BS5Row(["row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4 mb-4"],
     BS5Col(
       BS5Card(["h-100"],
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. 
           Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.")))), 
     BS5Col(
       BS5Card(["h-100"],
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. 
           Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in.")))),
     BS5Col(
       BS5Card(["h-100"],
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit.")))),
     BS5Col(
       BS5Card(["h-100"],
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit."))))), ``, ``),
@@ -395,7 +395,7 @@ demoBs5Example("footer", "Mit Footer",
   BS5Row(["row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4 mb-4"],
     BS5Col(
       BS5Card(["h-100"],
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. 
@@ -405,7 +405,7 @@ demoBs5Example("footer", "Mit Footer",
         BS5CardFooter("Created DD-MM-YYYY"))),
     BS5Col(
       BS5Card(["h-100"],
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. 
@@ -413,14 +413,14 @@ demoBs5Example("footer", "Mit Footer",
         BS5CardFooter("Created DD-MM-YYYY"))),
     BS5Col(
       BS5Card(["h-100"],
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit.")),
         BS5CardFooter("Created DD-MM-YYYY"))),
     BS5Col(
       BS5Card(["h-100"],
-        BS5CardImage(["src":"../img/300x150.png", "alt":"Card image"]),
+        BS5CardImage(["src":"/img/300x150.png", "alt":"Card image"]),
         BS5CardBody(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")),

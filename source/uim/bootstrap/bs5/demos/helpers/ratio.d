@@ -30,38 +30,38 @@ H5Main(
       demoBs5Example("1", "1x1",
         H5Div(
           H5Div(["ratio", "ratio-1x1"], 
-            `<iframe src="https://player.vimeo.com/video/40509381"></iframe>`)
+            `<iframe src="https://player.vimeo.com/video/40509381"]</iframe>`)
         ), ``, ``),
 
 
       demoBs5Example("4", "4x3",
         H5Div(
           H5Div(["ratio", "ratio ratio-4x3"], 
-            `<iframe src="https://player.vimeo.com/video/301032654"></iframe>`)
+            `<iframe src="https://player.vimeo.com/video/301032654"]</iframe>`)
         ), ``, ``),
 
       demoBs5Example("16", "16x9",
         H5Div(
           H5Div(["ratio", "ratio ratio-16x9"], 
-            `<iframe src="https://player.vimeo.com/video/77923619"></iframe>`)
+            `<iframe src="https://player.vimeo.com/video/77923619"]</iframe>`)
         ), ``, ``),
 
       demoBs5Example("21", "21x9",
         H5Div(
           H5Div(["ratio", "ratio ratio-21x9"], 
-            `<iframe src="https://player.vimeo.com/video/96184605"></iframe>`)
+            `<iframe src="https://player.vimeo.com/video/96184605"]</iframe>`)
         ), ``, ``),
 
       demoBs5Example("standard", "Standard HTML elements",
         H5Div(
           H5Div(["ratio", "ratio ratio-21x9"], 
-            `<iframe src="https://player.vimeo.com/video/96184605"></iframe>`)
+            `<iframe src="https://player.vimeo.com/video/96184605"]</iframe>`)
         ), ``, ``),
 
       demoBs5Example("21", "21x9",
         H5Div(
           H5Div(["ratio", "ratio ratio-21x9"], 
-            `<iframe src="https://player.vimeo.com/video/96184605"></iframe>`)
+            `<iframe src="https://player.vimeo.com/video/96184605"]</iframe>`)
         ), ``, ``),
 
       demoBs5Example("standard", "Standard HTML Elements",

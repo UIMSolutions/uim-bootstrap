@@ -30,62 +30,62 @@ H5Main(
     }
   });
 }   
-/* <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Sizing</h2>
+/* <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Sizing</h2>
         <hr>
 
-        <div class="mb-5">
-              <h3 class="text-muted">Relative to parent</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Width</h4>
-                <div class="bg-secondary">
-                  <div class="bg-light p-2 w-25">Width 25%</div>
-                  <div class="bg-light p-2 w-50">Width 50%</div>
-                  <div class="bg-light p-2 w-75">Width 75%</div>
-                  <div class="bg-light p-2 w-100">Width 100%</div>
-                </div>
-                <h4 class="h5 text-muted mt-3">Height</h4>
-                <div class="bg-secondary d-flex justify-content-between" style="height: 200px;">
-                  <div class="bg-light p-2 h-25">Height 25%</div>
-                  <div class="bg-light p-2 h-50">Height 50%</div>
-                  <div class="bg-light p-2 h-75">Height 75%</div>
-                  <div class="bg-light p-2 h-100">Height 100%</div>
-                </div>
-              </div>
-            </div>
+        <div ["mb-5"]
+              <h3 ["text-muted"]Relative to parent</h3>
+              H5Div(
+                H5H4(["h5", "text-muted", "mt-3"], "Width")
+                <div ["bg-secondary"]
+                  <div ["bg-light p-2 w-25"]Width 25%)
+                  <div ["bg-light p-2 w-50"]Width 50%)
+                  <div ["bg-light p-2 w-75"]Width 75%)
+                  <div ["bg-light p-2 w-100"]Width 100%)
+                )
+                H5H4(["h5", "text-muted", "mt-3"], "Height")
+                <div ["bg-secondary d-flex justify-content-between" style="height: 200px;"]
+                  <div ["bg-light p-2 h-25"]Height 25%)
+                  <div ["bg-light p-2 h-50"]Height 50%)
+                  <div ["bg-light p-2 h-75"]Height 75%)
+                  <div ["bg-light p-2 h-100"]Height 100%)
+                )
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Max width and height</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Max-width</h4>
-                <img src="../img/600x200.png" alt="Max-width = 100%" class="mw-100">
-                <h4 class="h5 text-muted mt-3">Max-height</h4>
-                <div style="height: 400px;">
-                  <img src="../img/200x600.png" alt="Max-height = 100%" class="mh-100">
-                </div>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Max width and height</h3>
+              H5Div(
+                H5H4(["h5", "text-muted", "mt-3"], "Max-width")
+                H5Img(["src":"/img/600x200.png" "alt":"Max-width = 100%" ["mw-100"]
+                H5H4(["h5", "text-muted", "mt-3"], "Max-height")
+                <div style="height: 400px;"]
+                  H5Img(["src":"/img/200x600.png" "alt":"Max-height = 100%" ["mh-100"]
+                )
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Relative to viewport</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Width</h4>
-                <img src="../img/1000x200.png" alt="Width 100vw" class="vw-100">
-                <h4 class="h5 text-muted mt-3">Min-width</h4>
-                <img src="../img/1000x200.png" alt="Min-width 100vw" class="min-vw-100">
-                <h4 class="h5 text-muted mt-3">Height</h4>
-                <img src="../img/200x2000.png" alt="Height 100vh" class="vh-100">
-                <h4 class="h5 text-muted mt-3">Min-height</h4>
-                <img src="../img/200x2000.png" alt="Min-height 100vh" class="min-vh-100">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Relative to viewport</h3>
+              H5Div(
+                H5H4(["h5", "text-muted", "mt-3"], "Width")
+                H5Img(["src":"/img/1000x200.png" "alt":"Width 100vw" ["vw-100"]
+                H5H4(["h5", "text-muted", "mt-3"], "Min-width")
+                H5Img(["src":"/img/1000x200.png" "alt":"Min-width 100vw" ["min-vw-100"]
+                H5H4(["h5", "text-muted", "mt-3"], "Height")
+                H5Img(["src":"/img/200x2000.png" "alt":"Height 100vh" ["vh-100"]
+                H5H4(["h5", "text-muted", "mt-3"], "Min-height")
+                H5Img(["src":"/img/200x2000.png" "alt":"Min-height 100vh" ["min-vh-100"]
+              )
+            )
+          )
+        )
+      )
     </main>
       `;
     }

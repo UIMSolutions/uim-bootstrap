@@ -15,6 +15,144 @@ static this() {
 		} 
 			
     override string content() { 
+
+      auto checksExample = demoBs5Example("checks", "Checks", 
+H5Div(
+  H5H4(["h5", "text-muted", "mt-3"], "Default"),
+  H5Div(["form-check"], 
+    H5Input("checkDefault1", ["form-check-input"], ["type":"checkbox"]), 
+    H5Label(["form-check-label"], ["for":"checkDefault1"], "Default checkbox")
+  ),
+  H5Div(["form-check"], 
+    H5Input("checkDefault2", ["form-check-input"], ["type":"checkbox", "checked":"checked"]),
+    H5Label(["form-check-label"], ["for":"checkDefault2"], "Checked checkbox")
+  ),
+  H5H4(["h5", "text-muted", "mt-3"], "Indeterminate"),
+  H5Div(["form-check"], 
+    H5Input("checkIndeterminate", ["form-check-input"], ["type":"checkbox"]),
+    H5Label(["form-check-label"], ["for":"checkIndeterminate"], "Indeterminate checkbox"),
+    H5Script("var checkbox = document.getElementById('checkIndeterminate');checkbox.indeterminate = true;")
+  ),
+  H5H4(["h5", "text-muted", "mt-3"], "Disabled"),
+  H5Div(["form-check"], 
+    H5Input("checkDisabled1", ["form-check-input"], ["type":"checkbox", "disabled":"disabled"]),
+    H5Label(["form-check-label"], ["for":"checkDisabled1"], "Disabled default checkbox")
+  ),
+  H5Div(["form-check"], 
+    H5Input("checkDisabled2", ["form-check-input"], ["type":"checkbox", "checked":"checked", "disabled":"disabled"]),
+    H5Label(["form-check-label"], ["for":"checkDisabled2"], "Disabled checked checkbox")
+  )
+), ``, ``);
+
+      auto radiosExample = demoBs5Example("radios", "Radios", 
+H5Div(
+  H5H4(["h5", "text-muted", "mt-3"], "Default"),
+  H5Div(["form-check"], 
+    H5Input("radioDefault1", ["form-check-input"], ["type":"radio", "name":"radioDefault"]),
+    H5Label(["form-check-label"], ["for":"radioDefault1"], "Default radio")
+  ),
+  H5Div(["form-check"], 
+    H5Input("radioDefault2", ["form-check-input"], ["type":"radio", "name":"radioDefault", "checked":"checked"]),
+    H5Label(["form-check-label"], ["for":"radioDefault2"], "Checked radio")
+  ),
+  H5H4(["h5", "text-muted", "mt-3"], "Disabled"),
+  H5Div(["form-check"], 
+    H5Input("radioDisabled1", ["form-check-input"], ["type":"radio", "name":"radioDisabled", "disabled":"disabled"]),
+    H5Label(["form-check-label"], ["for":"radioDisabled1"], "Disabled default radio")
+  ),
+  H5Div(["form-check"], 
+    H5Input("radioDisabled2", ["form-check-input"], ["type":"radio", "name":"radioDisabled", "checked":"checked", "disabled":"disabled"]),
+    H5Label(["form-check-label"], ["for":"radioDisabled2"], "Disabled checked radio")
+  )
+), ``, ``);
+
+      auto switchesExample = demoBs5Example("switches", "Switches", 
+H5Div(
+  H5H4(["h5", "text-muted", "mt-3"], "Default"),
+  H5Div(["form-check form-switch"], 
+    H5Input("switchDefault1", ["form-check-input"], ["type":"checkbox"]),
+    H5Label(["form-check-label"], ["for":"switchDefault1"], "Default switch")
+  ),
+  H5Div(["form-check form-switch"], 
+    H5Input("switchDefault2", ["form-check-input"], ["type":"checkbox", "checked":"checked"]),
+    H5Label(["form-check-label"], ["for":"switchDefault2"], "Checked switch")
+  ),
+  H5H4(["h5", "text-muted", "mt-3"], "Disabled"),
+  H5Div(["form-check form-switch"], 
+    H5Input("switchDisabled1", ["form-check-input"], ["type":"checkbox", "disabled":"disabled"]),
+    H5Label(["form-check-label"], ["for":"switchDisabled1"], "Disabled default switch")
+  ),
+  H5Div(["form-check form-switch"], 
+    H5Input("switchDisabled2", ["form-check-input"], ["type":"checkbox", "checked":"checked", "disabled":"disabled"]),
+    H5Label(["form-check-label"], ["for":"switchDisabled2"], "Disabled checked switch")
+  )
+), ``, ``);
+
+      auto inlineExample = demoBs5Example("inline", "Inline", 
+H5Div(
+  H5H4(["h5", "text-muted", "mt-3"], "Check"),
+  H5Div(["form-check", "form-check-inline"], 
+    H5Input("checkInline1", ["form-check-input"], ["type":"checkbox"]),   
+    H5Label(["form-check-label"], ["for":"checkInline1"], "1")
+  ),
+  H5Div(["form-check", "form-check-inline"], 
+    H5Input("checkInline2", ["form-check-input"], ["type":"checkbox", "checked":"checked"]),
+    H5Label(["form-check-label"], ["for":"checkInline2"], "2")
+  ),
+  H5Div(["form-check", "form-check-inline"], 
+    H5Input("checkInline3", ["form-check-input"], ["type":"checkbox", "disabled":"disabled"]),
+    H5Label(["form-check-label"], ["for":"switchDisabled2"], "Disabled checked switch"),
+    H5Label(["form-check-label"], ["for":"checkInline3"], "3")
+  ),
+  H5H4(["h5", "text-muted", "mt-3"], "Radio"),
+  H5Div(["form-check", "form-check-inline"], 
+    H5Input("radioInline1", ["form-check-input"], ["type":"radio",  "name":"radioInline"]),
+    H5Label(["form-check-label"], ["for":"radioInline1"], "1")
+  ),
+  H5Div(["form-check", "form-check-inline"], 
+    H5Input("radioInline2", ["form-check-input"], ["type":"radio",  "name":"radioInline", "checked":"checked"]),
+    H5Label(["form-check-label"], ["for":"radioInline2"], "2")
+  ),
+  H5Div(["form-check", "form-check-inline"], 
+    H5Input("radioInline3", ["form-check-input"], ["type":"radio",  "name":"radioInline", "disabled":"disabled"]),
+    H5Label(["form-check-label"], ["for":"radioInline3"], "3")
+  )
+), ``, ``);
+
+ auto nolabelsExample = demoBs5Example("nolabels", "No labels", 
+H5Div(
+  H5Input("checkNolabel", ["form-check-input"], ["type":"checkbox", "aria-label":"Checkbox label"]),
+  H5Input("radioNoLabel1", ["form-check-input"], ["type":"radio",  "name":"radioNolabel", "aria-label":"Radio label"])
+), ``, ``);
+
+ auto togglebuttonsExample = demoBs5Example("togglebuttons", "Toggle buttons", 
+H5Div(
+  H5H4(["h5", "text-muted", "mt-3"], "Checkbox"),
+  H5Input("checkToggleButton1", ["btn-check"], ["type":"checkbox", "autocomplete":"off"]),
+  H5Label(["btn", "btn-secondary"], ["for":"checkToggleButton1"], "Checkbox"),
+  H5H4(["h5", "text-muted", "mt-3"], "Radio"),
+  BS5ButtonGroup(
+    H5Input("radioToggleButton1", ["btn-check"], ["type":"radio", "name":"radioToggleButton", "autocomplete":"off"]),
+    H5Label(["btn btn-secondary"], ["for":"radioToggleButton1"], "Radio 1"),
+    H5Input("radioToggleButton2", ["btn-check"], ["type":"radio", "name":"radioToggleButton", "autocomplete":"off"]),
+    H5Label(["btn btn-secondary"], ["for":"radioToggleButton2"], "Radio 2"),
+    H5Input("radioToggleButton3", ["btn-check"], ["type":"radio", "name":"radioToggleButton", "autocomplete":"off"]),
+    H5Label(["btn btn-secondary"], ["for":"radioToggleButton3"], "Radio 3")
+  ),
+  H5H4(["h5", "text-muted", "mt-3"], "Outlined"),
+  H5Input("checkToggleButtonOutlined1", ["btn-check"], ["type":"checkbox", "autocomplete":"off"]),
+  H5Label(["btn btn-outline-secondary"], ["for":"checkToggleButtonOutlined1"], "Checkbox"),
+  H5Br, H5Br,
+  BS5ButtonGroup(
+    H5Input("radioToggleButtonOutlined1", ["btn-check"], ["type":"radio", "name":"radioToggleButtonOutlined", "autocomplete":"off"]),
+    H5Label(["btn btn-outline-primary"], ["for":"radioToggleButtonOutlined1"], "Radio 1"),
+    H5Input("radioToggleButtonOutlined2", ["btn-check"], ["type":"radio", "name":"radioToggleButtonOutlined", "autocomplete":"off"]),
+    H5Label(["btn btn-outline-success"], ["for":"radioToggleButtonOutlined2"], "Radio 2"),
+    H5Input("radioToggleButtonOutlined3", ["btn-check"], ["type":"radio", "name":"radioToggleButtonOutlined", "autocomplete":"off"]),
+    H5Label(["btn btn-outline-info"], ["for":"radioToggleButtonOutlined3"], "Radio 3")
+  )
+), ``, ``);
+
        return 
 H5Main(
   H5Div(["container-fluid", "mt-3", "bg-light"],
@@ -27,181 +165,15 @@ H5Main(
       H5H2(["display-4"], "Checks and Radios"),
       H5Hr,
 
+      checksExample,
+      radiosExample,
+      switchesExample,
+      inlineExample,
+      nolabelsExample,
+      togglebuttonsExample, 
+
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }
- 
-/*
-        <li class="breadcrumb-item active" aria-current="page">Checks and Radios</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Checks and Radios</h2>
-        <hr>
-
-        <div class="mb-5">
-              <h3 class="text-muted">Checks</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Default</h4>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="checkDefault1">
-                  <label class="form-check-label" for="checkDefault1">Default checkbox</label>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="checkDefault2" checked>
-                  <label class="form-check-label" for="checkDefault2">Checked checkbox</label>
-                </div>
-                <h4 class="h5 text-muted mt-3">Indeterminate</h4>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="checkIndeterminate">
-                  <label class="form-check-label" for="checkIndeterminate">Indeterminate checkbox</label>
-                  <script>var checkbox = document.getElementById('checkIndeterminate');checkbox.indeterminate = true;</script>
-                </div>
-                <h4 class="h5 text-muted mt-3">Disabled</h4>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="checkDisabled1" disabled>
-                  <label class="form-check-label" for="checkDisabled1">Disabled default checkbox</label>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="checkDisabled2" checked disabled>
-                  <label class="form-check-label" for="checkDisabled2">Disabled checked checkbox</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">Radios</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Default</h4>
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="radioDefault" id="radioDefault1">
-                  <label class="form-check-label" for="radioDefault1">Default radio</label>
-                </div>
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="radioDefault" id="radioDefault2" checked>
-                  <label class="form-check-label" for="radioDefault2">Checked radio</label>
-                </div>
-                <h4 class="h5 text-muted mt-3">Disabled</h4>
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="radioDisabled" id="radioDisabled1" disabled>
-                  <label class="form-check-label" for="radioDisabled1">Disabled default radio</label>
-                </div>
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="radioDisabled" id="radioDisabled2" checked disabled>
-                  <label class="form-check-label" for="radioDisabled2">Disabled checked radio</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">Switches</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Default</h4>
-                <div class="form-check form-switch">
-                  <input type="checkbox" class="form-check-input" id="switchDefault1">
-                  <label class="form-check-label" for="switchDefault1">Default switch</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input type="checkbox" class="form-check-input" id="switchDefault2" checked>
-                  <label class="form-check-label" for="switchDefault2">Checked switch</label>
-                </div>
-                <h4 class="h5 text-muted mt-3">Disabled</h4>
-                <div class="form-check form-switch">
-                  <input type="checkbox" class="form-check-input" id="switchDisabled1" disabled>
-                  <label class="form-check-label" for="switchDisabled1">Disabled default switch</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input type="checkbox" class="form-check-input" id="switchDisabled2" checked disabled>
-                  <label class="form-check-label" for="switchDisabled2">Disabled checked switch</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">Inline</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Check</h4>
-                <div class="form-check form-check-inline">
-                  <input type="checkbox" class="form-check-input" id="checkInline1">
-                  <label class="form-check-label" for="checkInline1">1</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input type="checkbox" class="form-check-input" id="checkInline2" checked>
-                  <label class="form-check-label" for="checkInline2">2</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input type="checkbox" class="form-check-input" id="checkInline3" disabled>
-                  <label class="form-check-label" for="checkInline3">3</label>
-                </div>
-                <h4 class="h5 text-muted mt-3">Radio</h4>
-                <div class="form-check form-check-inline">
-                  <input type="radio" class="form-check-input" name="radioInline" id="radioInline1">
-                  <label class="form-check-label" for="radioInline1">1</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input type="radio" class="form-check-input" name="radioInline" id="radioInline2" checked>
-                  <label class="form-check-label" for="radioInline2">2</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input type="radio" class="form-check-input" name="radioInline" id="radioInline3" disabled>
-                  <label class="form-check-label" for="radioInline3">3</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">No labels</h3>
-              <div>
-                <input type="checkbox" class="form-check-input" id="checkNolabel" aria-label="Checkbox label">
-                <input type="radio" class="form-check-input" name="radioNolabel" id="radioNoLabel1" aria-label="Radio label">
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">Toggle buttons</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Checkbox</h4>
-                <input type="checkbox" class="btn-check" id="checkToggleButton1" autocomplete="off">
-                <label class="btn btn-secondary" for="checkToggleButton1">Checkbox</label>
-                <h4 class="h5 text-muted mt-3">Radio</h4>
-                <div class="btn-group">
-                  <input type="radio" class="btn-check" name="radioToggleButton" id="radioToggleButton1" autocomplete="off">
-                  <label class="btn btn-secondary" for="radioToggleButton1">Radio 1</label>
-                  <input type="radio" class="btn-check" name="radioToggleButton" id="radioToggleButton2" autocomplete="off">
-                  <label class="btn btn-secondary" for="radioToggleButton2">Radio 2</label>
-                  <input type="radio" class="btn-check" name="radioToggleButton" id="radioToggleButton3" autocomplete="off">
-                  <label class="btn btn-secondary" for="radioToggleButton3">Radio 3</label>
-                </div>
-                <h4 class="h5 text-muted mt-3">Outlined</h4>
-                <input type="checkbox" class="btn-check" id="checkToggleButtonOutlined1" autocomplete="off">
-                <label class="btn btn-outline-secondary" for="checkToggleButtonOutlined1">Checkbox</label>
-                <br><br>
-                <div class="btn-group">
-                  <input type="radio" class="btn-check" name="radioToggleButtonOutlined" id="radioToggleButtonOutlined1" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="radioToggleButtonOutlined1">Radio 1</label>
-                  <input type="radio" class="btn-check" name="radioToggleButtonOutlined" id="radioToggleButtonOutlined2" autocomplete="off">
-                  <label class="btn btn-outline-success" for="radioToggleButtonOutlined2">Radio 2</label>
-                  <input type="radio" class="btn-check" name="radioToggleButtonOutlined" id="radioToggleButtonOutlined3" autocomplete="off">
-                  <label class="btn btn-outline-info" for="radioToggleButtonOutlined3">Radio 3</label>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </main>
-
-      `;
-    }
-  });
-}
-
-*/

@@ -39,7 +39,7 @@ H5Main(
       demoBs5Example("custom", "Custom component",
         H5Div(
           H5Div(["d-flex", "position-relative"],
-            H5Img(["me-3"], ["src":"../img/200x200.png", "alt":""],
+            H5Img(["me-3"], ["src":"/img/200x200.png", "alt":""],
             H5Div(
               H5H5("Media object",
               H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),

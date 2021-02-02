@@ -90,7 +90,7 @@ auto sizing2Example = demoBs5Example("sizing2", "Sizing Grow",
 
 auto alignmentExample = demoBs5Example("alignment", "Alignment", 
   H5Div(
-              // <p>Use <a href="spacing.html">spacing</a>, <a href="flex.html">flex</a>, <a href="float.html">float</a> and <a href="text.html">text</a> utilities to align and place your spinner as needed.</p>
+              // <p>Use <a href="spacing.html"]spacing</a>, <a href="flex.html"]flex</a>, <a href="float.html"]float</a> and <a href="text.html"]text</a> utilities to align and place your spinner as needed.</p>
     H5H4(["h5", "text-muted", "mt-3"], "Margin"),
     BS5SpinnerBorder(["m-3"], ["role":"status"], 
       H5Span(["visually-hidden"], "Loading...")),

@@ -30,38 +30,38 @@ H5Main(
     }
   });
 }              /*
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Bootstrap 5 Demo</h2>
+  <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Bootstrap 5 Demo</h2>
         <hr>
 
-        <div class="mb-5">
-          <h3 class="text-muted">Themenbereiche</h3>
-          <ul class="list-group">
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/components">Components</a></li>
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/contents">Contents</a></li>
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/forms">Forms</a></li>
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/helpers">Helpers</a></li>
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/layouts">Layouts</a></li>
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/utilities">Utilities</a></li>
+        <div ["mb-5"]
+          <h3 ["text-muted"]Themenbereiche</h3>
+          <ul ["list-group"]
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/components"]Components</a></li>
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/contents"]Contents</a></li>
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/forms"]Forms</a></li>
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/helpers"]Helpers</a></li>
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/layouts"]Layouts</a></li>
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/utilities"]Utilities</a></li>
           </ul>
-        </div>
+        )
 
-        <div class="mb-5">
-          <h3 class="text-muted">Forms</h3>
-          <ul class="list-group">
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/layouts/columns">Columns</a></li>
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/layouts/container">Container</a></li>
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/layouts/grid">Grid</a></li>
-            <li class="list-group-item"><a href="/demos/uim-bootstrap/5/layouts/gutters">G  utters</a></li>
+        <div ["mb-5"]
+          <h3 ["text-muted"]Forms</h3>
+          <ul ["list-group"]
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/layouts/columns"]Columns</a></li>
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/layouts/container"]Container</a></li>
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/layouts/grid"]Grid</a></li>
+            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/layouts/gutters"]G  utters</a></li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+        )
+      )
+    )
+  )
 </main>
       `;
     }

@@ -53,13 +53,13 @@ auto multipleExample = demoBs5Example("multiple", "Multiple targets",
   BS5Collapse("multipleCollapse2", ["multiple-collapse"], 
     BS5Alert(["alert-success"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. 
       Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc."))`, 
-  `<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".multiple-collapse" aria-expanded="false" aria-controls="multipleCollapse1 multipleCollapse2">Button with data-bs-target</button>
-<div class="collapse multiple-collapse" id="multipleCollapse1">
-  <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
-</div>
-<div class="collapse multiple-collapse" id="multipleCollapse2">
-  <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</div>
-</div>`);
+  `<button type="button" ["btn btn-primary" data-bs-toggle="collapse" data-bs-target=".multiple-collapse" aria-expanded="false" aria-controls="multipleCollapse1 multipleCollapse2"]Button with data-bs-target</button>
+<div ["collapse multiple-collapse" id="multipleCollapse1"]
+  <div ["alert alert-success"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.)
+)
+<div ["collapse multiple-collapse" id="multipleCollapse2"]
+  <div ["alert alert-success"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.)
+)`);
 
       return 
 H5Main(

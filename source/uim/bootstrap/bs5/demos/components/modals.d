@@ -41,23 +41,23 @@ auto staticExample = demoBs5Example("static", "Static",
         BS5ModalFooter(
           BS5Button(["btn-primary"], "Action"),
           BS5Button(["btn-secondary"], ["data-dismiss":"modal"], "Close"))))`, 
-          `<div class="modal fade show" id="modalStatic" tabindex="-1" role="dialog" aria-labelledby="modalStaticTitle" aria-modal="true" style="display: block; position: relative; z-index: 1;">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalStaticTitle">Modal title</h5>
-        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
+          `<div ["modal fade show" id="modalStatic" tabindex="-1" role="dialog" aria-labelledby="modalStaticTitle" aria-modal="true" style="display: block; position: relative; z-index: 1;"]
+  <div ["modal-dialog" role="document"]
+    <div ["modal-content"]
+      <div ["modal-header"]
+        <h5 ["modal-title" id="modalStaticTitle"]Modal title</h5>
+        <button type="button" ["btn-close" data-dismiss="modal" aria-label="Close"]</button>
+      )
+      <div ["modal-body"]
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Action</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>`);
+      )
+      <div ["modal-footer"]
+        <button type="button" ["btn btn-primary"]Action</button>
+        <button type="button" ["btn btn-secondary" data-dismiss="modal"]Close</button>
+      )
+    )
+  )
+)`);
 
 auto headerExample = demoBs5Example("header", "Header only",  
   H5Div(

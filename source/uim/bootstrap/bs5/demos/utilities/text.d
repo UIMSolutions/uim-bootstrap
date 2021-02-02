@@ -30,129 +30,129 @@ H5Main(
     }
   });
 }   /*
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Text</h2>
+  <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Text</h2>
         <hr>
 
-       <div class="mb-5">
-              <h3 class="text-muted">Alignment</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">All breakpoints</h4>
-                <p class="text-start">Left-aligned text.</p>
-                <p class="text-center">Center-aligned text.</p>
-                <p class="text-end">Right-aligned text.</p>
-                <h4 class="h5 text-muted mt-3">Responsive</h4>
-                <p class="text-sm-end">Right-aligned text for breakpoint sm and up.</p>
-                <p class="text-md-end">Right-aligned text for breakpoint md and up.</p>
-                <p class="text-lg-end">Right-aligned text for breakpoint lg and up.</p>
-                <p class="text-xl-end">Right-aligned text for breakpoint xl and up.</p>
-                <p class="text-xxl-end">Right-aligned text for breakpoint xxl and up.</p>
-                <p class="text-sm-center">Center-aligned text for breakpoint sm and up.</p>
-                <p class="text-md-center">Center-aligned text for breakpoint md and up.</p>
-                <p class="text-lg-center">Center-aligned text for breakpoint lg and up.</p>
-                <p class="text-xl-center">Center-aligned text for breakpoint xl and up.</p>
-                <p class="text-xxl-center">Center-aligned text for breakpoint xxl and up.</p>
-                <p class="text-end text-sm-start">Right-aligned text as default. Left-aligned text for breakpoint sm and up.</p>
-                <p class="text-end text-md-start">Right-aligned text as default. Left-aligned text for breakpoint md and up.</p>
-                <p class="text-end text-lg-start">Right-aligned text as default. Left-aligned text for breakpoint lg and up.</p>
-                <p class="text-end text-xl-start">Right-aligned text as default. Left-aligned text for breakpoint xl and up.</p>
-                <p class="text-end text-xxl-start">Right-aligned text as default. Left-aligned text for breakpoint xxl and up.</p>
-              </div>
-            </div>
+       <div ["mb-5"]
+              <h3 ["text-muted"]Alignment</h3>
+              H5Div(
+                H5H4(["h5", "text-muted", "mt-3"], "All breakpoints")
+                <p ["text-start"]Left-aligned text.</p>
+                <p ["text-center"]Center-aligned text.</p>
+                <p ["text-end"]Right-aligned text.</p>
+                H5H4(["h5", "text-muted", "mt-3"], "Responsive")
+                <p ["text-sm-end"]Right-aligned text for breakpoint sm and up.</p>
+                <p ["text-md-end"]Right-aligned text for breakpoint md and up.</p>
+                <p ["text-lg-end"]Right-aligned text for breakpoint lg and up.</p>
+                <p ["text-xl-end"]Right-aligned text for breakpoint xl and up.</p>
+                <p ["text-xxl-end"]Right-aligned text for breakpoint xxl and up.</p>
+                <p ["text-sm-center"]Center-aligned text for breakpoint sm and up.</p>
+                <p ["text-md-center"]Center-aligned text for breakpoint md and up.</p>
+                <p ["text-lg-center"]Center-aligned text for breakpoint lg and up.</p>
+                <p ["text-xl-center"]Center-aligned text for breakpoint xl and up.</p>
+                <p ["text-xxl-center"]Center-aligned text for breakpoint xxl and up.</p>
+                <p ["text-end text-sm-start"]Right-aligned text as default. Left-aligned text for breakpoint sm and up.</p>
+                <p ["text-end text-md-start"]Right-aligned text as default. Left-aligned text for breakpoint md and up.</p>
+                <p ["text-end text-lg-start"]Right-aligned text as default. Left-aligned text for breakpoint lg and up.</p>
+                <p ["text-end text-xl-start"]Right-aligned text as default. Left-aligned text for breakpoint xl and up.</p>
+                <p ["text-end text-xxl-start"]Right-aligned text as default. Left-aligned text for breakpoint xxl and up.</p>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Wrapping</h3>
-              <div>
-                <div class="badge bg-secondary text-wrap" style="width: 10rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                <p class="text-nowrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Wrapping</h3>
+              H5Div(
+                <div ["badge bg-secondary text-wrap" style="width: 10rem;"]Lorem ipsum dolor sit amet, consectetur adipiscing elit.)
+                <p ["text-nowrap"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Word break</h3>
-              <div>
-                <p class="text-break">abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789</p>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Word break</h3>
+              H5Div(
+                <p ["text-break"]abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789</p>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Transform</h3>
-              <div>
-                <p class="text-lowercase">Lowercased text</p>
-                <p class="text-uppercase">Uppercased text</p>
-                <p class="text-capitalize">Capitalized text</p>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Transform</h3>
+              H5Div(
+                <p ["text-lowercase"]Lowercased text</p>
+                <p ["text-uppercase"]Uppercased text</p>
+                <p ["text-capitalize"]Capitalized text</p>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Font size</h3>
-              <div>
-                <p class="fs-1">Font size 1</p>
-                <p class="fs-2">Font size 2</p>
-                <p class="fs-3">Font size 3</p>
-                <p class="fs-4">Font size 4</p>
-                <p class="fs-5">Font size 5</p>
-                <p class="fs-6">Font size 6</p>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Font size</h3>
+              H5Div(
+                <p ["fs-1"]Font size 1</p>
+                <p ["fs-2"]Font size 2</p>
+                <p ["fs-3"]Font size 3</p>
+                <p ["fs-4"]Font size 4</p>
+                <p ["fs-5"]Font size 5</p>
+                <p ["fs-6"]Font size 6</p>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Font weight and italics</h3>
-              <div>
-                <p class="fw-bold">Bold text</p>
-                <p class="fw-bolder">Bolder text</p>
-                <p><strong class="fw-normal">Normal weight text</strong></p>
-                <p class="fw-light">Light text</p>
-                <p class="fw-lighter">Lighter text</p>
-                <p class="fst-italic">Italic text</p>
-                <p><em class="fst-normal">Normal text</em></p>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Font weight and italics</h3>
+              H5Div(
+                <p ["fw-bold"]Bold text</p>
+                <p ["fw-bolder"]Bolder text</p>
+                <p><strong ["fw-normal"]Normal weight text</strong></p>
+                <p ["fw-light"]Light text</p>
+                <p ["fw-lighter"]Lighter text</p>
+                <p ["fst-italic"]Italic text</p>
+                <p><em ["fst-normal"]Normal text</em></p>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Line height</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">1</h4>
-                <p class="lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
-                <h4 class="h5 text-muted mt-3">Small</h4>
-                <p class="lh-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
-                <h4 class="h5 text-muted mt-3">Base</h4>
-                <p class="lh-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
-                <h4 class="h5 text-muted mt-3">Large</h4>
-                <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Line height</h3>
+              H5Div(
+                H5H4(["h5", "text-muted", "mt-3"], "1")
+                <p ["lh-1"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
+                H5H4(["h5", "text-muted", "mt-3"], "Small")
+                <p ["lh-sm"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
+                H5H4(["h5", "text-muted", "mt-3"], "Base")
+                <p ["lh-base"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
+                H5H4(["h5", "text-muted", "mt-3"], "Large")
+                <p ["lh-lg"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.</p>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Monospace</h3>
-              <div>
-                <p class="font-monospace">Monospace text</p>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Monospace</h3>
+              H5Div(
+                <p ["font-monospace"]Monospace text</p>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Reset color</h3>
-              <div>
-                <p>Reset <a href="#" class="text-reset">link</a> color</p>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Reset color</h3>
+              H5Div(
+                <p>Reset <a href="#" ["text-reset"]link</a> color</p>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Text decoration</h3>
-              <div>
-                <p class="text-decoration-underline">Text with text line underneath it</p>
-                <p class="text-decoration-line-through">Text with text line going through it</p>
-                <a href="#" class="text-decoration-none">Link without text decoration</a>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Text decoration</h3>
+              H5Div(
+                <p ["text-decoration-underline"]Text with text line underneath it</p>
+                <p ["text-decoration-line-through"]Text with text line going through it</p>
+                <a href="#" ["text-decoration-none"]Link without text decoration</a>
+              )
+            )
 
-          </div>
-        </div>
-      </div>
+          )
+        )
+      )
     </main>
       `;
     }

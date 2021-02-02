@@ -34,76 +34,76 @@ H5Main(
 }
  
 /*
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Floating Labels</h2>
+  <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Floating Labels</h2>
         <hr>
 
-        <div class="mb-5">
-          <h3 class="text-muted">Default</h3>
-          <div>
-            <div class="form-floating">
-              <input type="text" class="form-control" placeholder="Text input placeholder" id="floatingLabelDefault">
-              <label for="floatingLabelDefault" class="form-label">Text input label</label>
-            </div>
-          </div>
-        </div>
+        <div ["mb-5"]
+          <h3 ["text-muted"]Default</h3>
+          H5Div(
+            <div ["form-floating"]
+              H5Input(["type":"text" ["form-control" placeholder="Text input placeholder" id="floatingLabelDefault"]
+              H5Label(["for":"floatingLabelDefault" ["form-label"]Text input label")
+            )
+          )
+        )
 
-        <div class="mb-5">
-          <h3 class="text-muted">With value</h3>
-          <div>
-            <div class="form-floating">
-              <input type="text" class="form-control" placeholder="Text input placeholder" id="floatingLabelValue" value="Text input value">
-              <label for="floatingLabelValue" class="form-label">Text input label</label>
-            </div>
-          </div>
-        </div>
+        <div ["mb-5"]
+          <h3 ["text-muted"]With value</h3>
+          H5Div(
+            <div ["form-floating"]
+              H5Input(["type":"text" ["form-control" placeholder="Text input placeholder" id="floatingLabelValue" value="Text input value"]
+              H5Label(["for":"floatingLabelValue" ["form-label"]Text input label")
+            )
+          )
+        )
 
-        <div class="mb-5">
-          <h3 class="text-muted">Validation</h3>
-          <div>
-            <div class="form-floating">
-              <input type="text" class="form-control is-valid" placeholder="Text input placeholder" id="floatingLabelValidation" value="Text input value">
-              <label for="floatingLabelValidation" class="form-label">Text input label</label>
-            </div>
-          </div>
-        </div>
+        <div ["mb-5"]
+          <h3 ["text-muted"]Validation</h3>
+          H5Div(
+            <div ["form-floating"]
+              H5Input(["type":"text" ["form-control is-valid" placeholder="Text input placeholder" id="floatingLabelValidation" value="Text input value"]
+              H5Label(["for":"floatingLabelValidation" ["form-label"]Text input label")
+            )
+          )
+        )
 
-        <div class="mb-5">
-          <h3 class="text-muted">Textarea</h3>
-          <div>
-            <h4 class="h5 text-muted mt-3">Default</h4>
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Textarea placeholder" id="floatingLabelTextareaDefault"></textarea>
-              <label for="floatingLabelTextareaDefault" class="form-label">Textarea label</label>
-            </div>
-            <h4 class="h5 text-muted mt-3">Custom height</h4>
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Textarea placeholder" id="floatingLabelTextareaHeight" style="height: 100px;"></textarea>
-              <label for="floatingLabelTextareaHeight" class="form-label">Textarea label</label>
-            </div>
-          </div>
-        </div>
+        <div ["mb-5"]
+          <h3 ["text-muted"]Textarea</h3>
+          H5Div(
+            H5H4(["h5", "text-muted", "mt-3"], "Default")
+            <div ["form-floating"]
+              <textarea ["form-control" placeholder="Textarea placeholder" id="floatingLabelTextareaDefault"]</textarea>
+              H5Label(["for":"floatingLabelTextareaDefault" ["form-label"]Textarea label")
+            )
+            H5H4(["h5", "text-muted", "mt-3"], "Custom height")
+            <div ["form-floating"]
+              <textarea ["form-control" placeholder="Textarea placeholder" id="floatingLabelTextareaHeight" style="height: 100px;"]</textarea>
+              H5Label(["for":"floatingLabelTextareaHeight" ["form-label"]Textarea label")
+            )
+          )
+        )
 
-        <div class="mb-5">
-          <h3 class="text-muted">Select</h3>
-          <div>
-            <div class="form-floating">
-              <select class="form-select" aria-label="Select" id="floatingLabelSelect">
-                <option selected>Select option</option>
-                <option value="1">Option one</option>
-                <option value="2">Option two</option>
-                <option value="3">Option three</option>
-                <option value="4">Option four</option>
-                <option value="5">Option five</option>
-              </select>
-              <label for="floatingLabelSelect" class="form-label">Select label</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div ["mb-5"]
+          <h3 ["text-muted"]Select</h3>
+          H5Div(
+            <div ["form-floating"]
+              H5Select(["form-select" aria-label="Select" id="floatingLabelSelect"]
+                H5Option(["selected":"selected"], Select option")
+                H5Option(["value":"1"], "Option one")
+                H5Option(["value":"2"], "Option two")
+                H5Option(["value":"3"], "Option three")
+                H5Option(["value":"4"], "Option four")
+                H5Option(["value":"5"], "Option five")
+              )
+              H5Label(["for":"floatingLabelSelect" ["form-label"]Select label")
+            )
+          )
+        )
+      )
+    )
  */

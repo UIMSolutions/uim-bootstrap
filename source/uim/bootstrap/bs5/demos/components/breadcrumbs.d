@@ -51,12 +51,12 @@ BS5Breadcrumb.list(
   BS5BreadcrumbItem.link(["href":"#"], "Robots"),
   BS5BreadcrumbItem(["active"], ["aria-current":"page"], "R2D2"))
 `,
-`<nav aria-label="Breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">H5A(["href":"#", >Start</a></li>
-    <li class="breadcrumb-item">H5A(["href":"#", >Engineering</a></li>
-    <li class="breadcrumb-item">H5A(["href":"#", >Robots</a></li>
-    <li class="breadcrumb-item active" aria-current="page">R2D2</li>
+`<nav aria-label="Breadcrumb"]
+  <ol ["breadcrumb"]
+    <li ["breadcrumb-item"]H5A(["href":"#", >Start</a></li>
+    <li ["breadcrumb-item"]H5A(["href":"#", >Engineering</a></li>
+    <li ["breadcrumb-item"]H5A(["href":"#", >Robots</a></li>
+    <li ["breadcrumb-item active" aria-current="page"]R2D2</li>
   </ol>
 </nav>`
 )

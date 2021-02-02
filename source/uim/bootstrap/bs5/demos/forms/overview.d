@@ -33,37 +33,37 @@ H5Main(
   });
 }
 /* 
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Overview</h2>
+  <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Overview</h2>
         <hr>
 
-        <div class="mb-5">
-          <h3 class="text-muted">Default</h3>
-          <div>
-            <figure class="figure">
-              <img src="../img/600x400.png" class="figure-img img-fluid" alt="Figure image">
-              <figcaption class="figure-caption">Caption for the figure.</figcaption>
-            </figure>
-          </div>
-        </div>
+        <div ["mb-5"]
+          <h3 ["text-muted"]Default</h3>
+          H5Div(
+            H5Figure( ["figure"]
+              H5Img(["src":"/img/600x400.png" ["figure-img img-fluid" "alt":"Figure image"]
+              H5FigCaption(["figure-caption"]Caption for the figure.)
+            )
+          )
+        )
 
-        <div class="mb-5">
-          <h3 class="text-muted">Alignment</h3>
-          <div>
-            <h4 class="h5 text-muted mt-3">Center</h4>
-            <figure class="figure">
-              <img src="../img/600x400.png" class="figure-img img-fluid" alt="Figure image">
-              <figcaption class="figure-caption text-center">Caption for the figure.</figcaption>
-            </figure>
-            <h4 class="h5 text-muted mt-3">Right</h4>
-            <figure class="figure">
-              <img src="../img/600x400.png" class="figure-img img-fluid" alt="Figure image">
-              <figcaption class="figure-caption text-end">Caption for the figure.</figcaption>
-            </figure>
-          </div>
-        </div>
+        <div ["mb-5"]
+          <h3 ["text-muted"]Alignment</h3>
+          H5Div(
+            H5H4(["h5", "text-muted", "mt-3"], "Center")
+            H5Figure( ["figure"]
+              H5Img(["src":"/img/600x400.png" ["figure-img img-fluid" "alt":"Figure image"]
+              H5FigCaption(["figure-caption text-center"]Caption for the figure.)
+            )
+            H5H4(["h5", "text-muted", "mt-3"], "Right")
+            H5Figure( ["figure"]
+              H5Img(["src":"/img/600x400.png" ["figure-img img-fluid" "alt":"Figure image"]
+              H5FigCaption(["figure-caption text-end"]Caption for the figure.)
+            )
+          )
+        )
 */

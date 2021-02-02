@@ -32,91 +32,91 @@ H5Main(
 }          
          /*    `
 
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Borders</h2>
+  <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Borders</h2>
         <hr>
 
-        <div class="mb-5" data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-          <h3 class="text-muted">Additive</h3>
-          <div>
-            <div class="border"></div>
-            <div class="border-top"></div>
-            <div class="border-end"></div>
-            <div class="border-bottom"></div>
-            <div class="border-start"></div>
-            <div class="border-top border-end"></div>
-            <div class="border-bottom border-start"></div>
-          </div>
-        </div>
+        <div ["mb-5" data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+          <h3 ["text-muted"]Additive</h3>
+          H5Div(
+            <div ["border"])
+            <div ["border-top"])
+            <div ["border-end"])
+            <div ["border-bottom"])
+            <div ["border-start"])
+            <div ["border-top border-end"])
+            <div ["border-bottom border-start"])
+          )
+        )
 
-        <div class="mb-5" data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}&#10;div[class$="-0"] {&#10;&#9;border: 1px solid #dee2e6;&#10;}'>
-          <h3 class="text-muted">Subtractive</h3>
-          <div>
-            <div class="border-0"></div>
-            <div class="border-top-0"></div>
-            <div class="border-end-0"></div>
-            <div class="border-bottom-0"></div>
-            <div class="border-start-0"></div>
-            <div class="border-top-0 border-end-0"></div>
-            <div class="border-bottom-0 border-start-0"></div>
-          </div>
-        </div>
+        <div ["mb-5" data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}&#10;div[class$="-0"] {&#10;&#9;border: 1px solid #dee2e6;&#10;}'>
+          <h3 ["text-muted"]Subtractive</h3>
+          H5Div(
+            <div ["border-0"])
+            <div ["border-top-0"])
+            <div ["border-end-0"])
+            <div ["border-bottom-0"])
+            <div ["border-start-0"])
+            <div ["border-top-0 border-end-0"])
+            <div ["border-bottom-0 border-start-0"])
+          )
+        )
 
-        <div class="mb-5" data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-          <h3 class="text-muted">Color</h3>
-          <div>
-            <div class="border border-primary"></div>
-            <div class="border border-secondary"></div>
-            <div class="border border-success"></div>
-            <div class="border border-danger"></div>
-            <div class="border border-warning"></div>
-            <div class="border border-info"></div>
-            <div class="border border-light"></div>
-            <div class="border border-dark"></div>
-            <div class="border border-white"></div>
-          </div>
-        </div>
+        <div ["mb-5" data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+          <h3 ["text-muted"]Color</h3>
+          H5Div(
+            <div ["border border-primary"])
+            <div ["border border-secondary"])
+            <div ["border border-success"])
+            <div ["border border-danger"])
+            <div ["border border-warning"])
+            <div ["border border-info"])
+            <div ["border border-light"])
+            <div ["border border-dark"])
+            <div ["border border-white"])
+          )
+        )
 
-        <div class="mb-5" data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-          <h3 class="text-muted">Width</h3>
-          <div>
-            <div class="border border-1"></div>
-            <div class="border border-2"></div>
-            <div class="border border-3"></div>
-            <div class="border border-4"></div>
-            <div class="border border-5"></div>
-          </div>
-        </div>
+        <div ["mb-5" data-css='div[class^="border"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+          <h3 ["text-muted"]Width</h3>
+          H5Div(
+            <div ["border border-1"])
+            <div ["border border-2"])
+            <div ["border border-3"])
+            <div ["border border-4"])
+            <div ["border border-5"])
+          )
+        )
 
-        <div class="mb-5" data-css='img {&#10;&#9;margin: 1em;&#10;}&#10;div[class^="rounded"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-          <h3 class="text-muted">Radius</h3>
-          <div>
-            <img src="../img/100x100.png" alt="" class="rounded">
-            <img src="../img/100x100.png" alt="" class="rounded-top">
-            <img src="../img/100x100.png" alt="" class="rounded-end">
-            <img src="../img/100x100.png" alt="" class="rounded-bottom">
-            <img src="../img/100x100.png" alt="" class="rounded-start">
-            <img src="../img/100x100.png" alt="" class="rounded-circle">
-            <img src="../img/200x100.png" alt="" class="rounded-pill">
-          </div>
-        </div>
+        <div ["mb-5" data-css='img {&#10;&#9;margin: 1em;&#10;}&#10;div[class^="rounded"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+          <h3 ["text-muted"]Radius</h3>
+          H5Div(
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded"]
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded-top"]
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded-end"]
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded-bottom"]
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded-start"]
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded-circle"]
+            H5Img(["src":"/img/200x100.png" "alt":"" ["rounded-pill"]
+          )
+        )
 
-        <div class="mb-5" data-css='img {&#10;&#9;margin: 1em;&#10;}&#10;div[class^="rounded"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
-          <h3 class="text-muted">Radius size</h3>
-          <div>
-            <img src="../img/100x100.png" alt="" class="rounded-0" style="border-radius: 10px;">
-            <img src="../img/100x100.png" alt="" class="rounded-1">
-            <img src="../img/100x100.png" alt="" class="rounded-2">
-            <img src="../img/100x100.png" alt="" class="rounded-3">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div ["mb-5" data-css='img {&#10;&#9;margin: 1em;&#10;}&#10;div[class^="rounded"] {&#10;&#9;display: inline-block;&#10;&#9;margin: 1em;&#10;&#9;width: 5em;&#10;&#9;height: 5em;&#10;&#9;background-color: #f5f5f5;&#10;}'>
+          <h3 ["text-muted"]Radius size</h3>
+          H5Div(
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded-0" style="border-radius: 10px;"]
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded-1"]
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded-2"]
+            H5Img(["src":"/img/100x100.png" "alt":"" ["rounded-3"]
+          )
+        )
+      )
+    )
+  )
 </main>
       `;
     }

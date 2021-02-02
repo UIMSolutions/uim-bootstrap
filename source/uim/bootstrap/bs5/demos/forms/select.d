@@ -15,6 +15,67 @@ static this() {
 		} 
 			
     override string content() { 
+auto defaultExample = demoBs5Example("default", "Default", 
+  H5Div(
+    H5Label(["form-label"], ["for":"inputSelect"], "Default select"),
+    H5Select("inputSelect", ["form-select"], ["aria-label":"Default select"],
+      H5Option(["selected":"selected"], "Select option"),
+      H5Option(["value":"2"], "Option two"),
+      H5Option(["value":"1"], "Option one"),
+      H5Option(["value":"3"], "Option three"),
+      H5Option(["value":"4"], "Option four"),
+      H5Option(["value":"5"], "Option five")
+    )
+  ), ``, ``);
+
+auto sizesExample = demoBs5Example("sizes", "Sizes", 
+  H5Div(
+    H5H4(["h5", "text-muted", "mt-3"], "Small"),
+    H5Label(["form-label"], ["for":"inputSelectSmall"], "Small select"),
+    H5Select("inputSelectSmall", ["form-select", "form-select-sm"], ["aria-label":"Small select"],
+      H5Option(["selected":"selected"], "Select option"),
+      H5Option(["value":"1"], "Option one"),
+      H5Option(["value":"2"], "Option two"),
+      H5Option(["value":"3"], "Option three"),
+      H5Option(["value":"4"], "Option four"),
+      H5Option(["value":"5"], "Option five")
+    ),
+    H5H4(["h5", "text-muted", "mt-3"], "Large"),
+    H5Label(["form-label"], ["for":"inputSelectLarge"], "Large select"),
+    H5Select("inputSelectLarge", ["form-select", "form-select-lg"], ["aria-label":"Large select"],
+      H5Option(["selected":"selected"], "Select option"),
+      H5Option(["value":"1"], "Option one"),
+      H5Option(["value":"2"], "Option two"),
+      H5Option(["value":"3"], "Option three"),
+      H5Option(["value":"4"], "Option four"),
+      H5Option(["value":"5"], "Option five")
+    )
+  ), ``, ``);
+
+auto multipleExample = demoBs5Example("multiple", "Multiple", 
+  H5Div(
+    H5Label(["form-label"], ["for":"inputSelectMultiple"], "Multiple select"),
+    H5Select("inputSelectMultiple", ["form-select"], ["multiple":"multiple", "aria-label":"Multiple select"],
+      H5Option(["value":"1"], "Option one"),
+      H5Option(["value":"2"], "Option two"),
+      H5Option(["value":"3"], "Option three"),
+      H5Option(["value":"4"], "Option four"),
+      H5Option(["value":"5"], "Option five")
+    )
+  ), ``, ``);
+
+auto visibleExample = demoBs5Example("visible", "Visible options", 
+  H5Div(
+    H5Label(["form-label"], ["for":"inputSelectSize"], "Select with size"),
+    H5Select("inputSelectSize", ["form-select"], ["size":"3", "aria-label":"Select with size"],
+      H5Option(["value":"1"], "Option one"),
+      H5Option(["value":"2"], "Option two"),
+      H5Option(["value":"3"], "Option three"),
+      H5Option(["value":"4"], "Option four"),
+      H5Option(["value":"5"], "Option five")
+    )
+  ), ``, ``);
+
         return 
 H5Main(
   H5Div(["container-fluid", "mt-3", "bg-light"],
@@ -27,88 +88,13 @@ H5Main(
       H5H2(["display-4"], "Select"),
       H5Hr,
 
+      defaultExample,
+      sizesExample,
+      multipleExample,
+      visibleExample
+
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }
-/*
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Select</h2>
-        <hr>
-
-        <div class="mb-5">
-              <h3 class="text-muted">Default</h3>
-              <div>
-                <label for="inputSelect" class="form-label">Default select</label>
-                <select class="form-select" aria-label="Default select" id="inputSelect">
-                  <option selected>Select option</option>
-                  <option value="1">Option one</option>
-                  <option value="2">Option two</option>
-                  <option value="3">Option three</option>
-                  <option value="4">Option four</option>
-                  <option value="5">Option five</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">Sizing</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Small</h4>
-                <label for="inputSelectSmall" class="form-label">Small select</label>
-                <select class="form-select form-select-sm" aria-label="Small select" id="inputSelectSmall">
-                  <option selected>Select option</option>
-                  <option value="1">Option one</option>
-                  <option value="2">Option two</option>
-                  <option value="3">Option three</option>
-                  <option value="4">Option four</option>
-                  <option value="5">Option five</option>
-                </select>
-                <h4 class="h5 text-muted mt-3">Large</h4>
-                <label for="inputSelectLarge" class="form-label">Large select</label>
-                <select class="form-select form-select-lg" aria-label="Large select" id="inputSelectLarge">
-                  <option selected>Select option</option>
-                  <option value="1">Option one</option>
-                  <option value="2">Option two</option>
-                  <option value="3">Option three</option>
-                  <option value="4">Option four</option>
-                  <option value="5">Option five</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">Multiple</h3>
-              <div>
-                <label for="inputSelectMultiple" class="form-label">Multiple select</label>
-                <select class="form-select" multiple aria-label="Multiple select" id="inputSelectMultiple">
-                  <option value="1">Option one</option>
-                  <option value="2">Option two</option>
-                  <option value="3">Option three</option>
-                  <option value="4">Option four</option>
-                  <option value="5">Option five</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">Visible options</h3>
-              <div>
-                <label for="inputSelectSize" class="form-label">Select with size</label>
-                <select class="form-select" size="3" aria-label="Select with size" id="inputSelectSize">
-                  <option value="1">Option one</option>
-                  <option value="2">Option two</option>
-                  <option value="3">Option three</option>
-                  <option value="4">Option four</option>
-                  <option value="5">Option five</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-*/

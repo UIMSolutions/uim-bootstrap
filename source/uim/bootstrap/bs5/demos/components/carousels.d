@@ -49,22 +49,22 @@ demoBs5Example("slidesonly", "Slides Only",
       H5Image(["d-block", "w-100"], ["src":"/img/libs/uim-bootstrap/slide3.jpg", "alt":"Third slide"])), 
     BS5CarouselItem( 
       H5Image(["d-block", "w-100"], ["src":"/img/libs/uim-bootstrap/slide4.jpg", "alt":"Fourth slide"]))))`, 
-      `<div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/libs/uim-bootstrap/slide1.jpg" alt="First slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide2.jpg" alt="Second slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide3.jpg" alt="Third slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide4.jpg" alt="Fourth slide" class="d-block w-100">
-    </div>
-  </div>
-</div>`),
+      `<div id="carouselSlidesOnly" ["carousel slide" data-bs-ride="carousel"]
+  <div ["carousel-inner"]
+    <div ["carousel-item active"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
+    )
+  )
+)`),
 
 demoBs5Example("controls", "Controls",  
   H5Div(
@@ -101,30 +101,30 @@ demoBs5Example("controls", "Controls",
   BS5CarouselControlNext(["href":"#carouselControls", "role":"button", "data-bs-slide":"next"],
     H5Span(["carousel-control-next-icon"], ["aria-hidden":"true"]), 
     H5Span(["visually-hidden"], "Previous")))`, 
-    `<div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/libs/uim-bootstrap/slide1.jpg" alt="First slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide2.jpg" alt="Second slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide3.jpg" alt="Third slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide1.jpg" alt="Fourth slide" class="d-block w-100">
-    </div>
-  </div>
-  <a href="#carouselControls" class="carousel-control-prev" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    `<div id="carouselControls" ["carousel slide" data-bs-ride="carousel"]
+  <div ["carousel-inner"]
+    <div ["carousel-item active"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"Fourth slide" ["d-block w-100"]
+    )
+  )
+  <a href="#carouselControls" ["carousel-control-prev" role="button" data-bs-slide="prev"]
+    <span ["carousel-control-prev-icon" aria-hidden="true"]</span>
+    <span ["visually-hidden"]Previous</span>
   </a>
-  <a href="#carouselControls" class="carousel-control-next" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+  <a href="#carouselControls" ["carousel-control-next" role="button" data-bs-slide="next"]
+    <span ["carousel-control-next-icon" aria-hidden="true"]</span>
+    <span ["visually-hidden"]Next</span>
   </a>
-</div>`), 
+)`), 
 
 demoBs5Example("indicators", "Indicators",  
   H5Div(
@@ -161,28 +161,28 @@ demoBs5Example("indicators", "Indicators",
       H5Image(["d-block", "w-100"], ["src":"/img/libs/uim-bootstrap/slide3.jpg", "alt":"Third slide"])), 
     BS5CarouselItem( 
       H5Image(["d-block", "w-100"], ["src":"/img/libs/uim-bootstrap/slide4.jpg", "alt":"Fourth slide"]))))`, 
-`<div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselIndicators" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
-    <li data-bs-target="#carouselIndicators" data-bs-slide-to="3"></li>
+`<div id="carouselIndicators" ["carousel slide" data-bs-ride="carousel"]
+  <ol ["carousel-indicators"]
+    <li data-bs-target="#carouselIndicators" data-bs-slide-to="0" ["active"]</li>
+    <li data-bs-target="#carouselIndicators" data-bs-slide-to="1"]</li>
+    <li data-bs-target="#carouselIndicators" data-bs-slide-to="2"]</li>
+    <li data-bs-target="#carouselIndicators" data-bs-slide-to="3"]</li>
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/libs/uim-bootstrap/slide1.jpg" alt="First slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide2.jpg" alt="Second slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide3.jpg" alt="Third slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="../img/1200x600-info.png" alt="Fourth slide" class="d-block w-100">
-    </div>
-  </div>
-</div>`),
+  <div ["carousel-inner"]
+    <div ["carousel-item active"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/1200x600-info.png" "alt":"Fourth slide" ["d-block w-100"]
+    )
+  )
+)`),
 
 demoBs5Example("captions", "Captions",  
   H5Div(
@@ -231,38 +231,38 @@ demoBs5Example("captions", "Captions",
       H5Div(["carousel-caption"], 
         H5H3("Caption"),
         H5P("This text describes the fourth slide")))))`, 
-        `<div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/libs/uim-bootstrap/slide1.jpg" alt="First slide" class="d-block w-100">
-      <div class="carousel-caption">
+        `<div id="carouselCaptions" ["carousel slide" data-bs-ride="carousel"]
+  <div ["carousel-inner"]
+    <div ["carousel-item active"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the first slide</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide2.jpg" alt="Second slide" class="d-block w-100">
-      <div class="carousel-caption">
+      )
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the second slide</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide3.jpg" alt="Third slide" class="d-block w-100">
-      <div class="carousel-caption">
+      )
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the third slide</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide4.jpg" alt="Fourth slide" class="d-block w-100">
-      <div class="carousel-caption">
+      )
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the fourth slide</p>
-      </div>
-    </div>
-  </div>
-</div>`),
+      )
+    )
+  )
+)`),
 
 demoBs5Example("every", "Everything<p>Carousel with controls, indicators and captions</p>",  
   H5Div(
@@ -333,52 +333,52 @@ demoBs5Example("every", "Everything<p>Carousel with controls, indicators and cap
   BS5CarouselControlNext(["href":"#carouselControls", "role":"button", "data-bs-slide":"next"],
     H5Span(["carousel-control-next-icon"], ["aria-hidden":"true"]), 
     H5Span(["visually-hidden"], "Previous")))`, 
-    `<div id="carouselAll" class="carousel slide" data-bs-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselAll" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselAll" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselAll" data-bs-slide-to="2"></li>
-    <li data-bs-target="#carouselAll" data-bs-slide-to="3"></li>
+    `<div id="carouselAll" ["carousel slide" data-bs-ride="carousel"]
+  <ol ["carousel-indicators"]
+    <li data-bs-target="#carouselAll" data-bs-slide-to="0" ["active"]</li>
+    <li data-bs-target="#carouselAll" data-bs-slide-to="1"]</li>
+    <li data-bs-target="#carouselAll" data-bs-slide-to="2"]</li>
+    <li data-bs-target="#carouselAll" data-bs-slide-to="3"]</li>
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/libs/uim-bootstrap/slide1.jpg" alt="First slide" class="d-block w-100">
-      <div class="carousel-caption">
+  <div ["carousel-inner"]
+    <div ["carousel-item active"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the first slide</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide2.jpg" alt="Second slide" class="d-block w-100">
-      <div class="carousel-caption">
+      )
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the second slide</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide3.jpg" alt="Third slide" class="d-block w-100">
-      <div class="carousel-caption">
+      )
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the third slide</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide4.jpg" alt="Fourth slide" class="d-block w-100">
-      <div class="carousel-caption">
+      )
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the fourth slide</p>
-      </div>
-    </div>
-  </div>
-  <a href="#carouselAll" class="carousel-control-prev" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+      )
+    )
+  )
+  <a href="#carouselAll" ["carousel-control-prev" role="button" data-bs-slide="prev"]
+    <span ["carousel-control-prev-icon" aria-hidden="true"]</span>
+    <span ["visually-hidden"]Previous</span>
   </a>
-  <a href="#carouselAll" class="carousel-control-next" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+  <a href="#carouselAll" ["carousel-control-next" role="button" data-bs-slide="next"]
+    <span ["carousel-control-next-icon" aria-hidden="true"]</span>
+    <span ["visually-hidden"]Next</span>
   </a>
-</div>`), 
+)`), 
 
 demoBs5Example("dark", "Dark<p>Carousel with dark controls, indicators and captions</p>",  
   H5Div(
@@ -449,52 +449,52 @@ demoBs5Example("dark", "Dark<p>Carousel with dark controls, indicators and capti
   BS5CarouselControlNext(["href":"#carouselControls", "role":"button", "data-bs-slide":"next"],
     H5Span(["carousel-control-next-icon"], ["aria-hidden":"true"]), 
     H5Span(["visually-hidden"], "Previous")))`, 
-    `<div id="carouselDark" class="carousel slide carousel-dark" data-bs-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselDark" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselDark" data-bs-slide-to="2"></li>
-    <li data-bs-target="#carouselDark" data-bs-slide-to="3"></li>
+    `<div id="carouselDark" ["carousel slide carousel-dark" data-bs-ride="carousel"]
+  <ol ["carousel-indicators"]
+    <li data-bs-target="#carouselDark" data-bs-slide-to="0" ["active"]</li>
+    <li data-bs-target="#carouselDark" data-bs-slide-to="1"]</li>
+    <li data-bs-target="#carouselDark" data-bs-slide-to="2"]</li>
+    <li data-bs-target="#carouselDark" data-bs-slide-to="3"]</li>
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/libs/uim-bootstrap/slide1.jpg" alt="First slide" class="d-block w-100">
-      <div class="carousel-caption">
+  <div ["carousel-inner"]
+    <div ["carousel-item active"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the first slide</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide2.jpg" alt="Second slide" class="d-block w-100">
-      <div class="carousel-caption">
+      )
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the second slide</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide3.jpg" alt="Third slide" class="d-block w-100">
-      <div class="carousel-caption">
+      )
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the third slide</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide4.jpg" alt="Fourth slide" class="d-block w-100">
-      <div class="carousel-caption">
+      )
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
+      <div ["carousel-caption"]
         <h3>Caption</h3>
         <p>This text describes the fourth slide</p>
-      </div>
-    </div>
-  </div>
-  <a href="#carouselDark" class="carousel-control-prev" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+      )
+    )
+  )
+  <a href="#carouselDark" ["carousel-control-prev" role="button" data-bs-slide="prev"]
+    <span ["carousel-control-prev-icon" aria-hidden="true"]</span>
+    <span ["visually-hidden"]Previous</span>
   </a>
-  <a href="#carouselDark" class="carousel-control-next" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+  <a href="#carouselDark" ["carousel-control-next" role="button" data-bs-slide="next"]
+    <span ["carousel-control-next-icon" aria-hidden="true"]</span>
+    <span ["visually-hidden"]Next</span>
   </a>
-</div>`), 
+)`), 
 
 demoBs5Example("fade", "Crossfade",  
   H5Div(
@@ -519,22 +519,22 @@ demoBs5Example("fade", "Crossfade",
       H5Image(["d-block", "w-100"], ["src":"/img/libs/uim-bootstrap/slide3.jpg", "alt":"Third slide"])), 
     BS5CarouselItem( 
       H5Image(["d-block", "w-100"], ["src":"/img/libs/uim-bootstrap/slide4.jpg", "alt":"Fourth slide"]))))`, 
-      `<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/libs/uim-bootstrap/slide1.jpg" alt="First slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide2.jpg" alt="Second slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide3.jpg" alt="Third slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide4.jpg" alt="Fourth slide" class="d-block w-100">
-    </div>
-  </div>
-</div>`),
+      `<div id="carouselFade" ["carousel slide carousel-fade" data-bs-ride="carousel"]
+  <div ["carousel-inner"]
+    <div ["carousel-item active"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
+    )
+  )
+)`),
 
 demoBs5Example("options", "Options<p>Carousel with options defined with data attributes</p>",  
   H5Div(
@@ -581,36 +581,36 @@ demoBs5Example("options", "Options<p>Carousel with options defined with data att
   BS5CarouselControlNext(["href":"#carouselControls", "role":"button", "data-bs-slide":"next"],
     H5Span(["carousel-control-next-icon"], ["aria-hidden":"true"]), 
     H5Span(["visually-hidden"], "Previous")))`, 
-    `<div id="carouselOptions" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-wrap="false" data-bs-interval="2000" data-bs-keyboard="false">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselOptions" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselOptions" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselOptions" data-bs-slide-to="2"></li>
-    <li data-bs-target="#carouselOptions" data-bs-slide-to="3"></li>
+    `<div id="carouselOptions" ["carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-wrap="false" data-bs-interval="2000" data-bs-keyboard="false"]
+  <ol ["carousel-indicators"]
+    <li data-bs-target="#carouselOptions" data-bs-slide-to="0" ["active"]</li>
+    <li data-bs-target="#carouselOptions" data-bs-slide-to="1"]</li>
+    <li data-bs-target="#carouselOptions" data-bs-slide-to="2"]</li>
+    <li data-bs-target="#carouselOptions" data-bs-slide-to="3"]</li>
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/libs/uim-bootstrap/slide1.jpg" alt="First slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide2.jpg" alt="Second slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="/img/libs/uim-bootstrap/slide3.jpg" alt="Third slide" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/libs/uim-bootstrap/slide4.jpg" alt="Fourth slide" class="d-block w-100">
-    </div>
-  </div>
-  <a href="#carouselOptions" class="carousel-control-prev" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+  <div ["carousel-inner"]
+    <div ["carousel-item active"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide1.jpg" "alt":"First slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide2.jpg" "alt":"Second slide" ["d-block w-100"]
+    )
+    <div ["carousel-item" data-bs-interval="1000"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide3.jpg" "alt":"Third slide" ["d-block w-100"]
+    )
+    <div ["carousel-item"]
+      H5Img(["src":"/img/libs/uim-bootstrap/slide4.jpg" "alt":"Fourth slide" ["d-block w-100"]
+    )
+  )
+  <a href="#carouselOptions" ["carousel-control-prev" role="button" data-bs-slide="prev"]
+    <span ["carousel-control-prev-icon" aria-hidden="true"]</span>
+    <span ["visually-hidden"]Previous</span>
   </a>
-  <a href="#carouselOptions" class="carousel-control-next" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+  <a href="#carouselOptions" ["carousel-control-next" role="button" data-bs-slide="next"]
+    <span ["carousel-control-next-icon" aria-hidden="true"]</span>
+    <span ["visually-hidden"]Next</span>
   </a>
-</div>`)
+)`)
 
      ),
     H5Div(["col-12", "col-lg-2"]))).toString;

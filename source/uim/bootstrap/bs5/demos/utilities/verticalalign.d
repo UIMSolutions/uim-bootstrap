@@ -30,46 +30,46 @@ H5Main(
     }
   });
 }   /*
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Vertical Align</h2>
+  <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Vertical Align</h2>
         <hr>
 
-        <div class="mb-5">
-              <h3 class="text-muted">Inline and inline-block</h3>
-              <div>
-                <h1>Baseline<img src="../img/20x20.png" class="align-baseline"></h1>
-                <h1>Text-top<img src="../img/20x20.png" class="align-text-top"></h1>
-                <h1>Text-bottom<img src="../img/20x20.png" class="align-text-bottom"></h1>
-                <h1>Top<img src="../img/20x20.png" class="align-top"></h1>
-                <h1>Middle<img src="../img/20x20.png" class="align-middle"></h1>
-                <h1>Bottom<img src="../img/20x20.png" class="align-bottom"></h1>
-              </div>
-            </div>
+        <div ["mb-5"]
+              <h3 ["text-muted"]Inline and inline-block</h3>
+              H5Div(
+                <h1>BaselineH5Img(["src":"/img/20x20.png" ["align-baseline"]</h1>
+                <h1>Text-topH5Img(["src":"/img/20x20.png" ["align-text-top"]</h1>
+                <h1>Text-bottomH5Img(["src":"/img/20x20.png" ["align-text-bottom"]</h1>
+                <h1>TopH5Img(["src":"/img/20x20.png" ["align-top"]</h1>
+                <h1>MiddleH5Img(["src":"/img/20x20.png" ["align-middle"]</h1>
+                <h1>BottomH5Img(["src":"/img/20x20.png" ["align-bottom"]</h1>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Table cell</h3>
-              <div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Table cell</h3>
+              H5Div(
                 <p>Text-top and text-bottom not applicable on table cells</p>
-                <table class="table" style="height: 200px;">
+                <table ["table" style="height: 200px;"]
                   <tbody>
                     <tr>
-                      <td class="align-baseline">Baseline</td>
-                      <td class="align-top">Top</td>
-                      <td class="align-middle">Middle</td>
-                      <td class="align-bottom">Bottom</td>
+                      <td ["align-baseline"]Baseline</td>
+                      <td ["align-top"]Top</td>
+                      <td ["align-middle"]Middle</td>
+                      <td ["align-bottom"]Bottom</td>
                     </tr>
                   </tbody>
                 </table>
-              </div>
-            </div>
+              )
+            )
 
-          </div>
-        </div>
-      </div>
+          )
+        )
+      )
     </main>
       `;
     }

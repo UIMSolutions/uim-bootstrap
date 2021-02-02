@@ -30,23 +30,23 @@ H5Main(
     }
   });
 }   
-/*    <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Shadows</h2>
+/*    <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Shadows</h2>
         <hr>
 
-        <div class="mb-5">
-          <div>
-            <div class="card p-3 mb-5 shadow-none" style="box-shadow: 0 0.5rem 1rem rgba(0,0,0,.2);">No shadow</div>
-            <div class="card p-3 mb-5 shadow-sm">Small shadow</div>
-            <div class="card p-3 mb-5 shadow">Regular shadow</div>
-            <div class="card p-3 mb-5 shadow-lg">Large shadow</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div ["mb-5"]
+          H5Div(
+            <div ["card p-3 mb-5 shadow-none" style="box-shadow: 0 0.5rem 1rem rgba(0,0,0,.2);"]No shadow)
+            <div ["card p-3 mb-5 shadow-sm"]Small shadow)
+            <div ["card p-3 mb-5 shadow"]Regular shadow)
+            <div ["card p-3 mb-5 shadow-lg"]Large shadow)
+          )
+        )
+      )
+    )
+  )
 */

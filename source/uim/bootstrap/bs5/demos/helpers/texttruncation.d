@@ -34,26 +34,26 @@ H5Main(
 }
  
 /*
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Text Truncation</h2>
+  <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Text Truncation</h2>
         <hr>
 
-        <div class="mb-5">
-          <div>
-            <h4 class="h5 text-muted mt-3">Block</h4>
-            <p class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui.</p>
-            <h4 class="h5 text-muted mt-3">Inline-block</h4>
-            <span class="text-truncate d-inline-block w-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui.</span>
-          </div>
-        </div>
+        <div ["mb-5"]
+          H5Div(
+            H5H4(["h5", "text-muted", "mt-3"], "Block")
+            <p ["text-truncate"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui.</p>
+            H5H4(["h5", "text-muted", "mt-3"], "Inline-block")
+            <span ["text-truncate d-inline-block w-100"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui.</span>
+          )
+        )
 
-      </div>
-    </div>
-  </div>
+      )
+    )
+  )
 </main>
       `;
     }

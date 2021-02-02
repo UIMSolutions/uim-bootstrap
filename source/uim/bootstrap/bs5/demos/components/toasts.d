@@ -106,11 +106,11 @@ auto multipleExample = demoBs5Example("multiple", "Multiple",
 /* auto multipleExample = demoBs5Example("multiple", "Multiple",
   H5Div(
     H5H3(["text-muted"], "Alignment and placement")
-    <h4 class="h5 text-muted mt-3"><a href="position-utilities.html">Position</a> utilities</h4>
-    <iframe src="toasts/placement-position.html" style="width: 100%; height: 456px;"></iframe>
+    H5H4(["h5", "text-muted", "mt-3"], "<a href="position-utilities.html"]Position</a> utilities")
+    <iframe src="toasts/placement-position.html" style="width: 100%; height: 456px;"]</iframe>
 
-    <h4 class="h5 text-muted mt-3"><a href="flex.html">Flex</a> utilities</h4>
-    <iframe src="toasts/placement-flex.html" style="width: 100%; height: 551px;"></iframe>
+    H5H4(["h5", "text-muted", "mt-3"], "<a href="flex.html"]Flex</a> utilities")
+    <iframe src="toasts/placement-flex.html" style="width: 100%; height: 551px;"]</iframe>
   ), ``, ``); */
 
       return 

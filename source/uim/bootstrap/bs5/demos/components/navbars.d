@@ -30,13 +30,13 @@ auto imageExample = demoBs5Example("image", "With Image",
   BS5Navbar(["navbar-light", "bg-light"], 
     BS5Container(
       BS5NavbarBrand(["href":"#"], 
-        H5Img(["src":"../img/50x50.png", "alt":""])))), ``, ``);
+        H5Img(["src":"/img/50x50.png", "alt":""])))), ``, ``);
 
 auto imageTextExample = demoBs5Example("image", "With Image and Text",
   BS5Navbar(["navbar-light", "bg-light"], 
     BS5Container(
       BS5NavbarBrand(["href":"#"], 
-        H5Img(["src":"../img/50x50.png", "alt":""]), 
+        H5Img(["src":"/img/50x50.png", "alt":""]), 
         H5Span(["align-middle"], "Navbar")))), ``, ``);
 
 auto ulistTextExample = demoBs5Example("ulist", "With Unordered list",

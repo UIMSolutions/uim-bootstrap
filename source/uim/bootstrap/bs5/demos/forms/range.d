@@ -15,6 +15,25 @@ static this() {
 		} 
 			
     override string content() { 
+auto defaultExample = demoBs5Example("default", "Default", 
+  H5Div(
+    H5Div(["form-check"], 
+      H5Label(["form-label"], ["for":"inputRange"], "Range input label"),
+      H5Input("inputRange", ["form-range"], ["type":"range"]))
+  ), ``, ``);
+
+auto minmaxExample = demoBs5Example("minmax", "MinMax", 
+  H5Div(
+    H5Label(["form-label"], ["for":"inputRangeMinMax"], "Range input label"),
+    H5Input("inputRangeMinMax", ["form-range"], ["type":"range", "min":"0", "max":"10"])
+  ), ``, ``);
+
+auto stepsExample = demoBs5Example("steps", "With Steps", 
+  H5Div(
+    H5Label(["form-label"], ["for":"inputRangeSteps"], "Range input label").
+    H5Input("inputRangeSteps", ["form-range"], ["type":"range", "min":"0", "max":"10", "step":"0.5"])
+  ), ``, ``);
+
         return 
 H5Main(
   H5Div(["container-fluid", "mt-3", "bg-light"],
@@ -27,42 +46,12 @@ H5Main(
       H5H2(["display-4"], "Range"),
       H5Hr,
 
+      defaultExample,
+      minmaxExample,
+      stepsExample
+      
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }
-/*
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Range</h2>
-        <hr>
-
-          <div class="mb-5">
-              <h3 class="text-muted">Default</h3>
-              <div>
-                <label for="inputRange" class="form-label">Range input label</label>
-                <input type="range" class="form-range" id="inputRange">
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">Min and max</h3>
-              <div>
-                <label for="inputRangeMinMax" class="form-label">Range input label</label>
-                <input type="range" class="form-range" id="inputRangeMinMax" min="0" max="10">
-              </div>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="text-muted">Steps</h3>
-              <div>
-                <label for="inputRangeSteps" class="form-label">Range input label</label>
-                <input type="range" class="form-range" id="inputRangeSteps" min="0" max="10" step="0.5">
-              </div>
-            </div>
-
-*/

@@ -34,101 +34,101 @@ H5Main(
 }
  
 /*
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-12 col-lg-2">
-      </div>
-      <div class="col-12 col-lg-8">
-        <h2 class="component display-4">Form Control</h2>
+  <div ["container mt-3"]
+    <div ["row"]
+      <div ["col-12 col-lg-2"]
+      )
+      <div ["col-12 col-lg-8"]
+        <h2 ["component display-4"]Form Control</h2>
         <hr>
 
-        <div class="mb-5">
-              <h3 class="text-muted">Text input</h3>
+        <div ["mb-5"]
+              <h3 ["text-muted"]Text input</h3>
               <p>Applies to various textual inputs like <code>type="text"</code>, <code>type="search"</code>, <code>type="email"</code>, <code>type="url"</code>, <code>type="tel"</code>, <code>type="password"</code> and <code>type="number"</code>.</p>
-              <div>
-                <label for="inputText" class="form-label">Text input label</label>
-                <input type="text" class="form-control" placeholder="Text input placeholder" id="inputText">
-              </div>
-            </div>
+              H5Div(
+                H5Label(["for":"inputText" ["form-label"]Text input label")
+                H5Input(["type":"text" ["form-control" placeholder="Text input placeholder" id="inputText"]
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Textarea</h3>
-              <div>
-                <label for="textarea" class="form-label">Textarea</label>
-                <textarea class="form-control" id="textarea" rows="5" placeholder="Write your message here."></textarea>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Textarea</h3>
+              H5Div(
+                H5Label(["for":"textarea" ["form-label"]Textarea")
+                <textarea ["form-control" id="textarea" rows="5" placeholder="Write your message here."]</textarea>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Sizing</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Small</h4>
-                <label for="inputTextSmall" class="form-label">Text input label</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Text input placeholder" id="inputTextSmall">
-                <h4 class="h5 text-muted mt-3">Large</h4>
-                <label for="inputTextLarge" class="form-label">Text input label</label>
-                <input type="text" class="form-control form-control-lg" placeholder="Text input placeholder" id="inputTextLarge">
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Sizing</h3>
+              H5Div(
+                H5H4(["h5", "text-muted", "mt-3"], "Small")
+                H5Label(["for":"inputTextSmall" ["form-label"]Text input label")
+                H5Input(["type":"text" ["form-control form-control-sm" placeholder="Text input placeholder" id="inputTextSmall"]
+                H5H4(["h5", "text-muted", "mt-3"], "Large")
+                H5Label(["for":"inputTextLarge" ["form-label"]Text input label")
+                H5Input(["type":"text" ["form-control form-control-lg" placeholder="Text input placeholder" id="inputTextLarge"]
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Readonly</h3>
-              <div>
-                <label for="inputTextReadonly" class="form-label">Text input label</label>
-                <input type="text" class="form-control" placeholder="Text input placeholder" id="inputTextReadonly" readonly>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Readonly</h3>
+              H5Div(
+                H5Label(["for":"inputTextReadonly" ["form-label"]Text input label")
+                H5Input(["type":"text" ["form-control" placeholder="Text input placeholder" id="inputTextReadonly" readonly>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Readonly plain text</h3>
-              <div>
-                <label for="inputTextReadonlyPlaintext" class="form-label">Text input label</label>
-                <input type="text" class="form-control-plaintext" placeholder="Text input placeholder" id="inputTextReadonlyPlaintext" readonly>
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Readonly plain text</h3>
+              H5Div(
+                H5Label(["for":"inputTextReadonlyPlaintext" ["form-label"]Text input label")
+                H5Input(["type":"text" ["form-control-plaintext" placeholder="Text input placeholder" id="inputTextReadonlyPlaintext" readonly>
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">File</h3>
-              <div>
-                <h4 class="h5 text-muted mt-3">Default</h4>
-                <label class="form-label" for="inputFile">Default file input label</label>
-                <input type="file" class="form-control" id="inputFile">
-                <h4 class="h5 text-muted mt-3">Multiple</h4>
-                <label class="form-label" for="inputFileMultiple">Multiple file input label</label>
-                <input type="file" class="form-control" id="inputFileMultiple" multiple>
-                <h4 class="h5 text-muted mt-3">Disabled</h4>
-                <label class="form-label" for="inputFileDisabled">Disabled file input label</label>
-                <input type="file" class="form-control" id="inputFileDisabled" disabled>
-                <h4 class="h5 text-muted mt-3">Small</h4>
-                <label class="form-label" for="inputFileSmall">Small file input label</label>
-                <input type="file" class="form-control form-control-sm" id="inputFileSmall">
-                <h4 class="h5 text-muted mt-3">Large</h4>
-                <label class="form-label" for="inputFileLarge">Large file input label</label>
-                <input type="file" class="form-control form-control-lg" id="inputFileLarge">
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]File</h3>
+              H5Div(
+                H5H4(["h5", "text-muted", "mt-3"], "Default")
+                <label ["form-label" for="inputFile"]Default file input label")
+                H5Input(["type":"file" ["form-control" id="inputFile"]
+                H5H4(["h5", "text-muted", "mt-3"], "Multiple")
+                <label ["form-label" for="inputFileMultiple"]Multiple file input label")
+                H5Input(["type":"file" ["form-control" id="inputFileMultiple" multiple>
+                H5H4(["h5", "text-muted", "mt-3"], "Disabled")
+                <label ["form-label" for="inputFileDisabled"]Disabled file input label")
+                H5Input(["type":"file" ["form-control" id="inputFileDisabled" disabled>
+                H5H4(["h5", "text-muted", "mt-3"], "Small")
+                <label ["form-label" for="inputFileSmall"]Small file input label")
+                H5Input(["type":"file" ["form-control form-control-sm" id="inputFileSmall"]
+                H5H4(["h5", "text-muted", "mt-3"], "Large")
+                <label ["form-label" for="inputFileLarge"]Large file input label")
+                H5Input(["type":"file" ["form-control form-control-lg" id="inputFileLarge"]
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Color picker</h3>
-              <div>
-                <label for="inputColor" class="form-label">Color input label</label>
-                <input type="color" class="form-control form-control-color" id="inputColor" value="#7952b3" title="Choose color">
-              </div>
-            </div>
+            <div ["mb-5"]
+              <h3 ["text-muted"]Color picker</h3>
+              H5Div(
+                H5Label(["for":"inputColor" ["form-label"]Color input label")
+                H5Input(["type":"color" ["form-control form-control-color" id="inputColor" value="#7952b3" title="Choose color"]
+              )
+            )
 
-            <div class="mb-5">
-              <h3 class="text-muted">Datalist</h3>
-              <div>
-                <label for="datalist" class="form-label">Datalist label</label>
-                <input class="form-control" list="datalistOptions" id="datalist" placeholder="Type to search...">
-                <datalist id="datalistOptions">
-                  <option value="Bootstrap">
-                  <option value="Foundation">
-                  <option value="Semantic UI">
-                  <option value="Bulma">
-                  <option value="Materialize">
+            <div ["mb-5"]
+              <h3 ["text-muted"]Datalist</h3>
+              H5Div(
+                H5Label(["for":"datalist" ["form-label"]Datalist label")
+                <input ["form-control" list="datalistOptions" id="datalist" placeholder="Type to search..."]
+                <datalist id="datalistOptions"]
+                  H5Option(["value":"Bootstrap"]
+                  H5Option(["value":"Foundation"]
+                  H5Option(["value":"Semantic UI"]
+                  H5Option(["value":"Bulma"]
+                  H5Option(["value":"Materialize"]
                 </datalist>
-              </div>
-            </div>
+              )
+            )
 
 */
