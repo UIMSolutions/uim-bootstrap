@@ -3,7 +3,7 @@ module source.uim.bootstrap.bs5.demos.layouts;
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("layouts", new class DH5AppPage {
+	demoBS5.pages("basic/layouts", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -16,10 +16,10 @@ static this() {
 			
     override string content() { 
             return 
-H5Main(
+H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/"], 
-    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5"], "Layouts")),
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/basic/"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic"], "Layouts")),
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"]),
     H5Div(["col-12", "col-lg-8"], 
@@ -30,22 +30,22 @@ H5Main(
       H5Div(["mb-5"],
         H5H3(["text-muted"], "Areas"), 
         H5Ul(["list-group"],
-          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/components"], "Components")),
-          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/contents"], "Contents")),
-          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/forms"], "Forms")),
-          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/helpers"], "Helpers")),
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/components"], "Components")),
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/contents"], "Contents")),
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms"], "Forms")),
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/helpers"], "Helpers")),
           H5Li(["list-group-item active"], "Layouts"),
-          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/utilities"], "Utilities"))
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/utilities"], "Utilities"))
         )
       ),
 
       H5Div(["mb-5"],
         H5H3(["text-muted"], "Sections"), 
         H5Ul(["list-group"],
-          H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/layouts/columns"], "Columns")),
-          H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/layouts/container"], "Container")),
-          H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/layouts/grid"], "Grid")),
-          H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/layouts/gutters"], "Gutters")),
+          H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/basic/layouts/columns"], "Columns")),
+          H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/basic/layouts/container"], "Container")),
+          H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/basic/layouts/grid"], "Grid")),
+          H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/basic/layouts/gutters"], "Gutters")),
         )
       )
     ),

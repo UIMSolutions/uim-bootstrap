@@ -3,7 +3,7 @@ module source.uim.bootstrap.bs5.demos.forms.checks_radios;
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("forms/checks_radios", new class DH5AppPage {
+	demoBS5.pages("basic/forms/checks_radios", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -19,26 +19,26 @@ static this() {
       auto checksExample = demoBs5Example("checks", "Checks", 
 H5Div(
   H5H4(["h5", "text-muted", "mt-3"], "Default"),
-  H5Div(["form-check"], 
+  BS5FormCheck(
     H5Input("checkDefault1", ["form-check-input"], ["type":"checkbox"]), 
     H5Label(["form-check-label"], ["for":"checkDefault1"], "Default checkbox")
   ),
-  H5Div(["form-check"], 
+  BS5FormCheck(
     H5Input("checkDefault2", ["form-check-input"], ["type":"checkbox", "checked":"checked"]),
     H5Label(["form-check-label"], ["for":"checkDefault2"], "Checked checkbox")
   ),
   H5H4(["h5", "text-muted", "mt-3"], "Indeterminate"),
-  H5Div(["form-check"], 
+  BS5FormCheck(
     H5Input("checkIndeterminate", ["form-check-input"], ["type":"checkbox"]),
     H5Label(["form-check-label"], ["for":"checkIndeterminate"], "Indeterminate checkbox"),
     H5Script("var checkbox = document.getElementById('checkIndeterminate');checkbox.indeterminate = true;")
   ),
   H5H4(["h5", "text-muted", "mt-3"], "Disabled"),
-  H5Div(["form-check"], 
+  BS5FormCheck(
     H5Input("checkDisabled1", ["form-check-input"], ["type":"checkbox", "disabled":"disabled"]),
     H5Label(["form-check-label"], ["for":"checkDisabled1"], "Disabled default checkbox")
   ),
-  H5Div(["form-check"], 
+  BS5FormCheck(
     H5Input("checkDisabled2", ["form-check-input"], ["type":"checkbox", "checked":"checked", "disabled":"disabled"]),
     H5Label(["form-check-label"], ["for":"checkDisabled2"], "Disabled checked checkbox")
   )
@@ -47,20 +47,20 @@ H5Div(
       auto radiosExample = demoBs5Example("radios", "Radios", 
 H5Div(
   H5H4(["h5", "text-muted", "mt-3"], "Default"),
-  H5Div(["form-check"], 
+  BS5FormCheck(
     H5Input("radioDefault1", ["form-check-input"], ["type":"radio", "name":"radioDefault"]),
     H5Label(["form-check-label"], ["for":"radioDefault1"], "Default radio")
   ),
-  H5Div(["form-check"], 
+  BS5FormCheck(
     H5Input("radioDefault2", ["form-check-input"], ["type":"radio", "name":"radioDefault", "checked":"checked"]),
     H5Label(["form-check-label"], ["for":"radioDefault2"], "Checked radio")
   ),
   H5H4(["h5", "text-muted", "mt-3"], "Disabled"),
-  H5Div(["form-check"], 
+  BS5FormCheck(
     H5Input("radioDisabled1", ["form-check-input"], ["type":"radio", "name":"radioDisabled", "disabled":"disabled"]),
     H5Label(["form-check-label"], ["for":"radioDisabled1"], "Disabled default radio")
   ),
-  H5Div(["form-check"], 
+  BS5FormCheck(
     H5Input("radioDisabled2", ["form-check-input"], ["type":"radio", "name":"radioDisabled", "checked":"checked", "disabled":"disabled"]),
     H5Label(["form-check-label"], ["for":"radioDisabled2"], "Disabled checked radio")
   )
@@ -154,13 +154,16 @@ H5Div(
 ), ``, ``);
 
        return 
-H5Main(
+H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/forms"], 
-    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Forms"], "Checks and Radios")),
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/basic", "/demos/uim-bootstrap/5/basic/basic/forms"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Basic", "Forms"], "Checks and Radios")),
 
   BS5Container(["mt-3"]).row(
-    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-2"], 
+      listLevels("basic"),
+      listAreas("basic", "forms"),
+      listSections("basic", "forms", "checks_radios")),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(created, changed),
       H5H2(["display-4"], "Checks and Radios"),

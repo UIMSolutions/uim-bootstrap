@@ -3,7 +3,7 @@ module source.uim.bootstrap.bs5.demos.utilities.overflow;
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("utilities/overflow", new class DH5AppPage {
+	demoBS5.pages("basic/utilities/overflow", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -30,12 +30,15 @@ auto hiddenExample = demoBs5Example("hidden", "Hidden",
 
 
       return 
-H5Main(
+H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/utilities"], 
-    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Utilities"], "Overflow")),
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/utilities"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Utilities"], "Overflow")),
   BS5Container(["mt-3"]).row(
-    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-2"], 
+      listLevels("basic"),
+      listAreas("basic", "utilities"),
+      listSections("basic", "utilities", "overflow")),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(created, changed),
       H5H2(["display-4"], "Overflow"),

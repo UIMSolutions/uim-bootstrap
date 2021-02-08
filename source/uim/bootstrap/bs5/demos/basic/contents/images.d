@@ -3,7 +3,7 @@ module source.uim.bootstrap.bs5.demos.contents.images;
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("contents/images", new class DH5AppPage {
+	demoBS5.pages("basic/contents/images", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -70,13 +70,16 @@ auto pictureExample = demoBs5Example("picture", "Picture element",
 
 
       return 
-H5Main(
+H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/contents"], 
-    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Contents"], "Images")),
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/basic", "/demos/uim-bootstrap/5/basic/basic/contents"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Basic", "Contents"], "Images")),
 
   BS5Container(["mt-3"]).row(
-    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-2"], 
+      listLevels("basic"),
+      listAreas("basic", "contents"),
+      listSections("basic", "contents", "images")),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(created, changed),
       H5H2(["display-4"], "Images"),

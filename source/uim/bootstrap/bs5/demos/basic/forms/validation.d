@@ -3,7 +3,7 @@ module source.uim.bootstrap.bs5.demos.forms.validation;
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("forms/validation", new class DH5AppPage {
+	demoBS5.pages("basic/forms/validation", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -311,13 +311,16 @@ auto tooltipsExample = demoBs5Example("tooltips", "Tooltips",
 
 
         return 
-H5Main(
+H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/forms"], 
-    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Forms"], "Validation")),
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/basic", "/demos/uim-bootstrap/5/basic/basic/forms"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Basic", "Forms"], "Validation")),
 
   BS5Container(["mt-3"]).row(
-    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-2"], 
+      listLevels("basic"),
+      listAreas("basic", "forms"),
+      listSections("basic", "forms", "validation")),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(created, changed),
       H5H2(["display-4"], "Validation"),

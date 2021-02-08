@@ -16,5 +16,5 @@ class DBS5FormCheck : DBS5Obj {
 mixin(H5Calls!"BS5FormCheck");
 
 unittest {
-	assert(Assert(BS5FormCheck, `<div class="form-check"></div>`));
+	assert(BS5FormCheck == `<div class="form-check"></div>`);
 }

@@ -1,9 +1,9 @@
-module uim.bootstrap.bs5.demos.index;
+module uim.bootstrap.bs5.demos.complex;
 
-import uim.bootstrap;
+import uim.bootstrap; 
 
 static this() {
-	demoBS5.index(new class DH5AppPage {
+	demoBS5.pages("5/complex", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -18,8 +18,8 @@ static this() {
             return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap"], 
-    ["UI Manufaktur", "Demos", "uim-bootstrap"], "Bootstrap 5")),
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5"], "Complex")),
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"]),
     H5Div(["col-12", "col-lg-8"], 
@@ -27,19 +27,11 @@ H5Main(["style":"margin-top:70px;"],
       H5H2(["display-4"], "Bootstrap 5 Demo"),
       H5Hr,
 
-      H5Div(["mb-5"],
-        H5H3(["text-muted"], "Levels"), 
-        BS5List
-        .item(H5A(["href":"/demos/uim-bootstrap/5/basic"], "Basic"))
-        .item(H5A(["href":"/demos/uim-bootstrap/5/complex"], "Complex"))
-        .item(H5A(["href":"/demos/uim-bootstrap/5/example"], "Example Pages"))
-      )
+      listLevels("complex"),
+      listAreas("complex")
 
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
 }          
-
-
-
