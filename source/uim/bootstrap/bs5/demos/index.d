@@ -15,43 +15,35 @@ static this() {
 		} 
 			
     override string content() { 
-      return `
-<main>
-  H5Div(["container-fluid mt-3 bg-light m-1"]
-    <nav aria-label="Breadcrumb" >
-      <ol ["breadcrumb"]
-        <li ["breadcrumb-item"]<a href="/"]UI Manufaktur</a></li>
-        <li ["breadcrumb-item"]<a href="/demos"]Demos</a></li>
-        <li ["breadcrumb-item"]<a href="/demos/uim-bootstrap"]uim-bootstrap</a></li>
-        <li ["breadcrumb-item active" aria-current="page"]Bootstrap 5</li>
-      </ol>
-    </nav>
-  )
-  H5Div(["container mt-3"]
-    H5Div(["row"]
-      H5Div(["col-12 col-lg-2"]
-      )
-      H5Div(["col-12 col-lg-8"]
-        <h2 ["component display-4"]Bootstrap 5 Demo</h2>
-        <hr>
+            return 
+H5Main(
+  H5Div(["container-fluid", "mt-3", "bg-light"],
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap"], "Bootstrap 5")),
+  BS5Container(["mt-3"]).row(
+    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-8"], 
+      dateInfo(created, changed),
+      H5H2(["display-4"], "Bootstrap 5 Demo"),
+      H5Hr,
 
-        H5Div(["mb-5"]
-          <h3 ["text-muted"]Themenbereiche</h3>
-          <ul ["list-group"]
-            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/components"]Components</a></li>
-            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/contents"]Contents</a></li>
-            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/forms"]Forms</a></li>
-            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/helpers"]Helpers</a></li>
-            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/layouts"]Layouts</a></li>
-            <li ["list-group-item"]<a href="/demos/uim-bootstrap/5/utilities"]Utilities</a></li>
-          </ul>
+      H5Div(["mb-5"],
+        H5H3(["text-muted"], "Areas"), 
+        H5Ul(["list-group"],
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/components"], "Components")),
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/contents"], "Contents")),
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/forms"], "Forms")),
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/helpers"], "Helpers")),
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/layouts"], "Layouts")),
+          H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/utilities"], "Utilities"))
         )
       )
-    )
-  )
-</main>
 
-      `;
+    ),
+    H5Div(["col-12", "col-lg-2"]))).toString;
     }
   });
-}
+}          
+
+
+

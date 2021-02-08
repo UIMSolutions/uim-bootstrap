@@ -1,0 +1,24 @@
+﻿module uim.bootstrap.bs5.basic.components;
+
+public import uim.bootstrap.bs5.basic.components.accordions;
+public import uim.bootstrap.bs5.basic.components.alerts;
+public import uim.bootstrap.bs5.basic.components.badges;
+public import uim.bootstrap.bs5.basic.components.breadcrumbs;
+public import uim.bootstrap.bs5.basic.components.buttons;
+public import uim.bootstrap.bs5.basic.components.cards;
+public import uim.bootstrap.bs5.basic.components.carousels;
+public import uim.bootstrap.bs5.basic.components.collapses;
+public import uim.bootstrap.bs5.basic.components.dropdowns;
+public import uim.bootstrap.bs5.basic.components.forms;
+public import uim.bootstrap.bs5.basic.components.jumbotrons;
+public import uim.bootstrap.bs5.basic.components.lists;
+public import uim.bootstrap.bs5.basic.components.medias;
+public import uim.bootstrap.bs5.basic.components.modals;
+public import uim.bootstrap.bs5.basic.components.navs;
+public import uim.bootstrap.bs5.basic.components.navbars;
+public import uim.bootstrap.bs5.basic.components.paginations;
+public import uim.bootstrap.bs5.basic.components.popovers;
+public import uim.bootstrap.bs5.basic.components.progresses;
+public import uim.bootstrap.bs5.basic.components.scrollspies;
+public import uim.bootstrap.bs5.basic.components.spinners;
+public import uim.bootstrap.bs5.basic.components.tabs;
