@@ -92,8 +92,8 @@ auto disabledExample = demoBs5Example("disabled", "Disabled elements",
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/basic", "/demos/uim-bootstrap/5/basic/basic/components"], 
-    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Basic", "Components"], "Tooltips")),
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/components"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Components"], "Tooltips")),
 
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"], 
