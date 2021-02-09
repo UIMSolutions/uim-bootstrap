@@ -5,7 +5,7 @@ import uim.bootstrap;
 class DBS5Accordion : DBS5Obj {
 	mixin(H5This!("Div", ["accordion"]));
 
-	mixin(MyContent!("item	", "BS5AccordionItem"));
+	mixin(MyContent!("item", "BS5AccordionItem"));
 }
 mixin(H5Calls!("BS5Accordion"));
 

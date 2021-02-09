@@ -88,7 +88,7 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "utilities"),
       listSections("basic", "utilities", "display")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Display"),
       H5Hr,
 

@@ -26,7 +26,7 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "components"),
       listSections("basic", "components", "alerts")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Alerts"),
       H5Hr,
 
@@ -64,37 +64,37 @@ H5Div(["alert alert-dark" role="alert"]Dark)`),
 
 demoBs5Example("link", "Link Farbe", 
   H5Div(
-    BS5Alert(`Primary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.`).color("primary"),
-    BS5Alert(`Secondary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.`).color("secondary"),
-    BS5Alert(`Success mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.`).color("success"),
-    BS5Alert(`Danger mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.`).color("danger"),
-    BS5Alert(`Warning mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.`).color("warning"),
-    BS5Alert(`Info mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.`).color("info"),
-    BS5Alert(`Dark mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.`).color("dark")),
-`BS5Alert(["alert-primary"], "Primary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.")
-BS5Alert(["alert-secondary"], "Secondary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.")
-BS5Alert(["alert-success"], "Success mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.")
-BS5Alert(["alert-danger"], "Danger mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.")
-BS5Alert(["alert-warning"], "Warning mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.")
-BS5Alert(["alert-info"], "Info mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.")
-BS5Alert(["alert-dark"], "Dark mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.")
+    BS5Alert(`Primary mit <a href="#" class="alert-link">Beispiellink</a>.`).color("primary"),
+    BS5Alert(`Secondary mit <a href="#" class="alert-link">Beispiellink</a>.`).color("secondary"),
+    BS5Alert(`Success mit <a href="#" class="alert-link">Beispiellink</a>.`).color("success"),
+    BS5Alert(`Danger mit <a href="#" class="alert-link">Beispiellink</a>.`).color("danger"),
+    BS5Alert(`Warning mit <a href="#" class="alert-link">Beispiellink</a>.`).color("warning"),
+    BS5Alert(`Info mit <a href="#" class="alert-link">Beispiellink</a>.`).color("info"),
+    BS5Alert(`Dark mit <a href="#" class="alert-link">Beispiellink</a>.`).color("dark")),
+`BS5Alert(["alert-primary"], "Primary mit <a href="#" class="alert-link">Beispiellink</a>.")
+BS5Alert(["alert-secondary"], "Secondary mit <a href="#" class="alert-link">Beispiellink</a>.")
+BS5Alert(["alert-success"], "Success mit <a href="#" class="alert-link">Beispiellink</a>.")
+BS5Alert(["alert-danger"], "Danger mit <a href="#" class="alert-link">Beispiellink</a>.")
+BS5Alert(["alert-warning"], "Warning mit <a href="#" class="alert-link">Beispiellink</a>.")
+BS5Alert(["alert-info"], "Info mit <a href="#" class="alert-link">Beispiellink</a>.")
+BS5Alert(["alert-dark"], "Dark mit <a href="#" class="alert-link">Beispiellink</a>.")
 
 - Weitere Möglichkeit -
 
-BS5Alert("Primary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("primary")
-BS5Alert("Secondary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("secondary")
-BS5Alert("Success mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("§success")
-BS5Alert("Danger mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("danger")
-BS5Alert("Warning mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("warning")
-BS5Alert("Info mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("info")
-BS5Alert("Dark mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.").color("dark")`,
-`H5Div(["alert alert-primary" role="alert"]Primary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-H5Div(["alert alert-secondary" role="alert"]Secondary mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-H5Div(["alert alert-success" role="alert"]Success mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-H5Div(["alert alert-danger" role="alert"]Danger mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-H5Div(["alert alert-warning" role="alert"]Warning mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-H5Div(["alert alert-info" role="alert"]Info mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)
-H5Div(["alert alert-dark" role="alert"]Dark mit H5A(["href":"#",  ["alert-link"]Beispiellink</a>.)`),
+BS5Alert("Primary mit <a href="#" class="alert-link">Beispiellink</a>.").color("primary")
+BS5Alert("Secondary mit <a href="#" class="alert-link">Beispiellink</a>.").color("secondary")
+BS5Alert("Success mit <a href="#" class="alert-link">Beispiellink</a>.").color("§success")
+BS5Alert("Danger mit <a href="#" class="alert-link">Beispiellink</a>.").color("danger")
+BS5Alert("Warning mit <a href="#" class="alert-link">Beispiellink</a>.").color("warning")
+BS5Alert("Info mit <a href="#" class="alert-link">Beispiellink</a>.").color("info")
+BS5Alert("Dark mit <a href="#" class="alert-link">Beispiellink</a>.").color("dark")`,
+`H5Div(["alert alert-primary" role="alert"]Primary mit <a href="#" class="alert-link">Beispiellink</a>.)
+H5Div(["alert alert-secondary" role="alert"]Secondary mit <a href="#" class="alert-link">Beispiellink</a>.)
+H5Div(["alert alert-success" role="alert"]Success mit <a href="#" class="alert-link">Beispiellink</a>.)
+H5Div(["alert alert-danger" role="alert"]Danger mit <a href="#" class="alert-link">Beispiellink</a>.)
+H5Div(["alert alert-warning" role="alert"]Warning mit <a href="#" class="alert-link">Beispiellink</a>.)
+H5Div(["alert alert-info" role="alert"]Info mit <a href="#" class="alert-link">Beispiellink</a>.)
+H5Div(["alert alert-dark" role="alert"]Dark mit <a href="#" class="alert-link">Beispiellink</a>.)`),
 
 demoBs5Example("addition", "Zusätzliche Inhalte", 
   H5Div(

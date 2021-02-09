@@ -52,7 +52,7 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "utilities"),
       listSections("basic", "utilities", "verticalalign")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Vertical Align"),
       H5Hr,
 

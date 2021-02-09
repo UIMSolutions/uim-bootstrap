@@ -73,7 +73,6 @@ H5Main(["style":"margin-top:70px;"],
       listSections("basic", "components", "collapses")),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(this),
-      dateInfo(created, changed),
       H5H2(["display-4"], "Collapses"),
       H5Hr,
 

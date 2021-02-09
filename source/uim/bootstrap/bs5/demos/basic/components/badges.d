@@ -26,24 +26,24 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "components"),
       listSections("basic", "components", "badges")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Badges"),
       H5Hr,
 
-demoBs5Example("headings", "Headings mit Badges", 
+demoBs5Example("headings", "Headings with badges", 
   H5Div(
-    H5H1(H5String("H1 mit "), BS5Badge(["bg-secondary"], "Badge")),
-    H5H2(H5String("H2 mit "), BS5Badge(["bg-secondary"], "Badge")),
-    H5H3(H5String("H3 mit "), BS5Badge(["bg-secondary"], "Badge")),
-    H5H4(H5String("H4 mit "), BS5Badge(["bg-secondary"], "Badge")),
-    H5H5(H5String("H5 mit "), BS5Badge(["bg-secondary"], "Badge")),
-    H5H6(H5String("H6 mit "), BS5Badge(["bg-secondary"], "Badge"))), 
-  `<h1>H1 mit H5Span(["badge bg-secondary"]Badge")</h1>
-<h2>H2 mit H5Span(["badge bg-secondary"]Badge")</h2>
-<h3>H3 mit H5Span(["badge bg-secondary"]Badge")")
-H5H4(["H4 mit H5Span(["badge bg-secondary"]Badge")")
-<h5>H5 mit H5Span(["badge bg-secondary"]Badge")</h5>
-<h6>H6 mit H5Span(["badge bg-secondary"]Badge")</h6>`, 
+    H5H1(H5String("H1 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H2(H5String("H2 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H3(H5String("H3 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H4(H5String("H4 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H5(H5String("H5 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H6(H5String("H6 with "), BS5Badge(["bg-secondary"], "Badge"))), 
+  `H5H1(H5String("H1 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H2(H5String("H2 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H3(H5String("H3 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H4(H5String("H4 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H5(H5String("H5 with "), BS5Badge(["bg-secondary"], "Badge")),
+    H5H6(H5String("H6 with "), BS5Badge(["bg-secondary"], "Badge"))`, 
 `H5H1(H5String("H1 mit "), BS5Badge(["bg-secondary"], "Badge"))
 H5H2(H5String("H2 mit "), BS5Badge(["bg-secondary"], "Badge"))
 H5H3(H5String("H3 mit "), BS5Badge(["bg-secondary"], "Badge"))
@@ -51,21 +51,27 @@ H5H4([H5String("H4 mit "), BS5Badge(["bg-secondary"], "Badge"))
 H5H5(H5String("H5 mit "), BS5Badge(["bg-secondary"], "Badge"))
 H5H6(H5String("H6 mit "), BS5Badge(["bg-secondary"], "Badge"))`),
 
-demoBs5Example("buttons", "Buttons mit Badges", 
+demoBs5Example("buttons", "Buttons with Badges", 
   H5Div(
-    BS5Button(["btn-secondary"], H5String("Notifications "), BS5Badge(["bg-light", "text-dark"], "10"))), 
-`<button ["btn btn-secondary"]Notifications H5Span(["badge bg-light text-dark"]10")")`, 
+    BS5Button(["btn-secondary"], H5String("Notifications "), BS5Badge(["bg-light", "text-dark"], "10"))
+    ), 
+`BS5Button(["btn-secondary"], H5String("Notifications "), BS5Badge(["bg-light", "text-dark"], "10"))`, 
 `BS5Button(["btn-secondary"], H5String("Notifications "), BS5Badge(["bg-light", "text-dark"], "10"))`
 ),
 
-demoBs5Example("accessible", "Buttons mit accessible Badges", 
+demoBs5Example("accessible", "Buttons with accessible badges", 
   H5Div(
     BS5Button(["btn-secondary"], 
-      H5String("Profile"),
+      H5String("Profile "),
       BS5Badge(["bg-light", "text-dark"], "3"),
-      H5Span(["visually-hidden"], "unread messages"))), ``, ``),
+      H5Span(["visually-hidden"], "unread messages"))
+  ), 
+  `BS5Button(["btn-secondary"], 
+      H5String("Profile "),
+      BS5Badge(["bg-light", "text-dark"], "3"),
+      H5Span(["visually-hidden"], "unread messages"))`, ``),
 
-demoBs5Example("bgcolors", "Hintergrundfarben", 
+demoBs5Example("bgcolors", "With background colors", 
   H5Div(
     BS5Badge(["bg-primary"], "Primary"), 
     BS5Badge(["bg-secondary"], "Secondary"), 
@@ -85,7 +91,7 @@ demoBs5Example("bgcolors", "Hintergrundfarben",
     BS5Badge(["bg-light", "text-dark"], "Light"), 
     BS5Badge(["bg-dark"], "Dark")`, ``), 
 
-demoBs5Example("pills", "Pill badges", 
+demoBs5Example("pills", "Pill style", 
   H5Div(
     BS5Badge(["rounded-pill", "bg-primary"], "Primary"),
     BS5Badge(["rounded-pill", "bg-secondary"], "Secondary"),

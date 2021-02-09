@@ -128,28 +128,57 @@ auto flushExample = demoBs5Example("flush", "Flush",
       .body_(
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. 
         Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo."))        
-    ), `BS5Accordion("accordionFlush", ["accordion-flush"], 
-      BS5AccordionItem(
-        BS5AccordionHeader("headingFlushOne",
-          BS5AccordionButton(["data-bs-toggle":"collapse", "data-bs-target":"#collapseFlushOne", "aria-expanded":"true", "aria-controls":"collapseFlushOne"], "Accordion Item #1")),
-        BS5AccordionCollapse("collapseFlushOne", ["collapse", "show"], ["aria-labelledby":"headingFlushOne", "data-bs-parent":"#accordionFlush"], 
-          BS5AccordionBody(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero."
-          ))),
-      BS5AccordionItem(
-        BS5AccordionHeader("headingFlushTwo", 
-          BS5AccordionButton(["collapsed"], ["data-bs-toggle":"collapse", "data-bs-target":"#collapseFlushTwo", "aria-expanded":"false", "aria-controls":"collapseFlushTwo"], "Accordion Item #2")),
-        BS5AccordionCollapse("collapseFlushTwo", ["collapse"], ["aria-labelledby":"headingFlushTwo", "data-bs-parent":"#accordionFlush"], 
-          BS5AccordionBody(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero."
-          ))),
-      BS5AccordionItem(
-        BS5AccordionHeader("headingFlushThree",
-          BS5AccordionButton(["collapsed"], ["data-bs-toggle":"collapse", "data-bs-target":"#collapseFlushThree", "aria-expanded":"false", "aria-controls":"collapseFlushThree"], "Accordion Item #3")),
-        BS5AccordionCollapse("collapseFlushThree", ["collapse"], ["aria-labelledby":"headingFlushThree", "data-bs-parent":"#accordionFlush"], 
-          BS5AccordionBody(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero."
-          ))))`, `H5Div(["accordion accordion-flush" id="accordionFlush"]
+    ), `--- base version ---
+    
+BS5Accordion("accordionFlush", ["accordion-flush"], 
+  BS5AccordionItem(
+    BS5AccordionHeader("headingFlushOne",
+      BS5AccordionButton(["data-bs-toggle":"collapse", "data-bs-target":"#collapseFlushOne", "aria-expanded":"true", "aria-controls":"collapseFlushOne"], "Accordion Item #1")),
+    BS5AccordionCollapse("collapseFlushOne", ["collapse", "show"], ["aria-labelledby":"headingFlushOne", "data-bs-parent":"#accordionFlush"], 
+      BS5AccordionBody(
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero."
+      ))),
+  BS5AccordionItem(
+    BS5AccordionHeader("headingFlushTwo", 
+      BS5AccordionButton(["collapsed"], ["data-bs-toggle":"collapse", "data-bs-target":"#collapseFlushTwo", "aria-expanded":"false", "aria-controls":"collapseFlushTwo"], "Accordion Item #2")),
+    BS5AccordionCollapse("collapseFlushTwo", ["collapse"], ["aria-labelledby":"headingFlushTwo", "data-bs-parent":"#accordionFlush"], 
+      BS5AccordionBody(
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero."
+      ))),
+  BS5AccordionItem(
+    BS5AccordionHeader("headingFlushThree",
+      BS5AccordionButton(["collapsed"], ["data-bs-toggle":"collapse", "data-bs-target":"#collapseFlushThree", "aria-expanded":"false", "aria-controls":"collapseFlushThree"], "Accordion Item #3")),
+    BS5AccordionCollapse("collapseFlushThree", ["collapse"], ["aria-labelledby":"headingFlushThree", "data-bs-parent":"#accordionFlush"], 
+      BS5AccordionBody(
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo. Phasellus fermentum nulla eget quam congue sagittis. Donec volutpat vel sapien sit amet lobortis. Aenean non vulputate nunc, eu luctus libero."
+      ))))
+          
+--- compact version ---
+
+BS5Accordion("accordionFlush", ["accordion-flush"])
+  .item(
+    BS5AccordionHeader("headingFlushOne", [""])
+    .button(["data-bs-toggle":"collapse", "data-bs-target":"#collapseFlushOne", "aria-expanded":"true", "aria-controls":"collapseFlushOne"], "Accordion Item #1"),
+    BS5AccordionCollapse("collapseFlushOne", ["collapse", "show"], ["aria-labelledby":"headingFlushOne", "data-bs-parent":"#accordionFlush"])
+    .body_(
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. 
+      Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo."))
+  .item(
+    BS5AccordionHeader("headingFlushTwo", [""])
+    .button(["collapsed"], ["data-bs-toggle":"collapse", "data-bs-target":"#collapseFlushTwo", "aria-expanded":"false", "aria-controls":"collapseFlushTwo"], "Accordion Item #2"),
+    BS5AccordionCollapse("collapseFlushTwo", ["collapse"], ["aria-labelledby":"headingFlushTwo", "data-bs-parent":"#accordionFlush"]) 
+    .body_(
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. 
+      Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo."))
+  .item(
+    BS5AccordionHeader("headingFlushThree", [""])
+    .button(["collapsed"], ["data-bs-toggle":"collapse", "data-bs-target":"#collapseFlushThree", "aria-expanded":"false", "aria-controls":"collapseFlushThree"], "Accordion Item #3"),
+    BS5AccordionCollapse("collapseFlushThree", ["collapse"], ["aria-labelledby":"headingFlushThree", "data-bs-parent":"#accordionFlush"]) 
+    .body_(
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. 
+      Donec lectus est, congue eu risus quis, tempus sagittis nunc. Donec blandit accumsan augue eu bibendum. Suspendisse pretium facilisis sapien, ac dignissim leo."))   
+          
+          `, `H5Div(["accordion accordion-flush" id="accordionFlush"]
   H5Div(["accordion-item"]
     <h2 ["accordion-header" id="headingFlushOne"]
       H5Button(["type":"button" ["accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseFlushOne" aria-expanded="true" aria-controls="collapseFlushOne"]
@@ -199,7 +228,7 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "components"),
       listSections("basic", "components", "accordions")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Accordions"),
       H5Hr,
 

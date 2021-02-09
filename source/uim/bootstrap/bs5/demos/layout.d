@@ -48,25 +48,13 @@ class BS5Layout : DH5AppLayout {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCompany" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            UI Manufaktur
-          </a>`~
-        H5Li(["nav-item", "dropdown"], 
-          `<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDemos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Demos
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownDemos">
-            <a class="dropdown-item" href="/demos">Übersicht</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/demos/uim-bootstrap">uim-bootstrap</a>
-            <a class="dropdown-item" href="/demos/uim-components">uim-components</a>
-            <a class="dropdown-item" href="/demos/uim.ecm">UIM!ECM</a>
-            <a class="dropdown-item" href="/demos/uim.grundschutz">UIM!Grundschutz</a>
-            <a class="dropdown-item" href="/demos/uim.mail">UIM!Mail</a>
-            <a class="dropdown-item" href="/demos/uim.snake">UIM!Snake</a>
-          </div>`).toString~
-      `</ul>
+        <li class="nav-item">
+          <a class="nav-link" href="/">UI Manufaktur</a>
+        </li>
+        <li class="nav-item"> 
+          <a class="nav-link" href="/demos/uim-bootstrap">uim-bootstrap</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>`;

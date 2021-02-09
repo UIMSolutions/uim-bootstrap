@@ -65,7 +65,7 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "components"),
       listSections("basic", "components", "scrollspies")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Scrollspies"),
       H5Hr,
       

@@ -21,9 +21,10 @@ static this() {
       bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/basic/"], 
       ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic"], "Contents")),
     BS5Container(["mt-3"]).row(
-      H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-2"], 
+      listLevels("basic")),
       H5Div(["col-12", "col-lg-8"], 
-        dateInfo(created, changed),
+        dateInfo(this),
       H5H2(["display-4"], "Bootstrap 5 Demo <small>Using Contents</small>"),
         H5Hr,
 

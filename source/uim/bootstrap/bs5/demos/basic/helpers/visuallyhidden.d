@@ -27,7 +27,7 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "helpers"),
       listSections("basic", "helpers", "visuallyhidden")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Visually Hidden"),
       H5Hr,
 

@@ -33,7 +33,7 @@ auto linksExample = demoBs5Example("links", "Links",
     BS5Button(["btn-link"], "Link")
   ), ``, ``);
     
-auto classesExample = demoBs5Example("classes", `Button class<p>Default button styles applied to <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code> elements")`, 
+auto classesExample = demoBs5Example("classes", `Button class with <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code>`, 
   H5Div(
     BS5ButtonLink(["btn-primary"], ["href":"#", "role":"button"], "Link"), 
     H5Input(["btn", "btn-success"], ["type":"button", "value":"Input"]),
@@ -53,7 +53,7 @@ auto outlinesExample = demoBs5Example("outlines", "Outline styles",
     BS5Button(["btn-outline-dark"], "Dark")), 
     ``, ``);
 
-auto sizingExample = demoBs5Example("sizing", "Unterschiedliche Größen", 
+auto sizingExample = demoBs5Example("sizing", "Button sizes", 
   H5Div(
     BS5Button(["btn-secondary", "btn-sm"], "Small"), 
     BS5Button(["btn-secondary"], "Default"), 
@@ -119,7 +119,7 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "components"),
       listSections("basic", "components", "buttons")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Buttons"),
       H5Hr,
 

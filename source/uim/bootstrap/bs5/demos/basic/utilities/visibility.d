@@ -20,7 +20,9 @@ static this() {
   H5Div(
     H5Div(["card p-3 mb-3 visible"], ["style":"visibility: hidden;"], "Visible card"),
     H5Div(["card p-3 invisible"], "Invisible card")
-   ), ``, ``);
+   ), `H5Div(["card p-3 mb-3 visible"], ["style":"visibility: hidden;"], "Visible card"),
+H5Div(["card p-3 invisible"], "Invisible card")`, 
+``);
 
   return 
 H5Main(["style":"margin-top:70px;"], 
@@ -33,7 +35,7 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "utilities"),
       listSections("basic", "utilities", "visibility")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Visibility"),
       H5Hr,
 

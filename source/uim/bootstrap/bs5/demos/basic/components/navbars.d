@@ -292,7 +292,7 @@ H5Main(["style":"margin-top:70px;"],
       listSections("basic", "components", "navbars")),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(this),
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Navbars"),
       H5Hr,
 

@@ -3,7 +3,7 @@ module source.uim.bootstrap.bs5.demos.examples.blog;
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("demo/5/examples/album", new class DH5AppPage {
+	demoBS5.pages("examples/album", new class DH5AppPage {
 		this() { 
 			super(); 
 			this

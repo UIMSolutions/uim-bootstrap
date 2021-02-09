@@ -23,7 +23,7 @@ H5Main(["style":"margin-top:70px;"],
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"]),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Bootstrap 5 Demo <small>Using Helpers</small>"),
       H5Hr,
 

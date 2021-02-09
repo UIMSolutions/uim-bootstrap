@@ -50,7 +50,7 @@ H5Main(["style":"margin-top:70px;"],
       listAreas("basic", "contents"),
       listSections("basic", "contents", "figures")),
     H5Div(["col-12", "col-lg-8"], 
-      dateInfo(created, changed),
+      dateInfo(this),
       H5H2(["display-4"], "Figures"),
       H5Hr,
 

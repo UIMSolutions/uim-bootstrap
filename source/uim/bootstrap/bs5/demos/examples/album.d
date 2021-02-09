@@ -3,7 +3,7 @@ module source.uim.bootstrap.bs5.demos.examples.album;
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("demo/5/examples/album", new class DH5AppPage {
+	demoBS5.pages("examples/album", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -42,16 +42,14 @@ static this() {
         <div class="col-sm-8 col-md-7 py-4">
           <h4 class="text-white">About</h4>
           <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
+        </div>`~
+        H5Div(["col-sm-4 offset-md-1 py-4"],
+          H5H4(["text-white"], "Contact"),
+          H5Ul(["list-unstyled"])
+            .item(H5A(["text-white"], ["href":"#"], "Follow on Twitter"))
+            .item(H5A(["text-white"], ["href":"#"], "Like on Facebook"))
+            .item(H5A(["text-white"], ["href":"#"], "Email me"))).toString~
+      `</div>
     </div>
   </div>
   <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -67,22 +65,18 @@ static this() {
   </div>
 </header>
 
-<main>
+<main>`~
+  H5Section(["py-5 text-center container"], 
+    BS5Row(["py-lg-5"], 
+      H5Div(["col-lg-6 col-md-8 mx-auto"], 
+        H5H1(["fw-light"], "Album example"),
+        H5P(["lead text-muted"], "Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely."),
+        H5P(
+          H5A(["btn btn-primary my-2"], ["href":"#"], "Main call to action"),
+          H5A(["btn btn-secondary my-2"], ["href":"#"], "Secondary action")
+        )))).toString~
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <div class="album py-5 bg-light">
+  `<div class="album py-5 bg-light">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
