@@ -1,9 +1,9 @@
-module source.uim.bootstrap.bs5.demos.examples.grid;
+module uim.bootstrap.bs5.demos.examples.grid;
 
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("examples/starter", new class DH5AppPage {
+	demoBS5.pages("examples/grid", new class DH5AppPage {
 		this() { 
 			super(); 
 			this

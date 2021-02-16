@@ -27,7 +27,15 @@ auto unorderedExample = demoBs5Example("unordered", "Unordered list",
         BS5NavLink(["href":"#"], "Link")),
       BS5NavItem(
         BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))
-      ), ``, ``);
+      ), `BS5Nav(
+  BS5NavItem(
+    BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))`, ``);
 
 auto linksExample = demoBs5Example("links", "Links",
   H5Div(
@@ -36,7 +44,11 @@ auto linksExample = demoBs5Example("links", "Links",
       BS5NavLink(["href":"#"],"Link"),
       BS5NavLink(["href":"#"], "Link"),
       BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))
-      ), ``, ``);
+      ), `BS5Nav(["nav"],
+  BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active"),
+  BS5NavLink(["href":"#"],"Link"),
+  BS5NavLink(["href":"#"], "Link"),
+  BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))`, ``);
 
 auto barExample = demoBs5Example("bar", "Navs as navigation bar",
   H5Div(
@@ -50,7 +62,16 @@ auto barExample = demoBs5Example("bar", "Navs as navigation bar",
           BS5NavLink(["href":"#"], "Link")),
         BS5NavItem(
           BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))))
-      ), ``, ``);
+      ), `H5Nav(
+  BS5Nav(
+    BS5NavItem(
+      BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+    BS5NavItem(
+      BS5NavLink(["href":"#"], "Link")),
+    BS5NavItem(
+      BS5NavLink(["href":"#"], "Link")),
+    BS5NavItem(
+      BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))))`, ``);
 
 auto horizontalExample = demoBs5Example("horizontal", "Horizontal alignment",
   H5Div(
@@ -74,7 +95,25 @@ auto horizontalExample = demoBs5Example("horizontal", "Horizontal alignment",
         BS5NavLink(["href":"#"], "Link")),
       BS5NavItem(
         BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))
-      ), ``, ``);
+      ), `BS5Nav(["justify-content-center"], 
+  BS5NavItem(
+    BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))),
+
+BS5Nav(["justify-content-end"], 
+  BS5NavItem(
+    BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))`, ``);
           
 auto verticalExample = demoBs5Example("vertical", "Vertical",
   H5Div(
@@ -87,7 +126,15 @@ auto verticalExample = demoBs5Example("vertical", "Vertical",
         BS5NavLink(["href":"#"], "Link")),
       BS5NavItem(
         BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))
-        ), ``, ``);
+        ), `BS5Nav(["flex-column"], 
+  BS5NavItem(
+    BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))`, ``);
 
 auto tabsExample = demoBs5Example("tabs", "Tabs",
   H5Div(
@@ -100,7 +147,15 @@ auto tabsExample = demoBs5Example("tabs", "Tabs",
         BS5NavLink(["href":"#"], "Link")),
       BS5NavItem(
         BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))
-        ), ``, ``);
+        ), `BS5Nav(["nav-tabs"], 
+  BS5NavItem(
+    BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))`, ``);
 
 auto pillsExample = demoBs5Example("pills", "Pills",
   H5Div(
@@ -113,7 +168,15 @@ auto pillsExample = demoBs5Example("pills", "Pills",
         BS5NavLink(["href":"#"], "Link")),
       BS5NavItem(
         BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))
-        ), ``, ``);
+        ), `BS5Nav(["nav-pills"], 
+  BS5NavItem(
+    BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))`, ``);
 
 auto fillExample = demoBs5Example("fill", "Fill",
   H5Div(
@@ -132,7 +195,20 @@ auto fillExample = demoBs5Example("fill", "Fill",
       BS5NavLink(["nav-item"], ["href":"#"], "Link"),
       BS5NavLink(["nav-item"], ["href":"#"], "Link"),
       BS5NavLink(["nav-item", "disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))
-      ), ``, ``);
+      ), `BS5Nav(["nav-tabs", "nav-fill"], 
+    BS5NavItem(
+      BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+    BS5NavItem(
+      BS5NavLink(["href":"#"], "Link")),
+    BS5NavItem(
+      BS5NavLink(["href":"#"], "Link")),
+    BS5NavItem(
+      BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))), H5Br,
+  H5Nav(["nav", "nav-tabs", "nav-fill"], 
+    BS5NavLink(["nav-item", "active"], ["href":"#", "aria-current":"page"], "Active"),
+    BS5NavLink(["nav-item"], ["href":"#"], "Link"),
+    BS5NavLink(["nav-item"], ["href":"#"], "Link"),
+    BS5NavLink(["nav-item", "disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))`, ``);
 
 auto justifyExample = demoBs5Example("justify", "Justify",
   H5Div(
@@ -151,7 +227,20 @@ auto justifyExample = demoBs5Example("justify", "Justify",
       BS5NavLink(["nav-item"], ["href":"#"], "Link"),
       BS5NavLink(["nav-item"], ["href":"#"], "Link"),
       BS5NavLink(["nav-item", "disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))
-      ), ``, ``);
+      ), `BS5Nav(["nav-pills", "nav-justified"], 
+  BS5NavItem(
+    BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))), H5Br,
+H5Nav(["nav", "nav-pills", "nav-justified"], 
+  BS5NavLink(["nav-item", "active"], ["href":"#", "aria-current":"page"], "Active"),
+  BS5NavLink(["nav-item"], ["href":"#"], "Link"),
+  BS5NavLink(["nav-item"], ["href":"#"], "Link"),
+  BS5NavLink(["nav-item", "disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))`, ``);
 
 
 auto responsiveExample = demoBs5Example("responsive", "Responsive",
@@ -165,7 +254,15 @@ auto responsiveExample = demoBs5Example("responsive", "Responsive",
         BS5NavLink(["href":"#"], "Link")),
       BS5NavItem(
         BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))
-        ), ``, ``);
+        ), `BS5Nav(["flex-column", "flex-md-row"], 
+  BS5NavItem(
+    BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))`, ``);
 
 auto dropdownExample = demoBs5Example("dropdown", "Dropdown",
   H5Div(
@@ -183,7 +280,20 @@ auto dropdownExample = demoBs5Example("dropdown", "Dropdown",
         BS5NavLink(["href":"#"], "Link")),
       BS5NavItem(
         BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))
-        ), ``, ``);
+        ), `BS5Nav(
+  BS5NavItem(
+    BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
+  BS5NavItem(["dropdown"],
+    BS5NavLink(["dropdown-toggle"], ["href":"#", "data-bs-toggle":"dropdown", "role":"button", "aria-expanded":"false"], "Dropdown"),
+      BS5DropdownMenu(
+        BS5DropdownItem(["href":"#"],  "First item"),
+        BS5DropdownItem(["href":"#"],  "Second item"),
+        BS5DropdownItem(["href":"#"],  "Third item")
+      )),
+  BS5NavItem(
+    BS5NavLink(["href":"#"], "Link")),
+  BS5NavItem(
+    BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")))`, ``);
 
 auto tabpanelExample = demoBs5Example("tabpanel", "Tab panel from list",
   H5Div(
@@ -264,7 +374,7 @@ auto fadeExample = demoBs5Example("fade", "Tab panel with fade effect",
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/components"], 
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/components"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Components"], "Navs")),
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"], 

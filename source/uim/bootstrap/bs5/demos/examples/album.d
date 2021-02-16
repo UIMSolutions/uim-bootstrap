@@ -1,4 +1,4 @@
-module source.uim.bootstrap.bs5.demos.examples.album;
+module uim.bootstrap.bs5.demos.examples.album;
 
 import uim.bootstrap;
 

@@ -31,16 +31,16 @@ auto staticExample = demoBs5Example("static", "Static",
             BS5Button(["btn-secondary"], ["data-dismiss":"modal"], "Close"))))
   ), 
   `BS5Modal("modalStatic", ["fade show"], ["tabindex":"-1", "role":"dialog", "aria-labelledby":"modalStaticTitle", "aria-modal":"true", "style":"display: block; position: relative; z-index: 1;"], 
-    BS5ModalDialog(["role":"document"], 
-      BS5ModalContent(
-        BS5ModalHeader(
-          BS5ModalTitle(["id":"modalStaticTitle"], "Modal title"),
-          BS5Button(["btn-close"], ["data-dismiss":"modal", "aria-label":"Close"]))),
-        BS5ModalBody(
-          H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")),
-        BS5ModalFooter(
-          BS5Button(["btn-primary"], "Action"),
-          BS5Button(["btn-secondary"], ["data-dismiss":"modal"], "Close"))))`, 
+  BS5ModalDialog(["role":"document"], 
+    BS5ModalContent(
+      BS5ModalHeader(
+        BS5ModalTitle(["id":"modalStaticTitle"], "Modal title"),
+        BS5Button(["btn-close"], ["data-dismiss":"modal", "aria-label":"Close"]))),
+      BS5ModalBody(
+        H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")),
+      BS5ModalFooter(
+        BS5Button(["btn-primary"], "Action"),
+        BS5Button(["btn-secondary"], ["data-dismiss":"modal"], "Close"))))`, 
           `H5Div(["modal fade show" id="modalStatic" tabindex="-1" role="dialog" aria-labelledby="modalStaticTitle" aria-modal="true" "style":"display: block; position: relative; z-index: 1;"]
   H5Div(["modal-dialog" role="document"]
     H5Div(["modal-content"]
@@ -553,7 +553,7 @@ auto backExample = demoBs5Example("backdrop", "Static backdrop",
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/components"], 
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/components"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Components"], "Modals")),
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"], 

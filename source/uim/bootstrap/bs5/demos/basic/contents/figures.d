@@ -41,7 +41,7 @@ auto alignmentExample = demoBs5Example("alignment", "Alignment",
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/contents"], 
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/contents"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Contents"], "Figures")),
 
   BS5Container(["mt-3"]).row(

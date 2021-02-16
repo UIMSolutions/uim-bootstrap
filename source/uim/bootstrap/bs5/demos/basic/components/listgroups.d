@@ -16,99 +16,183 @@ static this() {
 			
     override string content() { 
 
-auto defaultExample = demoBs5Example("default", "Default", 
+auto defaultExample = demoBs5Example("default", "Default list group", 
   H5Div(
-    BS5List(
-      BS5ListItem("List group item one"),
-      BS5ListItem("List group item two"),
-      BS5ListItem("List group item three"))
-  ), ``, ``);
+    BS5List
+    .item("List group item 1")
+    .item("List group item 2")
+    .item("List group item 3")
+  ), `BS5List(
+  BS5ListItem("List group item 1"),
+  BS5ListItem("List group item 2"),
+  BS5ListItem("List group item 3"))
+  
+--- compact version ---
 
-auto activeExample = demoBs5Example("active", "Active item",      
-  H5Div(
-    BS5List(
-      BS5ListItem("List group item one"),
-      BS5ListItem(["active"], ["aria-current":"true"], "List group item two"),
-      BS5ListItem("List group item three"))
-  ), ``, ``);
+BS5List
+.item("List group item 1")
+.item("List group item 2")
+.item("List group item 3")`, 
+`<ul class="list-group">
+  <li class="list-group-item">List group item 1</li>
+  <li class="list-group-item">List group item 2</li>
+  <li class="list-group-item">List group item 3</li>
+</ul>`);
 
-auto disabledExample = demoBs5Example("disabled", "Disabled item",      
+auto activeExample = demoBs5Example("active", "List group with an active item",      
   H5Div(
-    BS5List(
-      BS5ListItem("List group item one"),
-      BS5ListItem(["disabled"], ["aria-disabled":"true"], "List group item two"),
-      BS5ListItem("List group item three"))
-  ), ``, ``);
+    BS5List
+    .item("List group item one")
+    .item(["active"], ["aria-current":"true"], "List group item two")
+    .item("List group item three")
+  ), 
+  `BS5List(
+  BS5ListItem("List group item 1"),
+  BS5ListItem(["active"], ["aria-current":"true"], "List group item 2"),
+  BS5ListItem("List group item 3"))
+  
+--- compact version ---
 
-auto linksExample = demoBs5Example("links", "Links",      
+BS5List
+.item("List group item 1")
+.item(["active"], ["aria-current":"true"], "List group item 2")
+.item("List group item 3")`, 
+`<ul class="list-group">
+  <li class="list-group-item">List group item 1</li>
+  <li class="active list-group-item" aria-current="true">List group item 2</li>
+  <li class="list-group-item">List group item 3</li>
+</ul>`);
+
+auto disabledExample = demoBs5Example("disabled", "List group with a disabled item",      
   H5Div(
-    BS5List(
-      BS5ListLink(["href":"#"], "List group item one"),
-      BS5ListLink(["active"], ["href":"#", "aria-disabled":"true"], "List group item two"),
-      BS5ListLink(["disabled"], ["href":"#", "aria-disabled":"true", "tabindex":"-1"], "List group item three"))
-  ), ``, ``);
+    BS5List
+    .item("List group item 1")
+    .item(["disabled"], ["aria-disabled":"true"], "List group item 2")
+    .item("List group item 3")
+  ), `BS5List(
+  BS5ListItem("List group item 1"),
+  BS5ListItem(["disabled"], ["aria-disabled":"true"], "List group item 2"),
+  BS5ListItem("List group item 3"))
+  
+--- compact version ---
+
+BS5List
+  .item("List group item 1")
+  .item(["disabled"], ["aria-disabled":"true"], "List group item 2")
+  .item("List group item 3")
+`, 
+  `<ul class="list-group">
+  <li class="list-group-item">List group item 1</li>
+  <li class="disabled list-group-item" aria-disabled="true">List group item 2</li>
+  <li class="list-group-item">List group item 3</li>
+</ul>`);
+
+auto linksExample = demoBs5Example("links", "Working with Links",      
+  H5Div(
+    BS5List
+    .link(["href":"#"], "List group item 1")
+    .link(["active"], ["href":"#", "aria-disabled":"true"], "List group item 2")
+    .link(["disabled"], ["href":"#", "aria-disabled":"true", "tabindex":"-1"], "List group item 3")
+  ), `BS5List(
+  BS5ListLink(["href":"#"], "List group item 1"),
+  BS5ListLink(["active"], ["href":"#", "aria-disabled":"true"], "List group item 2"),
+  BS5ListLink(["disabled"], ["href":"#", "aria-disabled":"true", "tabindex":"-1"], "List group item 3"))
+
+--- compact version ---
+
+BS5List
+.link(["href":"#"], "List group item 1")
+.link(["active"], ["href":"#", "aria-disabled":"true"], "List group item 2")
+.link(["disabled"], ["href":"#", "aria-disabled":"true", "tabindex":"-1"], "List group item 3")
+`, ``);
 
 auto buttonsExample = demoBs5Example("buttons", "Buttons",      
   H5Div(
-    BS5List(
-      BS5Button(["list-group-item", "list-group-item-action"], "List group item one"),
-      BS5Button(["list-group-item", "list-group-item-action", "active"], ["aria-current":"true"], "List group item two"),
-      BS5Button(["list-group-item", "list-group-item-action", "active"], ["aria-current":"true"], "List group item three"))
-  ), ``, ``);
+    BS5List
+    .button("List group item 1")
+    .button(["active"], ["aria-current":"true"], "List group item 2")
+    .button(["disabled"], ["aria-disabled":"true"], "List group item 3")
+  ), `BS5List(
+  BS5ButtonLink("List group item 1"),
+  BS5ButtonLink(["active"], ["aria-current":"true"], "List group item 2"),
+  BS5ButtonLink(["diaabled"], ["aria-current":"true"], "List group item 3"))
+
+--- compact version ---
+
+BS5List
+.button("List group item 1")
+.button(["active"], ["aria-current":"true"], "List group item 2")
+.button(["disabled"], ["aria-disabled":"true"], "List group item 3")
+`, ``);
 
 auto flushExample = demoBs5Example("flush", "Flush",      
   H5Div(
-    BS5List(["list-group-flush"],
-      BS5ListItem("List group item one"),
-      BS5ListItem("List group item two"),
-      BS5ListItem("List group item three"))
-  ), ``, ``);
+    BS5List(["list-group-flush"])
+      .item("List group item 1")
+      .item("List group item 2")
+      .item("List group item 3")
+  ), `BS5List(["list-group-flush"],
+  BS5ListItem("List group item 1"),
+  BS5ListItem("List group item 2"),
+  BS5ListItem("List group item 3"))
+
+--- compact version ---
+
+BS5List(["list-group-flush"])
+.item("List group item 1")
+.item("List group item 2")
+.item("List group item 3")
+`, `<ul class="list-group list-group-flush">
+  <li class="list-group-item">List group item 1</li>
+  <li class="list-group-item">List group item 2</li>
+  <li class="list-group-item">List group item 3</li>
+</ul>`);
 
 auto horizontalExample = demoBs5Example("horizontal", "Horizontal",      
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "All breakpoints"),
+    H5H4(["h5", "text-muted", "mt-3"], "Using breakpoints with list groups"),
     BS5List(["list-group-horizontal"],
-      BS5ListItem("List group item one"),
-      BS5ListItem("List group item two"),
-      BS5ListItem("List group item three")),
-    H5H4(["h5", "text-muted", "mt-3"], "Small and up"),
+      BS5ListItem("List group item 1"),
+      BS5ListItem("List group item 2"),
+      BS5ListItem("List group item 3")),
+    H5H4(["h5", "text-muted", "mt-3"], "Sizes small and up (sm)"),
     BS5List(["list-group-horizontal-sm"],
-      BS5ListItem("List group item one"),
-      BS5ListItem("List group item two"),
-      BS5ListItem("List group item three")),
-    H5H4(["h5", "text-muted", "mt-3"], "Medium and up"),
+      BS5ListItem("List group item 1"),
+      BS5ListItem("List group item 2"),
+      BS5ListItem("List group item 3")),
+    H5H4(["h5", "text-muted", "mt-3"], "Sizes medium and up (md)"),
     BS5List(["list-group-horizontal-md"],
-      BS5ListItem("List group item one"),
-      BS5ListItem("List group item two"),
-      BS5ListItem("List group item three")),
-    H5H4(["h5", "text-muted", "mt-3"], "Large and up"),
+      BS5ListItem("List group item 1"),
+      BS5ListItem("List group item 2"),
+      BS5ListItem("List group item 3")),
+    H5H4(["h5", "text-muted", "mt-3"], "Sizes large and up (lg)"),
     BS5List(["list-group-horizontal-lg"],
-      BS5ListItem("List group item one"),
-      BS5ListItem("List group item two"),
-      BS5ListItem("List group item three")),
-    H5H4(["h5", "text-muted", "mt-3"], "Extra Large and up"),
+      BS5ListItem("List group item 1"),
+      BS5ListItem("List group item 2"),
+      BS5ListItem("List group item 3")),
+    H5H4(["h5", "text-muted", "mt-3"], "Sizes extra Large and up (xl)"),
     BS5List(["list-group-horizontal-xl"],
-      BS5ListItem("List group item one"),
-      BS5ListItem("List group item two"),
-      BS5ListItem("List group item three"))
+      BS5ListItem("List group item 1"),
+      BS5ListItem("List group item 2"),
+      BS5ListItem("List group item 3"))
   ), ``, ``);
 
-auto equalwidthExample = demoBs5Example("equalwidth", "Equal-width list group item",      
+auto equalwidthExample = demoBs5Example("equalwidth", "Defining equal-width list group item",      
   H5Div(
     H5H4(["h5", "text-muted", "mt-3"], "All breakpoints"),
     BS5List(["list-group-horizontal"],
-      BS5ListItem(["flex-fill"], "List group item one"),
-      BS5ListItem(["flex-fill"], "List group item two"),
-      BS5ListItem(["flex-fill"], "List group item three"))
+      BS5ListItem(["flex-fill"], "List group item 1"),
+      BS5ListItem(["flex-fill"], "List group item 2"),
+      BS5ListItem(["flex-fill"], "List group item 3"))
   ), ``, ``);
 
-auto colorsExample = demoBs5Example("colors", "Contextual color classes",      
+auto colorsExample = demoBs5Example("colors", "Using colors in Listgroups",      
   H5Div(
     H5H4(["h5", "text-muted", "mt-3"], "All breakpoints"),
     BS5List(["list-group-horizontal"],
-      BS5ListItem(["flex-fill"], "List group item one"),
-      BS5ListItem(["flex-fill"], "List group item two"),
-      BS5ListItem(["flex-fill"], "List group item three")),
+      BS5ListItem(["flex-fill"], "List group item 1"),
+      BS5ListItem(["flex-fill"], "List group item 2"),
+      BS5ListItem(["flex-fill"], "List group item 3")),
     H5H4(["h5", "text-muted", "mt-3"], "Normal list group"),
     BS5List(
       BS5ListItem("Default list group item"),
@@ -183,7 +267,7 @@ auto tabsExample = demoBs5Example("tabs", "Tab panels",
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/components"], 
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/components"], 
       ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Components"], "List Groups")),
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"], 

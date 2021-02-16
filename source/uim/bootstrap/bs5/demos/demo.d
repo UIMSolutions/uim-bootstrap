@@ -19,9 +19,9 @@ auto demoBs5Example(string id, string title, DH5Obj tabResult, string tabUim, st
         H5Div(["tab-content"], 
           H5Div("tab"~id~"-pane-1", ["tab-pane", "active"], ["role":"tabpanel", "aria-labelledby":"tab"~id~"-1"], tabResult),
           H5Div("tab"~id~"-pane-2", ["tab-pane"], ["role":"tabpanel", "aria-labelledby":"tab"~id~"-2"], 
-            `<pre><code>`~tabUim.replace(`&`, "&amp;").replace(`"`, "&quot;").replace("<", "&lt;").replace("]", "&gt;")~`</code></pre>`),
+            `<pre><code>`~tabUim.replace(`&`, "&amp;").replace(`"`, "&quot;").replace("<", "&lt;").replace(">", "&gt;")~`</code></pre>`),
           H5Div("tab"~id~"-pane-3", ["tab-pane"], ["role":"tabpanel", "aria-labelledby":"tab"~id~"-3"], 
-            `<pre><code>`~tabHTML.replace(`&`, "&amp;").replace(`"`, "&quot;").replace("<", "&lt;").replace("]", "&gt;")~`</code></pre>`)
+            `<pre><code>`~tabHTML.replace(`&`, "&amp;").replace(`"`, "&quot;").replace("<", "&lt;").replace(">", "&gt;")~`</code></pre>`)
   ))));
 }
 
@@ -54,6 +54,24 @@ auto listAreas(string level, string selected = "") {
     case "complex":
       break;
     case "examples":
+      items ~= (selected != "album" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/album"], "Album")).toString : H5Li(["list-group-item active"], "Album").toString);
+      items ~= (selected != "blog" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/blog"], "Blog")).toString : H5Li(["list-group-item active"], "Blog").toString);
+      items ~= (selected != "carousel" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/carousel"], "Carousel")).toString : H5Li(["list-group-item active"], "Carousel").toString);
+      items ~= (selected != "cheatsheet" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/cheatsheet"], "Cheat Sheet")).toString : H5Li(["list-group-item active"], "Cheat Sheet").toString);
+      items ~= (selected != "checkout" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/checkout"], "Checkout")).toString : H5Li(["list-group-item active"], "Checkout").toString);
+      items ~= (selected != "cover" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/cover"], "Cover")).toString : H5Li(["list-group-item active"], "Cover").toString);
+      items ~= (selected != "dashboard" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/dashboard"], "Dashboard")).toString : H5Li(["list-group-item active"], "Dashboard").toString);
+      items ~= (selected != "grid" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/grid"], "Grid")).toString : H5Li(["list-group-item active"], "Grid").toString);
+      items ~= (selected != "masonary" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/masonary"], "Masonary")).toString : H5Li(["list-group-item active"], "Masonary").toString);
+      items ~= (selected != "navbarbottom" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/navbarbottom"], "Navbar bottom")).toString : H5Li(["list-group-item active"], "Navbar bottom").toString);
+      items ~= (selected != "navbars" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/navbars"], "Navbars")).toString : H5Li(["list-group-item active"], "Navbars").toString);
+      items ~= (selected != "navbarstatic" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/navbarstatic"], "Navbar static")).toString : H5Li(["list-group-item active"], "Navbar static").toString);
+      items ~= (selected != "navbartopfixed" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/navbartopfixed"], "Navbar Top Fixed")).toString : H5Li(["list-group-item active"], "Navbar Top Fixed").toString);
+      items ~= (selected != "offcanvas" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/offcanvas"], "Offcanvas")).toString : H5Li(["list-group-item active"], "Offcanvas").toString);
+      items ~= (selected != "pricing" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/pricing"], "Pricing")).toString : H5Li(["list-group-item active"], "Pricing").toString);
+      items ~= (selected != "product" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/product"], "Product")).toString : H5Li(["list-group-item active"], "Product").toString);
+      items ~= (selected != "signin" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/signin"], "Signin")).toString : H5Li(["list-group-item active"], "Signin").toString);
+      items ~= (selected != "starter" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/starter"], "Starter")).toString : H5Li(["list-group-item active"], "Starter").toString);
       break;
     default: break;
   }
@@ -71,10 +89,10 @@ auto listSections(string level, string area, string selected = "") {
     case "basic":
       switch(area) {
         case "layouts":
-          items ~= (selected != "columns" ? H5Li(["list-group-item"],  H5A(["/demos/uim-bootstrap/5/basic/layouts/columns"], "Columns")).toString : H5Li(["list-group-item active"], "Columns").toString);
-          items ~= (selected != "container" ? H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/basic/layouts/container"], "Container")).toString : H5Li(["list-group-item active"], "Container").toString);
-          items ~= (selected != "grid" ? H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/basic/layouts/grid"], "Grid")).toString : H5Li(["list-group-item active"], "Grid").toString);
-          items ~= (selected != "components" ? H5Li(["list-group-item"], H5A(["/demos/uim-bootstrap/5/basic/layouts/gutters"], "Gutters")).toString : H5Li(["list-group-item active"], "Gutters").toString);
+          items ~= (selected != "columns" ? H5Li(["list-group-item"],  H5A(["href":"/demos/uim-bootstrap/5/basic/layouts/columns"], "Columns")).toString : H5Li(["list-group-item active"], "Columns").toString);
+          items ~= (selected != "container" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/layouts/container"], "Container")).toString : H5Li(["list-group-item active"], "Container").toString);
+          items ~= (selected != "grid" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/layouts/grid"], "Grid")).toString : H5Li(["list-group-item active"], "Grid").toString);
+          items ~= (selected != "components" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/layouts/gutters"], "Gutters")).toString : H5Li(["list-group-item active"], "Gutters").toString);
           break;
         case "contents":
             items ~= (selected != "figures" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/contents/figures"], "Figures")).toString : H5Li(["list-group-item active"], "Figures").toString);
@@ -130,12 +148,25 @@ auto listSections(string level, string area, string selected = "") {
           items ~= (selected != "verticalalign" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/utilities/verticalalign"], "Vertical Align")).toString : H5Li(["list-group-item active"], "Vertical Align").toString);
           items ~= (selected != "visibility" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/utilities/visibility"], "Visibility")).toString : H5Li(["list-group-item active"], "Visibility").toString);
           break;
+        case "forms":
+          items ~= (selected != "checks_radios" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/checks_radios"], "Checkboxes and Radios")).toString : H5Li(["list-group-item active"], "Checkboxes and Radios").toString);
+          items ~= (selected != "floatinglabels" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/floatinglabels"], "Floating Labels")).toString : H5Li(["list-group-item active"], "Floating Labels").toString);
+          items ~= (selected != "formcontrol" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/formcontrol"], "Form Control")).toString : H5Li(["list-group-item active"], "Form Control").toString);
+          items ~= (selected != "inputgroup" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/inputgroup"], "Input Group")).toString : H5Li(["list-group-item active"], "Input Group").toString);
+          items ~= (selected != "layout" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/layout"], "Layout")).toString : H5Li(["list-group-item active"], "Layout").toString);
+          items ~= (selected != "overview" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/overview"], "Overview")).toString : H5Li(["list-group-item active"], "Overview").toString);
+          items ~= (selected != "overflow" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/overflow"], "Overflow")).toString : H5Li(["list-group-item active"], "Overflow").toString);
+          items ~= (selected != "range" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/range"], "Range")).toString : H5Li(["list-group-item active"], "Range").toString);
+          items ~= (selected != "select" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/select"], "Select")).toString : H5Li(["list-group-item active"], "Select").toString);
+          items ~= (selected != "validation" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/forms/validation"], "Validation")).toString : H5Li(["list-group-item active"], "Validation").toString);
+          break;
         default: break;
       }
       break;
     case "complex":
       break;
     case "examples":
+;
       break;
     default: break;
   }

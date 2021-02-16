@@ -14,15 +14,19 @@ class DBS5ButtonGroup : DBS5Obj {
 		assert(Assert(BS5ButtonGroup.size("lg"), `<div class="btn-group btn-group-lg" role="group"></div>`));
 	}
 
-	O vertical(this O)(bool mode) {
+	O vertical(this O)(bool mode = true) {
 		if (mode) {
 			_classes = _classes.sub("btn-group");
 			_classes ~= "btn-group-vertical";
 		}
+		else {
+			_classes = _classes.sub("btn-group-vertical");
+			_classes ~= "btn-group";
+		}
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5ButtonGroup.vertical(true), `<div class="btn-group-vertical" role="group"></div>`));
+		assert(Assert(BS5ButtonGroup.vertical, `<div class="btn-group-vertical" role="group"></div>`));
 	}
 
 	mixin(MyAttribute!("label", "aria-label"));

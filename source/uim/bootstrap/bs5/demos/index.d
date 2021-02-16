@@ -32,7 +32,7 @@ H5Main(["style":"margin-top:70px;"],
         BS5List
         .item(H5A(["href":"/demos/uim-bootstrap/5/basic"], "Basic"))
         .item(H5A(["href":"/demos/uim-bootstrap/5/complex"], "Complex"))
-        .item(H5A(["href":"/demos/uim-bootstrap/5/example"], "Example Pages"))
+        .item(H5A(["href":"/demos/uim-bootstrap/5/examples"], "Example Pages"))
       )
 
     ),

@@ -29,7 +29,7 @@ static this() {
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none; /* Prevent inheritance from body */
 }
 
 

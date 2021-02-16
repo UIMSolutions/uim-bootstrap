@@ -1,4 +1,4 @@
-module source.uim.bootstrap.bs5.demos.examples.carousel;
+module uim.bootstrap.bs5.demos.examples.carousel;
 
 import uim.bootstrap;
 

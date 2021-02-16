@@ -3,7 +3,7 @@ module uim.bootstrap.bs5.demos.complex;
 import uim.bootstrap; 
 
 static this() {
-	demoBS5.pages("5/complex", new class DH5AppPage {
+	demoBS5.pages("complex", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -21,13 +21,14 @@ H5Main(["style":"margin-top:70px;"],
     bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5"], "Complex")),
   BS5Container(["mt-3"]).row(
-    H5Div(["col-12", "col-lg-2"]),
+    H5Div(["col-12", "col-lg-2"],
+      listLevels("complex")
+    ),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(this),
-      H5H2(["display-4"], "Bootstrap 5 Demo"),
+      H5H2(["display-4"], "Bootstrap 5 Demo - Complex elements"),
       H5Hr,
 
-      listLevels("complex"),
       listAreas("complex")
 
     ),

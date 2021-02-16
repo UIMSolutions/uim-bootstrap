@@ -24,7 +24,12 @@ auto elementsExample = demoBs5Example("elements", "Heading elements",
     H5H4("h4 heading"),
     H5H5("h5 heading"),
     H5H6("h6 heading"),
-  ), ``, ``);
+  ), `H5H1("h1 heading")
+  H5H2("h2 heading")
+  H5H3("h3 heading")
+  H5H4("h4 heading")
+  H5H5("h5 heading")
+  H5H6("h6 heading")`, ``);
 
 auto classesExample = demoBs5Example("classes", "Heading classes", 
   H5Div(
@@ -34,7 +39,12 @@ auto classesExample = demoBs5Example("classes", "Heading classes",
     H5P(["h4"], ".h4 heading"),
     H5P(["h5"], ".h5 heading"),
     H5P(["h6"], ".h6 heading")
-  ), ``, ``);
+  ), `H5P(["h1"], ".h1 heading")
+  H5P(["h2"], ".h2 heading")
+  H5P(["h3"], ".h3 heading")
+  H5P(["h4"], ".h4 heading")
+  H5P(["h5"], ".h5 heading")
+  H5P(["h6"], ".h6 heading")`, ``);
 
 auto secondaryExample = demoBs5Example("secondary", "Secondary headings", 
   H5Div(
@@ -231,7 +241,7 @@ auto descriptionExample = demoBs5Example("description", "Description lists",
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/contents"], 
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/contents"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Contents"], "Typography")),
 
   BS5Container(["mt-3"]).row(

@@ -20,13 +20,15 @@ auto borderExample = demoBs5Example("border", "Border spinner",
   H5Div(
     BS5SpinnerBorder(["role":"status"], 
       H5Span(["visually-hidden"], "Loading..."))
-      ), ``, ``);
+      ), `BS5SpinnerBorder(["role":"status"], 
+      H5Span(["visually-hidden"], "Loading..."))`, ``);
 
 auto growingExample = demoBs5Example("growing", "Growing spinner", 
   H5Div(
     BS5SpinnerGrow(["role":"status"], 
       H5Span(["visually-hidden"], "Loading..."))
-      ), ``, ``);
+      ), `BS5SpinnerGrow(["role":"status"], 
+      H5Span(["visually-hidden"], "Loading..."))`, ``);
 
 auto colorsExample = demoBs5Example("colors", "Colors Border", 
   H5Div(
@@ -76,7 +78,12 @@ auto sizingExample = demoBs5Example("sizing", "Sizing Border",
       H5Span(["visually-hidden"], "Loading...")),
     BS5SpinnerBorder(["role":"status", "style":"width: 3rem; height: 3rem;"], 
       H5Span(["visually-hidden"], "Loading..."))
-      ), ``, ``);
+      ), `BS5SpinnerBorder(["spinner-border-sm"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerBorder(["role":"status", "style":"width: 3rem; height: 3rem;"], 
+      H5Span(["visually-hidden"], "Loading..."))`, ``);
 
 auto sizing2Example = demoBs5Example("sizing2", "Sizing Grow", 
   H5Div(
@@ -86,7 +93,12 @@ auto sizing2Example = demoBs5Example("sizing2", "Sizing Grow",
       H5Span(["visually-hidden"], "Loading...")),
     BS5SpinnerGrow(["role":"status", "style":"width: 3rem; height: 3rem;"], 
       H5Span(["visually-hidden"], "Loading..."))
-      ), ``, ``);
+      ), `BS5SpinnerGrow(["spinner-grow-sm"], ["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["role":"status"], 
+      H5Span(["visually-hidden"], "Loading...")),
+    BS5SpinnerGrow(["role":"status", "style":"width: 3rem; height: 3rem;"], 
+      H5Span(["visually-hidden"], "Loading..."))`, ``);
 
 auto alignmentExample = demoBs5Example("alignment", "Alignment", 
   H5Div(
@@ -115,7 +127,7 @@ auto alignmentExample = demoBs5Example("alignment", "Alignment",
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/components"], 
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/components"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Components"], "Spinners")),
 
   BS5Container(["mt-3"]).row(

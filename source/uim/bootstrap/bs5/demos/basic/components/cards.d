@@ -17,92 +17,183 @@ static this() {
     override string content() { 
 auto textExample = demoBs5Example("text", "Text",  
   H5Div(
+    H5H6("Source: Immanuel Kant - What  is  Enlightenment?"),
     BS5Card(["w-50"], 
       BS5CardBody(
-        BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
-        BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
+        BS5CardText("Enlightenment is the departure of the human being from its self-incurred minority."),
+        BS5CardText("Minority is the inability to make use of one's understanding without direction of another.")
+      )),
+    H5Br,
+    BS5Card( 
+      BS5CardBody(
+        BS5CardText("This minority is self-incurred when the cause of it lies not in the lack of understanding but of resolution and of courage to make use of it without direction of another."),
+        BS5CardText("Have courage to make use of your own understanding! is thus the motto of enlightenment.")
       ))
   ), 
   `BS5Card(["w-50"], 
-      BS5CardBody(
-        BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
-        BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
-      ))`, ``);
+  BS5CardBody(
+    BS5CardText("..."),
+    BS5CardText("...")
+  )),
+BS5Card( 
+  BS5CardBody(
+    BS5CardText("..."),
+    BS5CardText("...")
+  ))`, `<div class="card w-50">
+  <div class="card-body">
+    <p class="card-text">...</p>
+    <p class="card-text">...</p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <p class="card-text">...</p>
+    <p class="card-text">...</p>
+  </div>
+</div>`);
 
 auto titleExample = demoBs5Example("title", "Title",  
   H5Div(
     BS5Card(["w-50"], 
       BS5CardBody(
-        BS5CardTitle("Card title")))
+        BS5CardTitle("This is a Card title"))),
+    H5Br,
+    BS5Card( 
+      BS5CardBody(
+        BS5CardTitle("This is a long Card title")))
   ), 
   `BS5Card(["w-50"], 
   BS5CardBody(
-    BS5CardTitle("Card title")))
-`, ``);
+    BS5CardTitle("..."))),
+BS5Card( 
+  BS5CardBody(
+    BS5CardTitle("...")))
+`, `<div class="card w-50">
+  <div class="card-body">
+    <h4 class="card-title">...</h4>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">...</h4>
+  </div>
+</div>`);
 
 auto subtitleExample = demoBs5Example("subtitle", "Subtitle",
   H5Div(
     BS5Card(["w-50"], 
       BS5CardBody(
-        BS5CardSubtitle("Card subtitle")))
+        BS5CardSubtitle("Card subtitle"))),
+    H5Br,
+    BS5Card( 
+      BS5CardBody(
+        BS5CardSubtitle("Longer card subtitle")))
   ), 
   `BS5Card(["w-50"], 
   BS5CardBody(
-    BS5CardSubtitle("Card subtitle")))
+    BS5CardSubtitle("Card subtitle"))),
+BS5Card( 
+  BS5CardBody(
+    BS5CardSubtitle("Longer card subtitle")))
 `, ``);
 
 auto buttonExample = demoBs5Example("button", "Button",
   H5Div(
     BS5Card(["w-50"], 
       BS5CardBody(
-        BS5ButtonLink(["btn-primary"], "Button")))
+        BS5ButtonLink(["btn-primary"], "Button"))),
+    H5Br,
+    BS5Card( 
+      BS5CardBody(
+        BS5ButtonLink(["btn-primary"], "Long Button")))
   ), 
   `BS5Card(["w-50"], 
   BS5CardBody(
-    BS5ButtonLink(["btn-primary"], "Button")))`, ``);
+    BS5ButtonLink(["btn-primary"], "Button"))),
+BS5Card( 
+  BS5CardBody(
+    BS5ButtonLink(["btn-primary"], "Long Button")))`, 
+`<div class="card w-50">
+  <div class="card-body">
+    <a class="btn btn-primary" type="button">Button</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <a class="btn btn-primary" type="button">Long Button</a>
+  </div>
+</div>`);
 
 auto linksExample = demoBs5Example("links", "Links",
   H5Div(
     BS5CardBody(
-      BS5CardLink(["href":"#"], "Card link"),
-      BS5CardLink(["href":"#"], "Card link"),
-      BS5CardLink(["href":"#"], "Card link"))
+      BS5CardLink(["href":"#"], "Card link 1"),
+      BS5CardLink(["href":"#"], "Card link 2"),
+      BS5CardLink(["href":"#"], "Card link 3"))
   ), 
   `BS5CardBody(
-  BS5CardLink(["href":"#"], "Card link"),
-  BS5CardLink(["href":"#"], "Card link"),
-  BS5CardLink(["href":"#"], "Card link"))`, ``);
+  BS5CardLink(["href":"#"], "Card link 1"),
+  BS5CardLink(["href":"#"], "Card link 2"),
+  BS5CardLink(["href":"#"], "Card link 3"))`, 
+  `<div class="card-body">
+  <a class="card-link" href="#">Card link 1</a>
+  <a class="card-link" href="#">Card link 2</a>
+  <a class="card-link" href="#">Card link 3</a>
+</div>`);
 
 auto lgExample = demoBs5Example("listgroup", "List Group",
   H5Div(
     BS5Card(["w-50"], 
       BS5List(["list-group-flush"],
-        BS5ListItem("List group item"),
-        BS5ListItem("List group item"),
-        BS5ListItem("List group item")))        
+        BS5ListItem("List group item 1"),
+        BS5ListItem("List group item 2"),
+        BS5ListItem("List group item 3"))),
+    H5Br,
+    BS5Card(
+      BS5List(["list-group-flush"],
+        BS5ListItem("List group item 1"),
+        BS5ListItem("List group item 2"),
+        BS5ListItem("List group item 3")))          
   ), 
   `BS5Card(["w-50"], 
   BS5List(["list-group-flush"],
-    BS5ListItem("List group item"),
-    BS5ListItem("List group item"),
-    BS5ListItem("List group item")`, ``);
+    BS5ListItem("List group item 1"),
+    BS5ListItem("List group item 2"),
+    BS5ListItem("List group item 3"))),
+BS5Card( 
+  BS5List(["list-group-flush"],
+    BS5ListItem("List group item 1"),
+    BS5ListItem("List group item 2"),
+    BS5ListItem("List group item 3")))`, 
+  ``);
 
 auto headerExample = demoBs5Example("header", "Header",
   H5Div(
     BS5Card(["w-50"], 
+      BS5CardHeader("Card header")),
+    H5Br,
+    BS5Card( 
       BS5CardHeader("Card header"))
   ), 
   `BS5Card(["w-50"], 
-  BS5CardHeader("Card header"))
+  BS5CardHeader("Card header")),
+BS5Card(
+  BS5CardHeader("Long card header"))
 `, ``);
 
 auto footerExample = demoBs5Example("footer", "Footer",
   H5Div(
     BS5Card(["w-50"], 
-      BS5CardFooter("Created DD-MM-YYYY"))
+      BS5CardFooter("Created DD-MM-YYYY")),
+    H5Br,
+    BS5Card(
+      BS5CardFooter("Long Footer"))
     ), 
     `BS5Card(["w-50"], 
-      BS5CardFooter("Created DD-MM-YYYY"))`, ``);
+  BS5CardFooter("Created DD-MM-YYYY")),
+BS5Card(["w-50"], 
+  BS5CardFooter("Long Footer"))`, 
+``);
 
 
            /* 
@@ -430,7 +521,7 @@ demoBs5Example("footer", "Mit Footer",
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/components"], 
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/components"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Components"], "Cards")),
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"], 
@@ -439,9 +530,10 @@ H5Main(["style":"margin-top:70px;"],
       listSections("basic", "components", "cards")),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(this),
-      H5H2(["display-4"], "Bootstrap 5 Demo <small>Using Helpers</small>"),
+      H5H2(H5Small("Bootstrap 5 Demo "), H5String("Using Cards")),
       H5Hr,
       
+      textExample,
       titleExample,
       subtitleExample,
       buttonExample,
@@ -449,8 +541,6 @@ H5Main(["style":"margin-top:70px;"],
       lgExample,
       headerExample,
       footerExample,
-      textExample,
-      titleExample
 
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;

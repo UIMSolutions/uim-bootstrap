@@ -18,7 +18,7 @@ static this() {
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/components"], 
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/components"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Components"], "Paginations")),
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"], 
@@ -38,7 +38,13 @@ demoBs5Example("numberstext", "Numbers and text",
         BS5PageItem(BS5PageLink(["href":"#"], "1")),
         BS5PageItem(BS5PageLink(["href":"#"], "2")),
         BS5PageItem(BS5PageLink(["href":"#"], "3")),
-        BS5PageItem(BS5PageLink(["href":"#"], "Next"))))), ``, ``),
+        BS5PageItem(BS5PageLink(["href":"#"], "Next"))))
+  ), `BS5Pagination(
+  BS5PageItem(BS5PageLink(["href":"#"], "Previous")),
+  BS5PageItem(BS5PageLink(["href":"#"], "1")),
+  BS5PageItem(BS5PageLink(["href":"#"], "2")),
+  BS5PageItem(BS5PageLink(["href":"#"], "3")),
+  BS5PageItem(BS5PageLink(["href":"#"], "Next"))))`, ``),
 
 demoBs5Example("numbersicons", "Numbers and icons",
   H5Div(
@@ -50,7 +56,16 @@ demoBs5Example("numbersicons", "Numbers and icons",
         BS5PageItem(BS5PageLink(["href":"#"], "2")),
         BS5PageItem(BS5PageLink(["href":"#"], "3")),
         BS5PageItem(
-          BS5PageLink(["href":"#", "aria-label":"Next"], H5Span(["aria-hidden":"true"], "&raquo;"))))), ``, ``),
+          BS5PageLink(["href":"#", "aria-label":"Next"], H5Span(["aria-hidden":"true"], "&raquo;"))))
+  ), `BS5Nav(["aria-label":"Search results pages"], 
+  BS5Pagination(
+    BS5PageItem(
+      BS5PageLink(["href":"#", "aria-label":"Previous"], H5Span(["aria-hidden":"true"], "&laquo;")))),
+    BS5PageItem(BS5PageLink(["href":"#"], "1")),
+    BS5PageItem(BS5PageLink(["href":"#"], "2")),
+    BS5PageItem(BS5PageLink(["href":"#"], "3")),
+    BS5PageItem(
+      BS5PageLink(["href":"#", "aria-label":"Next"], H5Span(["aria-hidden":"true"], "&raquo;"))))`, ``),
 
 demoBs5Example("activedisabled", "Active and disabled items",
   H5Div(
@@ -63,7 +78,17 @@ demoBs5Example("activedisabled", "Active and disabled items",
         BS5PageItem(["active"], ["aria-current":"page"], 
           BS5PageLink(["href":"#"], H5Span(["visually-hidden"], "(current)"))),
         BS5PageItem(["disabled"],  
-          BS5PageLink(["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Next"))))), ``, ``),
+          BS5PageLink(["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Next"))))
+  ), `BS5Nav(["aria-label":"Search results pages"], 
+  BS5Pagination(
+    BS5PageItem(BS5PageLink(["href":"#"], "Previous")),
+    BS5PageItem(BS5PageLink(["href":"#"], "1")),
+    BS5PageItem(BS5PageLink(["href":"#"], "2")),
+    BS5PageItem(BS5PageLink(["href":"#"], "3")),
+    BS5PageItem(["active"], ["aria-current":"page"], 
+      BS5PageLink(["href":"#"], H5Span(["visually-hidden"], "(current)"))),
+    BS5PageItem(["disabled"],  
+      BS5PageLink(["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Next"))))`, ``),
 
 demoBs5Example("activedisabledanchors", "Active and disabled items without anchors",
   H5Div(

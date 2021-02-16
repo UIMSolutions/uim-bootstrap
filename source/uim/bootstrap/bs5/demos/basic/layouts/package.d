@@ -21,13 +21,15 @@ H5Main(["style":"margin-top:70px;"],
     bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic"], "Layouts")),
   BS5Container(["mt-3"]).row(
-    H5Div(["col-12", "col-lg-2"], listLevels("basic")),
+    H5Div(["col-12", "col-lg-2"], 
+      listLevels("basic"),
+      listAreas("basic", "layouts")),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(this),
       H5H2(["display-4"], "Bootstrap 5 Demo <small>Using Layouts</small>"),
       H5Hr,
 
-      listAreas("basic", "layouts")
+      listSections("basic", "layouts")
 
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;

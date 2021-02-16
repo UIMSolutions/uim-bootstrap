@@ -1,9 +1,9 @@
-module source.uim.bootstrap.bs5.demos.examples.checkout;
+module uim.bootstrap.bs5.demos.examples.checkout;
 
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("examples/starter", new class DH5AppPage {
+	demoBS5.pages("examples/checkout", new class DH5AppPage {
 		this() { 
 			super(); 
 			this

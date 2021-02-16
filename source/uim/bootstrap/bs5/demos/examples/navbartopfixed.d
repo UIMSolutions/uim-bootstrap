@@ -1,9 +1,9 @@
-module uim.bootstrap.bs5.demos.examples.starter;
+module uim.bootstrap.bs5.demos.examples.navbartopfixed;
 
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("examples/starter", new class DH5AppPage {
+	demoBS5.pages("examples/navbartopfixed", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -18,7 +18,11 @@ static this() {
 
       return 
 `<style>
-      .bd-placeholder-img {
+      body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+.bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
@@ -33,18 +37,19 @@ static this() {
       }
     </style>
 
-    body {
-  padding-top: 5rem;
-}
     
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!-- Custom styles for this template -->
+    <link href="navbar-top-fixed.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">Fixed navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item active">
           <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -54,14 +59,6 @@ static this() {
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
         </li>
       </ul>
       <form class="d-flex">
@@ -73,13 +70,12 @@ static this() {
 </nav>
 
 <main class="container">
-
-  <div class="starter-template text-center py-5 px-3">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+  <div class="bg-light p-5 rounded">
+    <h1>Navbar example</h1>
+    <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
+    <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
   </div>
-
-</main><!-- /.container -->
+</main>
 `;
 
     }

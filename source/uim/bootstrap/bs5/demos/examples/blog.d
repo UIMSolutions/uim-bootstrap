@@ -1,9 +1,9 @@
-module source.uim.bootstrap.bs5.demos.examples.blog;
+module uim.bootstrap.bs5.demos.examples.blog;
 
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("examples/album", new class DH5AppPage {
+	demoBS5.pages("examples/blog", new class DH5AppPage {
 		this() { 
 			super(); 
 			this

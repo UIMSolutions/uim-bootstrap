@@ -24,86 +24,198 @@ auto noExample = demoBs5Example("no", "No progress",
 
 auto inlineExample = demoBs5Example("inline", "Width using inline styles",
   H5Div(
-    BS5Progress(
-      BS5ProgressBar(["style":"width: 17%", "aria-valuenow":"17", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["style":"width: 33%", "aria-valuenow":"33", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["style":"width: 62%", "aria-valuenow":"62", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["style":"width: 86%", "aria-valuenow":"86", "aria-valuemin":"0", "aria-valuemax":"100"]))
-      ), ``, ``);
+    BS5Progress
+    .bar(["style":"width: 15%", "aria-valuenow":"15", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["style":"width: 33%", "aria-valuenow":"33", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["style":"width: 62%", "aria-valuenow":"62", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["style":"width: 75%", "aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"])
+      ), `BS5Progress(
+  BS5ProgressBar(["style":"width: 15%", "aria-valuenow":"15", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["style":"width: 33%", "aria-valuenow":"33", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["style":"width: 62%", "aria-valuenow":"62", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["style":"width: 75%", "aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"]))
+  
+--- Compact version ---
+
+BS5Progress
+.bar(["style":"width: 15%", "aria-valuenow":"15", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["style":"width: 33%", "aria-valuenow":"33", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["style":"width: 62%", "aria-valuenow":"62", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["style":"width: 75%", "aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"])`, ``);
 
 auto sizingExample = demoBs5Example("sizing", "Width using sizing classes",
   H5Div(
-    BS5Progress(
-      BS5ProgressBar(["w-25"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-75"], ["aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-100"], ["aria-valuenow":"100", "aria-valuemin":"0", "aria-valuemax":"100"]))
-      ), ``, ``);
+    BS5Progress
+    .bar(["w-25"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-75"], ["aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-100"], ["aria-valuenow":"100", "aria-valuemin":"0", "aria-valuemax":"100"])
+      ), `BS5Progress(
+  BS5ProgressBar(["w-25"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-75"], ["aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-100"], ["aria-valuenow":"100", "aria-valuemin":"0", "aria-valuemax":"100"]))
+  
+--- Compact version ---
+
+BS5Progress
+.bar(["w-25"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-75"], ["aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-100"], ["aria-valuenow":"100", "aria-valuemin":"0", "aria-valuemax":"100"])`, ``);
 
 auto labelExample = demoBs5Example("label", "Label",
   H5Div(
-    BS5Progress(
-      BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"], "50%"))
-      ), ``, ``);
+    BS5Progress
+    .bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"], "50%")
+      ), `BS5Progress(
+  BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"], "50%"))
+  
+--- Compact version ---
+
+BS5Progress
+    .bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"], "50%")`, ``);
 
 auto heightExample = demoBs5Example("height", "Height using inline styles",
   H5Div(
-    BS5Progress(["style":"height: 0.5rem;"], 
-      BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(["style":"height: 2rem;"], 
-      BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
-      ), ``, ``);
+    BS5Progress(["style":"height: 0.5rem;"])
+    .bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress(["style":"height: 2rem;"])
+    .bar(["w-50"], ["aria-valuenow":"50", "aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+      ), `BS5Progress(["style":"height: 0.5rem;"], 
+  BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
+BS5Progress(["style":"height: 2rem;"], 
+  BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+  
+--- Compact version ---
+
+BS5Progress(["style":"height: 0.5rem;"])
+.bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+BS5Progress(["style":"height: 2rem;"])
+.bar(["w-50"], ["aria-valuenow":"50", "aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])`, ``);
 
 auto backgroundExample = demoBs5Example("background", "Background colors",
   H5Div(
-    BS5Progress(
-      BS5ProgressBar(["w-50", "bg-primary"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-50", "bg-secondary"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-50", "bg-success"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-50", "bg-danger"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-50", "bg-warning"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-50", "bg-info"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-50", "bg-light", "text-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
-    BS5Progress(
-      BS5ProgressBar(["w-50", "bg-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), 
-      ), ``, ``);
+    BS5Progress
+    .bar(["w-50", "bg-primary"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-50", "bg-secondary"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-50", "bg-success"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-50", "bg-danger"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-50", "bg-warning"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-50", "bg-info"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-50", "bg-light", "text-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+    BS5Progress
+    .bar(["w-50", "bg-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), 
+      ), `BS5Progress(
+  BS5ProgressBar(["w-50", "bg-primary"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-50", "bg-secondary"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-50", "bg-success"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-50", "bg-danger"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-50", "bg-warning"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-50", "bg-info"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-50", "bg-light", "text-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["w-50", "bg-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+  
+--- Compact Version ---
+
+BS5Progress
+.bar(["w-50", "bg-primary"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-50", "bg-secondary"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-50", "bg-success"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-50", "bg-danger"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-50", "bg-warning"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-50", "bg-info"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-50", "bg-light", "text-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["w-50", "bg-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), 
+  `, ``);
 
 auto stripesExample = demoBs5Example("stripes", "Stripes",
   H5Div(
-    BS5Progress(
-      BS5ProgressBar(["progress-bar-striped", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
-    ), ``, ``);
+    BS5Progress
+    .bar(["progress-bar-striped", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+    ), `BS5Progress(
+  BS5ProgressBar(["progress-bar-striped", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+  
+--- Compact version ---
+
+BS5Progress
+.bar(["progress-bar-striped", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+  `, ``);
 
 auto animatedExample = demoBs5Example("animated", "Animated Stripes",
   H5Div(
-    BS5Progress(
-      BS5ProgressBar(["progress-bar-striped", "progress-bar-animated", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
-    ), ``, ``);
+    BS5Progress
+    .bar(["progress-bar-striped", "progress-bar-animated", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+    ), `BS5Progress(
+  BS5ProgressBar(["progress-bar-striped", "progress-bar-animated", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
+
+--- Compact version ---
+
+BS5Progress
+.bar(["progress-bar-striped", "progress-bar-animated", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
+`, ``);
 
 auto multipleExample = demoBs5Example("multiple", "Multiple progress bars",
   H5Div(
-    BS5Progress(
-      BS5ProgressBar(["w-25", "bg-info"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"]),
-      BS5ProgressBar(["w-25", "bg-warning"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"]),
-      BS5ProgressBar(["w-25", "bg-danger"],  ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])),
-      ), ``, ``);
+    BS5Progress
+    .bar(["w-25", "bg-info"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
+    .bar(["w-25", "bg-warning"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
+    .bar(["w-25", "bg-danger"],  ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
+      ), `BS5Progress(
+  BS5ProgressBar(["w-25", "bg-info"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"]),
+  BS5ProgressBar(["w-25", "bg-warning"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"]),
+  BS5ProgressBar(["w-25", "bg-danger"],  ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"]))
+
+--- Compact version ---
+
+BS5Progress
+.bar(["w-25", "bg-info"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
+.bar(["w-25", "bg-warning"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
+.bar(["w-25", "bg-danger"],  ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
+`, ``);
 
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic", "/demos/uim-bootstrap/5/basic/components"], 
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/basic/", "/demos/uim-bootstrap/5/basic/components"], 
     ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Basic", "Components"], "Progresses")),
 
   BS5Container(["mt-3"]).row(
