@@ -40,7 +40,7 @@ auto defaultExample = demoBs5Example("default", "Pointer events",
     H5P(["pe-none"], 
       H5A(["href":"#"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
       H5String("In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex."),
-      H5A(["pe-auto"], ["href":"#"], "Etiam eleifend velit leo</a>."))
+      H5A(["pe-auto"], ["href":"#"], "Etiam eleifend velit leo),."))
   ), ``, ``);
 
       return 

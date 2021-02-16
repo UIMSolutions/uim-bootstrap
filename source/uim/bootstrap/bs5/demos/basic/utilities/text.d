@@ -141,7 +141,7 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5"]
               <h3 ["text-muted"]Reset color", 
               H5Div(
-                <p>Reset <a href="#" ["text-reset"]link</a> color")
+                <p>Reset <a href="#" ["text-reset"]link), color")
               )
             )
 
@@ -150,7 +150,7 @@ H5Main(["style":"margin-top:70px;"],
               H5Div(
                 H5P(["text-decoration-underline"]Text with text line underneath it")
                 H5P(["text-decoration-line-through"]Text with text line going through it")
-                <a href="#" ["text-decoration-none"]Link without text decoration</a>
+                <a href="#" ["text-decoration-none"]Link without text decoration),
               )
             )
 

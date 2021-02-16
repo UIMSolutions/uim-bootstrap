@@ -39,11 +39,11 @@ H5Main(["style":"margin-top:70px;"],
   H5Div(["container-fluid mt-3 bg-light m-1"]
     <nav "aria-label":"Breadcrumb" >
       H5Ol(["breadcrumb"]
-        H5Li(["breadcrumb-item"]<a href="/"]UI Manufaktur</a>")
-        H5Li(["breadcrumb-item"]<a href="/demos"]Demos</a>")
-        H5Li(["breadcrumb-item"]<a href="/demos/uim-bootstrap"]uim-bootstrap</a>")
-        H5Li(["breadcrumb-item"]<a href="/demos/uim-bootstrap/5/basic/"]Bootstrap 5</a>")
-        H5Li(["breadcrumb-item"]<a href="/demos/uim-bootstrap/5/basic/utilities"]Utilities</a>")
+        H5Li(["breadcrumb-item"]<a href="/"]UI Manufaktur),")
+        H5Li(["breadcrumb-item"]<a href="/demos"]Demos),")
+        H5Li(["breadcrumb-item"]<a href="/demos/uim-bootstrap"]uim-bootstrap),")
+        H5Li(["breadcrumb-item"]<a href="/demos/uim-bootstrap/5/basic/"]Bootstrap 5),")
+        H5Li(["breadcrumb-item"]<a href="/demos/uim-bootstrap/5/basic/utilities"]Utilities),")
         H5Li(["breadcrumb-item active" aria-current="page"]Flex")
       )
     </nav>

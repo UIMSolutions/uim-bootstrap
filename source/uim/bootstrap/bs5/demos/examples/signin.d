@@ -11,14 +11,8 @@ static this() {
 			.changed(timeLastModified(__FILE_FULL_PATH__))
 			.parameters([
 					"pageTitle": "Starter Page - Bootstrap 5 Demo",
-          ]);
-		} 
-			
-    override string content() { 
-
-      return 
-`<style>
-      html,
+          ])
+      .styles(`html,
 body {
   height: 100%;
 }
@@ -50,12 +44,12 @@ body {
 .form-signin .form-control:focus {
   z-index: 2;
 }
-.form-signin input[type="email"] {
+.form-signin input["type":"email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.form-signin input[type="password"] {
+.form-signin input["type":"password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -72,10 +66,13 @@ body {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
-    </style>
+      }`);
+		} 
+			
+    override string content() { 
 
-    
+      return 
+`   
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
   </head>
@@ -83,19 +80,19 @@ body {
     
 <main class="form-signin">
   <form>
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-    <label for="inputEmail" class="visually-hidden">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="visually-hidden">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <div class="checkbox mb-3">
+    H5Img(["mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" "width":"72" "height":"57">
+    H5H1(["h3 mb-3 fw-normal"], "Please sign in"),
+    <label for="inputEmail" class="visually-hidden"], "Email address"),
+    BS5InputEmail("inputEmail", ["placeholder":"Email address", "required":"required", "autofocus":"autofocus"]),
+    <label for="inputPassword" class="visually-hidden"], "Password"),
+    <input "type":"password" id="inputPassword" class="form-control" "placeholder":"Password" required>
+    H5Div(["checkbox mb-3">
       <label>
-        <input type="checkbox" value="remember-me"> Remember me
+        <input "type":"checkbox" value="remember-me"], " Remember me
       </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020")
+    ),
+    BS5ButtonSubmit(["w-100", "btn-lg btn-primary"], "Sign in"),
+    H5P(["mt-5 mb-3 text-muted"], "&copy; 2017-2020")
   </form>
 </main>
 `;

@@ -42,228 +42,228 @@ static this() {
   </head>
   <body class="bg-light">
     
-<div class="container">
+H5Div(["container">
   <main>
-    <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Checkout form</h2>
-      <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.")
-    </div>
+    H5Div(["py-5 text-center">
+      H5Img(["d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" "width":"72" "height":"57">
+      H5H2("Checkout form")
+      H5P(["lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.")
+    ),
 
-    <div class="row g-3">
-      <div class="col-md-5 col-lg-4 order-md-last">
-        <h4 class="d-flex justify-content-between align-items-center mb-3">
+    H5Div(["row g-3">
+      H5Div(["col-md-5 col-lg-4 order-md-last">
+        H5H4(["d-flex justify-content-between align-items-center mb-3">
           <span class="text-muted">Your cart</span>
           <span class="badge bg-secondary rounded-pill">3</span>
         </h4>
-        <ul class="list-group mb-3">
+        H5Ul(["list-group mb-3">
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Product name</h6>
               <small class="text-muted">Brief description</small>
-            </div>
+            ),
             <span class="text-muted">$12</span>
-          </li>
+          ),
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Second product</h6>
               <small class="text-muted">Brief description</small>
-            </div>
+            ),
             <span class="text-muted">$8</span>
-          </li>
+          ),
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Third item</h6>
               <small class="text-muted">Brief description</small>
-            </div>
+            ),
             <span class="text-muted">$5</span>
-          </li>
+          ),
           <li class="list-group-item d-flex justify-content-between bg-light">
-            <div class="text-success">
+            H5Div(["text-success">
               <h6 class="my-0">Promo code</h6>
               <small>EXAMPLECODE</small>
-            </div>
+            ),
             <span class="text-success">−$5</span>
-          </li>
+          ),
           <li class="list-group-item d-flex justify-content-between">
             <span>Total (USD)</span>
-            <strong>$20</strong>
-          </li>
+            <strong>$20")
+          ),
         </ul>
 
-        <form class="card p-2">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Promo code">
-            <button type="submit" class="btn btn-secondary">Redeem</button>
-          </div>
+        H5Form(["card p-2">
+          H5Div(["input-group">
+            <input "type":"text" class="form-control" "placeholder":"Promo code">
+            BS5ButtonSubmit(["btn-secondary"], "Redeem")
+          ),
         </form>
-      </div>
-      <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">Billing address</h4>
-        <form class="needs-validation" novalidate>
-          <div class="row g-3">
-            <div class="col-sm-6">
+      ),
+      H5Div(["col-md-7 col-lg-8">
+        H5H4(["mb-3">Billing address</h4>
+        H5Form(["needs-validation" novalidate>
+          H5Div(["row g-3">
+            H5Div(["col-sm-6">
               <label for="firstName" class="form-label">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-              <div class="invalid-feedback">
+              <input "type":"text" class="form-control" id="firstName" "placeholder":"" value="" required>
+              H5Div(["invalid-feedback">
                 Valid first name is required.
-              </div>
-            </div>
+              ),
+            ),
 
-            <div class="col-sm-6">
+            H5Div(["col-sm-6">
               <label for="lastName" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-              <div class="invalid-feedback">
+              <input "type":"text" class="form-control" id="lastName" "placeholder":"" value="" required>
+              H5Div(["invalid-feedback">
                 Valid last name is required.
-              </div>
-            </div>
+              ),
+            ),
 
-            <div class="col-12">
+            H5Div(["col-12">
               <label for="username" class="form-label">Username</label>
-              <div class="input-group">
+              H5Div(["input-group">
                 <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
-              <div class="invalid-feedback">
+                <input "type":"text" class="form-control" id="username" "placeholder":"Username" required>
+              H5Div(["invalid-feedback">
                   Your username is required.
-                </div>
-              </div>
-            </div>
+                ),
+              ),
+            ),
 
-            <div class="col-12">
+            H5Div(["col-12">
               <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
+              BS5InputEmail("email", ["placeholder":"you@example.com"]),
+              H5Div(["invalid-feedback">
                 Please enter a valid email address for shipping updates.
-              </div>
-            </div>
+              ),
+            ),
 
-            <div class="col-12">
+            H5Div(["col-12">
               <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-              <div class="invalid-feedback">
+              <input "type":"text" class="form-control" id="address" "placeholder":"1234 Main St" required>
+              H5Div(["invalid-feedback">
                 Please enter your shipping address.
-              </div>
-            </div>
+              ),
+            ),
 
-            <div class="col-12">
+            H5Div(["col-12">
               <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-            </div>
+              <input "type":"text" class="form-control" id="address2" "placeholder":"Apartment or suite">
+            ),
 
-            <div class="col-md-5">
+            H5Div(["col-md-5">
               <label for="country" class="form-label">Country</label>
               <select class="form-select" id="country" required>
                 <option value="">Choose...</option>
                 <option>United States</option>
               </select>
-              <div class="invalid-feedback">
+              H5Div(["invalid-feedback">
                 Please select a valid country.
-              </div>
-            </div>
+              ),
+            ),
 
-            <div class="col-md-4">
+            H5Div(["col-md-4">
               <label for="state" class="form-label">State</label>
               <select class="form-select" id="state" required>
                 <option value="">Choose...</option>
                 <option>California</option>
               </select>
-              <div class="invalid-feedback">
+              H5Div(["invalid-feedback">
                 Please provide a valid state.
-              </div>
-            </div>
+              ),
+            ),
 
-            <div class="col-md-3">
+            H5Div(["col-md-3">
               <label for="zip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
-              <div class="invalid-feedback">
+              <input "type":"text" class="form-control" id="zip" "placeholder":"" required>
+              H5Div(["invalid-feedback">
                 Zip code required.
-              </div>
-            </div>
-          </div>
+              ),
+            ),
+          ),
 
           <hr class="my-4">
 
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address">
+          H5Div(["form-check">
+            <input "type":"checkbox" class="form-check-input" id="same-address">
             <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-          </div>
+          ),
 
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
+          H5Div(["form-check">
+            <input "type":"checkbox" class="form-check-input" id="save-info">
             <label class="form-check-label" for="save-info">Save this information for next time</label>
-          </div>
+          ),
 
           <hr class="my-4">
 
-          <h4 class="mb-3">Payment</h4>
+          H5H4(["mb-3">Payment</h4>
 
-          <div class="my-3">
-            <div class="form-check">
-              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+          H5Div(["my-3">
+            H5Div(["form-check">
+              <input id="credit" name="paymentMethod" "type":"radio" class="form-check-input" checked required>
               <label class="form-check-label" for="credit">Credit card</label>
-            </div>
-            <div class="form-check">
-              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+            ),
+            H5Div(["form-check">
+              <input id="debit" name="paymentMethod" "type":"radio" class="form-check-input" required>
               <label class="form-check-label" for="debit">Debit card</label>
-            </div>
-            <div class="form-check">
-              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+            ),
+            H5Div(["form-check">
+              <input id="paypal" name="paymentMethod" "type":"radio" class="form-check-input" required>
               <label class="form-check-label" for="paypal">PayPal</label>
-            </div>
-          </div>
+            ),
+          ),
 
-          <div class="row gy-3">
-            <div class="col-md-6">
+          H5Div(["row gy-3">
+            H5Div(["col-md-6">
               <label for="cc-name" class="form-label">Name on card</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <input "type":"text" class="form-control" id="cc-name" "placeholder":"" required>
               <small class="text-muted">Full name as displayed on card</small>
-              <div class="invalid-feedback">
+              H5Div(["invalid-feedback">
                 Name on card is required
-              </div>
-            </div>
+              ),
+            ),
 
-            <div class="col-md-6">
+            H5Div(["col-md-6">
               <label for="cc-number" class="form-label">Credit card number</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required>
-              <div class="invalid-feedback">
+              <input "type":"text" class="form-control" id="cc-number" "placeholder":"" required>
+              H5Div(["invalid-feedback">
                 Credit card number is required
-              </div>
-            </div>
+              ),
+            ),
 
-            <div class="col-md-3">
+            H5Div(["col-md-3">
               <label for="cc-expiration" class="form-label">Expiration</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-              <div class="invalid-feedback">
+              <input "type":"text" class="form-control" id="cc-expiration" "placeholder":"" required>
+              H5Div(["invalid-feedback">
                 Expiration date required
-              </div>
-            </div>
+              ),
+            ),
 
-            <div class="col-md-3">
+            H5Div(["col-md-3">
               <label for="cc-cvv" class="form-label">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-              <div class="invalid-feedback">
+              <input "type":"text" class="form-control" id="cc-cvv" "placeholder":"" required>
+              H5Div(["invalid-feedback">
                 Security code required
-              </div>
-            </div>
-          </div>
+              ),
+            ),
+          ),
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          H5Button(["w-100 btn btn-primary btn-lg" "type":"submit">Continue to checkout)
         </form>
-      </div>
-    </div>
+      ),
+    ),
   </main>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2017–2020 Company Name")
-    <ul class="list-inline">
-      <li class="list-inline-item">H5A(["href":"#"], Privacy</a></li>
-      <li class="list-inline-item">H5A(["href":"#"], Terms</a></li>
-      <li class="list-inline-item">H5A(["href":"#"], Support</a></li>
+    H5P(["mb-1">&copy; 2017–2020 Company Name")
+    H5Ul(["list-inline">
+      <li class="list-inline-item">H5A(["href":"#"], Privacy")),
+      <li class="list-inline-item">H5A(["href":"#"], Terms")),
+      <li class="list-inline-item">H5A(["href":"#"], Support")),
     </ul>
   </footer>
-</div>
+),
 
 
     <script>// Example starter JavaScript for disabling form submissions if there are invalid fields

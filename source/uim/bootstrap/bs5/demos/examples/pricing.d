@@ -47,112 +47,112 @@ static this() {
   <body>
     
 <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <p class="h5 my-0 me-md-auto fw-normal">Company name")
-  <nav class="my-2 my-md-0 me-md-3">
-    <a class="p-2 text-dark" href="#">Features</a>
-    <a class="p-2 text-dark" href="#">Enterprise</a>
-    <a class="p-2 text-dark" href="#">Support</a>
-    <a class="p-2 text-dark" href="#">Pricing</a>
-  </nav>
-  <a class="btn btn-outline-primary" href="#">Sign up</a>
+  H5P(["h5 my-0 me-md-auto fw-normal">Company name")
+  H5Nav(["my-2 my-md-0 me-md-3">
+    H5A(["p-2 text-dark"], ["href":"#"], Features"),
+    H5A(["p-2 text-dark"], ["href":"#"], Enterprise"),
+    H5A(["p-2 text-dark"], ["href":"#"], Support"),
+    H5A(["p-2 text-dark"], ["href":"#"], Pricing"),
+  ),
+  H5A(["btn btn-outline-primary"], ["href":"#"], Sign up"),
 </header>
 
-<main class="container">
-  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Pricing</h1>
-    <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.")
-  </div>
+H5Main(["container"], 
+  H5Div(["pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    H5H1(["display-4">Pricing</h1>
+    H5P(["lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.")
+  ),
 
-  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-    <div class="col">
-      <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 fw-normal">Free</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>10 users included</li>
-          <li>2 GB of storage</li>
-          <li>Email support</li>
-          <li>Help center access</li>
+  H5Div(["row row-cols-1 row-cols-md-3 mb-3 text-center">
+    H5Div(["col">
+      H5Div(["card mb-4 shadow-sm">
+      H5Div(["card-header">
+        H5H4(["my-0 fw-normal">Free</h4>
+      ),
+      H5Div(["card-body">
+        H5H1(["card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+        H5Ul(["list-unstyled mt-3 mb-4">
+          H5Li("10 users included),
+          H5Li("2 GB of storage),
+          H5Li("Email support),
+          H5Li("Help center access),
         </ul>
-        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-      </div>
-    </div>
-    </div>
-    <div class="col">
-      <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 fw-normal">Pro</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>20 users included</li>
-          <li>10 GB of storage</li>
-          <li>Priority email support</li>
-          <li>Help center access</li>
+        <button "type":"button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free)
+      ),
+    ),
+    ),
+    H5Div(["col">
+      H5Div(["card mb-4 shadow-sm">
+      H5Div(["card-header">
+        H5H4(["my-0 fw-normal">Pro</h4>
+      ),
+      H5Div(["card-body">
+        H5H1(["card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+        H5Ul(["list-unstyled mt-3 mb-4">
+          H5Li("20 users included),
+          H5Li("10 GB of storage),
+          H5Li("Priority email support),
+          H5Li("Help center access),
         </ul>
-        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-      </div>
-    </div>
-    </div>
-    <div class="col">
-      <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 fw-normal">Enterprise</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>30 users included</li>
-          <li>15 GB of storage</li>
-          <li>Phone and email support</li>
-          <li>Help center access</li>
+        <button "type":"button" class="w-100 btn btn-lg btn-primary">Get started)
+      ),
+    ),
+    ),
+    H5Div(["col">
+      H5Div(["card mb-4 shadow-sm">
+      H5Div(["card-header">
+        H5H4(["my-0 fw-normal">Enterprise</h4>
+      ),
+      H5Div(["card-body">
+        H5H1(["card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+        H5Ul(["list-unstyled mt-3 mb-4">
+          H5Li("30 users included),
+          H5Li("15 GB of storage),
+          H5Li("Phone and email support),
+          H5Li("Help center access),
         </ul>
-        <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-      </div>
-    </div>
-    </div>
-  </div>
+        <button "type":"button" class="w-100 btn btn-lg btn-primary">Contact us)
+      ),
+    ),
+    ),
+  ),
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md">
-        <img class="mb-2" src="../assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+    H5Div(["row">
+      H5Div(["col-12 col-md">
+        H5Img(["mb-2" src="../assets/brand/bootstrap-logo.svg" alt="" "width":"24" "height":"19">
         <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-      </div>
-      <div class="col-6 col-md">
+      ),
+      H5Div(["col-6 col-md">
         <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Cool stuff</a></li>
-          <li><a class="link-secondary" href="#">Random feature</a></li>
-          <li><a class="link-secondary" href="#">Team feature</a></li>
-          <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-          <li><a class="link-secondary" href="#">Another one</a></li>
-          <li><a class="link-secondary" href="#">Last time</a></li>
+        H5Ul(["list-unstyled text-small">
+          H5Li("H5A(["link-secondary"], ["href":"#"], Cool stuff")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Random feature")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Team feature")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Stuff for developers")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Another one")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Last time")),
         </ul>
-      </div>
-      <div class="col-6 col-md">
+      ),
+      H5Div(["col-6 col-md">
         <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Resource</a></li>
-          <li><a class="link-secondary" href="#">Resource name</a></li>
-          <li><a class="link-secondary" href="#">Another resource</a></li>
-          <li><a class="link-secondary" href="#">Final resource</a></li>
+        H5Ul(["list-unstyled text-small">
+          H5Li("H5A(["link-secondary"], ["href":"#"], Resource")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Resource name")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Another resource")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Final resource")),
         </ul>
-      </div>
-      <div class="col-6 col-md">
+      ),
+      H5Div(["col-6 col-md">
         <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Team</a></li>
-          <li><a class="link-secondary" href="#">Locations</a></li>
-          <li><a class="link-secondary" href="#">Privacy</a></li>
-          <li><a class="link-secondary" href="#">Terms</a></li>
+        H5Ul(["list-unstyled text-small">
+          H5Li("H5A(["link-secondary"], ["href":"#"], Team")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Locations")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Privacy")),
+          H5Li("H5A(["link-secondary"], ["href":"#"], Terms")),
         </ul>
-      </div>
-    </div>
+      ),
+    ),
   </footer>
 </main>
 `;
