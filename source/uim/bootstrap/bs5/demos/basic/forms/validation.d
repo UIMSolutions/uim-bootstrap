@@ -21,12 +21,12 @@ static this() {
     H5Form("formValidationDefault", [""],
       H5Div(["mb-3"],
         H5Label(["for":"validationDefaultText"], "Text input"),
-        H5Input("validationDefaultText", ["form-control"], ["type":"text", "required":"required"]),
+        BS5InputText("validationDefaultText", ["required":"required"]),
       ),
       H5Div(["mb-3"],
-        H5Div(["input-group"],
+        BS5InputGroup(
           H5Span("validationDefaultInputGroup", ["input-group-text"], "$"),
-          H5Input(["form-control"], ["type":"number", "aria-label":"Amount", "aria-describedby":"validationDefaultInputGroup", "required":"required"]),
+          BS5InputNumber(["aria-label":"Amount", "aria-describedby":"validationDefaultInputGroup", "required":"required"]),
         )
       ),
       H5Div(["mb-3"],
@@ -35,7 +35,7 @@ static this() {
       ),
       H5Div(["mb-3"],
         H5Label(["for":"validationDefaultSelect"], "Select one"),
-        H5Select("validationDefaultSelect", ["form-select"], ["required":"required"],
+        BS5InputSelect("validationDefaultSelect", ["required":"required"],
           H5Option(["value":""], "Select"),
           H5Option(["value":"1"], "Option one"),
           H5Option(["value":"2"], "Option two"),
@@ -45,32 +45,31 @@ static this() {
       H5Div(["mb-3"],
         H5Div(["form-check"],
           H5Input("validationDefaultCheck", ["form-check-input"], ["type":"checkbox", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationDefaultCheck"], "Checkbox")
+          BS5FormCheckLabel(["for":"validationDefaultCheck"], "Checkbox")
         )
       ),
       H5Div(["mb-3"],
         H5Div(["form-check"],
           H5Input("validationDefaultRadio1", ["form-check-input"], ["type":"radio", "name":"validationDefaultRadio", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationDefaultRadio1"], "Radio")
+          BS5FormCheckLabel(["for":"validationDefaultRadio1"], "Radio")
         ),
         H5Div(["form-check"],
           H5Input("validationDefaultRadio2", ["form-check-input"], ["type":"radio", "name":"validationDefaultRadio", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationDefaultRadio2"], "Radio")
+          BS5FormCheckLabel(["for":"validationDefaultRadio2"], "Radio")
         )
       ),
       H5Div(["mb-3"],
-        H5Div(["form-check", "form-switch"],
+        BS5FormCheck(["form-switch"],
           H5Input("validationDefaultSwitch", ["form-check-input"], ["type":"checkbox", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationDefaultSwitch"], "Switch")
+          BS5FormCheckLabel(["for":"validationDefaultSwitch"], "Switch")
         )
       ),
       H5Div(["mb-3"],
-        H5Div(["form-file"],
+        BS5FormFile(
           H5Input("validationDefaultFile", ["form-file-input"], ["type":"file", "required":"required"]),
-          H5Label(["form-file-label"], ["for":"validationDefaultFile"],
-            H5Span(["form-file-text"], "Choose file..."),
-            H5Span(["form-file-button"], "Browse")
-          )
+          BS5FormFileLabel(["for":"validationDefaultFile"],
+            BS5FormFileText("Choose file..."),
+            BS5FormFileButton("Browse"))
         )
       ),
       H5Button(["btn btn-primary"], ["type":"submit"], "Submit form")
@@ -82,12 +81,12 @@ auto clientSizeExample = demoBs5Example("client", "Client side",
     H5Form("formValidationClient", ["needs-validation"], ["novalidate":"novalidate"], 
       H5Div(["mb-3"],
         H5Label(["for":"validationClientText"], "Text input"),
-        H5Input("validationClientText", ["form-control"], ["type":"text", "required":"required"]),
+        BS5InputText("validationClientText", ["required":"required"]),
         H5P(["valid-feedback"], "Valid feedback text"),
         H5P(["invalid-feedback"], "Invalid feedback text")
       ),
       H5Div(["mb-3"],
-        H5Div(["input-group"],
+        BS5InputGroup(
           H5Span("validationClientInputGroup", ["input-group-text"], "$"),
           H5Input(["form-control"], ["type":"number", "aria-label":"Amount", "aria-describedby":"validationClientInputGroup", "required":"required"]),
           H5P(["valid-feedback"], "Valid feedback text"),
@@ -102,7 +101,7 @@ auto clientSizeExample = demoBs5Example("client", "Client side",
       ),
       H5Div(["mb-3"],
         H5Label(["for":"validationClientSelect"], "Select one"),
-        H5Select("validationClientSelect", ["form-select"], ["required":"required"],
+        BS5InputSelect("validationClientSelect", ["required":"required"],
           H5Option(["value":""], "Select"),
           H5Option(["value":"1"], "Option one"),
           H5Option(["value":"2"], "Option two"),
@@ -114,7 +113,7 @@ auto clientSizeExample = demoBs5Example("client", "Client side",
       H5Div(["mb-3"],
         H5Div(["form-check"],
           H5Input("validationClientCheck", ["form-check-input"], ["type":"checkbox", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationClientCheck"], "Checkbox"),
+          BS5FormCheckLabel(["for":"validationClientCheck"], "Checkbox"),
           H5P(["valid-feedback"], "Valid feedback text"),
           H5P(["invalid-feedback"], "Invalid feedback text")
         )
@@ -122,11 +121,11 @@ auto clientSizeExample = demoBs5Example("client", "Client side",
       H5Div(["mb-3"],
         H5Div(["form-check"],
           H5Input("validationClientRadio1", ["form-check-input"], ["type":"radio", "name":"validationClientRadio", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationClientRadio1"], "Radio")
+          BS5FormCheckLabel(["for":"validationClientRadio1"], "Radio")
         ),
         H5Div(["form-check"],
           H5Input("validationClientRadio2", ["form-check-input"], ["type":"radio", "name":"validationClientRadio" , "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationClientRadio2"], "Radio"),
+          BS5FormCheckLabel(["for":"validationClientRadio2"], "Radio"),
           H5P(["valid-feedback"], "Valid feedback text"),
           H5P(["invalid-feedback"], "Invalid feedback text")
         )
@@ -134,7 +133,7 @@ auto clientSizeExample = demoBs5Example("client", "Client side",
       H5Div(["mb-3"],
         H5Div(["form-check form-switch"],
           H5Input("validationClientSwitch", ["form-check-input"], ["type":"checkbox", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationClientSwitch"], "Switch"),
+          BS5FormCheckLabel(["for":"validationClientSwitch"], "Switch"),
           H5P(["valid-feedback"], "Valid feedback text"),
           H5P(["invalid-feedback"], "Invalid feedback text")
         )
@@ -142,9 +141,9 @@ auto clientSizeExample = demoBs5Example("client", "Client side",
       H5Div(["mb-3"],
         H5Div(["form-file"],
           H5Input("validationClientFile", ["form-file-input"], ["type":"file", "required":"required"]),
-          H5Label(["form-file-label"], ["for":"validationClientFile"],
-            H5Span(["form-file-text"], "Choose file..."),
-            H5Span(["form-file-button"], "Browse")
+          BS5FormFileLabel(["for":"validationClientFile"],
+            BS5FormFileText("Choose file..."),
+            BS5FormFileButton("Browse")
           ),
           H5P(["valid-feedback"], "Valid feedback text"),
           H5P(["invalid-feedback"], "Invalid feedback text")
@@ -159,12 +158,12 @@ auto serverExample = demoBs5Example("server", "Server side",
     H5Form("formValidationServer", [""],
       H5Div(["mb-3"],
         H5Label(["for":"validationServerText"], "Text input"),
-        H5Input("validationServerText", ["form-control is-valid"], ["type":"text"]),
+        BS5InputText("validationServerText", ["is-valid"]),
         H5P(["valid-feedback"], "Valid feedback text"),
         H5P(["invalid-feedback"], "Invalid feedback text"),
       ),
       H5Div(["mb-3"],
-        H5Div(["input-group"],
+        BS5InputGroup(
           H5Span("validationServerInputGroup", ["input-group-text"], "$"),
           H5Input(["form-control", "is-invalid"], ["type":"number", "aria-label":"Amount", "aria-describedby":"validationServerInputGroup"]),
           H5P(["valid-feedback"], "Valid feedback text"),
@@ -179,7 +178,7 @@ auto serverExample = demoBs5Example("server", "Server side",
       ),
       H5Div(["mb-3"],
         H5Label(["for":"validationServerSelect"], "Select one"),
-        H5Select("validationServerSelect", ["form-select", "is-invalid"],
+        BS5InputSelect("validationServerSelect", ["is-invalid"],
           H5Option(["value":""], "Select"),
           H5Option(["value":"1"], "Option one"),
           H5Option(["value":"2"], "Option two"),
@@ -191,7 +190,7 @@ auto serverExample = demoBs5Example("server", "Server side",
       H5Div(["mb-3"],
         H5Div(["form-check"],
           H5Input("validationServerCheck", ["form-check-input", "is-valid"], ["type":"checkbox"]),
-          H5Label(["form-check-label"], ["for":"validationServerCheck"], "Checkbox"),
+          BS5FormCheckLabel(["for":"validationServerCheck"], "Checkbox"),
           H5P(["valid-feedback"], "Valid feedback text"),
           H5P(["invalid-feedback"], "Invalid feedback text")
         )
@@ -199,11 +198,11 @@ auto serverExample = demoBs5Example("server", "Server side",
       H5Div(["mb-3"],
         H5Div(["form-check"],
           H5Input("validationServerRadio1", ["form-check-input", "is-invalid"], ["type":"radio", "name":"validationServerRadio"]),
-          H5Label(["form-check-label"], ["for":"validationServerRadio1"], "Radio")
+          BS5FormCheckLabel(["for":"validationServerRadio1"], "Radio")
         ),
         H5Div(["form-check"],
           H5Input("validationServerRadio2", ["form-check-input", "is-invalid"], ["type":"radio", "name":"validationServerRadio"]),
-          H5Label(["form-check-label"], ["for":"validationServerRadio2"], "Radio"),
+          BS5FormCheckLabel(["for":"validationServerRadio2"], "Radio"),
           H5P(["valid-feedback"], "Valid feedback text"),
           H5P(["invalid-feedback"], "Invalid feedback text")
         )
@@ -211,7 +210,7 @@ auto serverExample = demoBs5Example("server", "Server side",
       H5Div(["mb-3"],
         H5Div(["form-check form-switch"],
           H5Input("validationServerSwitch", ["form-check-input is-valid"], ["type":"checkbox"]),
-          H5Label(["form-check-label"], ["for":"validationServerSwitch"], "Switch"),
+          BS5FormCheckLabel(["for":"validationServerSwitch"], "Switch"),
           H5P(["valid-feedback"], "Valid feedback text"),
           H5P(["invalid-feedback"], "Invalid feedback text")
         )
@@ -219,9 +218,9 @@ auto serverExample = demoBs5Example("server", "Server side",
       H5Div(["mb-3"],
         H5Div(["form-file"],
           H5Input("validationServerFile", ["form-file-input is-invalid"], ["type":"file"]), 
-          H5Label(["form-file-label"], ["for":"validationServerFile"],
-            H5Span(["form-file-text"], "Choose file..."),
-            H5Span(["form-file-button"], "Browse")
+          BS5FormFileLabel(["for":"validationServerFile"],
+            BS5FormFileText("Choose file..."),
+            BS5FormFileButton("Browse")
           ),
           H5P(["valid-feedback"], "Valid feedback text"),
           H5P(["invalid-feedback"], "Invalid feedback text")
@@ -237,14 +236,14 @@ auto tooltipsExample = demoBs5Example("tooltips", "Tooltips",
     H5Form("formValidationTooltips", ["needs-validation"], ["novalidate":"novalidate"],
       H5Div(["mb-3", "position-relative"],
         H5Label(["for":"validationTooltipsText"], "Text input"),
-        H5Input("validationTooltipsText", ["form-control"], ["type":"text", "required":"required"]),
+        BS5InputText("validationTooltipsText", ["required":"required"]),
         H5P(["valid-tooltip"], "Valid feedback text"),
         H5P(["invalid-tooltip"], "Invalid feedback text")
       ),
       H5Div(["mb-3", "position-relative"],
-        H5Div(["input-group"],
+        BS5InputGroup(
           H5Span("validationTooltipsInputGroup", ["input-group-text"], "$"),
-          H5Input(["form-control"], ["type":"number", "aria-label":"Amount", "aria-describedby":"validationTooltipsInputGroup", "required":"required"]),
+          BS5InputNumber(["aria-label":"Amount", "aria-describedby":"validationTooltipsInputGroup", "required":"required"]),
           H5P(["valid-tooltip"], "Valid feedback text"),
           H5P(["invalid-tooltip"], "Invalid feedback text")
         )
@@ -257,7 +256,7 @@ auto tooltipsExample = demoBs5Example("tooltips", "Tooltips",
       ),
       H5Div(["mb-3", "position-relative"],
         H5Label(["for":"validationTooltipsSelect"], "Select one"),
-        H5Select("validationTooltipsSelect", ["form-select"], ["required":"required"],
+        BS5InputSelect("validationTooltipsSelect", ["required":"required"],
           H5Option(["value":""], "Select"),
           H5Option(["value":"1"], "Option one"),
           H5Option(["value":"2"], "Option two"),
@@ -269,7 +268,7 @@ auto tooltipsExample = demoBs5Example("tooltips", "Tooltips",
       H5Div(["mb-3", "position-relative"],
         H5Div(["form-check"],
           H5Input("validationTooltipsCheck", ["form-check-input"], ["type":"checkbox", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationTooltipsCheck"], "Checkbox"),
+          BS5FormCheckLabel(["for":"validationTooltipsCheck"], "Checkbox"),
           H5P(["valid-tooltip"], "Valid feedback text"),
           H5P(["invalid-tooltip"], "Invalid feedback text")
         )
@@ -277,11 +276,11 @@ auto tooltipsExample = demoBs5Example("tooltips", "Tooltips",
       H5Div(["mb-3", "position-relative"],
         H5Div(["form-check"],
           H5Input("validationTooltipsRadio1", ["form-check-input"], ["type":"radio", "name":"validationTooltipsRadio", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationTooltipsRadio1"], "Radio")
+          BS5FormCheckLabel(["for":"validationTooltipsRadio1"], "Radio")
         ),
         H5Div(["form-check"],
           H5Input("validationTooltipsRadio2", ["form-check-input"], ["type":"radio", "name":"validationTooltipsRadio", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationTooltipsRadio2"], "Radio"),
+          BS5FormCheckLabel(["for":"validationTooltipsRadio2"], "Radio"),
           H5P(["valid-tooltip"], "Valid feedback text"),
           H5P(["invalid-tooltip"], "Invalid feedback text")
         )
@@ -289,7 +288,7 @@ auto tooltipsExample = demoBs5Example("tooltips", "Tooltips",
       H5Div(["mb-3", "position-relative"],
         H5Div(["form-check form-switch"],
           H5Input("validationTooltipsSwitch", ["form-check-input"], ["type":"checkbox", "required":"required"]),
-          H5Label(["form-check-label"], ["for":"validationTooltipsSwitch"], "Switch"),
+          BS5FormCheckLabel(["for":"validationTooltipsSwitch"], "Switch"),
           H5P(["valid-tooltip"], "Valid feedback text"),
           H5P(["invalid-tooltip"], "Invalid feedback text")
         )
@@ -297,9 +296,9 @@ auto tooltipsExample = demoBs5Example("tooltips", "Tooltips",
       H5Div(["mb-3", "position-relative"],
         H5Div(["form-file"],
           H5Input("validationTooltipsFile", ["form-file-input"], ["type":"file", "required":"required"]),
-          H5Label(["form-file-label"], ["for":"validationTooltipsFile"],
-            H5Span(["form-file-text"], "Choose file..."),
-            H5Span(["form-file-button"], "Browse")
+          BS5FormFileLabel(["for":"validationTooltipsFile"],
+            BS5FormFileText("Choose file..."),
+            BS5FormFileButton("Browse")
           ),
           H5P(["valid-tooltip"], "Valid feedback text"),
           H5P(["invalid-tooltip"], "Invalid feedback text")

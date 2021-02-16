@@ -75,7 +75,7 @@ auto barExample = demoBs5Example("bar", "Navs as navigation bar",
 
 auto horizontalExample = demoBs5Example("horizontal", "Horizontal alignment",
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Centered"),
+    H5H5(["text-muted", "mt-3"], "Centered"),
     BS5Nav(["justify-content-center"], 
       BS5NavItem(
         BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
@@ -85,7 +85,7 @@ auto horizontalExample = demoBs5Example("horizontal", "Horizontal alignment",
         BS5NavLink(["href":"#"], "Link")),
       BS5NavItem(
         BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))),
-    H5H4(["h5", "text-muted", "mt-3"], "Right-aligned"),
+    H5H5(["text-muted", "mt-3"], "Right-aligned"),
     BS5Nav(["justify-content-end"], 
       BS5NavItem(
         BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
@@ -180,7 +180,7 @@ auto pillsExample = demoBs5Example("pills", "Pills",
 
 auto fillExample = demoBs5Example("fill", "Fill",
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Unordered list"),
+    H5H5(["text-muted", "mt-3"], "Unordered list"),
     BS5Nav(["nav-tabs", "nav-fill"], 
       BS5NavItem(
         BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),
@@ -212,7 +212,7 @@ auto fillExample = demoBs5Example("fill", "Fill",
 
 auto justifyExample = demoBs5Example("justify", "Justify",
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Unordered list"),
+    H5H5(["text-muted", "mt-3"], "Unordered list"),
     BS5Nav(["nav-pills", "nav-justified"], 
       BS5NavItem(
         BS5NavLink(["active"], ["href":"#", "aria-current":"page"], "Active")),

@@ -18,19 +18,19 @@ static this() {
 auto defaultExample = demoBs5Example("default", "Default", 
   H5Div(
     BS5FormCheck(
-      H5Label(["form-label"], ["for":"inputRange"], "Range input label"),
+      BS5FormLabel(["for":"inputRange"], "Range input label"),
       H5Input("inputRange", ["form-range"], ["type":"range"]))
   ), ``, ``);
 
 auto minmaxExample = demoBs5Example("minmax", "MinMax", 
   H5Div(
-    H5Label(["form-label"], ["for":"inputRangeMinMax"], "Range input label"),
+    BS5FormLabel(["for":"inputRangeMinMax"], "Range input label"),
     H5Input("inputRangeMinMax", ["form-range"], ["type":"range", "min":"0", "max":"10"])
   ), ``, ``);
 
 auto stepsExample = demoBs5Example("steps", "With Steps", 
   H5Div(
-    H5Label(["form-label"], ["for":"inputRangeSteps"], "Range input label"),
+    BS5FormLabel(["for":"inputRangeSteps"], "Range input label"),
     H5Input("inputRangeSteps", ["form-range"], ["type":"range", "min":"0", "max":"10", "step":"0.5"])
   ), ``, ``);
 

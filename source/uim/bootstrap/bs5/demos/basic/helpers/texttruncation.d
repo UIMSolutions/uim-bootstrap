@@ -48,9 +48,9 @@ H5Main(["style":"margin-top:70px;"],
 
         H5Div(["mb-5"]
           H5Div(
-            H5H4(["h5", "text-muted", "mt-3"], "Block")
+            H5H5(["text-muted", "mt-3"], "Block")
             H5P(["text-truncate"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui.")
-            H5H4(["h5", "text-muted", "mt-3"], "Inline-block")
+            H5H5(["text-muted", "mt-3"], "Inline-block")
             H5Span(["text-truncate d-inline-block w-100"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui.")
           )
         )

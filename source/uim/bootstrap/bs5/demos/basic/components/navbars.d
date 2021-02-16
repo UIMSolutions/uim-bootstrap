@@ -107,7 +107,7 @@ auto textExample = demoBs5Example("text", "Navbar with text",
 
 auto colorsExample = demoBs5Example("colors", "Navbar colors",
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Dark navbar"),
+    H5H5(["text-muted", "mt-3"], "Dark navbar"),
     BS5Navbar(["navbar-dark", "bg-primary"], 
       BS5Container(
         BS5NavbarBrand(["href":"#"], "Primary"))), 
@@ -129,7 +129,7 @@ auto colorsExample = demoBs5Example("colors", "Navbar colors",
     BS5Navbar(["navbar-dark", "bg-dark"], 
       BS5Container(
         BS5NavbarBrand(["href":"#"], "Dark"))),
-    H5H4(["h5", "text-muted", "mt-3"], "Light navbar"),
+    H5H5(["text-muted", "mt-3"], "Light navbar"),
     BS5Navbar(["navbar-light", "bg-light"], 
       BS5Container(
         BS5NavbarBrand(["href":"#"], "Light"))),
@@ -172,7 +172,7 @@ BS5Navbar(["navbar-light", "bg-transparent"],
 
 auto togglerExample = demoBs5Example("toggler", "Navbar with toggler",
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Left-aligned toggler"),
+    H5H5(["text-muted", "mt-3"], "Left-aligned toggler"),
     BS5Navbar(["navbar-light", "bg-light navbar-expand-lg"], 
       BS5Container(
         BS5Button(["navbar-toggler"], ["data-bs-toggle":"collapse", "data-bs-target":"#navbarResponsiveLeft", "aria-controls":"navbarResponsiveLeft", "aria-expanded":"false", "aria-label":"Toggle navigation"], 
@@ -188,7 +188,7 @@ auto togglerExample = demoBs5Example("toggler", "Navbar with toggler",
             BS5NavLink(["href":"#", "aria-current":"page"], "Link")),
           BS5NavItem(
             BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Link")))))),
-    H5H4(["h5", "text-muted", "mt-3"], "Right-aligned toggler"),
+    H5H5(["text-muted", "mt-3"], "Right-aligned toggler"),
     BS5Navbar(["navbar-light", "bg-light navbar-expand-lg"],
       BS5Container(
         BS5NavbarBrand(["href":"#"], "Navbar"),
@@ -209,7 +209,7 @@ auto togglerExample = demoBs5Example("toggler", "Navbar with toggler",
 
 auto responsiveExample = demoBs5Example("responsive", "Responsive",
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Small"),
+    H5H5(["text-muted", "mt-3"], "Small"),
     BS5Navbar(["navbar-light", "bg-light navbar-expand-sm"], 
         BS5Container(
           BS5NavbarBrand(["href":"#"], "Navbar"),
@@ -227,7 +227,7 @@ auto responsiveExample = demoBs5Example("responsive", "Responsive",
               BS5NavItem(
                 BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Link")))))),
 
-    H5H4(["h5", "text-muted", "mt-3"], "Medium"),
+    H5H5(["text-muted", "mt-3"], "Medium"),
     BS5Navbar(["navbar-light", "bg-light navbar-expand-md"], 
         BS5Container(
           BS5NavbarBrand(["href":"#"], "Navbar"),
@@ -245,7 +245,7 @@ auto responsiveExample = demoBs5Example("responsive", "Responsive",
               BS5NavItem(
                 BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Link")))))),
 
-    H5H4(["h5", "text-muted", "mt-3"], "Large"),
+    H5H5(["text-muted", "mt-3"], "Large"),
     BS5Navbar(["navbar-light", "bg-light navbar-expand-lg"], 
         BS5Container(
           BS5NavbarBrand(["href":"#"], "Navbar"),
@@ -263,7 +263,7 @@ auto responsiveExample = demoBs5Example("responsive", "Responsive",
               BS5NavItem(
                 BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Link")))))),
 
-     H5H4(["h5", "text-muted", "mt-3"], "Extra Large"),
+     H5H5(["text-muted", "mt-3"], "Extra Large"),
     BS5Navbar(["navbar-light", "bg-light navbar-expand-xl"], 
         BS5Container(
           BS5NavbarBrand(["href":"#"], "Navbar"),
@@ -281,7 +281,7 @@ auto responsiveExample = demoBs5Example("responsive", "Responsive",
               BS5NavItem(
                 BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Link")))))),
 
-    H5H4(["h5", "text-muted", "mt-3"], "Extra extra large"),
+    H5H5(["text-muted", "mt-3"], "Extra extra large"),
     BS5Navbar(["navbar-light", "bg-light navbar-expand-xxl"], 
         BS5Container(
           BS5NavbarBrand(["href":"#"], "Navbar"),

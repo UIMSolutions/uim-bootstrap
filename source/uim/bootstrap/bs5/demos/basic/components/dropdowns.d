@@ -254,7 +254,7 @@ BS5Dropdown(
     <a href="#" ["dropdown-item"]Item 3</a>
   )
 )
-H5H4(["h5", "text-muted", "mt-3"], "In navbar component")
+H5H5(["text-muted", "mt-3"], "In navbar component")
 <nav ["navbar navbar-dark bg-dark navbar-expand"]
   H5Div(["container"]
     <a href="#" ["navbar-brand"]Navbar</a>

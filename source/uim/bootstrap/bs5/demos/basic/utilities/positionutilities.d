@@ -45,15 +45,15 @@ H5Main(["style":"margin-top:70px;"],
         H5Div(["mb-5"]
               <h3 ["text-muted"]Position values", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "Static")
+                H5H5(["text-muted", "mt-3"], "Static")
                 H5Div(["position-static"]Position static)
-                H5H4(["h5", "text-muted", "mt-3"], "Relative")
+                H5H5(["text-muted", "mt-3"], "Relative")
                 H5Div(["position-relative"]Position relative)
-                H5H4(["h5", "text-muted", "mt-3"], "Absolute")
+                H5H5(["text-muted", "mt-3"], "Absolute")
                 H5Div(["position-absolute"]Position absolute)
-                H5H4(["h5", "text-muted", "mt-3"], "Fixed")
+                H5H5(["text-muted", "mt-3"], "Fixed")
                 H5Div(["position-fixed"]Position fixed)
-                H5H4(["h5", "text-muted", "mt-3"], "Sticky")
+                H5H5(["text-muted", "mt-3"], "Sticky")
                 H5Div(["position-sticky"]Position sticky)
               )
             )
@@ -92,15 +92,15 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5"]
               <h3 ["text-muted"]Examples", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "Notification number")
+                H5H5(["text-muted", "mt-3"], "Notification number")
                 H5Button(["type":"button" ["btn btn-primary position-relative"]
                   Messages H5Span(["position-absolute top-0 left-100 translate-middle badge rounded-pill bg-secondary"]3 H5Span(["visually-hidden"]unread messages")")
                 ")
-                H5H4(["h5", "text-muted", "mt-3"], "Notification circle")
+                H5H5(["text-muted", "mt-3"], "Notification circle")
                 H5Button(["type":"button" ["btn btn-primary position-relative"]
                   Messages H5Span(["position-absolute top-0 left-100 translate-middle badge border border-light rounded-circle bg-danger p-2"]H5Span(["visually-hidden"]unread messages")")
                 ")
-                H5H4(["h5", "text-muted", "mt-3"], "Progress with steps")
+                H5H5(["text-muted", "mt-3"], "Progress with steps")
                 H5Div(["position-relative m-4"]
                   H5Div(["progress" "style":"height: 1px;"]
                     H5Div(["progress-bar" role="progressbar" "style":"width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"])

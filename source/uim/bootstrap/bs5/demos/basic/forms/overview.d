@@ -26,12 +26,12 @@ auto defaultExample = demoBs5Example("default", "Default",
 
 auto alignmentExample = demoBs5Example("alignment", "Alignment", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Center"),
+    H5H5(["text-muted", "mt-3"], "Center"),
     H5Figure(["figure"],
       H5Img(["figure-img img-fluid"], ["src":"/img/600x400.png", "alt":"Figure image"]),
       H5Figcaption(["figure-caption text-center"], "Caption for the figure.")
     ),
-    H5H4(["h5", "text-muted", "mt-3"], "Right"),
+    H5H5(["text-muted", "mt-3"], "Right"),
     H5Figure(["figure"],
       H5Img(["figure-img img-fluid"], ["src":"/img/600x400.png", "alt":"Figure image"]),
       H5Figcaption(["figure-caption text-end"], "Caption for the figure.")

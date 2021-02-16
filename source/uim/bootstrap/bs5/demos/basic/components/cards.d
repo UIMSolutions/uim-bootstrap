@@ -203,21 +203,21 @@ BS5Card(["w-50"],
 
 demoBs5Example("images", "Bilder", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Top"), 
+    H5H5(["text-muted", "mt-3"], "Top"), 
     BS5Card(["w-50"], 
       BS5CardImage(["src":"/img/400x200.png", "alt":"Card image in the top"]),
       BS5CardBody(
         BS5CardTitle("Card title"), 
         BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
       )),
-    H5H4(["h5", "text-muted", "mt-3"], "Bottom"), 
+    H5H5(["text-muted", "mt-3"], "Bottom"), 
     BS5Card(["w-50"], 
       BS5CardBody(
         BS5CardTitle("Card title"), 
         BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")),
       BS5CardImage(["card-img-bottom"], ["src":"/img/400x200.png", "alt":"Card image in the bottom"])
     ),
-    H5H4(["h5", "text-muted", "mt-3"], "Overlay"), 
+    H5H5(["text-muted", "mt-3"], "Overlay"), 
     BS5Card(["w-50"], 
       BS5CardImage(["src":"/img/400x200.png", "alt":"Card image as an overlay"],
         BS5CardOverlay(
@@ -420,7 +420,7 @@ demoBs5Example("groups", "Kartengruppen",
 
 demoBs5Example("grid", "Grids Cards",
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Default"), 
+    H5H5(["text-muted", "mt-3"], "Default"), 
     BS5Row(["row-cols-1", "row-cols-md-2", "row-cols-xl-3", "row-cols-xxl-4", "g-4 mb-4"],
       BS5Col(
         BS5Card(

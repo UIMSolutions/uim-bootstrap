@@ -67,25 +67,25 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5" data-css='.d-flex,&#10;.d-inline-flex {&#10;&#9;background-color: #f8f9fa;&#10;}&#10;.d-flex div {&#10;&#9;border: 1px solid white;&#10;&#9;background-color: #6c757d;&#10;&#9;color: white;&#10;&#9;padding: 0.5rem;&#10;}&#10;[class*=align-items-],&#10;[data-example="alignSelf"],&#10;[class*=align-content-] {&#10;&#9;height: 200px;&#10;}&#10;.responsive-examples {&#10;&#9;display: none;&#10;}'>
               <h3 ["text-muted"]Direction", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "Row")
+                H5H5(["text-muted", "mt-3"], "Row")
                 H5Div(["d-flex flex-row"]
                   H5Div(Flex direction row)
                   H5Div(Flex direction row)
                   H5Div(Flex direction row)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Row-reverse")
+                H5H5(["text-muted", "mt-3"], "Row-reverse")
                 H5Div(["d-flex flex-row-reverse"]
                   H5Div(Flex direction row-reverse)
                   H5Div(Flex direction row-reverse)
                   H5Div(Flex direction row-reverse)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Column")
+                H5H5(["text-muted", "mt-3"], "Column")
                 H5Div(["d-flex flex-column"]
                   H5Div(Flex direction column)
                   H5Div(Flex direction column)
                   H5Div(Flex direction column)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Column-reverse")
+                H5H5(["text-muted", "mt-3"], "Column-reverse")
                 H5Div(["d-flex flex-column-reverse"]
                   H5Div(Flex direction column-reverse)
                   H5Div(Flex direction column-reverse)
@@ -97,31 +97,31 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5" data-css='.d-flex,&#10;.d-inline-flex {&#10;&#9;background-color: #f8f9fa;&#10;}&#10;.d-flex div {&#10;&#9;border: 1px solid white;&#10;&#9;background-color: #6c757d;&#10;&#9;color: white;&#10;&#9;padding: 0.5rem;&#10;}&#10;[class*=align-items-],&#10;[data-example="alignSelf"],&#10;[class*=align-content-] {&#10;&#9;height: 200px;&#10;}&#10;.responsive-examples {&#10;&#9;display: none;&#10;}'>
               <h3 ["text-muted"]Justify content", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "Start")
+                H5H5(["text-muted", "mt-3"], "Start")
                 H5Div(["d-flex justify-content-start"]
                   H5Div(Justify content start)
                   H5Div(Justify content start)
                   H5Div(Justify content start)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Center")
+                H5H5(["text-muted", "mt-3"], "Center")
                 H5Div(["d-flex justify-content-center"]
                   H5Div(Justify content center)
                   H5Div(Justify content center)
                   H5Div(Justify content center)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "End")
+                H5H5(["text-muted", "mt-3"], "End")
                 H5Div(["d-flex justify-content-end"]
                   H5Div(Justify content end)
                   H5Div(Justify content end)
                   H5Div(Justify content end)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Between")
+                H5H5(["text-muted", "mt-3"], "Between")
                 H5Div(["d-flex justify-content-between"]
                   H5Div(Justify content between)
                   H5Div(Justify content between)
                   H5Div(Justify content between)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Around")
+                H5H5(["text-muted", "mt-3"], "Around")
                 H5Div(["d-flex justify-content-around"]
                   H5Div(Justify content around)
                   H5Div(Justify content around)
@@ -133,31 +133,31 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5" data-css='.d-flex,&#10;.d-inline-flex {&#10;&#9;background-color: #f8f9fa;&#10;}&#10;.d-flex div {&#10;&#9;border: 1px solid white;&#10;&#9;background-color: #6c757d;&#10;&#9;color: white;&#10;&#9;padding: 0.5rem;&#10;}&#10;[class*=align-items-],&#10;[data-example="alignSelf"],&#10;[class*=align-content-] {&#10;&#9;height: 200px;&#10;}&#10;.responsive-examples {&#10;&#9;display: none;&#10;}'>
               <h3 ["text-muted"]Align items", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "Start")
+                H5H5(["text-muted", "mt-3"], "Start")
                 H5Div(["d-flex align-items-start"]
                   H5Div(Align items start)
                   H5Div(Align items start)
                   H5Div(Align items start)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Center")
+                H5H5(["text-muted", "mt-3"], "Center")
                 H5Div(["d-flex align-items-center"]
                   H5Div(Align items center)
                   H5Div(Align items center)
                   H5Div(Align items center)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "End")
+                H5H5(["text-muted", "mt-3"], "End")
                 H5Div(["d-flex align-items-end"]
                   H5Div(Align items end)
                   H5Div(Align items end)
                   H5Div(Align items end)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Baseline")
+                H5H5(["text-muted", "mt-3"], "Baseline")
                 H5Div(["d-flex align-items-baseline"]
                   H5Div(Align items baseline)
                   H5Div(Align items baseline)
                   H5Div(Align items baseline)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Stretch")
+                H5H5(["text-muted", "mt-3"], "Stretch")
                 H5Div(["d-flex align-items-stretch"]
                   H5Div(Align items stretch)
                   H5Div(Align items stretch)
@@ -169,31 +169,31 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5" data-css='.d-flex,&#10;.d-inline-flex {&#10;&#9;background-color: #f8f9fa;&#10;}&#10;.d-flex div {&#10;&#9;border: 1px solid white;&#10;&#9;background-color: #6c757d;&#10;&#9;color: white;&#10;&#9;padding: 0.5rem;&#10;}&#10;[class*=align-items-],&#10;[data-example="alignSelf"],&#10;[class*=align-content-] {&#10;&#9;height: 200px;&#10;}&#10;.responsive-examples {&#10;&#9;display: none;&#10;}'>
               <h3 ["text-muted"]Align self", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "Start")
+                H5H5(["text-muted", "mt-3"], "Start")
                 H5Div(["d-flex" data-example="alignSelf"]
                   H5Div(["align-self-start"]Align self start)
                   H5Div(Flex item)
                   H5Div(Flex item)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Center")
+                H5H5(["text-muted", "mt-3"], "Center")
                 H5Div(["d-flex" data-example="alignSelf"]
                   H5Div(["align-self-center"]Align self center)
                   H5Div(Flex item)
                   H5Div(Flex item)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "End")
+                H5H5(["text-muted", "mt-3"], "End")
                 H5Div(["d-flex" data-example="alignSelf"]
                   H5Div(["align-self-end"]Align self end)
                   H5Div(Flex item)
                   H5Div(Flex item)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Baseline")
+                H5H5(["text-muted", "mt-3"], "Baseline")
                 H5Div(["d-flex" data-example="alignSelf"]
                   H5Div(["align-self-baseline"]Align self baseline)
                   H5Div(Flex item)
                   H5Div(Flex item)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Stretch")
+                H5H5(["text-muted", "mt-3"], "Stretch")
                 H5Div(["d-flex" data-example="alignSelf"]
                   H5Div(["align-self-stretch"]Align self stretch)
                   H5Div(Flex item)
@@ -205,7 +205,7 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5" data-css='.d-flex,&#10;.d-inline-flex {&#10;&#9;background-color: #f8f9fa;&#10;}&#10;.d-flex div {&#10;&#9;border: 1px solid white;&#10;&#9;background-color: #6c757d;&#10;&#9;color: white;&#10;&#9;padding: 0.5rem;&#10;}&#10;[class*=align-items-],&#10;[data-example="alignSelf"],&#10;[class*=align-content-] {&#10;&#9;height: 200px;&#10;}&#10;.responsive-examples {&#10;&#9;display: none;&#10;}'>
               <h3 ["text-muted"]Auto margins", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "Horizontal")
+                H5H5(["text-muted", "mt-3"], "Horizontal")
                 H5Div(["d-flex justify-content-start"]
                   H5Div(Flex item)
                   H5Div(Flex item)
@@ -216,7 +216,7 @@ H5Main(["style":"margin-top:70px;"],
                   H5Div(Flex item)
                   H5Div(Flex item)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Vertical")
+                H5H5(["text-muted", "mt-3"], "Vertical")
                 H5Div(["d-flex flex-column align-items-start"]
                   H5Div(["mb-auto"]Margin bottom auto)
                   H5Div(Flex item)
@@ -266,7 +266,7 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5" data-css='.d-flex,&#10;.d-inline-flex {&#10;&#9;background-color: #f8f9fa;&#10;}&#10;.d-flex div {&#10;&#9;border: 1px solid white;&#10;&#9;background-color: #6c757d;&#10;&#9;color: white;&#10;&#9;padding: 0.5rem;&#10;}&#10;[class*=align-items-],&#10;[data-example="alignSelf"],&#10;[class*=align-content-] {&#10;&#9;height: 200px;&#10;}&#10;.responsive-examples {&#10;&#9;display: none;&#10;}'>
               <h3 ["text-muted"]Wrap", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "Nowrap")
+                H5H5(["text-muted", "mt-3"], "Nowrap")
                 H5Div(["d-flex flex-nowrap"]
                   H5Div(Flex-wrap nowrap)
                   H5Div(Flex-wrap nowrap)
@@ -279,7 +279,7 @@ H5Main(["style":"margin-top:70px;"],
                   H5Div(Flex-wrap nowrap)
                   H5Div(Flex-wrap nowrap)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Wrap")
+                H5H5(["text-muted", "mt-3"], "Wrap")
                 H5Div(["d-flex flex-wrap"]
                   H5Div(Flex-wrap wrap)
                   H5Div(Flex-wrap wrap)
@@ -292,7 +292,7 @@ H5Main(["style":"margin-top:70px;"],
                   H5Div(Flex-wrap wrap)
                   H5Div(Flex-wrap wrap)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Wrap-reverse")
+                H5H5(["text-muted", "mt-3"], "Wrap-reverse")
                 H5Div(["d-flex flex-wrap-reverse"]
                   H5Div(Flex-wrap reverse)
                   H5Div(Flex-wrap reverse)
@@ -326,7 +326,7 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5" data-css='.d-flex,&#10;.d-inline-flex {&#10;&#9;background-color: #f8f9fa;&#10;}&#10;.d-flex div {&#10;&#9;border: 1px solid white;&#10;&#9;background-color: #6c757d;&#10;&#9;color: white;&#10;&#9;padding: 0.5rem;&#10;}&#10;[class*=align-items-],&#10;[data-example="alignSelf"],&#10;[class*=align-content-] {&#10;&#9;height: 200px;&#10;}&#10;.responsive-examples {&#10;&#9;display: none;&#10;}'>
               <h3 ["text-muted"]Align content", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "Start")
+                H5H5(["text-muted", "mt-3"], "Start")
                 H5Div(["d-flex align-content-start flex-wrap"]
                   H5Div(Align content start)
                   H5Div(Align content start)
@@ -339,7 +339,7 @@ H5Main(["style":"margin-top:70px;"],
                   H5Div(Align content start)
                   H5Div(Align content start)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Center")
+                H5H5(["text-muted", "mt-3"], "Center")
                 H5Div(["d-flex align-content-center flex-wrap"]
                   H5Div(Align content center)
                   H5Div(Align content center)
@@ -352,7 +352,7 @@ H5Main(["style":"margin-top:70px;"],
                   H5Div(Align content center)
                   H5Div(Align content center)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "End")
+                H5H5(["text-muted", "mt-3"], "End")
                 H5Div(["d-flex align-content-end flex-wrap"]
                   H5Div(Align content end)
                   H5Div(Align content end)
@@ -365,7 +365,7 @@ H5Main(["style":"margin-top:70px;"],
                   H5Div(Align content end)
                   H5Div(Align content end)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Between")
+                H5H5(["text-muted", "mt-3"], "Between")
                 H5Div(["d-flex align-content-between flex-wrap"]
                   H5Div(Align content between)
                   H5Div(Align content between)
@@ -378,7 +378,7 @@ H5Main(["style":"margin-top:70px;"],
                   H5Div(Align content between)
                   H5Div(Align content between)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Around")
+                H5H5(["text-muted", "mt-3"], "Around")
                 H5Div(["d-flex align-content-around flex-wrap"]
                   H5Div(Align content around)
                   H5Div(Align content around)
@@ -391,7 +391,7 @@ H5Main(["style":"margin-top:70px;"],
                   H5Div(Align content around)
                   H5Div(Align content around)
                 )
-                H5H4(["h5", "text-muted", "mt-3"], "Stretch")
+                H5H5(["text-muted", "mt-3"], "Stretch")
                 H5Div(["d-flex align-content-stretch flex-wrap"]
                   H5Div(Align content stretch)
                   H5Div(Align content stretch)

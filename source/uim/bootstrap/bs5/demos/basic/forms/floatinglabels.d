@@ -19,45 +19,44 @@ static this() {
 auto defaultExample = demoBs5Example("default", "Default", 
   H5Div(
     H5Div(["form-floating"],
-      H5Input("floatingLabelDefault", ["form-control"], ["type":"text", "placeholder":"Text input placeholder"]),
-      H5Label(["form-label"], ["for":"floatingLabelDefault"], "Text input label")
+      BS5InputText("floatingLabelDefault", ["placeholder":"Text input placeholder"]),
+      BS5FormLabel(["for":"floatingLabelDefault"], "Text input label")
     )
   ), ``, ``);
 
 auto valueExample = demoBs5Example("value", "With value", 
   H5Div(
     H5Div(["form-floating"],
-      H5Input("floatingLabelValue", ["form-control"], ["type":"text", "placeholder":"Text input placeholder", "value":"Text input value"]),
-      H5Label(["form-label"], ["for":"floatingLabelValue"], "Text input label")
-    )
+      BS5InputText("floatingLabelValue", ["placeholder":"Text input placeholder", "value":"Text input value"]),
+      BS5FormLabel(["for":"floatingLabelValue"], "Text input label"))
   ), ``, ``);
 
 auto validationExample = demoBs5Example("validation", "Validation", 
   H5Div(
     H5Div(["form-floating"],
-      H5Input("floatingLabelValidation", ["form-control", "is-valid"], ["type":"text", "placeholder":"Text input placeholder", "value":"Text input value"]),
-      H5Label(["form-label"], ["for":"floatingLabelValidation"], "Text input label")
+      BS5InputText("floatingLabelValidation", ["is-valid"], ["placeholder":"Text input placeholder", "value":"Text input value"]),
+      BS5FormLabel(["for":"floatingLabelValidation"], "Text input label")
     )
   ), ``, ``);
 
 auto textareaExample = demoBs5Example("textarea", "Textarea", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Default"),
+    H5H5(["text-muted", "mt-3"], "Default"),
     H5Div(["form-floating"],
       H5Textarea("floatingLabelTextareaDefault", ["form-control"], ["placeholder":"Textarea placeholder"]),
-      H5Label(["form-label"], ["for":"floatingLabelTextareaDefault"], "Textarea label")
+      BS5FormLabel(["for":"floatingLabelTextareaDefault"], "Textarea label")
     ),
-    H5H4(["h5", "text-muted", "mt-3"], "Custom height"),
+    H5H5(["text-muted", "mt-3"], "Custom height"),
     H5Div(["form-floating"],
       H5Textarea("floatingLabelTextareaHeight", ["form-control"], ["placeholder":"Textarea placeholder", "style":"height: 100px;"]),
-      H5Label(["form-label"], ["for":"floatingLabelTextareaHeight"], "Textarea label")
+      BS5FormLabel(["for":"floatingLabelTextareaHeight"], "Textarea label")
     )
   ), ``, ``);
 
 auto selectExample = demoBs5Example("select", "Select", 
   H5Div(   
     H5Div(["form-floating"],
-      H5Select("floatingLabelSelect", ["form-select"], ["aria-label":"Select"],
+      BS5InputSelect("floatingLabelSelect", ["aria-label":"Select"],
         H5Option(["selected":"selected"], "Select option"),
         H5Option(["value":"1"], "Option one"),
         H5Option(["value":"2"], "Option two"),
@@ -65,7 +64,7 @@ auto selectExample = demoBs5Example("select", "Select",
         H5Option(["value":"4"], "Option four"),
         H5Option(["value":"5"], "Option five")
       ),
-      H5Label(["form-label"], ["for":"floatingLabelSelect"], "Select label")
+      BS5FormLabel(["for":"floatingLabelSelect"], "Select label")
     )
   ), ``, ``);
 

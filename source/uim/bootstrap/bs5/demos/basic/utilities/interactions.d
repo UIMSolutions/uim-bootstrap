@@ -18,25 +18,25 @@ static this() {
 
 auto textExample = demoBs5Example("text", "Text selection", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "All"),
+    H5H5(["text-muted", "mt-3"], "All"),
     H5P(["user-select-all"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
-    H5H4(["h5", "text-muted", "mt-3"], "Auto"),
+    H5H5(["text-muted", "mt-3"], "Auto"),
     H5P(["user-select-auto"], ["style":"user-select: none;"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo."),
-    H5H4(["h5", "text-muted", "mt-3"], "None"),
+    H5H5(["text-muted", "mt-3"], "None"),
     H5P(["user-select-none"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
   ), ``, ``);
 
 auto defaultExample = demoBs5Example("default", "Pointer events", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "None"),
+    H5H5(["text-muted", "mt-3"], "None"),
     H5P(
       H5A(["pe-none"], ["href":"#"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), 
       H5String("In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")),
-    H5H4(["h5", "text-muted", "mt-3"], "Auto"),
+    H5H5(["text-muted", "mt-3"], "Auto"),
     H5P(
       H5A(["pe-auto"], ["href":"#", "style":"pointer-events: none;"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit"), 
       H5String("In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")),
-    H5H4(["h5", "text-muted", "mt-3"], "None for parent, auto for second child"),
+    H5H5(["text-muted", "mt-3"], "None for parent, auto for second child"),
     H5P(["pe-none"], 
       H5A(["href":"#"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
       H5String("In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex."),

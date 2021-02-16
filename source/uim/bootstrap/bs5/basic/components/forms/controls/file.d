@@ -3,7 +3,7 @@
 import uim.bootstrap; 
 
 class DBS5InputFile : DBS5Input {
-	mixin(H5This!(null, null, `["type":"file"]`));
+	mixin(H5This!(null, ["form-control"], `["type":"file"]`));
 }
 mixin(H5Calls!("BS5InputFile"));
 unittest {

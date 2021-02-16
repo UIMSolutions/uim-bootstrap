@@ -19,9 +19,9 @@ static this() {
 auto inputExample = demoBs5Example("input", "Text input", 
   H5Div(
     BS5FormLabel(["for":"inputText"], "Text input label"),
-    H5Input("inputText", ["form-control"], ["placeholder":"Text input placeholder"])
+    BS5InputText("inputText", ["placeholder":"Text input placeholder"])
   ), `BS5FormLabel(["for":"inputText"], "Text input label"),
-  H5Input("inputText", ["form-control"], ["placeholder":"Text input placeholder"])`, ``);
+BS5InputText("inputText", ["placeholder":"Text input placeholder"])`, ``);
 
 auto textareaExample = demoBs5Example("textarea", "Textarea", 
   H5Div(
@@ -32,50 +32,75 @@ auto textareaExample = demoBs5Example("textarea", "Textarea",
 
 auto sizingExample = demoBs5Example("sizing", "Sizing", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Small"),
+    H5H5(["text-muted", "mt-3"], "Small"),
     BS5FormLabel(["for":"inputTextSmall"], "Text input label"),
-    H5Input("inputTextSmall", ["form-control", "form-control-sm"], ["type":"text", "placeholder":"Text input placeholder"]),
-    H5H4(["h5", "text-muted", "mt-3"], "Large"),
+    BS5InputText("inputTextSmall", ["form-control-sm"], ["placeholder":"Text input placeholder"]),
+    H5H5(["text-muted", "mt-3"], "Large"),
     BS5FormLabel(["for":"inputTextLarge" ], "Text input label"),
-    H5Input("inputTextLarge", ["form-control", "form-control-lg"], ["type":"text", "placeholder":"Text input placeholder"])
-  ), ``, ``);
+    BS5InputText("inputTextLarge", ["form-control-lg"], ["placeholder":"Text input placeholder"])
+  ), `BS5FormLabel(["for":"inputTextSmall"], "Text input label")
+BS5InputText("inputTextSmall", ["form-control-sm"], ["placeholder":"Text input placeholder"])
+BS5FormLabel(["for":"inputTextLarge" ], "Text input label")
+BS5InputText("inputTextLarge", ["form-control-lg"], ["placeholder":"Text input placeholder"])`, ``);
 
 auto readonlyExample = demoBs5Example("readonly", "Readonly", 
   H5Div(
     BS5FormLabel(["for":"inputTextReadonly"], "Text input label"),
-    H5Input("inputTextReadonly", ["form-control"], ["type":"text", "placeholder":"Text input placeholder", "readonly":"readonly"])
-  ), ``, ``);
+    BS5InputText("inputTextReadonly", ["placeholder":"Text input placeholder", "readonly":"readonly"])
+  ), `BS5FormLabel(["for":"inputTextReadonly"], "Text input label")
+BS5InputText("inputTextReadonly", ["placeholder":"Text input placeholder", "readonly":"readonly"])`, ``);
 
 auto plainExample = demoBs5Example("plain", "Readonly plain text", 
   H5Div(
     BS5FormLabel(["for":"inputTextReadonlyPlaintext"], "Text input label"),
-    H5Input("inputTextReadonlyPlaintext", ["form-control-plaintext"], ["type":"text", "placeholder":"Text input placeholder", "readonly":"readonly"])
-  ), ``, ``);
+    BS5InputPlaintext("inputTextReadonlyPlaintext", ["placeholder":"Text input placeholder", "readonly":"readonly"])
+  ), `BS5FormLabel(["for":"inputTextReadonlyPlaintext"], "Text input label"),
+BS5InputPlaintext("inputTextReadonlyPlaintext", ["placeholder":"Text input placeholder", "readonly":"readonly"])`, ``);
 
-auto fileExample = demoBs5Example("file", "File", 
+auto fileExample = demoBs5Example("file", "Working with files", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Default"),
+    H5H5(["text-muted", "mt-3"], "Default"),
     BS5FormLabel(["for":"inputFile"], "Default file input label"),
-    H5Input("inputFile", ["form-control"], ["type":"file"]),
-    H5H4(["h5", "text-muted", "mt-3"], "Multiple"),
-    BS5FormLabel(["for":"inputFileMultiple"], "Multiple file input label"),
-    H5Input("inputFileMultiple", ["form-control"], ["type":"file", "multiple":"multiple"]),
-    H5H4(["h5", "text-muted", "mt-3"], "Disabled"),
+    BS5InputFile("inputFile", [""]),
+    H5H5(["text-muted", "mt-3"], "Multiple"),
+    BS5FormLabel(["for":"inputFileMultiple"], "Input for multiple files"),
+    BS5InputFile("inputFileMultiple", ["multiple":"multiple"]),
+    H5H5(["text-muted", "mt-3"], "Disabled"),
     BS5FormLabel(["for":"inputFileDisabled"], "Disabled file input label"),
-    H5Input("inputFileDisabled", ["form-control"], ["type":"file", "disabled":"disabled"]),
-    H5H4(["h5", "text-muted", "mt-3"], "Small"),
+    BS5InputFile("inputFileDisabled", ["disabled":"disabled"]),
+    H5H5(["text-muted", "mt-3"], "Small"),
     BS5FormLabel(["for":"inputFileSmall"], "Small file input label"),
-    H5Input("inputFileSmall", ["form-control", "form-control-sm"], ["type":"file"]),
-    H5H4(["h5", "text-muted", "mt-3"], "Large"),
+    BS5InputFile("inputFileSmall", ["form-control-sm"]),
+    H5H5(["text-muted", "mt-3"], "Large"),
     BS5FormLabel(["for":"inputFileLarge"], "Large file input label"),
-    H5Input("inputFileLarge", ["form-control", "form-control-lg"], ["type":"file"]) 
-  ), ``, ``);
+    BS5InputFile("inputFileLarge", ["form-control-lg"]) 
+), `BS5FormLabel(["for":"inputFile"], "Default file input label")
+BS5InputFile("inputFile", [""])
+BS5FormLabel(["for":"inputFileMultiple"], "Multiple file input label")
+BS5InputFile("inputFileMultiple", ["multiple":"multiple"])
+BS5FormLabel(["for":"inputFileDisabled"], "Disabled file input label")
+BS5InputFile("inputFileDisabled", ["disabled":"disabled"])
+BS5FormLabel(["for":"inputFileSmall"], "Small file input label")
+BS5InputFile("inputFileSmall", ["form-control-sm"])
+BS5FormLabel(["for":"inputFileLarge"], "Large file input label")
+BS5InputFile("inputFileLarge", ["form-control-lg"])`, 
+`<label class="form-label" for="inputFile">Default file input label</label>
+<input id="inputFile" class="form-control" type="file">
+<label class="form-label" for="inputFileMultiple">Multiple file input label</label>
+<input id="inputFileMultiple" class="form-control" multiple="" type="file">
+<label class="form-label" for="inputFileDisabled">Disabled file input label</label>
+<input id="inputFileDisabled" class="form-control" disabled="" type="file">
+<label class="form-label" for="inputFileSmall">Small file input label</label>
+<input id="inputFileSmall" class="form-control form-control-sm" type="file">
+<label class="form-label" for="inputFileLarge">Large file input label</label>
+<input id="inputFileLarge" class="form-control form-control-lg" type="file">`);
 
 auto colorExample = demoBs5Example("color", "Color picker", 
   H5Div(
     BS5FormLabel(["for":"inputColor"], "Color input label"),
-    H5Input("inputColor", ["form-control", "form-control-color"], ["type":"color", "value":"#7952b3", "title":"Choose color"])
-  ), ``, ``);
+    BS5InputColor("inputColor", ["value":"#7952b3", "title":"Choose color"])
+  ), `BS5FormLabel(["for":"inputColor"], "Color input label"),
+BS5InputColor("inputColor", ["value":"#7952b3", "title":"Choose color"])`, ``);
 
 auto datalistExample = demoBs5Example("datalist", "Datalist", 
   H5Div(
@@ -88,7 +113,14 @@ auto datalistExample = demoBs5Example("datalist", "Datalist",
       H5Option(["value":"Bulma"]),
       H5Option(["value":"Materialize"])
     )
-  ), ``, ``);
+  ), `BS5FormLabel(["for":"datalist"], "Datalist label"),
+  H5Input("datalist", ["form-control"], ["list":"datalistOptions", "placeholder":"Type to search..."]),
+  H5Datalist("datalistOptions", [""],
+    H5Option(["value":"Bootstrap"]),
+    H5Option(["value":"Foundation"]),
+    H5Option(["value":"Semantic UI"]),
+    H5Option(["value":"Bulma"]),
+    H5Option(["value":"Materialize"]))`, ``);
 
        return 
 H5Main(["style":"margin-top:70px;"], 

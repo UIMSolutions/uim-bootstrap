@@ -18,14 +18,14 @@ static this() {
 
 auto relativeExample = demoBs5Example("relative", "Relative to parent", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Width"),
+    H5H5(["text-muted", "mt-3"], "Width"),
     H5Div(["bg-secondary"],
       H5Div(["bg-light", "p-2", "w-25"], "Width 25%"),
       H5Div(["bg-light", "p-2", "w-50"], "Width 50%"),
       H5Div(["bg-light", "p-2", "w-75"], "Width 75%"),
       H5Div(["bg-", "p-2", "w-100"], "Width 100%")
     ),
-    H5H4(["h5", "text-muted", "mt-3"], "Height"),
+    H5H5(["text-muted", "mt-3"], "Height"),
     H5Div(["bg-secondary", "d-flex", "justify-content-between"], ["style":"height: 200px;"],
       H5Div(["bg-light", "p-2", "h-25"], "Height 25%"),
       H5Div(["bg-light", "p-2", "h-50"], "Height 50%"),
@@ -36,9 +36,9 @@ auto relativeExample = demoBs5Example("relative", "Relative to parent",
 
 auto maxExample = demoBs5Example("max", "Max width and height", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Max-width"),
+    H5H5(["text-muted", "mt-3"], "Max-width"),
     H5Img(["mw-100"], ["src":"/img/600x200.png", "alt":"Max-width = 100%"]), 
-    H5H4(["h5", "text-muted", "mt-3"], "Max-height"),
+    H5H5(["text-muted", "mt-3"], "Max-height"),
     H5Div(["style":"height: 400px;"],
       H5Img(["mh-100"], ["src":"/img/200x600.png", "alt":"Max-height = 100%"]) 
     )
@@ -46,13 +46,13 @@ auto maxExample = demoBs5Example("max", "Max width and height",
 
 auto viewportExample = demoBs5Example("viewport", "Relative to viewport", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Width"),
+    H5H5(["text-muted", "mt-3"], "Width"),
     H5Img(["vw-100"], ["src":"/img/1000x200.png", "alt":"Width 100vw"]), 
-    H5H4(["h5", "text-muted", "mt-3"], "Min-width"),
+    H5H5(["text-muted", "mt-3"], "Min-width"),
     H5Img(["min-vw-100"], ["src":"/img/1000x200.png", "alt":"Min-width 100vw"]),
-    H5H4(["h5", "text-muted", "mt-3"], "Height"),
+    H5H5(["text-muted", "mt-3"], "Height"),
     H5Img(["vh-100"], ["src":"/img/200x2000.png", "alt":"Height 100vh"]), 
-    H5H4(["h5", "text-muted", "mt-3"], "Min-height"),
+    H5H5(["text-muted", "mt-3"], "Min-height"),
     H5Img(["min-vh-100"], ["src":"/img/200x2000.png", "alt":"Min-height 100vh"]) 
   ), ``, ``);
    

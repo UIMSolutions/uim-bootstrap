@@ -45,11 +45,11 @@ H5Main(["style":"margin-top:70px;"],
        H5Div(["mb-5"]
               <h3 ["text-muted"]Alignment", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "All breakpoints")
+                H5H5(["text-muted", "mt-3"], "All breakpoints")
                 H5P(["text-start"]Left-aligned text.")
                 H5P(["text-center"]Center-aligned text.")
                 H5P(["text-end"]Right-aligned text.")
-                H5H4(["h5", "text-muted", "mt-3"], "Responsive")
+                H5H5(["text-muted", "mt-3"], "Responsive")
                 H5P(["text-sm-end"]Right-aligned text for breakpoint sm and up.")
                 H5P(["text-md-end"]Right-aligned text for breakpoint md and up.")
                 H5P(["text-lg-end"]Right-aligned text for breakpoint lg and up.")
@@ -120,13 +120,13 @@ H5Main(["style":"margin-top:70px;"],
             H5Div(["mb-5"]
               <h3 ["text-muted"]Line height", 
               H5Div(
-                H5H4(["h5", "text-muted", "mt-3"], "1")
+                H5H5(["text-muted", "mt-3"], "1")
                 H5P(["lh-1"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.")
-                H5H4(["h5", "text-muted", "mt-3"], "Small")
+                H5H5(["text-muted", "mt-3"], "Small")
                 H5P(["lh-sm"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.")
-                H5H4(["h5", "text-muted", "mt-3"], "Base")
+                H5H5(["text-muted", "mt-3"], "Base")
                 H5P(["lh-base"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.")
-                H5H4(["h5", "text-muted", "mt-3"], "Large")
+                H5H5(["text-muted", "mt-3"], "Large")
                 H5P(["lh-lg"]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien mi, eleifend at arcu ac, ullamcorper ultricies tortor. Aliquam sit amet pellentesque dui. Nam ultrices rhoncus sodales. Maecenas a ante turpis. Suspendisse at mauris ex. Cras quis lacus sit amet lacus iaculis vulputate ac id nibh. Vestibulum consectetur porta ante vitae iaculis. Sed pretium euismod arcu, ut aliquet ipsum rutrum venenatis.")
               )
             )

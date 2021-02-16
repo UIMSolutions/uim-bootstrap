@@ -119,18 +119,18 @@ auto abbreviationsExample = demoBs5Example("abbreviations", "Abbreviations",
 
 auto blockquotesExample = demoBs5Example("Blockquotes", "Blockquotes", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Default"),
+    H5H5(["text-muted", "mt-3"], "Default"),
     H5Blockquote(["blockquote"],
       H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
     ),
-    H5H4(["h5", "text-muted", "mt-3"], "Attribution"),
+    H5H5(["text-muted", "mt-3"], "Attribution"),
     H5Figure(
       H5Blockquote(["blockquote"],
         H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
       ),
       H5Figcaption(["blockquote-footer"], `Author name in <cite title="Source Title"]Source Title</cite>`)
     ),
-    H5H4(["h5", "text-muted", "mt-3"], "Alignment"),
+    H5H5(["text-muted", "mt-3"], "Alignment"),
     H5Figure(["text-center"],
       H5Blockquote(["blockquote"],
         H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
@@ -147,7 +147,7 @@ auto blockquotesExample = demoBs5Example("Blockquotes", "Blockquotes",
 
 auto unstyledExample = demoBs5Example("unstyled", "Unstyled lists", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Unordered lists"),
+    H5H5(["text-muted", "mt-3"], "Unordered lists"),
     H5Ul(["list-unstyled"],
       H5Li("First item"),
       H5Li("Second item"),
@@ -174,7 +174,7 @@ auto unstyledExample = demoBs5Example("unstyled", "Unstyled lists",
         )
       )
     ),
-    H5H4(["h5", "text-muted", "mt-3"], "Ordered lists"),
+    H5H5(["text-muted", "mt-3"], "Ordered lists"),
     H5Ol(["list-unstyled"],
       H5Li("First item"),
       H5Li("Second item"),
@@ -205,13 +205,13 @@ auto unstyledExample = demoBs5Example("unstyled", "Unstyled lists",
 
 auto inlinelistsExample = demoBs5Example("inlinelists", "Inline lists", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Unordered lists"),
+    H5H5(["text-muted", "mt-3"], "Unordered lists"),
     H5Ul(["list-inline"],
       H5Li(["list-inline-item"], "First inline item"),
       H5Li(["list-inline-item"], "Second inline item"),
       H5Li(["list-inline-item"], "Third inline item")
     ),
-    H5H4(["h5", "text-muted", "mt-3"], "Ordered lists"),
+    H5H5(["text-muted", "mt-3"], "Ordered lists"),
     H5Ol(["list-inline"],
       H5Li(["list-inline-item"], "First inline item"),
       H5Li(["list-inline-item"], "Second inline item"),

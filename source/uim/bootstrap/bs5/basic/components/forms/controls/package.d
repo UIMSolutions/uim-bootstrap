@@ -13,6 +13,7 @@ public import uim.bootstrap.bs5.basic.components.forms.controls.image;
 public import uim.bootstrap.bs5.basic.components.forms.controls.month;
 public import uim.bootstrap.bs5.basic.components.forms.controls.number;
 public import uim.bootstrap.bs5.basic.components.forms.controls.password;
+public import uim.bootstrap.bs5.basic.components.forms.controls.plaintext;
 public import uim.bootstrap.bs5.basic.components.forms.controls.radio;
 public import uim.bootstrap.bs5.basic.components.forms.controls.range;
 public import uim.bootstrap.bs5.basic.components.forms.controls.reset;

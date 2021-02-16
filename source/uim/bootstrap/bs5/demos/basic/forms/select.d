@@ -17,8 +17,8 @@ static this() {
     override string content() { 
 auto defaultExample = demoBs5Example("default", "Default", 
   H5Div(
-    H5Label(["form-label"], ["for":"inputSelect"], "Default select"),
-    H5Select("inputSelect", ["form-select"], ["aria-label":"Default select"],
+    BS5FormLabel(["for":"inputSelect"], "Default select"),
+    BS5InputSelect("inputSelect", ["aria-label":"Default select"],
       H5Option(["selected":"selected"], "Select option"),
       H5Option(["value":"2"], "Option two"),
       H5Option(["value":"1"], "Option one"),
@@ -26,55 +26,85 @@ auto defaultExample = demoBs5Example("default", "Default",
       H5Option(["value":"4"], "Option four"),
       H5Option(["value":"5"], "Option five")
     )
-  ), ``, ``);
+  ), `BS5FormLabel(["for":"inputSelect"], "Default select"),
+BS5InputSelect("inputSelect", ["aria-label":"Default select"],
+  H5Option(["selected":"selected"], "Select option"),
+  H5Option(["value":"2"], "Option two"),
+  H5Option(["value":"1"], "Option one"),
+  H5Option(["value":"3"], "Option three"),
+  H5Option(["value":"4"], "Option four"),
+  H5Option(["value":"5"], "Option five")`, ``);
 
 auto sizesExample = demoBs5Example("sizes", "Sizes", 
   H5Div(
-    H5H4(["h5", "text-muted", "mt-3"], "Small"),
-    H5Label(["form-label"], ["for":"inputSelectSmall"], "Small select"),
-    H5Select("inputSelectSmall", ["form-select", "form-select-sm"], ["aria-label":"Small select"],
+    H5H5(["text-muted", "mt-3"], "Small"),
+    BS5FormLabel(["for":"inputSelectSmall"], "Small select"),
+    BS5InputSelect("inputSelectSmall", ["form-select-sm"], ["aria-label":"Small select"],
       H5Option(["selected":"selected"], "Select option"),
       H5Option(["value":"1"], "Option one"),
       H5Option(["value":"2"], "Option two"),
       H5Option(["value":"3"], "Option three"),
       H5Option(["value":"4"], "Option four"),
-      H5Option(["value":"5"], "Option five")
-    ),
-    H5H4(["h5", "text-muted", "mt-3"], "Large"),
-    H5Label(["form-label"], ["for":"inputSelectLarge"], "Large select"),
-    H5Select("inputSelectLarge", ["form-select", "form-select-lg"], ["aria-label":"Large select"],
+      H5Option(["value":"5"], "Option five")),
+    H5H5(["text-muted", "mt-3"], "Large"),
+    BS5FormLabel(["for":"inputSelectLarge"], "Large select"),
+    BS5InputSelect("inputSelectLarge", ["form-select-lg"], ["aria-label":"Large select"],
       H5Option(["selected":"selected"], "Select option"),
       H5Option(["value":"1"], "Option one"),
       H5Option(["value":"2"], "Option two"),
       H5Option(["value":"3"], "Option three"),
       H5Option(["value":"4"], "Option four"),
-      H5Option(["value":"5"], "Option five")
-    )
-  ), ``, ``);
+      H5Option(["value":"5"], "Option five"))
+  ), `    BS5FormLabel(["for":"inputSelectSmall"], "Small select"),
+BS5InputSelect("inputSelectSmall", ["form-select-sm"], ["aria-label":"Small select"],
+  H5Option(["selected":"selected"], "Select option"),
+  H5Option(["value":"1"], "Option one"),
+  H5Option(["value":"2"], "Option two"),
+  H5Option(["value":"3"], "Option three"),
+  H5Option(["value":"4"], "Option four"),
+  H5Option(["value":"5"], "Option five")),
+BS5FormLabel(["for":"inputSelectLarge"], "Large select"),
+BS5InputSelect("inputSelectLarge", ["form-select-lg"], ["aria-label":"Large select"],
+  H5Option(["selected":"selected"], "Select option"),
+  H5Option(["value":"1"], "Option one"),
+  H5Option(["value":"2"], "Option two"),
+  H5Option(["value":"3"], "Option three"),
+  H5Option(["value":"4"], "Option four"),
+  H5Option(["value":"5"], "Option five"))`, ``);
 
 auto multipleExample = demoBs5Example("multiple", "Multiple", 
   H5Div(
-    H5Label(["form-label"], ["for":"inputSelectMultiple"], "Multiple select"),
-    H5Select("inputSelectMultiple", ["form-select"], ["multiple":"multiple", "aria-label":"Multiple select"],
+    BS5FormLabel(["for":"inputSelectMultiple"], "Multiple select"),
+    BS5InputSelect("inputSelectMultiple", ["multiple":"multiple", "aria-label":"Multiple select"],
       H5Option(["value":"1"], "Option one"),
       H5Option(["value":"2"], "Option two"),
       H5Option(["value":"3"], "Option three"),
       H5Option(["value":"4"], "Option four"),
-      H5Option(["value":"5"], "Option five")
-    )
-  ), ``, ``);
+      H5Option(["value":"5"], "Option five"))
+  ), `BS5FormLabel(["for":"inputSelectMultiple"], "Multiple select"),
+BS5InputSelect("inputSelectMultiple", ["multiple":"multiple", "aria-label":"Multiple select"],
+  H5Option(["value":"1"], "Option one"),
+  H5Option(["value":"2"], "Option two"),
+  H5Option(["value":"3"], "Option three"),
+  H5Option(["value":"4"], "Option four"),
+  H5Option(["value":"5"], "Option five"))`, ``);
 
 auto visibleExample = demoBs5Example("visible", "Visible options", 
   H5Div(
-    H5Label(["form-label"], ["for":"inputSelectSize"], "Select with size"),
-    H5Select("inputSelectSize", ["form-select"], ["size":"3", "aria-label":"Select with size"],
+    BS5FormLabel(["for":"inputSelectSize"], "Select with size"),
+    BS5InputSelect("inputSelectSize", ["size":"3", "aria-label":"Select with size"],
       H5Option(["value":"1"], "Option one"),
       H5Option(["value":"2"], "Option two"),
       H5Option(["value":"3"], "Option three"),
       H5Option(["value":"4"], "Option four"),
-      H5Option(["value":"5"], "Option five")
-    )
-  ), ``, ``);
+      H5Option(["value":"5"], "Option five"))
+  ), `BS5FormLabel(["for":"inputSelectSize"], "Select with size"),
+BS5InputSelect("inputSelectSize", ["size":"3", "aria-label":"Select with size"],
+  H5Option(["value":"1"], "Option one"),
+  H5Option(["value":"2"], "Option two"),
+  H5Option(["value":"3"], "Option three"),
+  H5Option(["value":"4"], "Option four"),
+  H5Option(["value":"5"], "Option five"))`, ``);
 
         return 
 H5Main(["style":"margin-top:70px;"], 

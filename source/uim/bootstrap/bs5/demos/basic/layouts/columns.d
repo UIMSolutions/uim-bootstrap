@@ -34,7 +34,7 @@ H5Main(["style":"margin-top:70px;"],
       demoBs5Example("vertical", "Vertical Alignment",
         H5Div(
           BS5Container(
-            H5H4(["h5", "text-muted", "mt-3"], "Row"),
+            H5H5(["text-muted", "mt-3"], "Row"),
             H5P("Grid with vertical alignment on .row using flex utilities")),
           BS5Container(["data-example":"row-height"],
             BS5Row(["align-items-start"],
@@ -50,7 +50,7 @@ H5Main(["style":"margin-top:70px;"],
               BS5Col(".col"),
               BS5Col(".col"))),
           BS5Container(
-            H5H4(["h5", "text-muted", "mt-3"], "Column"),
+            H5H5(["text-muted", "mt-3"], "Column"),
             H5P("Grid with vertical alignment on .col using flex utilities")),
           BS5Container(["data-example":"row-height"], 
             BS5Row(
@@ -99,7 +99,7 @@ H5Main(["style":"margin-top:70px;"],
 
       demoBs5Example("breaks", "Column breaks",
         H5Div(
-         H5H4(["h5", "text-muted", "mt-3",  "container"], "All breakpoints"),
+         H5H5(["text-muted", "mt-3",  "container"], "All breakpoints"),
           H5P("Grid with column break using sizing utility class"),
           BS5Container(
             BS5Row(
@@ -110,7 +110,7 @@ H5Main(["style":"margin-top:70px;"],
               H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
               H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"),
               H5Div(["col-6", "col-sm-3"], ".col-6 .col-sm-3"))),
-          H5H4(["h5", "text-muted", "mt-3",  "container"], "Responsive"),
+          H5H5(["text-muted", "mt-3",  "container"], "Responsive"),
           H5P("Grid with responsive column break using sizing and display utility classes"),
           BS5Container(
             BS5Row(
@@ -137,7 +137,7 @@ H5Main(["style":"margin-top:70px;"],
 
       demoBs5Example("offsetting", "Offsetting",
         H5Div(
-          H5H4(["h5", "text-muted", "mt-3",  "container"], "Offset classes"),
+          H5H5(["text-muted", "mt-3",  "container"], "Offset classes"),
           BS5Container(
             BS5Row(
               H5Div(["col-md-5"], ".col-md-52"),
@@ -148,7 +148,7 @@ H5Main(["style":"margin-top:70px;"],
             BS5Row(
               H5Div(["col-sm-6 col-md-5 col-lg-6"], ".col-sm-6 .col-md-5 .col-lg-62"),
               H5Div(["col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0"], ".col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-02"))),
-          H5H4(["h5", "text-muted", "mt-3",  "container"], "Spacing utilities"),
+          H5H5(["text-muted", "mt-3",  "container"], "Spacing utilities"),
           BS5Container(
             BS5Row(
               H5Div(["col-md-5"], ".col-md-52"),
