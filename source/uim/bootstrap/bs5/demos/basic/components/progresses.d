@@ -16,11 +16,20 @@ static this() {
 			
     override string content() { 
 
-auto noExample = demoBs5Example("no", "No progress",
+auto noExample = demoBs5Example("no", "Progress with no progress",
   H5Div(
-    BS5Progress(
-      BS5ProgressBar(["aria-valuenow":"0", "aria-valuemin":"0", "aria-valuemax":"100"]))
-      ), ``, ``);
+    BS5Progress
+    .bar(["aria-valuenow":"0", "aria-valuemin":"0", "aria-valuemax":"100"])
+      ), `BS5Progress(
+  BS5ProgressBar(["aria-valuenow":"0", "aria-valuemin":"0", "aria-valuemax":"100"]))
+  
+--- Compact version ---
+
+BS5Progress
+.bar(["aria-valuenow":"0", "aria-valuemin":"0", "aria-valuemax":"100"])
+`, `<div class="progress">
+  <div class="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" role="progressbar"></div>
+</div>`);
 
 auto inlineExample = demoBs5Example("inline", "Width using inline styles",
   H5Div(
@@ -31,7 +40,9 @@ auto inlineExample = demoBs5Example("inline", "Width using inline styles",
     BS5Progress
     .bar(["style":"width: 62%", "aria-valuenow":"62", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
     BS5Progress
-    .bar(["style":"width: 75%", "aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"])
+    .bar(["style":"width: 75%", "aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br, 
+    BS5Progress
+    .bar(["style":"width: 100%", "aria-valuenow":"100", "aria-valuemin":"0", "aria-valuemax":"100"])
       ), `BS5Progress(
   BS5ProgressBar(["style":"width: 15%", "aria-valuenow":"15", "aria-valuemin":"0", "aria-valuemax":"100"]))
 BS5Progress(
@@ -40,6 +51,8 @@ BS5Progress(
   BS5ProgressBar(["style":"width: 62%", "aria-valuenow":"62", "aria-valuemin":"0", "aria-valuemax":"100"]))
 BS5Progress(
   BS5ProgressBar(["style":"width: 75%", "aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"]))
+BS5Progress(
+  BS5ProgressBar(["style":"width: 100%", "aria-valuenow":"100", "aria-valuemin":"0", "aria-valuemax":"100"]))
   
 --- Compact version ---
 
@@ -50,9 +63,26 @@ BS5Progress
 BS5Progress
 .bar(["style":"width: 62%", "aria-valuenow":"62", "aria-valuemin":"0", "aria-valuemax":"100"])
 BS5Progress
-.bar(["style":"width: 75%", "aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"])`, ``);
+.bar(["style":"width: 75%", "aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"])
+BS5Progress
+.bar(["style":"width: 100%", "aria-valuenow":"100", "aria-valuemin":"0", "aria-valuemax":"100"])`, 
+`<div class="progress">
+  <div class="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="15" role="progressbar" style="width: 15%"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="33" role="progressbar" style="width: 33%"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="62" role="progressbar" style="width: 62%"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" role="progressbar" style="width: 75%"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" role="progressbar" style="width: 100%"></div>
+</div>`);
 
-auto sizingExample = demoBs5Example("sizing", "Width using sizing classes",
+auto sizingExample = demoBs5Example("sizing", "Width using sizing classes w-25, w-50. w-75, w-100",
   H5Div(
     BS5Progress
     .bar(["w-25"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
@@ -80,9 +110,21 @@ BS5Progress
 BS5Progress
 .bar(["w-75"], ["aria-valuenow":"75", "aria-valuemin":"0", "aria-valuemax":"100"])
 BS5Progress
-.bar(["w-100"], ["aria-valuenow":"100", "aria-valuemin":"0", "aria-valuemax":"100"])`, ``);
+.bar(["w-100"], ["aria-valuenow":"100", "aria-valuemin":"0", "aria-valuemax":"100"])`, 
+`<div class="progress">
+  <div class="progress-bar w-25" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar w-75" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar w-100" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" role="progressbar"></div>
+</div>`);
 
-auto labelExample = demoBs5Example("label", "Label",
+auto labelExample = demoBs5Example("label", "Progress with a label",
   H5Div(
     BS5Progress
     .bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"], "50%")
@@ -92,7 +134,10 @@ auto labelExample = demoBs5Example("label", "Label",
 --- Compact version ---
 
 BS5Progress
-    .bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"], "50%")`, ``);
+    .bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"], "50%")`, 
+`<div class="progress">
+  <div class="progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar">50%</div>
+</div>`);
 
 auto heightExample = demoBs5Example("height", "Height using inline styles",
   H5Div(
@@ -101,16 +146,22 @@ auto heightExample = demoBs5Example("height", "Height using inline styles",
     BS5Progress(["style":"height: 2rem;"])
     .bar(["w-50"], ["aria-valuenow":"50", "aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
       ), `BS5Progress(["style":"height: 0.5rem;"], 
-  BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])), H5Br,
+  BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])) 
 BS5Progress(["style":"height: 2rem;"], 
   BS5ProgressBar(["w-50"], ["aria-valuenow":"50", "aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]))
   
 --- Compact version ---
 
 BS5Progress(["style":"height: 0.5rem;"])
-.bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), H5Br,
+.bar(["w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
 BS5Progress(["style":"height: 2rem;"])
-.bar(["w-50"], ["aria-valuenow":"50", "aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])`, ``);
+.bar(["w-50"], ["aria-valuenow":"50", "aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])`, 
+`<div class="progress" style="height: 0.5rem;">
+  <div class="progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+<div class="progress" style="height: 2rem;">
+  <div class="progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>`);
 
 auto backgroundExample = demoBs5Example("background", "Background colors",
   H5Div(
@@ -164,8 +215,32 @@ BS5Progress
 BS5Progress
 .bar(["w-50", "bg-light", "text-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
 BS5Progress
-.bar(["w-50", "bg-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"]), 
-  `, ``);
+.bar(["w-50", "bg-dark"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])`, 
+`<div class="progress">
+  <div class="bg-primary progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="bg-secondary progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="bg-success progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="bg-danger progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="bg-warning progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="bg-info progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="bg-light progress-bar text-dark w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+<div class="progress">
+  <div class="bg-dark progress-bar w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>
+`);
 
 auto stripesExample = demoBs5Example("stripes", "Stripes",
   H5Div(
@@ -178,7 +253,9 @@ auto stripesExample = demoBs5Example("stripes", "Stripes",
 
 BS5Progress
 .bar(["progress-bar-striped", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
-  `, ``);
+  `, `<div class="progress">
+  <div class="progress-bar progress-bar-animated progress-bar-striped w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>`);
 
 auto animatedExample = demoBs5Example("animated", "Animated Stripes",
   H5Div(
@@ -191,7 +268,9 @@ auto animatedExample = demoBs5Example("animated", "Animated Stripes",
 
 BS5Progress
 .bar(["progress-bar-striped", "progress-bar-animated", "w-50"], ["aria-valuenow":"50", "aria-valuemin":"0", "aria-valuemax":"100"])
-`, ``);
+`, `<div class="progress">
+  <div class="progress-bar progress-bar-striped w-50" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar"></div>
+</div>`);
 
 auto multipleExample = demoBs5Example("multiple", "Multiple progress bars",
   H5Div(
@@ -210,7 +289,11 @@ BS5Progress
 .bar(["w-25", "bg-info"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
 .bar(["w-25", "bg-warning"], ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
 .bar(["w-25", "bg-danger"],  ["aria-valuenow":"25", "aria-valuemin":"0", "aria-valuemax":"100"])
-`, ``);
+`, `<div class="progress">
+  <div class="bg-info progress-bar w-25" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"></div>
+  <div class="bg-warning progress-bar w-25" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"></div>
+  <div class="bg-danger progress-bar w-25" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"></div>
+</div>`);
 
       return 
 H5Main(["style":"margin-top:70px;"], 

@@ -11,14 +11,8 @@ static this() {
 			.changed(timeLastModified(__FILE_FULL_PATH__))
 			.parameters([
 					"pageTitle": "Starter Page - Bootstrap 5 Demo",
-          ]);
-		} 
-			
-    override string content() { 
-
-      return 
-`    <style>
-body {
+          ])
+          .styles(`body {
   font-size: .875rem;
 }
 
@@ -131,256 +125,9 @@ body {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
-
-    
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  H5A(["navbar-brand col-md-3 col-lg-2 me-0 px-3"], ["href":"#"], Company name"),
-  H5Button(["navbar-toggler position-absolute d-md-none collapsed" "type":"button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false", "aria-label":"Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  )
-  <input class="form-control form-control-dark w-100" "type":"text" "placeholder":"Search", "aria-label":"Search">
-  BS5NavbarNav(["px-3">
-    BS5NavItem(["text-nowrap">
-      BS5NavLink( "href":"#"], Sign out"),
-    ),
-  </ul>
-</header>
-
-H5Div(["container-fluid">
-  H5Div(["row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-      H5Div(["position-sticky pt-3">
-        H5Ul(["nav flex-column">
-          BS5NavItem(
-            BS5NavLink(["active" aria-current="page"], ["href":"#"], 
-              <span data-feather="home"></span>
-              Dashboard
-            "),
-          ),
-          BS5NavItem(
-            BS5NavLink( "href":"#"], 
-              <span data-feather="file"></span>
-              Orders
-            "),
-          ),
-          BS5NavItem(
-            BS5NavLink( "href":"#"], 
-              <span data-feather="shopping-cart"></span>
-              Products
-            "),
-          ),
-          BS5NavItem(
-            BS5NavLink( "href":"#"], 
-              <span data-feather="users"></span>
-              Customers
-            "),
-          ),
-          BS5NavItem(
-            BS5NavLink( "href":"#"], 
-              <span data-feather="bar-chart-2"></span>
-              Reports
-            "),
-          ),
-          BS5NavItem(
-            BS5NavLink( "href":"#"], 
-              <span data-feather="layers"></span>
-              Integrations
-            "),
-          ),
-        </ul>
-
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-          <span>Saved reports</span>
-          H5A(["link-secondary"], ["href":"#", "aria-label":"Add a new report">
-            <span data-feather="plus-circle"></span>
-          "),
-        </h6>
-        H5Ul(["nav flex-column mb-2">
-          BS5NavItem(
-            BS5NavLink( "href":"#"], 
-              <span data-feather="file-text"></span>
-              Current month
-            "),
-          ),
-          BS5NavItem(
-            BS5NavLink( "href":"#"], 
-              <span data-feather="file-text"></span>
-              Last quarter
-            "),
-          ),
-          BS5NavItem(
-            BS5NavLink( "href":"#"], 
-              <span data-feather="file-text"></span>
-              Social engagement
-            "),
-          ),
-          BS5NavItem(
-            BS5NavLink( "href":"#"], 
-              <span data-feather="file-text"></span>
-              Year-end sale
-            "),
-          ),
-        </ul>
-      ),
-    ),
-
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      H5Div(["d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        H5H1(["h2">Dashboard</h1>
-        H5Div(["btn-toolbar mb-2 mb-md-0">
-          H5Div(["btn-group me-2">
-            BS5Button(["btn-sm btn-outline-secondary">Share)
-            BS5Button(["btn-sm btn-outline-secondary">Export)
-          ),
-          BS5Button(["btn-sm btn-outline-secondary dropdown-toggle">
-            <span data-feather="calendar"></span>
-            This week
-          )
-        ),
-      ),
-
-      <canvas class="my-4 w-100" id="myChart" "width":"900" "height":"380"></canvas>
-
-      H5H2("Section title")
-      H5Div(["table-responsive">
-        <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1,001</td>
-              <td>Lorem</td>
-              <td>ipsum</td>
-              <td>dolor</td>
-              <td>sit</td>
-            </tr>
-            <tr>
-              <td>1,002</td>
-              <td>amet</td>
-              <td>consectetur</td>
-              <td>adipiscing</td>
-              <td>elit</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>Integer</td>
-              <td>nec</td>
-              <td>odio</td>
-              <td>Praesent</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>libero</td>
-              <td>Sed</td>
-              <td>cursus</td>
-              <td>ante</td>
-            </tr>
-            <tr>
-              <td>1,004</td>
-              <td>dapibus</td>
-              <td>diam</td>
-              <td>Sed</td>
-              <td>nisi</td>
-            </tr>
-            <tr>
-              <td>1,005</td>
-              <td>Nulla</td>
-              <td>quis</td>
-              <td>sem</td>
-              <td>at</td>
-            </tr>
-            <tr>
-              <td>1,006</td>
-              <td>nibh</td>
-              <td>elementum</td>
-              <td>imperdiet</td>
-              <td>Duis</td>
-            </tr>
-            <tr>
-              <td>1,007</td>
-              <td>sagittis</td>
-              <td>ipsum</td>
-              <td>Praesent</td>
-              <td>mauris</td>
-            </tr>
-            <tr>
-              <td>1,008</td>
-              <td>Fusce</td>
-              <td>nec</td>
-              <td>tellus</td>
-              <td>sed</td>
-            </tr>
-            <tr>
-              <td>1,009</td>
-              <td>augue</td>
-              <td>semper</td>
-              <td>porta</td>
-              <td>Mauris</td>
-            </tr>
-            <tr>
-              <td>1,010</td>
-              <td>massa</td>
-              <td>Vestibulum</td>
-              <td>lacinia</td>
-              <td>arcu</td>
-            </tr>
-            <tr>
-              <td>1,011</td>
-              <td>eget</td>
-              <td>nulla</td>
-              <td>Class</td>
-              <td>aptent</td>
-            </tr>
-            <tr>
-              <td>1,012</td>
-              <td>taciti</td>
-              <td>sociosqu</td>
-              <td>ad</td>
-              <td>litora</td>
-            </tr>
-            <tr>
-              <td>1,013</td>
-              <td>torquent</td>
-              <td>per</td>
-              <td>conubia</td>
-              <td>nostra</td>
-            </tr>
-            <tr>
-              <td>1,014</td>
-              <td>per</td>
-              <td>inceptos</td>
-              <td>himenaeos</td>
-              <td>Curabitur</td>
-            </tr>
-            <tr>
-              <td>1,015</td>
-              <td>sodales</td>
-              <td>ligula</td>
-              <td>in</td>
-              <td>libero</td>
-            </tr>
-          </tbody>
-        </table>
-      ),
-    </main>
-  ),
-),
-
-<script>
-/* globals Chart:false, feather:false */
+      }`)
+      .styles(["href":"dashboard.css", "rel":"stylesheet"])
+      .libraries(`/* globals Chart:false, feather:false */
 
 (function () {
   'use strict'
@@ -432,11 +179,211 @@ H5Div(["container-fluid">
       }
     }
   })
-})()
+})()`);
+		} 
+			
+    override string content() { 
 
-</script>
+      return 
+BS5Navbar(["navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"], 
+  BS5NavbarBrand(["col-md-3 col-lg-2 me-0 px-3"], ["href":"#"], "Company name"),
+  H5Button(["navbar-toggler position-absolute d-md-none collapsed"], ["type":"button", "data-bs-toggle":"collapse", "data-bs-target":"#sidebarMenu", "aria-controls":"sidebarMenu", "aria-expanded":"false", "aria-label":"Toggle navigation"], 
+    H5Span(["navbar-toggler-icon"])
+  ),
+  BS5InputSearch(["form-control-dark w-100"], ["type":"text", "placeholder":"Search", "aria-label":"Search"]),
+  BS5NavbarNav(["px-3"], 
+    BS5NavItem(["text-nowrap"], 
+      BS5NavLink(["href":"#"], "Sign out")
+    )
+  )
+).toString~
 
-`;
+H5Div(["container-fluid"], 
+  H5Div(["row"], 
+    H5Nav("sidebarMenu", ["col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"], 
+      H5Div(["position-sticky pt-3"], 
+        H5Ul(["nav flex-column"], 
+          BS5NavItem(
+            BS5NavLink(["active"], ["aria-current":"page", "href":"#"], 
+              H5Span(["data-feather":"home"]), H5String("Dashboard"))
+          ),
+          BS5NavItem(
+            BS5NavLink(["href":"#"], 
+              H5Span(["data-feather":"file"]), H5String("Orders"))
+          ),
+          BS5NavItem(
+            BS5NavLink(["href":"#"], 
+              H5Span(["data-feather":"shopping-cart"]), H5String("Products"))
+          ),
+          BS5NavItem(
+            BS5NavLink(["href":"#"], 
+              H5Span(["data-feather":"users"]), H5String("Customers"))
+          ),
+          BS5NavItem(
+            BS5NavLink(["href":"#"], 
+              H5Span(["data-feather":"bar-chart-2"]), H5String("Reports"))
+          ),
+          BS5NavItem(
+            BS5NavLink(["href":"#"], 
+              H5Span(["data-feather":"layers"]), H5String("Integrations"))
+          )
+        ),
+        H5H6(["sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"],
+          H5Span("Saved reports"),
+          H5A(["link-secondary"], ["href":"#", "aria-label":"Add a new report"],
+            H5Span(["data-feather":"plus-circle"])
+          )
+        ),
+        H5Ul(["nav flex-column mb-2"], 
+          BS5NavItem(
+            BS5NavLink(["href":"#"], 
+              H5Span(["data-feather":"file-text"]), H5String("Current month"))
+          ),
+          BS5NavItem(
+            BS5NavLink(["href":"#"], 
+              H5Span(["data-feather":"file-text"]), H5String("Last quarter"))
+          ),
+          BS5NavItem(
+            BS5NavLink(["href":"#"], 
+              H5Span(["data-feather":"file-text"]), H5String("Social engagement"))
+          ),
+          BS5NavItem(
+            BS5NavLink(["href":"#"], 
+              H5Span(["data-feather":"file-text"]), H5String("Year-end sale"))
+          )
+        )
+      )
+    ),
+
+    H5Main(["col-md-9 ms-sm-auto col-lg-10 px-md-4"], 
+      H5Div(["d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"], 
+        H5H1(["h2"], "Dashboard"),
+        H5Div(["btn-toolbar mb-2 mb-md-0"], 
+          H5Div(["btn-group me-2"], 
+            BS5Button(["btn-sm btn-outline-secondary"], "Share"),
+            BS5Button(["btn-sm btn-outline-secondary"], "Export")
+          ),
+          BS5Button(["btn-sm btn-outline-secondary dropdown-toggle"],
+            H5Span(["data-feather":"calendar"]), H5String("This week"))
+        )
+      ),
+
+      H5Canvas("myChart", ["my-4 w-100"], ["width":"900", "height":"380"]),
+
+      H5H2("Section title"),
+      H5Div(["table-responsive"], 
+        H5Table(["table table-striped table-sm"], 
+          H5Thead(
+            H5Tr
+              .th("#")
+              .th("Header")
+              .th("Header")
+              .th("Header")
+              .th("Header")
+          ),
+          H5Tbody(
+            H5Tr
+              .td("1,001")
+              .td("Lorem")
+              .td("ipsum")
+              .td("dolor")
+              .td("sit"),
+            H5Tr
+              .td("1,002")
+              .td("amet")
+              .td("consectetur")
+              .td("adipiscing")
+              .td("elit"),
+            H5Tr
+              .td("1,003")
+              .td("Integer")
+              .td("nec")
+              .td("odio")
+              .td("Praesent"),
+            H5Tr
+              .td("1,003")
+              .td("libero")
+              .td("Sed")
+              .td("cursus")
+              .td("ante"),
+            H5Tr
+              .td("1,004")
+              .td("dapibus")
+              .td("diam")
+              .td("Sed")
+              .td("nisi"),
+            H5Tr
+              .td("1,005")
+              .td("Nulla")
+              .td("quis")
+              .td("sem")
+              .td("at"),
+            H5Tr
+              .td("1,006")
+              .td("nibh")
+              .td("elementum")
+              .td("imperdiet")
+              .td("Duis"),
+            H5Tr
+              .td("1,007")
+              .td("sagittis")
+              .td("ipsum")
+              .td("Praesent")
+              .td("mauris"),
+            H5Tr
+              .td("1,008")
+              .td("Fusce")
+              .td("nec")
+              .td("tellus")
+              .td("sed"),
+            H5Tr
+              .td("1,009")
+              .td("augue")
+              .td("semper")
+              .td("porta")
+              .td("Mauris"),
+            H5Tr
+              .td("1,010")
+              .td("massa")
+              .td("Vestibulum")
+              .td("lacinia")
+              .td("arcu"),
+            H5Tr
+              .td("1,011")
+              .td("eget")
+              .td("nulla")
+              .td("Class")
+              .td("aptent"),
+            H5Tr
+              .td("1,012")
+              .td("taciti")
+              .td("sociosqu")
+              .td("ad")
+              .td("litora"),
+            H5Tr
+              .td("1,013")
+              .td("torquent")
+              .td("per")
+              .td("conubia")
+              .td("nostra"),
+            H5Tr
+              .td("1,014")
+              .td("per")
+              .td("inceptos")
+              .td("himenaeos")
+              .td("Curabitur"),            
+            H5Tr
+              .td("1,015")
+              .td("sodales")
+              .td("ligula")
+              .td("in")
+              .td("libero")
+          )
+        )
+      )
+    )
+  )
+).toString;
 
     }
   });

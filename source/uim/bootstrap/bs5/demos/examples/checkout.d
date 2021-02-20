@@ -53,50 +53,50 @@ H5Div(["container">
     H5Div(["row g-3">
       H5Div(["col-md-5 col-lg-4 order-md-last">
         H5H4(["d-flex justify-content-between align-items-center mb-3">
-          <span class="text-muted">Your cart</span>
-          <span class="badge bg-secondary rounded-pill">3</span>
+          <span class="text-muted">Your cart"),
+          <span class="badge bg-secondary rounded-pill">3"),
         </h4>
         H5Ul(["list-group mb-3">
           <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
+            H5Div(
               <h6 class="my-0">Product name</h6>
-              <small class="text-muted">Brief description</small>
+              <small class="text-muted">Brief description"),
             ),
-            <span class="text-muted">$12</span>
+            <span class="text-muted">$12"),
           ),
           <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
+            H5Div(
               <h6 class="my-0">Second product</h6>
-              <small class="text-muted">Brief description</small>
+              <small class="text-muted">Brief description"),
             ),
-            <span class="text-muted">$8</span>
+            <span class="text-muted">$8"),
           ),
           <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
+            H5Div(
               <h6 class="my-0">Third item</h6>
-              <small class="text-muted">Brief description</small>
+              <small class="text-muted">Brief description"),
             ),
-            <span class="text-muted">$5</span>
+            <span class="text-muted">$5"),
           ),
           <li class="list-group-item d-flex justify-content-between bg-light">
             H5Div(["text-success">
               <h6 class="my-0">Promo code</h6>
-              <small>EXAMPLECODE</small>
+              <small>EXAMPLECODE"),
             ),
-            <span class="text-success">−$5</span>
+            <span class="text-success">−$5"),
           ),
           <li class="list-group-item d-flex justify-content-between">
-            <span>Total (USD)</span>
+            H5Span("Total (USD)"),
             <strong>$20")
           ),
-        </ul>
+        ),
 
         H5Form(["card p-2">
           H5Div(["input-group">
             <input "type":"text" class="form-control" "placeholder":"Promo code">
             BS5ButtonSubmit(["btn-secondary"], "Redeem")
           ),
-        </form>
+        )
       ),
       H5Div(["col-md-7 col-lg-8">
         H5H4(["mb-3">Billing address</h4>
@@ -121,7 +121,7 @@ H5Div(["container">
             H5Div(["col-12">
               <label for="username" class="form-label">Username</label>
               H5Div(["input-group">
-                <span class="input-group-text">@</span>
+                <span class="input-group-text">@"),
                 <input "type":"text" class="form-control" id="username" "placeholder":"Username" required>
               H5Div(["invalid-feedback">
                   Your username is required.
@@ -130,7 +130,7 @@ H5Div(["container">
             ),
 
             H5Div(["col-12">
-              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)"),</label>
               BS5InputEmail("email", ["placeholder":"you@example.com"]),
               H5Div(["invalid-feedback">
                 Please enter a valid email address for shipping updates.
@@ -146,7 +146,7 @@ H5Div(["container">
             ),
 
             H5Div(["col-12">
-              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)"),</label>
               <input "type":"text" class="form-control" id="address2" "placeholder":"Apartment or suite">
             ),
 
@@ -216,7 +216,7 @@ H5Div(["container">
             H5Div(["col-md-6">
               <label for="cc-name" class="form-label">Name on card</label>
               <input "type":"text" class="form-control" id="cc-name" "placeholder":"" required>
-              <small class="text-muted">Full name as displayed on card</small>
+              <small class="text-muted">Full name as displayed on card"),
               H5Div(["invalid-feedback">
                 Name on card is required
               ),
@@ -250,19 +250,19 @@ H5Div(["container">
           <hr class="my-4">
 
           H5Button(["w-100 btn btn-primary btn-lg" "type":"submit">Continue to checkout)
-        </form>
+        )
       ),
     ),
-  </main>
+  )
 
-  <footer class="my-5 pt-5 text-muted text-center text-small">
+  H5Footer(["my-5 pt-5 text-muted text-center text-small">
     H5P(["mb-1">&copy; 2017–2020 Company Name")
     H5Ul(["list-inline">
       <li class="list-inline-item">H5A(["href":"#"], Privacy")),
       <li class="list-inline-item">H5A(["href":"#"], Terms")),
       <li class="list-inline-item">H5A(["href":"#"], Support")),
-    </ul>
-  </footer>
+    ),
+  )
 ),
 
 

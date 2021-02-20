@@ -71,31 +71,25 @@ body {
 			
     override string content() { 
 
+//   <body class="text-center">
       return 
-`   
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    
-<main class="form-signin">
-  <form>
-    H5Img(["mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" "width":"72" "height":"57">
+H5Main(["form-signin"],
+  H5Form(
+    H5Img(["mb-4"], ["src":"../assets/brand/bootstrap-logo.svg", "alt":"", "width":"72", "height":"57"]),
     H5H1(["h3 mb-3 fw-normal"], "Please sign in"),
-    <label for="inputEmail" class="visually-hidden"], "Email address"),
+    H5Label(["visually-hidden"], ["for":"inputEmail"], "Email address"),
     BS5InputEmail("inputEmail", ["placeholder":"Email address", "required":"required", "autofocus":"autofocus"]),
-    <label for="inputPassword" class="visually-hidden"], "Password"),
-    <input "type":"password" id="inputPassword" class="form-control" "placeholder":"Password" required>
-    H5Div(["checkbox mb-3">
-      <label>
-        <input "type":"checkbox" value="remember-me"], " Remember me
-      </label>
+    H5Label(["visually-hidden"], ["for":"inputPassword"], "Password"),
+    BS5InputPassword("inputPassword", ["placeholder":"Password", "required":"required"]),
+    H5Div(["checkbox mb-3"], 
+      H5Label(
+        H5Input(["type":"checkbox", "value":"remember-me"], "Remember me")
+      )
     ),
     BS5ButtonSubmit(["w-100", "btn-lg btn-primary"], "Sign in"),
     H5P(["mt-5 mb-3 text-muted"], "&copy; 2017-2020")
-  </form>
-</main>
-`;
+  )
+).toString;
 
     }
   });

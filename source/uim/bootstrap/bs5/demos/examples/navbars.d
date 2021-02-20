@@ -43,12 +43,12 @@ body {
     H5Div(["container-fluid"], 
       H5A(["navbar-brand"], ["href":"#"], Never expand"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div("navbarsExample01", ["collapse navbar-collapse"], 
         BS5NavbarNav(["me-auto mb-2"], 
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Home"),
           ),
           BS5NavItem(
@@ -65,10 +65,10 @@ body {
               H5Li(BS5DropdownItem(["href":"#"], Something else here"))
             )
           ),
-        </ul>
+        ),
         <form>
           <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-        </form>
+        )
       ),
     ),
   ),
@@ -77,21 +77,21 @@ body {
     H5Div(["container-fluid"], 
       H5A(["navbar-brand"], ["href":"#"], Always expand"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div(["collapse navbar-collapse" id="navbarsExample02"], 
         BS5NavbarNav(["me-auto"], 
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Home"),
           ),
           BS5NavItem(
             BS5NavLink( "href":"#"], Link"),
           ),
-        </ul>
+        ),
         <form>
           <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-        </form>
+        )
       ),
     ),
   ),
@@ -100,12 +100,12 @@ body {
     H5Div(["container-fluid"], 
       H5A(["navbar-brand"], ["href":"#"], Expand at sm"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div(["collapse navbar-collapse" id="navbarsExample03"], 
         BS5NavbarNav(["me-auto mb-2 mb-sm-0"], 
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Home"),
           ),
           BS5NavItem(
@@ -120,12 +120,12 @@ body {
               H5Li("BS5DropdownItem(["href":"#"], Action")),
               H5Li("BS5DropdownItem(["href":"#"], Another action")),
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-            </ul>
+            ),
           ),
-        </ul>
+        ),
         <form>
           <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-        </form>
+        )
       ),
     ),
   ),
@@ -134,12 +134,12 @@ body {
     H5Div(["container-fluid"], 
       H5A(["navbar-brand"], ["href":"#"], Expand at md"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div(["collapse navbar-collapse" id="navbarsExample04"], 
         BS5NavbarNav(["me-auto mb-2 mb-md-0"], 
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Home"),
           ),
           BS5NavItem(
@@ -154,12 +154,12 @@ body {
               H5Li("BS5DropdownItem(["href":"#"], Action")),
               H5Li("BS5DropdownItem(["href":"#"], Another action")),
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-            </ul>
+            ),
           ),
-        </ul>
+        ),
         <form>
           <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-        </form>
+        )
       ),
     ),
   ),
@@ -168,12 +168,12 @@ body {
     H5Div(["container-fluid">
       H5A(["navbar-brand"], ["href":"#"], Expand at lg"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div(["collapse navbar-collapse" id="navbarsExample05">
         BS5NavbarNav(["me-auto mb-2 mb-lg-0">
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Home"),
           ),
           BS5NavItem(
@@ -188,12 +188,12 @@ body {
               H5Li("BS5DropdownItem(["href":"#"], Action")),
               H5Li("BS5DropdownItem(["href":"#"], Another action")),
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-            </ul>
+            ),
           ),
-        </ul>
+        ),
         <form>
           <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-        </form>
+        )
       ),
     ),
   ),
@@ -202,12 +202,12 @@ body {
     H5Div(["container-fluid">
       H5A(["navbar-brand"], ["href":"#"], Expand at xl"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false", "aria-label":"Toggle navigation"], 
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div(["collapse navbar-collapse" id="navbarsExample06"], 
         BS5NavbarNav(["me-auto mb-2 mb-xl-0">
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Home"),
           ),
           BS5NavItem(
@@ -222,12 +222,12 @@ body {
               H5Li("BS5DropdownItem(["href":"#"], Action")),
               H5Li("BS5DropdownItem(["href":"#"], Another action")),
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-            </ul>
+            ),
           ),
-        </ul>
+        ),
         <form>
           <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-        </form>
+        )
       ),
     ),
   ),
@@ -236,12 +236,12 @@ body {
     H5Div(["container-fluid"], 
       H5A(["navbar-brand"], ["href":"#"], Expand at xxl"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div(["collapse navbar-collapse" id="navbarsExampleXxl"], 
         BS5NavbarNav(["me-auto mb-2 mb-xl-0"], 
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Home"),
           ),
           BS5NavItem(
@@ -256,12 +256,12 @@ body {
               H5Li("BS5DropdownItem(["href":"#"], Action")),
               H5Li("BS5DropdownItem(["href":"#"], Another action")),
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-            </ul>
+            ),
           ),
-        </ul>
+        ),
         <form>
           <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-        </form>
+        )
       ),
     ),
   ),
@@ -270,12 +270,12 @@ body {
     H5Div(["container"], 
       H5A(["navbar-brand"], ["href":"#"], Container"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div(["collapse navbar-collapse" id="navbarsExample07"], 
         BS5NavbarNav(["me-auto mb-2 mb-lg-0"], 
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Home"),
           ),
           BS5NavItem(
@@ -290,12 +290,12 @@ body {
               H5Li("BS5DropdownItem(["href":"#"], Action")),
               H5Li("BS5DropdownItem(["href":"#"], Another action")),
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-            </ul>
+            ),
           ),
-        </ul>
+        ),
         <form>
           <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-        </form>
+        )
       ),
     ),
   ),
@@ -304,12 +304,12 @@ body {
     H5Div(["container-xl"], 
       H5A(["navbar-brand"], ["href":"#"], Container XL"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div(["collapse navbar-collapse" id="navbarsExample07XL"], 
         BS5NavbarNav(["me-auto mb-2 mb-lg-0"], 
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Home"),
           ),
           BS5NavItem(
@@ -324,12 +324,12 @@ body {
               H5Li("BS5DropdownItem(["href":"#"], Action")),
               H5Li("BS5DropdownItem(["href":"#"], Another action")),
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-            </ul>
+            ),
           ),
-        </ul>
+        ),
         <form>
           <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-        </form>
+        )
       ),
     ),
   ),
@@ -341,12 +341,12 @@ body {
   H5Nav(["navbar navbar-expand-lg navbar-dark bg-dark", "aria-label":"Tenth navbar example"], 
     H5Div(["container-fluid"], 
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
 
       H5Div(["collapse navbar-collapse justify-content-md-center" id="navbarsExample08"], 
         H5Ul(["navbar-nav"], 
-          <BS5NavItem(["active"], 
+          BS5NavItem(["active"], 
             BS5NavLink( aria-current="page"], ["href":"#"], Centered nav only"),
           ),
           BS5NavItem(
@@ -361,9 +361,9 @@ body {
               H5Li("BS5DropdownItem(["href":"#"], Action")),
               H5Li("BS5DropdownItem(["href":"#"], Another action")),
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-            </ul>
+            ),
           ),
-        </ul>
+        ),
       ),
     ),
   ),
@@ -373,12 +373,12 @@ body {
       H5Div(["container-fluid"], 
         H5A(["navbar-brand"], ["href":"#"], Navbar"),
         H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false", "aria-label":"Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          H5Span(["navbar-toggler-icon"])
         )
 
         H5Div(["collapse navbar-collapse" id="navbarsExample09"], 
           BS5NavbarNav(["me-auto mb-2 mb-lg-0"], 
-            <BS5NavItem(["active"], 
+            BS5NavItem(["active"], 
               BS5NavLink( aria-current="page"], ["href":"#"], Home"),
             ),
             BS5NavItem(
@@ -393,12 +393,12 @@ body {
                 H5Li("BS5DropdownItem(["href":"#"], Action")),
                 H5Li("BS5DropdownItem(["href":"#"], Another action")),
                 H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-              </ul>
+              ),
             ),
-          </ul>
+          ),
           <form>
             <input class="form-control" "type":"text" "placeholder":"Search", "aria-label":"Search">
-          </form>
+          )
         ),
       ),
     ),
@@ -406,12 +406,12 @@ body {
     H5Nav(["navbar navbar-expand-lg navbar-light bg-light rounded", "aria-label":"Twelfth navbar example"], 
       H5Div(["container-fluid"], 
         H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false", "aria-label":"Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          H5Span(["navbar-toggler-icon"])
         )
 
         H5Div(["collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           H5Ul(["navbar-nav">
-            <BS5NavItem(["active"], 
+            BS5NavItem(["active"], 
               BS5NavLink( aria-current="page"], ["href":"#"], Centered nav only"),
             ),
             BS5NavItem(
@@ -426,17 +426,17 @@ body {
                 H5Li("BS5DropdownItem(["href":"#"], Action")),
                 H5Li("BS5DropdownItem(["href":"#"], Another action")),
                 H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-              </ul>
+              ),
             ),
-          </ul>
+          ),
         ),
       ),
     ),
 
-    <div>
+    H5Div(
       H5Div(["bg-light p-5 rounded"], 
         H5Div(["col-sm-8 mx-auto"], 
-          <h1>Navbar examples</h1>
+          H5H1("Navbar examples"),
           H5P("This example is a quick exercise to illustrate how the navbar and its contents work. Some navbars extend the width of the viewport, others are confined within a <code>.container</code>. For positioning of navbars, checkout the H5A(["../examples/navbar-static/">top"), and H5A(["../examples/navbar-fixed/">fixed top"), examples.")
           H5P("At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button to toggle the collapsed content.")
           H5P("
@@ -446,7 +446,7 @@ body {
       ),
     ),
   ),
-</main>
+)
 `;
 
     }

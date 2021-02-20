@@ -204,7 +204,7 @@ body {
     H5H1(["d-flex align-items-center fs-4 text-white mb-0">
       <img src="../assets/brand/bootstrap-logo-white.svg" "width":"38" "height":"30" class="me-3" alt="Bootstrap">
       Cheatsheet
-    </h1>
+    "),
     H5A(["../examples/cheatsheet-rtl/" class="ms-auto link-light" hreflang="ar">RTL cheatsheet"),
   )
 ).toString
@@ -219,7 +219,7 @@ body {
           H5Li("H5A(["d-inline-flex align-items-center rounded" href="#images">Images")),
           H5Li("H5A(["d-inline-flex align-items-center rounded" href="#tables">Tables")),
           H5Li("H5A(["d-inline-flex align-items-center rounded" href="#figures">Figures")),
-        </ul>
+        ),
       ),
       <li class="my-2"], 
         H5Button(["btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">Forms)
@@ -230,7 +230,7 @@ body {
           H5Li("H5A(["d-inline-flex align-items-center rounded" href="#input-group">Input group")),
           H5Li("H5A(["d-inline-flex align-items-center rounded" href="#floating-labels">Floating labels")),
           H5Li("H5A(["d-inline-flex align-items-center rounded" href="#validation">Validation")),
-        </ul>
+        ),
       ),
       <li class="my-2"], 
         H5Button(["btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Components)
@@ -255,9 +255,9 @@ body {
           H5Li("H5A(["d-inline-flex align-items-center rounded" href="#spinners">Spinners")),
           H5Li("H5A(["d-inline-flex align-items-center rounded" href="#toasts">Toasts")),
           H5Li("H5A(["d-inline-flex align-items-center rounded" href="#tooltips">Tooltips")),
-        </ul>
+        ),
       ),
-    </ul>
+    ),
   ),
 </aside>
 H5Div(["bd-cheatsheet container-fluid bg-white"], 
@@ -266,11 +266,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
 
     H5A(["my-3" id="typography"], 
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"], 
-        <h3>Typography"),
+        H5H3("Typography"),
         H5A(["d-flex align-items-center" href="../content/typography/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example"], 
         H5P(["display-1">Display 1")
         H5P(["display-2">Display 2")
@@ -301,16 +301,16 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
         H5P("<s>This line of text is meant to be treated as no longer accurate.</s>")
         H5P("<ins>This line of text is meant to be treated as an addition to the document.</ins>")
         H5P("<u>This line of text will render as underlined.</u>")
-        H5P("<small>This line of text is meant to be treated as fine print.</small>")
+        H5P("<small>This line of text is meant to be treated as fine print."),")
         H5P("<strong>This line rendered as bold text.")")
         H5P("<em>This line rendered as italicized text.</em>")
         ),
 
         H5Div(["bd-example"], 
-        <blockquote class="blockquote">
+        BS5Blockquote(
           H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
+          H5Footer(["blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>)
+        )
         ),
 
         H5Div(["bd-example"], 
@@ -325,12 +325,12 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Li("Purus sodales ultricies),
               H5Li("Vestibulum laoreet porttitor sem),
               H5Li("Ac tristique libero volutpat at),
-            </ul>
+            ),
           ),
           H5Li("Faucibus porta lacus fringilla vel),
           H5Li("Aenean sit amet erat nunc),
           H5Li("Eget porttitor lorem),
-        </ul>
+        ),
         ),
 
         H5Div(["bd-example"], 
@@ -338,17 +338,17 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
           <li class="list-inline-item">Lorem ipsum),
           <li class="list-inline-item">Phasellus iaculis),
           <li class="list-inline-item">Nulla volutpat),
-        </ul>
+        ),
         ),
       ),
     </article>
     H5A(["my-3" id="images"], 
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Images"),
+        H5H3("Images"),
         H5A(["d-flex align-items-center" href="../content/images/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Svg(["bd-placeholder-img bd-placeholder-img-lg img-fluid" "width":"100%" "height":"250" xmlns="http://www.w3.org/2000/svg" "role":"img", "aria-label":"Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect "width":"100%" "height":"100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive image</text></svg>
 
@@ -362,180 +362,180 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="tables">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Tables"),
+        H5H3("Tables"),
         H5A(["d-flex align-items-center" href="../content/tables/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
-        <table class="table table-striped">
-          <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          </tbody>
-        </table>
+        H5Table(["table table-striped">
+          H5Thead(
+          H5Tr(
+            <th scope="col">#"),
+            <th scope="col">First"),
+            <th scope="col">Last"),
+            <th scope="col">Handle"),
+          ),
+          ),
+          H5Tbody(
+          H5Tr(
+            <th scope="row">1"),
+            H5Td("Mark"),
+            H5Td("Otto"),
+            H5Td("@mdo"),
+          ),
+          H5Tr(
+            <th scope="row">2"),
+            H5Td("Jacob"),
+            H5Td("Thornton"),
+            H5Td("@fat"),
+          ),
+          H5Tr(
+            <th scope="row">3"),
+            <td colspan="2">Larry the Bird"),
+            H5Td("@twitter"),
+          ),
+          )
+        )
         ),
 
         H5Div(["bd-example">
-        <table class="table table-dark table-borderless">
-          <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          </tbody>
-        </table>
+        H5Table(["table table-dark table-borderless">
+          H5Thead(
+          H5Tr(
+            <th scope="col">#"),
+            <th scope="col">First"),
+            <th scope="col">Last"),
+            <th scope="col">Handle"),
+          ),
+          ),
+          H5Tbody(
+          H5Tr(
+            <th scope="row">1"),
+            H5Td("Mark"),
+            H5Td("Otto"),
+            H5Td("@mdo"),
+          ),
+          H5Tr(
+            <th scope="row">2"),
+            H5Td("Jacob"),
+            H5Td("Thornton"),
+            H5Td("@fat"),
+          ),
+          H5Tr(
+            <th scope="row">3"),
+            <td colspan="2">Larry the Bird"),
+            H5Td("@twitter"),
+          ),
+          )
+        )
         ),
 
         H5Div(["bd-example">
-        <table class="table table-hover">
-          <thead>
-          <tr>
-            <th scope="col">Class</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">Default</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
+        H5Table(["table table-hover">
+          H5Thead(
+          H5Tr(
+            <th scope="col">Class"),
+            <th scope="col">Heading"),
+            <th scope="col">Heading"),
+          ),
+          ),
+          H5Tbody(
+          H5Tr(
+            <th scope="row">Default"),
+            H5Td("Cell"),
+            H5Td("Cell"),
+          ),
           
           <tr class="table-primary">
-            <th scope="row">Primary</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
+            <th scope="row">Primary"),
+            H5Td("Cell"),
+            H5Td("Cell"),
+          ),
           <tr class="table-secondary">
-            <th scope="row">Secondary</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
+            <th scope="row">Secondary"),
+            H5Td("Cell"),
+            H5Td("Cell"),
+          ),
           <tr class="table-success">
-            <th scope="row">Success</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
+            <th scope="row">Success"),
+            H5Td("Cell"),
+            H5Td("Cell"),
+          ),
           <tr class="table-danger">
-            <th scope="row">Danger</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
+            <th scope="row">Danger"),
+            H5Td("Cell"),
+            H5Td("Cell"),
+          ),
           <tr class="table-warning">
-            <th scope="row">Warning</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
+            <th scope="row">Warning"),
+            H5Td("Cell"),
+            H5Td("Cell"),
+          ),
           <tr class="table-info">
-            <th scope="row">Info</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
+            <th scope="row">Info"),
+            H5Td("Cell"),
+            H5Td("Cell"),
+          ),
           <tr class="table-light">
-            <th scope="row">Light</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
+            <th scope="row">Light"),
+            H5Td("Cell"),
+            H5Td("Cell"),
+          ),
           <tr class="table-dark">
-            <th scope="row">Dark</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          </tbody>
-        </table>
+            <th scope="row">Dark"),
+            H5Td("Cell"),
+            H5Td("Cell"),
+          ),
+          )
+        )
         ),
 
         H5Div(["bd-example">
-        <table class="table table-sm table-bordered">
-          <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          </tbody>
-        </table>
+        H5Table(["table table-sm table-bordered">
+          H5Thead(
+          H5Tr(
+            <th scope="col">#"),
+            <th scope="col">First"),
+            <th scope="col">Last"),
+            <th scope="col">Handle"),
+          ),
+          ),
+          H5Tbody(
+          H5Tr(
+            <th scope="row">1"),
+            H5Td("Mark"),
+            H5Td("Otto"),
+            H5Td("@mdo"),
+          ),
+          H5Tr(
+            <th scope="row">2"),
+            H5Td("Jacob"),
+            H5Td("Thornton"),
+            H5Td("@fat"),
+          ),
+          H5Tr(
+            <th scope="row">3"),
+            <td colspan="2">Larry the Bird"),
+            H5Td("@twitter"),
+          ),
+          )
+        )
         ),
       ),
     </article>
     H5A(["my-3" id="figures">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Figures"),
+        H5H3("Figures"),
         H5A(["d-flex align-items-center" href="../content/figures/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         <figure class="figure">
           H5Svg(["bd-placeholder-img figure-img img-fluid rounded" "width":"400" "height":"300" xmlns="http://www.w3.org/2000/svg" "role":"img", "aria-label":"Placeholder: 400x300" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect "width":"100%" "height":"100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">400x300</text></svg>
 
-          <figcaption class="figure-caption">A caption for the above image.</figcaption>
+          H5Figcaption(["figure-caption">A caption for the above image.</figcaption>
         </figure>
         ),
       ),
@@ -547,11 +547,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
 
     H5A(["my-3" id="overview">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Overview"),
+        H5H3("Overview"),
         H5A(["d-flex align-items-center" href="../forms/overview/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         <form>
           H5Div(["mb-3">
@@ -591,17 +591,17 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
             <input "type":"range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
           ),
           BS5ButtonSubmit(["btn-primary"], "Submit")
-        </form>
+        )
         ),
       ),
     </article>
     H5A(["my-3" id="disabled-forms">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Disabled forms"),
+        H5H3("Disabled forms"),
         H5A(["d-flex align-items-center" href="../forms/overview/#disabled-forms">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         <form>
           <fieldset disabled "aria-label":"Disabled fieldset example">
@@ -654,11 +654,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     ),
     H5A(["my-3" id="sizing">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Sizing"),
+        H5H3("Sizing"),
         H5A(["d-flex align-items-center" href="../forms/form-control/#sizing">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Div(["mb-3">
           <input class="form-control form-control-lg" "type":"text" "placeholder":".form-control-lg", "aria-label":".form-control-lg example">
@@ -696,32 +696,32 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="input-group">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Input group"),
+        H5H3("Input group"),
         H5A(["d-flex align-items-center" href="../forms/input-group/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example"],
         H5Div(["input-group mb-3"],
-          <span class="input-group-text" id="basic-addon1">@</span>
+          <span class="input-group-text" id="basic-addon1">@"),
           <input "type":"text" class="form-control" "placeholder":"Username", "aria-label":"Username" aria-describedby="basic-addon1">
         ),
         H5Div(["input-group mb-3"],
           <input "type":"text" class="form-control" "placeholder":"Recipient's username", "aria-label":"Recipient's username" aria-describedby="basic-addon2">
-          <span class="input-group-text" id="basic-addon2">@example.com</span>
+          <span class="input-group-text" id="basic-addon2">@example.com"),
         ),
         <label for="basic-url" class="form-label">Your vanity URL</label>
         H5Div(["input-group mb-3"],
-          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+          <span class="input-group-text" id="basic-addon3">https://example.com/users/"),
           <input "type":"text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
         ),
         H5Div(["input-group mb-3"],
-          <span class="input-group-text">$</span>
+          <span class="input-group-text">$"),
           <input "type":"text" class="form-control", "aria-label":"Amount (to the nearest dollar)">
-          <span class="input-group-text">.00</span>
+          <span class="input-group-text">.00"),
         ),
         H5Div(["input-group"],
-          <span class="input-group-text">With textarea</span>
+          <span class="input-group-text">With textarea"),
           <textarea class="form-control", "aria-label":"With textarea"></textarea>
         ),
         ),
@@ -729,11 +729,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article],
     H5A(["my-3" id="floating-labels">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Floating labels"),
+        H5H3("Floating labels"),
         H5A(["d-flex align-items-center" href="../forms/floating-labels/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example"],
         <form>
           H5Div(["form-floating mb-3"],
@@ -744,17 +744,17 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
             <input "type":"password" class="form-control" id="floatingPassword" "placeholder":"Password">
             <label for="floatingPassword">Password</label>
           ),
-        </form>
+        )
         ),
       ),
     </article>
     H5A(["my-3" id="validation">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Validation"),
+        H5H3("Validation"),
         H5A(["d-flex align-items-center" href="../forms/validation/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Form(["row g-3">
           H5Div(["col-md-4">
@@ -774,7 +774,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
           H5Div(["col-md-4">
             <label for="validationServerUsername" class="form-label">Username</label>
             H5Div(["input-group has-validation">
-              <span class="input-group-text" id="inputGroupPrepend3">@</span>
+              <span class="input-group-text" id="inputGroupPrepend3">@"),
               <input "type":"text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
               H5Div(["invalid-feedback">
                 Please choose a username.
@@ -819,7 +819,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
           H5Div(["col-12">
             H5Button(["btn btn-primary" "type":"submit">Submit form)
           ),
-        </form>
+        )
         ),
       ),
     </article>
@@ -830,11 +830,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
 
     H5A(["my-3" id="accordion">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Accordion"),
+        H5H3("Accordion"),
         H5A(["d-flex align-items-center" href="../components/accordion/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Div(["accordion" id="accordionExample">
           H5Div(["accordion-item">
@@ -879,11 +879,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="alerts">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Alerts"),
+        H5H3("Alerts"),
         H5A(["d-flex align-items-center" href="../components/alerts/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         
         H5Div(["alert alert-primary alert-dismissible fade show" "role":"alert">
@@ -932,38 +932,38 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="badge">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Badge"),
+        H5H3("Badge"),
         H5A(["d-flex align-items-center" href="../components/badge/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
-        H5P(["h1">Example heading <span class="badge bg-primary">New</span>")
-        H5P(["h2">Example heading <span class="badge bg-secondary">New</span>")
-        H5P(["h3">Example heading <span class="badge bg-success">New</span>")
-        H5P(["h4">Example heading <span class="badge bg-danger">New</span>")
-        H5P(["h5">Example heading <span class="badge bg-warning text-dark">New</span>")
-        H5P(["h6">Example heading <span class="badge bg-info text-dark">New</span>")
-        H5P(["h6">Example heading <span class="badge bg-light text-dark">New</span>")
-        H5P(["h6">Example heading <span class="badge bg-dark">New</span>")
+        H5P(["h1">Example heading <span class="badge bg-primary">New"),")
+        H5P(["h2">Example heading <span class="badge bg-secondary">New"),")
+        H5P(["h3">Example heading <span class="badge bg-success">New"),")
+        H5P(["h4">Example heading <span class="badge bg-danger">New"),")
+        H5P(["h5">Example heading <span class="badge bg-warning text-dark">New"),")
+        H5P(["h6">Example heading <span class="badge bg-info text-dark">New"),")
+        H5P(["h6">Example heading <span class="badge bg-light text-dark">New"),")
+        H5P(["h6">Example heading <span class="badge bg-dark">New"),")
         ),
 
         H5Div(["bd-example">
         
-        <span class="badge rounded-pill bg-primary">Primary</span>
-        <span class="badge rounded-pill bg-secondary">Secondary</span>
-        <span class="badge rounded-pill bg-success">Success</span>
-        <span class="badge rounded-pill bg-danger">Danger</span>
-        <span class="badge rounded-pill bg-warning text-dark">Warning</span>
-        <span class="badge rounded-pill bg-info text-dark">Info</span>
-        <span class="badge rounded-pill bg-light text-dark">Light</span>
-        <span class="badge rounded-pill bg-dark">Dark</span>
+        <span class="badge rounded-pill bg-primary">Primary"),
+        <span class="badge rounded-pill bg-secondary">Secondary"),
+        <span class="badge rounded-pill bg-success">Success"),
+        <span class="badge rounded-pill bg-danger">Danger"),
+        <span class="badge rounded-pill bg-warning text-dark">Warning"),
+        <span class="badge rounded-pill bg-info text-dark">Info"),
+        <span class="badge rounded-pill bg-light text-dark">Light"),
+        <span class="badge rounded-pill bg-dark">Dark"),
         ),
       ),
     </article>
     H5A("breadcrumb", ["my-3"], 
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Breadcrumb"),
+        H5H3("Breadcrumb"),
         H5A(["d-flex align-items-center" href="../components/breadcrumb/">Documentation"),
       ),
 
@@ -981,11 +981,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="buttons">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Buttons"),
+        H5H3("Buttons"),
         H5A(["d-flex align-items-center" href="../components/buttons/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         
         BS5Button(["btn-primary">Primary)
@@ -1021,11 +1021,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="button-group">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Button group"),
+        H5H3("Button group"),
         H5A(["d-flex align-items-center" href="../components/button-group/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Div(["btn-toolbar" "role":"toolbar", "aria-label":"Toolbar with button groups">
           H5Div(["btn-group me-2" "role":"group", "aria-label":"First group">
@@ -1048,32 +1048,32 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="card">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Card"),
+        H5H3("Card"),
         H5A(["d-flex align-items-center" href="../components/card/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Div(["row  row-cols-1 row-cols-md-2 g-4">
           H5Div(["col">
-            H5Div(["card">
+            BS5Card(
               H5Svg(["bd-placeholder-img card-img-top" "width":"100%" "height":"180" xmlns="http://www.w3.org/2000/svg" "role":"img", "aria-label":"Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect "width":"100%" "height":"100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
 
-              H5Div(["card-body">
-                <h5 class="card-title">Card title</h5>
-                H5P(["card-text">Some quick example text to build on the card title and make up the bulk of the card's content.")
+              BS5CardBody(
+                BS5CardTitle("Card title"),
+                BS5CardText("Some quick example text to build on the card title and make up the bulk of the card's content.")
                 <a "href":"#" class="btn btn-primary">Go somewhere"),
               ),
             ),
           ),
           H5Div(["col">
-            H5Div(["card">
+            BS5Card(
               H5Div(["card-header">
                 Featured
               ),
-              H5Div(["card-body">
-                <h5 class="card-title">Card title</h5>
-                H5P(["card-text">Some quick example text to build on the card title and make up the bulk of the card's content.")
+              BS5CardBody(
+                BS5CardTitle("Card title"),
+                BS5CardText("Some quick example text to build on the card title and make up the bulk of the card's content.")
                 <a "href":"#" class="btn btn-primary">Go somewhere"),
               ),
               H5Div(["card-footer text-muted">
@@ -1082,34 +1082,34 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
             ),
           ),
           H5Div(["col">
-            H5Div(["card">
-              H5Div(["card-body">
-                <h5 class="card-title">Card title</h5>
-                H5P(["card-text">Some quick example text to build on the card title and make up the bulk of the card's content.")
+            BS5Card(
+              BS5CardBody(
+                BS5CardTitle("Card title"),
+                BS5CardText("Some quick example text to build on the card title and make up the bulk of the card's content.")
               ),
               H5Ul(["list-group list-group-flush">
                 <li class="list-group-item">Cras justo odio),
                 <li class="list-group-item">Dapibus ac facilisis in),
                 <li class="list-group-item">Vestibulum at eros),
-              </ul>
-              H5Div(["card-body">
+              ),
+              BS5CardBody(
                 <a "href":"#" class="card-link">Card link"),
                 <a "href":"#" class="card-link">Another link"),
               ),
             ),
           ),
           H5Div(["col">
-            H5Div(["card">
+            BS5Card(
               H5Div(["row g-0">
                 H5Div(["col-md-4">
                   H5Svg(["bd-placeholder-img" "width":"100%" "height":"250" xmlns="http://www.w3.org/2000/svg" "role":"img", "aria-label":"Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect "width":"100%" "height":"100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
 
                 ),
                 H5Div(["col-md-8">
-                  H5Div(["card-body">
-                    <h5 class="card-title">Card title</h5>
-                    H5P(["card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.")
-                    H5P(["card-text"><small class="text-muted">Last updated 3 mins ago</small>")
+                  BS5CardBody(
+                    BS5CardTitle("Card title"),
+                    BS5CardText("This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.")
+                    BS5CardText("<small class="text-muted">Last updated 3 mins ago"),")
                   ),
                 ),
               ),
@@ -1121,24 +1121,24 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="carousel">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Carousel"),
+        H5H3("Carousel"),
         H5A(["d-flex align-items-center" href="../components/carousel/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <ol class="carousel-indicators">
             <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active">),
             <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1">),
             <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2">),
-          </ol>
+          ),
           H5Div(["carousel-inner">
             H5Div(["carousel-item active">
               H5Svg(["bd-placeholder-img bd-placeholder-img-lg d-block w-100" "width":"800" "height":"400" xmlns="http://www.w3.org/2000/svg" "role":"img", "aria-label":"Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect "width":"100%" "height":"100%" fill="#777"/><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
 
               H5Div(["carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
+                <h5>First slide label"),
                 H5P("Nulla vitae elit libero, a pharetra augue mollis interdum.")
               ),
             ),
@@ -1146,7 +1146,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Svg(["bd-placeholder-img bd-placeholder-img-lg d-block w-100" "width":"800" "height":"400" xmlns="http://www.w3.org/2000/svg" "role":"img", "aria-label":"Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect "width":"100%" "height":"100%" fill="#666"/><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
 
               H5Div(["carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
+                <h5>Second slide label"),
                 H5P("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
               ),
             ),
@@ -1154,18 +1154,18 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Svg(["bd-placeholder-img bd-placeholder-img-lg d-block w-100" "width":"800" "height":"400" xmlns="http://www.w3.org/2000/svg" "role":"img", "aria-label":"Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect "width":"100%" "height":"100%" fill="#555"/><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
 
               H5Div(["carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
+                <h5>Third slide label"),
                 H5P("Praesent commodo cursus magna, vel scelerisque nisl consectetur.")
               ),
             ),
           ),
           H5A(["carousel-control-prev" href="#carouselExampleCaptions" "role":"button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true">"),
+            <span class="visually-hidden">Previous"),
           "),
           H5A(["carousel-control-next" href="#carouselExampleCaptions" "role":"button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true">"),
+            <span class="visually-hidden">Next"),
           "),
         ),
         ),
@@ -1173,11 +1173,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="dropdowns">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Dropdowns"),
+        H5H3("Dropdowns"),
         H5A(["d-flex align-items-center" href="../components/dropdowns/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Div(["btn-group w-100 align-items-center justify-content-between flex-wrap">
           H5Div(["dropdown">
@@ -1191,7 +1191,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
               H5Li("<hr class="dropdown-divider">),
               H5Li("BS5DropdownItem(["href":"#"], Separated link")),
-            </ul>
+            ),
           ),
           H5Div(["dropdown">
             H5Button(["btn btn-secondary dropdown-toggle" "type":"button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -1204,7 +1204,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
               H5Li("<hr class="dropdown-divider">),
               H5Li("BS5DropdownItem(["href":"#"], Separated link")),
-            </ul>
+            ),
           ),
           H5Div(["dropdown">
             H5Button(["btn btn-secondary btn-lg dropdown-toggle" "type":"button" id="dropdownMenuButtonLG" data-bs-toggle="dropdown" aria-expanded="false">
@@ -1217,7 +1217,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
               H5Li("<hr class="dropdown-divider">),
               H5Li("BS5DropdownItem(["href":"#"], Separated link")),
-            </ul>
+            ),
           ),
         ),
         ),
@@ -1226,68 +1226,68 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
         H5Div(["btn-group">
           BS5Button(["btn-primary">Primary)
           BS5Button(["btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropdown</span>
+            <span class="visually-hidden">Toggle Dropdown"),
           )
           H5Ul(["dropdown-menu">
             H5Li("BS5DropdownItem(["href":"#"], Action")),
             H5Li("BS5DropdownItem(["href":"#"], Another action")),
             H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-          </ul>
+          ),
         ),<!-- /btn-group -->
         H5Div(["btn-group">
           BS5Button(["btn-secondary">Secondary)
           BS5Button(["btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropdown</span>
+            <span class="visually-hidden">Toggle Dropdown"),
           )
           H5Ul(["dropdown-menu">
             H5Li("BS5DropdownItem(["href":"#"], Action")),
             H5Li("BS5DropdownItem(["href":"#"], Another action")),
             H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-          </ul>
+          ),
         ),<!-- /btn-group -->
         H5Div(["btn-group">
           BS5Button(["btn-success">Success)
           BS5Button(["btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropdown</span>
+            <span class="visually-hidden">Toggle Dropdown"),
           )
           H5Ul(["dropdown-menu">
             H5Li("BS5DropdownItem(["href":"#"], Action")),
             H5Li("BS5DropdownItem(["href":"#"], Another action")),
             H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-          </ul>
+          ),
         ),<!-- /btn-group -->
         H5Div(["btn-group">
           BS5Button(["btn-info">Info)
           BS5Button(["btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropdown</span>
+            <span class="visually-hidden">Toggle Dropdown"),
           )
           H5Ul(["dropdown-menu">
             H5Li("BS5DropdownItem(["href":"#"], Action")),
             H5Li("BS5DropdownItem(["href":"#"], Another action")),
             H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-          </ul>
+          ),
         ),<!-- /btn-group -->
         H5Div(["btn-group">
           BS5Button(["btn-warning">Warning)
           BS5Button(["btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropdown</span>
+            <span class="visually-hidden">Toggle Dropdown"),
           )
           H5Ul(["dropdown-menu">
             H5Li("BS5DropdownItem(["href":"#"], Action")),
             H5Li("BS5DropdownItem(["href":"#"], Another action")),
             H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-          </ul>
+          ),
         ),<!-- /btn-group -->
         H5Div(["btn-group">
           BS5Button(["btn-danger">Danger)
           BS5Button(["btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropdown</span>
+            <span class="visually-hidden">Toggle Dropdown"),
           )
           H5Ul(["dropdown-menu">
             H5Li("BS5DropdownItem(["href":"#"], Action")),
             H5Li("BS5DropdownItem(["href":"#"], Another action")),
             H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-          </ul>
+          ),
         ),<!-- /btn-group -->
         ),
 
@@ -1304,7 +1304,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
               H5Li("<hr class="dropdown-divider">),
               H5Li("BS5DropdownItem(["href":"#"], Separated link")),
-            </ul>
+            ),
           ),
           H5Div(["dropup">
             H5Button(["btn btn-secondary dropdown-toggle" "type":"button" id="dropupMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -1317,7 +1317,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
               H5Li("<hr class="dropdown-divider">),
               H5Li("BS5DropdownItem(["href":"#"], Separated link")),
-            </ul>
+            ),
           ),
           H5Div(["dropstart">
             H5Button(["btn btn-secondary dropdown-toggle" "type":"button" id="dropstartMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -1330,7 +1330,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Li("BS5DropdownItem(["href":"#"], Something else here")),
               H5Li("<hr class="dropdown-divider">),
               H5Li("BS5DropdownItem(["href":"#"], Separated link")),
-            </ul>
+            ),
           ),
         ),
         ),
@@ -1347,7 +1347,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               H5Li("BS5DropdownItem(["href":"#"], Another action")),
               H5Li("<hr class="dropdown-divider">),
               H5Li("BS5DropdownItem(["href":"#"], Separated link")),
-            </ul>
+            ),
           ),
         ),
         ),
@@ -1355,11 +1355,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="list-group">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>List group"),
+        H5H3("List group"),
         H5A(["d-flex align-items-center" href="../components/list-group/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Ul(["list-group">
           <li class="list-group-item active" aria-current="true">Cras justo odio),
@@ -1367,7 +1367,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
           <li class="list-group-item">Morbi leo risus),
           <li class="list-group-item">Porta ac consectetur ac),
           <li class="list-group-item">Vestibulum at eros),
-        </ul>
+        ),
         ),
 
         H5Div(["bd-example">
@@ -1377,7 +1377,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
           <li class="list-group-item">Morbi leo risus),
           <li class="list-group-item">Porta ac consectetur ac),
           <li class="list-group-item">Vestibulum at eros),
-        </ul>
+        ),
         ),
 
         H5Div(["bd-example">
@@ -1398,11 +1398,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="modal">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Modal"),
+        H5H3("Modal"),
         H5A(["d-flex align-items-center" href="../components/modal/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Div(["d-flex justify-content-between flex-wrap">
           BS5Button(["btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDefault">
@@ -1423,11 +1423,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="navs">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Navs"),
+        H5H3("Navs"),
         H5A(["d-flex align-items-center" href="../components/navs-tabs/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Nav(["nav">
           BS5NavLink(["active" aria-current="page"], ["href":"#"], Active"),
@@ -1472,17 +1472,17 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
           BS5NavItem(
             BS5NavLink(["disabled"], ["href":"#" tabindex="-1" aria-disabled="true">Disabled"),
           ),
-        </ul>
+        ),
         ),
       ),
     </article>
     H5A(["my-3" id="navbar">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Navbar"),
+        H5H3("Navbar"),
         H5A(["d-flex align-items-center" href="../components/navbar/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Nav(["navbar navbar-expand-lg navbar-light bg-light">
           H5Div(["container-fluid">
@@ -1491,7 +1491,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
                    style="filter: invert(1) grayscale(100%) brightness(200%);">
             "),
             H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false", "aria-label":"Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              H5Span(["navbar-toggler-icon"])
             )
             H5Div(["collapse navbar-collapse" id="navbarSupportedContent">
               BS5NavbarNav(["me-auto mb-2 mb-lg-0">
@@ -1510,12 +1510,12 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
                     H5Li("BS5DropdownItem(["href":"#"], Another action")),
                     H5Li("<hr class="dropdown-divider">),
                     H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-                  </ul>
+                  ),
                 ),
                 BS5NavItem(
                   BS5NavLink(["disabled"], ["href":"#" tabindex="-1" aria-disabled="true">Disabled"),
                 ),
-              </ul>
+              ),
               H5Form(["d-flex">
                 <input class="form-control me-2" "type":"search" "placeholder":"Search", "aria-label":"Search">
                 BS5ButtonSubmit(["btn-outline-dark"], "Search")
@@ -1530,7 +1530,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
               <img src="../assets/brand/bootstrap-logo-white.svg" "width":"38" "height":"30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy">
             "),
             H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false", "aria-label":"Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              H5Span(["navbar-toggler-icon"])
             )
             H5Div(["collapse navbar-collapse" id="navbarSupportedContent2">
               BS5NavbarNav(["me-auto mb-2 mb-lg-0">
@@ -1549,16 +1549,16 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
                     H5Li("BS5DropdownItem(["href":"#"], Another action")),
                     H5Li("<hr class="dropdown-divider">),
                     H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-                  </ul>
+                  ),
                 ),
                 BS5NavItem(
                   BS5NavLink(["disabled"], ["href":"#" tabindex="-1" aria-disabled="true">Disabled"),
                 ),
-              </ul>
+              ),
               H5Form(["d-flex">
                 <input class="form-control me-2" "type":"search" "placeholder":"Search", "aria-label":"Search">
                 H5Button(["btn btn-outline-light" "type":"submit">Search)
-              </form>
+              )
             ),
           ),
         ),
@@ -1567,20 +1567,20 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="pagination">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Pagination"),
+        H5H3("Pagination"),
         H5A(["d-flex align-items-center" href="../components/pagination/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         <nav "aria-label":"Pagination example">
           H5Ul(["pagination pagination-sm">
             <li class="page-item">H5A(["page-link"], ["href":"#"], 1")),
             <li class="page-item active" aria-current="page">
-              H5A(["page-link"], ["href":"#"], 2 <span class="visually-hidden">(current)</span>"),
+              H5A(["page-link"], ["href":"#"], 2 <span class="visually-hidden">(current)"),"),
             ),
             <li class="page-item">H5A(["page-link"], ["href":"#"], 3")),
-          </ul>
+          ),
         ),
         ),
 
@@ -1589,7 +1589,7 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
           H5Ul(["pagination">
             <li class="page-item">
               H5A(["page-link"], ["href":"#", "aria-label":"Previous">
-                <span aria-hidden="true">&laquo;</span>
+                <span aria-hidden="true">&laquo;"),
               "),
             ),
             <li class="page-item">H5A(["page-link"], ["href":"#"], 1")),
@@ -1597,10 +1597,10 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
             <li class="page-item">H5A(["page-link"], ["href":"#"], 3")),
             <li class="page-item">
               H5A(["page-link"], ["href":"#", "aria-label":"Next">
-                <span aria-hidden="true">&raquo;</span>
+                <span aria-hidden="true">&raquo;"),
               "),
             ),
-          </ul>
+          ),
         ),
         ),
 
@@ -1612,24 +1612,24 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
             ),
             <li class="page-item">H5A(["page-link"], ["href":"#"], 1")),
             <li class="page-item active" aria-current="page">
-              H5A(["page-link"], ["href":"#"], 2 <span class="visually-hidden">(current)</span>"),
+              H5A(["page-link"], ["href":"#"], 2 <span class="visually-hidden">(current)"),"),
             ),
             <li class="page-item">H5A(["page-link"], ["href":"#"], 3")),
             <li class="page-item">
               H5A(["page-link"], ["href":"#"], Next"),
             ),
-          </ul>
+          ),
         ),
         ),
       ),
     </article>
     H5A(["my-3" id="popovers">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Popovers"),
+        H5H3("Popovers"),
         H5A(["d-flex align-items-center" href="../components/popovers/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         BS5Button(["btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover)
         ),
@@ -1652,11 +1652,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="progress">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Progress"),
+        H5H3("Progress"),
         H5A(["d-flex align-items-center" href="../components/progress/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         H5Div(["progress mb-3">
           H5Div(["progress-bar" "role":"progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%),
@@ -1685,11 +1685,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="scrollspy">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Scrollspy"),
+        H5H3("Scrollspy"),
         H5A(["d-flex align-items-center" href="../components/scrollspy/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
           <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
             H5A(["navbar-brand"], ["href":"#"], Navbar"),
@@ -1707,9 +1707,9 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
                   H5Li("H5A(["dropdown-item" href="#two">two")),
                   H5Li("<hr class="dropdown-divider">),
                   H5Li("H5A(["dropdown-item" href="#three">three")),
-                </ul>
+                ),
               ),
-            </ul>
+            ),
           ),
           <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example">
             <h4 id="fat">@fat</h4>
@@ -1730,82 +1730,82 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["my-3" id="spinners">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Spinners"),
+        H5H3("Spinners"),
         H5A(["d-flex align-items-center" href="../components/spinners/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example">
         
         H5Div(["spinner-border text-primary" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-border text-secondary" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-border text-success" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-border text-danger" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-border text-warning" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-border text-info" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-border text-light" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-border text-dark" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         ),
 
         H5Div(["bd-example">
         
         H5Div(["spinner-grow text-primary" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-grow text-secondary" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-grow text-success" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-grow text-danger" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-grow text-warning" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-grow text-info" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-grow text-light" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         H5Div(["spinner-grow text-dark" "role":"status">
-          <span class="visually-hidden">Loading...</span>
+          <span class="visually-hidden">Loading..."),
         ),
         ),
       ),
     </article>
     H5A(["my-3" id="toasts">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Toasts"),
+        H5H3("Toasts"),
         H5A(["d-flex align-items-center" href="../components/toasts/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example bg-dark p-5 align-items-center">
         H5Div(["toast" "role":"alert" aria-live="assertive" aria-atomic="true">
           H5Div(["toast-header">
             H5Svg(["bd-placeholder-img rounded me-2" "width":"20" "height":"20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect "width":"100%" "height":"100%" fill="#007aff"/></svg>
 
             H5Strong(["me-auto">Bootstrap")
-            <small class="text-muted">11 mins ago</small>
+            <small class="text-muted">11 mins ago"),
             <button "type":"button" class="btn-close" data-bs-dismiss="toast", "aria-label":"Close">)
           ),
           H5Div(["toast-body">
@@ -1817,11 +1817,11 @@ H5Div(["bd-cheatsheet container-fluid bg-white"],
     </article>
     H5A(["mt-3 mb-5 pb-5" id="tooltips">
       H5Div(["bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Tooltips"),
+        H5H3("Tooltips"),
         H5A(["d-flex align-items-center" href="../components/tooltips/">Documentation"),
       ),
 
-      <div>
+      H5Div(
         H5Div(["bd-example tooltip-demo">
         BS5Button(["btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Tooltip on top)
         BS5Button(["btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on end">Tooltip on end)
@@ -1838,7 +1838,7 @@ H5Div(["modal fade" id="exampleModalDefault" tabindex="-1" aria-labelledby="exam
   H5Div(["modal-dialog">
     H5Div(["modal-content">
       H5Div(["modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        H5H5(["modal-title" id="exampleModalLabel">Modal title"),
         <button "type":"button" class="btn-close" data-bs-dismiss="modal", "aria-label":"Close">)
       ),
       H5Div(["modal-body">
@@ -1855,7 +1855,7 @@ H5Div(["modal fade" id="staticBackdropLive" data-bs-backdrop="static" data-bs-ke
   H5Div(["modal-dialog">
     H5Div(["modal-content">
       H5Div(["modal-header">
-        <h5 class="modal-title" id="staticBackdropLiveLabel">Modal title</h5>
+        H5H5(["modal-title" id="staticBackdropLiveLabel">Modal title"),
         <button "type":"button" class="btn-close" data-bs-dismiss="modal", "aria-label":"Close">)
       ),
       H5Div(["modal-body">
@@ -1872,7 +1872,7 @@ H5Div(["modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-label
   H5Div(["modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
     H5Div(["modal-content">
       H5Div(["modal-header">
-        <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Modal title</h5>
+        H5H5(["modal-title" id="exampleModalCenteredScrollableTitle">Modal title"),
         <button "type":"button" class="btn-close" data-bs-dismiss="modal", "aria-label":"Close">)
       ),
       H5Div(["modal-body">
@@ -1893,7 +1893,7 @@ H5Div(["modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="e
   H5Div(["modal-dialog modal-fullscreen">
     H5Div(["modal-content">
       H5Div(["modal-header">
-        <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen modal</h5>
+        H5H5(["modal-title h4" id="exampleModalFullscreenLabel">Full screen modal"),
         <button "type":"button" class="btn-close" data-bs-dismiss="modal", "aria-label":"Close">)
       ),
       H5Div(["modal-body">

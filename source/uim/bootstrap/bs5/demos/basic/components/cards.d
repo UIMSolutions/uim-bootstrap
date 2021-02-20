@@ -195,13 +195,7 @@ BS5Card(["w-50"],
   BS5CardFooter("Long Footer"))`, 
 ``);
 
-
-           /* 
-
-`,
-
-
-demoBs5Example("images", "Bilder", 
+auto imagesExample = demoBs5Example("images", "Cards with images", 
   H5Div(
     H5H5(["text-muted", "mt-3"], "Top"), 
     BS5Card(["w-50"], 
@@ -223,9 +217,9 @@ demoBs5Example("images", "Bilder",
         BS5CardOverlay(
           BS5CardTitle("Card title"), 
           BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
-        )))),``, ``),
+        )))),``, ``);
 
-demoBs5Example("tabs", "Tab navigation",
+auto tabsExample = demoBs5Example("tabs", "Tab navigation",
   H5Div(
     BS5Card(["w-50"], 
       BS5CardHeader(
@@ -239,7 +233,9 @@ demoBs5Example("tabs", "Tab navigation",
       BS5CardBody(
         BS5CardTitle("Card title"), 
         BS5CardText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.")
-      ))), ``, ``),
+      ))), ``, ``);
+
+      /*
 
 demoBs5Example("pills", "Pill Navigation",
   H5Div(
@@ -541,6 +537,8 @@ H5Main(["style":"margin-top:70px;"],
       lgExample,
       headerExample,
       footerExample,
+      imagesExample,
+      tabsExample
 
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;

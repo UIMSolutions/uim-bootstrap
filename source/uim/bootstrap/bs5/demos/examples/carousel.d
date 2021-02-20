@@ -139,7 +139,7 @@ body {
     H5Div(["container-fluid">
       H5A(["navbar-brand"], ["href":"#"], Carousel"),
       H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false", "aria-label":"Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        H5Span(["navbar-toggler-icon"])
       )
       H5Div(["collapse navbar-collapse" id="navbarCollapse">
         BS5NavbarNav(["me-auto mb-2 mb-md-0">
@@ -152,11 +152,11 @@ body {
           BS5NavItem(
             BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"),
           ),
-        </ul>
+        ),
         H5Form(["d-flex">
           <input class="form-control me-2" "type":"search" "placeholder":"Search", "aria-label":"Search">
           BS5ButtonSubmit(["btn-outline-success"], "Search")
-        </form>
+        )
       ),
     ),
   ),
@@ -169,14 +169,14 @@ body {
       <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active">),
       <li data-bs-target="#myCarousel" data-bs-slide-to="1">),
       <li data-bs-target="#myCarousel" data-bs-slide-to="2">),
-    </ol>
+    ),
     H5Div(["carousel-inner">
       H5Div(["carousel-item active">
         H5Svg(["bd-placeholder-img" "width":"100%" "height":"100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect "width":"100%" "height":"100%" fill="#777"/></svg>
 
         H5Div(["container">
           H5Div(["carousel-caption text-start">
-            <h1>Example headline.</h1>
+            H5H1("Example headline."),
             H5P("Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.")
             H5P("H5A(["btn btn-lg btn-primary"], ["href":"#" "role":"button">Sign up today"),")
           ),
@@ -187,7 +187,7 @@ body {
 
         H5Div(["container">
           H5Div(["carousel-caption">
-            <h1>Another example headline.</h1>
+            H5H1("Another example headline."),
             H5P("Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.")
             H5P("H5A(["btn btn-lg btn-primary"], ["href":"#" "role":"button">Learn more"),")
           ),
@@ -198,7 +198,7 @@ body {
 
         H5Div(["container">
           H5Div(["carousel-caption text-end">
-            <h1>One more for good measure.</h1>
+            H5H1("One more for good measure."),
             H5P("Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.")
             H5P("H5A(["btn btn-lg btn-primary"], ["href":"#" "role":"button">Browse gallery"),")
           ),
@@ -206,12 +206,12 @@ body {
       ),
     ),
     H5A(["carousel-control-prev" href="#myCarousel" "role":"button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="carousel-control-prev-icon" aria-hidden="true">"),
+      <span class="visually-hidden">Previous"),
     "),
     H5A(["carousel-control-next" href="#myCarousel" "role":"button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="carousel-control-next-icon" aria-hidden="true">"),
+      <span class="visually-hidden">Next"),
     "),
   ),
 
@@ -254,7 +254,7 @@ body {
 
     H5Div(["row featurette">
       H5Div(["col-md-7">
-        H5H2(["featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>")
+        H5H2(["featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind."),")
         H5P(["lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.")
       ),
       H5Div(["col-md-5">
@@ -267,7 +267,7 @@ body {
 
     H5Div(["row featurette">
       H5Div(["col-md-7 order-md-2">
-        H5H2(["featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span>")
+        H5H2(["featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself."),")
         H5P(["lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.")
       ),
       H5Div(["col-md-5 order-md-1">
@@ -280,7 +280,7 @@ body {
 
     H5Div(["row featurette">
       H5Div(["col-md-7">
-        H5H2(["featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span>")
+        H5H2(["featurette-heading">And lastly, this one. <span class="text-muted">Checkmate."),")
         H5P(["lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.")
       ),
       H5Div(["col-md-5">
@@ -297,11 +297,11 @@ body {
 
 
   <!-- FOOTER -->
-  <footer class="container">
+  H5Footer(["container">
     H5P(["float-end">H5A(["href":"#"], Back to top"),")
     H5P("&copy; 2017-2020 Company, Inc. &middot; H5A(["href":"#"], Privacy"), &middot; H5A(["href":"#"], Terms"),")
-  </footer>
-</main>
+  )
+)
 
 `;
 

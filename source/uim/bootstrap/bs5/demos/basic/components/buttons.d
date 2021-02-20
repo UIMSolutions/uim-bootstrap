@@ -36,9 +36,9 @@ auto linksExample = demoBs5Example("links", "Links",
 auto classesExample = demoBs5Example("classes", `Button class with <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code>`, 
   H5Div(
     BS5ButtonLink(["btn-primary"], ["href":"#", "role":"button"], "Link"), 
-    H5Input(["btn", "btn-success"], ["type":"button", "value":"Input"]),
-    H5Input(["btn", "btn-danger"], ["type":"submit", "value":"Submit"]),
-    H5Input(["btn", "btn-warning"], ["type":"reset", "value":"Reset"])
+    BS5InputButton(["btn-success"], ["value":"Input"]),
+    BS5InputSubmit(["btn-danger"], ["value":"Submit"]),
+    BS5InputReset(["btn-warning"], ["value":"Reset"])
     ), ``, ``);
 
 auto outlinesExample = demoBs5Example("outlines", "Outline styles", 

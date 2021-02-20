@@ -11,20 +11,8 @@ static this() {
 			.changed(timeLastModified(__FILE_FULL_PATH__))
 			.parameters([
 					"pageTitle": "Starter Page - Bootstrap 5 Demo",
-          ]);
-		} 
-			
-    override string content() { 
-
-      return 
-`
-    <style>
-    /*
- * Globals
- */
-
-
-/* Custom default button */
+          ])
+          .styles(`/* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -85,42 +73,35 @@ body {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
-    </style>
+      }`).styles(["href":"cover.css", "rel":"stylesheet"]);
+		} 
+			
+    override string content() { 
+//  <body class="d-flex h-100 text-center text-white bg-dark">
 
-    
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    
-H5Div(["cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Cover"),
-      H5Nav(["nav nav-masthead justify-content-center float-md-end">
-        BS5NavLink(["active" aria-current="page"], ["href":"#"], Home"),
-        BS5NavLink( "href":"#"], Features"),
-        BS5NavLink( "href":"#"], Contact"),
-      ),
-    ),
-  </header>
-
-  <main class="px-3">
-    <h1>Cover your page.</h1>
-    H5P(["lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.")
-    H5P(["lead">
-      <a "href":"#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more"),
-    ")
-  </main>
-
-  <footer class="mt-auto text-white-50">
-    H5P("Cover template for H5A(["https://getbootstrap.com/" class="text-white">Bootstrap"),, by H5A(["https://twitter.com/mdo" class="text-white">@mdo"),.")
-  </footer>
-),
-
-
-`;
+      return 
+H5Header(["container d-flex w-100 h-100 p-3 mx-auto flex-column"], 
+  H5Header(["mb-auto"], 
+    H5Div(
+      H5H3(["float-md-start mb-0"], "Cover"),
+      H5Header(["nav-masthead justify-content-center float-md-end"], 
+        BS5NavLink(["active"], ["aria-current":"page", "href":"#"], "Home"),
+        BS5NavLink(["href":"#"], "Features"),
+        BS5NavLink(["href":"#"], "Contact")
+      )
+    )
+  ),
+  H5Header([""], 
+    H5H1("Cover your page."),
+    H5P(["lead"], "Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own."),
+    H5Header( 
+      H5A(["btn btn-lg btn-secondary fw-bold border-white bg-white"], ["href":"#"], "Learn more"),
+    )
+  ),
+  H5Header(["auto text-white-50"], 
+    H5P("Cover template")
+  )
+).toString;
 
     }
   });

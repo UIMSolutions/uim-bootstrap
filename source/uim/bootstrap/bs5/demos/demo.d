@@ -166,7 +166,6 @@ auto listSections(string level, string area, string selected = "") {
     case "complex":
       break;
     case "examples":
-;
       break;
     default: break;
   }

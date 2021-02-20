@@ -11,14 +11,7 @@ static this() {
 			.changed(timeLastModified(__FILE_FULL_PATH__))
 			.parameters([
 					"pageTitle": "Starter Page - Bootstrap 5 Demo",
-          ]);
-		} 
-			
-    override string content() { 
-
-      return 
-`<style>
-      .bd-placeholder-img {
+          ]).styles(`.bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
@@ -30,50 +23,48 @@ static this() {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
-    </style>
+      }`);
+		} 
+			
+    override string content() { 
 
-    
-  </head>
-  <body>
-    
+      return 
 H5Main(["container"], 
-  H5Div(["bg-light p-5 rounded mt-3">
-    <h1>Bottom Navbar example</h1>
-    H5P(["lead">This example is a quick exercise to illustrate how the bottom navbar works.")
-    H5A(["btn btn-lg btn-primary" href="../components/navbar/" "role":"button">View navbar docs &raquo;"),
-  ),
-</main>
-H5Nav(["navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-  H5Div(["container-fluid">
-    H5A(["navbar-brand"], ["href":"#"], Bottom navbar"),
-    H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false", "aria-label":"Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    )
-    H5Div(["collapse navbar-collapse" id="navbarCollapse">
-      H5Ul(["navbar-nav">
-        <BS5NavItem(["active"], 
-          BS5NavLink( aria-current="page"], ["href":"#"], Home"),
-        ),
-        BS5NavItem(
-          BS5NavLink( "href":"#"], Link"),
-        ),
-        BS5NavItem(
-          BS5NavLink(["disabled"], ["href":"#" tabindex="-1" aria-disabled="true">Disabled"),
-        ),
-        BS5NavItem(["dropup">
-          BS5NavLink(["dropdown-toggle"], ["href":"#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Dropup"),
-          H5Ul(["dropdown-menu" aria-labelledby="dropdown10">
-            H5Li("BS5DropdownItem(["href":"#"], Action")),
-            H5Li("BS5DropdownItem(["href":"#"], Another action")),
-            H5Li("BS5DropdownItem(["href":"#"], Something else here")),
-          </ul>
-        ),
-      </ul>
+  H5Div(["bg-light p-5 rounded mt-3"],
+    H5H1("Bottom Navbar example"),
+    H5P(["lead"], "This example is a quick exercise to illustrate how the bottom navbar works."),
+    H5A(["btn btn-lg btn-primary"], ["href":"../components/navbar/", "role":"button"], "View navbar docs &raquo;")
+  )
+).toString~
+H5Nav(["navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark"], 
+  H5Div(["container-fluid"], 
+    H5A(["navbar-brand"], ["href":"#"], "Bottom navbar"),
+    H5Button(["navbar-toggler"], ["type":"button", "data-bs-toggle":"collapse", "data-bs-target":"#navbarCollapse", "aria-controls":"navbarCollapse", "aria-expanded":"false", "aria-label":"Toggle navigation"], 
+      H5Span(["navbar-toggler-icon"])
     ),
-  ),
-),
-`;
+    H5Div("navbarCollapse", ["collapse navbar-collapse"], 
+      H5Ul(["navbar-nav"], 
+        BS5NavItem(["active"], 
+          BS5NavLink(["aria-current":"page", "href":"#"], "Home")
+        ),
+        BS5NavItem(
+          BS5NavLink(["href":"#"], "Link")
+        ),
+        BS5NavItem(
+          BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled")
+        ),
+        BS5NavItem(["dropup"],
+          BS5NavLink("dropdown10", ["dropdown-toggle"], ["href":"#", "data-bs-toggle":"dropdown", "aria-expanded":"false"], "Dropup"),
+          H5Ul(["dropdown-menu"], ["aria-labelledby":"dropdown10"],
+            H5Li(BS5DropdownItem(["href":"#"], "Action")),
+            H5Li(BS5DropdownItem(["href":"#"], "Another action")),
+            H5Li(BS5DropdownItem(["href":"#"], "Something else here"))
+          )
+        )
+      )
+    )
+  )
+).toString;
 
     }
   });

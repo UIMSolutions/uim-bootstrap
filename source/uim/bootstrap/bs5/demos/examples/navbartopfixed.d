@@ -28,51 +28,36 @@ body {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
-}`);
+}`).styles(["href":"navbar-top-fixed.css", "rel":"stylesheet"]);
 		} 
 			
     override string content() { 
 
       return 
-`   <!-- Custom styles for this template -->
-    <link href="navbar-top-fixed.css" rel="stylesheet">
-  </head>
-  <body>
-    
 H5Nav(["navbar navbar-expand-md navbar-dark fixed-top bg-dark"], 
   H5Div(["container-fluid"], 
-    H5A(["navbar-brand"], ["href":"#"], Fixed navbar"),
-    H5Button(["navbar-toggler" "type":"button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false", "aria-label":"Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    )
+    H5A(["navbar-brand"], ["href":"#"], "Fixed navbar"),
+    H5Button(["navbar-toggler"], ["type":"button", "data-bs-toggle":"collapse", "data-bs-target":"#navbarCollapse", "aria-controls":"navbarCollapse", "aria-expanded":"false", "aria-label":"Toggle navigation"],
+      H5Span(["navbar-toggler-icon"])),
     H5Div("navbarCollapse", ["collapse navbar-collapse"], 
       BS5NavbarNav(["me-auto mb-2 mb-md-0"], 
-        <BS5NavItem(["active"], 
-          BS5NavLink( aria-current="page"], ["href":"#"], Home"),
-        ),
+        BS5NavItem(["active"], 
+          BS5NavLink(["aria-current":"page", "href":"#"], "Home")),
         BS5NavItem(
-          BS5NavLink( "href":"#"], "Link"),
-        ),
+          BS5NavLink(["href":"#"], "Link")),
         BS5NavItem(
-          BS5NavLink(["disabled"], ["href":"#" tabindex="-1" aria-disabled="true">Disabled"),
-        ),
-      </ul>
+          BS5NavLink(["disabled"], ["href":"#", "tabindex":"-1", "aria-disabled":"true"], "Disabled"))),
       H5Form(["d-flex"], 
         BS5InputSearch(["me-2"], ["placeholder":"Search", "aria-label":"Search"]),
-        BS5ButtonSubmit(["btn-outline-success"], "Search")
-      </form>
-    ),
-  ),
-),
+        BS5ButtonSubmit(["btn-outline-success"], "Search"))))
+).toString~
 
 H5Main(["container"], 
-  H5Div(["bg-light p-5 rounded">
-    <h1>Navbar example</h1>
-    H5P(["lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.")
-    H5A(["btn btn-lg btn-primary" href="../components/navbar/" "role":"button">View navbar docs &raquo;"),
-  ),
-</main>
-`;
+  H5Div(["bg-light p-5 rounded"],
+    H5H1("Navbar example"),
+    H5P(["lead"], "This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport."),
+    H5A(["btn btn-lg btn-primary"], ["href":"../components/navbar/", "role":"button"], "View navbar docs &raquo;")
+  )).toString;
 
     }
   });
