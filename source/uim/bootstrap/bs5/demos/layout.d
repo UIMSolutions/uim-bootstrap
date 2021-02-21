@@ -19,7 +19,7 @@ class BS5Layout : DH5AppLayout {
       ["href":"/lib/bootstrap/5.0.0-beta1/css/bootstrap.min.css", "rel":"stylesheet"], 
       ["href":"/lib/font-awesome/last/css/all.css", "rel":"stylesheet"],
       )
-    .libraries(
+    .scripts(
       ["src":"/lib/bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"], 
       )
     .title("Demo - Bootstrap 5");

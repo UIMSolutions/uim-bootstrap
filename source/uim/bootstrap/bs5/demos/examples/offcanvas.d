@@ -93,7 +93,7 @@ body {
           font-size: 3.5rem;
         }
       }`)
-      .libraries(`
+      .scripts(`
 (function () {
   'use strict'
 

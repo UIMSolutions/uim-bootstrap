@@ -11,7 +11,7 @@ class DBS4App : DH5App {
   override void init() {
     this
     .styles(["href":"/lib/bootstrap/last/css/bootstrap.min.css", "rel":"stylesheet"])
-    .libraries(
+    .scripts(
       ["src":"/lib/jquery/last/jquery.min.js"], 
       ["src":"/lib/bootstrap/last/js/bootstrap.bundle.min.js"]);
   }

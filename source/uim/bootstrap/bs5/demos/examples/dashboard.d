@@ -127,7 +127,7 @@ static this() {
         }
       }`)
       .styles(["href":"dashboard.css", "rel":"stylesheet"])
-      .libraries(`/* globals Chart:false, feather:false */
+      .scripts(`/* globals Chart:false, feather:false */
 
 (function () {
   'use strict'
