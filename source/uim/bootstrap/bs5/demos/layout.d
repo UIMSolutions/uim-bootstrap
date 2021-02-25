@@ -25,13 +25,13 @@ class BS5Layout : DH5AppLayout {
     .title("Demo - Bootstrap 5");
   }        
 
-  override string toString(string content, string[string] parameters = null) {
-		return super.toString(
-        ("navigation" in parameters ? parameters["navigation"] : navigation(parameters))~ 
-        (this.layout ?  this.layout.toString(content, this.parameters) : content)~
-        ("footer" in parameters ? parameters["footer"] : footer(parameters)) 
-      );
-	  }
+  override string toString(DH5AppPage page, string[string] parameters = null) {
+    return super.toString(page,
+      ("navigation" in parameters ? parameters["navigation"] : navigation(parameters))~ 
+      H5Div(["style": "margin-top=100px;"], this.layout ?  this.layout.toString(page.content, parameters) : page.content).toString~
+      ("footer" in parameters ? parameters["footer"] : footer(parameters)), 
+      parameters); 
+  }
 
   string navigation(string[string] parameters) {
     string result;

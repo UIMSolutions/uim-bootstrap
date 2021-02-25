@@ -2,19 +2,20 @@ module uim.bootstrap.bs5.demos.demo;
 
 import uim.bootstrap;
 
-auto demoBs5Example(string id, string title, DH5Obj tabResult, string tabUim, string tabHTML) {
+auto demoBs5Example(string id, string title, DH5Obj tabResult, string tabUim = "", string tabHTML = "", string tabCSS = "") {
   return 
   H5Div(["mt-4 mb-4"],
     H5H3(["text-muted"], title),
     BS5Card(
       BS5CardHeader(
-        BS5Nav(["nav-tabs", "card-header-tabs"], 
+        BS5NavTabs(["card-header-tabs"],
           BS5NavItem(["role":"presentation"], 
-            BS5NavLink("tab"~id~"-1", ["active"], ["href":"#tab"~id~"-pane-1", "data-bs-toggle":"tab", "role":"tab", "aria-controls":"tab"~id~"-pane-1", "aria-selected":"true"], "Result")),
+            BS5NavLink("tab"~id~"-1", ["active"], ["href":"#tab"~id~"-pane-1", "data-bs-toggle":"tab", "role":"tab", "aria-controls":"tab"~id~"-pane-1", "aria-selected":"true"], "Result")).toString~
           BS5NavItem(["role":"presentation"], 
-            BS5NavLink("tab"~id~"-2", ["href":"#tab"~id~"-pane-2", "data-bs-toggle":"tab", "role":"tab", "aria-controls":"tab"~id~"-pane-2", "aria-selected":"true"], "Code")),
+            BS5NavLink("tab"~id~"-2", ["href":"#tab"~id~"-pane-2", "data-bs-toggle":"tab", "role":"tab", "aria-controls":"tab"~id~"-pane-2", "aria-selected":"true"], "Code")).toString~
           BS5NavItem(["role":"presentation"], 
-            BS5NavLink("tab"~id~"-3", ["href":"#tab"~id~"-pane-3", "data-bs-toggle":"tab", "role":"tab", "aria-controls":"tab"~id~"-pane-3", "aria-selected":"true"], "HTML")))),
+            BS5NavLink("tab"~id~"-3", ["href":"#tab"~id~"-pane-3", "data-bs-toggle":"tab", "role":"tab", "aria-controls":"tab"~id~"-pane-3", "aria-selected":"true"], "HTML")).toString
+      )),
       BS5CardBody(
         H5Div(["tab-content"], 
           H5Div("tab"~id~"-pane-1", ["tab-pane", "active"], ["role":"tabpanel", "aria-labelledby":"tab"~id~"-1"], tabResult),
@@ -52,6 +53,15 @@ auto listAreas(string level, string selected = "") {
       items ~= (selected != "utilities" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/utilities"], "Utilities")).toString : H5Li(["list-group-item active"], "Utilities").toString);
       break;
     case "complex":
+      items ~= (selected != "ecommercecards" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/ecommercecards"], "eCommerce Cards")).toString : H5Li(["list-group-item active"], "eCommerce Cards").toString);
+      items ~= (selected != "ecommercecardsanimation" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/ecommercecardsanimation"], "eCommerce Cards with Animation")).toString : H5Li(["list-group-item active"], "eCommerce Cards with Animation").toString);
+      items ~= (selected != "flightbooking" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/flightbooking"], "Flight Booking")).toString : H5Li(["list-group-item active"], "Flight Booking").toString);
+      items ~= (selected != "jobcards" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/jobcards"], "Job cards")).toString : H5Li(["list-group-item active"], "Job cards").toString);
+      items ~= (selected != "pricingtable" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/pricingtable"], "Pricing Table")).toString : H5Li(["list-group-item active"], "Pricing Table").toString);
+      items ~= (selected != "socialpost" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/socialpost"], "Social Post")).toString : H5Li(["list-group-item active"], "Social Post").toString);
+      items ~= (selected != "responsivecontact" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/responsivecontact"], "Responsive Contact")).toString : H5Li(["list-group-item active"], "Responsive Contact").toString);
+      items ~= (selected != "userprofile" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/userprofile"], "User Profile")).toString : H5Li(["list-group-item active"], "User Profile").toString);
+      items ~= (selected != "userprofilestats" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/userprofilestats"], "User Profile with Statitics")).toString : H5Li(["list-group-item active"], "User Profile with Statitics").toString);
       break;
     case "examples":
       items ~= (selected != "album" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/examples/album"], "Album")).toString : H5Li(["list-group-item active"], "Album").toString);
