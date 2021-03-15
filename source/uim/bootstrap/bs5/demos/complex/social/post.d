@@ -1,9 +1,9 @@
-module source.uim.bootstrap.bs5.demos.complex.socialpost;
+module source.uim.bootstrap.bs5.demos.complex.social.post;
 
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("complex/socialpost", new class DH5AppPage {
+	demoBS5.pages("complex/social/post", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -122,36 +122,36 @@ demoBs5Example("ecommercecards", "eCommerce cards",
                 H5Div(["card"],
                     H5Div(["d-flex justify-content-between p-2 px-3"],
                         H5Div(["d-flex flex-row align-items-center"],  
-                            H5Img(["rounded-circle"], ["src":"https://i.imgur.com/UXdKE3o.jpg", "width":"50"]),
-                            H5Div(["d-flex flex-column ml-2"],
+                            H5Img(["rounded-circle"], ["src":"/img/girl_400x400.jpg", "width":"50"]),
+                            H5Div(["d-flex flex-column ms-2"],
                                 H5Span(["font-weight-bold"], "Jeanette Sun"),  
                                 H5Small(["text-primary"], "Collegues"))
                         ),
                         H5Div(["d-flex flex-row mt-1 ellipsis"], 
-                            H5Small(["mr-2"], "20 mins"), H5I(["fa fa-ellipsis-h"]))
+                            H5Small(["me-2"], "20 mins"), H5I(["fa fa-ellipsis-h"]))
                     ), 
-                    H5Img(["img-fluid"], ["src":"https://i.imgur.com/xhzhaGA.jpg"]),
+                    H5Img(["img-fluid"], ["src":"/img/dog_400x400.jpg"]),
                     H5Div(["p-2"], 
                         H5P(["text-justify"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."),
                         H5Hr,
                         H5Div(["d-flex justify-content-between align-items-center"], 
-                            H5Div(["d-flex flex-row icons d-flex align-items-center"],
-                                H5I(["fa fa-heart"], H5I(["fa fa-smile-o ml-2"])),
+                            H5Div(["d-flex flex-row icons d-flex align-items-center me-2"],
+                                H5I(["fa fa-heart"], H5I(["fa fa-smile-o ms-2"])),
                             H5Div(["d-flex flex-row muted-color"],
-                                H5Span("2 comments"), H5Span(["ml-2"], "Share"))
+                                H5Span(["ms-2"], " 2 comments "), H5Span(["ms-2"], " Share"))
                         )),
                         H5Hr,
                         H5Div(["comments"],
                             H5Div(["d-flex flex-row mb-2"],  
-                                H5Img(["rounded-image"], ["src":"https://i.imgur.com/9AZ2QX1.jpg", "width":"40"]),
-                                H5Div(["d-flex flex-column ml-2"],  
+                                H5Img(["rounded-image"], ["src":"/img/man_200x200.jpg", "width":"40"]),
+                                H5Div(["d-flex flex-column ms-2"],  
                                     H5Span(["name"], "Daniel Frozer"), H5Small(["comment-text"], "I like this a lot! thanks a lot"),
                                     H5Div(["d-flex flex-row align-items-center status"],
                                         H5Small("Like"), H5Small("Reply"), H5Small("Translate"), H5Small("18 mins"))
                             )),                    
                             H5Div(["d-flex flex-row mb-2"],  
-                                H5Img(["rounded-image"], ["src":"https://i.imgur.com/1YrCKa1.jpg", "width":"40"]),
-                                H5Div(["d-flex flex-column ml-2"],  
+                                H5Img(["rounded-image"], ["src":"/img/woman_200x200.jpg", "width":"40"]),
+                                H5Div(["d-flex flex-column ms-2"],  
                                     H5Span(["name"], "Elizabeth goodmen"),  H5Small(["comment-text"], "Thanks for sharing!"),
                                     H5Div(["d-flex flex-row align-items-center status"], H5Small("Like"), H5Small("Reply"), H5Small("Translate"), H5Small("8 mins"))
                             )),
@@ -164,7 +164,55 @@ demoBs5Example("ecommercecards", "eCommerce cards",
                 )
             )
         )
-    ), ``, ``)
+    ), `H5Div(
+    H5Div(["row d-flex align-items-center justify-content-center"], 
+        H5Div(["col-md-6"],
+            H5Div(["card"],
+                H5Div(["d-flex justify-content-between p-2 px-3"],
+                    H5Div(["d-flex flex-row align-items-center"],  
+                        H5Img(["rounded-circle"], ["src":"/img/girl_400x400.jpg", "width":"50"]),
+                        H5Div(["d-flex flex-column ms-2"],
+                            H5Span(["font-weight-bold"], "Jeanette Sun"),  
+                            H5Small(["text-primary"], "Collegues"))
+                    ),
+                    H5Div(["d-flex flex-row mt-1 ellipsis"], 
+                        H5Small(["me-2"], "20 mins"), H5I(["fa fa-ellipsis-h"]))
+                ), 
+                H5Img(["img-fluid"], ["src":"/img/dog_400x400.jpg"]),
+                H5Div(["p-2"], 
+                    H5P(["text-justify"], "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."),
+                    H5Hr,
+                    H5Div(["d-flex justify-content-between align-items-center"], 
+                        H5Div(["d-flex flex-row icons d-flex align-items-center me-2"],
+                            H5I(["fa fa-heart"], H5I(["fa fa-smile-o ms-2"])),
+                        H5Div(["d-flex flex-row muted-color"],
+                            H5Span(["ms-2"], " 2 comments "), H5Span(["ms-2"], " Share"))
+                    )),
+                    H5Hr,
+                    H5Div(["comments"],
+                        H5Div(["d-flex flex-row mb-2"],  
+                            H5Img(["rounded-image"], ["src":"/img/man_200x200.jpg", "width":"40"]),
+                            H5Div(["d-flex flex-column ms-2"],  
+                                H5Span(["name"], "Daniel Frozer"), H5Small(["comment-text"], "I like this a lot! thanks a lot"),
+                                H5Div(["d-flex flex-row align-items-center status"],
+                                    H5Small("Like"), H5Small("Reply"), H5Small("Translate"), H5Small("18 mins"))
+                        )),                    
+                        H5Div(["d-flex flex-row mb-2"],  
+                            H5Img(["rounded-image"], ["src":"/img/woman_200x200.jpg", "width":"40"]),
+                            H5Div(["d-flex flex-column ms-2"],  
+                                H5Span(["name"], "Elizabeth goodmen"),  H5Small(["comment-text"], "Thanks for sharing!"),
+                                H5Div(["d-flex flex-row align-items-center status"], H5Small("Like"), H5Small("Reply"), H5Small("Translate"), H5Small("8 mins"))
+                        )),
+                        H5Div(["comment-input"], 
+                            BS5InputText, 
+                            H5Div(["fonts"], H5I(["fa fa-camera"]))
+                        )
+                    )
+                )
+            )
+        )
+    )
+)`, ``)
     
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;

@@ -17,6 +17,20 @@ class DBS5InputSelect : DBS5Obj {
 		}
 		return cast(O)this;	
 	}
+
+	O options(this O)(string[string][] keyValues, string selectedKey = "", string disabledKey = "") {
+		foreach(kv; keyValues) {
+			foreach(k; kv.keys.sort) {
+				if (k == selectedKey) {
+					if (k == disabledKey) 	this.option(["selected":"selected", "disabled":"disabled"], k); 
+					else this.option(["selected":"selected"], k);
+				}
+				else if (k == disabledKey) this.option(["disabled":"disabled"], k);
+				else this.option(["value":k], kv[k]);
+			}
+		}
+		return cast(O)this;	
+	}
 	O options(this O)(string[string] values, string selectedKey = "", string disabledKey = "") {
 		foreach(k; values.keys.sort) {
 			if (k == selectedKey) {
@@ -31,7 +45,7 @@ class DBS5InputSelect : DBS5Obj {
 	O options(this O)(string[] values, string[] selected, string[] disabled = null) {
 		foreach(value; values) {
 			if (selected.has(value)) {
-				if (disabled.has(value)) 	this.option(["selected":"selected", "disabled":"disabled"], value); 
+				if (disabled.has(value)) this.option(["selected":"selected", "disabled":"disabled"], value); 
 				else this.option(["selected":"selected"], value);
 			}
 			else if (disabled.has(value)) this.option(["disabled":"disabled"], value);
@@ -48,6 +62,14 @@ class DBS5InputSelect : DBS5Obj {
 			else if (disabledKeys.has(k)) this.option(["disabled":"disabled"], k);
 			else this.option(["value":k], values[k]);
 		}
+		return cast(O)this;	
+	}
+	O option(this O)(string value, string key = null, bool selected = false, string disabled = false) {
+		auto result = H5Option;
+		if (selected) result(["selected":"selected"]); 
+		if (disabled) result(["disabled":"disabled"]);
+		if (key.length == 0) result(["value":k]);
+		this(result(value));
 		return cast(O)this;	
 	}
 }

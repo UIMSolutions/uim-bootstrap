@@ -146,7 +146,123 @@ demoBs5Example("pricingtable", "Right prices for great stuff",
                 BS5ButtonLink(["btn-block btn-primary text-uppercase"], ["href":"#"], "Button")
             )
         )
-    ), ``, ``)
+    ), `BS5Container.row(
+    H5Div(["col-lg-4"], 
+        BS5Card(["mb-5 mb-lg-0"]).body_(
+            H5H5(["card-title text-muted text-uppercase text-center"], "Free"),
+            H5H6(["card-price text-center"], H5String("$0"), H5Span(["period"], "/month")),
+            H5Hr,
+            H5Ul(["fa-ul"])
+            .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Single User"))
+            .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("5GB Storage"))
+            .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Unlimited Public Projects"))
+            .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Community ]ccess"))
+            .item(["text-muted"], H5Span(["fa-li"], H5H5(["fas fa-times"])), H5String("Unlimited Private Projects"))
+            .item(["text-muted"], H5Span(["fa-li"], H5H5(["fas fa-times"])), H5String("Dedicated Phone Support"))
+            .item(["text-muted"], H5Span(["fa-li"], H5H5(["fas fa-times"])), H5String("Free Subdomain"))
+            .item(["text-muted"], H5Span(["fa-li"], H5H5(["fas fa-times"])), H5String("Monthly Status Reports")),
+            BS5ButtonLink(["btn-block btn-primary text-uppercase"], ["href":"#"], "Button")
+            )
+        ),
+        H5Div(["col-lg-4"], 
+            BS5Card(["mb-5 mb-lg-0"]).body_(
+                H5H5(["card-title text-muted text-uppercase text-center"], "Plus"),
+                H5H6(["card-price text-center"], H5String("$9"), H5Span(["period"], "/month")),
+                H5Hr,
+                H5Ul(["fa-ul"])
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5Strong("5 Users"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("50GB Storage"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Unlimited Public Projects"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Community Access"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Unlimited Private Projects"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Dedicated Phone Support"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Free Subdomain"))
+                .item(["text-muted"], H5Span(["fa-li"], H5H5(["fas fa-times"])), H5String("Monthly Status Reports")),
+                BS5ButtonLink(["btn-block btn-primary text-uppercase"], ["href":"#"], "Button")
+            )
+        ),
+        H5Div(["col-lg-4"], 
+            BS5Card.body_(
+                H5H5(["card-title text-muted text-uppercase text-center"], "Pro"),
+                H5H6(["card-price text-center"], H5String("$49"), H5Span(["period"], "/month")),
+                H5Hr,
+                H5Ul(["fa-ul"]) 
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5Strong("Unlimited Users"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("150GB Storage"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Unlimited Public Projects"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Community Access"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Unlimited Private Projects"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Dedicated Phone Support"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5Strong("Unlimited"), H5String("Free Subdomains"))
+                .item(H5Span(["fa-li"], H5H5(["fas fa-check"])), H5String("Monthly Status Reports")),
+                BS5ButtonLink(["btn-block btn-primary text-uppercase"], ["href":"#"], "Button")
+            )
+        )
+    )`, 
+`<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                    <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+                    <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Single User</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>5GB Storage</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Unlimited Public Projects</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Community ]ccess</li>
+                        <li class="text-muted"><span class="fa-li"><h5 class="fas fa-times"></h5></span>Unlimited Private Projects</li>
+                        <li class="text-muted"><span class="fa-li"><h5 class="fas fa-times"></h5></span>Dedicated Phone Support</li>
+                        <li class="text-muted"><span class="fa-li"><h5 class="fas fa-times"></h5></span>Free Subdomain</li>
+                        <li class="text-muted"><span class="fa-li"><h5 class="fas fa-times"></h5></span>Monthly Status Reports</li>
+                    </ul>
+                    <a class="btn btn-block btn-primary text-uppercase" href="#" role="button" type="button">Button</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                    <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+                    <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span><strong>5 Users</strong></li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>50GB Storage</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Unlimited Public Projects</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Community Access</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Unlimited Private Projects</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Dedicated Phone Support</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Free Subdomain</li>
+                        <li class="text-muted"><span class="fa-li"><h5 class="fas fa-times"></h5></span>Monthly Status Reports</li>
+                    </ul>
+                    <a class="btn btn-block btn-primary text-uppercase" href="#" role="button" type="button">Button</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+                    <h6 class="card-price text-center">$49<span class="period">/month</span></h6>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span><strong>Unlimited Users</strong></li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>150GB Storage</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Unlimited Public Projects</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Community Access</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Unlimited Private Projects</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Dedicated Phone Support</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span><strong>Unlimited</strong>Free Subdomains</li>
+                        <li><span class="fa-li"><h5 class="fas fa-check"></h5></span>Monthly Status Reports</li>
+                    </ul>
+                    <a class="btn btn-block btn-primary text-uppercase" href="#" role="button" type="button">Button</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`)
     
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;

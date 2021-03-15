@@ -1,9 +1,9 @@
-module uim.bootstrap.bs5.demos.complex.ecommerce.ecommercecards;
+module source.uim.bootstrap.bs5.demos.complex.ecommerce.cards;
 
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("complex/ecommercecards", new class DH5AppPage {
+	demoBS5.pages("complex/ecommerce/cards", new class DH5AppPage {
 		this() { 
 			super(); 
 			this
@@ -249,12 +249,13 @@ footer {
       return 
 H5Main(["style":"margin-top:70px;"], 
   H5Div(["container-fluid", "mt-3", "bg-light"],
-    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/complex/"], 
-    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Complex"], "eCommerce Cards")),
+    bs5Breadcrumbs(["/", "/demos", "/demos/uim-bootstrap", "/demos/uim-bootstrap/5/", "/demos/uim-bootstrap/5/complex/", "/demos/uim-bootstrap/5/complex/ecommerce/"], 
+    ["UI Manufaktur", "Demos", "uim-bootstrap", "Bootstrap 5", "Complex", "eCommerce"], "Cards")),
   BS5Container(["mt-3"]).row(
     H5Div(["col-12", "col-lg-2"], 
       listLevels("complex"),
-      listAreas("complex", "ecommercecards")),
+      listAreas("complex", "ecommerce"),
+      listSections("complex", "ecommerce", "cards")),
     H5Div(["col-12", "col-lg-8"], 
       dateInfo(this),
       H5H2(["display-4"], "eCommerce Cards"),

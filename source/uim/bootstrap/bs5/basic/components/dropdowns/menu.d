@@ -5,7 +5,7 @@ import uim.bootstrap;
 class DBS5DropdownMenu : DBS5Obj {
 	mixin(H5This!("div", ["dropdown-menu"]));
 
-	mixin(MyAttribute!("label", "aria-labelledby"));
+	mixin(MyAttribute!("labelledBy", "aria-labelledby"));
 
 	mixin(MyContent!("divider", "BS5DropdownDivider"));
 	mixin(MyContent!("header", "BS5DropdownHeader"));

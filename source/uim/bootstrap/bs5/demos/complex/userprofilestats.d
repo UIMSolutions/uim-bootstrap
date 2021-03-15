@@ -68,23 +68,58 @@ H5Main(["style":"margin-top:70px;"],
 
 demoBs5Example("ecommercecards", "eCommerce cards", 
     H5Div(
-    `<div class="height-100 row d-flex justify-content-center align-items-center">
-        <div class="col-md-7">
-            <div class="p-3 bg-white rounded">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex flex-row align-items-center">
-                        <div class="position-relative"> <img src="https://i.imgur.com/EnANUqj.jpg" width="80" class="rounded-circle"> <span class="position-absolute dots"></span> </div>
-                        <div class="ml-2">
-                            <h5 class="mb-0">Lindsey James</h5> <span>@lindsyjames</span>
-                            <div class="d-flex flex-row"> <span class="mr-3">1039 posts</span> <span class="mr-3">49.9 followers</span> <span>930 following</span> </div>
-                        </div>
-                    </div>
-                    <div class="mt-2"> <span class="box-ellipse"><i class="fa fa-ellipsis-h"></i></span> <span class="box-pensil"><i class="fa fa-pencil"></i></span> </div>
-                    <div> </div>
-                </div>
-            </div>
-        </div>
-</div>`), ``, ``)
+      BS5Row(["d-flex justify-content-center"], 
+        H5Div(["col-md-7 border"], 
+          H5Div(["p-3 bg-white rounded"], 
+            H5Div(["d-flex justify-content-between"], 
+              H5Div(["d-flex flex-row align-items-center"], 
+                H5Div(["position-relative"], 
+                  H5Img(["rounded-circle"], ["src":"/img/girl_400x400.jpg", "width":"80"]),
+                  H5Span(["position-absolute dots"])),
+                H5Div(["ms-2"], 
+                  H5H5(["mb-0"], H5String("Carol Smith"), H5Span("@carolsmith")),
+                  H5Div(["d-flex flex-row"],  
+                    H5Span(["me-3"], "139 posts"), 
+                    H5Span(["me-3"], "329 followers"), 
+                    H5Span("200 following")
+                  )
+                )
+              ),
+              H5Div(["mt-2"], 
+                H5Span(["box-ellipse"], H5I(["fa fa-ellipsis-h"])), 
+                H5Span(["box-pensil"], H5I(["fa fa-pencil"]))
+              ) 
+            )
+          )
+        )
+      )
+), `H5Div(
+  BS5Row(["d-flex justify-content-center"], 
+    H5Div(["col-md-7 border"], 
+      H5Div(["p-3 bg-white rounded"], 
+        H5Div(["d-flex justify-content-between"], 
+          H5Div(["d-flex flex-row align-items-center"], 
+            H5Div(["position-relative"], 
+              H5Img(["rounded-circle"], ["src":"/img/girl_400x400.jpg", "width":"80"]),
+              H5Span(["position-absolute dots"])),
+            H5Div(["ms-2"], 
+              H5H5(["mb-0"], H5String("Carol Smith"), H5Span("@carolsmith")),
+              H5Div(["d-flex flex-row"],  
+                H5Span(["me-3"], "139 posts"), 
+                H5Span(["me-3"], "329 followers"), 
+                H5Span("200 following")
+              )
+            )
+          ),
+          H5Div(["mt-2"], 
+            H5Span(["box-ellipse"], H5I(["fa fa-ellipsis-h"])), 
+            H5Span(["box-pensil"], H5I(["fa fa-pencil"]))
+          ) 
+        )
+      )
+    )
+  )
+)`, ``)
     
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;

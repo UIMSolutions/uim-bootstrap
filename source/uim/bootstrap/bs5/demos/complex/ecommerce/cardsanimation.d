@@ -1,9 +1,9 @@
-module uim.bootstrap.bs5.demos.complex.ecommerce.ecommercecardsanimation;
+module source.uim.bootstrap.bs5.demos.complex.ecommerce.cardsanimation;
 
 import uim.bootstrap;
 
 static this() {
-	demoBS5.pages("complex/ecommercecardsanimation", new class DH5AppPage {
+	demoBS5.pages("complex/ecommerce/cardsanimation", new class DH5AppPage {
 		this() { 
 			super(); 
 			this

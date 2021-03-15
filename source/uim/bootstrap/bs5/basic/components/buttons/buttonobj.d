@@ -5,7 +5,7 @@ import uim.bootstrap;
 class DBS5ButtonObj : DBS5Obj {
 	mixin(H5This!("BUTTON", null, `["type":"button"]`));
 
-	mixin(MyAttribute!("buttonType", "type"));
+	// mixin(MyAttribute!("buttonType", "type"));
 	mixin(TProperty!("string", "colorMode"));
 	mixin(TProperty!("bool", "outline"));
 	mixin(TProperty!("bool", "block"));

@@ -108,7 +108,73 @@ BS5Row(["mt-2 g-1"],
             )
         )
     )
-)), ``, ``)
+)
+), `H5Div(["d-flex", "justify-content-between"], 
+    H5H4(["Recommended Jobs"]),
+    BS5Button(["btn-sm", "btn-outline-dark"], "Apply all")
+),
+BS5Row(["mt-2 g-1"], 
+    H5Div(["col-md-3"], 
+        BS5Card(["p-2 job"], 
+            H5Div(["text-right"], H5Small("Full Time")),
+            H5Div(["text-center mt-2 p-3"],  
+                H5Img(["img-fluid"], ["src":"/img/doctor_200x200.png", "width":"60"]), 
+                H5Span(["d-block", "fw-bold"], "Doctor"), 
+                H5Hr, H5Span("Medi Center"), 
+                H5Div(["d-flex", "flex-row align-items-center justify-content-center"],  
+                    H5I(["fa fa-map-marker"]),  H5Small(["ms-1"], "Paris, France")),
+                H5Div(["d-flex", "justify-content-between mt-3"],  
+                    H5Span("€ 40.000"),  
+                    BS5Button(["btn-sm", "btn-outline-dark"], "Apply Now")),
+            )
+        )
+    ),
+    H5Div(["col-md-3"], 
+        BS5Card(["p-2 job"], 
+            H5Div(["text-right"], H5Small("Full Time")),
+            H5Div(["text-center mt-2 p-3"], 
+                H5Img(["img-fluid"], ["src":"/img/hero_200x200.png", "width":"60"]), 
+                H5Span(["d-block", "fw-bold"], "Hero"), 
+                H5Hr, H5Span("Hero League"), 
+                H5Div(["d-flex", "flex-row align-items-center justify-content-center"],  
+                    H5I(["fa fa-map-marker"]),  H5Small(["ms-1"], "New York, USA")),
+                H5Div(["d-flex", "justify-content-between mt-3"],  
+                    H5Span("€ 38.000"),  
+                    BS5Button(["btn-sm", "btn-outline-dark"], "Apply Now")),
+            )
+        )
+    ),
+    H5Div(["col-md-3"], 
+        BS5Card(["p-2 job"], 
+            H5Div(["text-right"], H5Small("Full Time")),
+            H5Div(["text-center mt-2 p-3"],  
+                H5Img(["img-fluid"], ["src":"/img/chief_200x200.png", "width":"60"]), 
+                H5Span(["d-block", "fw-bold"], "Chief"), 
+                H5Hr, H5Span("Bistro Italy"), 
+                H5Div(["d-flex", "flex-row align-items-center justify-content-center"],  
+                    H5I(["fa fa-map-marker"]),  H5Small(["ms-1"], "Rom, Italy")),
+                H5Div(["d-flex", "justify-content-between mt-3"],  
+                    H5Span("€ 24.000"),  
+                    BS5Button(["btn-sm", "btn-outline-dark"], "Apply Now")),
+            )
+        )
+    ),
+    H5Div(["col-md-3"], 
+        BS5Card(["p-2 job"], 
+            H5Div(["text-right"], H5Small("Full Time")),
+            H5Div(["text-center mt-2 p-3"],  
+                H5Img(["img-fluid"], ["src":"/img/photograph_200x200.png", "width":"60"]), 
+                H5Span(["d-block", "fw-bold"], "Photograph"), 
+                H5Hr, H5Span("ImagePeople"), 
+                H5Div(["d-flex", "flex-row align-items-center justify-content-center"],  
+                    H5I(["fa fa-map-marker"]),  H5Small(["ms-1"], "Munich, Germany")),
+                H5Div(["d-flex", "justify-content-between mt-3"],  
+                    H5Span("€ 30.000"),  
+                    BS5Button(["btn-sm", "btn-outline-dark"], "Apply Now")),
+            )
+        )
+    )
+)`, ``)
 
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;

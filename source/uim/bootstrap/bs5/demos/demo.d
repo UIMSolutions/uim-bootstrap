@@ -53,12 +53,11 @@ auto listAreas(string level, string selected = "") {
       items ~= (selected != "utilities" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/basic/utilities"], "Utilities")).toString : H5Li(["list-group-item active"], "Utilities").toString);
       break;
     case "complex":
-      items ~= (selected != "ecommercecards" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/ecommercecards"], "eCommerce Cards")).toString : H5Li(["list-group-item active"], "eCommerce Cards").toString);
-      items ~= (selected != "ecommercecardsanimation" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/ecommercecardsanimation"], "eCommerce Cards with Animation")).toString : H5Li(["list-group-item active"], "eCommerce Cards with Animation").toString);
+      items ~= (selected != "ecommerce" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/ecommerce"], "eCommerce")).toString : H5Li(["list-group-item active"], "eCommerce").toString);
+      items ~= (selected != "social" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/social"], "Social")).toString : H5Li(["list-group-item active"], "Social").toString);
       items ~= (selected != "flightbooking" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/flightbooking"], "Flight Booking")).toString : H5Li(["list-group-item active"], "Flight Booking").toString);
       items ~= (selected != "jobcards" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/jobcards"], "Job cards")).toString : H5Li(["list-group-item active"], "Job cards").toString);
       items ~= (selected != "pricingtable" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/pricingtable"], "Pricing Table")).toString : H5Li(["list-group-item active"], "Pricing Table").toString);
-      items ~= (selected != "socialpost" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/socialpost"], "Social Post")).toString : H5Li(["list-group-item active"], "Social Post").toString);
       items ~= (selected != "responsivecontact" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/responsivecontact"], "Responsive Contact")).toString : H5Li(["list-group-item active"], "Responsive Contact").toString);
       items ~= (selected != "userprofile" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/userprofile"], "User Profile")).toString : H5Li(["list-group-item active"], "User Profile").toString);
       items ~= (selected != "userprofilestats" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/userprofilestats"], "User Profile with Statitics")).toString : H5Li(["list-group-item active"], "User Profile with Statitics").toString);
@@ -173,7 +172,17 @@ auto listSections(string level, string area, string selected = "") {
         default: break;
       }
       break;
-    case "complex":
+      case "complex":
+        switch(area) {
+          case "ecommerce":
+            items ~= (selected != "cards" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/ecommerce/cards"], "Cards")).toString : H5Li(["list-group-item active"], "Cards").toString);
+            items ~= (selected != "cardsanimation" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/ecommerce/cardsanimation"], "Cards with Animation")).toString : H5Li(["list-group-item active"], "Cards with Animation").toString);
+          break;
+          case "social":
+            items ~= (selected != "post" ? H5Li(["list-group-item"], H5A(["href":"/demos/uim-bootstrap/5/complex/social/post"], "Social Post")).toString : H5Li(["list-group-item active"], "Social Post").toString);
+          break;
+          default: break;
+        }
       break;
     case "examples":
       break;

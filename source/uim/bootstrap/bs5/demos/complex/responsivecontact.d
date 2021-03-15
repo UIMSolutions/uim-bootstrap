@@ -24,7 +24,7 @@ static this() {
 
 .form-bg {
     background: rgba(68, 68, 65, 0.77);
-    padding: 20px
+    padding: 2px
 }
 
 .form {
@@ -92,7 +92,7 @@ H5Main(["style":"margin-top:70px;"],
       H5H2(["display-4"], "Responsive Contact"),
       H5Hr,
 
-demoBs5Example("ecommercecards", "eCommerce cards", 
+demoBs5Example("contact", "Stay in Contact and be happy", 
     BS5Container.row(
         H5Div(["col-md-7 col-md-offset-2"],
             H5Div(["form-bg"],
@@ -107,7 +107,43 @@ demoBs5Example("ecommercecards", "eCommerce cards",
                     H5Label(["sr-only"], "Name"),
                     BS5InputTextarea("messageNine", ["required":"required", "rows":"7", "placeholder":"Write message"]))
                 .submit(["text-center btn-blue"], "Send Message")
-    ))), ``, ``)
+    ))), `BS5Container.row(
+    H5Div(["col-md-7 col-md-offset-2"],
+        H5Div(["form-bg"],
+            BS5Form(["form"])
+            .group(
+                H5Label(["sr-only"], "Name"),
+                BS5InputText("nameNine", ["required":"required", "placeholder":"Your Name"]))
+            .group(
+                H5Label(["sr-only"], "Email"),
+                BS5InputEmail("emailNine", ["required":"required", "placeholder":"Email Address"]))
+            .group(
+                H5Label(["sr-only"], "Name"),
+                BS5InputTextarea("messageNine", ["required":"required", "rows":"7", "placeholder":"Write message"]))
+            .submit(["text-center btn-blue"], "Send Message")
+)))`, `<div class="container">
+    <div class="row">
+        <div class="col-md-7 col-md-offset-2">
+            <div class="form-bg">
+                <form class="form">
+                    <div class="form-group">
+                        <label class="sr-only">Name</label>
+                        <input id="nameNine" class="form-control" placeholder="Your Name" required="" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Email</label>
+                        <input id="emailNine" class="form-control" placeholder="Email Address" required="" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Name</label>
+                        <textarea id="messageNine" class="form-control" placeholder="Write message" required="" rows="7"></textarea>
+                    </div>
+                    <button class="btn text-center btn-blue" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>`)
     
     ),
     H5Div(["col-12", "col-lg-2"]))).toString;

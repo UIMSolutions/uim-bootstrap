@@ -42,6 +42,11 @@ class DBS5Card : DBS5Obj {
 		assert(Assert(BS5Card.header, `<div class="card"><div class="card-header"></div></div>`));
 	}
 
+	mixin(MyContent!("list", "BS5List"));
+	unittest {
+		// assert(Assert(BS5Card.header, `<div class="card"><div class="card-header"></div></div>`));
+	}
+
 	/// Add card image overlay
 	mixin(MyContent!("overlay", "BS5CardOverlay"));
 	unittest {

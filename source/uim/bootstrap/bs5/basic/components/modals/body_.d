@@ -5,10 +5,6 @@ import uim.bootstrap;
 class DBS5ModalBody : DBS5Obj
 {
 	mixin(H5This!("Div", ["modal-body"]));
-	override public void _init()
-	{
-		super._init;
-	}
 }
 
 mixin(H5Calls!"BS5ModalBody");

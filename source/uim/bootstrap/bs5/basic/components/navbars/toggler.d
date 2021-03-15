@@ -4,7 +4,7 @@ import uim.bootstrap;
 
 /* DBS5NavbarToggler - for use with collapse plugin and other navigation toggling behaviors */
 class DBS5NavbarToggler : DBS5ButtonObj {
-	mixin(H5This!("button", ["navbar-toggler"], `["data-toggle":"collapse", "aria-controls":"navbar"]`));
+	mixin(H5This!("button", ["navbar-toggler"], `["data-bs-toggle":"collapse", "aria-controls":"navbar"]`));
 
 	O position(this O)(string value) {
 		return this.classes("navbar-toggler-" ~ position);
@@ -17,5 +17,5 @@ class DBS5NavbarToggler : DBS5ButtonObj {
 mixin(H5Calls!"BS5NavbarToggler");
 
 unittest {
-	assert(Assert(BS5NavbarToggler, `<button class="navbar-toggler" aria-controls="navbar" type="button"></button>`));
+	assert(Assert(BS5NavbarToggler, `<button class="navbar-toggler" aria-controls="navbar" data-bs-toggle="collapse" type="button"></button>`));
 }

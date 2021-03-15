@@ -3,7 +3,7 @@ module uim.bootstrap.bs5.demos.layout;
 import uim.bootstrap;
 
 /// Standard Bootstrap 5 Layout 
-class BS5Layout : DH5AppLayout {
+class BS5DemoLayout : DH5AppLayout {
   /// Basic Constructor
   this() {
     super();
@@ -17,6 +17,7 @@ class BS5Layout : DH5AppLayout {
       )
     .styles(
       ["href":"/lib/bootstrap/5.0.0-beta1/css/bootstrap.min.css", "rel":"stylesheet"], 
+      ["href":"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons", "rel":"stylesheet"], 
       ["href":"/lib/font-awesome/last/css/all.css", "rel":"stylesheet"],
       )
     .scripts(

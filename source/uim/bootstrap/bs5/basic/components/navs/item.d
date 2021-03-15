@@ -6,6 +6,7 @@ class DBS5NavItem : DBS5Obj {
 	mixin(H5This!("li", ["nav-item"], null));
 
 	O dropdown(this O)(bool mode = true) { return this.classes("dropdown"); }
+
 	mixin(MyContent!("link", "BS5NavLink"));
 	unittest {
 		assert(Assert(BS5NavItem.dropdown, `<li class="dropdown nav-item"></li>`));
