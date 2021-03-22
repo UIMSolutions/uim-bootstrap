@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputEmail : DBS4Input {
+@safe: class DBS4InputEmail : DBS4Input {
 	mixin(H5This!(null, null, `["type":"email"]`));
 }
 mixin(H5Calls!("BS4InputEmail"));

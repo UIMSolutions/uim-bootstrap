@@ -28,7 +28,7 @@ static this() {
       .styles(["href":"product.css", "rel":"stylesheet"]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
       return 
 H5Header(["site-header sticky-top py-1"], 

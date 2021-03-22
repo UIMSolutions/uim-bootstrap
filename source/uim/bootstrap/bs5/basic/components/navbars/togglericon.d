@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5NavbarTogglerIcon : DBS5Obj {
+@safe: class DBS5NavbarTogglerIcon : DBS5Obj {
 	mixin(H5This!("Span", ["navbar-toggler-icon"]));
 }
 mixin(H5Calls!"BS5NavbarTogglerIcon");

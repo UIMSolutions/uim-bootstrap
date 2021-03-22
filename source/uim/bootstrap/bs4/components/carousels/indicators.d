@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4CarouselIndicators : DBS4Obj {
+@safe: class DBS4CarouselIndicators : DBS4Obj {
 	mixin(H5This!("ol", ["carousel-indicators"]));
 
 	mixin(MyContent!("indicator", "H5Li"));

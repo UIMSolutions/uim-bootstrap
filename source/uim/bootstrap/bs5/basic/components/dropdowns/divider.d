@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5DropdownDivider : DBS5Obj {
+@safe: class DBS5DropdownDivider : DBS5Obj {
 	mixin(H5This!("div", ["dropdown-divider"]));
 }
 mixin(H5Calls!"BS5DropdownDivider");

@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputColor : DBS4Input {
+@safe: class DBS4InputColor : DBS4Input {
 	mixin(H5This!("", null, `["type":"color"]`));
 }
 mixin(H5Calls!("BS4InputColor"));

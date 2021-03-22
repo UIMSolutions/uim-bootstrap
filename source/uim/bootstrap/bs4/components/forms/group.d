@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4FormGroup : DBS4Obj {
+@safe: class DBS4FormGroup : DBS4Obj {
 	mixin(H5This!("div", ["form-group"]));
 
 	mixin(MyAttribute!("readOnly", "readonly"));

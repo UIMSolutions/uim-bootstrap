@@ -27,7 +27,7 @@ static this() {
       }`);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
       return 
  H5Main(["container py-5"], 

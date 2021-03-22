@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 auto textExample = demoBs5Example("text", "Text",  
   H5Div(
     H5H6("Source: Immanuel Kant - What  is  Enlightenment?"),

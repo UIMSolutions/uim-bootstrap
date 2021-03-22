@@ -2,12 +2,12 @@
 
 import uim.bootstrap;
 
-class DBS5FormFileText : DBS5Obj {
+@safe: class DBS5FormFileText : DBS5Obj {
 	mixin(H5This!("span", ["form-file-text"]));
 
 }
 mixin(H5Calls!"BS5FormFileText");
 ///
 unittest {
-	assert(Assert(BS5FormFileText, `<label class="form-file-label"></div>`));
+	assert(Assert(BS5FormFileText, `<span class="form-file-text"></span>`));
 }

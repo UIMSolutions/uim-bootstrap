@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4ModalDialog : DBS4Obj {
+@safe: class DBS4ModalDialog : DBS4Obj {
 	mixin(H5This!("div", ["modal-dialog"], `["role":"document"]`));
 
 	O fade(this O)(bool mode = true) { return this.classes("fade"); }

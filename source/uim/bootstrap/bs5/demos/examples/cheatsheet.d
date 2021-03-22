@@ -193,7 +193,7 @@ body {
       }`);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
     /* !-- Custom styles for this template -->
     <link href="cheatsheet.css" rel="stylesheet">
   <body class="bg-light"> */

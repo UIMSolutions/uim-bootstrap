@@ -2,8 +2,11 @@
 
 import uim.bootstrap; 
 
-class DBS5Input : DBS5Obj {
+@safe: class DBS5Input : DBS5Obj {
 	mixin(H5This!("Input", ["form-control"], null, true));	
+
+	mixin(MyAttribute!"value");
+	mixin(MyAttribute!"placeholder");
 
 }
 mixin(H5Calls!("BS5Input"));

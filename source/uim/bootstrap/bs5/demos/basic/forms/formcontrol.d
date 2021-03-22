@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto inputExample = demoBs5Example("input", "Text input", 
   H5Div(

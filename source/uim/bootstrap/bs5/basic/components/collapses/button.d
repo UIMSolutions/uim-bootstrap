@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5CollapseButton : DBS5Obj {
+@safe: class DBS5CollapseButton : DBS5Obj {
 	mixin(H5This!("button", ["btn"], `["data-toggle":"collapse", "role":"button"]`));
 }
 mixin(H5Calls!"BS5CollapseButton");

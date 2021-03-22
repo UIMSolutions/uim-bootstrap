@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 /// The .BS4CardColumns creates a masonry-like grid of cards (like pinterest)
-class DBS4CardColumns : DBS4Obj {
+@safe: class DBS4CardColumns : DBS4Obj {
 	mixin(H5This!("DIV", ["card-columns"]));
 
 	/// Add card 

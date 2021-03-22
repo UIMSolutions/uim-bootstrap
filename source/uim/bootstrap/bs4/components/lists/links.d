@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4ListLinks : DBS4Obj {
+@safe: class DBS4ListLinks : DBS4Obj {
 	mixin(H5This!("Div", ["list-group"]));
 	override public void _init() {
 		super._init;

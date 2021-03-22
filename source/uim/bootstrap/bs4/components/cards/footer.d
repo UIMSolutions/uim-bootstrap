@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4CardFooter : DBS4Obj {
+@safe: class DBS4CardFooter : DBS4Obj {
 	mixin(H5This!("Div", ["card-footer"]));
 }
 

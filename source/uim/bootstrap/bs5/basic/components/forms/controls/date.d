@@ -2,12 +2,31 @@
 
 import uim.bootstrap; 
 
-class DBS5InputDate : DBS5Obj {
+@safe: class DBS5InputDate : DBS5Input {
 	mixin(H5This!("Input", ["form-control"], `["type":"date"]`));
-	override public void _init() {
-		super._init;
-		_single = true;
+
+	O value(this O)(long timestamp) {
+		_attributes["value"] = (cast(DateTime)fromTimestamp(timestamp)).toISOExtString.split("T")[0];
+		return cast(O)this;
 	}
+	unittest {	
+			
+	}
+
+	O value(this O)(SysTime systime) {
+		_attributes["value"] = (cast(DateTime)systime).toISOExtString.split("T")[0];
+		return cast(O)this;
+	}
+	unittest {		
+	}
+
+	O value(this O)(DateTime datetime) {
+		_attributes["value"] = datetime.toISOExtString.split("T")[0];
+		return cast(O)this;
+	}
+	unittest {		
+	}
+
 }
 mixin(H5Calls!("BS5InputDate"));
 ///

@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputDate : DBS4Obj {
+@safe: class DBS4InputDate : DBS4Obj {
 	mixin(H5This!("Input", ["form-control"], `["type":"date"]`));
 	override public void _init() {
 		super._init;

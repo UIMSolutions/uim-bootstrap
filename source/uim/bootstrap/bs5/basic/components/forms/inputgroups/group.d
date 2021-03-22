@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5InputGroup : DBS5Obj {
+@safe: class DBS5InputGroup : DBS5Obj {
 	mixin(H5This!("DIV", ["input-group"]));
 
 	mixin(MyContent!("prepend", "BS5InputGroupPrepend"));

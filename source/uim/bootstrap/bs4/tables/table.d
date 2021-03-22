@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4Table : DBS4Obj {
+@safe: class DBS4Table : DBS4Obj {
 	mixin(H5This!("TABLE", ["table"]));
 	override public void _init() {
 		super._init;

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5DropdownForm : DBS5Obj {
+@safe: class DBS5DropdownForm : DBS5Obj {
 	mixin(H5This!("form", null, null));
 }
 mixin(H5Calls!"BS5DropdownForm");

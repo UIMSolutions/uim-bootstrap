@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4ListLink : DBS4Obj {
+@safe: class DBS4ListLink : DBS4Obj {
 	mixin(H5This!("A", ["list-group-item", "list-group-item-action"], null));
 
 	O active(this O)(bool value = true) { return this.classes("active"); }

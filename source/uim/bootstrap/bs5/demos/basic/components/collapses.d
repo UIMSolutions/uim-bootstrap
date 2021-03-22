@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto linkExample = demoBs5Example("link", "Link<p>Show and hide other content with link using the 'href' attribute</p>", 
   H5Div(

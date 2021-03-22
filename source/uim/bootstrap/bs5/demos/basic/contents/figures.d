@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto defaultExample = demoBs5Example("default", "Default", 
   H5Div(

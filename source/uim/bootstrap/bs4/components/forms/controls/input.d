@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4Input : DBS4Obj {
+@safe: class DBS4Input : DBS4Obj {
 	mixin(H5This!("Input", ["form-control"], null, true));	
 
 }

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4Carousel : DBS4Obj
+@safe: class DBS4Carousel : DBS4Obj
 {
 	mixin(H5This!("div", ["carousel"], `["data-ride":"carousel"]`));
 	override public void _init()

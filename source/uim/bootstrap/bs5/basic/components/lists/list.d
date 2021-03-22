@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 /// An unordered list with list items
-class DBS5List : DBS5Obj {
+@safe: class DBS5List : DBS5Obj {
 	mixin(H5This!("UL", ["list-group"]));
 
 	// Removes some borders and rounded corners to render group in a parent container
@@ -26,7 +26,7 @@ class DBS5List : DBS5Obj {
 	}
 
 	// Add a list button
-	mixin(MyContent!("button", "BS5ButtonLink"));
+	mixin(MyContent!("button", "BS5ListButton"));
 	unittest {
 		assert(Assert(BS5List.button, `<ul class="list-group"><button class="list-group-item list-group-item-action" type="button"></button></ul>`));
 	}

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4TableRow : DBS4Obj {
+@safe: class DBS4TableRow : DBS4Obj {
 	mixin(H5This!"Tr");
 
 	/// Adding a header cell

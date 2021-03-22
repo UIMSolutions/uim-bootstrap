@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5TabList : DBS5Obj {
+@safe: class DBS5TabList : DBS5Obj {
 	mixin(H5This!("UL", ["nav"], `["role":"tablist"]`));
 	override public void _init() {
 		super._init;

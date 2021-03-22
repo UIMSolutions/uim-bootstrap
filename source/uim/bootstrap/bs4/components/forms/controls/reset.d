@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputReset : DBS4Input {
+@safe: class DBS4InputReset : DBS4Input {
 	mixin(H5This!("", null, `["type":"reset"]`));
 }
 mixin(H5Calls!("BS4InputReset"));

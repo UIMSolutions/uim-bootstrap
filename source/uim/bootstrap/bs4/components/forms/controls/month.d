@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputMonth : DBS4Input {
+@safe: class DBS4InputMonth : DBS4Input {
 	mixin(H5This!("", ["form-control"], `["type":"month"]`));
 }
 mixin(H5Calls!("BS4InputMonth"));

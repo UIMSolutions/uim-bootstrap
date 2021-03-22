@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputSubmit : DBS4Obj {
+@safe: class DBS4InputSubmit : DBS4Obj {
 	mixin(H5This!("Input", ["form-control"], `["type":"submit"]`));
 	override public void _init() {
 		super._init;

@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto defaultExample = demoBs5Example("default", "Default", 
   H5Div(
@@ -33,7 +33,7 @@ auto linksExample = demoBs5Example("links", "Links",
     BS5Button(["btn-link"], "Link")
   ), ``, ``);
     
-auto classesExample = demoBs5Example("classes", `Button class with <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code>`, 
+auto classesExample = demoBs5Example("classes", `Button @safe: class with <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code>`, 
   H5Div(
     BS5ButtonLink(["btn-primary"], ["href":"#", "role":"button"], "Link"), 
     BS5InputButton(["btn-success"], ["value":"Input"]),

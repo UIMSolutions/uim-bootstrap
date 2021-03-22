@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4FormCheck : DBS4Obj {
+@safe: class DBS4FormCheck : DBS4Obj {
 	mixin(H5This!("Div", ["form-check"]));
 	mixin(TProperty!("string", "forId"));
 

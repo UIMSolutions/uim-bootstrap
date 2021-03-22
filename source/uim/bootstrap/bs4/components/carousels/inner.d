@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4CarouselInner : DBS4Obj {
+@safe: class DBS4CarouselInner : DBS4Obj {
 	mixin(H5This!("div", ["carousel-inner"]));
 
 	mixin(MyContent!("item", "BS4CarouselItem"));

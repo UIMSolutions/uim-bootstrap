@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5ListItem : DBS5Obj {
+@safe: class DBS5ListItem : DBS5Obj {
 	mixin(H5This!("LI", ["list-group-item"]));
 	override public void _init() {
 		super._init;

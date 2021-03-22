@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5CardImage : DBS5Obj { // default top
+@safe: class DBS5CardImage : DBS5Obj { // default top
 	mixin(H5This!("IMG", ["card-img-top"], null, true));
 
 	O position(this O)(string value) { _classes = _classes.sub("card-img-top").add("card-img-"~value); return cast(O)this; }

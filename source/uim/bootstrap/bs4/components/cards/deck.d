@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 /// The BS4CardDeck creates a grid of cards that are of equal height and width
-class DBS4CardDeck : DBS4Obj {
+@safe: class DBS4CardDeck : DBS4Obj {
 	mixin(H5This!("DIV", ["card-deck"]));
 
 	/// Add card 

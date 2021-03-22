@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 auto linkExample = demoBs5Example("link", "Link",
   H5Div(
     H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 50px;&#10;}", 

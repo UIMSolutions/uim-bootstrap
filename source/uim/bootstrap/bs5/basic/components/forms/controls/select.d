@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS5InputSelect : DBS5Obj {
+@safe: class DBS5InputSelect : DBS5Obj {
 	mixin(H5This!("Select", ["form-control"]));	
 
 	mixin(MyContent!("option", "H5Option"));

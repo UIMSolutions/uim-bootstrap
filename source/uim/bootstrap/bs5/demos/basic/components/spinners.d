@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto borderExample = demoBs5Example("border", "Border spinner", 
   H5Div(

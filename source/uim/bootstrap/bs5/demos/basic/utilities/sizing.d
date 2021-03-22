@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto relativeExample = demoBs5Example("relative", "Relative to parent", 
   H5Div(

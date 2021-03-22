@@ -2,7 +2,7 @@ module uim.bootstrap.bs5.basic.components.accordions.accordion;
 
 import uim.bootstrap;
 
-class DBS5Accordion : DBS5Obj {
+@safe: class DBS5Accordion : DBS5Obj {
 	mixin(H5This!("Div", ["accordion"]));
 
 	mixin(MyContent!("item", "BS5AccordionItem"));

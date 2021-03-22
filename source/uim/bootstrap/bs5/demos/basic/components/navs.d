@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto unorderedExample = demoBs5Example("unordered", "Unordered list",
   H5Div(

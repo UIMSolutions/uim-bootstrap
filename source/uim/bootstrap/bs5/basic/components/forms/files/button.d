@@ -2,12 +2,12 @@
 
 import uim.bootstrap;
 
-class DBS5FormFileButton : DBS5Obj {
+@safe: class DBS5FormFileButton : DBS5Obj {
 	mixin(H5This!("span", ["form-file-button"]));
 
 }
 mixin(H5Calls!"BS5FormFileButton");
 ///
 unittest {
-	assert(Assert(BS5FormFileButton, `<span class="form-file-button"></div>`));
+	assert(Assert(BS5FormFileButton, `<span class="form-file-button"></span>`));
 }

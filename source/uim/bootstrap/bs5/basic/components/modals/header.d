@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5ModalHeader : DBS5Obj {
+@safe: class DBS5ModalHeader : DBS5Obj {
 	mixin(H5This!("DIV", ["modal-header"]));
 }
 mixin(H5Calls!"BS5ModalHeader");

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5Progress : DBS5Obj {
+@safe: class DBS5Progress : DBS5Obj {
 	mixin(H5This!("Div", ["progress"]));
 
 	mixin(MyContent!("bar", "BS5ProgressBar"));

@@ -31,7 +31,7 @@ body {
 .styles(["href":"navbar-top.css", "rel":"stylesheet"]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
       return 
 H5Nav(["navbar navbar-expand-md navbar-dark bg-dark"],

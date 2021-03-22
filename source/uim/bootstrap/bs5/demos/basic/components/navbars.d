@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 auto linkExample = demoBs5Example("link", "With Link",
   BS5Navbar(["navbar-light", "bg-light"], 
     BS5Container(

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5Pagination : DBS5Obj {
+@safe: class DBS5Pagination : DBS5Obj {
 	mixin(H5This!("UL", ["pagination"]));
 
 	

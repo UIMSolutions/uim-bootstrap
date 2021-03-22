@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4InputGroupText : DBS4Obj {
+@safe: class DBS4InputGroupText : DBS4Obj {
 	mixin(H5This!("DIV", ["input-group-text"]));
 }
 mixin(H5Calls!"BS4InputGroupText");

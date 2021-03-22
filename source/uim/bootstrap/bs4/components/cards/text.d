@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4CardText : DBS4Obj {
+@safe: class DBS4CardText : DBS4Obj {
 	mixin(H5This!("P", ["card-text"]));
 }
 mixin(H5Calls!"BS4CardText");

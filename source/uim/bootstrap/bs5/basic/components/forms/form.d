@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5Form : DBS5Obj {
+@safe: class DBS5Form : DBS5Obj {
 	mixin(H5This!("Form"));
 
 	O inline(this O)(bool value = true) { return this.classes("form-inline"); }

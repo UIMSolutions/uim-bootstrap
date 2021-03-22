@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5TabPane : DBS5Obj {
+@safe: class DBS5TabPane : DBS5Obj {
 	mixin(H5This!("DIV", ["tab-pane"], `["role":"tabpanel", "aria-expanded":"false"]`));
 	override public void _init() {
 		super._init;

@@ -3,7 +3,7 @@ module uim.bootstrap.bs4.components.alerts.alert;
 import uim.bootstrap;
 
 ///Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
-class DBS4Alert : DBS4Obj {
+@safe: class DBS4Alert : DBS4Obj {
 	mixin(H5This!("Div", ["alert"], `["role":"alert"]`));
 
 	O color(this O)(string name) {
@@ -34,7 +34,7 @@ class DBS4Alert : DBS4Obj {
 
 mixin(H5Calls!("BS4Alert"));
 
-class DBS4AlertLink : DBS4Obj {
+@safe: class DBS4AlertLink : DBS4Obj {
 	mixin(H5This!("AlertLink", ["alert-link"], `["href":"#"]`));
 }
 

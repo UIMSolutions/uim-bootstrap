@@ -69,7 +69,7 @@ body {
       }`);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 //   <body class="text-center">
       return 

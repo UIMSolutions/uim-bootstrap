@@ -103,7 +103,7 @@ body {
 })()`);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
       return 
 /*     <link href="offcanvas.css" rel="stylesheet">

@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 auto linkExample = demoBs5Example("link", "Link",
 H5Div(
   H5Div(["mb-5"], ["data-css":"a, button {&#10;&#9;margin-top: 200px;&#10;}", "data-js":"var popoverTriggerElements = document.querySelectorAll(&apos;[data-bs-toggle=&quot;popover&quot;]&apos;);&#10;for (var i = 0; i < popoverTriggerElements.length; i++) {&#10;&#9;new bootstrap.Popover(popoverTriggerElements[i])&#10;}"], 

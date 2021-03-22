@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto noExample = demoBs5Example("no", "Progress with no progress",
   H5Div(

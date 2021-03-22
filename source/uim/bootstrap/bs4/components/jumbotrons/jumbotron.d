@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4Jumbotron : DBS4Obj {
+@safe: class DBS4Jumbotron : DBS4Obj {
 	mixin(H5This!("Div", ["jumbotron"]));
 	override public void _init() {
 		super._init;

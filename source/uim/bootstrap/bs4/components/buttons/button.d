@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4Button : DBS4ButtonObj {
+@safe: class DBS4Button : DBS4ButtonObj {
 	mixin(H5This!("button", ["btn"], `["type":"button"]`));
 
 	// Set button to active state

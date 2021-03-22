@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS5InputWeek : DBS5Input {
+@safe: class DBS5InputWeek : DBS5Input {
 	mixin(H5This!("", null, `["type":"week"]`));
 }
 mixin(H5Calls!("BS5InputWeek"));

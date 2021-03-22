@@ -12,7 +12,7 @@ public import uim.bootstrap.bs4.content;
 public import uim.bootstrap.bs4.css;
 public import uim.bootstrap.bs4.tables;
 
-class DBS4 : DH5 {
+@safe: class DBS4 : DH5 {
   this() {
       super();
   }

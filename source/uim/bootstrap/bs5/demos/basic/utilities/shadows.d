@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto shadowsExample = demoBs5Example("shadows", "Shadows",
   H5Div(

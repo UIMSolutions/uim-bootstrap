@@ -76,7 +76,7 @@ body {
       }`).styles(["href":"cover.css", "rel":"stylesheet"]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 //  <body class="d-flex h-100 text-center text-white bg-dark">
 
       return 

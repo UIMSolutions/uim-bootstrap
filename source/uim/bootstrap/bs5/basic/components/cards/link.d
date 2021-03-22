@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5CardLink : DBS5Obj {
+@safe: class DBS5CardLink : DBS5Obj {
 	mixin(H5This!("A", ["card-link"], `["href":"#"]`));
 }
 mixin(H5Calls!"BS5CardLink");

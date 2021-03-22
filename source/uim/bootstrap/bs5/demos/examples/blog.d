@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   ["href":"/css/blog.css", "rel":"stylesheet"]]);
 } 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
       auto header = BS5Container(
   H5Header(["blog-header py-3"], 
     H5Div(["row flex-nowrap justify-content-between align-items-center"],

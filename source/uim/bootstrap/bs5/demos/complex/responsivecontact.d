@@ -76,7 +76,7 @@ button.btn {
 }`);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
       return 
 H5Main(["style":"margin-top:70px;"], 

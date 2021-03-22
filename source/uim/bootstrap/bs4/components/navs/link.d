@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4NavLink : DBS4Obj {
+@safe: class DBS4NavLink : DBS4Obj {
 	mixin(H5This!("A", ["nav-link"], `["href":"#"]`));
 
 	O active(this O)(bool value = true) { if (value) this.classes("active"); return cast(O)this; }

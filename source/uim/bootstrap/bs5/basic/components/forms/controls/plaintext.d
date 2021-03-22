@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS5InputPlaintext : DBS5Input {
+@safe: class DBS5InputPlaintext : DBS5Input {
 	mixin(H5This!("", ["form-control-plaintext"], `["type":"text"]`));
 }
 mixin(H5Calls!("BS5InputPlaintext"));

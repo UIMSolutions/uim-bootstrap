@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5DropdownList : DBS5Obj {
+@safe: class DBS5DropdownList : DBS5Obj {
 	mixin(H5This!("ul", ["dropdown-menu"]));
 
 }

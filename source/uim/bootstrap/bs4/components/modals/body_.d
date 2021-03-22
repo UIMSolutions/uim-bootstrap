@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4ModalBody : DBS4Obj
+@safe: class DBS4ModalBody : DBS4Obj
 {
 	mixin(H5This!("Div", ["modal-body"]));
 	override public void _init()

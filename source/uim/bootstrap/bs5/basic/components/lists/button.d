@@ -2,13 +2,13 @@
 
 import uim.bootstrap;
 
-class DBS5ListButton : DBS5Obj {
+@safe: class DBS5ListButton : DBS5Obj {
 	mixin(H5This!("button", ["list-group-item", "list-group-item-action"], `["type":"button"]`));
 
 	/// Set button to active
 	O active(this O)(bool value = true) { this.classes("active"); return cast(O)this; }
 	unittest {
-		assert(Assert(BS5ListButton.disabled, `<button class="list-group-item list-group-item-action" active type="button"></button>`));
+		assert(Assert(BS5ListButton.disabled, `<button class="active list-group-item list-group-item-action" type="button"></button>`));
 	}
 
 	/// Set button to disabled

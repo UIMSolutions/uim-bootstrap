@@ -3,6 +3,7 @@
 public import uim.bootstrap.bs5.basic.components.forms.controls.button;
 public import uim.bootstrap.bs5.basic.components.forms.controls.color;
 public import uim.bootstrap.bs5.basic.components.forms.controls.checkbox;
+public import uim.bootstrap.bs5.basic.components.forms.controls.datalist;
 public import uim.bootstrap.bs5.basic.components.forms.controls.date;
 public import uim.bootstrap.bs5.basic.components.forms.controls.datetime;
 public import uim.bootstrap.bs5.basic.components.forms.controls.email;

@@ -41,7 +41,7 @@ static this() {
 }`).styles(["href":"grid.css", "rel":"stylesheet"]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 //   <body class="py-4">
 
       return 
@@ -51,7 +51,7 @@ H5Main(
 
     H5H1("Bootstrap grid examples"),
     H5P(["lead"], "Basic grid layouts to get you familiar with building within the Bootstrap grid system."),
-    H5P("In these examples the .themed-grid-col class is added to the columns to add some theming. This is not a class that is available in Bootstrap by default."),
+    H5P("In these examples the .themed-grid-col @safe: class is added to the columns to add some theming. This is not a @safe: class that is available in Bootstrap by default."),
 
     H5H2(["mt-4"], "Five grid tiers"),
     H5P("There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden."),
@@ -145,7 +145,7 @@ H5Main(
     H5Hr(["my-4"]),
 
     H5H2(["mt-4"], "Mixed: mobile and desktop"),
-    H5P("The Bootstrap v4 grid system has five tiers of classes: xs (extra small, this class infix is not used), sm (small), md (medium), lg (large), and xl (extra large). You can use nearly any combination of these classes to create more dynamic and flexible layouts."),
+    H5P("The Bootstrap v4 grid system has five tiers of classes: xs (extra small, this @safe: class infix is not used), sm (small), md (medium), lg (large), and xl (extra large). You can use nearly any combination of these classes to create more dynamic and flexible layouts."),
     H5P("Each tier of classes scales up, meaning if you plan on setting the same widths for md, lg and xl, you only need to specify md."),
     H5Div(["row mb-3"], 
       H5Div(["col-md-8 themed-grid-col"], ".col-md-8"),

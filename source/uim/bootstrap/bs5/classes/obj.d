@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5Obj : DH5Obj {
+@safe: class DBS5Obj : DH5Obj {
 	mixin(H5This!("DIV"));
 
 	// Adding margins  
@@ -16,7 +16,7 @@ class DBS5Obj : DH5Obj {
 	}
 	unittest {
 		assert(Assert(BS5Obj.margins("t-2"), `<div class="mt-2"></div>`));
-		assert(Assert(BS5Obj.margins("t-sm-2", "t-lg-4"), `<div class="mt-sm-2 mt-lg-4"></div>`));
+		assert(Assert(BS5Obj.margins("t-sm-2", "t-lg-4"), `<div class="mt-lg-4 mt-sm-2"></div>`));
 	}
 
 	/// Adding paddings

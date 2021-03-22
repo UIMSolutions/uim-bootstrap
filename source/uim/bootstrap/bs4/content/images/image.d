@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4Image : DBS4Obj {
+@safe: class DBS4Image : DBS4Obj {
 	mixin(H5This!("Img"));
 	override public void _init() { super._init; _single = true; }
 

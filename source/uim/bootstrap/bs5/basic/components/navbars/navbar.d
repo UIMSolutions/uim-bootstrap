@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5Navbar : DBS5Obj {
+@safe: class DBS5Navbar : DBS5Obj {
 	mixin(H5This!("Nav", ["navbar"]));
 
 	O center(this O)(bool value = true) {

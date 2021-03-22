@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5NavbarBrand : DBS5Obj
+@safe: class DBS5NavbarBrand : DBS5Obj
 {
 	mixin(H5This!("a", ["navbar-brand"]));
 	override public void _init()

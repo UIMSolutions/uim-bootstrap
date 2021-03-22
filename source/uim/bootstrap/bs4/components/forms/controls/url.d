@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputUrl : DBS4Input {
+@safe: class DBS4InputUrl : DBS4Input {
 	mixin(H5This!("", null, `["type":"url"]`));
 }
 mixin(H5Calls!("BS4InputUrl"));

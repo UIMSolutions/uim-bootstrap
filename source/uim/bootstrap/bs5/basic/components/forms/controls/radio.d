@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS5Radio : DBS5Input {
+@safe: class DBS5Radio : DBS5Input {
 	mixin(H5This!("", null, `["type":"radio"]`));
 }
 mixin(H5Calls!("BS5Radio"));

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4BreadcrumbItem : DBS4Obj {
+@safe: class DBS4BreadcrumbItem : DBS4Obj {
 	mixin(H5This!("LI", ["breadcrumb-item"]));
 
 	O active(this O)(bool mode = true) { if (mode) this.classes("active"); return cast(O)this; }

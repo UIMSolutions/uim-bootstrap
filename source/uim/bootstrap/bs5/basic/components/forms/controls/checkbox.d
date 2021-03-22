@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS5Checkbox : DBS5Input {
+@safe: class DBS5Checkbox : DBS5Input {
 	mixin(H5This!(null, null, `["type":"checkbox"]`));
 }
 mixin(H5Calls!("BS5Checkbox"));

@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputText : DBS4Input {
+@safe: class DBS4InputText : DBS4Input {
 	mixin(H5This!("", null, `["type":"text"]`));
 }
 mixin(H5Calls!("BS4InputText"));

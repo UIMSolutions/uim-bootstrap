@@ -4,7 +4,7 @@ import uim.bootstrap;
 
 
 /// CardHeader adds a header to a card
-class DBS5CardHeader : DBS5Obj {
+@safe: class DBS5CardHeader : DBS5Obj {
 	mixin(H5This!("DIV", ["card-header"]));
 }
 mixin(H5Calls!"BS5CardHeader");

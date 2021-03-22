@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4ButtonLink : DBS4ButtonObj {
+@safe: class DBS4ButtonLink : DBS4ButtonObj {
 	mixin(H5This!("A", ["btn"], `["type":"button"]`));
 
 	override public void _init() {

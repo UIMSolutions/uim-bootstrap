@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4NavbarCollapse : DBS4Obj {
+@safe: class DBS4NavbarCollapse : DBS4Obj {
 	mixin(H5This!("div", ["collapse", "navbar-collapse"]));
 	override public void _init() {
 		super._init;

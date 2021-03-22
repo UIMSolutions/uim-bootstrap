@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5CardBlockquote : DBS5Obj {
+@safe: class DBS5CardBlockquote : DBS5Obj {
 	mixin(H5This!("BLOCKQUOTE", ["card-blockquote"]));
 }
 mixin(H5Calls!"BS5CardBlockquote");

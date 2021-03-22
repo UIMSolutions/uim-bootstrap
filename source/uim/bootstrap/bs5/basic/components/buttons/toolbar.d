@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5ButtonToolbar : DBS5Obj {
+@safe: class DBS5ButtonToolbar : DBS5Obj {
 	mixin(H5This!("DIV", ["btn-toolbar"], `["role":"toolbar"]`));
 
 	mixin(MyAttribute!("label", "aria-label"));

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5CardBody : DBS5Obj {
+@safe: class DBS5CardBody : DBS5Obj {
 	mixin(H5This!("DIV", ["card-body"]));
 
 	mixin(MyContent!("title", "BS5CardTitle"));

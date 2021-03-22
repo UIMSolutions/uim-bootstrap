@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS5CustomSelect : DH5Select {
+@safe: class DBS5CustomSelect : DH5Select {
 	mixin(H5This!("Select", ["custom-select"]));
 
 	mixin(MyContent!("option", "H5Option"));

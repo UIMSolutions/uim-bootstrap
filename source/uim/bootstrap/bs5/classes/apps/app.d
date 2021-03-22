@@ -2,7 +2,7 @@ module uim.bootstrap.bs5.classes.apps.app;
 
 import uim.bootstrap;
 
-class DBS5App : DH5App {
+@safe: class DBS5App : DH5App {
 	this() { super(); }
 	this(string aName) { super(aName); }
 	this(string aName, string aRootPath) { super(aName, aRootPath); }

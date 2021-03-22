@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS4InputRange : DBS4Input {
+@safe: class DBS4InputRange : DBS4Input {
 	mixin(H5This!(null, null, `["type":"range"]`));
 }
 mixin(H5Calls!("BS4InputRange"));

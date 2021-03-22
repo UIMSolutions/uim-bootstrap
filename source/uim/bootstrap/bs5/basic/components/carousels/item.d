@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5CarouselItem : DBS5Obj {
+@safe: class DBS5CarouselItem : DBS5Obj {
 	mixin(H5This!("div", ["carousel-item"]));
 }
 mixin(H5Calls!"BS5CarouselItem");

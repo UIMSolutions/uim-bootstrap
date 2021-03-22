@@ -182,7 +182,7 @@ static this() {
 })()`);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
       return 
 BS5Navbar(["navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"], 

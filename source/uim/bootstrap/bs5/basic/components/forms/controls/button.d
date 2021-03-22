@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS5InputButton : DBS5Input {
+@safe: class DBS5InputButton : DBS5Input {
 	mixin(H5This!(null, null, `["type":"button"]`));
 }
 mixin(H5Calls!("BS5InputButton"));

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5CustomFileInput : DBS5Obj {
+@safe: class DBS5CustomFileInput : DBS5Obj {
 	mixin(H5This!("INPUT", ["custom-file-input"]));
 	override public void _init() {
 		super._init;

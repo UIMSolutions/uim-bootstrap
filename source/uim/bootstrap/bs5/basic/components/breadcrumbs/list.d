@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS5BreadcrumbList : DBS5Obj {
+@safe: class DBS5BreadcrumbList : DBS5Obj {
 	mixin(H5This!("Ol", ["breadcrumb"], null));
 
 	mixin(MyContent!("item", "BS5BreadcrumbItem"));

@@ -2,7 +2,7 @@
 
 import uim.bootstrap; 
 
-class DBS5InputTextarea : DBS5Obj {
+@safe: class DBS5InputTextarea : DBS5Obj {
 	mixin(H5This!("textarea", ["form-control"]));
 
 	mixin(MyAttribute!"rows");

@@ -3,7 +3,7 @@ module uim.bootstrap.bs5.demos.layout;
 import uim.bootstrap;
 
 /// Standard Bootstrap 5 Layout 
-class BS5DemoLayout : DH5AppLayout {
+@safe: class BS5DemoLayout : DH5AppLayout {
   /// Basic Constructor
   this() {
     super();

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4Nav : DBS4Obj {
+@safe: class DBS4Nav : DBS4Obj {
 	mixin(H5This!("Ul", ["nav"]));
 
 	mixin(MyContent!("item", "BS4NavItem"));

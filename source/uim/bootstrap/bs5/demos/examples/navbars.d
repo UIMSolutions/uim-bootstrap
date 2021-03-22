@@ -34,7 +34,7 @@ body {
   .styles(["href":"navbar.css", "rel":"stylesheet"]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
       return 
 `

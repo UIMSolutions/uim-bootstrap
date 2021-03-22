@@ -14,7 +14,7 @@ static this() {
           ]);
 		} 
 			
-    override string content() { 
+    override string content(string[string] someParameters = null) {  
 
 auto inlineExample = demoBs5Example("inline", "Inline and inline-block", 
   H5Div(

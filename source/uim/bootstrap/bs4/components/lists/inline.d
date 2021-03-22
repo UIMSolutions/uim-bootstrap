@@ -3,7 +3,7 @@
 import uim.bootstrap;
 
 /// An unordered list with list items
-class DBS4ListInline : DBS4Obj {
+@safe: class DBS4ListInline : DBS4Obj {
 	mixin(H5This!("UL", ["list-inline"]));
 
 	mixin(MyContent!("item", "BS4ListInlineItem"));

@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4ModalButton : DBS4Obj {
+@safe: class DBS4ModalButton : DBS4Obj {
 	mixin(H5This!("Button", ["btn"], `["data-toggle":"modal"]`));
 
 	O target(this O)(string targetId) { _attributes["data-target"] = "#"~targetId;  return cast(O)this; }

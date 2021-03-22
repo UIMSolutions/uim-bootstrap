@@ -2,7 +2,7 @@
 
 import uim.bootstrap;
 
-class DBS4CustomFile : DBS4Obj {
+@safe: class DBS4CustomFile : DBS4Obj {
 	mixin(H5This!("DIV", ["custom-file"]));
 
 	mixin(MyContent!("input", "BS4CustomFileInput"));
