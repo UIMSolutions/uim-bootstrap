@@ -8,7 +8,9 @@ import uim.bootstrap;
 	mixin(MyContent!("row", "BS5TableRow"));
 	mixin(MyContent!("tr", "BS5TableRow"));
 	unittest {
-		assert(Assert(BS5Table.row, `<table class="table"><tr></tr></table>`));
+		assert(Assert(BS5TableHeader.row, `<thead><tr></tr></thead>`));
+		assert(Assert(BS5TableHeader.row.row, `<thead><tr></tr><tr></tr></thead>`));
+		assert(Assert(BS5TableHeader.tr, `<thead><tr></tr></thead>`));
 	}	
 }
 mixin(H5Calls!"BS5TableHeader");

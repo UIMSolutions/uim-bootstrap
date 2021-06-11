@@ -20,7 +20,7 @@ import uim.bootstrap;
 
 	O options(this O)(string[string][] keyValues, string selectedKey = "", string disabledKey = "") {
 		foreach(kv; keyValues) {
-			foreach(k; kv.keys.sort) {
+			foreach(k; kv.byKey().array.sort!("a < b")) {
 				if (k == selectedKey) {
 					if (k == disabledKey) 	this.option(["selected":"selected", "disabled":"disabled"], k); 
 					else this.option(["selected":"selected"], k);

@@ -8,6 +8,29 @@ import uim.bootstrap;
 		super._init;
 		_single = true;
 	}
+
+	O value(this O)(int aValue) {
+		_attributes["value"] = to!string(aValue);
+		return cast(O)this;
+	}
+	unittest {		
+	}
+
+	O value(this O)(long aValue) {
+		_attributes["value"] = to!string(aValue);
+		return cast(O)this;
+	}
+	unittest {		
+	}
+
+	O value(this O)(size_t aValue) {
+		_attributes["value"] = to!string(aValue);
+		_attributes["min"] = "0";
+		return cast(O)this;
+	}
+	unittest {		
+	}
+
 }
 mixin(H5Calls!("BS5InputNumber"));
 ///

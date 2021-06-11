@@ -3,17 +3,6 @@ module uim.bootstrap.bs5;
 import uim.bootstrap;
 
 public import uim.bootstrap.bs5.classes;
-public import uim.bootstrap.bs5.demos;
-
-DH5App demoBS5;
-static this() {
-    demoBS5 = new class DH5App {
-        this() {
-            super();
-            this.layout(new BS5DemoLayout);
-        }
-    };
-}
 
 auto bs5CardComponents(string selComponent) {
   DH5Obj[] items;
