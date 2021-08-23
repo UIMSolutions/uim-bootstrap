@@ -4,9 +4,7 @@ import uim.bootstrap;
 
 @safe: class DBS5TableColumn : DBS5Obj {
 	mixin(H5This!"th");
-	override public void _init() {
-		super._init;
-	}
+
 
 	mixin(TProperty!("string", "key"));
 	mixin(TProperty!("string", "title"));

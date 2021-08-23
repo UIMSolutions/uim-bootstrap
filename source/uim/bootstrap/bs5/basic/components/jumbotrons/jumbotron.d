@@ -4,9 +4,7 @@ import uim.bootstrap;
 
 @safe: class DBS5Jumbotron : DBS5Obj {
 	mixin(H5This!("Div", ["jumbotron"]));
-	override public void _init() {
-		super._init;
-	}
+
 	unittest {
 		assert(Assert(BS5Jumbotron, `<div class="jumbotron"></div>`));
 	}

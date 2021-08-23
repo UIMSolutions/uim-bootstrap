@@ -20,8 +20,7 @@ class DBS5BadgeLink : DBS5Obj {
 
 	//Rounded badges
 	O pill(this O)(bool mode = true) {
-		if (mode)
-			this.classes("badge-pill");
+		if (mode) this.classes("badge-pill");
 		return cast(O) this;
 	}
 	unittest {

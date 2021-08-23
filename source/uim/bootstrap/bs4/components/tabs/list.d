@@ -4,9 +4,7 @@ import uim.bootstrap;
 
 @safe: class DBS4TabList : DBS4Obj {
 	mixin(H5This!("UL", ["nav"], `["role":"tablist"]`));
-	override public void _init() {
-		super._init;
-	}
+
 
 	mixin(MyContent!("item", "BS4NavItem"));
 

@@ -4,9 +4,7 @@ import uim.bootstrap;
 
 @safe: class DBS5Table : DBS5Obj {
 	mixin(H5This!("TABLE", ["table"]));
-	override public void _init() {
-		super._init;
-	}
+
 
 	mixin(MyContent!("caption", "H5Caption"));
 	unittest {

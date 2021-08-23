@@ -9,15 +9,24 @@ import uim.bootstrap;
 		_attributes["value"] = (cast(DateTime)fromTimestamp(timestamp)).toISOExtString.split("T")[0];
 		return cast(O)this;
 	}
-	unittest {	
-			
+	unittest {					
+    /// TODO
+	}
+
+	O value(this O)(string dateValue) {
+		_attributes["value"] = dateValue;
+		return cast(O)this;
+	}
+	unittest {		
+    /// TODO
 	}
 
 	O value(this O)(SysTime systime) {
 		_attributes["value"] = (cast(DateTime)systime).toISOExtString.split("T")[0];
 		return cast(O)this;
 	}
-	unittest {		
+	unittest {			
+    /// TODO
 	}
 
 	O value(this O)(DateTime datetime) {
@@ -25,6 +34,7 @@ import uim.bootstrap;
 		return cast(O)this;
 	}
 	unittest {		
+    /// TODO	
 	}
 
 }

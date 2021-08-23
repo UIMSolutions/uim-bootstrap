@@ -4,9 +4,7 @@ import uim.bootstrap;
 
 @safe: class DBS5ListLinks : DBS5Obj {
 	mixin(H5This!("Div", ["list-group"]));
-	override public void _init() {
-		super._init;
-	}
+
 	mixin(MyContent!("item", "BS5ListDivItem"));
 	mixin(MyContent!("link", "BS5ListLink"));
 	mixin(MyContent!("button", "BS5ListButton"));

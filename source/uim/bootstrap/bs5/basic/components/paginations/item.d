@@ -4,9 +4,7 @@ import uim.bootstrap;
 
 @safe: class DBS5PageItem : DBS5Obj {
 	mixin(H5This!("LI", ["page-item"]));
-	override public void _init() {
-		super._init;
-	}
+
 	mixin(MyContent!("link", "BS5PageLink"));
 
 	O active(this O)(bool value = true) { if (value) this.classes("active"); return cast(O)this; }

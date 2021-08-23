@@ -11,7 +11,15 @@ import uim.bootstrap;
 		return cast(O)this;
 	}
 	unittest {	
-			
+    /// TODO
+	}
+
+	O value(this O)(string timeValue) {
+		_attributes["value"] = timeValue;
+		return cast(O)this;
+	}
+	unittest {	
+    /// TODO
 	}
 
 	O value(this O)(SysTime systime) {
@@ -19,6 +27,7 @@ import uim.bootstrap;
 		return cast(O)this;
 	}
 	unittest {		
+    /// TODO
 	}
 
 	O value(this O)(DateTime datetime) {
@@ -26,6 +35,7 @@ import uim.bootstrap;
 		return cast(O)this;
 	}
 	unittest {		
+    /// TODO
 	}
 
 }

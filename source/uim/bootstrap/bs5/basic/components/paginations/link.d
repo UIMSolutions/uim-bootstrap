@@ -4,9 +4,7 @@ import uim.bootstrap;
 
 @safe: class DBS5PageLink : DBS5Obj {
 	mixin(H5This!("A", ["page-link"], `["href":"#"]`));
-	override public void _init() {
-		super._init;
-	}
+
 }
 mixin(H5Calls!"BS5PageLink");
 
