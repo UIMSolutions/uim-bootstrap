@@ -12,10 +12,10 @@ class DBS5BadgeLink : DBS5Obj {
 
 	// Color of badge
 	O color(this O)(string name) {
-		return this.classes("badge-" ~ name);
+		return this.classes("badge-"~name);
 	}
 	unittest {
-		assert(Assert(BS5Badge.color("secondary"),`<a class="badge badge-secondary"></a>`));
+		assert(Assert(BS5BadgeLink.color("secondary"),`<a class="badge badge-secondary"></a>`));
 	}
 
 	//Rounded badges
@@ -24,7 +24,7 @@ class DBS5BadgeLink : DBS5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Badge.pill(true),`<a class="badge badge-pill"></a>`));
+		assert(Assert(BS5BadgeLink.pill(true),`<a class="badge badge-pill"></a>`));
 	}
 }
 // Shortcut to @safe: class DBS5Badge

@@ -7,7 +7,7 @@ import uim.bootstrap;
 }
 mixin(H5Calls!"BS5DropdownToggleLink");
 unittest {
-	assert(Assert(BS5DropdownToggleLink, `<a class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-bs-toggle="dropdown" role="button" type="button"></a>`));
+	assert(Assert(BS5DropdownToggleLink, `<a class="btn dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" role="button" type="button"></a>`));
 	assert(Assert(BS5DropdownToggleLink.id("id"), `<a id="id" class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></a>`));
 }
 

@@ -8,7 +8,7 @@ import uim.bootstrap;
 	/// Set button to active
 	O active(this O)(bool value = true) { this.classes("active"); return cast(O)this; }
 	unittest {
-		assert(Assert(BS5ListButton.disabled, `<button class="active list-group-item list-group-item-action" type="button"></button>`));
+		assert(Assert(BS5ListButton.active, `<button class="active list-group-item list-group-item-action" type="button"></button>`));
 	}
 
 	/// Set button to disabled

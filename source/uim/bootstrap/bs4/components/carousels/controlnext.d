@@ -13,5 +13,6 @@ import uim.bootstrap;
 
 mixin(H5Calls!"BS4CarouselControlNext");
 unittest {
-	assert(Assert(BS4CarouselControlNext,`<a class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">next</span></a>`));
+	assert(Assert(BS4CarouselControlNext,
+		`<a class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a>`));
 }

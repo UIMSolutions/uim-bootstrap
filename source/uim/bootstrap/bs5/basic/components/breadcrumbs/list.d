@@ -8,17 +8,17 @@ import uim.bootstrap;
 	mixin(MyContent!("item", "BS5BreadcrumbItem"));
 	unittest {
 		writeln(BS5BreadcrumbList.item);
-		assert(Assert(BS5BreadcrumbList.item, `<ol class="breadcrumb"><li class="breadcrumb-item"></li></ol>`));
+		assert(Assert(BS5BreadcrumbList.item, `<ol class="breadcrumb" aria-label="breadcrumbs"><li class="breadcrumb-item"></li></ol>`));
 	}
 
 	mixin(MyContent!("link", "this.item", "BS5BreadcrumbLink"));
 	unittest {
 		writeln(BS5BreadcrumbList.link);
-		assert(Assert(BS5BreadcrumbList.link, `<ol class="breadcrumb"><li class="breadcrumb-item"><a></a></li></ol>`));
+		assert(Assert(BS5BreadcrumbList.link, `<ol class="breadcrumb" aria-label="breadcrumbs"><li class="breadcrumb-item"><a></a></li></ol>`));
 	}
 }
 mixin(H5Calls!"BS5BreadcrumbList");
 
 unittest {
-	assert(Assert(BS5BreadcrumbList, `<ol class="breadcrumb"></ol>`));
+	assert(Assert(BS5BreadcrumbList, `<ol class="breadcrumb" aria-label="breadcrumbs"></ol>`));
 }

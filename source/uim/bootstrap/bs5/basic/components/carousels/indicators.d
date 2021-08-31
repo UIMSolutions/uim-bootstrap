@@ -7,12 +7,12 @@ import uim.bootstrap;
 
 	mixin(MyContent!("indicator", "H5Li"));
 	unittest {
-		assert(BS5CarouselIndicators.indicator.toString == `<ul class="carousel-indicators"><li></li></ul>`);
+		assert(BS5CarouselIndicators.indicator.toString == `<ol class="carousel-indicators"><li></li></ol>`);
 	}
 }
 mixin(H5Calls!"BS5CarouselIndicators");
 unittest {
-	assert(BS5CarouselIndicators.toString == `<ul class="carousel-indicators"></ul>`);
+	assert(BS5CarouselIndicators.toString == `<ol class="carousel-indicators"></ol>`);
 }
 
 @safe: class DBS5CarouselIndicator : DBS5Obj {

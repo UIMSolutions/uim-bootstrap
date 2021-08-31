@@ -7,7 +7,7 @@ import uim.bootstrap;
 
 	mixin(MyContent!("list", "BS5BreadcrumbList"));
 	unittest {
-		assert(Assert(BS5Breadcrumb.list, `<nav aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>`));
+		assert(Assert(BS5Breadcrumb.list, `<nav aria-label="breadcrumb"><ol class="breadcrumb" aria-label="breadcrumbs"></ol></nav>`));
 	}
 
 }
