@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs4.utilities.positions;
 
+@safe: 
 import uim.bootstrap; 
 
 T positionStatic(T)(T h5) {

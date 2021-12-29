@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.cards.link;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5CardLink : DBS5Obj {
+class DBS5CardLink : DBS5Obj {
 	mixin(H5This!("A", ["card-link"], `["href":"#"]`));
 }
 mixin(H5Calls!"BS5CardLink");

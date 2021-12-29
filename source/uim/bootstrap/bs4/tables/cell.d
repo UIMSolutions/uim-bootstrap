@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.tables.cell;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4TableCell : DBS4Obj {
+class DBS4TableCell : DBS4Obj {
 	mixin(H5This!"Td");
 	override public void _init() { super._init; }
 	

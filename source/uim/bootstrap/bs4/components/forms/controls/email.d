@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.controls.email;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS4InputEmail : DBS4Input {
+class DBS4InputEmail : DBS4Input {
 	mixin(H5This!(null, null, `["type":"email"]`));
 }
 mixin(H5Calls!("BS4InputEmail"));

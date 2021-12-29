@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.modals.body_;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ModalBody : DBS5Obj
+class DBS5ModalBody : DBS5Obj
 {
 	mixin(H5This!("Div", ["modal-body"]));
 }

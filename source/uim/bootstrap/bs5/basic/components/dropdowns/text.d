@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.dropdowns.text;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5DropdownText : DBS5Obj {
+class DBS5DropdownText : DBS5Obj {
 	mixin(H5This!("p", null, null));
 }
 mixin(H5Calls!"BS5DropdownText");

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.carousels.controlprev;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4CarouselControlPrev : DBS4Obj {
+class DBS4CarouselControlPrev : DBS4Obj {
 	mixin(H5This!("a", ["carousel-control-prev"], `["data-slide":"prev"]`));
 	override public void _init() {
 		super._init;

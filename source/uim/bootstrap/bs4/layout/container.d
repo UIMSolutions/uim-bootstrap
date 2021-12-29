@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs4.layout.container;
 
+@safe: 
 import uim.bootstrap;
 
 /*
@@ -8,7 +9,7 @@ Containers are containing elements to wrap other elements and contain its grid s
 
 Default: A fixed container is a (responsive) fixed width container. 
 */
-@safe: class DBS4Container : DBS4Obj {
+class DBS4Container : DBS4Obj {
 	mixin(H5This!("div", ["container"]));
 	unittest {
 		assert(Assert(BS4Container, `<div class="container"></div>`));

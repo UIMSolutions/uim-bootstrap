@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.paginations.item;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5PageItem : DBS5Obj {
+class DBS5PageItem : DBS5Obj {
 	mixin(H5This!("LI", ["page-item"]));
 
 	mixin(MyContent!("link", "BS5PageLink"));

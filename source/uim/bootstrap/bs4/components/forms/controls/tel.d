@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.controls.tel;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS4InputTel : DBS4Input {
+class DBS4InputTel : DBS4Input {
 	mixin(H5This!("", null, `["type":"tel"]`));
 }
 mixin(H5Calls!("BS4InputTel"));

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.controls.image;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS5InputImage : DBS5Obj {
+class DBS5InputImage : DBS5Obj {
 	mixin(H5This!("Input", ["form-control"], `["type":"image"]`));
 	override public void _init() {
 		super._init;

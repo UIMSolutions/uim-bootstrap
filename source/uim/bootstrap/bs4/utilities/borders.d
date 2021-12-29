@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs4.utilities.borders;
 
+@safe: 
 import uim.bootstrap; 
 
 T border(T)(T h5) {

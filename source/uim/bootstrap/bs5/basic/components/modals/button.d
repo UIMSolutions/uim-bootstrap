@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.modals.button;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ModalButton : DBS5Obj {
+class DBS5ModalButton : DBS5Obj {
 	mixin(H5This!("Button", ["btn"], `["data-toggle":"modal"]`));
 
 	O target(this O)(string targetId) { _attributes["data-target"] = "#"~targetId;  return cast(O)this; }

@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs5.classes.utilities.embeds;
 
+@safe: 
 import uim.bootstrap; 
 
 T embedResponsive(T)(T h5) {

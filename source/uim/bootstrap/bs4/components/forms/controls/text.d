@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.controls.text;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS4InputText : DBS4Input {
+class DBS4InputText : DBS4Input {
 	mixin(H5This!("", null, `["type":"text"]`));
 }
 mixin(H5Calls!("BS4InputText"));

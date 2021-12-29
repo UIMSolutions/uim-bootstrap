@@ -1,8 +1,9 @@
 module uim.bootstrap.bs5.basic.components.spinners.grow;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5SpinnerGrow : DBS5Obj {
+class DBS5SpinnerGrow : DBS5Obj {
 	mixin(H5This!("Div", ["spinner-grow"]));
 }
 mixin(H5Calls!("BS5SpinnerGrow"));

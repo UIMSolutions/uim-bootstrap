@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.carousels.controlnext;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5CarouselControlNext : DBS5Obj {
+class DBS5CarouselControlNext : DBS5Obj {
 	mixin(H5This!("a", ["carousel-control-next"], `["data-slide":"next"]`));
 	override public void _init() {
 		super._init;

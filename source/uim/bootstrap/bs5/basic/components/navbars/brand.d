@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.navbars.brand;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5NavbarBrand : DBS5Obj
+class DBS5NavbarBrand : DBS5Obj
 {
 	mixin(H5This!("a", ["navbar-brand"]));
 	override public void _init()

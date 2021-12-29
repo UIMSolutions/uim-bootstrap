@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.controls.url;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS5InputUrl : DBS5Input {
+class DBS5InputUrl : DBS5Input {
 	mixin(H5This!("", null, `["type":"url"]`));
 }
 mixin(H5Calls!("BS5InputUrl"));

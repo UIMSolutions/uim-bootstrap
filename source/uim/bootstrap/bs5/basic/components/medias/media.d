@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.medias.media;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5Media : DBS5Obj {
+class DBS5Media : DBS5Obj {
 	mixin(H5This!("DIV", ["media"]));
 
 	mixin(MyContent!("body_", "BS5MediaBody"));

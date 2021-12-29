@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.lists.link;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4ListLink : DBS4Obj {
+class DBS4ListLink : DBS4Obj {
 	mixin(H5This!("A", ["list-group-item", "list-group-item-action"], null));
 
 	O active(this O)(bool value = true) { return this.classes("active"); }

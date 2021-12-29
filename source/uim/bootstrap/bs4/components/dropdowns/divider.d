@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.dropdowns.divider;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4DropdownDivider : DBS4Obj {
+class DBS4DropdownDivider : DBS4Obj {
 	mixin(H5This!("div", ["dropdown-divider"]));
 }
 mixin(H5Calls!"BS4DropdownDivider");

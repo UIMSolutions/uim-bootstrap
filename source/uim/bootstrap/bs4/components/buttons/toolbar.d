@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.buttons.toolbar;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4ButtonToolbar : DBS4Obj {
+class DBS4ButtonToolbar : DBS4Obj {
 	mixin(H5This!("DIV", ["btn-toolbar"], `["role":"toolbar"]`));
 
 	mixin(MyAttribute!("label", "aria-label"));

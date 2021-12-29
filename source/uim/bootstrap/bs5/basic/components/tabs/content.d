@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.tabs.content;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5TabContent : DBS5Obj {
+class DBS5TabContent : DBS5Obj {
 	mixin(H5This!("DIV", ["tab-content"]));
 
 	mixin(MyContent!("pane", "BS5TabPane"));

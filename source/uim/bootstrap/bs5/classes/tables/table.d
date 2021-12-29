@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.classes.tables.table;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5Table : DBS5Obj {
+class DBS5Table : DBS5Obj {
 	mixin(H5This!("TABLE", ["table"]));
 
 

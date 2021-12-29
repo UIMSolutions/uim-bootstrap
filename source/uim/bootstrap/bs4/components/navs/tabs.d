@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.navs.tabs;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4NavTabs : DBS4Obj {
+class DBS4NavTabs : DBS4Obj {
 	mixin(H5This!("UL", ["nav", "nav-tabs"], `["role":"tablist"]`));
 
 	mixin(MyContent!("item", "BS4NavItem"));

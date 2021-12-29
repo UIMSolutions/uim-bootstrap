@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.cards.body_;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5CardBody : DBS5Obj {
+class DBS5CardBody : DBS5Obj {
 	mixin(H5This!("DIV", ["card-body"]));
 
 	mixin(MyContent!("title", "BS5CardTitle"));

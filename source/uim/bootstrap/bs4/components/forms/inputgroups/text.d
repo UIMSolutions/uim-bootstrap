@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.inputgroups.text;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4InputGroupText : DBS4Obj {
+class DBS4InputGroupText : DBS4Obj {
 	mixin(H5This!("DIV", ["input-group-text"]));
 }
 mixin(H5Calls!"BS4InputGroupText");

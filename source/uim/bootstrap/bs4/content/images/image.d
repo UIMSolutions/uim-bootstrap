@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.content.images.image;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Image : DBS4Obj {
+class DBS4Image : DBS4Obj {
 	mixin(H5This!("Img"));
 	override public void _init() { super._init; _single = true; }
 

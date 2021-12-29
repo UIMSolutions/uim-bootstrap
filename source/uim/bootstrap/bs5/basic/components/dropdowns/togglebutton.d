@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.dropdowns.togglebutton;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5DropdownToggle : DBS5Button {
+class DBS5DropdownToggle : DBS5Button {
 	mixin(H5This!("Button", ["btn", "dropdown-toggle"], `["aria-haspopup":"true", "aria-expanded":"false"]`));
 }
 mixin(H5Calls!"BS5DropdownToggle");

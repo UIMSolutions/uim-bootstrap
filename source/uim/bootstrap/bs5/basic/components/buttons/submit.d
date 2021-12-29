@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.buttons.submit;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ButtonSubmit : DBS5ButtonObj {
+class DBS5ButtonSubmit : DBS5ButtonObj {
 	mixin(H5This!("button", ["btn"], `["type":"submit"]`));
 
 	// Set button to active state

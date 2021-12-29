@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs4.utilities.floats;
 
+@safe: 
 import uim.bootstrap; 
 
 T floatNone(T)(T h5) {

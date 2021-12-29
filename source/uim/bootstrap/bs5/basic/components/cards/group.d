@@ -1,9 +1,10 @@
 ﻿module uim.bootstrap.bs5.basic.components.cards.group;
 
+@safe: 
 import uim.bootstrap;
 
 /// The BS5CardGroup creates a grid of cards that are of equal height and width, and no margin between cards
-@safe: class DBS5CardGroup : DBS5Obj {
+class DBS5CardGroup : DBS5Obj {
 	mixin(H5This!("DIV", ["card-group"]));
 
 	/// Add card 

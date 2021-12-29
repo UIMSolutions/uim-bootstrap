@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.breadcrumbs.link;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5BreadcrumbLink : DBS5Obj {	
+class DBS5BreadcrumbLink : DBS5Obj {	
 	mixin(H5This!("A", null, null));
 
 }

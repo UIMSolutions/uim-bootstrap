@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.navbars.togglericon;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4NavbarTogglerIcon : DBS4Obj {
+class DBS4NavbarTogglerIcon : DBS4Obj {
 	mixin(H5This!("Span", ["navbar-toggler-icon"]));
 }
 mixin(H5Calls!"BS4NavbarTogglerIcon");

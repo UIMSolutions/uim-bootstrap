@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.tables.row;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4TableRow : DBS4Obj {
+class DBS4TableRow : DBS4Obj {
 	mixin(H5This!"Tr");
 
 	/// Adding a header cell

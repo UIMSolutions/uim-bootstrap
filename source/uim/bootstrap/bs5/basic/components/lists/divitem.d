@@ -1,6 +1,7 @@
 ﻿module uim.bootstrap.bs5.basic.components.lists.divitem;
 
 @safe:
+@safe: 
 import uim.bootstrap;
 
 class DBS5ListDivItem : DBS5Obj { // I know, it's a ugly name

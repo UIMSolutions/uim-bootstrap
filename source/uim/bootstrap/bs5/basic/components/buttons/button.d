@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.buttons.button;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5Button : DBS5ButtonObj {
+class DBS5Button : DBS5ButtonObj {
 	mixin(H5This!("button", ["btn"], `["type":"button"]`));
 
 	// Set button to active state

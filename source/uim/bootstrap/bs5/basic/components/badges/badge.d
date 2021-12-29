@@ -1,12 +1,13 @@
 module uim.bootstrap.bs5.basic.components.badges.badge;
 
+@safe: 
 import uim.bootstrap;
 
 /**
  * Badges in Bootstrap are little additional information to highlight text or numbers.
  * Authors: UI Manufaktur UG, https://ui-manufaktur.com 
  */
-@safe: class DBS5Badge : DBS5Obj {
+class DBS5Badge : DBS5Obj {
 	mixin(H5This!("Span", ["badge"]));
 
 	// Color of badge
@@ -27,7 +28,7 @@ import uim.bootstrap;
 		assert(Assert(BS5Badge.pill(true),`<span class="badge badge-pill"></span>`));
 	}
 }
-// Shortcut to @safe: class DBS5Badge
+// Shortcut to class DBS5Badge
 mixin(H5Calls!("BS5Badge"));
 
 unittest {

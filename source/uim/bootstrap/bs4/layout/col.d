@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.layout.col;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Col : DBS4Obj {
+class DBS4Col : DBS4Obj {
 	mixin(H5This!("Div"));
 
 	O sizes(this O)(string[] someSizes...) { 

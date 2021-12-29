@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.obj;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Obj : DH5Obj {
+class DBS4Obj : DH5Obj {
 	mixin(H5This!("DIV"));
 
 	// Adding a margin  

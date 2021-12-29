@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.dropdowns.menu;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4DropdownMenu : DBS4Obj {
+class DBS4DropdownMenu : DBS4Obj {
 	mixin(H5This!("div", ["dropdown-menu"]));
 
 	mixin(MyAttribute!("label", "aria-labelledby"));

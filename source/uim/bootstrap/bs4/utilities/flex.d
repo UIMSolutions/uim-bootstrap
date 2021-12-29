@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs4.utilities.flex;
 
+@safe: 
 import uim.bootstrap; 
 
 T flex(T)(T h5) {

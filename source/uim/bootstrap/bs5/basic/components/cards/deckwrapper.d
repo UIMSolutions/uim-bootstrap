@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.cards.deckwrapper;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5CardDeckwrapper : DBS5Obj {
+class DBS5CardDeckwrapper : DBS5Obj {
 	mixin(H5This!("DIV", ["card-deck-wrapper"]));
 }
 mixin(H5Calls!"BS5CardDeckwrapper");

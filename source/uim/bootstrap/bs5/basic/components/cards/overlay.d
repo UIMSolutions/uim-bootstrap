@@ -1,9 +1,10 @@
 ﻿module uim.bootstrap.bs5.basic.components.cards.overlay;
 
+@safe: 
 import uim.bootstrap;
 
 /// Turns an image into a card background and adds text on top of the image
-@safe: class DBS5CardOverlay : DBS5Obj {
+class DBS5CardOverlay : DBS5Obj {
 	mixin(H5This!("Div", ["card-img-overlay"]));
 }
 /// Shortcuts

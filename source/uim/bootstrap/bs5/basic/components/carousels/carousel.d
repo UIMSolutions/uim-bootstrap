@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.carousels.carousel;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5Carousel : DBS5Obj
+class DBS5Carousel : DBS5Obj
 {
 	mixin(H5This!("div", ["carousel"], `["data-ride":"carousel"]`));
 	override public void _init()

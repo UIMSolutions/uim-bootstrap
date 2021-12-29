@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.collapses.collapse;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Collapse : DBS4Obj {
+class DBS4Collapse : DBS4Obj {
 	mixin(H5This!("Div", ["collapse"]));
 }
 mixin(H5Calls!"BS4Collapse");

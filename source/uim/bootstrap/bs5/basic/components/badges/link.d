@@ -1,6 +1,7 @@
 module uim.bootstrap.bs5.basic.components.badges.link;
 
 @safe:
+@safe: 
 import uim.bootstrap;
 
 /**
@@ -27,7 +28,7 @@ class DBS5BadgeLink : DBS5Obj {
 		assert(Assert(BS5BadgeLink.pill(true),`<a class="badge badge-pill"></a>`));
 	}
 }
-// Shortcut to @safe: class DBS5Badge
+// Shortcut to class DBS5Badge
 mixin(H5Calls!("BS5BadgeLink"));
 
 unittest {

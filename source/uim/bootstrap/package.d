@@ -6,7 +6,6 @@ import std.string;
 public import uim.core;
 public import uim.oop;
 public import uim.html;
-// public import uim.web;
 
 // packages
 public import uim.bootstrap.bs4;

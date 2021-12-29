@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.layout.row;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Row : DBS4Obj {
+class DBS4Row : DBS4Obj {
 	mixin(H5This!("Div", ["row"]));
 
 	mixin(MyContent!("col", "BS4Col"));

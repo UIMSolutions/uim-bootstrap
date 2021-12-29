@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.modals.dialog;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ModalDialog : DBS5Obj {
+class DBS5ModalDialog : DBS5Obj {
 	mixin(H5This!("div", ["modal-dialog"], `["role":"document"]`));
 
 	O fade(this O)(bool mode = true) { return this.classes("fade"); }

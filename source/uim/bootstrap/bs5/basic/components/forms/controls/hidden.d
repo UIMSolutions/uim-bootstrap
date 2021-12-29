@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.controls.hidden;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS5InputHidden : DBS5Input {
+class DBS5InputHidden : DBS5Input {
 	mixin(H5This!("", null, `["type":"hidden"]`));
 
 	O value(this O)(UUID id) {

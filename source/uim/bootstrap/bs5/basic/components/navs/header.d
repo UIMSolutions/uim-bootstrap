@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.navs.header;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5NavHeader : DBS5Obj {
+class DBS5NavHeader : DBS5Obj {
 	mixin(H5This!("li", ["nav-header"]));
 
 }

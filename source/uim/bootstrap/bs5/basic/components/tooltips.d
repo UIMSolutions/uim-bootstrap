@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs5.basic.components.tooltips;
 
+@safe: 
 import uim.bootstrap;
 
 T tipTitle(T)(T h5, string title) {

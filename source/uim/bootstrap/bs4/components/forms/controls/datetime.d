@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.controls.datetime;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS4InputDateTime : DBS4Input {
+class DBS4InputDateTime : DBS4Input {
 	mixin(H5This!("", null, `["type":"datetime-local"]`));
 }
 mixin(H5Calls!("BS4InputDateTime"));

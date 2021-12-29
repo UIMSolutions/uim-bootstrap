@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.form;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Form : DBS4Obj {
+class DBS4Form : DBS4Obj {
 	mixin(H5This!("Form"));
 
 	O inline(this O)(bool value = true) { return this.classes("form-inline"); }

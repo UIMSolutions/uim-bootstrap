@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.dropdowns.form;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5DropdownForm : DBS5Obj {
+class DBS5DropdownForm : DBS5Obj {
 	mixin(H5This!("form", null, null));
 }
 mixin(H5Calls!"BS5DropdownForm");

@@ -1,9 +1,10 @@
 ﻿module uim.bootstrap.bs5.basic.components.lists.list;
 
+@safe: 
 import uim.bootstrap;
 
 /// An unordered list with list items
-@safe: class DBS5List : DBS5Obj {
+class DBS5List : DBS5Obj {
 	mixin(H5This!("UL", ["list-group"]));
 
 	// Removes some borders and rounded corners to render group in a parent container

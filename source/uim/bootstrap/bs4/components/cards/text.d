@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.cards.text;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4CardText : DBS4Obj {
+class DBS4CardText : DBS4Obj {
 	mixin(H5This!("P", ["card-text"]));
 }
 mixin(H5Calls!"BS4CardText");

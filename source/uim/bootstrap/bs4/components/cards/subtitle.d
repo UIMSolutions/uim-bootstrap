@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.cards.subtitle;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4CardSubtitle : DBS4Obj {
+class DBS4CardSubtitle : DBS4Obj {
 	mixin(H5This!("H6", ["card-subtitle"]));
 	override public void _init() {
 		super._init;

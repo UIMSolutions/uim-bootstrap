@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.customcontrols.filelabel;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4CustomFileLabel : DBS4Obj
+class DBS4CustomFileLabel : DBS4Obj
 {
 	mixin(H5This!("LABEL", ["custom-file-label"]));
 }

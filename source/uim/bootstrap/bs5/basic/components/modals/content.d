@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.modals.content;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ModalContent : DBS5Obj {
+class DBS5ModalContent : DBS5Obj {
 	mixin(H5This!("DIV", ["modal-content"]));
 
 	O fade(this O)(bool mode = true) { return this.classes("fade"); }

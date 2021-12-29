@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.buttons.reset;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ButtonReset : DBS5ButtonObj {
+class DBS5ButtonReset : DBS5ButtonObj {
 	mixin(H5This!("button", ["btn"], `["type":"reset"]`));
 
 	// Set button to active state

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.paginations.link;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5PageLink : DBS5Obj {
+class DBS5PageLink : DBS5Obj {
 	mixin(H5This!("A", ["page-link"], `["href":"#"]`));
 
 }

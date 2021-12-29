@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.paginations.item;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4PageItem : DBS4Obj {
+class DBS4PageItem : DBS4Obj {
 	mixin(H5This!("LI", ["page-item"]));
 
 	mixin(MyContent!("link", "BS4PageLink"));

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.lists.item;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ListItem : DBS5Obj {
+class DBS5ListItem : DBS5Obj {
 	mixin(H5This!("LI", ["list-group-item"]));
 
 	O color(this O)(string aColor) { this.classes("list-group-item-"~aColor); return cast(O)this; }

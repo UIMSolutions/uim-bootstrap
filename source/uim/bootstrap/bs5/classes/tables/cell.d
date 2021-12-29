@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.classes.tables.cell;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5TableCell : DBS5Obj {
+class DBS5TableCell : DBS5Obj {
 	mixin(H5This!"Td");
 	override public void _init() { super._init; }
 	

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.controls.textarea;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS5InputTextarea : DBS5Obj {
+class DBS5InputTextarea : DBS5Obj {
 	mixin(H5This!("textarea", ["form-control"]));
 
 	mixin(MyAttribute!"rows");

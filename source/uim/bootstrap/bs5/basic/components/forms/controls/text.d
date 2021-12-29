@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.controls.text;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS5InputText : DBS5Input {
+class DBS5InputText : DBS5Input {
 	mixin(H5This!("", null, `["type":"text"]`));
 
 	O value(this O)(UUID id) {

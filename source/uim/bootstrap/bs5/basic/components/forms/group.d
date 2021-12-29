@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.group;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5FormGroup : DBS5Obj {
+class DBS5FormGroup : DBS5Obj {
 	mixin(H5This!("div", ["form-group"]));
 
 	mixin(MyAttribute!("readOnly", "readonly"));

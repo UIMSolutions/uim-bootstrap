@@ -1,6 +1,7 @@
 module uim.bootstrap.bs5.basic.components.alerts.alert;
 
 @safe:
+@safe: 
 import uim.bootstrap;
 
 ///Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.check;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5FormCheck : DBS5Obj {
+class DBS5FormCheck : DBS5Obj {
 	mixin(H5This!("Div", ["form-check"]));
 	mixin(TProperty!("string", "forId"));
 

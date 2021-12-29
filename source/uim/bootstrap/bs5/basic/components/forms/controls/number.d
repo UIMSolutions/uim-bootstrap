@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.controls.number;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS5InputNumber : DBS5Obj {
+class DBS5InputNumber : DBS5Obj {
 	mixin(H5This!("Input", ["form-control"], `["type":"number"]`));
 	override public void _init() {
 		super._init; _single = true;

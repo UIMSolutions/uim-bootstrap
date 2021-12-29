@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.inputgroups.append;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4InputGroupAppend : DBS4Obj {
+class DBS4InputGroupAppend : DBS4Obj {
 	mixin(H5This!("DIV", ["input-group-append"]));
 
 	mixin(MyContent!("button", "BS4Button"));

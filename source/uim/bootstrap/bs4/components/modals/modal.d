@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.modals.modal;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Modal : DBS4Obj {
+class DBS4Modal : DBS4Obj {
 	mixin(H5This!("DIV", ["modal"], `["tabindex":"-1", "role":"dialog", "aria-hidden":"true"]`));
 	unittest {
 		assert(Assert(BS4Modal, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`));

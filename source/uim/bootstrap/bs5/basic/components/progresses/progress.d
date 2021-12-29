@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.progresses.progress;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5Progress : DBS5Obj {
+class DBS5Progress : DBS5Obj {
 	mixin(H5This!("Div", ["progress"]));
 
 	mixin(MyContent!("bar", "BS5ProgressBar"));

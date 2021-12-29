@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.navs.list;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4NavList : DBS4Obj {
+class DBS4NavList : DBS4Obj {
 	mixin(H5This!("UL", ["nav"]));
 
 	mixin(MyContent!("item", "BS4NavItem"));

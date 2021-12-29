@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.controls.input;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS4Input : DBS4Obj {
+class DBS4Input : DBS4Obj {
 	mixin(H5This!("Input", ["form-control"], null, true));	
 
 }

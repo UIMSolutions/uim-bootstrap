@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.tabs.pane;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4TabPane : DBS4Obj {
+class DBS4TabPane : DBS4Obj {
 	mixin(H5This!("DIV", ["tab-pane"], `["role":"tabpanel", "aria-expanded":"false"]`));
 
 	unittest {

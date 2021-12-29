@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.checkinput;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4FormCheckInput : DBS4Obj {
+class DBS4FormCheckInput : DBS4Obj {
 	mixin(H5This!("input", ["form-check-input"]));
 	override public void _init() {
 		super._init;

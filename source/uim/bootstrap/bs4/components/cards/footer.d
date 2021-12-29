@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.cards.footer;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4CardFooter : DBS4Obj {
+class DBS4CardFooter : DBS4Obj {
 	mixin(H5This!("Div", ["card-footer"]));
 }
 

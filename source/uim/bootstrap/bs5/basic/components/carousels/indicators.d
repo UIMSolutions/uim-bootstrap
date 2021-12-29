@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.carousels.indicators;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5CarouselIndicators : DBS5Obj {
+class DBS5CarouselIndicators : DBS5Obj {
 	mixin(H5This!("ol", ["carousel-indicators"]));
 
 	mixin(MyContent!("indicator", "H5Li"));
@@ -15,7 +16,7 @@ unittest {
 	assert(BS5CarouselIndicators.toString == `<ol class="carousel-indicators"></ol>`);
 }
 
-@safe: class DBS5CarouselIndicator : DBS5Obj {
+class DBS5CarouselIndicator : DBS5Obj {
 	mixin(H5This!("li", ["carousel-indicator"]));
 }
 mixin(H5Calls!"BS5CarouselIndicator");

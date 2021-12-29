@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.lists.button;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4ListButton : DBS4Obj {
+class DBS4ListButton : DBS4Obj {
 	mixin(H5This!("button", ["list-group-item", "list-group-item-action"], null));
 
 	/// Set button to active

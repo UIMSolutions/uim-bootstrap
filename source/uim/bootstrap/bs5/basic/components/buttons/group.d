@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.buttons.group;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ButtonGroup : DBS5Obj {
+class DBS5ButtonGroup : DBS5Obj {
 	mixin(H5This!("DIV", ["btn-group"], `["role":"group"]`));
 
 	// Set size of button group

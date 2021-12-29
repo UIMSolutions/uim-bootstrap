@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.progresses.progress;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Progress : DBS4Obj {
+class DBS4Progress : DBS4Obj {
 	mixin(H5This!("Div", ["progress"]));
 
 	mixin(MyContent!("bar", "BS4ProgressBar"));
@@ -10,5 +11,6 @@ import uim.bootstrap;
 mixin(H5Calls!"BS4Progress");
 
 unittest {
-	assert(Assert(BS4Progress, `<div class="progress"></div>`));
-}
+	version(uim_bootstrap) {
+		assert(Assert(BS4Progress, `<div class="progress"></div>`));
+}}

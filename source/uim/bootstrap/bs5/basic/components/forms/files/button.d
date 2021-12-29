@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.files.button;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5FormFileButton : DBS5Obj {
+class DBS5FormFileButton : DBS5Obj {
 	mixin(H5This!("span", ["form-file-button"]));
 
 }

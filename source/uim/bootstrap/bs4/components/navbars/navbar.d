@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.navbars.navbar;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Navbar : DBS4Obj {
+class DBS4Navbar : DBS4Obj {
 	mixin(H5This!("Nav", ["navbar"]));
 
 	O center(this O)(bool value = true) {

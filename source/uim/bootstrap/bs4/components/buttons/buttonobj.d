@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.buttons.buttonobj;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4ButtonObj : DBS4Obj {
+class DBS4ButtonObj : DBS4Obj {
 	mixin(H5This!("BUTTON", null, `["type":"button"]`));
 
 	// mixin(MyAttribute!("buttonType", "type"));

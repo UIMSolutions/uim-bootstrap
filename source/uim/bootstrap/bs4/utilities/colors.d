@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs4.utilities.colors;
 
+@safe: 
 import uim.bootstrap; 
 
 T textColor(T)(T h5, string colorName) {

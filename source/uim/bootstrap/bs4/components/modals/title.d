@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.modals.title;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4ModalTitle : DBS4Obj {
+class DBS4ModalTitle : DBS4Obj {
 	mixin(H5This!("H5", ["modal-title"]));
 }
 mixin(H5Calls!"BS4ModalTitle");

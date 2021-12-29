@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs4.components.popovers;
 
+@safe: 
 import uim.bootstrap;
 
 T popContent(T)(T h5, string content) {

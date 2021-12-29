@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.alerts.heading;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5AlertHeading : DBS5Obj {
+class DBS5AlertHeading : DBS5Obj {
 	mixin(H5This!("Div", ["alert-heading"]));
 
 	O size(this O)(int size) {

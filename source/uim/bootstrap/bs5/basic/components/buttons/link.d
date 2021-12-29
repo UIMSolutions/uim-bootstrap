@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.buttons.link;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ButtonLink : DBS5Obj {
+class DBS5ButtonLink : DBS5Obj {
 	mixin(H5This!("A", ["btn"], `["role":"button"]`));
 
 	O disabled(this O)() {

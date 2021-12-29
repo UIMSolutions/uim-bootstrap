@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.navs.pills;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4NavPills : DBS4Obj {
+class DBS4NavPills : DBS4Obj {
 	mixin(H5This!("UL", ["nav", "nav-pills"], `["role":"tablist"]`));
 	mixin(MyContent!("item", "BS4NavItem"));
 }

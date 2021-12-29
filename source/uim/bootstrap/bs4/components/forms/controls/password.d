@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.controls.password;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS4Password : DBS4Input {
+class DBS4Password : DBS4Input {
 	mixin(H5This!(null, ["form-control"], `["type":"password"]`));
 }
 mixin(H5Calls!("BS4Password"));

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.modals.header;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ModalHeader : DBS5Obj {
+class DBS5ModalHeader : DBS5Obj {
 	mixin(H5This!("DIV", ["modal-header"]));
 }
 mixin(H5Calls!"BS5ModalHeader");

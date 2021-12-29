@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs5.classes.utilities.flex;
 
+@safe: 
 import uim.bootstrap; 
 
 T flex(T)(T h5) {

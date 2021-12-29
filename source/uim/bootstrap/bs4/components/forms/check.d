@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.check;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4FormCheck : DBS4Obj {
+class DBS4FormCheck : DBS4Obj {
 	mixin(H5This!("Div", ["form-check"]));
 	mixin(TProperty!("string", "forId"));
 

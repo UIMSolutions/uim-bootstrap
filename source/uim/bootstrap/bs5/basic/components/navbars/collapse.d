@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.navbars.collapse;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5NavbarCollapse : DBS5Obj {
+class DBS5NavbarCollapse : DBS5Obj {
 	mixin(H5This!("div", ["collapse", "navbar-collapse"]));
 
 }

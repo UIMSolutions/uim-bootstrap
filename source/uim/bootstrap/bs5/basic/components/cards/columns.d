@@ -1,9 +1,10 @@
 ﻿module uim.bootstrap.bs5.basic.components.cards.columns;
 
+@safe: 
 import uim.bootstrap;
 
 /// The .BS5CardColumns creates a masonry-like grid of cards (like pinterest)
-@safe: class DBS5CardColumns : DBS5Obj {
+class DBS5CardColumns : DBS5Obj {
 	mixin(H5This!("DIV", ["card-columns"]));
 
 	/// Add card 

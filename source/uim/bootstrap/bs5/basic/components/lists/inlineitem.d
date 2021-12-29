@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.lists.inlineitem;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ListInlineItem : DBS5Obj {
+class DBS5ListInlineItem : DBS5Obj {
 	mixin(H5This!("LI", ["list-inline-item"]));
 }
 mixin(H5Calls!"BS5ListInlineItem");

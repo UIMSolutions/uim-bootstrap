@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.cards.title;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4CardTitle : DBS4Obj {
+class DBS4CardTitle : DBS4Obj {
 	mixin(H5This!("H4", ["card-title"]));
 
 	O level(this O)(uint value) { if (value > 0) _tag = "h"~to!string(value); return cast(O)this; }

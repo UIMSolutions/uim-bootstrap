@@ -1,5 +1,6 @@
 module uim.bootstrap.bs4;
 
+@safe: 
 import uim.bootstrap;
 
 public import uim.bootstrap.bs4.apps;
@@ -12,7 +13,7 @@ public import uim.bootstrap.bs4.content;
 public import uim.bootstrap.bs4.css;
 public import uim.bootstrap.bs4.tables;
 
-@safe: class DBS4 : DH5 {
+class DBS4 : DH5 {
   this() {
       super();
   }

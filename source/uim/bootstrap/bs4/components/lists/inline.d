@@ -1,9 +1,10 @@
 ﻿module uim.bootstrap.bs4.components.lists.inline;
 
+@safe: 
 import uim.bootstrap;
 
 /// An unordered list with list items
-@safe: class DBS4ListInline : DBS4Obj {
+class DBS4ListInline : DBS4Obj {
 	mixin(H5This!("UL", ["list-inline"]));
 
 	mixin(MyContent!("item", "BS4ListInlineItem"));

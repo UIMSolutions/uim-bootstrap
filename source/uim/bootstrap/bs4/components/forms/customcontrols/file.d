@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.customcontrols.file;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4CustomFile : DBS4Obj {
+class DBS4CustomFile : DBS4Obj {
 	mixin(H5This!("DIV", ["custom-file"]));
 
 	mixin(MyContent!("input", "BS4CustomFileInput"));

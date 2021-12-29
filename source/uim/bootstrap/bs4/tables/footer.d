@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.tables.footer;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4TableFooter : DBS4Obj {
+class DBS4TableFooter : DBS4Obj {
 	mixin(H5This!"Tfoot");
 
 	mixin(MyContent!("row", "BS4TableRow"));

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.classes.tables.row;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5TableRow : DBS5Obj {
+class DBS5TableRow : DBS5Obj {
 	mixin(H5This!"Tr");
 
 	/// Adding a header cell

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.cards.image;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4CardImage : DBS4Obj { // default top
+class DBS4CardImage : DBS4Obj { // default top
 	mixin(H5This!("IMG", ["card-img-top"], null, true));
 	override public void _init() {
 		super._init;

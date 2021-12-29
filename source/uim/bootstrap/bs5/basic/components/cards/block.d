@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.cards.block;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5CardBlock : DBS5Obj {
+class DBS5CardBlock : DBS5Obj {
 	mixin(H5This!("DIV", ["card-block"]));
 }
 

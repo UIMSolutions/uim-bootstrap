@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.files.text;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5FormFileText : DBS5Obj {
+class DBS5FormFileText : DBS5Obj {
 	mixin(H5This!("span", ["form-file-text"]));
 
 }

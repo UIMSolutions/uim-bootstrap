@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.navbars.text;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5NavbarText : DBS5Obj {
+class DBS5NavbarText : DBS5Obj {
 	mixin(H5This!("SPAN", ["navbar-text"]));
 }
 mixin(H5Calls!"BS5NavbarText");

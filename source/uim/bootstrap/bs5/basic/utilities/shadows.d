@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs5.classes.utilities.shadows;
 
+@safe: 
 import uim.bootstrap; 
 
 T shadowNone(T)(T h5) {

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.breadcrumbs.breadcrumb;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Breadcrumb : DBS4Obj {
+class DBS4Breadcrumb : DBS4Obj {
 	mixin(H5This!("Nav", null, `["aria-label":"breadcrumb"]`));
 
 	mixin(MyContent!("list", "BS4BreadcrumbList"));

@@ -1,23 +1,24 @@
 ﻿module uim.bootstrap.bs4.components.cards.card;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Card : DBS4Obj {
+class DBS4Card : DBS4Obj {
 	mixin(H5This!("DIV", ["card"]));
 
 	O block(this O)()	{
 		return this.classes("card-block");
-	}
-	unittest {
-		assert(Assert(BS4Card.block, `<div class="card card-block"></div>`));
-	}
+		}
+		unittest {
+			assert(Assert(BS4Card.block, `<div class="card card-block"></div>`));
+		}
 
 	O inverse(this O)() {
 		return this.classes("card-inverse");
-	}
-	unittest {
-		assert(Assert(BS4Card.inverse, `<div class="card card-inverse"></div>`));
-	}
+		}
+		unittest {
+			assert(Assert(BS4Card.inverse, `<div class="card card-inverse"></div>`));
+		}
 
 	/// Add Image
 	mixin(MyContent!("image", "BS4CardImage"));

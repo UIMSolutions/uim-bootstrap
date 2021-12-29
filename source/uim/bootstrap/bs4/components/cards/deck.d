@@ -1,9 +1,10 @@
 ﻿module uim.bootstrap.bs4.components.cards.deck;
 
+@safe: 
 import uim.bootstrap;
 
 /// The BS4CardDeck creates a grid of cards that are of equal height and width
-@safe: class DBS4CardDeck : DBS4Obj {
+class DBS4CardDeck : DBS4Obj {
 	mixin(H5This!("DIV", ["card-deck"]));
 
 	/// Add card 

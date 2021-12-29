@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.dropdowns.divider;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5DropdownDivider : DBS5Obj {
+class DBS5DropdownDivider : DBS5Obj {
 	mixin(H5This!("div", ["dropdown-divider"]));
 }
 mixin(H5Calls!"BS5DropdownDivider");

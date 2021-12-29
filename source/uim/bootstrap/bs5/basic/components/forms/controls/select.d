@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.controls.select;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS5InputSelect : DBS5Obj {
+class DBS5InputSelect : DBS5Obj {
 	mixin(H5This!("Select", ["form-control"]));	
 
 	mixin(MyContent!("option", "H5Option"));

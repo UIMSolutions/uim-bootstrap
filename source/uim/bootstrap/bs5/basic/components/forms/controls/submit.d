@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.controls.submit;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS5InputSubmit : DBS5Input {
+class DBS5InputSubmit : DBS5Input {
 	mixin(H5This!("Input", ["form-control"], `["type":"submit"]`));
 	override public void _init() {
 		super._init;

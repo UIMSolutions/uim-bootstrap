@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.lists.links;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ListLinks : DBS5Obj {
+class DBS5ListLinks : DBS5Obj {
 	mixin(H5This!("Div", ["list-group"]));
 
 	mixin(MyContent!("item", "BS5ListDivItem"));

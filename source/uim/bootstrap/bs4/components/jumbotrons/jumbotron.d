@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.jumbotrons.jumbotron;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4Jumbotron : DBS4Obj {
+class DBS4Jumbotron : DBS4Obj {
 	mixin(H5This!("Div", ["jumbotron"]));
 
 	unittest {

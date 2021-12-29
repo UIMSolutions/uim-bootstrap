@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.forms.controls.time;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS5InputTime : DBS5Input {
+class DBS5InputTime : DBS5Input {
 	mixin(H5This!("", null, `["type":"time"]`));
 
 

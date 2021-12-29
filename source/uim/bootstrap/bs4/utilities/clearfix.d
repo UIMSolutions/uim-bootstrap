@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs4.utilities.clearfix;
 
+@safe: 
 import uim.bootstrap; 
 
 T clearfix(T)(T h5) {

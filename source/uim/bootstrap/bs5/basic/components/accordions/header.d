@@ -1,8 +1,9 @@
 module uim.bootstrap.bs5.basic.components.accordions.header;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5AccordionHeader : DBS5Obj {
+class DBS5AccordionHeader : DBS5Obj {
 	mixin(H5This!("H2", ["accordion-header"]));
 
 	mixin(MyContent!("button", "BS5AccordionButton"));

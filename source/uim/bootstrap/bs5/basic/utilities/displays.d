@@ -1,5 +1,6 @@
 ﻿module uim.bootstrap.bs5.classes.utilities.displays;
 
+@safe: 
 import uim.bootstrap; 
 
 T displayInline(T)(T h5) {

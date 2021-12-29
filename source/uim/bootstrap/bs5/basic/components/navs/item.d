@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.navs.item;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5NavItem : DBS5Obj {
+class DBS5NavItem : DBS5Obj {
 	mixin(H5This!("li", ["nav-item"], null));
 
 	O dropdown(this O)(bool mode = true) { return this.classes("dropdown"); }

@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.content.images.fluid;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS4ImageFluid : DBS4Image {
+class DBS4ImageFluid : DBS4Image {
 	mixin(H5This!("Img", ["img-fluid"]));
 }
 mixin(H5Calls!("BS4ImageFluid"));

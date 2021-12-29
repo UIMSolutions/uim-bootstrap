@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs5.basic.components.progresses.bar;
 
+@safe: 
 import uim.bootstrap;
 
-@safe: class DBS5ProgressBar : DBS5Obj {
+class DBS5ProgressBar : DBS5Obj {
 	mixin(H5This!("div", ["progress-bar"], `["role":"progressbar"]`));
 
 	O valueNow(this O)(string value) { return this.attributes(["aria-valuenow":value]); }

@@ -1,5 +1,6 @@
 module uim.bootstrap.bs5;
 
+@safe: 
 import uim.bootstrap;
 
 public import uim.bootstrap.bs5.classes;

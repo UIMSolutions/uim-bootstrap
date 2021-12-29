@@ -1,8 +1,9 @@
 ﻿module uim.bootstrap.bs4.components.forms.controls.month;
 
+@safe: 
 import uim.bootstrap; 
 
-@safe: class DBS4InputMonth : DBS4Input {
+class DBS4InputMonth : DBS4Input {
 	mixin(H5This!("", ["form-control"], `["type":"month"]`));
 }
 mixin(H5Calls!("BS4InputMonth"));
