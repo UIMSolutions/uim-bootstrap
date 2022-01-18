@@ -13,6 +13,7 @@
 		"../uim-oop",
 		"../uim-css",
 		"../uim-javascript",
+		"../uim-json",
 		"../uim-html",
 		"./"
 	],
@@ -23,6 +24,7 @@
 		"../uim-oop",
 		"../uim-css",
 		"../uim-javascript",
+		"../uim-json",
 		"../uim-html",
 		"./"
 	],
