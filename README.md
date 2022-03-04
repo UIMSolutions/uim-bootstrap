@@ -1,2 +1,2 @@
 # uim-bootstrap
-D library for Bootstrap 4 projects
+D library for Bootstrap projects
