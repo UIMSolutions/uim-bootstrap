@@ -10,6 +10,8 @@ class DBS5NavTabs : DBS5Obj {
 	unittest {
 		assert(Assert(BS5NavTabs.item, `<ul class="nav nav-tabs" role="tablist"><li class="nav-item"></li></ul>`));
 	}
+
+	mixin(MyContent!("link", "BS5NavLink"));
 }
 mixin(H5Calls!"BS5NavTabs");
 
