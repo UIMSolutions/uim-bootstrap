@@ -6,8 +6,10 @@ import uim.bootstrap;
 class DBS5Dropdown : DBS5Obj {
 	mixin(H5This!("DIV", ["dropdown"]));
 
+	mixin(MyContent!("button", "BS5ToggleButton"));
+	mixin(MyContent!("link", "BS5DropdownToggleLink"));
 	mixin(MyContent!("menu", "BS5DropdownMenu"));
-	mixin(MyContent!("toggleLink", "BS5ToggleLink"));
+	mixin(MyContent!("toggleLink", "BS5DropdownToggleLink"));
 }
 mixin(H5Calls!"BS5Dropdown");
 

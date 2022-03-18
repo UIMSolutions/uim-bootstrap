@@ -16,8 +16,6 @@ class DBS5Form : DBS5Obj {
 mixin(H5Calls!"BS5Form");
 
 unittest {
-	
-	
 	assert(Assert(BS5Form, `<form></form>`));
 	assert(Assert(BS5Form.inline, `<form class="form-inline"></form>`));
 }
