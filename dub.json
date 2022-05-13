@@ -17,7 +17,7 @@
 		"../uim-html",
 		"./"
 	],
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"name": "uim-bootstrap",
 	"sourcePaths": [
 		"../uim-core",
