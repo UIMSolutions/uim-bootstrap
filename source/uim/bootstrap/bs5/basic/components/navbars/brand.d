@@ -3,13 +3,8 @@
 @safe: 
 import uim.bootstrap;
 
-class DBS5NavbarBrand : DBS5Obj
-{
+class DBS5NavbarBrand : DBS5Obj {
 	mixin(H5This!("a", ["navbar-brand"]));
-	override public void _init()
-	{
-		super._init;
-	}
 
 	mixin(MyContent!("image", "H5IMG"));
 }

@@ -3,18 +3,12 @@
 @safe: 
 import uim.bootstrap;
 
-class DBS4ModalBody : DBS4Obj
-{
+class DBS4ModalBody : DBS4Obj {
 	mixin(H5This!("Div", ["modal-body"]));
-	override public void _init()
-	{
-		super._init;
-	}
 }
 
 mixin(H5Calls!"BS4ModalBody");
 
-unittest
-{
+unittest {
 	assert(Assert(BS4ModalBody, `<div class="modal-body"></div>`));
 }

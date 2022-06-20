@@ -5,7 +5,7 @@ import uim.bootstrap;
 
 class DBS4Image : DBS4Obj {
 	mixin(H5This!("Img"));
-	override public void _init() { super._init; _single = true; }
+	override public void initialize() { super.initialize; _single = true; }
 
 	/// alt attribute 
 	O text(this O)(string txt) { this.attributes("alt", txt); return cast(O)this; }

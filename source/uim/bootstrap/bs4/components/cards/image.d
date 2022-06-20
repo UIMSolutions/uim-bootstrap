@@ -5,8 +5,8 @@ import uim.bootstrap;
 
 class DBS4CardImage : DBS4Obj { // default top
 	mixin(H5This!("IMG", ["card-img-top"], null, true));
-	override public void _init() {
-		super._init;
+	override public void initialize() {
+		super.initialize;
 		_tag = "img";
 	}
 

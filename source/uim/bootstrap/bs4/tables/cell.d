@@ -5,7 +5,6 @@ import uim.bootstrap;
 
 class DBS4TableCell : DBS4Obj {
 	mixin(H5This!"Td");
-	override public void _init() { super._init; }
 	
 	O colspan(this O)(int span) { return this.colspan(to!string(span)); }
 	O colspan(this O)(string span) { 

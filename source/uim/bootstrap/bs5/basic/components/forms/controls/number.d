@@ -5,8 +5,8 @@ import uim.bootstrap;
 
 class DBS5InputNumber : DBS5Obj {
 	mixin(H5This!("Input", ["form-control"], `["type":"number"]`));
-	override public void _init() {
-		super._init; _single = true;
+	override public void initialize() {
+		super.initialize; _single = true;
 	}
 
 	O value(this O)(string aValue) {

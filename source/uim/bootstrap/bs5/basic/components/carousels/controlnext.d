@@ -5,8 +5,8 @@ import uim.bootstrap;
 
 class DBS5CarouselControlNext : DBS5Obj {
 	mixin(H5This!("a", ["carousel-control-next"], `["data-slide":"next"]`));
-	override public void _init() {
-		super._init;
+	override public void initialize() {
+		super.initialize;
 		this.content(H5Span(["carousel-control-next-icon"]));
 		this.content(H5Span(["sr-only"], "Next"));
 	}
