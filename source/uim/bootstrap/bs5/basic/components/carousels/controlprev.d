@@ -4,7 +4,7 @@
 import uim.bootstrap;
 
 class DBS5CarouselControlPrev : DBS5Obj {
-	mixin(H5This!("a", ["carousel-control-prev"], `["data-slide":"prev"]`));
+	mixin(H5This!("a", ["carousel-control-prev"], `["data-bs-slide":"prev"]`));
 	override public void initialize() {
 		super.initialize;
 		this.content(H5Span(["carousel-control-prev-icon"]));
