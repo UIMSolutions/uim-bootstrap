@@ -4,7 +4,8 @@
 import uim.bootstrap;
 
 class DBS5Carousel : DBS5Obj {
-	mixin(H5This!("div", ["carousel"], `["data-ride":"carousel"]`));
+	mixin(H5This!("div", ["carousel slide"], `["data-ride":"carousel"]`));
+
 	mixin(MyContent!("indicators", "DBS5CarouselIndicators"));
 	mixin(MyContent!("inner	", "DBS5CarouselInner"));
 }
