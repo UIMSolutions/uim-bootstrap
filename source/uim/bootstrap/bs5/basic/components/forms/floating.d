@@ -6,10 +6,7 @@ import uim.bootstrap;
 class DBS5FormFloating : DBS5Obj {
 	mixin(H5This!("Div", ["form-floating"]));
 
-  O label(this O)(string forElement, string text) {
-    BS5FormFloating(H5Label(["for":forElement], text));
-    return cast(O)this;
-  }
+  mixin(MyContent!("label", "H5Label"));
 }
 mixin(H5Calls!"BS5FormFloating");
 
