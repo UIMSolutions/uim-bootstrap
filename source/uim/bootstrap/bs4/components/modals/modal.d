@@ -6,7 +6,7 @@ import uim.bootstrap;
 class DBS4Modal : DBS4Obj {
 	mixin(H5This!("DIV", ["modal"], `["tabindex":"-1", "role":"dialog", "aria-hidden":"true"]`));
 	unittest {
-		assert(BS4Modal, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`));
+		assert(BS4Modal, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
 	}
 
 	O fade(this O)(bool mode = true) {
@@ -16,10 +16,10 @@ class DBS4Modal : DBS4Obj {
 
 	unittest {
 		assert(
-				BS4Modal.fade, `<div class="fade modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`));
+				BS4Modal.fade, `<div class="fade modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
 	}
 }
 mixin(H5Calls!"BS4Modal");
 unittest {
-	assert(BS4Modal, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`));
+	assert(BS4Modal, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
 }

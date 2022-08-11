@@ -9,5 +9,5 @@ class DBS5InputPassword : DBS5Input {
 mixin(H5Calls!("BS5InputPassword"));
 ///
 unittest {
-		assert(BS5InputPassword, `<input class="form-control" type="password">`));
+		assert(BS5InputPassword, `<input class="form-control" type="password">`);
 }

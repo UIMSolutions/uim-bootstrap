@@ -8,12 +8,12 @@ class DBS5Breadcrumb : DBS5Obj {
 
 	mixin(MyContent!("list", "BS5BreadcrumbList"));
 	unittest {
-		assert(BS5Breadcrumb.list, `<nav aria-label="breadcrumb"><ol class="breadcrumb" aria-label="breadcrumbs"></ol></nav>`));
+		assert(BS5Breadcrumb.list, `<nav aria-label="breadcrumb"><ol class="breadcrumb" aria-label="breadcrumbs"></ol></nav>`);
 	}
 
 }
 mixin(H5Calls!"BS5Breadcrumb");
 
 unittest {
-	assert(BS5Breadcrumb, `<nav aria-label="breadcrumb"></nav>`));
+	assert(BS5Breadcrumb, `<nav aria-label="breadcrumb"></nav>`);
 }

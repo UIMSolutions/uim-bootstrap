@@ -14,5 +14,5 @@ class DBS4ButtonClose : DBS4Button {
 mixin(H5Calls!"BS4ButtonClose");
 
 unittest {
-	assert(BS4ButtonClose, `<button class="btn close" aria-label="Close" type="button"><span aria-hidden="true">&times;</span></button>`));
+	assert(BS4ButtonClose, `<button class="btn close" aria-label="Close" type="button"><span aria-hidden="true">&times;</span></button>`);
 }

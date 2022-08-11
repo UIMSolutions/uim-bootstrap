@@ -12,14 +12,14 @@ class DBS4CardImage : DBS4Obj { // default top
 
 	O position(this O)(string value) { _classes = _classes.sub("card-img-top").add("card-img-"~value); return cast(O)this; }
 	unittest {
-		assert(BS4CardImage.position("top"),`<img class="card-img-top">`));
-		assert(BS4CardImage.position("bottom"),`<img class="card-img-bottom">`));
+		assert(BS4CardImage.position("top"),`<img class="card-img-top">`);
+		assert(BS4CardImage.position("bottom"),`<img class="card-img-bottom">`);
 	}
 }
 mixin(H5Calls!"BS4CardImage");
 
 unittest {
-	assert(BS4CardImage,`<img class="card-img-top">`));
-	assert(BS4CardImage.position("top"),`<img class="card-img-top">`));
-	assert(BS4CardImage.position("bottom"),`<img class="card-img-bottom">`));
+	assert(BS4CardImage,`<img class="card-img-top">`);
+	assert(BS4CardImage.position("top"),`<img class="card-img-top">`);
+	assert(BS4CardImage.position("bottom"),`<img class="card-img-bottom">`);
 }

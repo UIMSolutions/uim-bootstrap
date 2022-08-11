@@ -9,5 +9,5 @@ class DBS4InputReset : DBS4Input {
 mixin(H5Calls!("BS4InputReset"));
 ///
 unittest {
-	assert(BS4InputReset, `<input class="form-control" type="reset">`));
+	assert(BS4InputReset, `<input class="form-control" type="reset">`);
 }

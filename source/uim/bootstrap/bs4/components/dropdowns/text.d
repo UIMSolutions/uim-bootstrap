@@ -9,5 +9,5 @@ class DBS4DropdownText : DBS4Obj {
 mixin(H5Calls!"BS4DropdownText");
 
 unittest {
-	assert(BS4DropdownText("Hallo"), `<p>Hallo</p>`));
+	assert(BS4DropdownText("Hallo"), `<p>Hallo</p>`);
 }

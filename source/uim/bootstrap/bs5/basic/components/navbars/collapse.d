@@ -10,5 +10,5 @@ class DBS5NavbarCollapse : DBS5Obj {
 mixin(H5Calls!"BS5NavbarCollapse");
 ///
 unittest {
-	assert(BS5NavbarCollapse, `<div class="collapse navbar-collapse"></div>`));
+	assert(BS5NavbarCollapse, `<div class="collapse navbar-collapse"></div>`);
 }

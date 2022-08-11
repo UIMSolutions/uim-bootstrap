@@ -11,7 +11,7 @@ class DBS4TableCell : DBS4Obj {
 		this.attributes("colspan", span);
 		return cast(O)this; }
 	unittest {
-		assert(BS4TableCell.colspan(2), `<td colspan="2"></td>`));
+		assert(BS4TableCell.colspan(2), `<td colspan="2"></td>`);
 	}
 
 	O rowspan(this O)(int span) { return this.rowspan(to!string(span)); }
@@ -19,11 +19,11 @@ class DBS4TableCell : DBS4Obj {
 		this.attributes("rowspan", span);
 		return cast(O)this; }
 	unittest {
-		assert(BS4TableCell.rowspan(2), `<td rowspan="2"></td>`));
+		assert(BS4TableCell.rowspan(2), `<td rowspan="2"></td>`);
 	}
 }
 mixin(H5Calls!"BS4TableCell");
 
 unittest {
-	assert(BS4TableCell, `<td></td>`));
+	assert(BS4TableCell, `<td></td>`);
 }

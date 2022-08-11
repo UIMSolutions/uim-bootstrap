@@ -9,7 +9,7 @@ class DBS5FormCheck : DBS5Obj {
 
 	O inline(this O)(bool mode = true) { if (mode) this.classes("form-check-inline"); return cast(O)this; }
 	unittest {
-		assert(BS5FormCheck.inline, `<div class="form-check form-check-inline"></div>`));
+		assert(BS5FormCheck.inline, `<div class="form-check form-check-inline"></div>`);
 	}
 
 	mixin(MyContent!("label", "BS5FormCheckLabel"));

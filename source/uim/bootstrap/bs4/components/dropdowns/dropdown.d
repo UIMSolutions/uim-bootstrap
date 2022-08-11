@@ -12,6 +12,6 @@ class DBS4Dropdown : DBS4Obj {
 mixin(H5Calls!"BS4Dropdown");
 
 unittest {
-	assert(BS4Dropdown, `<div class="dropdown"></div>`));
-	assert(BS4Dropdown.id("id"), `<div id="id" class="dropdown"></div>`));
+	assert(BS4Dropdown, `<div class="dropdown"></div>`);
+	assert(BS4Dropdown.id("id"), `<div id="id" class="dropdown"></div>`);
 }

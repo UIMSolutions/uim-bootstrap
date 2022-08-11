@@ -16,6 +16,6 @@ mixin(H5Calls!"BS4Form");
 unittest {
 	
 	
-	assert(BS4Form, `<form></form>`));
-	assert(BS4Form.inline, `<form class="form-inline"></form>`));
+	assert(BS4Form, `<form></form>`);
+	assert(BS4Form.inline, `<form class="form-inline"></form>`);
 }

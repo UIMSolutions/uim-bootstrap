@@ -16,6 +16,6 @@ class DBS4NavList : DBS4Obj {
 mixin(H5Calls!"BS4NavList");
 
 unittest {
-	assert(BS4NavList, `<ul class="nav"></ul>`));
-	assert(BS4NavList.vertical, `<ul class="flex-column nav"></ul>`));
+	assert(BS4NavList, `<ul class="nav"></ul>`);
+	assert(BS4NavList.vertical, `<ul class="flex-column nav"></ul>`);
 }

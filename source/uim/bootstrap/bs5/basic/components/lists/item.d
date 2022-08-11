@@ -11,5 +11,5 @@ class DBS5ListItem : DBS5Obj {
 mixin(H5Calls!"BS5ListItem");
 
 unittest {
-	assert(BS5ListItem, `<li class="list-group-item"></li>`));
+	assert(BS5ListItem, `<li class="list-group-item"></li>`);
 }

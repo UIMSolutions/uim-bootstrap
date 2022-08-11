@@ -11,6 +11,6 @@ class DBS5AccordionHeader : DBS5Obj {
 mixin(H5Calls!("BS5AccordionHeader"));
 
 unittest {
-	assert(BS5AccordionHeader,`<h2 class="accordion-header"></h2>`));
+	assert(BS5AccordionHeader,`<h2 class="accordion-header"></h2>`);
 }
 

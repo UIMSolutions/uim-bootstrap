@@ -10,7 +10,7 @@ class DBS5FormCheckInput : DBS5Obj {
 		_single = true;
 	}
 	unittest {
-		assert(BS5FormCheckInput, `<input class="form-check-input">`));
+		assert(BS5FormCheckInput, `<input class="form-check-input">`);
 	}
 }
 mixin(H5Calls!"BS5FormCheckInput");

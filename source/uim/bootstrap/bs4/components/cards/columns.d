@@ -10,10 +10,10 @@ class DBS4CardColumns : DBS4Obj {
 	/// Add card 
 	mixin(MyContent!("card", "BS4Card"));
 	unittest {
-		assert(BS4CardDeck.card,`<div class="card-deck"><div class="card"></div></div>`));
+		assert(BS4CardDeck.card,`<div class="card-deck"><div class="card"></div></div>`);
 	}
 }
 mixin(H5Calls!"BS4CardColumns");
 unittest {
-	assert(BS4CardColumns,`<div class="card-columns"></div>`));
+	assert(BS4CardColumns,`<div class="card-columns"></div>`);
 }

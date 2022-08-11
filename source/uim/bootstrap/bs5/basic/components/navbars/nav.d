@@ -8,17 +8,17 @@ class DBS5NavbarNav : DBS5Obj {
 
 	mixin(MyContent!("item", "BS5NavItem"));
 	unittest {
-		assert(BS5NavbarNav.item, `<ul class="navbar-nav"><li class="nav-item"></li></ul>`));
+		assert(BS5NavbarNav.item, `<ul class="navbar-nav"><li class="nav-item"></li></ul>`);
 	}
 	
 	mixin(MyContent!("link", "this.item", "BS5NavLink"));
 	unittest {
-		assert(BS5NavbarNav.link, `<ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="#"></a></li></ul>`));
+		assert(BS5NavbarNav.link, `<ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="#"></a></li></ul>`);
 	}
 }
 
 mixin(H5Calls!"BS5NavbarNav");
 ///
 unittest {
-	assert(BS5NavbarNav, `<ul class="navbar-nav"></ul>`));
+	assert(BS5NavbarNav, `<ul class="navbar-nav"></ul>`);
 }

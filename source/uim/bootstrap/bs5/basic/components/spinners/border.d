@@ -9,5 +9,5 @@ class DBS5SpinnerBorder : DBS5Obj {
 mixin(H5Calls!("BS5SpinnerBorder"));
 
 unittest {
-	assert(BS5SpinnerBorder,`<div class="spinner-border"></div>`));
+	assert(BS5SpinnerBorder,`<div class="spinner-border"></div>`);
 }

@@ -9,5 +9,5 @@ class DBS4Collapse : DBS4Obj {
 mixin(H5Calls!"BS4Collapse");
 
 unittest {
-	assert(BS4Collapse,`<div class="collapse"></div>`));
+	assert(BS4Collapse,`<div class="collapse"></div>`);
 }

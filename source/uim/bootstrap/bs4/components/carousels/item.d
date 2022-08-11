@@ -8,5 +8,5 @@ class DBS4CarouselItem : DBS4Obj {
 }
 mixin(H5Calls!"BS4CarouselItem");
 unittest {
-	assert(BS4CarouselItem,`<div class="carousel-item"></div>`));
+	assert(BS4CarouselItem,`<div class="carousel-item"></div>`);
 }

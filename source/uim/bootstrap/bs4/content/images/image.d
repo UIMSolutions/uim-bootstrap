@@ -18,5 +18,5 @@ class DBS4Image : DBS4Obj {
 mixin(H5Calls!("BS4Image"));
 
 unittest {
-	assert(BS4Image, `<img>`));
+	assert(BS4Image, `<img>`);
 }

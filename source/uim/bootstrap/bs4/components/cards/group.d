@@ -11,10 +11,10 @@ class DBS4CardGroup : DBS4Obj {
 	mixin(MyContent!("card", "BS4Card"));
 	O card(this O)(DBS4Card[] cards) { foreach(c; cards) this.card(c); return cast(O)this; }
 	unittest {
-		assert(BS4CardGroup.card, `<div class="card-group"><div class="card"></div></div>`));
+		assert(BS4CardGroup.card, `<div class="card-group"><div class="card"></div></div>`);
 	}
 }
 mixin(H5Calls!"BS4CardGroup");
 unittest {
-	assert(BS4CardGroup, `<div class="card-group"></div>`));
+	assert(BS4CardGroup, `<div class="card-group"></div>`);
 }

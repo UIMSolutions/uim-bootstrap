@@ -20,6 +20,6 @@ mixin(H5Calls!"BS5TabList");
 unittest {
 	
 	
-	assert(BS5TabList, `<ul class="nav" role="tablist"></ul>`));
-	assert(BS5TabList.vertical, `<ul class="flex-column nav" role="tablist"></ul>`));
+	assert(BS5TabList, `<ul class="nav" role="tablist"></ul>`);
+	assert(BS5TabList.vertical, `<ul class="flex-column nav" role="tablist"></ul>`);
 }

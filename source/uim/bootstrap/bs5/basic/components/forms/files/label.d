@@ -10,5 +10,5 @@ class DBS5FormFileLabel : DBS5Obj {
 mixin(H5Calls!"BS5FormFileLabel");
 ///
 unittest {
-	assert(BS5FormFileLabel, `<label class="form-file-label"></label>`));
+	assert(BS5FormFileLabel, `<label class="form-file-label"></label>`);
 }

@@ -15,5 +15,5 @@ class DBS4CarouselControlPrev : DBS4Obj {
 mixin(H5Calls!"BS4CarouselControlPrev");
 unittest {
 	assert(BS4CarouselControlPrev, 
-	`<a class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a>`));
+	`<a class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a>`);
 }

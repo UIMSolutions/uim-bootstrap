@@ -12,5 +12,5 @@ mixin(H5Calls!"BS5PageLink");
 unittest {
 	
 
-	assert(BS5PageLink, `<a class="page-link" href="#"></a>`));
+	assert(BS5PageLink, `<a class="page-link" href="#"></a>`);
 }

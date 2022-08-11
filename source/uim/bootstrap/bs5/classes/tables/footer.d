@@ -10,12 +10,12 @@ class DBS5TableFooter : DBS5Obj {
 	mixin(MyContent!("tr", "BS5TableRow"));
 	unittest {
 		version(uim_bootstrap) {
-			assert(BS5Table.row, `<table class="table"><tr></tr></table>`));
+			assert(BS5Table.row, `<table class="table"><tr></tr></table>`);
 	}}	
 }
 mixin(H5Calls!"BS5TableFooter");
 
 unittest {
 	version(uim_bootstrap) {
-		assert(BS5TableFooter, `<tfoot></tfoot>`));
+		assert(BS5TableFooter, `<tfoot></tfoot>`);
 }}

@@ -9,5 +9,5 @@ class DBS5DropdownForm : DBS5Obj {
 mixin(H5Calls!"BS5DropdownForm");
 
 unittest {
-	assert(BS5DropdownForm, `<form></form>`));
+	assert(BS5DropdownForm, `<form></form>`);
 }

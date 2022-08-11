@@ -12,5 +12,5 @@ class DBS5TabContent : DBS5Obj {
 mixin(H5Calls!"BS5TabContent");
 ///
 unittest {
-	assert(BS5TabContent, `<div class="tab-content"></div>`));
+	assert(BS5TabContent, `<div class="tab-content"></div>`);
 }

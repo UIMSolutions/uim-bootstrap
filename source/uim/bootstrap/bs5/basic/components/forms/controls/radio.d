@@ -8,5 +8,5 @@ class DBS5Radio : DBS5Input {
 }
 mixin(H5Calls!("BS5Radio"));
 unittest {
-	assert(BS5Radio, `<input class="form-control" type="radio">`));
+	assert(BS5Radio, `<input class="form-control" type="radio">`);
 }

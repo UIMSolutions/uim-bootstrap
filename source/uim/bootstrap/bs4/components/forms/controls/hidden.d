@@ -8,5 +8,5 @@ class DBS4InputHidden : DBS4Input {
 }
 mixin(H5Calls!("BS4InputHidden"));
 unittest {
-		assert(BS4InputHidden, `<input class="form-control" type="hidden">`));
+		assert(BS4InputHidden, `<input class="form-control" type="hidden">`);
 }

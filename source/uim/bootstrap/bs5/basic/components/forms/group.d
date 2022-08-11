@@ -49,5 +49,5 @@ class DBS5FormGroup : DBS5Obj {
 mixin(H5Calls!"BS5FormGroup");
 ///
 unittest {
-	assert(BS5FormGroup, `<div class="form-group"></div>`));
+	assert(BS5FormGroup, `<div class="form-group"></div>`);
 }

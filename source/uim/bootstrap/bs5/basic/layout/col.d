@@ -11,7 +11,7 @@ class DBS5Col : DBS5Obj {
 		return cast(O)this; 
 	}
 	unittest {	
-		assert(BS5Col.sizes("12"), `<div class="col-12"></div>`));
+		assert(BS5Col.sizes("12"), `<div class="col-12"></div>`);
 	}
 }
 mixin(H5Calls!("BS5Col"));

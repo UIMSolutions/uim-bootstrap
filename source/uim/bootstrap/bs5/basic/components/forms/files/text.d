@@ -10,5 +10,5 @@ class DBS5FormFileText : DBS5Obj {
 mixin(H5Calls!"BS5FormFileText");
 ///
 unittest {
-	assert(BS5FormFileText, `<span class="form-file-text"></span>`));
+	assert(BS5FormFileText, `<span class="form-file-text"></span>`);
 }

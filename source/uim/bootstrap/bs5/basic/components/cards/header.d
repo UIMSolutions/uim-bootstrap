@@ -10,5 +10,5 @@ class DBS5CardHeader : DBS5Obj {
 }
 mixin(H5Calls!"BS5CardHeader");
 unittest {
-	assert(BS5CardHeader,`<div class="card-header"></div>`));
+	assert(BS5CardHeader,`<div class="card-header"></div>`);
 }

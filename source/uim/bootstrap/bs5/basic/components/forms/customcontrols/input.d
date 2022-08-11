@@ -11,7 +11,7 @@ class DBS5CustomInput : DBS5Obj {
 	}
 
 	unittest {
-		assert(BS5CustomInput, `<input class="custom-control-input">`));
+		assert(BS5CustomInput, `<input class="custom-control-input">`);
 	}
 
 }

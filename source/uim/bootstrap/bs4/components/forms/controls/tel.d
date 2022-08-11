@@ -9,5 +9,5 @@ class DBS4InputTel : DBS4Input {
 mixin(H5Calls!("BS4InputTel"));
 ///
 unittest {
-	assert(BS4InputTel, `<input class="form-control" type="tel">`));
+	assert(BS4InputTel, `<input class="form-control" type="tel">`);
 }

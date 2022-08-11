@@ -9,5 +9,5 @@ class DBS4Password : DBS4Input {
 mixin(H5Calls!("BS4Password"));
 ///
 unittest {
-		assert(BS4Password, `<input class="form-control" type="password">`));
+		assert(BS4Password, `<input class="form-control" type="password">`);
 }

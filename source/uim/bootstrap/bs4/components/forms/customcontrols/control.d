@@ -12,7 +12,7 @@ class DBS4CustomControl : DBS4Obj {
 	mixin(MyContent!("label", "H5Label"));
 	
 	unittest {
-		assert(BS4CustomControl, `<div class="custom-control"></div>`));
+		assert(BS4CustomControl, `<div class="custom-control"></div>`);
 	}
 }
 mixin(H5Calls!"BS4CustomControl");

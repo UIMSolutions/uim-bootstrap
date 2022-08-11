@@ -9,5 +9,5 @@ class DBS5SpinnerGrow : DBS5Obj {
 mixin(H5Calls!("BS5SpinnerGrow"));
 
 unittest {
-	assert(BS5SpinnerGrow, `<div class="spinner-grow"></div>`));
+	assert(BS5SpinnerGrow, `<div class="spinner-grow"></div>`);
 }

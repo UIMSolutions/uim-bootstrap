@@ -10,5 +10,5 @@ class DBS5BreadcrumbLink : DBS5Obj {
 mixin(H5Calls!"BS5BreadcrumbLink");
 
 unittest {
-	assert(BS5BreadcrumbLink,`<a></a>`));
+	assert(BS5BreadcrumbLink,`<a></a>`);
 }

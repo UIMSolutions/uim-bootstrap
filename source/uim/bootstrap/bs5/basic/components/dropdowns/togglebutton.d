@@ -8,6 +8,6 @@ class DBS5DropdownToggle : DBS5Button {
 }
 mixin(H5Calls!"BS5DropdownToggle");
 unittest {
-	assert(BS5DropdownToggle, `<button class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></button>`));
-	assert(BS5DropdownToggle.id("id"), `<button id="id" class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></button>`));
+	assert(BS5DropdownToggle, `<button class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></button>`);
+	assert(BS5DropdownToggle.id("id"), `<button id="id" class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></button>`);
 }

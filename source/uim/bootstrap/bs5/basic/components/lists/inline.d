@@ -9,12 +9,12 @@ class DBS5ListInline : DBS5Obj {
 
 	mixin(MyContent!("item", "BS5ListInlineItem"));
 	unittest {
-		assert(BS5ListInline.item, `<ul class="list-inline"><li class="list-inline-item"></li></ul>`));
-		assert(BS5ListInline.item("test"), `<ul class="list-inline"><li class="list-inline-item">test</li></ul>`));
+		assert(BS5ListInline.item, `<ul class="list-inline"><li class="list-inline-item"></li></ul>`);
+		assert(BS5ListInline.item("test"), `<ul class="list-inline"><li class="list-inline-item">test</li></ul>`);
 	}
 }
 mixin(H5Calls!"BS5ListInline");
 
 unittest {
-	assert(BS5ListInline,  `<ul class="list-inline"></ul>`));
+	assert(BS5ListInline,  `<ul class="list-inline"></ul>`);
 }

@@ -43,5 +43,5 @@ class DBS5InputTime : DBS5Input {
 mixin(H5Calls!("BS5InputTime"));
 ///
 unittest {
-	assert(BS5InputTime, `<input class="form-control" type="time">`));
+	assert(BS5InputTime, `<input class="form-control" type="time">`);
 }
