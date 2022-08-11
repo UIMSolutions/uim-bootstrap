@@ -9,6 +9,6 @@ class DBS4NavbarText : DBS4Obj {
 mixin(H5Calls!"BS4NavbarText");
 
 unittest {
-	assert(Assert(BS4NavbarText, `<span class="navbar-text"></span>`));
-	assert(Assert(BS4NavbarText("some text"), `<span class="navbar-text">some text</span>`));
+	assert(BS4NavbarText, `<span class="navbar-text"></span>`));
+	assert(BS4NavbarText("some text"), `<span class="navbar-text">some text</span>`));
 }

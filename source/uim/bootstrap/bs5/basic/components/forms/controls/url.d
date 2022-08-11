@@ -9,5 +9,5 @@ class DBS5InputUrl : DBS5Input {
 mixin(H5Calls!("BS5InputUrl"));
 ///
 unittest {
-	assert(Assert(BS5InputUrl, `<input class="form-control" type="url">`));
+	assert(BS5InputUrl, `<input class="form-control" type="url">`));
 }

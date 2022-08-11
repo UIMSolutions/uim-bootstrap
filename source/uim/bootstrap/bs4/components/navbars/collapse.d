@@ -10,5 +10,5 @@ class DBS4NavbarCollapse : DBS4Obj {
 mixin(H5Calls!"BS4NavbarCollapse");
 ///
 unittest {
-	assert(Assert(BS4NavbarCollapse, `<div class="collapse navbar-collapse"></div>`));
+	assert(BS4NavbarCollapse, `<div class="collapse navbar-collapse"></div>`));
 }

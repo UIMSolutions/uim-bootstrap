@@ -16,8 +16,8 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.margins("t-2"), `<div class="mt-2"></div>`));
-		assert(Assert(BS5Obj.margins("t-sm-2", "t-lg-4"), `<div class="mt-lg-4 mt-sm-2"></div>`));
+		assert(BS5Obj.margins("t-2"), `<div class="mt-2"></div>`));
+		assert(BS5Obj.margins("t-sm-2", "t-lg-4"), `<div class="mt-lg-4 mt-sm-2"></div>`));
 	}
 
 	/// Adding paddings
@@ -30,7 +30,7 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.paddings("t-2"), `<div class="pt-2"></div>`));
+		assert(BS5Obj.paddings("t-2"), `<div class="pt-2"></div>`));
 	}
 
 /* 	/// Clear border 
@@ -52,9 +52,9 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.border, `<div class="border"></div>`));
-		assert(Assert(BS5Obj.border(1), `<div class="border-1"></div>`));
-		assert(Assert(BS5Obj.border("top"), `<div class="border-top"></div>`));
+		assert(BS5Obj.border, `<div class="border"></div>`));
+		assert(BS5Obj.border(1), `<div class="border-1"></div>`));
+		assert(BS5Obj.border("top"), `<div class="border-top"></div>`));
 	}
 
 	/// Clear border 
@@ -64,7 +64,7 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.noBorder, `<div class="border-0"></div>`));
+		assert(BS5Obj.noBorder, `<div class="border-0"></div>`));
 	}
 
 	/// Set border color 
@@ -73,8 +73,8 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.borderColor("primary"), `<div class="border-primary"></div>`));
-		assert(Assert(BS5Obj.border.borderColor("primary"), `<div class="border border-primary"></div>`));
+		assert(BS5Obj.borderColor("primary"), `<div class="border-primary"></div>`));
+		assert(BS5Obj.border.borderColor("primary"), `<div class="border border-primary"></div>`));
 	}
 
 	/// Change rounded of corners 
@@ -84,8 +84,8 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.rounded, `<div class="rounded"></div>`));
-		assert(Assert(BS5Obj.rounded("top"), `<div class="rounded-top"></div>`));
+		assert(BS5Obj.rounded, `<div class="rounded"></div>`));
+		assert(BS5Obj.rounded("top"), `<div class="rounded-top"></div>`));
 	}
 
 	/// Clear rounded
@@ -94,7 +94,7 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.noRounded, `<div class="rounded-0"></div>`));
+		assert(BS5Obj.noRounded, `<div class="rounded-0"></div>`));
 	}
 
 	/// Set size of rounded
@@ -103,7 +103,7 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.roundedSize("lg"), `<div class="rounded-lg"></div>`));
+		assert(BS5Obj.roundedSize("lg"), `<div class="rounded-lg"></div>`));
 	}
 
 	O clearfix(this O)() { 
@@ -111,7 +111,7 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.clearfix, `<div class="clearfix"></div>`));
+		assert(BS5Obj.clearfix, `<div class="clearfix"></div>`));
 	}
 
 	O closeButton(this O)(string icon = "&times;") { 
@@ -119,7 +119,7 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.closeButton, `<div><button class="btn close" aria-label="Close" type="button"><span aria-label="true">&times;</span></button></div>`));
+		assert(BS5Obj.closeButton, `<div><button class="btn close" aria-label="Close" type="button"><span aria-label="true">&times;</span></button></div>`));
 	}
 
 	/// Setting text color
@@ -130,8 +130,8 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.textColor("primary"), `<div class="text-primary"></div>`));
-		assert(Assert(BS5Obj.textColor("black", "50"), `<div class="text-black-50"></div>`));
+		assert(BS5Obj.textColor("primary"), `<div class="text-primary"></div>`));
+		assert(BS5Obj.textColor("black", "50"), `<div class="text-black-50"></div>`));
 	}
 
 	/// Setting background color
@@ -142,7 +142,7 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.background("primary"), `<div class="bg-primary"></div>`));
+		assert(BS5Obj.background("primary"), `<div class="bg-primary"></div>`));
 	}
 
 	/// Setting display
@@ -153,8 +153,8 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.display("none"), `<div class="d-none"></div>`));
-		assert(Assert(BS5Obj.display("sm", "block"), `<div class="d-sm-block"></div>`));
+		assert(BS5Obj.display("none"), `<div class="d-none"></div>`));
+		assert(BS5Obj.display("sm", "block"), `<div class="d-sm-block"></div>`));
 	}
 	
 	/// Setting print display
@@ -163,7 +163,7 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Obj.print("none"), `<div class="d-print-none"></div>`));
+		assert(BS5Obj.print("none"), `<div class="d-print-none"></div>`));
 	}
  */
 }
@@ -171,5 +171,5 @@ class DBS5Obj : DH5Obj {
 mixin(H5Calls!"BS5Obj");
 
 unittest {
-	assert(Assert(BS5Obj, "<div></div>"));
+	assert(BS5Obj, "<div></div>"));
 }

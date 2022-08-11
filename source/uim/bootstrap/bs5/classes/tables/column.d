@@ -23,6 +23,6 @@ class DBS5TableColumn : DBS5Obj {
 mixin(H5Calls!"BS5TableColumn");
 
 unittest {
-	assert(Assert(BS5TableColumn, `<th scope="col"></th>`));
-	assert(Assert(BS5TableColumn.title("xyz"), `<th scope="col">xyz</th>`));
+	assert(BS5TableColumn, `<th scope="col"></th>`));
+	assert(BS5TableColumn.title("xyz"), `<th scope="col">xyz</th>`));
 }

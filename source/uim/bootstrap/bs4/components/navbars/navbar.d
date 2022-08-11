@@ -11,8 +11,8 @@ class DBS4Navbar : DBS4Obj {
 		return cast(O)this;
 	}
 	unittest {
-		assert(Assert(BS4Navbar.center, `<nav class="justify-content-center navbar"></nav>`));
-		assert(Assert(BS4Navbar("Test").center, `<nav class="justify-content-center navbar">Test</nav>`));
+		assert(BS4Navbar.center, `<nav class="justify-content-center navbar"></nav>`));
+		assert(BS4Navbar("Test").center, `<nav class="justify-content-center navbar">Test</nav>`));
 	}
 
 	O dark(this O)(bool value = true) {
@@ -20,7 +20,7 @@ class DBS4Navbar : DBS4Obj {
 		return cast(O)this;
 	}
 	unittest {
-		assert(Assert(BS4Navbar.dark, `<nav class="navbar navbar-dark"></nav>`));
+		assert(BS4Navbar.dark, `<nav class="navbar navbar-dark"></nav>`));
 	}
 
 	O expand(this O)(string screenSize) {
@@ -29,7 +29,7 @@ class DBS4Navbar : DBS4Obj {
 	}
 	///
 	unittest {
-		assert(Assert(BS4Navbar.expand("lg"), `<nav class="navbar navbar-expand-lg"></nav>`));
+		assert(BS4Navbar.expand("lg"), `<nav class="navbar navbar-expand-lg"></nav>`));
 	}
 
 	O light(this O)(bool value = true) {
@@ -38,7 +38,7 @@ class DBS4Navbar : DBS4Obj {
 	}
 	///
 	unittest {
-		assert(Assert(BS4Navbar.light, `<nav class="navbar navbar-light"></nav>`));
+		assert(BS4Navbar.light, `<nav class="navbar navbar-light"></nav>`));
 	}
 
 /*
@@ -46,7 +46,7 @@ class DBS4Navbar : DBS4Obj {
 	///
 	unittest
 	{
-		assert(Assert(BS4Navbar.nav, `<nav class="navbar"><ul class="navbar-nav"></ul></nav>`);
+		assert(BS4Navbar.nav, `<nav class="navbar"><ul class="navbar-nav"></ul></nav>`);
 	}*/
 }
 
@@ -54,5 +54,5 @@ mixin(H5Calls!"BS4Navbar");
 ///
 unittest
 {
-	assert(Assert(BS4Navbar, `<nav class="navbar"></nav>`));
+	assert(BS4Navbar, `<nav class="navbar"></nav>`));
 }

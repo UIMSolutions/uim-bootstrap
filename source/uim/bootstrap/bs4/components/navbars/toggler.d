@@ -18,5 +18,5 @@ class DBS4NavbarToggler : DBS4ButtonObj {
 mixin(H5Calls!"BS4NavbarToggler");
 
 unittest {
-	assert(Assert(BS4NavbarToggler, `<button class="navbar-toggler" aria-controls="navbar" type="button"></button>`));
+	assert(BS4NavbarToggler, `<button class="navbar-toggler" aria-controls="navbar" type="button"></button>`));
 }

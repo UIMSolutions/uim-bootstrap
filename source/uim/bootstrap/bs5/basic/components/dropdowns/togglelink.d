@@ -8,6 +8,6 @@ class DBS5DropdownToggleLink : DBS5ButtonLink {
 }
 mixin(H5Calls!"BS5DropdownToggleLink");
 unittest {
-	assert(Assert(BS5DropdownToggleLink, `<a class="btn dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" role="button"></a>`));
+	assert(BS5DropdownToggleLink, `<a class="btn dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" role="button"></a>`));
 }
 

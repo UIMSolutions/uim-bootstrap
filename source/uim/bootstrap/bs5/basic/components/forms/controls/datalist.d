@@ -9,5 +9,5 @@ class DBS5InputDatalist : DBS5Input {
 mixin(H5Calls!("BS5InputDatalist"));
 ///
 unittest {
-	assert(Assert(BS5InputDatalist, `<input class="form-control">`));
+	assert(BS5InputDatalist, `<input class="form-control">`));
 }

@@ -11,7 +11,7 @@ class DBS4CustomInput : DBS4Obj {
 	}
 
 	unittest {
-		assert(Assert(BS4CustomInput, `<input class="custom-control-input">`));
+		assert(BS4CustomInput, `<input class="custom-control-input">`));
 	}
 
 }

@@ -9,5 +9,5 @@ class DBS4ImageFluid : DBS4Image {
 mixin(H5Calls!("BS4ImageFluid"));
 
 unittest {
-	assert(Assert(BS4ImageFluid, `<img class="img-thumbnail">`));
+	assert(BS4ImageFluid, `<img class="img-thumbnail">`));
 }

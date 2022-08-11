@@ -13,5 +13,5 @@ class DBS4NavbarBrand : DBS4Obj
 mixin(H5Calls!"BS4NavbarBrand");
 ///
 unittest {
-	assert(Assert(BS4NavbarBrand, `<a class="navbar-brand"></a>`));
+	assert(BS4NavbarBrand, `<a class="navbar-brand"></a>`));
 }

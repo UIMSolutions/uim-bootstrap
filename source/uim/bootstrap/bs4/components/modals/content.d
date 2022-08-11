@@ -10,5 +10,5 @@ class DBS4ModalContent : DBS4Obj {
 }
 mixin(H5Calls!"BS4ModalContent");
 unittest {
-	assert(Assert(BS4ModalContent, `<div class="modal-content"></div>`));
+	assert(BS4ModalContent, `<div class="modal-content"></div>`));
 }

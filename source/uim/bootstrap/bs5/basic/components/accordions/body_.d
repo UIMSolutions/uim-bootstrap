@@ -9,6 +9,6 @@ class DBS5AccordionBody : DBS5Obj {
 mixin(H5Calls!("BS5AccordionBody"));
 
 unittest {
-	assert(Assert(BS5AccordionBody,`<div class="accordion-body"></div>`));
+	assert(BS5AccordionBody,`<div class="accordion-body"></div>`));
 }
 

@@ -46,5 +46,5 @@ class DBS5InputNumber : DBS5Obj {
 mixin(H5Calls!("BS5InputNumber"));
 ///
 unittest {
-	assert(Assert(BS5InputNumber, `<input class="form-control" type="number">`));
+	assert(BS5InputNumber, `<input class="form-control" type="number">`));
 }

@@ -9,5 +9,5 @@ class DBS4InputSearch : DBS4Input {
 mixin(H5Calls!("BS4InputSearch"));
 ///
 unittest {
-	assert(Assert(BS4InputSearch, `<input class="form-control" type="search">`));	
+	assert(BS4InputSearch, `<input class="form-control" type="search">`));	
 }

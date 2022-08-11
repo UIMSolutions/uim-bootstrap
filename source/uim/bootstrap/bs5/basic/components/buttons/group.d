@@ -12,7 +12,7 @@ class DBS5ButtonGroup : DBS5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5ButtonGroup.size("lg"), `<div class="btn-group btn-group-lg" role="group"></div>`));
+		assert(BS5ButtonGroup.size("lg"), `<div class="btn-group btn-group-lg" role="group"></div>`));
 	}
 
 	O vertical(this O)(bool mode = true) {
@@ -27,14 +27,14 @@ class DBS5ButtonGroup : DBS5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5ButtonGroup.vertical, `<div class="btn-group-vertical" role="group"></div>`));
+		assert(BS5ButtonGroup.vertical, `<div class="btn-group-vertical" role="group"></div>`));
 	}
 
 	mixin(MyAttribute!("label", "aria-label"));
 
 	mixin(MyContent!("button", "BS5Button"));
 	unittest {
-		assert(Assert(BS5ButtonGroup.button, `<div class="btn-group" role="group"><button class="btn" type="button"></button></div>`));
+		assert(BS5ButtonGroup.button, `<div class="btn-group" role="group"><button class="btn" type="button"></button></div>`));
 	}
 
 	mixin(MyContent!("link", "BS5ButtonLink"));
@@ -43,5 +43,5 @@ class DBS5ButtonGroup : DBS5Obj {
 mixin(H5Calls!"BS5ButtonGroup");
 
 unittest {
-	assert(Assert(BS5ButtonGroup, `<div class="btn-group" role="group"></div>`));
+	assert(BS5ButtonGroup, `<div class="btn-group" role="group"></div>`));
 }

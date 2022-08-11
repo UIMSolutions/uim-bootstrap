@@ -8,11 +8,11 @@ class DBS4NavTabs : DBS4Obj {
 
 	mixin(MyContent!("item", "BS4NavItem"));
 	unittest {
-		assert(Assert(BS4NavTabs.item, `<ul class="nav nav-tabs" role="tablist"><li class="nav-item"></li></ul>`));
+		assert(BS4NavTabs.item, `<ul class="nav nav-tabs" role="tablist"><li class="nav-item"></li></ul>`));
 	}
 }
 mixin(H5Calls!"BS4NavTabs");
 
 unittest {
-	assert(Assert(BS4NavTabs, `<ul class="nav nav-tabs" role="tablist"></ul>`));
+	assert(BS4NavTabs, `<ul class="nav nav-tabs" role="tablist"></ul>`));
 }

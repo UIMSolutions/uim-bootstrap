@@ -9,5 +9,5 @@ class DBS5InputPlaintext : DBS5Input {
 mixin(H5Calls!("BS5InputPlaintext"));
 ///
 unittest {
-//	assert(Assert(BS5InputPlaintext, `<input class="form-control" type="text">`));
+//	assert(BS5InputPlaintext, `<input class="form-control" type="text">`));
 }

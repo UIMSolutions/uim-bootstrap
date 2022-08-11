@@ -9,5 +9,5 @@ class DBS5InputEmail : DBS5Input {
 mixin(H5Calls!("BS5InputEmail"));
 ///
 unittest {
-	assert(Assert(BS5InputEmail, `<input class="form-control" type="email">`));
+	assert(BS5InputEmail, `<input class="form-control" type="email">`));
 }

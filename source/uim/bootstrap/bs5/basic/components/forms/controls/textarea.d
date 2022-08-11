@@ -12,5 +12,5 @@ class DBS5InputTextarea : DBS5Obj {
 mixin(H5Calls!("BS5InputTextarea"));
 
 unittest {
-		assert(Assert(BS5InputTextarea, `<textarea class="form-control"></textarea>`));
+		assert(BS5InputTextarea, `<textarea class="form-control"></textarea>`));
 }

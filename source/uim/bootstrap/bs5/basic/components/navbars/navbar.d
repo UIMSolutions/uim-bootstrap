@@ -11,8 +11,8 @@ class DBS5Navbar : DBS5Obj {
 		return cast(O)this;
 	}
 	unittest {
-		assert(Assert(BS5Navbar.center, `<nav class="justify-content-center navbar"></nav>`));
-		assert(Assert(BS5Navbar("Test").center, `<nav class="justify-content-center navbar">Test</nav>`));
+		assert(BS5Navbar.center, `<nav class="justify-content-center navbar"></nav>`));
+		assert(BS5Navbar("Test").center, `<nav class="justify-content-center navbar">Test</nav>`));
 	}
 
 	O dark(this O)(bool value = true) {
@@ -20,7 +20,7 @@ class DBS5Navbar : DBS5Obj {
 		return cast(O)this;
 	}
 	unittest {
-		assert(Assert(BS5Navbar.dark, `<nav class="navbar navbar-dark"></nav>`));
+		assert(BS5Navbar.dark, `<nav class="navbar navbar-dark"></nav>`));
 	}
 
 	O expand(this O)(string screenSize) {
@@ -29,7 +29,7 @@ class DBS5Navbar : DBS5Obj {
 	}
 	///
 	unittest {
-		assert(Assert(BS5Navbar.expand("lg"), `<nav class="navbar navbar-expand-lg"></nav>`));
+		assert(BS5Navbar.expand("lg"), `<nav class="navbar navbar-expand-lg"></nav>`));
 	}
 
 	O light(this O)(bool value = true) {
@@ -38,7 +38,7 @@ class DBS5Navbar : DBS5Obj {
 	}
 	///
 	unittest {
-		assert(Assert(BS5Navbar.light, `<nav class="navbar navbar-light"></nav>`));
+		assert(BS5Navbar.light, `<nav class="navbar navbar-light"></nav>`));
 	}
 
 /*
@@ -46,7 +46,7 @@ class DBS5Navbar : DBS5Obj {
 	///
 	unittest
 	{
-		assert(Assert(BS5Navbar.nav, `<nav class="navbar"><ul class="navbar-nav"></ul></nav>`);
+		assert(BS5Navbar.nav, `<nav class="navbar"><ul class="navbar-nav"></ul></nav>`);
 	}*/
 }
 
@@ -54,5 +54,5 @@ mixin(H5Calls!"BS5Navbar");
 ///
 unittest
 {
-	assert(Assert(BS5Navbar, `<nav class="navbar"></nav>`));
+	assert(BS5Navbar, `<nav class="navbar"></nav>`));
 }

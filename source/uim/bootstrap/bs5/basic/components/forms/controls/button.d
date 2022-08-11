@@ -8,5 +8,5 @@ class DBS5InputButton : DBS5Input {
 }
 mixin(H5Calls!("BS5InputButton"));
 unittest {
-	assert(Assert(BS5InputButton,`<input class="form-control" type="button">`));
+	assert(BS5InputButton,`<input class="form-control" type="button">`));
 }

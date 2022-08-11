@@ -9,5 +9,5 @@ class DBS4InputWeek : DBS4Input {
 mixin(H5Calls!("BS4InputWeek"));
 ///
 unittest {
-	assert(Assert(BS4InputWeek, `<input class="form-control" type="week">`));
+	assert(BS4InputWeek, `<input class="form-control" type="week">`));
 }

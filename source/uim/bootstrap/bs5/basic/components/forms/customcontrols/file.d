@@ -14,5 +14,5 @@ mixin(H5Calls!"BS5CustomFile");
 
 unittest
 {
-	assert(Assert(BS5CustomFile, `<div class="custom-file"></div>`));
+	assert(BS5CustomFile, `<div class="custom-file"></div>`));
 }

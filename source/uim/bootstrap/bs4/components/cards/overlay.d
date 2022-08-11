@@ -10,5 +10,5 @@ class DBS4CardOverlay : DBS4Obj {
 /// Shortcuts
 mixin(H5Calls!"BS4CardOverlay");
 unittest {
-	assert(Assert(BS4CardOverlay,`<div class="card-img-overlay"></div>`));
+	assert(BS4CardOverlay,`<div class="card-img-overlay"></div>`));
 }

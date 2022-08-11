@@ -11,5 +11,5 @@ class DBS4Row : DBS4Obj {
 mixin(H5Calls!("BS4Row"));
 
 unittest {
-	assert(Assert(BS4Row, `<div class="row"></div>`));
+	assert(BS4Row, `<div class="row"></div>`));
 }

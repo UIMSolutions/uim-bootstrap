@@ -12,5 +12,5 @@ mixin(H5Calls!"BS4CustomFileLabel");
 
 unittest
 {
-	assert(Assert(BS4CustomFileLabel, `<label class="custom-file-label"></label>`));
+	assert(BS4CustomFileLabel, `<label class="custom-file-label"></label>`));
 }

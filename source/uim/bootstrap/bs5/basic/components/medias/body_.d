@@ -9,5 +9,5 @@ class DBS5MediaBody : DBS5Obj {
 mixin(H5Calls!"BS5MediaBody");
 
 unittest {
-	assert(Assert(BS5MediaBody, `<div class="media-body"></div>`));
+	assert(BS5MediaBody, `<div class="media-body"></div>`));
 }

@@ -9,11 +9,11 @@ class DBS5TableBody : DBS5Obj {
 	mixin(MyContent!("row", "BS5TableRow"));
 	mixin(MyContent!("tr", "BS5TableRow"));
 	unittest {
-		assert(Assert(BS5Table.row, `<table class="table"><tr></tr></table>`));
+		assert(BS5Table.row, `<table class="table"><tr></tr></table>`));
 	}	
 }
 mixin(H5Calls!"BS5TableBody");
 
 unittest {
-	assert(Assert(BS5TableBody, `<tbody></tbody>`));
+	assert(BS5TableBody, `<tbody></tbody>`));
 }

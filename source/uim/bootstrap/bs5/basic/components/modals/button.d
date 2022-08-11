@@ -14,5 +14,5 @@ class DBS5ModalButton : DBS5Obj {
 }
 mixin(H5Calls!"BS5ModalButton");
 unittest {
-	// assert(Assert(BS5ModalButton, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
+	// assert(BS5ModalButton, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
 }

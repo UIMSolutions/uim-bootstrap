@@ -9,5 +9,5 @@ class DBS5ModalHeader : DBS5Obj {
 mixin(H5Calls!"BS5ModalHeader");
 
 unittest {
-	assert(Assert(BS5ModalHeader, `<div class="modal-header"></div>`));
+	assert(BS5ModalHeader, `<div class="modal-header"></div>`));
 }

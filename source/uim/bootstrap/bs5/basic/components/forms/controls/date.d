@@ -42,5 +42,5 @@ class DBS5InputDate : DBS5Input {
 mixin(H5Calls!("BS5InputDate"));
 ///
 unittest {
-	assert(Assert(BS5InputDate, `<input class="form-control" type="date">`));
+	assert(BS5InputDate, `<input class="form-control" type="date">`));
 }

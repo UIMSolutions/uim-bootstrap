@@ -13,5 +13,5 @@ class DBS5InputSubmit : DBS5Input {
 mixin(H5Calls!("BS5InputSubmit"));
 ///
 unittest {
-	assert(Assert(BS5InputSubmit, `<input class="form-control" type="submit">`));
+	assert(BS5InputSubmit, `<input class="form-control" type="submit">`));
 }

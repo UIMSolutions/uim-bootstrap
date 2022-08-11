@@ -8,5 +8,5 @@ class DBS4InputFile : DBS4Input {
 }
 mixin(H5Calls!("BS4InputFile"));
 unittest {
-	assert(Assert(BS4InputFile, `<input class="form-control" type="file">`));
+	assert(BS4InputFile, `<input class="form-control" type="file">`));
 }

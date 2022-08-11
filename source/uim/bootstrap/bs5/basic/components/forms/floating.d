@@ -12,6 +12,6 @@ mixin(H5Calls!"BS5FormFloating");
 
 version(test_uim_bootstrap) {
 	unittest {
-		assert(Assert(BS5FormFloating, `<div class="form-floating"></div>`));
-		assert(Assert(BS5FormFloating.label, `<div class="form-floating"><label></label></div>`));
+		assert(BS5FormFloating, `<div class="form-floating"></div>`));
+		assert(BS5FormFloating.label, `<div class="form-floating"><label></label></div>`));
 }}

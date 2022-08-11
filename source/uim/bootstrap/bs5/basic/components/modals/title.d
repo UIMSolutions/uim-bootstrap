@@ -9,5 +9,5 @@ class DBS5ModalTitle : DBS5Obj {
 mixin(H5Calls!"BS5ModalTitle");
 
 unittest {
-	assert(Assert(BS5ModalTitle, `<h5 class="modal-title"></h5>`));
+	assert(BS5ModalTitle, `<h5 class="modal-title"></h5>`));
 }

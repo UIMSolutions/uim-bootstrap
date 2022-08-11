@@ -9,5 +9,5 @@ class DBS4CustomCheckbox : DBS4CustomControl {
 mixin(H5Calls!"BS4CustomCheckbox");
 
 unittest {
-	assert(Assert(BS4CustomCheckbox, `<div class="custom-checkbox custom-control"></div>`));
+	assert(BS4CustomCheckbox, `<div class="custom-checkbox custom-control"></div>`));
 }

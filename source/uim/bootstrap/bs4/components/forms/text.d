@@ -9,5 +9,5 @@ class DBS4FormText : DBS4Obj {
 mixin(H5Calls!"BS4FormText");
 ///
 unittest {
-	assert(Assert(BS4FormText, `<small class="form-text"></small>`));
+	assert(BS4FormText, `<small class="form-text"></small>`));
 }

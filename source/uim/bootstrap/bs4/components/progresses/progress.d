@@ -12,5 +12,5 @@ mixin(H5Calls!"BS4Progress");
 
 unittest {
 	version(uim_bootstrap) {
-		assert(Assert(BS4Progress, `<div class="progress"></div>`));
+		assert(BS4Progress, `<div class="progress"></div>`));
 }}

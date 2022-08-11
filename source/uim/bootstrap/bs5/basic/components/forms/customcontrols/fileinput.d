@@ -13,5 +13,5 @@ class DBS5CustomFileInput : DBS5Obj {
 
 mixin(H5Calls!"BS5CustomFileInput");
 unittest {
-	assert(Assert(BS5CustomFileInput, `<input class="custom-file-input">`));
+	assert(BS5CustomFileInput, `<input class="custom-file-input">`));
 }

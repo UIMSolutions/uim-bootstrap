@@ -15,7 +15,7 @@ class DBS4Pagination : DBS4Obj {
 
 	mixin(MyContent!("link", "this.item", "BS4PageLink"));
 	unittest {
-		assert(Assert(BS4Pagination.link, `<ul class="pagination"><li class="page-item"><a class="page-link" href="#"></a></li></ul>`));
+		assert(BS4Pagination.link, `<ul class="pagination"><li class="page-item"><a class="page-link" href="#"></a></li></ul>`));
 	}
 }
 mixin(H5Calls!"BS4Pagination");
@@ -23,5 +23,5 @@ mixin(H5Calls!"BS4Pagination");
 unittest {
 	
 
-	assert(Assert(BS4Pagination, `<ul class="pagination"></ul>`));
+	assert(BS4Pagination, `<ul class="pagination"></ul>`));
 }

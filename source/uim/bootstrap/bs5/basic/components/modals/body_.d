@@ -12,5 +12,5 @@ mixin(H5Calls!"BS5ModalBody");
 
 unittest
 {
-	assert(Assert(BS5ModalBody, `<div class="modal-body"></div>`));
+	assert(BS5ModalBody, `<div class="modal-body"></div>`));
 }

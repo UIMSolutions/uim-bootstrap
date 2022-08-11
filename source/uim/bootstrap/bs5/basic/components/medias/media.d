@@ -11,5 +11,5 @@ class DBS5Media : DBS5Obj {
 mixin(H5Calls!"BS5Media");
 
 unittest {
-	assert(Assert(BS5Media, `<div class="media"></div>`));
+	assert(BS5Media, `<div class="media"></div>`));
 }

@@ -9,5 +9,5 @@ class DBS5DropdownDivider : DBS5Obj {
 mixin(H5Calls!"BS5DropdownDivider");
 
 unittest {
-	assert(Assert(BS5DropdownDivider,`<div class="dropdown-divider"></div>`));
+	assert(BS5DropdownDivider,`<div class="dropdown-divider"></div>`));
 }

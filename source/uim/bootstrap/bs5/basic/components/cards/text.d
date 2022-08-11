@@ -9,6 +9,6 @@ class DBS5CardText : DBS5Obj {
 mixin(H5Calls!"BS5CardText");
 
 unittest {
-	assert(Assert(BS5CardText, `<p class="card-text"></p>`));
-	assert(Assert(BS5CardText.content("SomeThing"), `<p class="card-text">SomeThing</p>`));
+	assert(BS5CardText, `<p class="card-text"></p>`));
+	assert(BS5CardText.content("SomeThing"), `<p class="card-text">SomeThing</p>`));
 }

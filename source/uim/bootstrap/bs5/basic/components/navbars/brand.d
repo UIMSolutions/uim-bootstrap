@@ -13,5 +13,5 @@ mixin(H5Calls!"BS5NavbarBrand");
 ///
 unittest
 {
-	assert(Assert(BS5NavbarBrand, `<a class="navbar-brand"></a>`));
+	assert(BS5NavbarBrand, `<a class="navbar-brand"></a>`));
 }

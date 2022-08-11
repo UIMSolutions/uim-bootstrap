@@ -15,7 +15,7 @@ class DBS5Badge : DBS5Obj {
 		return this.classes("badge-" ~ name);
 	}
 	unittest {
-		assert(Assert(BS5Badge.color("secondary"),`<span class="badge badge-secondary"></span>`));
+		assert(BS5Badge.color("secondary"),`<span class="badge badge-secondary"></span>`));
 	}
 
 	//Rounded badges
@@ -25,12 +25,12 @@ class DBS5Badge : DBS5Obj {
 		return cast(O) this;
 	}
 	unittest {
-		assert(Assert(BS5Badge.pill(true),`<span class="badge badge-pill"></span>`));
+		assert(BS5Badge.pill(true),`<span class="badge badge-pill"></span>`));
 	}
 }
 // Shortcut to class DBS5Badge
 mixin(H5Calls!("BS5Badge"));
 
 unittest {
-	assert(Assert(BS5Badge,`<span class="badge"></span>`));
+	assert(BS5Badge,`<span class="badge"></span>`));
 }

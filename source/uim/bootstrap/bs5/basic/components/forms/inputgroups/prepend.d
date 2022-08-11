@@ -8,11 +8,11 @@ class DBS5InputGroupPrepend : DBS5Obj {
 
 	mixin(MyContent!("text", "BS5InputGroupText"));
 	unittest {
-		assert(Assert(BS5InputGroupPrepend.text, `<div class="input-group-prepend"><div class="input-group-text"></div></div>`));
+		assert(BS5InputGroupPrepend.text, `<div class="input-group-prepend"><div class="input-group-text"></div></div>`));
 	}
 }
 mixin(H5Calls!"BS5InputGroupPrepend");
 
 unittest {
-	assert(Assert(BS5InputGroupPrepend, `<div class="input-group-prepend"></div>`));
+	assert(BS5InputGroupPrepend, `<div class="input-group-prepend"></div>`));
 }

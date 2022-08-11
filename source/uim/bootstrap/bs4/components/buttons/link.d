@@ -11,5 +11,5 @@ class DBS4ButtonLink : DBS4ButtonObj {
 mixin(H5Calls!"BS4ButtonLink");
 
 unittest {
-	assert(Assert(BS4ButtonLink, `<a class="btn" type="button"></a>`));
+	assert(BS4ButtonLink, `<a class="btn" type="button"></a>`));
 }

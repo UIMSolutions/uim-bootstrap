@@ -9,5 +9,5 @@ class DBS4Checkbox : DBS4Input {
 mixin(H5Calls!("BS4Checkbox"));
 ///
 unittest {
-	assert(Assert(BS4Checkbox, `<input class="form-control" type="checkbox">`));
+	assert(BS4Checkbox, `<input class="form-control" type="checkbox">`));
 }
