@@ -22,7 +22,7 @@ class DBS5Container : DBS5Obj {
 
 	mixin(MyContent!("row", "BS5Row"));
 	unittest {
-		assert(BS5Container.row,`<div class="container"><div class="row"></div></div>`);
+		assert(BS5Container.row == `<div class="container"><div class="row"></div></div>`);
 	}
 }
 mixin(H5Calls!("BS5Container"));

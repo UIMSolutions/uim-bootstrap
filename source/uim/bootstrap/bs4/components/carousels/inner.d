@@ -14,5 +14,5 @@ class DBS4CarouselInner : DBS4Obj {
 
 mixin(H5Calls!"BS4CarouselInner");
 unittest {
-	assert(BS4CarouselInner,`<div class="carousel-inner"></div>`);
+	assert(BS4CarouselInner == `<div class="carousel-inner"></div>`);
 }

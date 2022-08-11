@@ -14,5 +14,5 @@ class DBS5CarouselInner : DBS5Obj {
 
 mixin(H5Calls!"BS5CarouselInner");
 unittest {
-	assert(BS5CarouselInner,`<div class="carousel-inner"></div>`);
+	assert(BS5CarouselInner == `<div class="carousel-inner"></div>`);
 }

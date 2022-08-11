@@ -10,5 +10,5 @@ class DBS5CardOverlay : DBS5Obj {
 /// Shortcuts
 mixin(H5Calls!"BS5CardOverlay");
 unittest {
-	assert(BS5CardOverlay,`<div class="card-img-overlay"></div>`);
+	assert(BS5CardOverlay == `<div class="card-img-overlay"></div>`);
 }

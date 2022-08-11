@@ -9,5 +9,5 @@ class DBS5CardDeckwrapper : DBS5Obj {
 mixin(H5Calls!"BS5CardDeckwrapper");
 
 unittest {
-	assert(BS5CardDeckwrapper,`<div class="card-deck-wrapper"></div>`);
+	assert(BS5CardDeckwrapper == `<div class="card-deck-wrapper"></div>`);
 }

@@ -9,5 +9,6 @@ class DBS5CollapseButton : DBS5Obj {
 mixin(H5Calls!"BS5CollapseButton");
 
 unittest {
-	assert(BS5CollapseButton,`<button class="btn" data-toggle="collapse" role="button"></button>`);
+	assert(BS5CollapseButton);
+	assert(BS5CollapseButton == `<button class="btn" data-toggle="collapse" role="button"></button>`);
 }

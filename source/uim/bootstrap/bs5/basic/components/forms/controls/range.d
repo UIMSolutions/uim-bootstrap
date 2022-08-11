@@ -8,5 +8,5 @@ class DBS5InputRange : DBS5Input {
 }
 mixin(H5Calls!("BS5InputRange"));
 unittest {
-	assert(BS5InputRange,`<input class="form-control" type="range">`);	
+	assert(BS5InputRange == `<input class="form-control" type="range">`);	
 }

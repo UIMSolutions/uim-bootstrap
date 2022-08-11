@@ -9,6 +9,6 @@ class DBS5CardBlockquote : DBS5Obj {
 mixin(H5Calls!"BS5CardBlockquote");
 ///
 unittest {
-	assert(BS5CardBlockquote,`<blockquote class="card-blockquote"></blockquote>`);
+	assert(BS5CardBlockquote == `<blockquote class="card-blockquote"></blockquote>`);
 }
 

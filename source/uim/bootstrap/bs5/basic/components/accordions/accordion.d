@@ -11,8 +11,9 @@ class DBS5Accordion : DBS5Obj {
 mixin(H5Calls!("BS5Accordion"));
 
 unittest {
-  version(uim_bootstrap) {
-		assert(BS5Accordion == `<div class="accordion"></div>`);
-		assert(BS5Accordion.item == `<div class="accordion"><div class="accordion-item"></div></div>`);
-		}}
+	assert(BS5Accordion);
+	assert(BS5Accordion == `<div class="accordion"></div>`);
+
+	assert(BS5Accordion.item == `<div class="accordion"><div class="accordion-item"></div></div>`);
+}
 

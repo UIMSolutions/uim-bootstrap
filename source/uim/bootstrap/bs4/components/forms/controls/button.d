@@ -8,5 +8,5 @@ class DBS4InputButton : DBS4Input {
 }
 mixin(H5Calls!("BS4InputButton"));
 unittest {
-	assert(BS4InputButton,`<input class="form-control" type="button">`);
+	assert(BS4InputButton == `<input class="form-control" type="button">`);
 }
