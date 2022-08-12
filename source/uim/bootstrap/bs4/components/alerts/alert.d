@@ -8,7 +8,7 @@ class DBS4Alert : DBS4Obj {
 	mixin(H5This!("Div", ["alert"], `["role":"alert"]`));
 
 	O color(this O)(string name) {
-		return this.classes("alert-" ~ name);
+		return this.addClasses("alert-" ~ name);
 	}
 	unittest {
 		assert(BS4Alert.color("success") == `<div class="alert alert-success" role="alert"></div>`);
@@ -22,7 +22,7 @@ class DBS4Alert : DBS4Obj {
 	O dismissible(this O)(bool show = true, string icon = "&times;") {
 		if (show) 		{
 			this.content(`<button type="button" class="close" data-dismiss="alert">` ~ icon ~ `</button>`);
-			this.classes("alert-dismissible");
+			this.addClasses("alert-dismissible");
 		}
 		return cast(O) this;
 	}

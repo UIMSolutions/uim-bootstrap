@@ -13,7 +13,7 @@ class DBS5BadgeLink : DBS5Obj {
 
 	// Color of badge
 	O color(this O)(string name) {
-		return this.classes("badge-"~name);
+		return this.addClasses("badge-"~name);
 	}
 	unittest {
 		assert(BS5BadgeLink.color("secondary") == `<a class="badge badge-secondary"></a>`);
@@ -21,7 +21,7 @@ class DBS5BadgeLink : DBS5Obj {
 
 	//Rounded badges
 	O pill(this O)(bool mode = true) {
-		if (mode) this.classes("badge-pill");
+		if (mode) this.addClasses("badge-pill");
 		return cast(O) this;
 	}
 	unittest {
