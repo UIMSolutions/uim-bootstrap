@@ -12,7 +12,7 @@ class DBS4Badge : DBS4Obj {
 
 	// Color of badge
 	O color(this O)(string name) {
-		return this.classes("badge-" ~ name);
+		return this.addClasses("badge-" ~ name);
 	}
 	unittest {
 		assert(BS4Badge.color("secondary") == `<span class="badge badge-secondary"></span>`);
@@ -21,7 +21,7 @@ class DBS4Badge : DBS4Obj {
 	//Rounded badges
 	O pill(this O)(bool mode = true) {
 		if (mode)
-			this.classes("badge-pill");
+			this.addClasses("badge-pill");
 		return cast(O) this;
 	}
 	unittest {
