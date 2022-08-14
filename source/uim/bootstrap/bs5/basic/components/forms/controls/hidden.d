@@ -10,18 +10,17 @@ class DBS5InputHidden : DBS5Input {
 		this.value(id.toString);
 		return cast(O)this;
 	}
-	unittest {		
-	}
 
 	O value(this O)(string txt) {
 		_attributes["value"] = txt;
 		return cast(O)this;
 	}
-	unittest {		
-	}
 
+  override void initialize () {
+    super.initialize();
+  }
 }
 mixin(H5Calls!("BS5InputHidden"));
 unittest {
-		assert(BS5InputHidden, `<input class="form-control" type="hidden">`);
+  assert(BS5InputHidden == `<input class="form-control" type="hidden">`);
 }
