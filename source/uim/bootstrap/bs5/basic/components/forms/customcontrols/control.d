@@ -9,17 +9,15 @@ class DBS5CustomControl : DBS5Obj {
   override void initialize () {
     super.initialize();
   }
+
 	mixin(MyContent!("checkbox", "BS5CustomCheckbox"));
 	mixin(MyContent!("input", "BS5CustomInput"));
 	mixin(MyContent!("radio", "BS5CustomRadio"));
-	mixin(MyContent!("label", "H5Label"));
-	
-	unittest {
-		assert(BS5CustomControl.== `<div class="custom-control"></div>`);
-	}
+	mixin(MyContent!("label", "H5Label"));	
 }
 mixin(H5Calls!"BS5CustomControl");
 
 unittest {
-// TODO
+  assert(BS5CustomControl);
+  assert(BS5CustomControl == `<div class="custom-control"></div>`);
 }
