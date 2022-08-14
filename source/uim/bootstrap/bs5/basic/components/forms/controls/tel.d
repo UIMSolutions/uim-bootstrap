@@ -5,9 +5,13 @@ import uim.bootstrap;
 
 class DBS5InputTel : DBS5Input {
 	mixin(H5This!("", null, `["type":"tel"]`));
+
+  override void initialize () {
+    super.initialize();
+  }
 }
 mixin(H5Calls!("BS5InputTel"));
 ///
 unittest {
-	assert(BS5InputTel, `<input class="form-control" type="tel">`);
+	assert(BS5InputTel == `<input class="form-control" type="tel">`);
 }
