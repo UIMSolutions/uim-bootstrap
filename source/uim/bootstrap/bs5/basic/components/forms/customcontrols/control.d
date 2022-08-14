@@ -15,7 +15,7 @@ class DBS5CustomControl : DBS5Obj {
 	mixin(MyContent!("label", "H5Label"));
 	
 	unittest {
-		assert(BS5CustomControl, `<div class="custom-control"></div>`);
+		assert(BS5CustomControl.== `<div class="custom-control"></div>`);
 	}
 }
 mixin(H5Calls!"BS5CustomControl");
