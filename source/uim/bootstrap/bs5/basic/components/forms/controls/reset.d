@@ -4,10 +4,14 @@
 import uim.bootstrap; 
 
 class DBS5InputReset : DBS5Input {
-	mixin(H5This!("", null, `["type":"reset"]`));
+  mixin(H5This!("", null, `["type":"reset"]`));
+
+  override void initialize () {
+    super.initialize();
+  }
 }
 mixin(H5Calls!("BS5InputReset"));
-///
+
 unittest {
-	assert(BS5InputReset, `<input class="form-control" type="reset">`);
+  assert(BS5InputReset == `<input class="form-control" type="reset">`);
 }
