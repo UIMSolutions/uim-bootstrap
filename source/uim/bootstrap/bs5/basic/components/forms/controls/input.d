@@ -9,9 +9,12 @@ class DBS5Input : DBS5Obj {
 	mixin(MyAttribute!"value");
 	mixin(MyAttribute!"placeholder");
 
+  override void initialize () {
+    super.initialize();
+  }
 }
 mixin(H5Calls!("BS5Input"));
 
 unittest {
-	
+	// TODO assert 
 }
