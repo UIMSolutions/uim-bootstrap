@@ -9,13 +9,10 @@ class DBS5InputImage : DBS5Obj {
 		super.initialize;
 		_single = true;
 	}
-
-  override void initialize () {
-    super.initialize();
-  }
 }
 mixin(H5Calls!("BS5InputImage"));
 
 unittest {
+	assert(BS5InputImage);
 	assert(BS5InputImage == `<input class="form-control" type="image">`);
 }

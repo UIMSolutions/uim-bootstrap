@@ -8,10 +8,14 @@ class DBS5CustomCheckbox : DBS5CustomControl {
 
   override void initialize () {
     super.initialize();
+
+    this
+      .addClasses(["custom-checkbox", "custom-control"]);
   }
 }
 mixin(H5Calls!"BS5CustomCheckbox");
 
 unittest {
+  assert(BS5CustomCheckbox);
   assert(BS5CustomCheckbox ==`<div class="custom-checkbox custom-control"></div>`);
 }

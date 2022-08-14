@@ -1,4 +1,4 @@
-modules uim.bootstrap.bs5.basic.components.forms.label;
+module uim.bootstrap.bs5.basic.components.forms.label;
 
 @safe: 
 import uim.bootstrap;
