@@ -5,6 +5,10 @@ import uim.bootstrap;
 
 class DBS5InputColor : DBS5Input {
   mixin(H5This!("", ["form-control", "form-control-color"], `["type":"color"]`));
+
+  override void initialize () {
+    super.initialize();
+  }
 }
 mixin(H5Calls!("BS5InputColor"));
 
