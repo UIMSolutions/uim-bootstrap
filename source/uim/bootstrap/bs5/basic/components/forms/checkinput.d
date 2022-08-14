@@ -16,4 +16,5 @@ class DBS5FormCheckInput : DBS5Obj {
 mixin(H5Calls!"BS5FormCheckInput");
 
 unittest {
+// TODO assert(BS5FormCheckInput == );
 }
