@@ -13,24 +13,15 @@ class DBS5InputNumber : DBS5Obj {
 		_attributes["value"] = to!string(aValue);
 		return cast(O)this;
 	}
-	unittest {		
-    /// TODO
-	}
 
 	O value(this O)(int aValue) {
 		_attributes["value"] = to!string(aValue);
 		return cast(O)this;
 	}
-	unittest {		
-    /// TODO
-	}
 
 	O value(this O)(long aValue) {
 		_attributes["value"] = to!string(aValue);
 		return cast(O)this;
-	}
-	unittest {		
-    /// TODO
 	}
 
 	O value(this O)(size_t aValue) {
@@ -38,13 +29,10 @@ class DBS5InputNumber : DBS5Obj {
 		_attributes["min"] = "0";
 		return cast(O)this;
 	}
-	unittest {		
-    /// TODO
-	}
 
 }
 mixin(H5Calls!("BS5InputNumber"));
-///
+
 unittest {
-	assert(BS5InputNumber, `<input class="form-control" type="number">`);
+	assert(BS5InputNumber == `<input class="form-control" type="number">`);
 }
