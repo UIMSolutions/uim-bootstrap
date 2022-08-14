@@ -5,9 +5,13 @@ import uim.bootstrap;
 
 class DBS5InputPassword : DBS5Input {
 	mixin(H5This!(null, ["form-control"], `["type":"password"]`));
+
+  override void initialize () {
+    super.initialize();
+  }
 }
 mixin(H5Calls!("BS5InputPassword"));
-///
+
 unittest {
-		assert(BS5InputPassword, `<input class="form-control" type="password">`);
+  assert(BS5InputPassword == `<input class="form-control" type="password">`);
 }
