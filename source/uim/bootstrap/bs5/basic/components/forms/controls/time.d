@@ -6,6 +6,9 @@ import uim.bootstrap;
 class DBS5InputTime : DBS5Input {
 	mixin(H5This!("", null, `["type":"time"]`));
 
+  override void initialize () {
+    super.initialize();
+  }
 
 	O value(this O)(long timestamp) {
 		_attributes["value"] = (cast(DateTime)fromTimestamp(timestamp)).toISOExtString.split("T")[1];
@@ -41,7 +44,7 @@ class DBS5InputTime : DBS5Input {
 
 }
 mixin(H5Calls!("BS5InputTime"));
-///
+
 unittest {
-	assert(BS5InputTime, `<input class="form-control" type="time">`);
+	assert(BS5InputTime ==`<input class="form-control" type="time">`);
 }
