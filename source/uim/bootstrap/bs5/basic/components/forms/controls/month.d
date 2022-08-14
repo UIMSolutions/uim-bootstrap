@@ -5,9 +5,13 @@ import uim.bootstrap;
 
 class DBS5InputMonth : DBS5Input {
 	mixin(H5This!("", ["form-control"], `["type":"month"]`));
+
+  override void initialize () {
+    super.initialize();
+  }
 }
 mixin(H5Calls!("BS5InputMonth"));
-///
+
 unittest {
-	assert(BS5InputMonth, `<input class="form-control" type="month">`);
+	assert(BS5InputMonth == `<input class="form-control" type="month">`);
 }
