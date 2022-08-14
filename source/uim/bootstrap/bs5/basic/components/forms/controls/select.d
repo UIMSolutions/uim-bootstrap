@@ -4,7 +4,11 @@
 import uim.bootstrap; 
 
 class DBS5InputSelect : DBS5Obj {
-	mixin(H5This!("Select", ["form-control"]));	
+  mixin(H5This!("Select", ["form-control"]));	
+
+  override void initialize () {
+    super.initialize();
+  }
 
 	mixin(MyContent!("option", "H5Option"));
 	O options(this O)(string[] values, string selected = "", string disabled = "") {
@@ -77,6 +81,6 @@ class DBS5InputSelect : DBS5Obj {
 mixin(H5Calls!("BS5InputSelect"));
 
 unittest {
-	
+	// TODO assert 
 	
 }
