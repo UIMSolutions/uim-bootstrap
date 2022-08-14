@@ -4,10 +4,14 @@
 import uim.bootstrap; 
 
 class DBS5InputSearch : DBS5Input {
-	mixin(H5This!("", null, `["type":"search"]`));
+  mixin(H5This!("", null, `["type":"search"]`));
+
+  override void initialize () {
+    super.initialize();
+  }
 }
 mixin(H5Calls!("BS5InputSearch"));
-///
+
 unittest {
-	assert(BS5InputSearch, `<input class="form-control" type="search">`);	
+  assert(BS5InputSearch == `<input class="form-control" type="search">`);	
 }
