@@ -10,4 +10,4 @@ mixin(H5Calls!"BS4CustomCheckbox");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4CustomCheckbox, `<div class="custom-checkbox custom-control"></div>`);
-}
+}}

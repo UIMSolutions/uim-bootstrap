@@ -9,4 +9,4 @@ class DBS4InputButton : DBS4Input {
 mixin(H5Calls!("BS4InputButton"));
 version(test_uim_bootstrap) { unittest {
 	assert(BS4InputButton == `<input class="form-control" type="button">`);
-}
+}}

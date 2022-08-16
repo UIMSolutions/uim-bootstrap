@@ -11,10 +11,10 @@ class DBS4ListInline : DBS4Obj {
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4ListInline.item, `<ul class="list-inline"><li class="list-inline-item"></li></ul>`);
 		assert(BS4ListInline.item("test"), `<ul class="list-inline"><li class="list-inline-item">test</li></ul>`);
-	}
+	}}
 }
 mixin(H5Calls!"BS4ListInline");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4ListInline,  `<ul class="list-inline"></ul>`);
-}
+}}

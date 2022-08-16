@@ -12,7 +12,7 @@ class DBS4Alert : DBS4Obj {
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4Alert.color("success") == `<div class="alert alert-success" role="alert"></div>`);
-	}
+	}}
 
 	O link(this O)(string content, string url = "#") {
 		this.content(`<a href="` ~ url ~ `" class="alert-link">` ~ content ~ `</a>`);
@@ -28,7 +28,7 @@ class DBS4Alert : DBS4Obj {
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4Alert.color("success").dismissible == `<div class="alert alert-dismissible alert-success" role="alert"><button type="button" class="close" data-dismiss="alert">&times;</button></div>`);
-	}
+	}}
 
 	mixin(MyContent!("heading", "BS4AlertHeading"));
 }
@@ -44,4 +44,4 @@ mixin(H5Calls!("BS4AlertLink"));
 version(test_uim_bootstrap) { unittest {
 	assert(BS4Alert == `<div class="alert" role="alert"></div>`);
 	assert(BS4Alert("anAlert") == `<div class="alert" role="alert">anAlert</div>`);
-}
+}}

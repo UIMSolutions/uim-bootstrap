@@ -11,4 +11,4 @@ class DBS4CardHeader : DBS4Obj {
 mixin(H5Calls!"BS4CardHeader");
 version(test_uim_bootstrap) { unittest {
 	assert(BS4CardHeader == `<div class="card-header"></div>`);
-}
+}}

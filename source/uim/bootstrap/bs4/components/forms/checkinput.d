@@ -11,9 +11,10 @@ class DBS4FormCheckInput : DBS4Obj {
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4FormCheckInput, `<input class="form-check-input">`);
-	}
+	}}
 }
 mixin(H5Calls!"BS4FormCheckInput");
 
 version(test_uim_bootstrap) { unittest {
-}
+	// TODO
+}}

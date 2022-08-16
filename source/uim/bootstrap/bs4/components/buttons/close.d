@@ -15,4 +15,4 @@ mixin(H5Calls!"BS4ButtonClose");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4ButtonClose, `<button class="btn close" aria-label="Close" type="button"><span aria-hidden="true">&times;</span></button>`);
-}
+}}

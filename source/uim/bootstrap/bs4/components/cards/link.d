@@ -11,4 +11,4 @@ version(test_uim_bootstrap) { unittest {
 	assert(BS4CardLink, `<a class="card-link" href="#"></a>`);
 	assert(BS4CardLink(["href":"/go"], "Page"), `<a class="card-link" href="/go">Page</a>`);
 	assert(BS4CardLink.content("SomeThing"), `<a class="card-link" href="#">SomeThing</a>`);
-}
+}}

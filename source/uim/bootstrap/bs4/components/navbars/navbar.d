@@ -49,10 +49,8 @@ class DBS4Navbar : DBS4Obj {
 		assert(BS4Navbar.nav, `<nav class="navbar"><ul class="navbar-nav"></ul></nav>`);
 	}*/
 }
-
 mixin(H5Calls!"BS4Navbar");
-///
-unittest
-{
+
+version(test_uim_bootstrap) { unittest {
 	assert(BS4Navbar, `<nav class="navbar"></nav>`);
-}
+}}

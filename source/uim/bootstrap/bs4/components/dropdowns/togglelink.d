@@ -10,4 +10,4 @@ mixin(H5Calls!"BS4DropdownTogglelink");
 version(test_uim_bootstrap) { unittest {
 	assert(BS4DropdownTogglelink, `<a class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></a>`);
 	assert(BS4DropdownTogglelink.id("id"), `<a id="id" class="btn dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button"></a>`);
-}
+}}

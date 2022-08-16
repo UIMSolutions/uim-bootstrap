@@ -9,14 +9,14 @@ class DBS4CardBody : DBS4Obj {
 	mixin(MyContent!("title", "BS4CardTitle"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4CardBody.title("Hallo") == `<div class="card-body"><h4 class="card-title">Hallo</h4></div>`);
-	}
+	}}
 
 	mixin(MyContent!("text", "BS4CardText"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4CardBody.text("Hallo") == `<div class="card-body"><p class="card-text">Hallo</p></div>`);
-	}
+	}}
 }
 mixin(H5Calls!"BS4CardBody");
 version(test_uim_bootstrap) { unittest {
 	assert(BS4CardBody == `<div class="card-body"></div>`);
-}
+}}

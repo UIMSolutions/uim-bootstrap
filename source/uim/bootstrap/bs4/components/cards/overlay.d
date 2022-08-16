@@ -11,4 +11,4 @@ class DBS4CardOverlay : DBS4Obj {
 mixin(H5Calls!"BS4CardOverlay");
 version(test_uim_bootstrap) { unittest {
 	assert(BS4CardOverlay == `<div class="card-img-overlay"></div>`);
-}
+}}

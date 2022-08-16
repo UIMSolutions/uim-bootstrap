@@ -11,4 +11,4 @@ mixin(H5Calls!"BS4ModalBody");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4ModalBody, `<div class="modal-body"></div>`);
-}
+}}

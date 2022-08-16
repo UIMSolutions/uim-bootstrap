@@ -10,4 +10,4 @@ mixin(H5Calls!"BS4DropdownDivider");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4DropdownDivider == `<div class="dropdown-divider"></div>`);
-}
+}}

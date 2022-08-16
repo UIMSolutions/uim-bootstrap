@@ -9,4 +9,4 @@ class DBS4CarouselItem : DBS4Obj {
 mixin(H5Calls!"BS4CarouselItem");
 version(test_uim_bootstrap) { unittest {
 	assert(BS4CarouselItem == `<div class="carousel-item"></div>`);
-}
+}}

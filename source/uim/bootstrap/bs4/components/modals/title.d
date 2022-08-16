@@ -10,4 +10,4 @@ mixin(H5Calls!"BS4ModalTitle");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4ModalTitle, `<h5 class="modal-title"></h5>`);
-}
+}}

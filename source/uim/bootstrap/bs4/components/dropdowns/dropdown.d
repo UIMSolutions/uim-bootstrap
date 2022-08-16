@@ -14,4 +14,4 @@ mixin(H5Calls!"BS4Dropdown");
 version(test_uim_bootstrap) { unittest {
 	assert(BS4Dropdown, `<div class="dropdown"></div>`);
 	assert(BS4Dropdown.id("id"), `<div id="id" class="dropdown"></div>`);
-}
+}}

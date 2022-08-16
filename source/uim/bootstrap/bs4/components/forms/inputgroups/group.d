@@ -24,7 +24,7 @@ class DBS4InputGroup : DBS4Obj {
 		assert(BS4InputGroup.size("sm"), `<div class="input-group input-group-sm"></div>`);
 		assert(BS4InputGroup.small, `<div class="input-group input-group-sm"></div>`);
 		assert(BS4InputGroup.large, `<div class="input-group input-group-lg"></div>`);
-	}
+	}}
 
 	mixin(MyContent!("button", "BS4InputButton"));
 	mixin(MyContent!("checkbox", "BS4Checkbox"));
@@ -55,5 +55,5 @@ class DBS4InputGroup : DBS4Obj {
 mixin(H5Calls!"BS4InputGroup");
 
 version(test_uim_bootstrap) { unittest {
-		assert(BS4InputGroup, `<div class="input-group"></div>`);
-}
+	assert(BS4InputGroup, `<div class="input-group"></div>`);
+}}

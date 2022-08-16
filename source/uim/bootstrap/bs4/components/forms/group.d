@@ -47,7 +47,7 @@ class DBS4FormGroup : DBS4Obj {
 	mixin(MyContent!("week", "BS4InputWeek"));
 }
 mixin(H5Calls!"BS4FormGroup");
-///
+
 version(test_uim_bootstrap) { unittest {
 	assert(BS4FormGroup, `<div class="form-group"></div>`);
-}
+}}

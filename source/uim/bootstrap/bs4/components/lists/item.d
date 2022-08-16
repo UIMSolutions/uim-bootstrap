@@ -12,4 +12,4 @@ mixin(H5Calls!"BS4ListItem");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4ListItem, `<li class="list-group-item"></li>`);
-}
+}}

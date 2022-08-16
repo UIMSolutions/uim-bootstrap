@@ -7,6 +7,7 @@ class DBS4InputRange : DBS4Input {
 	mixin(H5This!(null, null, `["type":"range"]`));
 }
 mixin(H5Calls!("BS4InputRange"));
+
 version(test_uim_bootstrap) { unittest {
 	assert(BS4InputRange == `<input class="form-control" type="range">`);	
-}
+}}
