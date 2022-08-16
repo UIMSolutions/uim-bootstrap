@@ -4,10 +4,13 @@
 import uim.bootstrap;
 
 class DBS5CustomControl : DBS5Obj {
-	mixin(H5This!("DIV", ["custom-control"]));
+	mixin(H5This!("DIV"));
 
   override void initialize () {
     super.initialize();
+
+    this
+      .addClasses("custom-control");
   }
 
 	mixin(MyContent!("checkbox", "BS5CustomCheckbox"));

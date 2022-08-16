@@ -4,7 +4,7 @@
 import uim.bootstrap; 
 
 T clearfix(T)(T h5) {
-	return h5.classes("clearfix");
+	return h5.addClasses("clearfix");
 }
 
 version(test_uim_bootstrap) { unittest {

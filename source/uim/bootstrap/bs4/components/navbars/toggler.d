@@ -8,7 +8,7 @@ class DBS4NavbarToggler : DBS4ButtonObj {
 	mixin(H5This!("button", ["navbar-toggler"], `["data-toggle":"collapse", "aria-controls":"navbar"]`));
 
 	O position(this O)(string value) {
-		return this.classes("navbar-toggler-" ~ position);
+		return this.addClasses("navbar-toggler-" ~ position);
 	}
 
 	O target(this O)(string targetId) {

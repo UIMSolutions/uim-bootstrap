@@ -7,7 +7,7 @@ class DBS4FormCheck : DBS4Obj {
 	mixin(H5This!("Div", ["form-check"]));
 	mixin(TProperty!("string", "forId"));
 
-	O inline(this O)(bool mode = true) { if (mode) this.classes("form-check-inline"); return cast(O)this; }
+	O inline(this O)(bool mode = true) { if (mode) this.addClasses("form-check-inline"); return cast(O)this; }
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4FormCheck.inline, `<div class="form-check form-check-inline"></div>`);
 	}}

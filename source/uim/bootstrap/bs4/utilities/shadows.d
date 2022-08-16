@@ -4,10 +4,10 @@
 import uim.bootstrap; 
 
 T shadowNone(T)(T h5) {
-	return h5.classes("shadow-none");
+	return h5.addClasses("shadow-none");
 }
 T shadow(T)(T h5, string screenSize = null) {
-	if (screenSize) return h5.classes("shadow-"~screenSize); else return h5.classes("shadow");
+	if (screenSize) return h5.addClasses("shadow-"~screenSize); else return h5.addClasses("shadow");
 }
 
 version(test_uim_bootstrap) { unittest {

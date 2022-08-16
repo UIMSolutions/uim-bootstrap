@@ -7,7 +7,7 @@ class DBS4Col : DBS4Obj {
 	mixin(H5This!("Div"));
 
 	O sizes(this O)(string[] someSizes...) { 
-		foreach(size; someSizes) this.classes("col-"~size); 
+		foreach(size; someSizes) this.addClasses("col-"~size); 
 		return cast(O)this; 
 	}
 	version(test_uim_bootstrap) { unittest {	

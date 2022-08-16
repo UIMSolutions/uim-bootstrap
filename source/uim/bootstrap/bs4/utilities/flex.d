@@ -4,52 +4,52 @@
 import uim.bootstrap; 
 
 T flex(T)(T h5) {
-	return h5.classes("d-flex");
+	return h5.addClasses("d-flex");
 }
 T flexInline(T)(T h5) {
-	return h5.classes("d-inline-flex");
+	return h5.addClasses("d-inline-flex");
 }
 T flexRow(T)(T h5) {
-	return h5.flex.classes("d-flex-column");
+	return h5.flex.addClasses("d-flex-column");
 }
 T flexRowReverse(T)(T h5) {
-	return h5.flex.classes("d-flex-column-reverse");
+	return h5.flex.addClasses("d-flex-column-reverse");
 }
 T flexColumn(T)(T h5) {
-	return h5.flex.classes("d-flex-column");
+	return h5.flex.addClasses("d-flex-column");
 }
 T flexColumnReverse(T)(T h5) {
-	return h5.flex.classes("d-flex-column-reverse");
+	return h5.flex.addClasses("d-flex-column-reverse");
 }
 T flexJustify(T)(T h5, string position) {
-	return h5.flex.classes("justify-content-"~position);
+	return h5.flex.addClasses("justify-content-"~position);
 }
 T flexAlign(T)(T h5, string position) {
-	return h5.flex.classes("align-items-"~position);
+	return h5.flex.addClasses("align-items-"~position);
 }
 T flexAlignSelf(T)(T h5, string position) {
-	return h5.classes("align-self-"~position);
+	return h5.addClasses("align-self-"~position);
 }
 T flexFill(T)(T h5, string position) {
-	return h5.classes("flex-fill");
+	return h5.addClasses("flex-fill");
 }
 T flexGrow(T)(T h5, string size) {
-	return h5.classes("flex-grow-"~size);
+	return h5.addClasses("flex-grow-"~size);
 }
 T flexShrink(T)(T h5, string size) {
-	return h5.classes("flex-shrink-"~size);
+	return h5.addClasses("flex-shrink-"~size);
 }
 T flexNoWrap(T)(T h5) {
-	return h5.flex.classes("flex-nowrap");
+	return h5.flex.addClasses("flex-nowrap");
 }
 T flexWrap(T)(T h5) {
-	return h5.flex.classes("flex-wrap");
+	return h5.flex.addClasses("flex-wrap");
 }
 T flexWrapReverse(T)(T h5) {
-	return h5.flex.classes("flex-wrap-reverse");
+	return h5.flex.addClasses("flex-wrap-reverse");
 }
 T flexOrder(T)(T h5, string position) {
-	return h5.classes("order-"~position);
+	return h5.addClasses("order-"~position);
 }
 
 version(test_uim_bootstrap) { unittest {

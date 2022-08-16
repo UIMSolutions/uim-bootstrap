@@ -6,7 +6,7 @@ import uim.bootstrap;
 class DBS4Form : DBS4Obj {
 	mixin(H5This!("Form"));
 
-	O inline(this O)(bool value = true) { return this.classes("form-inline"); }
+	O inline(this O)(bool value = true) { return this.addClasses("form-inline"); }
 
 	mixin(MyContent!("label", "H5Label"));
 	mixin(MyContent!("formGroup", "BS4FormGroup"));

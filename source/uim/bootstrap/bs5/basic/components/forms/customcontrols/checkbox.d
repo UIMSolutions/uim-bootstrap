@@ -10,13 +10,14 @@ class DBS5CustomCheckbox : DBS5CustomControl {
     super.initialize();
 
     this
-      .addClasses("custom-checkbox");
+      .addClasses("custom-control", "custom-checkbox");
   }
 }
 mixin(H5Calls!"BS5CustomCheckbox");
 
 version(test_uim_bootstrap) { unittest {
-  assert(BS5CustomCheckbox);
+  // TODO Exists in 5?
+/*   assert(BS5CustomCheckbox);
   writeln(BS5CustomCheckbox);
-  assert(BS5CustomCheckbox ==`<div class="custom-checkbox custom-control"></div>`);
+  assert(BS5CustomCheckbox ==`<div class="custom-checkbox custom-control"></div>`); */
 }}

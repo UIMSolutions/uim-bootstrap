@@ -30,20 +30,20 @@ class DBS4Obj : DH5Obj {
 
 	/// Clear border 
 	O noPadding(this O)(string side = null) { 
-		this.classes("p-0");
+		this.addClasses("p-0");
 		return cast(O) this;
 	}
 
 	/// Adding border 
 	O border(this O)(int value) { 
-		if (value > 0) this.classes("border-"~to!string(value));
-		else this.classes("border");
+		if (value > 0) this.addClasses("border-"~to!string(value));
+		else this.addClasses("border");
 		return cast(O) this;
 	 }
 	O border(this O)(string side, int value) { return border(side~"-"~to!string(value)); }
 	O border(this O)(string value = null) {
-		if (value.length > 0) this.classes("border-"~value);
-		else this.classes("border");
+		if (value.length > 0) this.addClasses("border-"~value);
+		else this.addClasses("border");
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -54,8 +54,8 @@ class DBS4Obj : DH5Obj {
 
 	/// Clear border 
 	O noBorder(this O)(string side = null) { 
-		if (side.length > 0) this.classes("border-"~side~"-0");
-		else this.classes("border-0");
+		if (side.length > 0) this.addClasses("border-"~side~"-0");
+		else this.addClasses("border-0");
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -64,7 +64,7 @@ class DBS4Obj : DH5Obj {
 
 	/// Set border color 
 	O borderColor(this O)(string color) { 
-		if (color.length > 0) this.classes("border-"~color);
+		if (color.length > 0) this.addClasses("border-"~color);
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -74,8 +74,8 @@ class DBS4Obj : DH5Obj {
 
 	/// Change rounded of corners 
 	O rounded(this O)(string value = "") {
-		if (value.length > 0) this.classes("rounded-"~value);
-		else this.classes("rounded");
+		if (value.length > 0) this.addClasses("rounded-"~value);
+		else this.addClasses("rounded");
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -85,7 +85,7 @@ class DBS4Obj : DH5Obj {
 
 	/// Clear rounded
 	O noRounded(this O)() { 
-		this.classes("rounded-0");
+		this.addClasses("rounded-0");
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -94,7 +94,7 @@ class DBS4Obj : DH5Obj {
 
 	/// Set size of rounded
 	O roundedSize(this O)(string value) {
-		if (value.length > 0) this.classes("rounded-"~value);
+		if (value.length > 0) this.addClasses("rounded-"~value);
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -140,8 +140,8 @@ class DBS4Obj : DH5Obj {
 	/// Setting background color
 	O background(this O)(string color, int value) { return background(color, to!string(value)); }
 	O background(this O)(string color, string value = null) {
-		if (value.length > 0) this.classes("bg-"~color~"-"~value);
-		else this.classes("bg-"~color);
+		if (value.length > 0) this.addClasses("bg-"~color~"-"~value);
+		else this.addClasses("bg-"~color);
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -151,7 +151,7 @@ class DBS4Obj : DH5Obj {
 	/// Setting display
 	O display(this O)(string value) { return this.display(null, value); }
 	O display(this O)(string breakpoint, string value) {
-		if (breakpoint.length > 0) this.classes("d-"~breakpoint~"-"~value);
+		if (breakpoint.length > 0) this.addClasses("d-"~breakpoint~"-"~value);
 		else {
 			this
 			.addClasses("d-"~value); }
@@ -164,7 +164,7 @@ class DBS4Obj : DH5Obj {
 	
 	/// Setting print display
 	O print(this O)(string value) {
-		if (value.length > 0) this.classes("d-print-"~value);
+		if (value.length > 0) this.addClasses("d-print-"~value);
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
