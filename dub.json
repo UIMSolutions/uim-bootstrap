@@ -3,12 +3,13 @@
 		"UI Manufaktur Team"
 	],
 	"copyright": "Copyright © 2017 - 2022, UI Manufaktur UG",
+	"description": "D Library for Bootstrap",
 	"dependencies": {
 		"colored": "~>0.0.27",
 		"silly": "~>1.1.1",
 		"vibe-d": "0.9.5"
 	},
-	"description": "D Library for Bootstrap",
+	"targetType": "library",
 	"importPaths": [
 		"../uim-core",
 		"../uim-oop",
@@ -29,5 +30,27 @@
 		"../uim-html",
 		"./"
 	],
-	"targetType": "library"
+	"configurations": [
+		{
+			"name": "default",
+			"targetType": "library"
+		},
+		{
+			"name": "testUnit",
+			"targetType": "library",
+			"versions": [
+				"test_uim_bootstrap"
+			]
+		},
+		{
+			"name": "testAll",
+			"targetType": "library",
+			"versions": [
+				"test_uim_core",
+				"test_uim_oop",
+				"test_uim_html",
+				"test_uim_bootstrap"
+			]
+		}
+	]
 }
