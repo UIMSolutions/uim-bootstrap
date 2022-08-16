@@ -18,7 +18,8 @@ class DBS4List : DBS4Obj {
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4List.item, `<ul class="list-group"><li class="list-group-item"></li></ul>`);
 		assert(BS4List.item("test"), `<ul class="list-group"><li class="list-group-item">test</li></ul>`);
-}
+	}}
+	
 	mixin(MyContent!("link", "this.item", "BS4ListLink"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4List.link, `<ul class="list-group"><li class="list-group-item"><a class="list-group-item list-group-item-action"></a></li></ul>`);

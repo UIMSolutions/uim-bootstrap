@@ -14,6 +14,6 @@ class DBS4CarouselControlNext : DBS4Obj {
 
 mixin(H5Calls!"BS4CarouselControlNext");
 version(test_uim_bootstrap) { unittest {
-	assert(BS4CarouselControlNext,
+	assert(BS4CarouselControlNext ==
 		`<a class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a>`);
-}
+}}

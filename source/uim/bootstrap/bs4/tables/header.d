@@ -16,4 +16,4 @@ mixin(H5Calls!"BS4TableHeader");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4TableHeader, `<thead></thead>`);
-}
+}}

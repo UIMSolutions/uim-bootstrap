@@ -10,4 +10,4 @@ mixin(H5Calls!("BS4ImageFluid"));
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4ImageFluid, `<img class="img-thumbnail">`);
-}
+}}

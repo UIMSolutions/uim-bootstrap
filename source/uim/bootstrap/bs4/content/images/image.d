@@ -19,4 +19,4 @@ mixin(H5Calls!("BS4Image"));
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4Image, `<img>`);
-}
+}}

@@ -18,4 +18,4 @@ mixin(H5Calls!"BS4NavList");
 version(test_uim_bootstrap) { unittest {
 	assert(BS4NavList, `<ul class="nav"></ul>`);
 	assert(BS4NavList.vertical, `<ul class="flex-column nav"></ul>`);
-}
+}}

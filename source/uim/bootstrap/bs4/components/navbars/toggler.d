@@ -19,4 +19,4 @@ mixin(H5Calls!"BS4NavbarToggler");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4NavbarToggler, `<button class="navbar-toggler" aria-controls="navbar" type="button"></button>`);
-}
+}}

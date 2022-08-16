@@ -48,5 +48,5 @@ mixin(H5Calls!"BS4TableRow");
 version(test_uim_bootstrap) { unittest {
 	assert(BS4TableRow == `<tr></tr>`);
 	//assert(BS4TableRow.values(["a","b"]), `<tr><td>a</td><td>b</td></tr>`);
-}
+}}
 

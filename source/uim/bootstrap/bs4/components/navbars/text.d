@@ -11,4 +11,4 @@ mixin(H5Calls!"BS4NavbarText");
 version(test_uim_bootstrap) { unittest {
 	assert(BS4NavbarText, `<span class="navbar-text"></span>`);
 	assert(BS4NavbarText("some text"), `<span class="navbar-text">some text</span>`);
-}
+}}

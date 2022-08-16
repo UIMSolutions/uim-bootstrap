@@ -9,12 +9,12 @@ class DBS4InputGroup : DBS4Obj {
 	mixin(MyContent!("prepend", "BS4InputGroupPrepend"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4InputGroup.prepend, `<div class="input-group"><div class="input-group-prepend"></div></div>`);
-	}
+	}}
 
 	mixin(MyContent!("append", "BS4InputGroupAppend"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4InputGroup.append, `<div class="input-group"><div class="input-group-append"></div></div>`);
-	}
+	}}
 	
 	// Setting size of group
 	O size(this O)(string sizeName) { return this.classes("input-group-"~sizeName); }

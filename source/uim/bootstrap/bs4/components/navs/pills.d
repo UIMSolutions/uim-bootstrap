@@ -11,4 +11,4 @@ mixin(H5Calls!"BS4NavPills");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4NavPills, `<ul class="nav nav-pills" role="tablist"></ul>`);
-}
+}}

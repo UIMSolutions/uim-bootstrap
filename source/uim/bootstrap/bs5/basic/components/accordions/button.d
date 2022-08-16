@@ -11,4 +11,4 @@ mixin(H5Calls!("BS5AccordionButton"));
 version(test_uim_bootstrap) { unittest {
 	assert(BS5AccordionButton);
 	assert(BS5AccordionButton == `<button class="accordion-button" type="button"></button>`);
-}
+}}
