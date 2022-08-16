@@ -10,4 +10,4 @@ mixin(H5Calls!"BS5ListInlineItem");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5ListInlineItem, `<li class="list-inline-item"></li>`);
-}
+}}

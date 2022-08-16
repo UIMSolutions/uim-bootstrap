@@ -10,4 +10,4 @@ mixin(H5Calls!"BS5CustomRadio");
 
 version(test_uim_bootstrap) { unittest {
 		assert(BS5CustomRadio, `<div class="custom-control custom-radio"></div>`);
-}
+}}

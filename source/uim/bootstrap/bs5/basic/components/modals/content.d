@@ -13,6 +13,7 @@ class DBS5ModalContent : DBS5Obj {
 	mixin(MyContent!("footer", "BS5ModalFooter"));
 }
 mixin(H5Calls!"BS5ModalContent");
+
 version(test_uim_bootstrap) { unittest {
 	assert(BS5ModalContent, `<div class="modal-content"></div>`);
-}
+}}

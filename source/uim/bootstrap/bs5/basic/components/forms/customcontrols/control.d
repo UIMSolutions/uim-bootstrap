@@ -20,4 +20,4 @@ mixin(H5Calls!"BS5CustomControl");
 version(test_uim_bootstrap) { unittest {
   assert(BS5CustomControl);
   assert(BS5CustomControl == `<div class="custom-control"></div>`);
-}
+}}

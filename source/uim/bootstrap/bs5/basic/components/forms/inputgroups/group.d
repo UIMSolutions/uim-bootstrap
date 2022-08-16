@@ -9,12 +9,12 @@ class DBS5InputGroup : DBS5Obj {
 	mixin(MyContent!("prepend", "BS5InputGroupPrepend"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5InputGroup.prepend, `<div class="input-group"><div class="input-group-prepend"></div></div>`);
-	}
+	}}
 
 	mixin(MyContent!("append", "BS5InputGroupAppend"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5InputGroup.append, `<div class="input-group"><div class="input-group-append"></div></div>`);
-	}
+	}}
 	
 	// Setting size of group
 	O size(this O)(string sizeName) { return this.classes("input-group-"~sizeName); }
@@ -24,7 +24,7 @@ class DBS5InputGroup : DBS5Obj {
 		assert(BS5InputGroup.size("sm"), `<div class="input-group input-group-sm"></div>`);
 		assert(BS5InputGroup.small, `<div class="input-group input-group-sm"></div>`);
 		assert(BS5InputGroup.large, `<div class="input-group input-group-lg"></div>`);
-	}
+	}}
 
 	mixin(MyContent!("button", "BS5InputButton"));
 	mixin(MyContent!("checkbox", "BS5Checkbox"));
