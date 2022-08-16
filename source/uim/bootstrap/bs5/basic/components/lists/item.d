@@ -10,6 +10,6 @@ class DBS5ListItem : DBS5Obj {
 }
 mixin(H5Calls!"BS5ListItem");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5ListItem, `<li class="list-group-item"></li>`);
 }

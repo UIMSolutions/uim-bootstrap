@@ -14,7 +14,7 @@ class DBS5Badge : DBS5Obj {
 	O color(this O)(string name) {
 		return this.addClasses("badge-" ~ name);
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5Badge.color("secondary") == `<span class="badge badge-secondary"></span>`);
 	}
 
@@ -24,13 +24,13 @@ class DBS5Badge : DBS5Obj {
 			this.addClasses("badge-pill");
 		return cast(O) this;
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5Badge.pill(true) == `<span class="badge badge-pill"></span>`);
 	}
 }
 // Shortcut to class DBS5Badge
 mixin(H5Calls!("BS5Badge"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5Badge == `<span class="badge"></span>`);
 }

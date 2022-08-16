@@ -8,6 +8,6 @@ class DBS4ModalHeader : DBS4Obj {
 }
 mixin(H5Calls!"BS4ModalHeader");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4ModalHeader, `<div class="modal-header"></div>`);
 }

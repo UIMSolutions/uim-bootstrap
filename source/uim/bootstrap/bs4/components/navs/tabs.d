@@ -7,12 +7,12 @@ class DBS4NavTabs : DBS4Obj {
 	mixin(H5This!("UL", ["nav", "nav-tabs"], `["role":"tablist"]`));
 
 	mixin(MyContent!("item", "BS4NavItem"));
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS4NavTabs.item, `<ul class="nav nav-tabs" role="tablist"><li class="nav-item"></li></ul>`);
 	}
 }
 mixin(H5Calls!"BS4NavTabs");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4NavTabs, `<ul class="nav nav-tabs" role="tablist"></ul>`);
 }

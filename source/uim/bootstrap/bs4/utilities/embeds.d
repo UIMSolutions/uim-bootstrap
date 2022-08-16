@@ -13,6 +13,6 @@ T embedItem(T)(T h5) {
 	return h5.classes("embed-responsive-item");
 }
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 }

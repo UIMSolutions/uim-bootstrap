@@ -10,12 +10,12 @@ class DBS4CustomInput : DBS4Obj {
 		_single = true;
 	}
 
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS4CustomInput, `<input class="custom-control-input">`);
 	}
 
 }
 mixin(H5Calls!"BS4CustomInput");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 }

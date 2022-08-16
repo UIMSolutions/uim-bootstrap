@@ -3,7 +3,7 @@
 @safe: 
 import uim.bootstrap; 
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 
 }

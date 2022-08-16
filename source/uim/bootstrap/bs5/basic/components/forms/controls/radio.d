@@ -11,6 +11,6 @@ class DBS5Radio : DBS5Input {
   }
 }
 mixin(H5Calls!("BS5Radio"));
-unittest {
+version(test_uim_bootstrap) { unittest {
   assert(BS5Radio == `<input class="form-control" type="radio">`);
 }

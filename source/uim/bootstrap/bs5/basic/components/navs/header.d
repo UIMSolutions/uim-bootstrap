@@ -9,6 +9,6 @@ class DBS5NavHeader : DBS5Obj {
 }
 mixin(H5Calls!"BS5NavHeader");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5NavHeader, `<li class="nav-header"></li>`);
 }

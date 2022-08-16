@@ -11,7 +11,7 @@ class DBS5Alert : DBS5Obj {
 	O color(this O)(string name) {
 		return this.addClasses("alert-" ~ name);
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5Alert.color("success") == `<div class="alert alert-success" role="alert"></div>`);
 	}
 
@@ -27,7 +27,7 @@ class DBS5Alert : DBS5Obj {
 		}
 		return cast(O) this;
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5Alert.color("success").dismissible == `<div class="alert alert-dismissible alert-success" role="alert"><button type="button" class="close" data-dismiss="alert">&times;</button></div>`);
 	}
 
@@ -42,7 +42,7 @@ class DBS5AlertLink : DBS5Obj {
 
 mixin(H5Calls!("BS5AlertLink"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5Alert);
 	assert(BS5Alert == `<div class="alert" role="alert"></div>`);
 

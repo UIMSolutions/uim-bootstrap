@@ -10,7 +10,7 @@ class DBS5Navbar : DBS5Obj {
 		if (value) this.classes("justify-content-center");
 		return cast(O)this;
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5Navbar.center, `<nav class="justify-content-center navbar"></nav>`);
 		assert(BS5Navbar("Test").center, `<nav class="justify-content-center navbar">Test</nav>`);
 	}
@@ -19,7 +19,7 @@ class DBS5Navbar : DBS5Obj {
 		if (value) this.classes("navbar-dark");
 		return cast(O)this;
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5Navbar.dark, `<nav class="navbar navbar-dark"></nav>`);
 	}
 
@@ -28,7 +28,7 @@ class DBS5Navbar : DBS5Obj {
 		return cast(O)this;
 	}
 	///
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5Navbar.expand("lg"), `<nav class="navbar navbar-expand-lg"></nav>`);
 	}
 
@@ -37,7 +37,7 @@ class DBS5Navbar : DBS5Obj {
 		return cast(O)this;
 	}
 	///
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5Navbar.light, `<nav class="navbar navbar-light"></nav>`);
 	}
 

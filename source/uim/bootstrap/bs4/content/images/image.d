@@ -17,6 +17,6 @@ class DBS4Image : DBS4Obj {
 }
 mixin(H5Calls!("BS4Image"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4Image, `<img>`);
 }

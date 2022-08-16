@@ -8,6 +8,6 @@ class DBS4MediaBody : DBS4Obj {
 }
 mixin(H5Calls!"BS4MediaBody");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4MediaBody, `<div class="media-body"></div>`);
 }

@@ -26,7 +26,7 @@ T circle(T)(T h5, string radius = null) {
 	return h5.classes("rounded-circle");
 }
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(H5Div.border, `<div class="border"></div>`);
 	assert(H5Div.borderPosition("top"), `<div class="border-top"></div>`);
 	assert(H5Div.borderPosition("bottom", "top"), `<div class="border-bottom border-top"></div>`);

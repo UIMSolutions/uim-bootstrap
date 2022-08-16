@@ -9,11 +9,11 @@ class DBS4FormCheckInput : DBS4Obj {
 		super.initialize;
 		_single = true;
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS4FormCheckInput, `<input class="form-check-input">`);
 	}
 }
 mixin(H5Calls!"BS4FormCheckInput");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 }

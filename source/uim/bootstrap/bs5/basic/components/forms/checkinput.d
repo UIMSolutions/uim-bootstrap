@@ -9,12 +9,12 @@ class DBS5FormCheckInput : DBS5Obj {
 		super.initialize;
 		_single = true;
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5FormCheckInput, `<input class="form-check-input">`);
 	}
 }
 mixin(H5Calls!"BS5FormCheckInput");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 // TODO assert(BS5FormCheckInput == );
 }

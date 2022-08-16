@@ -54,7 +54,7 @@ class DBS5CustomSelect : DH5Select {
 }
 mixin(H5Calls!("BS5CustomSelect"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 	
 }

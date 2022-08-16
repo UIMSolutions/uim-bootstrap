@@ -11,6 +11,6 @@ class DBS4TabContent : DBS4Obj {
 
 mixin(H5Calls!"BS4TabContent");
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4TabContent, `<div class="tab-content"></div>`);
 }

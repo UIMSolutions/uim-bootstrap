@@ -13,26 +13,26 @@ class DBS5InputText : DBS5Input {
 		this.value(id.toString);
 		return cast(O)this;
 	}
-	unittest {		
+	version(test_uim_bootstrap) { unittest {		
 	}
 
 	O value(this O)(bool aValue) {
 		value(aValue ? "true" : "false");
 		return cast(O)this;
 	}
-	unittest {		
+	version(test_uim_bootstrap) { unittest {		
 	}
 
 	O value(this O)(string txt) {
 		_attributes["value"] = txt;
 		return cast(O)this;
 	}
-	unittest {		
+	version(test_uim_bootstrap) { unittest {		
 	}
 
 }
 mixin(H5Calls!("BS5InputText"));
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5InputText == `<input class="form-control" type="text">`);
 }

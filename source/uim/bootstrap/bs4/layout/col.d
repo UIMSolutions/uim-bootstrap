@@ -10,7 +10,7 @@ class DBS4Col : DBS4Obj {
 		foreach(size; someSizes) this.classes("col-"~size); 
 		return cast(O)this; 
 	}
-	unittest {	
+	version(test_uim_bootstrap) { unittest {	
 		assert(BS4Col.sizes("12"), `<div class="col-12"></div>`);
 	}
 }

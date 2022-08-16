@@ -11,6 +11,6 @@ class DBS5InputFile : DBS5Input {
   }
 }
 mixin(H5Calls!("BS5InputFile"));
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5InputFile == `<input class="form-control" type="file">`);
 }

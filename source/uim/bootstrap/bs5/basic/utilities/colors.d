@@ -13,7 +13,7 @@ T backgroundColor(T)(T h5, string colorName) {
 	return h5.classes("bg-"~colorName);
 }
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 
 	assert(H5Div.textColor("white"), `<div class="text-white"></div>`);

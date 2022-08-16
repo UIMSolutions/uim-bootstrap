@@ -17,6 +17,6 @@ class DBS4NavbarToggler : DBS4ButtonObj {
 }
 mixin(H5Calls!"BS4NavbarToggler");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4NavbarToggler, `<button class="navbar-toggler" aria-controls="navbar" type="button"></button>`);
 }

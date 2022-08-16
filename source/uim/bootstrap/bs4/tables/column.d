@@ -22,7 +22,7 @@ class DBS4TableColumn : DBS4Obj {
 }
 mixin(H5Calls!"BS4TableColumn");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4TableColumn, `<th scope="col"></th>`);
 	assert(BS4TableColumn.title("xyz"), `<th scope="col">xyz</th>`);
 }

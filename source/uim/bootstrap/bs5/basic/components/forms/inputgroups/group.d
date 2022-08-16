@@ -7,12 +7,12 @@ class DBS5InputGroup : DBS5Obj {
 	mixin(H5This!("DIV", ["input-group"]));
 
 	mixin(MyContent!("prepend", "BS5InputGroupPrepend"));
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5InputGroup.prepend, `<div class="input-group"><div class="input-group-prepend"></div></div>`);
 	}
 
 	mixin(MyContent!("append", "BS5InputGroupAppend"));
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5InputGroup.append, `<div class="input-group"><div class="input-group-append"></div></div>`);
 	}
 	
@@ -20,7 +20,7 @@ class DBS5InputGroup : DBS5Obj {
 	O size(this O)(string sizeName) { return this.classes("input-group-"~sizeName); }
 	O small(this O)() { return this.classes("input-group-sm"); }
 	O large(this O)() { return this.classes("input-group-lg"); }
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5InputGroup.size("sm"), `<div class="input-group input-group-sm"></div>`);
 		assert(BS5InputGroup.small, `<div class="input-group input-group-sm"></div>`);
 		assert(BS5InputGroup.large, `<div class="input-group input-group-lg"></div>`);
@@ -54,6 +54,6 @@ class DBS5InputGroup : DBS5Obj {
 }
 mixin(H5Calls!"BS5InputGroup");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 		assert(BS5InputGroup, `<div class="input-group"></div>`);
 }

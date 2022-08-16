@@ -9,6 +9,6 @@ class DBS4BreadcrumbLink : DBS4Obj {
 }
 mixin(H5Calls!"BS4BreadcrumbLink");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4BreadcrumbLink == `<a></a>`);
 }

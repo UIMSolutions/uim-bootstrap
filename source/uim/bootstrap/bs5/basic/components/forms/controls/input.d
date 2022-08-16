@@ -15,6 +15,6 @@ class DBS5Input : DBS5Obj {
 }
 mixin(H5Calls!("BS5Input"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	// TODO assert 
 }

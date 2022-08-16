@@ -12,7 +12,7 @@ class DBS4CardSubtitle : DBS4Obj {
 }
 mixin(H5Calls!"BS4CardSubtitle");
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4CardSubtitle, `<h6 class="card-subtitle"></h6>`);
 	assert(BS4CardSubtitle.content("SomeThing"), `<h6 class="card-subtitle">SomeThing</h6>`);
 }

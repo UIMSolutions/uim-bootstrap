@@ -8,6 +8,6 @@ class DBS4ImageFluid : DBS4Image {
 }
 mixin(H5Calls!("BS4ImageFluid"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4ImageFluid, `<img class="img-fluid">`);
 }

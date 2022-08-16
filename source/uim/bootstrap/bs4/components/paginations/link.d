@@ -9,7 +9,7 @@ class DBS4PageLink : DBS4Obj {
 }
 mixin(H5Calls!"BS4PageLink");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 
 	assert(BS4PageLink, `<a class="page-link" href="#"></a>`);

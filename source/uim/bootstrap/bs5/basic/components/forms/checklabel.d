@@ -8,6 +8,6 @@ class DBS5FormCheckLabel : DBS5Obj {
 }
 mixin(H5Calls!"BS5FormCheckLabel");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5FormCheckLabel == `<label class="form-check-label"></label>`);
 }

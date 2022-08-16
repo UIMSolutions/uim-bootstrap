@@ -11,7 +11,7 @@ class DBS4CustomControl : DBS4Obj {
 	mixin(MyContent!("radio", "BS4CustomRadio"));
 	mixin(MyContent!("label", "H5Label"));
 	
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS4CustomControl, `<div class="custom-control"></div>`);
 	}
 }

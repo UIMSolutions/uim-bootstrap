@@ -8,6 +8,6 @@ class DBS5ListInlineItem : DBS5Obj {
 }
 mixin(H5Calls!"BS5ListInlineItem");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5ListInlineItem, `<li class="list-inline-item"></li>`);
 }

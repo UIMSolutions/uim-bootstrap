@@ -12,6 +12,6 @@ class DBS5InputReset : DBS5Input {
 }
 mixin(H5Calls!("BS5InputReset"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
   assert(BS5InputReset == `<input class="form-control" type="reset">`);
 }

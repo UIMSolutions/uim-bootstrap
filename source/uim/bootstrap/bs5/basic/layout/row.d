@@ -10,6 +10,6 @@ class DBS5Row : DBS5Obj {
 }
 mixin(H5Calls!("BS5Row"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5Row, `<div class="row"></div>`);
 }

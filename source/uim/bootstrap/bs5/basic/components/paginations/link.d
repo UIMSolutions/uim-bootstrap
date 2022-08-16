@@ -12,7 +12,7 @@ class DBS5PageLink : DBS5Obj {
 }
 mixin(H5Calls!"BS5PageLink");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5PageLink);
 	assert(BS5PageLink == `<a class="page-link" href="#"></a>`);
 }

@@ -8,6 +8,6 @@ class DBS4InputGroupText : DBS4Obj {
 }
 mixin(H5Calls!"BS4InputGroupText");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4InputGroupText, `<div class="input-group-text"></div>`);
 }

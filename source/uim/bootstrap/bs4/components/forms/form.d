@@ -13,7 +13,7 @@ class DBS4Form : DBS4Obj {
 }
 mixin(H5Calls!"BS4Form");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 	
 	assert(BS4Form, `<form></form>`);

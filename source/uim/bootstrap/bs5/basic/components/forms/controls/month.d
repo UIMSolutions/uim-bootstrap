@@ -12,6 +12,6 @@ class DBS5InputMonth : DBS5Input {
 }
 mixin(H5Calls!("BS5InputMonth"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5InputMonth == `<input class="form-control" type="month">`);
 }

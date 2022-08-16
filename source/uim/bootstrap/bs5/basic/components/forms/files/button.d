@@ -9,6 +9,6 @@ class DBS5FormFileButton : DBS5Obj {
 }
 mixin(H5Calls!"BS5FormFileButton");
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5FormFileButton, `<span class="form-file-button"></span>`);
 }

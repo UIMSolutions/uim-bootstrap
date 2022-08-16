@@ -8,6 +8,6 @@ class DBS4NavbarTogglerIcon : DBS4Obj {
 }
 mixin(H5Calls!"BS4NavbarTogglerIcon");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 //	assert(BS4NavbarTogglerIcon, `<div class="btn-group" role="group"></div>`);
 }

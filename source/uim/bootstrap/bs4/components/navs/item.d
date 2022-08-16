@@ -8,12 +8,12 @@ class DBS4NavItem : DBS4Obj {
 
 	O dropdown(this O)(bool mode = true) { return this.classes("dropdown"); }
 	mixin(MyContent!("link", "BS4NavLink"));
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS4NavItem.dropdown, `<li class="dropdown nav-item"></li>`);
 	}
 }
 mixin(H5Calls!"BS4NavItem");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4NavItem, `<li class="nav-item"></li>`);
 }

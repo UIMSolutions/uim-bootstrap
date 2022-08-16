@@ -12,6 +12,6 @@ class DBS5InputDatalist : DBS5Input {
 }
 mixin(H5Calls!("BS5InputDatalist"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
   assert(BS5InputDatalist == `<input class="form-control">`);
 }

@@ -8,6 +8,6 @@ class DBS4InputDateTime : DBS4Input {
 }
 mixin(H5Calls!("BS4InputDateTime"));
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4InputDateTime, `<input class="form-control" type="datetime-local">`);
 }

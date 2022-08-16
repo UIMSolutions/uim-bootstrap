@@ -11,7 +11,7 @@ class DBS4ButtonGroup : DBS4Obj {
 		this.classes("btn-group-" ~ value);
 		return cast(O) this;
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS4ButtonGroup.size("lg"), `<div class="btn-group btn-group-lg" role="group"></div>`);
 	}
 
@@ -22,14 +22,14 @@ class DBS4ButtonGroup : DBS4Obj {
 		}
 		return cast(O) this;
 	}
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS4ButtonGroup.vertical(true), `<div class="btn-group-vertical" role="group"></div>`);
 	}
 
 	mixin(MyAttribute!("label", "aria-label"));
 
 	mixin(MyContent!("button", "BS4Button"));
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS4ButtonGroup.button, `<div class="btn-group" role="group"><button class="btn" type="button"></button></div>`);
 	}
 
@@ -38,6 +38,6 @@ class DBS4ButtonGroup : DBS4Obj {
 
 mixin(H5Calls!"BS4ButtonGroup");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4ButtonGroup, `<div class="btn-group" role="group"></div>`);
 }

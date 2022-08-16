@@ -8,6 +8,6 @@ class DBS4Checkbox : DBS4Input {
 }
 mixin(H5Calls!("BS4Checkbox"));
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4Checkbox, `<input class="form-control" type="checkbox">`);
 }

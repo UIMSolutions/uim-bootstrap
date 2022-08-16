@@ -31,6 +31,6 @@ T displayPrint(T)(T h5, string mode) {
 	return h5.classes("d-print-"~mode);
 }
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 }

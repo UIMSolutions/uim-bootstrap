@@ -15,6 +15,6 @@ class DBS4ProgressBar : DBS4Obj {
 }
 mixin(H5Calls!"BS4ProgressBar");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4ProgressBar, `<div class="progress-bar" role="progressbar"></div>`);
 }

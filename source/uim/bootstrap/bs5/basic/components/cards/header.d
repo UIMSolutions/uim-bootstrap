@@ -9,6 +9,6 @@ class DBS5CardHeader : DBS5Obj {
 	mixin(H5This!("DIV", ["card-header"]));
 }
 mixin(H5Calls!"BS5CardHeader");
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5CardHeader == `<div class="card-header"></div>`);
 }

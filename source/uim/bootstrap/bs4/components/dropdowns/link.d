@@ -8,6 +8,6 @@ class DBS4DropdownLink : DBS4Obj {
 }
 mixin(H5Calls!"BS4DropdownLink");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 }

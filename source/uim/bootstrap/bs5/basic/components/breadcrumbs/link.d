@@ -9,6 +9,6 @@ class DBS5BreadcrumbLink : DBS5Obj {
 }
 mixin(H5Calls!"BS5BreadcrumbLink");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5BreadcrumbLink == `<a></a>`);
 }

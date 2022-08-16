@@ -12,6 +12,6 @@ class DBS5InputUrl : DBS5Input {
 }
 mixin(H5Calls!("BS5InputUrl"));
  
-unittest {
+version(test_uim_bootstrap) { unittest {
    assert(BS5InputUrl == `<input class="form-control" type="url">`);
 }

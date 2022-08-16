@@ -12,6 +12,6 @@ class DBS5Checkbox : DBS5Input {
 }
 mixin(H5Calls!("BS5Checkbox"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
   assert(BS5Checkbox == `<input class="form-control" type="checkbox">`);
 }

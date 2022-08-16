@@ -12,7 +12,7 @@ class DBS5CarouselItem : DBS5Obj {
 	}
 }
 mixin(H5Calls!"BS5CarouselItem");
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5CarouselItem == `<div class="carousel-item"></div>`);
 	assert(BS5CarouselItem.active == `<div class="active carousel-item"></div>`);
 }

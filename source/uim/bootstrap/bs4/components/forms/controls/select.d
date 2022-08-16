@@ -54,7 +54,7 @@ class DBS4InputSelect : DBS4Obj {
 }
 mixin(H5Calls!("BS4InputSelect"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 	
 }

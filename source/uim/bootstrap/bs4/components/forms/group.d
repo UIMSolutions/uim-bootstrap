@@ -48,6 +48,6 @@ class DBS4FormGroup : DBS4Obj {
 }
 mixin(H5Calls!"BS4FormGroup");
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4FormGroup, `<div class="form-group"></div>`);
 }

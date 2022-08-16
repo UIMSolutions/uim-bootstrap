@@ -10,7 +10,7 @@ class DBS5TableCell : DBS5Obj {
 	O colspan(this O)(string span) { 
 		this.attributes("colspan", span);
 		return cast(O)this; }
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5TableCell.colspan(2), `<td colspan="2"></td>`);
 	}
 
@@ -18,12 +18,12 @@ class DBS5TableCell : DBS5Obj {
 	O rowspan(this O)(string span) { 
 		this.attributes("rowspan", span);
 		return cast(O)this; }
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5TableCell.rowspan(2), `<td rowspan="2"></td>`);
 	}
 }
 mixin(H5Calls!"BS5TableCell");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5TableCell, `<td></td>`);
 }

@@ -32,6 +32,6 @@ class DBS5ButtonObj : DBS5Obj {
 }
 mixin(H5Calls!"BS5ButtonObj");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 }

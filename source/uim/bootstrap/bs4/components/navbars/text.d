@@ -8,7 +8,7 @@ class DBS4NavbarText : DBS4Obj {
 }
 mixin(H5Calls!"BS4NavbarText");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4NavbarText, `<span class="navbar-text"></span>`);
 	assert(BS4NavbarText("some text"), `<span class="navbar-text">some text</span>`);
 }

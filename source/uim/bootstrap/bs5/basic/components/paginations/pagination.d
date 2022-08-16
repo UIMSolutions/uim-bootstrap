@@ -19,7 +19,7 @@ class DBS5Pagination : DBS5Obj {
 }
 mixin(H5Calls!"BS5Pagination");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5Pagination);
 	assert(BS5Pagination == `<ul class="pagination"></ul>`);
 	assert(BS5Pagination.link == `<ul class="pagination"><li class="page-item"><a class="page-link" href="#"></a></li></ul>`);

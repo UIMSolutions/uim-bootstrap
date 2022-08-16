@@ -12,6 +12,6 @@ class DBS4CustomFileInput : DBS4Obj {
 }
 
 mixin(H5Calls!"BS4CustomFileInput");
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4CustomFileInput, `<input class="custom-file-input">`);
 }

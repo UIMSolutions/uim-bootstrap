@@ -14,7 +14,7 @@ class DBS5InputTime : DBS5Input {
 		_attributes["value"] = (cast(DateTime)fromTimestamp(timestamp)).toISOExtString.split("T")[1];
 		return cast(O)this;
 	}
-	unittest {	
+	version(test_uim_bootstrap) { unittest {	
     /// TODO
 	}
 
@@ -22,7 +22,7 @@ class DBS5InputTime : DBS5Input {
 		_attributes["value"] = timeValue;
 		return cast(O)this;
 	}
-	unittest {	
+	version(test_uim_bootstrap) { unittest {	
     /// TODO
 	}
 
@@ -30,7 +30,7 @@ class DBS5InputTime : DBS5Input {
 		_attributes["value"] = (cast(DateTime)systime).toISOExtString.split("T")[1];
 		return cast(O)this;
 	}
-	unittest {		
+	version(test_uim_bootstrap) { unittest {		
     /// TODO
 	}
 
@@ -38,13 +38,13 @@ class DBS5InputTime : DBS5Input {
 		_attributes["value"] = datetime.toISOExtString.split("T")[1];
 		return cast(O)this;
 	}
-	unittest {		
+	version(test_uim_bootstrap) { unittest {		
     /// TODO
 	}
 
 }
 mixin(H5Calls!("BS5InputTime"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5InputTime ==`<input class="form-control" type="time">`);
 }

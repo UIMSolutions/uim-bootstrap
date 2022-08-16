@@ -8,6 +8,6 @@ class DBS4InputWeek : DBS4Input {
 }
 mixin(H5Calls!("BS4InputWeek"));
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4InputWeek, `<input class="form-control" type="week">`);
 }

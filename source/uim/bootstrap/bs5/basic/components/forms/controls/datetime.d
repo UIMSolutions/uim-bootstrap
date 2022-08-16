@@ -28,6 +28,6 @@ class DBS5InputDateTime : DBS5Input {
 }
 mixin(H5Calls!("BS5InputDateTime"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5InputDateTime == `<input class="form-control" type="datetime-local">`);
 }

@@ -12,5 +12,5 @@ class DBS4CustomRadio : DBS4CustomControl {
 
 mixin(H5Calls!"BS4CustomRadio");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 }

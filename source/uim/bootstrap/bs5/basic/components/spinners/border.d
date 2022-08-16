@@ -8,6 +8,6 @@ class DBS5SpinnerBorder : DBS5Obj {
 }
 mixin(H5Calls!("BS5SpinnerBorder"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5SpinnerBorder == `<div class="spinner-border"></div>`);
 }

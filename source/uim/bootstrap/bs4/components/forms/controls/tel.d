@@ -8,6 +8,6 @@ class DBS4InputTel : DBS4Input {
 }
 mixin(H5Calls!("BS4InputTel"));
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4InputTel, `<input class="form-control" type="tel">`);
 }

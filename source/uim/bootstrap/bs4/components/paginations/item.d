@@ -13,7 +13,7 @@ class DBS4PageItem : DBS4Obj {
 }
 mixin(H5Calls!"BS4PageItem");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4PageItem, `<li class="page-item"></li>`);
 	assert(BS4PageItem.active, `<li class="active page-item"></li>`);
 	assert(BS4PageItem.disabled, `<li class="disabled page-item" tabindex="-1"></li>`);

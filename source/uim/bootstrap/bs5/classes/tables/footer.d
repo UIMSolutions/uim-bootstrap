@@ -8,14 +8,14 @@ class DBS5TableFooter : DBS5Obj {
 
 	mixin(MyContent!("row", "BS5TableRow"));
 	mixin(MyContent!("tr", "BS5TableRow"));
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		version(uim_bootstrap) {
 			assert(BS5Table.row, `<table class="table"><tr></tr></table>`);
 	}}	
 }
 mixin(H5Calls!"BS5TableFooter");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	version(uim_bootstrap) {
 		assert(BS5TableFooter, `<tfoot></tfoot>`);
 }}

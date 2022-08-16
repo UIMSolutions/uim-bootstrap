@@ -13,6 +13,6 @@ class DBS5ButtonClose : DBS5Button {
 }
 mixin(H5Calls!"BS5ButtonClose");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5ButtonClose, `<button class="btn close" aria-label="Close" type="button"><span aria-hidden="true">&times;</span></button>`);
 }

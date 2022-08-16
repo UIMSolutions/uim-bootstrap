@@ -17,7 +17,7 @@ class DBS5CustomControl : DBS5Obj {
 }
 mixin(H5Calls!"BS5CustomControl");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
   assert(BS5CustomControl);
   assert(BS5CustomControl == `<div class="custom-control"></div>`);
 }

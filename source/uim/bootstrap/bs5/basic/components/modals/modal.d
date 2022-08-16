@@ -5,7 +5,7 @@ import uim.bootstrap;
 
 class DBS5Modal : DBS5Obj {
 	mixin(H5This!("DIV", ["modal"], `["tabindex":"-1", "role":"dialog", "aria-hidden":"true"]`));
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS5Modal, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
 	}
 
@@ -14,12 +14,12 @@ class DBS5Modal : DBS5Obj {
 		return cast(O) this;
 	}
 
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(
 				BS5Modal.fade, `<div class="fade modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
 	}
 }
 mixin(H5Calls!"BS5Modal");
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5Modal, `<div class="modal" aria-hidden="true" role="dialog" tabindex="-1"></div>`);
 }

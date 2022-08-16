@@ -9,6 +9,6 @@ class DBS5DropdownList : DBS5Obj {
 }
 mixin(H5Calls!"BS5DropdownList");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5DropdownList, `<ul class="dropdown-menu"></ul>`);
 }

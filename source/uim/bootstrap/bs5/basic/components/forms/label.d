@@ -12,7 +12,7 @@ class DBS5FormLabel : DBS5Obj {
 }
 mixin(H5Calls!"BS5FormLabel");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
   assert(BS5FormLabel);
   assert(BS5FormLabel == `<label class="form-label"></label>`);
 }

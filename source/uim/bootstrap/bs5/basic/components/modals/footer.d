@@ -8,6 +8,6 @@ class DBS5ModalFooter : DBS5Obj {
 }
 mixin(H5Calls!"BS5ModalFooter");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5ModalFooter, `<div class="modal-footer"></div>`);
 }

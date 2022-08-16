@@ -52,7 +52,7 @@ T flexOrder(T)(T h5, string position) {
 	return h5.classes("order-"~position);
 }
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(H5Div.flex, `<div class="d-flex"></div>`);
 	assert(H5Div.flexInline, `<div class="d-inline-flex"></div>`);
 }

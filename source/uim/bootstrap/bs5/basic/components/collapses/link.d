@@ -8,6 +8,6 @@ class DBS5CollapseLink : DBS5Obj {
 }
 mixin(H5Calls!"BS5CollapseLink");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5CollapseLink == `<a class="btn" data-toggle="collapse" role="button"></a>`);
 }

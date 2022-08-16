@@ -8,6 +8,6 @@ class DBS5Collapse : DBS5Obj {
 }
 mixin(H5Calls!"BS5Collapse");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5Collapse == `<div class="collapse"></div>`);
 }

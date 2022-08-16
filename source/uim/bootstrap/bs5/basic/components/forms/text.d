@@ -8,6 +8,6 @@ class DBS5FormText : DBS5Obj {
 }
 mixin(H5Calls!"BS5FormText");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5FormText == `<small class="form-text"></small>`);
 }

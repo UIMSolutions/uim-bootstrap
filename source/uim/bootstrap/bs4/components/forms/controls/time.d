@@ -8,6 +8,6 @@ class DBS4InputTime : DBS4Input {
 }
 mixin(H5Calls!("BS4InputTime"));
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4InputTime, `<input class="form-control" type="time">`);
 }

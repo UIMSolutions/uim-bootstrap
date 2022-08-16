@@ -80,7 +80,7 @@ class DBS5InputSelect : DBS5Obj {
 }
 mixin(H5Calls!("BS5InputSelect"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	// TODO assert 
 	
 }

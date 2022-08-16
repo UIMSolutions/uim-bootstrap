@@ -8,12 +8,12 @@ class DBS4TableBody : DBS4Obj {
 
 	mixin(MyContent!("row", "BS4TableRow"));
 	mixin(MyContent!("tr", "BS4TableRow"));
-	unittest {
+	version(test_uim_bootstrap) { unittest {
 		assert(BS4Table.row, `<table class="table"><tr></tr></table>`);
 	}	
 }
 mixin(H5Calls!"BS4TableBody");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4TableBody, `<tbody></tbody>`);
 }

@@ -8,7 +8,7 @@ class DBS4DropdownHeader : DBS4Obj {
 }
 mixin(H5Calls!"BS4DropdownHeader");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 	
 	assert(BS4DropdownHeader, `<h6 class="dropdown-header"></h6>`);

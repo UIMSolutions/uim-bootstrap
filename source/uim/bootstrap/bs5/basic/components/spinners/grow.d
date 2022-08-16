@@ -8,6 +8,6 @@ class DBS5SpinnerGrow : DBS5Obj {
 }
 mixin(H5Calls!("BS5SpinnerGrow"));
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5SpinnerGrow, `<div class="spinner-grow"></div>`);
 }

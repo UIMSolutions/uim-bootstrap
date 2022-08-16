@@ -17,6 +17,6 @@ class DBS5NavbarToggler : DBS5ButtonObj {
 }
 mixin(H5Calls!"BS5NavbarToggler");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS5NavbarToggler, `<button class="navbar-toggler" aria-controls="navbar" data-bs-toggle="collapse" type="button"></button>`);
 }

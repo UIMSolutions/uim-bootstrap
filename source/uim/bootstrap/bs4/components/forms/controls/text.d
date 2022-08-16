@@ -8,6 +8,6 @@ class DBS4InputText : DBS4Input {
 }
 mixin(H5Calls!("BS4InputText"));
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4InputText, `<input class="form-control" type="text">`);
 }

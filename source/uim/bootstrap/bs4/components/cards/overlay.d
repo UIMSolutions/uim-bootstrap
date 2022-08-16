@@ -9,6 +9,6 @@ class DBS4CardOverlay : DBS4Obj {
 }
 /// Shortcuts
 mixin(H5Calls!"BS4CardOverlay");
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4CardOverlay == `<div class="card-img-overlay"></div>`);
 }

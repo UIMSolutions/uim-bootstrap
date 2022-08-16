@@ -17,7 +17,7 @@ class DBS4TabList : DBS4Obj {
 }
 mixin(H5Calls!"BS4TabList");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 	
 	assert(BS4TabList, `<ul class="nav" role="tablist"></ul>`);

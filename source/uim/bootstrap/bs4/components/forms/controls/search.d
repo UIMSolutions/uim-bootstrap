@@ -8,6 +8,6 @@ class DBS4InputSearch : DBS4Input {
 }
 mixin(H5Calls!("BS4InputSearch"));
 ///
-unittest {
+version(test_uim_bootstrap) { unittest {
 	assert(BS4InputSearch, `<input class="form-control" type="search">`);	
 }

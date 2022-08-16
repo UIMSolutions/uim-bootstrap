@@ -25,7 +25,7 @@ T stickyPosition(T)(T h5, string position) {
 	return h5.classes("sticky-"~position);
 }
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 
 }

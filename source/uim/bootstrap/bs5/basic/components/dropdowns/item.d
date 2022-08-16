@@ -8,6 +8,6 @@ class DBS5DropdownItem : DBS5Obj {
 }
 mixin(H5Calls!"BS5DropdownItem");
 
-unittest {
+version(test_uim_bootstrap) { unittest {
 	
 }
