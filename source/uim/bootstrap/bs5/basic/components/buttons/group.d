@@ -8,7 +8,7 @@ class DBS5ButtonGroup : DBS5Obj {
 
 	// Set size of button group
 	O size(this O)(string value) {
-		this.classes("btn-group-" ~ value);
+		this.addClasses("btn-group-" ~ value);
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {

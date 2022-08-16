@@ -7,7 +7,7 @@ class DBS5ListButton : DBS5Obj {
 	mixin(H5This!("button", ["list-group-item", "list-group-item-action"], `["type":"button"]`));
 
 	/// Set button to active
-	O active(this O)(bool value = true) { this.classes("active"); return cast(O)this; }
+	O active(this O)(bool value = true) { this.addClasses("active"); return cast(O)this; }
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5ListButton.active, `<button class="active list-group-item list-group-item-action" type="button"></button>`);
 	}}
@@ -19,7 +19,7 @@ class DBS5ListButton : DBS5Obj {
 	}}
 
 	/// Set button color
-	O color(this O)(string aColor) { this.classes("list-group-item-"~aColor); return cast(O)this; }
+	O color(this O)(string aColor) { this.addClasses("list-group-item-"~aColor); return cast(O)this; }
 }
 mixin(H5Calls!"BS5ListButton");
 

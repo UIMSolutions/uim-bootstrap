@@ -7,14 +7,14 @@ class DBS5Card : DBS5Obj {
 	mixin(H5This!("DIV", ["card"]));
 
 	O block(this O)()	{
-		return this.classes("card-block");
+		return this.addClasses("card-block");
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Card.block, `<div class="card card-block"></div>`);
 	}}
 
 	O inverse(this O)() {
-		return this.classes("card-inverse");
+		return this.addClasses("card-inverse");
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Card.inverse, `<div class="card card-inverse"></div>`);

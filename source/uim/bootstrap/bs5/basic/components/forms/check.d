@@ -7,7 +7,7 @@ class DBS5FormCheck : DBS5Obj {
 	mixin(H5This!("Div", ["form-check"]));
 	mixin(TProperty!("string", "forId"));
 
-	O inline(this O)(bool mode = true) { if (mode) this.classes("form-check-inline"); return cast(O)this; }
+	O inline(this O)(bool mode = true) { if (mode) this.addClasses("form-check-inline"); return cast(O)this; }
 	
 	mixin(MyContent!("label", "BS5FormCheckLabel"));
 }

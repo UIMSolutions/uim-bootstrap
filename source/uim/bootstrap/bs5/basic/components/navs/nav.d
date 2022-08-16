@@ -21,7 +21,7 @@ class DBS5Nav : DBS5Obj {
 		assert(BS5Nav.link, `<ul class="nav"><li class="nav-item"><a class="nav-link" href="#"></a></li></ul>`);
 	}}
 
-	O pills(this O)(bool mode = true) { if (mode) this.classes("nav-pills"); return cast(O)this; }
+	O pills(this O)(bool mode = true) { if (mode) this.addClasses("nav-pills"); return cast(O)this; }
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Nav.pills, `<ul class="nav nav-pills"></ul>`);
 	}}

@@ -10,7 +10,7 @@ class DBS5CustomCheckbox : DBS5CustomControl {
     super.initialize();
 
     this
-      .addClasses(["custom-checkbox", "custom-control"]);
+      .addClasses("custom-checkbox");
   }
 }
 mixin(H5Calls!"BS5CustomCheckbox");

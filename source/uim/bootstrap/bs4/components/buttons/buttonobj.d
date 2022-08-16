@@ -18,13 +18,13 @@ class DBS4ButtonObj : DBS4Obj {
 
 	override string onlyHTML() {
 		if (colorMode) {
-			if (outline) this.classes("btn-outline-"~colorMode);
-			else this.classes("btn-"~colorMode);
+			if (outline) this.addClasses("btn-outline-"~colorMode);
+			else this.addClasses("btn-"~colorMode);
 		}
-		if (sizeMode.length > 0) this.classes("btn-"~sizeMode);
-		if (block) this.classes("btn-block");
-		if (active) this.classes("active");
-		if (disabled) this.classes("disabled");
+		if (sizeMode.length > 0) this.addClasses("btn-"~sizeMode);
+		if (block) this.addClasses("btn-block");
+		if (active) this.addClasses("active");
+		if (disabled) this.addClasses("disabled");
 		if (dataToggle) _attributes["data-toggle"]="button"; else _attributes.remove("data-toggle");
 
 		return super.onlyHTML;

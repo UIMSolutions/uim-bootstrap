@@ -10,9 +10,9 @@ class DBS5Pagination : DBS5Obj {
     super.initialize();
   }
 
-	O center(this O)(string aSize) { return this.classes("justify-content-centers"); }
-	O right(this O)(string aSize) { return this.classes("justify-content-end"); }
-	O size(this O)(string aSize) { return this.classes("pagination-"~aSize); }
+	O center(this O)(string aSize) { return this.addClasses("justify-content-centers"); }
+	O right(this O)(string aSize) { return this.addClasses("justify-content-end"); }
+	O size(this O)(string aSize) { return this.addClasses("pagination-"~aSize); }
 
 	mixin(MyContent!("item", "BS5PageItem"));
 	mixin(MyContent!("link", "this.item", "BS5PageLink"));

@@ -6,7 +6,7 @@ import uim.bootstrap;
 class DBS5ModalContent : DBS5Obj {
 	mixin(H5This!("DIV", ["modal-content"]));
 
-	O fade(this O)(bool mode = true) { return this.classes("fade"); }
+	O fade(this O)(bool mode = true) { return this.addClasses("fade"); }
 
 	mixin(MyContent!("header", "BS5ModalHeader"));
 	mixin(MyContent!("body_", "BS5ModalBody"));

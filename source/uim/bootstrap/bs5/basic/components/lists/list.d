@@ -9,7 +9,7 @@ class DBS5List : DBS5Obj {
 
 	// Removes some borders and rounded corners to render group in a parent container
 	O flush(this O)() {
-		this.classes("list-group-flush");
+		this.addClasses("list-group-flush");
 		return cast(O)this;
 	}
 

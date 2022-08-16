@@ -7,7 +7,7 @@ class DBS5Navbar : DBS5Obj {
 	mixin(H5This!("Nav", ["navbar"]));
 
 	O center(this O)(bool value = true) {
-		if (value) this.classes("justify-content-center");
+		if (value) this.addClasses("justify-content-center");
 		return cast(O)this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -16,7 +16,7 @@ class DBS5Navbar : DBS5Obj {
 	}}
 
 	O dark(this O)(bool value = true) {
-		if (value) this.classes("navbar-dark");
+		if (value) this.addClasses("navbar-dark");
 		return cast(O)this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -24,7 +24,7 @@ class DBS5Navbar : DBS5Obj {
 	}}
 
 	O expand(this O)(string screenSize) {
-		this.classes("navbar-expand-" ~ screenSize);
+		this.addClasses("navbar-expand-" ~ screenSize);
 		return cast(O)this;
 	}
 	///
@@ -33,7 +33,7 @@ class DBS5Navbar : DBS5Obj {
 	}}
 
 	O light(this O)(bool value = true) {
-		this.classes("navbar-light");
+		this.addClasses("navbar-light");
 		return cast(O)this;
 	}
 	///

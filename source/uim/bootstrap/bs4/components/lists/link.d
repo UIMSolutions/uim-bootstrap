@@ -6,11 +6,11 @@ import uim.bootstrap;
 class DBS4ListLink : DBS4Obj {
 	mixin(H5This!("A", ["list-group-item", "list-group-item-action"], null));
 
-	O active(this O)(bool value = true) { return this.classes("active"); }
+	O active(this O)(bool value = true) { return this.addClasses("active"); }
 
-	O disabled(this O)(bool value = true) { return this.classes("disabled"); }
+	O disabled(this O)(bool value = true) { return this.addClasses("disabled"); }
 
-	O color(this O)(string aColor) { return this.classes("list-group-item-"~aColor); }
+	O color(this O)(string aColor) { return this.addClasses("list-group-item-"~aColor); }
 }
 mixin(H5Calls!"BS4ListLink");
 

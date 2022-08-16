@@ -7,11 +7,11 @@ class DBS5NavList : DBS5Obj {
 	mixin(H5This!("UL", ["nav"]));
 
 	mixin(MyContent!("item", "BS5NavItem"));
-	O vertical(this O)(bool mode = true) { return this.classes("flex-column"); }
-	O tabs(this O)(bool mode = true) { return this.classes("nav-tabs"); }
-	O pills(this O)(bool mode = true) { return this.classes("nav-pills"); }
-	O fill(this O)(bool mode = true) { return this.classes("nav-fill"); }
-	O justified(this O)(bool mode = true) { return this.classes("nav-justified"); }
+	O vertical(this O)(bool mode = true) { return this.addClasses("flex-column"); }
+	O tabs(this O)(bool mode = true) { return this.addClasses("nav-tabs"); }
+	O pills(this O)(bool mode = true) { return this.addClasses("nav-pills"); }
+	O fill(this O)(bool mode = true) { return this.addClasses("nav-fill"); }
+	O justified(this O)(bool mode = true) { return this.addClasses("nav-justified"); }
 }
 mixin(H5Calls!"BS5NavList");
 

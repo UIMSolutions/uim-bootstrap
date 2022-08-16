@@ -4,26 +4,26 @@
 import uim.bootstrap; 
 
 T border(T)(T h5) {
-	h5.classes("border");
+	h5.addClasses("border");
 	return h5;
 }
 T borderPosition(T)(T h5, string[] positions...) {
-	foreach(p; positions) h5.classes("border-"~p);
+	foreach(p; positions) h5.addClasses("border-"~p);
 	return h5;
 }
 T borderColor(T)(T h5, string colorName) {
-	return h5.classes("border", "border-"~colorName);
+	return h5.addClasses("border", "border-"~colorName);
 }
 T rounded(T)(T h5, string radius = null) {
-	if (radius) h5.classes("rounded-"~radius); else h5.classes("rounded");
+	if (radius) h5.addClasses("rounded-"~radius); else h5.addClasses("rounded");
 	return h5;
 }
 T roundedPosition(T)(T h5, string[] positions...) {
-	foreach(position; positions) h5.classes("rounded-"~position);
+	foreach(position; positions) h5.addClasses("rounded-"~position);
 	return h5;
 }
 T circle(T)(T h5, string radius = null) {
-	return h5.classes("rounded-circle");
+	return h5.addClasses("rounded-circle");
 }
 
 version(test_uim_bootstrap) { unittest {

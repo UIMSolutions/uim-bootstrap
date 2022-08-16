@@ -8,8 +8,8 @@ class DBS5PageItem : DBS5Obj {
 
 	mixin(MyContent!("link", "BS5PageLink"));
 
-	O active(this O)(bool value = true) { if (value) this.classes("active"); return cast(O)this; }
-	O disabled(this O)(bool value = true) { if (value) this.classes("disabled").attributes("tabindex", "-1"); return cast(O)this; }
+	O active(this O)(bool value = true) { if (value) this.addClasses("active"); return cast(O)this; }
+	O disabled(this O)(bool value = true) { if (value) this.addClasses("disabled").attributes("tabindex", "-1"); return cast(O)this; }
 }
 mixin(H5Calls!"BS5PageItem");
 

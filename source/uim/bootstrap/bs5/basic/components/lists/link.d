@@ -6,17 +6,17 @@ import uim.bootstrap;
 class DBS5ListLink : DBS5Obj {
 	mixin(H5This!("A", ["list-group-item", "list-group-item-action"], null));
 
-	O active(this O)(bool value = true) { return this.classes("active"); }
+	O active(this O)(bool value = true) { return this.addClasses("active"); }
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5ListLink.active, `<a class="active list-group-item list-group-item-action"></a>`);
 	}}
 
-	O disabled(this O)(bool value = true) { return this.classes("disabled"); }
+	O disabled(this O)(bool value = true) { return this.addClasses("disabled"); }
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5ListLink.disabled, `<a class="disabled list-group-item list-group-item-action"></a>`);
 	}}
 
-	O color(this O)(string aColor) { return this.classes("list-group-item-"~aColor); }
+	O color(this O)(string aColor) { return this.addClasses("list-group-item-"~aColor); }
 }
 mixin(H5Calls!"BS5ListLink");
 

@@ -17,9 +17,9 @@ class DBS5InputGroup : DBS5Obj {
 	}}
 	
 	// Setting size of group
-	O size(this O)(string sizeName) { return this.classes("input-group-"~sizeName); }
-	O small(this O)() { return this.classes("input-group-sm"); }
-	O large(this O)() { return this.classes("input-group-lg"); }
+	O size(this O)(string sizeName) { return this.addClasses("input-group-"~sizeName); }
+	O small(this O)() { return this.addClasses("input-group-sm"); }
+	O large(this O)() { return this.addClasses("input-group-lg"); }
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5InputGroup.size("sm"), `<div class="input-group input-group-sm"></div>`);
 		assert(BS5InputGroup.small, `<div class="input-group input-group-sm"></div>`);

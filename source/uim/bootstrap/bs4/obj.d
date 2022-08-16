@@ -10,7 +10,7 @@ class DBS4Obj : DH5Obj {
 	O margin(this O)(int size) { return margin("-"~to!string(size)); }
 	O margin(this O)(string side, int size) { return margin(side~"-"~to!string(size)); }
 	O margin(this O)(string value) {
-		if (value.length > 0) this.classes("m"~value);
+		if (value.length > 0) this.addClasses("m"~value);
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -21,7 +21,7 @@ class DBS4Obj : DH5Obj {
 	O padding(this O)(int size) { return padding("-"~to!string(size)); }
 	O padding(this O)(string side, int size) { return padding(side~"-"~to!string(size)); }
 	O padding(this O)(string value)	{
-		if (value.length > 0) this.classes("p"~value);
+		if (value.length > 0) this.addClasses("p"~value);
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {

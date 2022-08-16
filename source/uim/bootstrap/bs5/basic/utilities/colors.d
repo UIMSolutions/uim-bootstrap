@@ -4,13 +4,13 @@
 import uim.bootstrap; 
 
 T textColor(T)(T h5, string colorName) {
-	return h5.classes("text-"~colorName);
+	return h5.addClasses("text-"~colorName);
 }
 T bgColor(T)(T h5, string colorName) {
-	return h5.classes("bg-"~colorName);
+	return h5.addClasses("bg-"~colorName);
 }
 T backgroundColor(T)(T h5, string colorName) {
-	return h5.classes("bg-"~colorName);
+	return h5.addClasses("bg-"~colorName);
 }
 
 version(test_uim_bootstrap) { unittest {
