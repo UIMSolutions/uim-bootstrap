@@ -13,7 +13,7 @@ class DBS4Navbar : DBS4Obj {
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4Navbar.center, `<nav class="justify-content-center navbar"></nav>`);
 		assert(BS4Navbar("Test").center, `<nav class="justify-content-center navbar">Test</nav>`);
-	}
+	}}
 
 	O dark(this O)(bool value = true) {
 		if (value) this.classes("navbar-dark");
@@ -21,7 +21,7 @@ class DBS4Navbar : DBS4Obj {
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4Navbar.dark, `<nav class="navbar navbar-dark"></nav>`);
-	}
+	}}
 
 	O expand(this O)(string screenSize) {
 		this.classes("navbar-expand-" ~ screenSize);
@@ -30,7 +30,7 @@ class DBS4Navbar : DBS4Obj {
 	///
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4Navbar.expand("lg"), `<nav class="navbar navbar-expand-lg"></nav>`);
-	}
+	}}
 
 	O light(this O)(bool value = true) {
 		this.classes("navbar-light");
@@ -39,7 +39,7 @@ class DBS4Navbar : DBS4Obj {
 	///
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4Navbar.light, `<nav class="navbar navbar-light"></nav>`);
-	}
+	}}
 
 /*
 	mixin(MyContent!("nav", "DBS4NavbarNav"));

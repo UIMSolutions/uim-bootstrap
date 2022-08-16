@@ -9,7 +9,5 @@ class DBS5DropdownHeader : DBS5Obj {
 mixin(H5Calls!"BS5DropdownHeader");
 
 version(test_uim_bootstrap) { unittest {
-	
-	
-	assert(BS5DropdownHeader, `<h6 class="dropdown-header"></h6>`);
-}
+	assert(BS5DropdownHeader == `<h6 class="dropdown-header"></h6>`);
+}}

@@ -11,4 +11,4 @@ mixin(H5Calls!"BS5CardBlock");
 version(test_uim_bootstrap) { unittest {
 	assert(BS5CardBlock);
 	assert(BS5CardBlock == `<div class="card-block"></div>`);
-}
+}}

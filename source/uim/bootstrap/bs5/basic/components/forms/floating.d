@@ -14,7 +14,6 @@ class DBS5FormFloating : DBS5Obj {
 }
 mixin(H5Calls!"BS5FormFloating");
 
-version(test_uim_bootstrap) {
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5FormFloating);
 		assert(BS5FormFloating == `<div class="form-floating"></div>`);

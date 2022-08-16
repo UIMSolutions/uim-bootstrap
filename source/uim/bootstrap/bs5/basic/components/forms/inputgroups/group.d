@@ -56,4 +56,4 @@ mixin(H5Calls!"BS5InputGroup");
 
 version(test_uim_bootstrap) { unittest {
 		assert(BS5InputGroup, `<div class="input-group"></div>`);
-}
+}}

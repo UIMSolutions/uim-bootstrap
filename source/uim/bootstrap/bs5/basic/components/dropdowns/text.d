@@ -10,4 +10,4 @@ mixin(H5Calls!"BS5DropdownText");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5DropdownText("Hallo"), `<p>Hallo</p>`);
-}
+}}

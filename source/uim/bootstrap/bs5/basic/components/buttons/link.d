@@ -10,12 +10,14 @@ class DBS5ButtonLink : DBS5Obj {
 		this.classes(["disabled"]).attributes(["tabindex":"-1", "aria-disabled":"true"]);
 		return cast(O)this;
 	}
-	unittest{}
+	version(test_uim_bootstrap) { unittest {
+		// TODO
+	}}
 }
 mixin(H5Calls!"BS5ButtonLink");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5ButtonLink, `<a class="btn" role="button"></a>`);
-}
+}}
 	
 

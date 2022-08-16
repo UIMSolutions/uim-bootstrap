@@ -10,4 +10,4 @@ mixin(H5Calls!"BS5FormText");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5FormText == `<small class="form-text"></small>`);
-}
+}}

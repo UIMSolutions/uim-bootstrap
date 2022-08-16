@@ -10,7 +10,7 @@ class DBS5CardImage : DBS5Obj { // default top
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5CardImage.position("top") == `<img class="card-img-top">`);
 		assert(BS5CardImage.position("bottom") == `<img class="card-img-bottom">`);
-	}
+	}}
 }
 mixin(H5Calls!"BS5CardImage");
 
@@ -18,4 +18,4 @@ version(test_uim_bootstrap) { unittest {
 	assert(BS5CardImage == `<img class="card-img-top">`);
 	assert(BS5CardImage.position("top") == `<img class="card-img-top">`);
 	assert(BS5CardImage.position("bottom") == `<img class="card-img-bottom">`);
-}
+}}

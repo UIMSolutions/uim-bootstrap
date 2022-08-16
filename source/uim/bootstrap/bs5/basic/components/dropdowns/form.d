@@ -10,4 +10,4 @@ mixin(H5Calls!"BS5DropdownForm");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5DropdownForm, `<form></form>`);
-}
+}}

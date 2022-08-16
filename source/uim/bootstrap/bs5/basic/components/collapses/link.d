@@ -10,4 +10,4 @@ mixin(H5Calls!"BS5CollapseLink");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5CollapseLink == `<a class="btn" data-toggle="collapse" role="button"></a>`);
-}
+}}

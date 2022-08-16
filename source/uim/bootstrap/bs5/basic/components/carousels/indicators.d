@@ -14,12 +14,12 @@ class DBS5CarouselIndicators : DBS5Obj {
 	mixin(MyContent!("indicator", "H5Button"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5CarouselIndicators.indicator.toString == `<div class="carousel-indicators"><button></button></div>`);
-	}
+	}}
 }
 mixin(H5Calls!"BS5CarouselIndicators");
 version(test_uim_bootstrap) { unittest {
 	assert(BS5CarouselIndicators.toString == `<div class="carousel-indicators"></div>`);
-}
+}}
 
 class DBS5CarouselIndicator : DBS5Obj {
 	mixin(H5This!("button", ["carousel-indicator"]));

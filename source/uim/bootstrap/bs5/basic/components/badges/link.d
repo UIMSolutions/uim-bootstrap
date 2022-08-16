@@ -17,7 +17,7 @@ class DBS5BadgeLink : DBS5Obj {
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5BadgeLink.color("secondary") == `<a class="badge badge-secondary"></a>`);
-	}
+	}}
 
 	//Rounded badges
 	O pill(this O)(bool mode = true) {
@@ -26,7 +26,7 @@ class DBS5BadgeLink : DBS5Obj {
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5BadgeLink.pill(true) == `<a class="badge badge-pill"></a>`);
-	}
+	}}
 }
 // Shortcut to class DBS5Badge
 mixin(H5Calls!("BS5BadgeLink"));
@@ -34,4 +34,4 @@ mixin(H5Calls!("BS5BadgeLink"));
 version(test_uim_bootstrap) { unittest {
 	assert(BS5BadgeLink);
 	assert(BS5BadgeLink == `<a class="badge"></a>`);
-}
+}}

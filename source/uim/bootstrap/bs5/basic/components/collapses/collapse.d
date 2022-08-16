@@ -10,4 +10,4 @@ mixin(H5Calls!"BS5Collapse");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5Collapse == `<div class="collapse"></div>`);
-}
+}}

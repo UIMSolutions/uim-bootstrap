@@ -11,5 +11,5 @@ mixin(H5Calls!("BS5AccordionBody"));
 version(test_uim_bootstrap) { unittest {
 	assert(BS5AccordionBody);
 	assert(BS5AccordionBody == `<div class="accordion-body"></div>`);
-}
+}}
 

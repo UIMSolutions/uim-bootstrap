@@ -14,7 +14,7 @@ class DBS4BreadcrumbItem : DBS4Obj {
 	O disabled(this O)(bool mode = true) { if (mode) this.addClasses("disabled"); return cast(O)this; }
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4BreadcrumbItem.disabled == `<li class="breadcrumb-item disabled"></li>`);
-	}
+	}}
 
 	mixin(MyContent!("link", "BS4BreadcrumbLink"));
 	version(test_uim_bootstrap) { unittest {

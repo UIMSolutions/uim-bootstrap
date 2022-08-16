@@ -14,4 +14,4 @@ mixin(H5Calls!("BS5InputSubmit"));
 
 version(test_uim_bootstrap) { unittest {
   assert(BS5InputSubmit == `<input class="form-control" type="submit">`);
-}
+}}

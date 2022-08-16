@@ -30,4 +30,4 @@ mixin(H5Calls!("BS5InputDateTime"));
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5InputDateTime == `<input class="form-control" type="datetime-local">`);
-}
+}}

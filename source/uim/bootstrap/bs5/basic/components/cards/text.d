@@ -11,4 +11,4 @@ mixin(H5Calls!"BS5CardText");
 version(test_uim_bootstrap) { unittest {
 	assert(BS5CardText, `<p class="card-text"></p>`);
 	assert(BS5CardText.content("SomeThing"), `<p class="card-text">SomeThing</p>`);
-}
+}}

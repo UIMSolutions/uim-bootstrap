@@ -15,4 +15,4 @@ mixin(H5Calls!"BS5FormLabel");
 version(test_uim_bootstrap) { unittest {
   assert(BS5FormLabel);
   assert(BS5FormLabel == `<label class="form-label"></label>`);
-}
+}}

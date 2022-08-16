@@ -10,4 +10,4 @@ mixin(H5Calls!"BS5InputGroupText");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5InputGroupText, `<div class="input-group-text"></div>`);
-}
+}}

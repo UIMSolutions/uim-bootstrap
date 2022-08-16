@@ -7,7 +7,8 @@ class DBS5DropdownToggleLink : DBS5ButtonLink {
 	mixin(H5This!("A", ["btn", "dropdown-toggle"], `["href":"#", "aria-expanded":"false", "role":"button", "data-bs-toggle":"dropdown"]`));
 }
 mixin(H5Calls!"BS5DropdownToggleLink");
+
 version(test_uim_bootstrap) { unittest {
 	assert(BS5DropdownToggleLink, `<a class="btn dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" role="button"></a>`);
-}
+}}
 

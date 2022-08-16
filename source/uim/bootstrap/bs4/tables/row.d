@@ -10,7 +10,7 @@ class DBS4TableRow : DBS4Obj {
 	mixin(MyContent!("th", "H5Th"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4TableRow.th, `<tr><th></th></tr>`);
-	}
+	}}
 
 	/// Adding a cell
 	mixin(MyContent!("cell", "H5Td"));
@@ -18,7 +18,7 @@ class DBS4TableRow : DBS4Obj {
 	version(test_uim_bootstrap) { unittest {
 		assert(BS4TableRow.cell, `<tr><td></td></tr>`);
 		assert(BS4TableRow.td, `<tr><td></td></tr>`);
-	}
+	}}
 
 /*
 	mixin(TProperty!("string[string]", "keyPairs"));

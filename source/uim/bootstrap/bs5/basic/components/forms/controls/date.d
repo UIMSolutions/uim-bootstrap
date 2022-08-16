@@ -9,13 +9,14 @@ class DBS5InputDate : DBS5Input {
   override void initialize () {
     super.initialize();
   }
+	
 	O value(this O)(long timestamp) {
 		_attributes["value"] = (cast(DateTime)fromTimestamp(timestamp)).toISOExtString.split("T")[0];
 		return cast(O)this;
 	}
 	version(test_uim_bootstrap) { unittest {					
     /// TODO
-	}
+	}}
 
 	O value(this O)(string dateValue) {
 		_attributes["value"] = dateValue;
@@ -23,7 +24,7 @@ class DBS5InputDate : DBS5Input {
 	}
 	version(test_uim_bootstrap) { unittest {		
     /// TODO
-	}
+	}}
 
 	O value(this O)(SysTime systime) {
 		_attributes["value"] = (cast(DateTime)systime).toISOExtString.split("T")[0];
@@ -31,7 +32,7 @@ class DBS5InputDate : DBS5Input {
 	}
 	version(test_uim_bootstrap) { unittest {			
     /// TODO
-	}
+	}}
 
 	O value(this O)(DateTime datetime) {
 		_attributes["value"] = datetime.toISOExtString.split("T")[0];
@@ -39,11 +40,11 @@ class DBS5InputDate : DBS5Input {
 	}
 	version(test_uim_bootstrap) { unittest {		
     /// TODO	
-	}
+	}}
 
 }
 mixin(H5Calls!("BS5InputDate"));
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5InputDate == `<input class="form-control" type="date">`);
-}
+}}

@@ -23,4 +23,4 @@ class DBS5InputHidden : DBS5Input {
 mixin(H5Calls!("BS5InputHidden"));
 version(test_uim_bootstrap) { unittest {
   assert(BS5InputHidden == `<input class="form-control" type="hidden">`);
-}
+}}

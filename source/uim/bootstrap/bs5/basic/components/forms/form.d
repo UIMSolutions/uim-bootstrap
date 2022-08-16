@@ -18,4 +18,4 @@ mixin(H5Calls!"BS5Form");
 version(test_uim_bootstrap) { unittest {
 	assert(BS5Form == `<form></form>`);
 	assert(BS5Form.inline == `<form class="form-inline"></form>`);
-}
+}}

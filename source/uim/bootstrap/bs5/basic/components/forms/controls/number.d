@@ -29,10 +29,9 @@ class DBS5InputNumber : DBS5Obj {
 		_attributes["min"] = "0";
 		return cast(O)this;
 	}
-
 }
 mixin(H5Calls!("BS5InputNumber"));
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5InputNumber == `<input class="form-control" type="number">`);
-}
+}}

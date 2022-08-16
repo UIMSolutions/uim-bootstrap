@@ -15,5 +15,5 @@ version(test_uim_bootstrap) { unittest {
 	assert(BS5Accordion == `<div class="accordion"></div>`);
 
 	assert(BS5Accordion.item == `<div class="accordion"><div class="accordion-item"></div></div>`);
-}
+}}
 

@@ -82,5 +82,4 @@ mixin(H5Calls!("BS5InputSelect"));
 
 version(test_uim_bootstrap) { unittest {
 	// TODO assert 
-	
-}
+}}
