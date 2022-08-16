@@ -15,13 +15,13 @@ class DBS4Alert : DBS4Obj {
 	}}
 
 	O link(this O)(string content, string url = "#") {
-		this.content(`<a href="` ~ url ~ `" class="alert-link">` ~ content ~ `</a>`);
+		this.addContent(`<a href="` ~ url ~ `" class="alert-link">` ~ content ~ `</a>`);
 		return cast(O) this;
 	}
 
 	O dismissible(this O)(bool show = true, string icon = "&times;") {
 		if (show) 		{
-			this.content(`<button type="button" class="close" data-dismiss="alert">` ~ icon ~ `</button>`);
+			this.addContent(`<button type="button" class="close" data-dismiss="alert">` ~ icon ~ `</button>`);
 			this.addClasses("alert-dismissible");
 		}
 		return cast(O) this;

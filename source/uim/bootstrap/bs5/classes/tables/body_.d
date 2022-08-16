@@ -10,10 +10,10 @@ class DBS5TableBody : DBS5Obj {
 	mixin(MyContent!("tr", "BS5TableRow"));
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Table.row, `<table class="table"><tr></tr></table>`);
-	}	
+	}}
 }
 mixin(H5Calls!"BS5TableBody");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5TableBody, `<tbody></tbody>`);
-}
+}}

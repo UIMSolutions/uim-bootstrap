@@ -7,7 +7,7 @@ class DBS4ButtonClose : DBS4Button {
 	mixin(H5This!("button", ["close"], `["aria-label":"Close"]`));
 	
 	override string onlyHTML() {
-		this.content(H5Span(["aria-hidden":"true"], "&times;"));
+		this.addContent(H5Span(["aria-hidden":"true"], "&times;"));
 		return super.onlyHTML;
 	}
 }

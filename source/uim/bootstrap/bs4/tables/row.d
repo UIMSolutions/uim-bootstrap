@@ -29,7 +29,7 @@ class DBS4TableRow : DBS4Obj {
 		if (_keyPairs.empty) return onlyHTML;
 		else {
 			foreach(col; columns) {
-				if (col.key in _keyPairs) this.content("<td>"~_keyPairs[col.key]~"</td>");
+				if (col.key in _keyPairs) this.addContent("<td>"~_keyPairs[col.key]~"</td>");
 			}
 		}
 		return super.onlyHTML;
@@ -38,7 +38,7 @@ class DBS4TableRow : DBS4Obj {
 		this.clearContent;
 		if ((_values.length == 0) && (!_keyPairs.empty)) _values = _keyPairs.values;
 		foreach(v; _values) {
-			this.content("<td>"~v~"</td>");
+			this.addContent("<td>"~v~"</td>");
 		}
 		return super.onlyHTML;
 	}*/

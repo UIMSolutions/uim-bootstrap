@@ -18,7 +18,7 @@ class DBS5Obj : DH5Obj {
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Obj.margins("t-2"), `<div class="mt-2"></div>`);
 		assert(BS5Obj.margins("t-sm-2", "t-lg-4"), `<div class="mt-lg-4 mt-sm-2"></div>`);
-	}
+	}}
 
 	/// Adding paddings
 	O paddings(this O)(string[] values...)	{
@@ -31,7 +31,7 @@ class DBS5Obj : DH5Obj {
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Obj.paddings("t-2"), `<div class="pt-2"></div>`);
-	}
+	}}
 
 /* 	/// Clear border 
 	O noPadding(this O)(string side = null) { 
@@ -167,9 +167,8 @@ class DBS5Obj : DH5Obj {
 	}
  */
 }
-
 mixin(H5Calls!"BS5Obj");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5Obj == "<div></div>");
-}
+}}

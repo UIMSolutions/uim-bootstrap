@@ -10,4 +10,4 @@ mixin(H5Calls!"BS5ModalFooter");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5ModalFooter, `<div class="modal-footer"></div>`);
-}
+}}

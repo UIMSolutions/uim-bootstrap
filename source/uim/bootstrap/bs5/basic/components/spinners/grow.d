@@ -10,4 +10,4 @@ mixin(H5Calls!("BS5SpinnerGrow"));
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5SpinnerGrow, `<div class="spinner-grow"></div>`);
-}
+}}

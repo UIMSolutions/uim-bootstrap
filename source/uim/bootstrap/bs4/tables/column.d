@@ -15,7 +15,7 @@ class DBS4TableColumn : DBS4Obj {
 		this.clearContent;
 		_attributes["scope"]="col";
 		if (_width) _attributes["width"]=to!string(_width);
-		this.content(_title);
+		this.addContent(_title);
 		return super.onlyHTML;
 	}
 }

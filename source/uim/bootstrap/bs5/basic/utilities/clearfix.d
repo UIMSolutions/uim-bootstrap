@@ -8,7 +8,5 @@ T clearfix(T)(T h5) {
 }
 
 version(test_uim_bootstrap) { unittest {
-	
-
 	assert(H5Div.clearfix, `<div class="clearfix"></div>`);
-}
+}}

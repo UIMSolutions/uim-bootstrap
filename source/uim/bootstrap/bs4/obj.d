@@ -102,15 +102,17 @@ class DBS4Obj : DH5Obj {
 	}}
 
 	O clearfix(this O)() { 
-		this.classes("clearfix");
+		this
+			.addClasses("clearfix");
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.clearfix, `<div class="clearfix"></div>`);
+		assert(BS4Obj.clearfix == `<div class="clearfix"></div>`);
 	}}
 
 	O closeButton(this O)(string icon = "&times;") { 
-		this.content(BS4Button(["close"], ["aria-label":"Close"], H5Span(["aria-label":"true"], icon)));
+		this
+			.addContent(BS4Button(["close"], ["aria-label":"Close"], H5Span(["aria-label":"true"], icon)));
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
@@ -120,13 +122,19 @@ class DBS4Obj : DH5Obj {
 	/// Setting text color
 	O textColor(this O)(string color, int value) { return textColor(color, to!string(value)); }
 	O textColor(this O)(string color, string value = null) {
-		if (value.length > 0) this.classes("text-"~color~"-"~value);
-		else this.classes("text-"~color);
+		if (value.length > 0) {
+			this
+				.addClasses("text-"~color~"-"~value); }
+		else {
+			this
+				.addClasses("text-"~color);
+		}
+
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.textColor("primary"), `<div class="text-primary"></div>`);
-		assert(BS4Obj.textColor("black", "50"), `<div class="text-black-50"></div>`);
+		assert(BS4Obj.textColor("primary") == `<div class="text-primary"></div>`);
+		assert(BS4Obj.textColor("black", "50") == `<div class="text-black-50"></div>`);
 	}}
 
 	/// Setting background color
@@ -137,19 +145,21 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.background("primary"), `<div class="bg-primary"></div>`);
+		assert(BS4Obj.background("primary") == `<div class="bg-primary"></div>`);
 	}}
 
 	/// Setting display
 	O display(this O)(string value) { return this.display(null, value); }
 	O display(this O)(string breakpoint, string value) {
 		if (breakpoint.length > 0) this.classes("d-"~breakpoint~"-"~value);
-		else this.classes("d-"~value);
+		else {
+			this
+			.addClasses("d-"~value); }
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.display("none"), `<div class="d-none"></div>`);
-		assert(BS4Obj.display("sm", "block"), `<div class="d-sm-block"></div>`);
+		assert(BS4Obj.display("none") == `<div class="d-none"></div>`);
+		assert(BS4Obj.display("sm", "block") == `<div class="d-sm-block"></div>`);
 	}}
 	
 	/// Setting print display

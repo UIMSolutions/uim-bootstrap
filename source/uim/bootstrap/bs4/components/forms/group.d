@@ -13,7 +13,7 @@ class DBS4FormGroup : DBS4Obj {
 	mixin(MyContent!("label", "H5Label"));
 	O label(this O)(string forId, string title, string[] someClasses = null, string[string] someAttributes = null) {
 		someAttributes["for"] = forId;
-		this.content(H5Label(someClasses, someAttributes, title));
+		this.addContent(H5Label(someClasses, someAttributes, title));
 		return cast(O)this;
 	}
 	mixin(MyContent!("div", "H5Div"));

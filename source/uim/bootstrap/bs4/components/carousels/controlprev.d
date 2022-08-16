@@ -7,8 +7,8 @@ class DBS4CarouselControlPrev : DBS4Obj {
 	mixin(H5This!("a", ["carousel-control-prev"], `["data-slide":"prev"]`));
 	override public void initialize() {
 		super.initialize;
-		this.content(H5Span(["carousel-control-prev-icon"]));
-		this.content(H5Span(["sr-only"], "Previous"));
+		this.addContent(H5Span(["carousel-control-prev-icon"]));
+		this.addContent(H5Span(["sr-only"], "Previous"));
 	}
 }
 

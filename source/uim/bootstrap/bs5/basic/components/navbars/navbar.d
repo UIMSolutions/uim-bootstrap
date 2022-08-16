@@ -13,7 +13,7 @@ class DBS5Navbar : DBS5Obj {
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Navbar.center, `<nav class="justify-content-center navbar"></nav>`);
 		assert(BS5Navbar("Test").center, `<nav class="justify-content-center navbar">Test</nav>`);
-	}
+	}}
 
 	O dark(this O)(bool value = true) {
 		if (value) this.classes("navbar-dark");
@@ -21,7 +21,7 @@ class DBS5Navbar : DBS5Obj {
 	}
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Navbar.dark, `<nav class="navbar navbar-dark"></nav>`);
-	}
+	}}
 
 	O expand(this O)(string screenSize) {
 		this.classes("navbar-expand-" ~ screenSize);
@@ -30,7 +30,7 @@ class DBS5Navbar : DBS5Obj {
 	///
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Navbar.expand("lg"), `<nav class="navbar navbar-expand-lg"></nav>`);
-	}
+	}}
 
 	O light(this O)(bool value = true) {
 		this.classes("navbar-light");
@@ -39,7 +39,7 @@ class DBS5Navbar : DBS5Obj {
 	///
 	version(test_uim_bootstrap) { unittest {
 		assert(BS5Navbar.light, `<nav class="navbar navbar-light"></nav>`);
-	}
+	}}
 
 /*
 	mixin(MyContent!("nav", "DBS5NavbarNav"));
@@ -51,8 +51,7 @@ class DBS5Navbar : DBS5Obj {
 }
 
 mixin(H5Calls!"BS5Navbar");
-///
-unittest
-{
+
+version(test_uim_bootstrap) { unittest {
 	assert(BS5Navbar, `<nav class="navbar"></nav>`);
-}
+}}

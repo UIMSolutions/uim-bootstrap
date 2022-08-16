@@ -10,4 +10,4 @@ mixin(H5Calls!("BS5SpinnerBorder"));
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5SpinnerBorder == `<div class="spinner-border"></div>`);
-}
+}}

@@ -10,8 +10,9 @@ class DBS5Col : DBS5Obj {
 		foreach(size; someSizes) this.classes("col-"~size); 
 		return cast(O)this; 
 	}
-	version(test_uim_bootstrap) { unittest {	
-		assert(BS5Col.sizes("12"), `<div class="col-12"></div>`);
-	}
 }
 mixin(H5Calls!("BS5Col"));
+
+version(test_uim_bootstrap) { unittest {	
+	assert(BS5Col.sizes("12") == `<div class="col-12"></div>`);
+}}

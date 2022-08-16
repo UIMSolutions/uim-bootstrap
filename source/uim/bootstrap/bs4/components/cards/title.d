@@ -16,5 +16,5 @@ mixin(H5Calls!"BS4CardTitle");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS4CardTitle, `<h4 class="card-title"></h4>`);
-	assert(BS4CardTitle.content("SomeThing"), `<h4 class="card-title">SomeThing</h4>`);
+	assert(BS4CardTitle.addContent("SomeThing"), `<h4 class="card-title">SomeThing</h4>`);
 }}

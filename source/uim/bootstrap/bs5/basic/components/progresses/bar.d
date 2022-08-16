@@ -17,4 +17,4 @@ mixin(H5Calls!"BS5ProgressBar");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5ProgressBar, `<div class="progress-bar" role="progressbar"></div>`);
-}
+}}

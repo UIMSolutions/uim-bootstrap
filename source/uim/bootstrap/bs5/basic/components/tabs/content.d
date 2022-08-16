@@ -8,9 +8,8 @@ class DBS5TabContent : DBS5Obj {
 
 	mixin(MyContent!("pane", "BS5TabPane"));
 }
-
 mixin(H5Calls!"BS5TabContent");
-///
+
 version(test_uim_bootstrap) { unittest {
 	assert(BS5TabContent, `<div class="tab-content"></div>`);
-}
+}}

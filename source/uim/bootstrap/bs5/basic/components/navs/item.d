@@ -10,11 +10,11 @@ class DBS5NavItem : DBS5Obj {
 
 	O dropdown(this O)(bool mode = true) { return this.classes("dropdown"); }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5NavItem.dropdown, `<li class="dropdown nav-item"></li>`);
-	}
+		assert(BS5NavItem.dropdown ==`<li class="dropdown nav-item"></li>`);
+	}}
 }
 mixin(H5Calls!"BS5NavItem");
 
 version(test_uim_bootstrap) { unittest {
 	assert(BS5NavItem, `<li class="nav-item"></li>`);
-}
+}}
