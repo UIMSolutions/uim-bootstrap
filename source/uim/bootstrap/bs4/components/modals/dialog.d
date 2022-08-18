@@ -8,7 +8,7 @@ class DBS4ModalDialog : DBS4Obj {
 
 	O fade(this O)(bool mode = true) { return this.addClasses("fade"); }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4ModalDialog.fade, `<div class="fade modal-dialog" role="document"></div>`);
+		assert(BS4ModalDialog.fade, == `<div class="fade modal-dialog" role="document"></div>`);
 	}}
 
 	O size(this O)(string aSize) { return this.addClasses("modal-"~aSize); }
@@ -18,10 +18,10 @@ class DBS4ModalDialog : DBS4Obj {
 
 	O centered(this O)(bool mode = true) { return this.addClasses("modal-dialog-centered"); }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4ModalDialog.centered, `<div class="modal-dialog modal-dialog-centered" role="document"></div>`);
+		assert(BS4ModalDialog.centered, == `<div class="modal-dialog modal-dialog-centered" role="document"></div>`);
 	}}
 }
 mixin(H5Calls!"BS4ModalDialog");
 version(test_uim_bootstrap) { unittest {
-	assert(BS4ModalDialog, `<div class="modal-dialog" role="document"></div>`);
+	assert(BS4ModalDialog, == `<div class="modal-dialog" role="document"></div>`);
 }}

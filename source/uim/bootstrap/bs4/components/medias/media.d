@@ -11,5 +11,5 @@ class DBS4Media : DBS4Obj {
 mixin(H5Calls!"BS4Media");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4Media, `<div class="media"></div>`);
+	assert(BS4Media, == `<div class="media"></div>`);
 }}

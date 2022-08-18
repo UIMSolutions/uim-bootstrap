@@ -11,5 +11,5 @@ class DBS4ModalContent : DBS4Obj {
 mixin(H5Calls!"BS4ModalContent");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4ModalContent, `<div class="modal-content"></div>`);
+	assert(BS4ModalContent, == `<div class="modal-content"></div>`);
 }}

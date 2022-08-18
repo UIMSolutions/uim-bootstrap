@@ -11,7 +11,7 @@ class DBS4Col : DBS4Obj {
 		return cast(O)this; 
 	}
 	version(test_uim_bootstrap) { unittest {	
-		assert(BS4Col.sizes("12"), `<div class="col-12"></div>`);
+		assert(BS4Col.sizes("12"), == `<div class="col-12"></div>`);
 	}}
 }
 mixin(H5Calls!("BS4Col"));

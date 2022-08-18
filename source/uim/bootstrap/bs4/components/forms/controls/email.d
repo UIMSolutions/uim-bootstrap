@@ -9,5 +9,5 @@ class DBS4InputEmail : DBS4Input {
 mixin(H5Calls!("BS4InputEmail"));
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4InputEmail, `<input class="form-control" type="email">`);
+	assert(BS4InputEmail, == `<input class="form-control" type="email">`);
 }}

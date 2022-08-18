@@ -14,7 +14,7 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.margin("t-2"), `<div class="mt-2"></div>`);
+		assert(BS4Obj.margin("t-2"), == `<div class="mt-2"></div>`);
 	}}
 
 	/// Adding padding
@@ -25,7 +25,7 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.padding("t-2"), `<div class="pt-2"></div>`);
+		assert(BS4Obj.padding("t-2"), == `<div class="pt-2"></div>`);
 	}}
 
 	/// Clear border 
@@ -47,9 +47,9 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.border, `<div class="border"></div>`);
-		assert(BS4Obj.border(1), `<div class="border-1"></div>`);
-		assert(BS4Obj.border("top"), `<div class="border-top"></div>`);
+		assert(BS4Obj.border, == `<div class="border"></div>`);
+		assert(BS4Obj.border(1), == `<div class="border-1"></div>`);
+		assert(BS4Obj.border("top"), == `<div class="border-top"></div>`);
 	}}
 
 	/// Clear border 
@@ -59,7 +59,7 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.noBorder, `<div class="border-0"></div>`);
+		assert(BS4Obj.noBorder, == `<div class="border-0"></div>`);
 	}}
 
 	/// Set border color 
@@ -68,8 +68,8 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.borderColor("primary"), `<div class="border-primary"></div>`);
-		assert(BS4Obj.border.borderColor("primary"), `<div class="border border-primary"></div>`);
+		assert(BS4Obj.borderColor("primary"), == `<div class="border-primary"></div>`);
+		assert(BS4Obj.border.borderColor("primary"), == `<div class="border border-primary"></div>`);
 	}}
 
 	/// Change rounded of corners 
@@ -79,8 +79,8 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.rounded, `<div class="rounded"></div>`);
-		assert(BS4Obj.rounded("top"), `<div class="rounded-top"></div>`);
+		assert(BS4Obj.rounded, == `<div class="rounded"></div>`);
+		assert(BS4Obj.rounded("top"), == `<div class="rounded-top"></div>`);
 	}}
 
 	/// Clear rounded
@@ -89,7 +89,7 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.noRounded, `<div class="rounded-0"></div>`);
+		assert(BS4Obj.noRounded, == `<div class="rounded-0"></div>`);
 	}}
 
 	/// Set size of rounded
@@ -98,7 +98,7 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.roundedSize("lg"), `<div class="rounded-lg"></div>`);
+		assert(BS4Obj.roundedSize("lg"), == `<div class="rounded-lg"></div>`);
 	}}
 
 	O clearfix(this O)() { 
@@ -116,7 +116,7 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.closeButton, `<div><button class="btn close" aria-label="Close" type="button"><span aria-label="true">&times;</span></button></div>`);
+		assert(BS4Obj.closeButton, == `<div><button class="btn close" aria-label="Close" type="button"><span aria-label="true">&times;</span></button></div>`);
 	}}
 
 	/// Setting text color
@@ -168,7 +168,7 @@ class DBS4Obj : DH5Obj {
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4Obj.print("none"), `<div class="d-print-none"></div>`);
+		assert(BS4Obj.print("none"), == `<div class="d-print-none"></div>`);
 	}}
 }
 
