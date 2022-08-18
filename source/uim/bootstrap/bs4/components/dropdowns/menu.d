@@ -15,11 +15,11 @@ class DBS4DropdownMenu : DBS4Obj {
 	mixin(MyContent!("form", "BS4DropdownForm"));
 	mixin(MyContent!("text", "BS4DropdownText"));
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4DropdownMenu.link, == `<div class="dropdown-menu"><a class="dropdown-item"></a></div>`);
+		assert(BS4DropdownMenu.link == `<div class="dropdown-menu"><a class="dropdown-item"></a></div>`);
 	}}
 }
 mixin(H5Calls!"BS4DropdownMenu");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4DropdownMenu, == `<div class="dropdown-menu"></div>`);
+	assert(BS4DropdownMenu == `<div class="dropdown-menu"></div>`);
 }}

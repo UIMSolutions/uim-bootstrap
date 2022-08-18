@@ -11,7 +11,7 @@ class DBS4CustomInput : DBS4Obj {
 	}
 
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4CustomInput, == `<input class="custom-control-input">`);
+		assert(BS4CustomInput == `<input class="custom-control-input">`);
 	}}
 
 }
