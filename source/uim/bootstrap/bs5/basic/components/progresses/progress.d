@@ -11,5 +11,5 @@ class DBS5Progress : DBS5Obj {
 mixin(H5Calls!"BS5Progress");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5Progress, `<div class="progress"></div>`);
+	assert(BS5Progress == `<div class="progress"></div>`);
 }}

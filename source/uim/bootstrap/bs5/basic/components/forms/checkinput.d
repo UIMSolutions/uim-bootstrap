@@ -14,5 +14,5 @@ mixin(H5Calls!"BS5FormCheckInput");
 
 version(test_uim_bootstrap) { unittest {
 // TODO assert(BS5FormCheckInput == );
-	assert(BS5FormCheckInput, `<input class="form-check-input">`);
+	assert(BS5FormCheckInput == `<input class="form-check-input">`);
 }}

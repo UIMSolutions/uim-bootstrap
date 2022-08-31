@@ -16,20 +16,20 @@ class DBS5List : DBS5Obj {
 	// Add a list item
 	mixin(MyContent!("item", "BS5ListItem"));
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5List.item, `<ul class="list-group"><li class="list-group-item"></li></ul>`);
-		assert(BS5List.item("test"), `<ul class="list-group"><li class="list-group-item">test</li></ul>`);
+		assert(BS5List.item == `<ul class="list-group"><li class="list-group-item"></li></ul>`);
+		assert(BS5List.item("test") == `<ul class="list-group"><li class="list-group-item">test</li></ul>`);
 	}}
 
 	// Add a list link
 	mixin(MyContent!("link", "BS5ListLink"));
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5List.link, `<ul class="list-group"><a class="list-group-item list-group-item-action"></a></ul>`);
+		assert(BS5List.link == `<ul class="list-group"><a class="list-group-item list-group-item-action"></a></ul>`);
 	}}
 
 	// Add a list button
 	mixin(MyContent!("button", "BS5ListButton"));
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5List.button, `<ul class="list-group"><button class="list-group-item list-group-item-action" type="button"></button></ul>`);
+		assert(BS5List.button == `<ul class="list-group"><button class="list-group-item list-group-item-action" type="button"></button></ul>`);
 	}}
 }
 mixin(H5Calls!"BS5List");

@@ -16,5 +16,5 @@ class DBS5NavItem : DBS5Obj {
 mixin(H5Calls!"BS5NavItem");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5NavItem, `<li class="nav-item"></li>`);
+	assert(BS5NavItem == `<li class="nav-item"></li>`);
 }}

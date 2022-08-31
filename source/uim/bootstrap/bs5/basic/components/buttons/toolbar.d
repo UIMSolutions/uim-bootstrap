@@ -8,16 +8,16 @@ class DBS5ButtonToolbar : DBS5Obj {
 
 	mixin(MyAttribute!("label", "aria-label"));
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5ButtonToolbar.label("hallo"), `<div class="btn-toolbar" aria-label="hallo" role="toolbar"></div>`);
+		assert(BS5ButtonToolbar.label("hallo") == `<div class="btn-toolbar" aria-label="hallo" role="toolbar"></div>`);
 	}}
 	
 	mixin(MyContent!("group", "BS5ButtonGroup"));
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5ButtonToolbar.group, `<div class="btn-toolbar" role="toolbar"><div class="btn-group" role="group"></div></div>`);
+		assert(BS5ButtonToolbar.group == `<div class="btn-toolbar" role="toolbar"><div class="btn-group" role="group"></div></div>`);
 	}}
 }
 mixin(H5Calls!"BS5ButtonToolbar");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5ButtonToolbar, `<div class="btn-toolbar" role="toolbar"></div>`);
+	assert(BS5ButtonToolbar == `<div class="btn-toolbar" role="toolbar"></div>`);
 }}

@@ -8,12 +8,12 @@ class DBS5NavLink : DBS5Obj {
 
 	O active(this O)(bool value = true) { if (value) this.addClasses("active"); return cast(O)this; }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5NavLink.active, `<a class="active nav-link" href="#"></a>`);
+		assert(BS5NavLink.active == `<a class="active nav-link" href="#"></a>`);
 	}}
 
 	O disabled(this O)(bool value = true) { if (value) this.addClasses("disabled"); return cast(O)this; }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5NavLink.disabled, `<a class="disabled nav-link" href="#"></a>`);
+		assert(BS5NavLink.disabled == `<a class="disabled nav-link" href="#"></a>`);
 	}}
 
 	O dropdownToggle(this O)(bool mode = true) { 
@@ -24,5 +24,5 @@ class DBS5NavLink : DBS5Obj {
 mixin(H5Calls!"BS5NavLink");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5NavLink, `<a class="nav-link" href="#"></a>`);
+	assert(BS5NavLink == `<a class="nav-link" href="#"></a>`);
 }}

@@ -9,5 +9,5 @@ class DBS4ListInlineItem : DBS4Obj {
 mixin(H5Calls!"BS4ListInlineItem");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4ListInlineItem, `<li class="list-inline-item"></li>`);
+	assert(BS4ListInlineItem == `<li class="list-inline-item"></li>`);
 }}

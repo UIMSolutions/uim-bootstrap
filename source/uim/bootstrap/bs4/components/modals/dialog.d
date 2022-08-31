@@ -13,7 +13,7 @@ class DBS4ModalDialog : DBS4Obj {
 
 	O size(this O)(string aSize) { return this.addClasses("modal-"~aSize); }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4ModalDialog.size("sm"), `<div class="modal-dialog modal-sm" role="document"></div>`);
+		assert(BS4ModalDialog.size("sm") == `<div class="modal-dialog modal-sm" role="document"></div>`);
 	}}
 
 	O centered(this O)(bool mode = true) { return this.addClasses("modal-dialog-centered"); }

@@ -16,7 +16,7 @@ class DBS5ButtonObj : DBS5Obj {
 	mixin(TProperty!("string", "role"));
 	mixin(TProperty!("string", "sizeMode"));
 
-	override string onlyHTML() {
+	override string renderHTML(STRINGAA bindings = null) {
 		if (colorMode) {
 			if (outline) this.addClasses("btn-outline-"~colorMode);
 			else this.addClasses("btn-"~colorMode);
@@ -27,7 +27,7 @@ class DBS5ButtonObj : DBS5Obj {
 		if (disabled) this.addClasses("disabled");
 		if (dataToggle) _attributes["data-toggle"]="button"; else _attributes.remove("data-toggle");
 
-		return super.onlyHTML;
+		return super.renderHTML;
 	}
 }
 mixin(H5Calls!"BS5ButtonObj");

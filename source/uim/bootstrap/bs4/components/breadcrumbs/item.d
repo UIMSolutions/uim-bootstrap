@@ -18,7 +18,7 @@ class DBS4BreadcrumbItem : DBS4Obj {
 
 	mixin(MyContent!("link", "BS4BreadcrumbLink"));
 	version(test_uim_bootstrap) { unittest {
-		assert(BS4BreadcrumbItem.link, `<li class="breadcrumb-item"><a></a></li>`);
+		assert(BS4BreadcrumbItem.link == `<li class="breadcrumb-item"><a></a></li>`);
 	}}
 }
 mixin(H5Calls!"BS4BreadcrumbItem");

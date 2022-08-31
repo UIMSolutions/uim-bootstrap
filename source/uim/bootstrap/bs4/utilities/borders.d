@@ -28,11 +28,11 @@ T circle(T)(T h5, string radius = null) {
 
 version(test_uim_bootstrap) { unittest {
 	assert(H5Div.border == `<div class="border"></div>`);
-	assert(H5Div.borderPosition("top"), `<div class="border-top"></div>`);
-	assert(H5Div.borderPosition("bottom", "top"), `<div class="border-bottom border-top"></div>`);
+	assert(H5Div.borderPosition("top") == `<div class="border-top"></div>`);
+	assert(H5Div.borderPosition("bottom", "top") == `<div class="border-bottom border-top"></div>`);
 
 	assert(H5Div.rounded == `<div class="rounded"></div>`);
 	assert(H5Div.rounded("0") == `<div class="rounded-0"></div>`);
-	assert(H5Div.roundedPosition("top"), `<div class="rounded-top"></div>`);
-	assert(H5Div.roundedPosition("bottom", "top"), `<div class="rounded-bottom rounded-top"></div>`);
+	assert(H5Div.roundedPosition("top") == `<div class="rounded-top"></div>`);
+	assert(H5Div.roundedPosition("bottom", "top") == `<div class="rounded-bottom rounded-top"></div>`);
 }}

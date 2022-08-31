@@ -14,12 +14,10 @@ class DBS4Pagination : DBS4Obj {
 	mixin(MyContent!("item", "BS4PageItem"));
 
 	mixin(MyContent!("link", "this.item", "BS4PageLink"));
-	version(test_uim_bootstrap) { unittest {
-		assert(BS4Pagination.link, `<ul class="pagination"><li class="page-item"><a class="page-link" href="#"></a></li></ul>`);
-	}}
 }
 mixin(H5Calls!"BS4Pagination");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4Pagination, `<ul class="pagination"></ul>`);
+	assert(BS4Pagination == `<ul class="pagination"></ul>`);
+	assert(BS4Pagination.link == `<ul class="pagination"><li class="page-item"><a class="page-link" href="#"></a></li></ul>`);
 }}

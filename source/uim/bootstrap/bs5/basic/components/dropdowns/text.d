@@ -9,5 +9,5 @@ class DBS5DropdownText : DBS5Obj {
 mixin(H5Calls!"BS5DropdownText");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5DropdownText("Hallo"), `<p>Hallo</p>`);
+	assert(BS5DropdownText("Hallo") == `<p>Hallo</p>`);
 }}

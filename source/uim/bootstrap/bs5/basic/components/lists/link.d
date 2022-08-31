@@ -8,12 +8,12 @@ class DBS5ListLink : DBS5Obj {
 
 	O active(this O)(bool value = true) { return this.addClasses("active"); }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5ListLink.active, `<a class="active list-group-item list-group-item-action"></a>`);
+		assert(BS5ListLink.active == `<a class="active list-group-item list-group-item-action"></a>`);
 	}}
 
 	O disabled(this O)(bool value = true) { return this.addClasses("disabled"); }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5ListLink.disabled, `<a class="disabled list-group-item list-group-item-action"></a>`);
+		assert(BS5ListLink.disabled == `<a class="disabled list-group-item list-group-item-action"></a>`);
 	}}
 
 	O color(this O)(string aColor) { return this.addClasses("list-group-item-"~aColor); }

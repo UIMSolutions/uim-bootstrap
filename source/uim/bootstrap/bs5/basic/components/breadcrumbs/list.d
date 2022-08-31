@@ -19,5 +19,5 @@ class DBS5BreadcrumbList : DBS5Obj {
 mixin(H5Calls!"BS5BreadcrumbList");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5BreadcrumbList, `<ol class="breadcrumb" aria-label="breadcrumbs"></ol>`);
+	assert(BS5BreadcrumbList == `<ol class="breadcrumb" aria-label="breadcrumbs"></ol>`);
 }}

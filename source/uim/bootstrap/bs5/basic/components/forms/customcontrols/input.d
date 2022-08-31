@@ -13,5 +13,5 @@ class DBS5CustomInput : DBS5Obj {
 mixin(H5Calls!"BS5CustomInput");
 
 version(test_uim_bootstrap) { unittest {
-		assert(BS5CustomInput, `<input class="custom-control-input">`);
+		assert(BS5CustomInput == `<input class="custom-control-input">`);
 }}

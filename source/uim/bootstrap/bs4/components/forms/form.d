@@ -14,6 +14,6 @@ class DBS4Form : DBS4Obj {
 mixin(H5Calls!"BS4Form");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4Form, `<form></form>`);
-	assert(BS4Form.inline, `<form class="form-inline"></form>`);
+	assert(BS4Form == `<form></form>`);
+	assert(BS4Form.inline == `<form class="form-inline"></form>`);
 }}

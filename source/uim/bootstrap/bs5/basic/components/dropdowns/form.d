@@ -9,5 +9,5 @@ class DBS5DropdownForm : DBS5Obj {
 mixin(H5Calls!"BS5DropdownForm");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5DropdownForm, `<form></form>`);
+	assert(BS5DropdownForm == `<form></form>`);
 }}

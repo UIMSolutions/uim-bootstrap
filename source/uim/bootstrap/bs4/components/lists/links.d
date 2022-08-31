@@ -12,5 +12,5 @@ class DBS4ListLinks : DBS4Obj {
 mixin(H5Calls!"BS4ListLinks");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4ListLinks, `<div class="list-group"></div>`);
+	assert(BS4ListLinks == `<div class="list-group"></div>`);
 }}

@@ -10,5 +10,5 @@ class DBS4NavPills : DBS4Obj {
 mixin(H5Calls!"BS4NavPills");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4NavPills, `<ul class="nav nav-pills" role="tablist"></ul>`);
+	assert(BS4NavPills == `<ul class="nav nav-pills" role="tablist"></ul>`);
 }}

@@ -10,5 +10,5 @@ class DBS5NavPills : DBS5Obj {
 mixin(H5Calls!"BS5NavPills");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5NavPills, `<ul class="nav nav-pills" role="tablist"></ul>`);
+	assert(BS5NavPills == `<ul class="nav nav-pills" role="tablist"></ul>`);
 }}

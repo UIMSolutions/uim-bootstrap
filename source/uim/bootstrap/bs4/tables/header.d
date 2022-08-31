@@ -8,12 +8,10 @@ class DBS4TableHeader : DBS4Obj {
 
 	mixin(MyContent!("row", "BS4TableRow"));
 	mixin(MyContent!("tr", "BS4TableRow"));
-	version(test_uim_bootstrap) { unittest {
-		assert(BS4Table.row, `<table class="table"><tr></tr></table>`);
-	}}
 }
 mixin(H5Calls!"BS4TableHeader");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS4TableHeader, `<thead></thead>`);
+	assert(BS4Table.row == `<table class="table"><tr></tr></table>`);
+	assert(BS4TableHeader == `<thead></thead>`);
 }}

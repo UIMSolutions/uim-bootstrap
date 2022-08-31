@@ -9,5 +9,5 @@ class DBS5FormFile : DBS5Obj {
 mixin(H5Calls!"BS5FormFile");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5FormFile, `<div class="form-file"></div>`);
+	assert(BS5FormFile == `<div class="form-file"></div>`);
 }}

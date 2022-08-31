@@ -8,21 +8,21 @@ class DBS5ModalDialog : DBS5Obj {
 
 	O fade(this O)(bool mode = true) { return this.addClasses("fade"); }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5ModalDialog.fade, `<div class="fade modal-dialog" role="document"></div>`);
+		assert(BS5ModalDialog.fade == `<div class="fade modal-dialog" role="document"></div>`);
 	}}
 
 	O size(this O)(string aSize) { return this.addClasses("modal-"~aSize); }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5ModalDialog.size("sm"), `<div class="modal-dialog modal-sm" role="document"></div>`);
+		assert(BS5ModalDialog.size("sm") == `<div class="modal-dialog modal-sm" role="document"></div>`);
 	}}
 
 	O centered(this O)(bool mode = true) { return this.addClasses("modal-dialog-centered"); }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5ModalDialog.centered, `<div class="modal-dialog modal-dialog-centered" role="document"></div>`);
+		assert(BS5ModalDialog.centered == `<div class="modal-dialog modal-dialog-centered" role="document"></div>`);
 	}}
 }
 mixin(H5Calls!"BS5ModalDialog");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5ModalDialog, `<div class="modal-dialog" role="document"></div>`);
+	assert(BS5ModalDialog == `<div class="modal-dialog" role="document"></div>`);
 }}

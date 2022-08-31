@@ -8,7 +8,7 @@ class DBS5NavTabs : DBS5Obj {
 
 	mixin(MyContent!("item", "BS5NavItem"));
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5NavTabs.item, `<ul class="nav nav-tabs" role="tablist"><li class="nav-item"></li></ul>`);
+		assert(BS5NavTabs.item == `<ul class="nav nav-tabs" role="tablist"><li class="nav-item"></li></ul>`);
 	}}
 
 	mixin(MyContent!("link", "BS5NavLink"));
@@ -16,5 +16,5 @@ class DBS5NavTabs : DBS5Obj {
 mixin(H5Calls!"BS5NavTabs");
 
 version(test_uim_bootstrap) { unittest {
-	assert(BS5NavTabs, `<ul class="nav nav-tabs" role="tablist"></ul>`);
+	assert(BS5NavTabs == `<ul class="nav nav-tabs" role="tablist"></ul>`);
 }}

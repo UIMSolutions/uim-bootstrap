@@ -12,12 +12,12 @@ Default: A fixed container is a (responsive) fixed width container.
 class DBS5Container : DBS5Obj {
 	mixin(H5This!("div", ["container"]));
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5Container, `<div class="container"></div>`);
+		assert(BS5Container == `<div class="container"></div>`);
 	}}
 
 	O fluid(this O)(bool mode = true) { if (mode) _classes = _classes.sub("container").add("container-fluid");  return cast(O)this; }
 	version(test_uim_bootstrap) { unittest {
-		assert(BS5Container.fluid(true), `<div class="container-fluid"></div>`);
+		assert(BS5Container.fluid(true) == `<div class="container-fluid"></div>`);
 	}}
 
 	mixin(MyContent!("row", "BS5Row"));
