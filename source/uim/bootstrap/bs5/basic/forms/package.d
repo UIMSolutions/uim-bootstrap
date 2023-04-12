@@ -1,2 +1,2 @@
-﻿module uim.bootstrap.bs5.classes.basic.forms;
+﻿module uim.bootstrap.bs5.basic.forms;
 

@@ -1,2 +1,2 @@
-﻿module uim.bootstrap.bs5.classes.basic.contents;
+﻿module uim.bootstrap.bs5.basic.contents;
 

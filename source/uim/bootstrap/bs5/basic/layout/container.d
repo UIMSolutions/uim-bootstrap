@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.bs5.classes.layout.container;
+﻿module uim.bootstrap.bs5.basic.layout.container;
 
 @safe: 
 import uim.bootstrap;

@@ -3,7 +3,10 @@ module uim.bootstrap.bs5;
 @safe: 
 import uim.bootstrap;
 
+public import uim.bootstrap.bs5.basic;
 public import uim.bootstrap.bs5.classes;
+public import uim.bootstrap.bs5.complex;
+public import uim.bootstrap.bs5.icons;
 
 auto bs5CardComponents(string selComponent) {
   DH5Obj[] items;
