@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.bs5.classes.utilities.displays;
+﻿module uim.bootstrap.bs5.basic.utilities.displays;
 
 @safe: 
 import uim.bootstrap; 

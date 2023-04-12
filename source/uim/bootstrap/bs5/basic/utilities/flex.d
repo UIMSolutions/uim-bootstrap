@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.bs5.classes.utilities.flex;
+﻿module uim.bootstrap.bs5.basic.utilities.flex;
 
 @safe: 
 import uim.bootstrap; 

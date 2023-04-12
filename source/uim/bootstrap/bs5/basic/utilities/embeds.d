@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.bs5.classes.utilities.embeds;
+﻿module uim.bootstrap.bs5.basic.utilities.embeds;
 
 @safe: 
 import uim.bootstrap; 

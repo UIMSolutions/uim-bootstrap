@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.bs5.classes.utilities.floats;
+﻿module uim.bootstrap.bs5.basic.utilities.floats;
 
 @safe: 
 import uim.bootstrap; 

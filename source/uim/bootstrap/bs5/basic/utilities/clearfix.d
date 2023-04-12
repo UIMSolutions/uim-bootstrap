@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.bs5.classes.utilities.clearfix;
+﻿module uim.bootstrap.bs5.basic.utilities.clearfix;
 
 @safe: 
 import uim.bootstrap; 

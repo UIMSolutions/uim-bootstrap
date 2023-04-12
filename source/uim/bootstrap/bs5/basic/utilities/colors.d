@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.bs5.classes.utilities.colors;
+﻿module uim.bootstrap.bs5.basic.utilities.colors;
 
 @safe: 
 import uim.bootstrap; 

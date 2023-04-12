@@ -1,4 +1,4 @@
-module uim.bootstrap.bs5.classes.complex;
+module uim.bootstrap.bs5.complex;
 
 @safe: 
 import uim.bootstrap;
