@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.bs5.classes.utilities.shadows;
+﻿module uim.bootstrap.bs5.basic.utilities.shadows;
 
 @safe: 
 import uim.bootstrap; 

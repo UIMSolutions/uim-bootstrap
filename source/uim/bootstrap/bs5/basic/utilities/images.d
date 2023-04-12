@@ -1,4 +1,4 @@
-﻿module uim.bootstrap.bs5.classes.utilities.images;
+﻿module uim.bootstrap.bs5.basic.utilities.images;
 
 @safe: 
 import uim.bootstrap; 

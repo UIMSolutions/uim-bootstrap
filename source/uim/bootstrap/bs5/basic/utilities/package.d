@@ -1,2 +1,2 @@
-﻿module uim.bootstrap.bs5.classes.utilities;
+﻿module uim.bootstrap.bs5.basic.utilities;
 
