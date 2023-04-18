@@ -1,8 +1,10 @@
 module uim.bootstrap.bs5.basic;
 
-public import uim.bootstrap.bs5.basic.components;
-public import uim.bootstrap.bs5.basic.contents;
-public import uim.bootstrap.bs5.basic.forms;
-public import uim.bootstrap.bs5.basic.helpers;
-public import uim.bootstrap.bs5.basic.layout;
-public import uim.bootstrap.bs5.basic.utilities;
+public {
+  import uim.bootstrap.bs5.basic.components;
+  import uim.bootstrap.bs5.basic.contents;
+  import uim.bootstrap.bs5.basic.forms;
+  import uim.bootstrap.bs5.basic.helpers;
+  import uim.bootstrap.bs5.basic.layout;
+  import uim.bootstrap.bs5.basic.utilities;
+}
