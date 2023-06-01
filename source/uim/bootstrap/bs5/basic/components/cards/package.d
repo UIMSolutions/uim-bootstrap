@@ -1,17 +1,19 @@
 ﻿module uim.bootstrap.bs5.basic.components.cards;
 
-public import uim.bootstrap.bs5.basic.components.cards.card;
-public import uim.bootstrap.bs5.basic.components.cards.block;
-public import uim.bootstrap.bs5.basic.components.cards.body_;
-public import uim.bootstrap.bs5.basic.components.cards.columns;
-public import uim.bootstrap.bs5.basic.components.cards.deck;
-public import uim.bootstrap.bs5.basic.components.cards.deckwrapper;
-public import uim.bootstrap.bs5.basic.components.cards.footer;
-public import uim.bootstrap.bs5.basic.components.cards.group;
-public import uim.bootstrap.bs5.basic.components.cards.header;
-public import uim.bootstrap.bs5.basic.components.cards.image;
-public import uim.bootstrap.bs5.basic.components.cards.link;
-public import uim.bootstrap.bs5.basic.components.cards.overlay;
-public import uim.bootstrap.bs5.basic.components.cards.subtitle;
-public import uim.bootstrap.bs5.basic.components.cards.text;
-public import uim.bootstrap.bs5.basic.components.cards.title;
+public {
+  import uim.bootstrap.bs5.basic.components.cards.card;
+  import uim.bootstrap.bs5.basic.components.cards.block;
+  import uim.bootstrap.bs5.basic.components.cards.body_;
+  import uim.bootstrap.bs5.basic.components.cards.columns;
+  import uim.bootstrap.bs5.basic.components.cards.deck;
+  import uim.bootstrap.bs5.basic.components.cards.deckwrapper;
+  import uim.bootstrap.bs5.basic.components.cards.footer;
+  import uim.bootstrap.bs5.basic.components.cards.group;
+  import uim.bootstrap.bs5.basic.components.cards.header;
+  import uim.bootstrap.bs5.basic.components.cards.image;
+  import uim.bootstrap.bs5.basic.components.cards.link;
+  import uim.bootstrap.bs5.basic.components.cards.overlay;
+  import uim.bootstrap.bs5.basic.components.cards.subtitle;
+  import uim.bootstrap.bs5.basic.components.cards.text;
+  import uim.bootstrap.bs5.basic.components.cards.title;
+}

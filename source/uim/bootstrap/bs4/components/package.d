@@ -1,22 +1,24 @@
 ﻿module uim.bootstrap.bs4.components;
 
-public import uim.bootstrap.bs4.components.alerts;
-public import uim.bootstrap.bs4.components.badges;
-public import uim.bootstrap.bs4.components.breadcrumbs;
-public import uim.bootstrap.bs4.components.buttons;
-public import uim.bootstrap.bs4.components.cards;
-public import uim.bootstrap.bs4.components.carousels;
-public import uim.bootstrap.bs4.components.collapses;
-public import uim.bootstrap.bs4.components.dropdowns;
-public import uim.bootstrap.bs4.components.forms;
-public import uim.bootstrap.bs4.components.jumbotrons;
-public import uim.bootstrap.bs4.components.lists;
-public import uim.bootstrap.bs4.components.medias;
-public import uim.bootstrap.bs4.components.modals;
-public import uim.bootstrap.bs4.components.navs;
-public import uim.bootstrap.bs4.components.navbars;
-public import uim.bootstrap.bs4.components.paginations;
-public import uim.bootstrap.bs4.components.popovers;
-public import uim.bootstrap.bs4.components.progresses;
-public import uim.bootstrap.bs4.components.scrollspies;
-public import uim.bootstrap.bs4.components.tabs;
+public {
+  import uim.bootstrap.bs4.components.alerts;
+  import uim.bootstrap.bs4.components.badges;
+  import uim.bootstrap.bs4.components.breadcrumbs;
+  import uim.bootstrap.bs4.components.buttons;
+  import uim.bootstrap.bs4.components.cards;
+  import uim.bootstrap.bs4.components.carousels;
+  import uim.bootstrap.bs4.components.collapses;
+  import uim.bootstrap.bs4.components.dropdowns;
+  import uim.bootstrap.bs4.components.forms;
+  import uim.bootstrap.bs4.components.jumbotrons;
+  import uim.bootstrap.bs4.components.lists;
+  import uim.bootstrap.bs4.components.medias;
+  import uim.bootstrap.bs4.components.modals;
+  import uim.bootstrap.bs4.components.navs;
+  import uim.bootstrap.bs4.components.navbars;
+  import uim.bootstrap.bs4.components.paginations;
+  import uim.bootstrap.bs4.components.popovers;
+  import uim.bootstrap.bs4.components.progresses;
+  import uim.bootstrap.bs4.components.scrollspies;
+  import uim.bootstrap.bs4.components.tabs;
+}
