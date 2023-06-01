@@ -2,10 +2,10 @@
 
 public {
   import uim.bootstrap.bs4.components.navs.item;
-publi import uim.bootstrap.bs4.components.navs.nav;
-publi import uim.bootstrap.bs4.components.navs.header;
-publi import uim.bootstrap.bs4.components.navs.link;
-publi import uim.bootstrap.bs4.components.navs.list;
-publi import uim.bootstrap.bs4.components.navs.pills;
-publi import uim.bootstrap.bs4.components.navs.tabs;
-
+  import uim.bootstrap.bs4.components.navs.nav;
+  import uim.bootstrap.bs4.components.navs.header;
+  import uim.bootstrap.bs4.components.navs.link;
+  import uim.bootstrap.bs4.components.navs.list;
+  import uim.bootstrap.bs4.components.navs.pills;
+  import uim.bootstrap.bs4.components.navs.tabs;
+}
