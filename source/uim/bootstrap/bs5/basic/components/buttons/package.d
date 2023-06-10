@@ -1,10 +1,12 @@
 ﻿module uim.bootstrap.bs5.basic.components.buttons;
 
-public import uim.bootstrap.bs5.basic.components.buttons.buttonobj;
-public import uim.bootstrap.bs5.basic.components.buttons.button;
-public import uim.bootstrap.bs5.basic.components.buttons.close;
-public import uim.bootstrap.bs5.basic.components.buttons.link;
-public import uim.bootstrap.bs5.basic.components.buttons.group;
-public import uim.bootstrap.bs5.basic.components.buttons.reset;
-public import uim.bootstrap.bs5.basic.components.buttons.submit;
-public import uim.bootstrap.bs5.basic.components.buttons.toolbar;
+public {
+  import uim.bootstrap.bs5.basic.components.buttons.buttonobj;
+  import uim.bootstrap.bs5.basic.components.buttons.button;
+  import uim.bootstrap.bs5.basic.components.buttons.close;
+  import uim.bootstrap.bs5.basic.components.buttons.link;
+  import uim.bootstrap.bs5.basic.components.buttons.group;
+  import uim.bootstrap.bs5.basic.components.buttons.reset;
+  import uim.bootstrap.bs5.basic.components.buttons.submit;
+  import uim.bootstrap.bs5.basic.components.buttons.toolbar;
+}
