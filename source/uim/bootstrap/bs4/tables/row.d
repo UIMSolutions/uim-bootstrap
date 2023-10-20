@@ -37,9 +37,8 @@ class DBS4TableRow : DBS4Obj {
 	override string renderHTML(STRINGAA bindings = null) {
 		this.clearContent;
 		if ((_values.length == 0) && (!_keyPairs.empty)) _values = _keyPairs.values;
-		foreach(v; _values) {
-			this.addContent("<td>"~v~"</td>");
-		}
+		_values.each!(v => this.addContent("<td>"~v~"</td>"));
+
 		return super.renderHTML;
 	}*/
 } 

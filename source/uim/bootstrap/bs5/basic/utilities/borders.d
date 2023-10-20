@@ -8,18 +8,22 @@ T border(T)(T h5) {
 	return h5;
 }
 T borderPosition(T)(T h5, string[] positions...) {
-	foreach(p; positions) h5.addClasses("border-"~p);
+	positions.each!(p => h5.addClasses("border-"~p));
+
 	return h5;
 }
 T borderColor(T)(T h5, string colorName) {
 	return h5.addClasses("border", "border-"~colorName);
 }
 T rounded(T)(T h5, string radius = null) {
-	if (radius) h5.addClasses("rounded-"~radius); else h5.addClasses("rounded");
+	h5.addClasses(radius 
+		? "rounded-"~radius 
+		: "rounded");
+	
 	return h5;
 }
 T roundedPosition(T)(T h5, string[] positions...) {
-	foreach(position; positions) h5.addClasses("rounded-"~position);
+	positions.each!(p => h5.addClasses("rounded-"~p));
 	return h5;
 }
 T circle(T)(T h5, string radius = null) {

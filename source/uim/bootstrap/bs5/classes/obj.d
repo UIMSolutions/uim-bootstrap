@@ -26,7 +26,8 @@ class DBS5Obj : DH5Obj {
 		return cast(O) this;
 	}
 	O paddings(this O)(string[] values)	{
-		foreach(v; values) this.addClasses("p"~v);
+		values.each!(v = > this.addClasses("p"~v));
+
 		return cast(O) this;
 	}
 	version(test_uim_bootstrap) { unittest {
