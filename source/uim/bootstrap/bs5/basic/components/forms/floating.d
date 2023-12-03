@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5FormFloating : DBS5Obj {
   mixin(H5This!("Div", ["form-floating"]));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 
   mixin(MyContent!("label", "H5Label"));

@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5FormLabel : DBS5Obj {
 	mixin(H5This!("label", ["form-label"]));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 }
 mixin(H5Calls!"BS5FormLabel");

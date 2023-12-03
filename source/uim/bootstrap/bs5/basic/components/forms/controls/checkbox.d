@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5Checkbox : DBS5Input {
   mixin(H5This!(null, null, `["type":"checkbox"]`));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 }
 mixin(H5Calls!("BS5Checkbox"));

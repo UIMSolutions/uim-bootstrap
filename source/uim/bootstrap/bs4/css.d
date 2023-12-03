@@ -62,22 +62,23 @@ static this()
   "WhiteSmoke" : "#F5F5F5", "Yellow" : "#FFFF00", "YellowGreen" : "#9ACD32"
 ];
 
-  if (!bs4CSSContent)
-  {
-    foreach (k, v; CSSColors)
-    {
-      bs4CSSContent ~= ".bg-%s { background-color: %s !important; }".format(k, v);
-      bs4CSSContent ~= ".border-%s { border-color: %s !important; }".format(k, v);
-      bs4CSSContent ~= ".text-%s { color: %s !important; }".format(k, v);
-      bs4CSSContent ~= ".table-%s, .table-%s > th, .table-%s > td { background-color: %s; }".format(k,
-          k, k, v);
-      bs4CSSContent ~= ".table-%s th, .table-%s td, .table-%s thead th, .table-%s tbody + tbody { border-color: %s; }".format(k,
-          k, k, k, v);
-      bs4CSSContent ~= ".btn-%s { color: #fff; background-color: %s; border-color: %s; }".format(k,v, v);
-      bs4CSSContent ~= ".btn-outline-%s { color: %s; border-color: %s;}".format(k, v, v);
-      bs4CSSContent ~= ".badge-%s { color: #fff; background-color: %s; }".format(k, v);
-      bs4CSSContent ~= ".alert-%s { color: #004085; background-color: %s; border-color: #b8daff; }".format(k, v);
-      bs4CSSContent ~= ".list-group-item-%s { color: #004085; background-color: %s; }".format(k, v);
-    }
+  if (!bs4CSSContent) {
+    CSSColors.byKeyValue
+      .each!(css => setCSSColor(css.key, css.value));
   }
+}
+
+void setCSSColor(string cssSelector, string cssValue) {
+  bs4CSSContent ~= ".bg-%s { background-color: %s !important; }".format(cssSelector, cssValue);
+  bs4CSSContent ~= ".border-%s { border-color: %s !important; }".format(cssSelector, cssValue);
+  bs4CSSContent ~= ".text-%s { color: %s !important; }".format(cssSelector, cssValue);
+  bs4CSSContent ~= ".table-%s, .table-%s > th, .table-%s > td { background-color: %s; }".format(cssSelector,
+    cssSelector, cssSelector, cssValue);
+  bs4CSSContent ~= ".table-%s th, .table-%s td, .table-%s thead th, .table-%s tbody + tbody { border-color: %s; }".format(cssSelector,
+    cssSelector, cssSelector, cssSelector, cssValue);
+  bs4CSSContent ~= ".btn-%s { color: #fff; background-color: %s; border-color: %s; }".format(cssSelector,cssValue, cssValue);
+  bs4CSSContent ~= ".btn-outline-%s { color: %s; border-color: %s;}".format(cssSelector, cssValue, cssValue);
+  bs4CSSContent ~= ".badge-%s { color: #fff; background-color: %s; }".format(cssSelector, cssValue);
+  bs4CSSContent ~= ".alert-%s { color: #004085; background-color: %s; border-color: #b8daff; }".format(cssSelector, cssValue);
+  bs4CSSContent ~= ".list-group-item-%s { color: #004085; background-color: %s; }".format(cssSelector, cssValue);
 }

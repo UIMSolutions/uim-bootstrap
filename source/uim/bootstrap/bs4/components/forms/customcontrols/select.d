@@ -20,41 +20,43 @@ class DBS4CustomSelect : DH5Select {
 		return cast(O)this;	
 	}
 	O options(this O)(string[string] values, string selectedKey = "", string disabledKey = "") {
-		foreach(k; values.keys.sort) {
-			if (k == selectedKey) {
-				this.option(k == disabledKey
-					? ["selected":"selected", "disabled":"disabled"]	
-					: ["selected":"selected"], k);
-			}
-			else if (k == disabledKey) this.option(["disabled":"disabled"], k);
-			else this.option(["value":k], values[k]);
-		}
+		values.keys.sort.each!(key => setOptionByKey(key, selectedKey, disabledKey));
+
 		return cast(O)this;	
 	}
 
-	O options(this O)(string[] values, string[] selected, string[] disabled = null) {
-		foreach(value; values) {
-			if (selected.has(value)) {
-				this.option(disabled.has(value) 
-					? ["selected":"selected", "disabled":"disabled"]		
-					: ["selected":"selected"], value);
-			}
-			else if (disabled.has(value)) this.option(["disabled":"disabled"], value);
-			else this.option(value);
+	protected void setOptionByKey(string optionKey, string selectedKey = "", string disabledKey = "") {
+		if (optionKey == selectedKey) {
+			this.option(optionKey == disabledKey
+				? ["selected":"selected", "disabled":"disabled"]	
+				: ["selected":"selected"], optionKey);
 		}
+		else if (optionKey == disabledKey) this.option(["disabled":"disabled"], optionKey);
+		else this.option(["value":optionKey], values[optionKey]);
+	}
+
+	O options(this O)(string[] values, string[] selected, string[] disabled = null) {
+		values.each!(value => setOption(valie, selected, disabled)); 
+
 		return cast(O)this;	
 	}
 	O options(this O)(string[string] values, string[] selectedKeys, string[] disabledKeys = null) {
-		foreach(k; values.keys.sort) {
-			if (selectedKeys.has(k)) {
-				this.option(disabledKeys.has(k) 
-					? ["selected":"selected", "disabled":"disabled"]		
-					: ["selected":"selected"], k);
-			}
-			else if (disabledKeys.has(k)) this.option(["disabled":"disabled"], k);
-			else this.option(["value":k], values[k]);
-		}
+		values.keys.sort,each(key => setOption(key, selectedKeys, disabledKeys));
+		
 		return cast(O)this;	
+	}
+
+	protected setOption(string optionKey, string[] selectedKeys, string[] disabledKeys = null) {
+		auto hasSelectedKey = selectedKeys.has(optionKey);
+		auto hasDisabledKey = disabledKeys.has(optionKey);
+
+		if (hasSelectedKey) {
+			this.option(hasDisabledKey 
+				? ["selected":"selected", "disabled":"disabled"]		
+				: ["selected":"selected"], optionKey);
+		}
+		else if (hasDisabledKey) this.option(["disabled":"disabled"], optionKey);
+		else this.option(["value":optionKey], values[optionKey]);
 	}
 }
 mixin(H5Calls!("BS4CustomSelect"));

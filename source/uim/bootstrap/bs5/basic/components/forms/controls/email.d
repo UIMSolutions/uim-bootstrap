@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5InputEmail : DBS5Input {
 	mixin(H5This!(null, null, `["type":"email"]`));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 }
 mixin(H5Calls!("BS5InputEmail"));

@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5InputDate : DBS5Input {
 	mixin(H5This!("Input", ["form-control"], `["type":"date"]`));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 	
 	O value(this O)(long timestamp) {

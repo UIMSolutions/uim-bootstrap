@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5InputPassword : DBS5Input {
 	mixin(H5This!(null, ["form-control"], `["type":"password"]`));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 }
 mixin(H5Calls!("BS5InputPassword"));

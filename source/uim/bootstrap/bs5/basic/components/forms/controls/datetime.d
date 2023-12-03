@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5InputDateTime : DBS5Input {
 	mixin(H5This!("", null, `["type":"datetime-local"]`));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 
 	O value(this O)(long timestamp) {

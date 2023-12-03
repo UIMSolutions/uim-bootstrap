@@ -16,8 +16,8 @@ class DBS5InputHidden : DBS5Input {
 		return cast(O)this;
 	}
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 }
 mixin(H5Calls!("BS5InputHidden"));

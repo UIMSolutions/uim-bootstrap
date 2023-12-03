@@ -7,56 +7,59 @@ class DBS4InputSelect : DBS4Obj {
 	mixin(H5This!("Select", ["form-control"]));	
 
 	mixin(MyContent!("option", "H5Option"));
-	O options(this O)(string[] values, string selected = "", string disabled = "") {
-		foreach(value; values) {
-			if (value == selected) {
-				this.option(value == disabled ? 
-					["selected":"selected", "disabled":"disabled"],  
-					["selected":"selected"], value);
-			}
-			else if (value == disabled) this.option(["disabled":"disabled"], value);
-			else this.option(value);
-		}
+	O options(this O)(string[] values, string selectedValue = "", string disabledValue = "") {
+		values.each!(value => setOption(value, selectedValue, disabledValue));
 
 		return cast(O)this;	
 	}
+
 	O options(this O)(string[string] values, string selectedKey = "", string disabledKey = "") {
-		foreach(k; values.keys.sort) {
-			if (k == selectedKey) {
-				this.option(k == disabledKey 
-					? ["selected":"selected", "disabled":"disabled"]	
-					: ["selected":"selected"], k);
-			}
-			else if (k == disabledKey) this.option(["disabled":"disabled"], k);
-			else this.option(["value":k], values[k]);
-		}
+		values.keys.sort.each!(value => setOption(value, selectedKey, disabledKey));
+
 		return cast(O)this;	
 	}
+
 	O options(this O)(string[] values, string[] selected, string[] disabled = null) {
-		foreach(value; values) {
-			if (selected.has(value)) {
-				this.option(disabled.has(value) 
-					? ["selected":"selected", "disabled":"disabled"]	
-					: ["selected":"selected"], value);
-			}
-			else if (disabled.has(value)) this.option(["disabled":"disabled"], value);
-			else this.option(value);
-		}
+		values.each!(value => setOptionByValue(value, selected, disabled));
 
 		return cast(O)this;	
 	}
+
+	protected void setOptionByValue(string value, string[] selected, string[] disabled = null) {
+		if (selected.has(value)) {
+			this.option(disabled.has(value) 
+				? ["selected":"selected", "disabled":"disabled"]	
+				: ["selected":"selected"], value);
+		}
+		else if (disabled.has(value)) this.option(["disabled":"disabled"], value);
+		else this.option(value);
+	}
+
 	O options(this O)(string[string] values, string[] selectedKeys, string[] disabledKeys = null) {
-		foreach(k; values.keys.sort) {
-			if (selectedKeys.has(k)) {
-				this.option(disabledKeys.has(k) 
-					? ["selected":"selected", "disabled":"disabled"] 
-					: ["selected":"selected"], k);
-			}
-			else if (disabledKeys.has(k)) this.option(["disabled":"disabled"], k);
-			else this.option(["value":k], values[k]);
-		}
+		values.keys.sort.each!(key => setOption(k, selectedKeys, disabledKeys));
 
 		return cast(O)this;	
 	}
+
+	protected void setOption(string optionValue, string selectedValue = null, string disabledValue = null) {
+		if (optionValue == selectedValue) {
+				this.option(value == disabledValue ? 
+					["selected":"selected", "disabled":"disabled"],  
+					["selected":"selected"], optionValue);
+			}
+			else if (value == disabledValue) this.option(["disabled":"disabled"], optionValue);
+			else this.option(optionValue);
+	}
+
+	protected void setOption(string optionValue, string[] selectedKeys, string[] disabledKeys = null) {
+		if (selectedKeys.has(optionValue)) {
+				this.option(disabledKeys.has(optionValue) 
+					? ["selected":"selected", "disabled":"disabled"] 
+					: ["selected":"selected"], optionValue);
+			}
+			else if (disabledKeys.has(optionValue)) this.option(["disabled":"disabled"], optionValue);
+			else this.option(["value":optionValue], values[optionValue]);
+	}
+
 }
 mixin(H5Calls!("BS4InputSelect"));
