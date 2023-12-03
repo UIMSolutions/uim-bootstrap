@@ -6,21 +6,24 @@ import uim.bootstrap;
 class DBS5InputSelect : DBS5Obj {
   mixin(H5This!("Select", ["form-control"]));	
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 
 	mixin(MyContent!("option", "H5Option"));
 	O options(this O)(string[] values, string selected = "", string disabled = "") {
-		foreach(value; values) {
-			if (value == selected) {
-				if (value == disabled) 	this.option(["selected":"selected", "disabled":"disabled"], value); 
-				else this.option(["selected":"selected"], value);
-			}
-			else if (value == disabled) this.option(["disabled":"disabled"], value);
-			else this.option(value);
-		}
+		values.each!(value => setOptionByValue(value, selected, disabled)); 
+
 		return cast(O)this;	
+	}
+
+	protected void setOptionByValue(string optionValue, string selected = "", string disabled = "") {
+		if (optionValue == selected) {
+			if (optionValue == disabled) 	this.option(["selected":"selected", "disabled":"disabled"], value); 
+			else this.option(["selected":"selected"], optionValue);
+		}
+		else if (optionValue == disabled) this.option(["disabled":"disabled"], optionValue);
+		else this.option(optionValue);
 	}
 
 	O options(this O)(string[string][] keyValues, string selectedKey = "", string disabledKey = "") {

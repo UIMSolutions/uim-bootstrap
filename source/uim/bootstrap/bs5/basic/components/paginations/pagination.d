@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5Pagination : DBS5Obj {
 	mixin(H5This!("UL", ["pagination"]));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 
 	O center(this O)(string aSize) { return this.addClasses("justify-content-centers"); }

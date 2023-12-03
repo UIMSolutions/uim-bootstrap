@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5InputTextarea : DBS5Obj {
 	mixin(H5This!("textarea", ["form-control"]));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 
   mixin(MyAttribute!"rows");

@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5InputText : DBS5Input {
 	mixin(H5This!("", null, `["type":"text"]`));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 	
 	O value(this O)(UUID id) {

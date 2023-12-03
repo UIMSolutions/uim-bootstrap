@@ -6,8 +6,8 @@ import uim.bootstrap;
 class DBS5PageLink : DBS5Obj {
 	mixin(H5This!("A", ["page-link"], `["href":"#"]`));
 
-  override void initialize () {
-    super.initialize();
+  override void initialize (Json aConfig = Json(null)) {
+    super.initialize(aConfig);
   }
 }
 mixin(H5Calls!"BS5PageLink");
