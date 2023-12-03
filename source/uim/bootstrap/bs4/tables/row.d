@@ -21,7 +21,7 @@ class DBS4TableRow : DBS4Obj {
 	}}
 
 /*
-	mixin(TProperty!("string[string]", "keyPairs"));
+	mixin(TProperty!("STRINGAA", "keyPairs"));
 	mixin(TProperty!("string[]", "values"));
 
 	string renderHTML(DBS4TableColumn[] columns) {

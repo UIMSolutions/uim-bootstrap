@@ -19,7 +19,7 @@ class DBS5CustomSelect : DH5Select {
 		}
 		return cast(O)this;	
 	}
-	O options(this O)(string[string] values, string selectedKey = "", string disabledKey = "") {
+	O options(this O)(STRINGAA values, string selectedKey = "", string disabledKey = "") {
 		foreach(k; values.keys.sort) {
 			if (k == selectedKey) {
 				this.option(k == disabledKey 
@@ -43,7 +43,7 @@ class DBS5CustomSelect : DH5Select {
 		}
 		return cast(O)this;	
 	}
-	O options(this O)(string[string] values, string[] selectedKeys, string[] disabledKeys = null) {
+	O options(this O)(STRINGAA values, string[] selectedKeys, string[] disabledKeys = null) {
 		foreach(k; values.keys.sort) {
 			if (selectedKeys.has(k)) {
 				this.option(disabledKeys.has(k) 

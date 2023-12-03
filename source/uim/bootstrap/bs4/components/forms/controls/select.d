@@ -13,7 +13,7 @@ class DBS4InputSelect : DBS4Obj {
 		return cast(O)this;	
 	}
 
-	O options(this O)(string[string] values, string selectedKey = "", string disabledKey = "") {
+	O options(this O)(STRINGAA values, string selectedKey = "", string disabledKey = "") {
 		values.keys.sort.each!(value => setOption(value, selectedKey, disabledKey));
 
 		return cast(O)this;	
@@ -35,7 +35,7 @@ class DBS4InputSelect : DBS4Obj {
 		else this.option(value);
 	}
 
-	O options(this O)(string[string] values, string[] selectedKeys, string[] disabledKeys = null) {
+	O options(this O)(STRINGAA values, string[] selectedKeys, string[] disabledKeys = null) {
 		values.keys.sort.each!(key => setOption(k, selectedKeys, disabledKeys));
 
 		return cast(O)this;	
